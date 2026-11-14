@@ -8,7 +8,7 @@ Chat history is not memory. The next agent reads this file, `LEAD-PROMPT.md`, an
 - Hosted apply: Nico gave the in-session grant on 14 November 2026. After a browser login that can see campus-call, `npx supabase db push --remote --yes --skip-vault` applied all five local migrations to `vftrwyuvrewekoofkcpp`. The grant file failed once on `pg_catalog.substring(... from ...)`, that call was changed to the three-argument form, and the retry applied only `20261114120000_participant_one_time_grant.sql` and exited 0. Do not apply another hosted migration. Do not read a `.env` file. Do not pass a database password or a write token on the command line.
 - Log: `logs/CC-005.md`. Status: Mode B passed for the SQL; server call built and unit-tested. CC-004 remains accepted in `logs/CC-004.md`.
 - Scored plan commit: `9c83c89`. CC-004 base: `2421902`. Product: `fcbb9ea`. Row: `9016a4f`.
-- Saves: commit every green stage. The local brain handoff for Mode A and for CC-001 through CC-004 is still due. Do not push the repo or the brain. If the brain write stops, continue from this file.
+- Saves: commit every green stage. Local brain handoff `brain/vibe-coding-hackathon-2026-11-14-193124` records status through CC-006 and is not pushed. Do not push the repo or the brain unless Nico says yes. If the brain write stops, continue from this file.
 
 ## Context
 
