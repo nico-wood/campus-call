@@ -95,3 +95,7 @@ Nico confirmed the product. The spec is `research/10-build-spec.md`. Home shows 
 ## 2026-11-13 Schedule source is the participant guide
 
 Nico removed the chat-server tie-break. The participant guide is the schedule source for the demo. Docs only. Tests were not re-run. Nothing was posted or sent.
+
+## 2026-11-13 Build list names the guide
+
+`TASKS.md` now says the participant guide is the only schedule source for the four tickets. Docs only. Tests were not re-run. Nothing was posted or sent.

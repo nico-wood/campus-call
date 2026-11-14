@@ -15,7 +15,7 @@ Build `research/10-build-spec.md`. That file is the demo. Do these in order. Do 
 - [ ] Home. Campus example list. Categories All, Sports, Music, Dining, and the hackathon. Each campus card is labeled Example. Confirm does nothing and spends nothing.
 - [ ] QR route. Opens the hackathon event only. No home, and no example cards.
 - [ ] One balance. Grant 1,000 virtual credits once, after the QR plus an email and a name. The same email does not get a second grant.
-- [ ] Four hackathon tickets. Main prize is 1st, 2nd, and 3rd. Then OpenAI, Startup Launch, and Best Use of AI. Each ticket confirms on its own. The same team may be named more than once. An overspend is refused and writes nothing. Picks lock Sunday 15 November 2026 at 12:00 p.m. PT.
+- [ ] Four hackathon tickets. Main prize is 1st, 2nd, and 3rd. Then OpenAI, Startup Launch, and Best Use of AI. Each ticket confirms on its own. The same team may be named more than once. An overspend is refused and writes nothing. Picks lock Sunday 15 November 2026 at 12:00 p.m. PT. The participant guide is the only schedule source: https://cpvc-ai-hackathon-guide.vercel.app/#fri .
 - [ ] Team cards. Start when a project link exists. Show the project, whether the live link runs, feasibility, a public-profile background, and the guide's rubric with a one-line reason. A challenge ticket lists only teams who entered it.
 - [ ] Admin demo. The Chick-fil-A line accepts credits only from an admin. Everyone else sees a preview, and confirm does nothing.
 - [ ] Prize copy. 50% of what this team receives, top 10 geometric, $0 if the team wins nothing. The tax line is in the same breath as any dollar amount.
