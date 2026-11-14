@@ -9,3 +9,5 @@ Validation: consolidation asserts exact team/member coverage, search records, 19
 Limitations: public indexing misses fresh repos and app-builder projects; several live links could not be fetched; source claims and self-reported testing not independently reproduced. The guide does not require GitHub. Private form responses were not available. A failed lookup is not no progress. Source workbook and emails are not staged for commit.
 
 Next sweep should reconcile project mappings, inspect published nondefault branches, verify actual demos/customer evidence and challenge eligibility, and compare against these pinned observations. No messages, app edits, migrations, deployments or pushes performed for this milestone.
+
+Publication follow-up: user subsequently authorized the Campus Call GitHub update. Main was pushed through eef2c17. The user declined publishing to lec-agent-config; the committed local brain entry is retained locally. The publishable project handoff is docs/handoffs/2026-11-14-team-research.md. Raw workbook, emails and unrelated workspace edits remain excluded.
