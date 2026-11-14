@@ -104,6 +104,10 @@ Nico removed the chat-server tie-break. The participant guide is the schedule so
 
 A later agent looked for the session notes in `~/.claude/second-brain.md` and did not find them. The team brain is `C:/lec-brain`. This folder resumes as `vibe-coding-hackathon`. `AGENTS.md` now says that. The product spec was already on `main`. Docs only. Tests were not re-run. Nothing was posted or sent.
 
+## 2026-11-14 CC-004 full-width market row
+
+The QR door's market-probability row now uses one column, so it matches the demo form's width. Example outcome pairs stay two-up. Tests passed, 52 of 52. The three enrollment captures were replaced. Round 1 is next. The EP is not accepted.
+
 ## 2026-11-14 CC-004 Mode C round 0 fail
 
 The enrollment captures scored 9.59. Spatial rhythm was 9.3. On desktop the market-probability row is half the card while the demo form is full width. One major. The EP is not accepted. The door row is being widened, then the three captures are scored again.

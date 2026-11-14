@@ -549,3 +549,7 @@ a.outcome:hover {
 .enrollment .confirm {
   align-self: stretch;
 }
+
+.door-main .outcomes {
+  grid-template-columns: 1fr;
+}
