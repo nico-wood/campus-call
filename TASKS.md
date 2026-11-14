@@ -6,16 +6,27 @@ Vocabulary is forecast, position, market probability, and points. Never bet, wag
 
 3e owns the harness. Do not weaken, skip, or delete tests. Do not edit `scripts/score.ps1`. Virtual credits only. No real-money columns. Do not read `.env` files. Do not run `vercel --prod`.
 
-Phase B starts only after Nico says go. The loop's judge is `scripts/score.ps1`, not an opinion. `npm test` is the unit suite only.
+Nico locked the current build on 13 November 2026. Start those items when he says to build. `npm test` remains the unit suite. `scripts/score.ps1` still runs the old end-to-end spec, so it is not the judge of the new screens until that spec is replaced.
 
-The demo app follows `research/10-build-spec.md`. Home is campus examples that take no credits. The QR opens the hackathon event. Credits are granted once, after the QR plus an email and a name. Four hackathon tickets spend that balance. The Chick-fil-A line is an admin-only demo. The checklist below is the old harness. Do not treat it as the front door.
+## Current build
 
-Product decisions locked in `research/00-summary.md`:
+Build `research/10-build-spec.md`. That file is the demo. Do these in order. Do not start a parked item while one of these is open.
 
-- New accounts get 1000 virtual credits. Liquidity `b` is 100 on every launch market.
-- Each resolved market adds `round(100 * (1 - brier))` points. That formula is locked by tests.
-- Prize rank is mean Brier across markets the person traded, lower better, and only if they have at least 3 resolved markets. The public board shows both numbers and sorts by mean Brier. People under 3 markets still appear.
-- A hackathon question does not need an organizer permit. It needs a named source. The demo itself is the four tickets in `research/10-build-spec.md`, not the airport markets.
+- [ ] Home. Campus example list. Categories All, Sports, Music, Dining, and the hackathon. Each campus card is labeled Example. Confirm does nothing and spends nothing.
+- [ ] QR route. Opens the hackathon event only. No home, and no example cards.
+- [ ] One balance. Grant 1,000 virtual credits once, after the QR plus an email and a name. The same email does not get a second grant.
+- [ ] Four hackathon tickets. Main prize is 1st, 2nd, and 3rd. Then OpenAI, Startup Launch, and Best Use of AI. Each ticket confirms on its own. The same team may be named more than once. An overspend is refused and writes nothing. Picks lock Sunday 15 November 2026 at 12:00 p.m. PT.
+- [ ] Team cards. Start when a project link exists. Show the project, whether the live link runs, feasibility, a public-profile background, and the guide's rubric with a one-line reason. A challenge ticket lists only teams who entered it.
+- [ ] Admin demo. The Chick-fil-A line accepts credits only from an admin. Everyone else sees a preview, and confirm does nothing.
+- [ ] Prize copy. 50% of what this team receives, top 10 geometric, $0 if the team wins nothing. The tax line is in the same breath as any dollar amount.
+
+Screen words are forecast, position, market probability, points, and virtual credits. The demo rank is how the four tickets did against the official result. Mean Brier stays in the unit tests. It is not this rank.
+
+The existing end-to-end spec still expects a login and a YES purchase. Leave it in place until a later item replaces it with the flow above. Do not pass it by restoring the trading front door. Do not edit `scripts/score.ps1`.
+
+## Harness already on main
+
+These are done. They stay. They are not the front door. A question needs a named source. It does not need an organizer permit.
 
 - [x] 3e: Phase A eval harness (score script, failing unit/e2e/AI specs, banned-topic checker)
 - [x] 3b: Implement src/lib/lmsr.ts, src/lib/brier.ts, src/lib/scoring.ts, and src/lib/ledger.ts so npm test passes. Do not change test assertions. Messages must include "insufficient credits" and "already resolved" where the ledger tests require them.
@@ -23,6 +34,11 @@ Product decisions locked in `research/00-summary.md`:
 - [x] 3a: Add a SQL migration for trades and credit_ledger. Ledger writes are server-only. A balance is the sum of ledger amounts. The house account id is house. New users receive 1000 virtual credits once.
 - [x] 3a: Add a SQL migration for scores and resolutions. One resolution per market. Store per-market points, Brier, and the pre-trade YES probability. Virtual-credit profit is redeemed credits minus credits spent.
 - [x] 3a: Seed the 15 launch markets from research/00-summary.md. b = 100. Starting market probability equal across outcomes. Markets 1 and 2 (KSBP) are open. Markets 3–15 are drafts and reject trades until a human publishes them. Close times are the ones in that memo.
+
+## Parked harness
+
+Do not build these as the demo. They describe the old binary market.
+
 - [ ] 3b: Add POST /api/quote. Return the LMSR cost and the post-trade YES probability. Do not write.
 - [ ] 3b: Add POST /api/trade. Debit virtual credits, append a trade at the pre-trade YES probability, and reject an overspend without writing. Reject trades on drafts, after close, and from Nico, Sophie, a flagged organizer or judge, or a user on the team that market is about.
 - [ ] 3b: Add GET /api/portfolio with balance, positions, points, mean Brier, resolved count, and virtual-credit profit.

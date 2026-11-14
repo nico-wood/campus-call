@@ -2,23 +2,17 @@
 
 One page for Nico or Sophie at the table. Not a post. Not a feature. Do not read the footer aloud.
 
+The demo is `research/10-build-spec.md`. The QR opens the hackathon event. The airport question is retired for this weekend.
+
 ## 1. On the physical card
 
-One question, and a blank square for the QR. Do not print a URL.
-
-Standby, only while no hackathon market can open:
-
-**Will Saturday's high at the San Luis Obispo County Airport reach 70 F?**
-
-The card switches to a hackathon question the moment one of those markets can open. Print that one question. Do not print the other draft questions.
+The name, and a blank square for the QR. Do not print a URL. The QR opens the hackathon event only.
 
 ## 2. Spoken line
 
-Default sentence. Use the question on the card. Do not open with 50% or with the word tax.
+Default sentence. Do not open with 50% or with the word tax.
 
-Will Saturday's high at the San Luis Obispo County Airport reach 70 F, free, one position.
-
-If the card has switched, say that question in the same sentence, then "free, one position."
+Campus Call. Scan this, put in your email and name, and you get 1,000 virtual credits to put on the ranking and the three challenges. Free.
 
 ## 3. If someone asks about cash
 
@@ -32,10 +26,10 @@ Live prize plan: 50% of what this team receives, paid to 10 skill ranks, and $0 
 
 ## 5. How a person enters
 
-Scan, see the question, tap YES or NO, then a handle, an "I am 18 or older" checkbox, and Google or an email link. The position is placed when they come back. Under 18 can read the question. The checkbox is required before a position is stored.
+Scan the QR. It opens the hackathon event, not the campus examples. Enter an email and a name. That grants 1,000 virtual credits once. The same email does not get another grant. Spend them on the four tickets. The same team may be named more than once. Campus example cards, including the dining line, do not take those credits. An admin can place the dining-line position on demo day.
 
 ## 6. Do not
 
 Do not mass-email. Do not post the cash line in Discord. Do not ask for a workshop microphone unless that host already said yes.
 
-Words to use: forecast, position, market probability, points. Do not say bet, wager, odds, or payout.
+Words to use: forecast, position, market probability, points, virtual credits. Do not say bet, wager, odds, or payout.
