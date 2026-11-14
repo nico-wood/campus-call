@@ -106,7 +106,7 @@ A later agent looked for the session notes in `~/.claude/second-brain.md` and di
 
 ## 2026-11-14 App shell and Cal Poly palette
 
-Home now has a fixed sidebar, an account block, Settings, Portfolio, forecast categories, and a current-predictions section. The palette is a dark forest with a restrained gold accent. The QR door keeps the same colors and does not show the example list. Tests passed, 52 of 52. A preview follows this commit.
+Home now has a fixed sidebar, an account block, Settings, Portfolio, forecast categories, and a current-predictions section. The palette is a dark forest with a restrained gold accent. The QR door keeps the same colors and does not show the example list. Tests passed, 52 of 52. Preview: https://campus-call-de3a0dtcl-nico-wood.vercel.app
 
 ## 2026-11-14 CC-005 database still absent
 
