@@ -197,3 +197,9 @@ Nico asked the overnight run to use TierraDex's design, Mode A, build, Mode B, a
 Added the Next.js App Router foundation and the responsive home shell. The top bar shows Campus Call, a search field, and Portfolio. The category row shows All, Sports, Music, Dining, and Hackathon. Those controls are visible and inert. Example cards, filtering, and event pages are not in this step. `src/lib` was not moved.
 
 `npm test` exited 0 (35 passed, 6 files). `npm run lint` exited 0. `npm run typecheck` exited 0. `npm run build` exited 0. `scripts/score.ps1` was not the pass check. No `.env` file was read. Nothing was pushed. Mode B has not started. A second writer must not start.
+
+## 2026-11-14 CC-002 example forecasts
+
+Home lists example forecasts we wrote. Each card shows a question, a close, an Example label, and the leading outcomes with market probabilities. The shapes are yes/no, higher/lower, and earlier/later. All, Sports, Music, Dining, and Hackathon filter the list, and a search or an unknown category can empty it. The category and the search text are in the URL. Tapping a percentage opens `/examples/[id]`. Confirm is visible and does not write, debit, or send a request. `src/lib` was not moved. TASKS.md was not checked off.
+
+`npm test` exited 0 (40 passed, 7 files). `npm run lint` exited 0. `npm run typecheck` exited 0. `npm run build` exited 0. `scripts/score.ps1` was not the pass check. No `.env` file was read. Nothing was pushed. Mode B has not started. A second writer must not start.

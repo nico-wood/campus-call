@@ -8,8 +8,8 @@ import HomePage from "../src/app/page";
 const here = dirname(fileURLToPath(import.meta.url));
 
 describe("home shell", () => {
-  it("shows the name, search, portfolio, and category row", () => {
-    const html = renderToStaticMarkup(HomePage());
+  it("shows the name, search, portfolio, and category row", async () => {
+    const html = renderToStaticMarkup(await HomePage());
 
     expect(html).toContain(">Campus Call<");
     expect(html).toContain('placeholder="Search forecasts"');

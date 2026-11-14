@@ -106,6 +106,7 @@ input {
 .search {
   flex: 1 1 auto;
   min-width: 0;
+  margin: 0;
 }
 
 .search-input {
@@ -151,12 +152,16 @@ input {
 }
 
 .category {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   min-height: var(--control-height);
   padding-inline: var(--space-4);
   border: 1px solid var(--border);
   border-radius: var(--radius-pill);
   background: transparent;
   color: var(--text-muted);
+  text-decoration: none;
   white-space: nowrap;
   cursor: pointer;
 }
@@ -241,5 +246,211 @@ input {
 
   .empty {
     padding: var(--space-5);
+  }
+
+  .confirm {
+    align-self: stretch;
+    width: 100%;
+  }
+}
+
+.list-heading {
+  margin: 0 0 var(--space-3);
+  font-size: var(--text-xl);
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  line-height: var(--leading-tight);
+}
+
+.list-note,
+.written-note,
+.forecast-close,
+.confirm-note,
+.probability-caption {
+  margin: 0;
+  color: var(--text-muted);
+}
+
+.list-note {
+  max-width: 40rem;
+  margin-bottom: var(--space-5);
+}
+
+.forecast-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-4);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.forecast-card,
+.event {
+  min-width: 0;
+}
+
+.forecast-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--space-3);
+  padding: var(--space-5);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  background: var(--surface);
+}
+
+.forecast-card h3,
+.event-question {
+  margin: 0;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  line-height: var(--leading-tight);
+  overflow-wrap: break-word;
+}
+
+.forecast-card h3 {
+  width: 100%;
+  font-size: var(--text-lg);
+}
+
+.example-label {
+  align-self: flex-start;
+  margin: 0;
+  padding: var(--space-1) var(--space-3);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-pill);
+  background: var(--surface-raised);
+  color: var(--text);
+  font-size: var(--text-sm);
+  font-weight: 600;
+  line-height: var(--leading-tight);
+}
+
+.written-note,
+.forecast-close,
+.confirm-note,
+.probability-caption {
+  font-size: var(--text-sm);
+}
+
+.probability,
+.outcomes,
+.confirm-panel,
+.event-question,
+.written-note,
+.forecast-close,
+.event-back {
+  width: 100%;
+}
+
+.probability-caption {
+  margin-bottom: var(--space-2);
+  font-weight: 600;
+}
+
+.outcomes {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-2);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.outcome {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-3);
+  min-height: var(--control-height);
+  padding: var(--space-3) var(--space-4);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  background: var(--bg);
+  color: var(--text);
+  text-decoration: none;
+}
+
+a.outcome {
+  cursor: pointer;
+}
+
+a.outcome:hover {
+  background: var(--surface-raised);
+}
+
+.outcome-label {
+  overflow-wrap: break-word;
+}
+
+.outcome-percent {
+  font-size: var(--text-lg);
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: -0.02em;
+  white-space: nowrap;
+}
+
+.event {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--space-4);
+  width: min(100%, 40rem);
+}
+
+.event-question {
+  font-size: var(--text-xl);
+}
+
+.event-back {
+  margin: 0;
+}
+
+.back-link {
+  color: var(--text-muted);
+  font-size: var(--text-sm);
+  text-underline-offset: 0.2em;
+}
+
+.confirm-panel {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--space-4);
+  width: 100%;
+  padding: var(--space-5);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  background: var(--surface);
+}
+
+.confirm {
+  align-self: flex-start;
+  min-width: 8rem;
+  min-height: var(--control-height);
+  padding-inline: var(--space-5);
+  border: 1px solid var(--text-muted);
+  border-radius: var(--radius-md);
+  background: var(--surface-raised);
+  color: var(--text);
+  cursor: pointer;
+}
+
+.confirm:hover {
+  border-color: var(--text);
+}
+
+@media (min-width: 30rem) {
+  .outcomes {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 64rem) {
+  .forecast-list {
+    grid-template-columns: 1fr 1fr;
   }
 }
