@@ -1,0 +1,6 @@
+# Campus Call. Pins Supabase MCP to this project only.
+
+[mcp_servers.supabase]
+url = "https://mcp.supabase.com/mcp?project_ref=vftrwyuvrewekoofkcpp"
+enabled = true
+startup_timeout_sec = 60

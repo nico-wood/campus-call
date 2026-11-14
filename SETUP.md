@@ -31,20 +31,19 @@ The folder is that repository. Do not run `git init` again. Do not add a second 
 
 ## Supabase
 
-Hosted project `campus-call` already exists in the Cal Poly org. Ref `vftrwyuvrewekoofkcpp`. Region `us-west-1`. API host `https://vftrwyuvrewekoofkcpp.supabase.co`. No migrations yet.
+Hosted project `campus-call` is linked. Cal Poly org. Ref `vftrwyuvrewekoofkcpp`. Region `us-west-1`. API host `https://vftrwyuvrewekoofkcpp.supabase.co`. The link metadata is in `supabase/.temp/`, which is gitignored. No migrations yet.
 
-The saved CLI login is the other org, "nwood-CalPoly's Org", which can only see the inactive AMS project. Link with a profile for the Cal Poly account:
+On a new machine, log in as the account that can open that project, then:
 
 ```powershell
-npx --yes supabase login --name campus-call
-npx --yes supabase link --project-ref vftrwyuvrewekoofkcpp --profile campus-call --yes
+npx --yes supabase link --project-ref vftrwyuvrewekoofkcpp --yes
 ```
 
-Do not pass a database password on the command line. Do not read a `.env` file to find a token. Do not apply migrations until a `TASKS.md` schema item is the active task and Nico has said to apply them in that session. Do not link the AMS project.
+Do not pass a database password on the command line. Do not read a `.env` file to find a token. Do not apply migrations until a `TASKS.md` schema item is the active task and Nico has said to apply them in that session. Do not link the AMS project or any other org's project.
 
 Local files live in `supabase/` after `supabase init`. They are not a hosted database.
 
-After a ref exists, pin Grok's Supabase MCP to that ref only. Leave production MCP disabled. There is no production project.
+Grok's Supabase MCP is pinned to this ref only in `.grok/config.toml`. There is no second project.
 
 ## Vercel
 

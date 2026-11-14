@@ -20,7 +20,7 @@ The harness score recorded by Agent 3 was 22.8788. Re-ran `powershell -Execution
 
 Copied four skills into `.claude/skills`: `rls-verifier`, `security-audit` (no Stripe), `lean-code`, and `vitest-patterns`. Left Stripe, prod-gate, two-project hosting, TierraDex Supabase refs, Knip, and the shared CI workflow out. The judge stays `scripts/score.ps1`. Details are in `SETUP.md`.
 
-`npx supabase init` wrote `supabase/config.toml` with `project_id = "campus-call"`. The CLI is logged in to the org "nwood-CalPoly's Org". `projects list` shows one project, named AMS, status inactive. The hosted Campus Call project is in the Cal Poly org, ref `vftrwyuvrewekoofkcpp`, region `us-west-1`. `supabase link` against that ref returned LinkProjectStatusError: the logged-in account does not have access. A second login named `campus-call` was not completed. Nothing was linked. No migration was applied. No `.env` file was read.
+`npx supabase init` wrote `supabase/config.toml` with `project_id = "campus-call"`. After the Cal Poly account login, `supabase link --project-ref vftrwyuvrewekoofkcpp --yes` succeeded. `supabase/.temp/project-ref` is that ref. No migration was applied. No `.env` file was read. API keys were not copied.
 
 Git remote is https://github.com/nico-wood/campus-call. First commit `d036bc6` is on `main`. The stored Git credential is the `compuwood` account, so the push used `gh auth git-credential` for `nico-wood` for that one command. Git config was not changed.
 
