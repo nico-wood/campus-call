@@ -4,7 +4,7 @@ Chat history is not memory. The next agent reads this file, `LEAD-PROMPT.md`, an
 
 ## Now
 
-- Stage: program Mode A, round 1 FAIL, round 2 not scored yet. Policy 9.8, architecture 9.8, completeness 9.9, cut order 9.4. Weighted 9.725. Major 1. Blocking 0.
+- Stage: program Mode A, round 2 in progress. Policy PASS 9.8, blocking 0, major 0, minor 2. Architecture, cut order, and completeness are still running. Round 1 remains FAIL at weighted 9.725.
 - Product code: not started
 - Result files: `.agent/research/cc-program-design-autoresearch/round-1-*.md` and `SCORE-HISTORY.md`
 - Base: `90b1e76`. CC-006, CC-016, and CC-017 were patched after round 1. Round 2 graders are running. Do not start another round 2 panel.
