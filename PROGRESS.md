@@ -67,3 +67,7 @@ Four files are in `supabase/migrations/`. RLS is on for profiles, markets, outco
 ## 2026-11-13 Prize pool set to 50 percent
 
 Nico changed the pool from 25% to 50% and kept the top 10. On a $4,000 first place the pool is $2,000 and the builders keep $2,000. On first place plus the challenge the pool is $2,500 and the builders keep $2,500. The checks are the geometric list in `research/00-summary.md`, adjusted so they sum to the pool. The economics note still records why it recommended 25%. The live rule is the summary. A cash award can be taxable even if no form is sent. This is not tax advice. The dollars stay unannounced. Nothing was posted or sent.
+
+## 2026-11-13 Sophie agreed to the 50 percent pool
+
+Sophie agreed to give 50% of what the team actually receives to the top 10 forecasters. The organizer has not confirmed that the prize rules allow sharing. Nico has not accepted that a lawyer has not reviewed a cash prize. A tax advisor has not reviewed it. The spoken line stays the question, free, one position. The tax disclaimer stays in the written rules. Nothing was posted or sent.
