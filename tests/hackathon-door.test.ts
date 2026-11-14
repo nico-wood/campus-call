@@ -78,6 +78,7 @@ function expectHackathonOnly(html: string, enrollment: "qr" | "closed"): void {
   expect(html).toContain("<form");
   expect(html).toContain(">Demo<");
   expect(html).toContain(">Start demo<");
+  expect(html).not.toContain("Demo on this device");
   expect(html).toContain("This stays on this device.");
   expect(html).toContain("It is not a verified account.");
   expect(html).toContain("It does not grant virtual credits.");

@@ -198,6 +198,17 @@ describe("QR enrollment and demo mode", () => {
     expect(client).not.toContain("resolveLiveMode");
     expect(client).not.toContain("clientBoolean");
     expect(client).not.toMatch(/onChange=\{[^}]*startDeviceDemo/);
+    expect(client).toContain("onSubmit={onStartDemo}");
+    expect(client).toContain('type="submit"');
+    const effect = client.match(/useEffect\(\(\) => \{([\s\S]*?)\}, \[\]\)/);
+    expect(effect?.[1]).toBeTruthy();
+    expect(effect?.[1]).not.toContain("startDeviceDemo");
+    const handlerStart = client.indexOf("function onStartDemo");
+    const handlerEnd = client.indexOf("return (", handlerStart);
+    const callSites = [...client.matchAll(/startDeviceDemo\(/g)].map((match) => match.index ?? -1);
+    expect(callSites).toHaveLength(1);
+    expect(callSites[0]).toBeGreaterThan(handlerStart);
+    expect(callSites[0]).toBeLessThan(handlerEnd);
     expect(session).not.toMatch(/from\s+["']\.\/verified-session["']/);
     expect(session).not.toContain("resolveLiveMode");
     expect(session).not.toMatch(/\bfetch\s*\(/);
