@@ -335,3 +335,27 @@ CC-005 was not implemented. No migration was added. The One balance row in TASKS
 `npx supabase start` exited 1. Docker was not on PATH, Podman was not found, and container health could not be inspected. Docker did not boot.
 `npx supabase test db` ran and exited 1. The local database at 127.0.0.1:54322 refused the connection. No pgTAP assertions ran. There is no concurrent-grant evidence.
 `npm test` was not run because no application behavior changed. No `.env` file was read. No hosted migration was applied. Nothing was pushed. CC-005 stays open.
+
+## 2026-11-14 Hosted schema applied
+
+The browser login can see campus-call. `npx supabase projects list` shows it linked at `vftrwyuvrewekoofkcpp`. The dry-run listed five migrations and exited 0. The first push applied the four earlier migrations, then stopped in `20261114120000_participant_one_time_grant.sql` because `pg_catalog.substring(text from int for int)` is invalid. Those two calls now use `pg_catalog.substring(text, int, int)`. The retry applied only that grant migration and exited 0. No `.env` file was read. No password or token was put on the command line. CC-005 stays open because `npx supabase test db` has not passed. CC-006 was not started. The grant SQL and its pgTAP file are still uncommitted.
+
+## 2026-11-14 Hosted schema grant refused by Supabase
+
+Nico gave the in-session grant to apply the hosted schema. `npx supabase db push --dry-run --remote --yes --skip-vault` exited 1. Target was project campus-call (`vftrwyuvrewekoofkcpp`). The CLI reported a 403: the logged-in account does not have the privileges for that endpoint. No migration was applied. Docker is still absent, so CC-005 stays open and CC-006 was not started. No `.env` file was read. No password or token was put on the command line. Nothing was committed or pushed.
+
+## 2026-11-14 UX boundary for the other agent
+
+`AGENTS.md` now has a "UX and UI work" section. `CLAUDE.md`, `.cursor/rules/general.mdc`, and `docs/overnight/STATE.md` point at it. Presentation may change. Behavior modules, routes, example data, screen vocabulary, `src/lib`, tests, the frame inset, `scripts/score.ps1`, accepted gates, the spec, the grant SQL, and CC-005 onward stay untouched. No tests were run. No product code changed. Nothing was committed or pushed.
+
+## 2026-11-14 Existing-screen UI autoresearch
+
+Nico selected polishing existing screens before new marketing/auth/account/placement prototypes. Updated shared CSS tokens/layout, navigation, forecast card hierarchy/alignment, example read-only probability presentation, confirmation announcements, QR scroll/inset, Portfolio/Settings headings, and empty states. Session, ledger, entry, examples data, SQL, tests, accepted gates, spec, TASKS, and CC-005 remain unchanged. `logs/UX-001.md` records the review and checks; `scripts/capture-ui-polish.mjs` reproduces 30 route/viewport captures plus interaction states in local `outputs/ui-polish/`.
+
+Fresh read-only visual review scores: 8.68 -> 9.21 -> 9.46 -> 9.48 -> 9.50/10. Final seven dimensions are each 9.5. No concrete remaining presentation defect was identified within existing-screen scope, but neither the strict 9.7 gate nor Nico's 10/10 target is met. Nico approved keeping forest/gold and editorial serif headings. Round 4 introduced Georgia display/wordmark typography while retaining sans controls/data, semantic heading hierarchy, and a decorative back chevron; round 5 fixed QR header wrapping at 320px. Further changes are aesthetic exploration; no EP accepted or TASKS row changed.
+
+`npm test` exit 0 (52/52, 9 files), `npm run lint` exit 0, `npm run typecheck` exit 0, `npm run build` exit 0. Chromium exercised six screens at 1280, 768, 390, 375, and 320px without page overflow; checked navigation/search preservation, no-write confirmation, invalid enrollment, explicit demo/refresh, skip link, hover, and focus. Final production console/page error check found none. Other browser engines and physical devices were not checked. Score script not run. No hosted migration, deploy, or push; no environment file read. Local preview at http://127.0.0.1:3001. Local milestone commit `d8b4d9c` saves only this pass's source, script, and review log as the repository instructions require; this shared progress file and existing unrelated edits remain unstaged.
+
+## 2026-11-14 CC-005 local grant test passed
+
+Docker Desktop 4.99 was installed and the engine stayed up. `npx supabase start` exited 0. `npx supabase test db` exited 0 against 127.0.0.1:54322: 8 files, 156 tests. The participant grant file passed, including two concurrent grants of one normalized email inserting one 1000-credit row, and the anon and authenticated denials. `npm test` exited 0 (52 passed, 9 files). The pgTAP race connects over the database server address because loopback trust cannot satisfy dblink for a non-superuser. The app does not call the grant yet. The One balance row stays open. Mode B has not run. CC-006 was not started. No `.env` file was read. No new hosted migration was applied. Nothing was pushed.

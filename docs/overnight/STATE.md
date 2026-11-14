@@ -4,8 +4,9 @@ Chat history is not memory. The next agent reads this file, `LEAD-PROMPT.md`, an
 
 ## Now
 
-- Stage: CC-005 open, not implemented. Attempt 2 confirmed Docker is not installed: no `docker` or `podman` on PATH, no Docker Desktop binary in Program Files or LocalAppData, and no Docker service. `npx supabase test db` already exited 1 with connection refused on 127.0.0.1:54322. Do not start CC-006 or later. Do not apply a hosted migration. The One balance row stays open. CC-005 is not accepted. A second writer must not start.
-- Log: `logs/CC-005.md`. Status: not implemented. Docker did not boot. CC-004 remains accepted in `logs/CC-004.md`.
+- Stage: CC-005 implemented locally, awaiting Mode B. `npx supabase test db` exited 0 against local Docker Postgres: 8 files, 156 tests, including two concurrent grants of one normalized email inserting one 1000-credit row, plus the RLS and permission checks. Do not start CC-006 until Mode B passes. The One balance row stays open. CC-005 is not accepted. A UX and UI pass may change presentation only, and only inside the "UX and UI work" section of `AGENTS.md`.
+- Hosted apply: Nico gave the in-session grant on 14 November 2026. After a browser login that can see campus-call, `npx supabase db push --remote --yes --skip-vault` applied all five local migrations to `vftrwyuvrewekoofkcpp`. The grant file failed once on `pg_catalog.substring(... from ...)`, that call was changed to the three-argument form, and the retry applied only `20261114120000_participant_one_time_grant.sql` and exited 0. Do not apply another hosted migration. Do not read a `.env` file. Do not pass a database password or a write token on the command line.
+- Log: `logs/CC-005.md`. Status: local test passed, Mode B not run. CC-004 remains accepted in `logs/CC-004.md`.
 - Scored plan commit: `9c83c89`. CC-004 base: `2421902`. Product: `fcbb9ea`. Row: `9016a4f`.
 - Saves: commit every green stage. The local brain handoff for Mode A and for CC-001 through CC-004 is still due. Do not push the repo or the brain. If the brain write stops, continue from this file.
 
