@@ -99,3 +99,7 @@ Nico removed the chat-server tie-break. The participant guide is the schedule so
 ## 2026-11-13 Build list names the guide
 
 `TASKS.md` now says the participant guide is the only schedule source for the four tickets. Docs only. Tests were not re-run. Nothing was posted or sent.
+
+## 2026-11-13 Resume name recorded
+
+A later agent looked for the session notes in `~/.claude/second-brain.md` and did not find them. The team brain is `C:/lec-brain`. This folder resumes as `vibe-coding-hackathon`. `AGENTS.md` now says that. The product spec was already on `main`. Docs only. Tests were not re-run. Nothing was posted or sent.

@@ -2,6 +2,12 @@
 
 These rules apply to every coding agent in this folder (Claude Code, Codex, Cursor, Grok Build, and others). Keep them generic. Do not specialize them to a particular product until the project itself has been started.
 
+## Where this demo lives
+
+The demo is `research/10-build-spec.md`. `TASKS.md` lists the current build. The participant guide is the only schedule source.
+
+`/resume` in this folder resolves the project name `vibe-coding-hackathon`. The team brain is the clone at `C:/lec-brain`. Do not look for these notes in `~/.claude/second-brain.md`. That file is not the team brain.
+
 ## Working style
 
 - Do one milestone at a time. Finish the current task in `TASKS.md` before starting the next one.
