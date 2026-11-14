@@ -4,7 +4,7 @@ Chat history is not memory. The next agent reads this file, `LEAD-PROMPT.md`, an
 
 ## Now
 
-- Stage: CC-004 Mode B PASS. Weighted 9.85. Mode C captures are in `.agent/research/ui-pixel/enrollment/` and the pixel grader is next. Do not start CC-005. Do not accept CC-004. Do not check the One balance row. A second writer must not start.
+- Stage: CC-004 Mode C round 0 FAIL. Weighted 9.59. Spatial rhythm 9.3, one major: the market row is half the desktop card. Widen that row, recapture, then score round 1. Do not start CC-005. Do not accept CC-004. A second writer must not start.
 - Log: `logs/CC-004.md`. Status: implemented, awaiting Mode B. Rubric: `.agent/research/cc-004-build-autoresearch/RUBRIC.md`. Mode C has not started. The QR door screen changed, so Mode C applies only after Mode B passes.
 - Scored plan commit: `9c83c89`. CC-004 base: `2421902`. Product: `fcbb9ea`. CC-003 product: `3c88f89`. Panel: `4fe06d8`.
 - Saves: commit every green stage. The local brain handoff for Mode A and for CC-001, CC-002, and CC-003 is still due. Do not push the repo or the brain. If the brain write stops, continue from this file.
