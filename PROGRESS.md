@@ -462,3 +462,21 @@ Actual local browser check `node scripts/check-participant-enrollment.mjs` passe
 Finished the in-progress forecast UI on the shared tree. The hackathon prize board now sits inside the door shell, under a short event header, with enrollment below the board. Prize labels read Open AI, Startup launch, and Best use of AI. The example position panel stays under the header and stops before Explore more examples. A guest confirm of six picks shows sign-in and sends no POST.
 
 Sports now leads with the Saturday women's volleyball match. A reader checked the handoff against the live Cal Poly schedule, Sacramento State schedule, both stats pages, and the Big West standings. Cal Poly is 18–7, 14–1 Big West. Sacramento State is 14–12, 9–6 Big West. The match is upcoming, Saturday, Nov. 14, 2026, 4:00 p.m. PT, at Mott Athletics Center. Cal Poly won the first meeting 3–0 on October 1. No source publishes a market probability, so the four questions have no percent. The five example cards stay. `npm.cmd test` passed 110 tests across 15 files. Browser checks on the dev server at 127.0.0.1:3001 covered Sports, the example position, and the hackathon board at 1280 and 390. Nothing was committed, pushed, or deployed. The production server on port 3000 is the older build.
+
+## 2026-11-14 13:30 PT GitHub push and live link
+
+Nico asked to push so he could submit a live link. Committed `9851677` on `main` and pushed `7aacf8d..9851677` to https://github.com/nico-wood/campus-call. The check-in workbook, `debug.log`, and `outputs/` stayed untracked. The production build compiled locally before the push. GitHub integration published production deployment `campus-call-fur57opbl`. Live site: https://campus-call.vercel.app . Sports at `/?category=Sports` includes the Cal Poly vs Sacramento State heading. No `vercel --prod` command was run.
+
+## 2026-11-14 13:52 PT Wrap-up in the Campus Call brain
+
+Nico said go ahead on wrap-up, then said wrap-up writes in the Campus Call brain. Added `.claude/skills/wrap-up/SKILL.md`. `AGENTS.md`, `CLAUDE.md`, and `docs/brain/README.md` point `/wrap-up` at that skill and at `docs/brain/entries/`. Handoff: `docs/brain/entries/2026-11-14-1352-handoff.md`. `docs/overnight/STATE.md` has a 13:52 pointer. No team-brain branch or pull request. Sports confirm and logos are still unbuilt. Nothing was committed, pushed, or deployed for this note.
+
+## 2026-11-14 14:23 PT Live forecast board
+
+Replaced the five mock example cards on the home board with live forecasts. Categories are now All, Sports, Weather, and Hackathon. Music and Dining are not on the board. The example routes still open if someone has the old address. They are not linked from home.
+
+Sports still leads with Cal Poly vs Sacramento State. Each of the four questions has outcome buttons, virtual credits (25, 50, 100, or a typed amount), Confirm, and then the sign-in prompt. Team names use `public/teams/cal-poly.svg` and `public/teams/sacramento-state.svg`. Yes and No stay text. Confirm calls `runExampleConfirm` and writes nothing. No market probability is shown.
+
+A catalog agent checked public sources and the board adds three forecasts. Men's basketball at Montana State is on the Cal Poly schedule for Sunday, Nov. 15, 2026, 3:00 p.m. in Bozeman. The two questions are the winner and the halftime lead, both closing at 2:55 p.m. PT. Sunday's observed high at National Weather Service station KSBP reaches 70°F or it does not. That one closes Saturday, Nov. 14, 2026, 11:59 p.m. PT. The Sunday forecast high near the airport was 69°F, so 70°F is the line. Resolution uses the station observations, not the forecast text. Transit is omitted because no stop and future clock time could be verified. Catalog: `docs/brain/entries/2026-11-14-1405-live-catalog.md` and `campus-call-market-roadmap.md`.
+
+`npm.cmd test` passed 111 tests across 16 files. `npm.cmd run typecheck` exited 0. Browser checks on http://localhost:3001 confirmed outcome, amount, Confirm, and the sign-in prompt on the basketball and volleyball questions and on the weather question. No POST was sent. Music shows the unknown-category message. Hackathon shows the prize-forecast link and not the basketball or weather cards. Nothing was pushed or deployed. The dev server remains on port 3001. Port 3000 is the older production server.

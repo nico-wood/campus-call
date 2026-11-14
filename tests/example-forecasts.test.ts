@@ -11,6 +11,7 @@ import {
   emptyForecastMessage,
   getExample,
 } from "../src/app/example-forecasts";
+import { LIVE_FORECASTS } from "../src/app/live-forecasts";
 import ExampleEventPage from "../src/app/examples/[id]/page";
 import HomePage from "../src/app/page";
 import { createMarket, emptyLedger, trade } from "../src/lib/ledger";
@@ -36,64 +37,63 @@ describe("example forecasts", () => {
     }
   });
 
-  it("lists every example with a question, a close, leading percentages, and an Example label", async () => {
+  it("lists every live forecast with a close and a source, and hides the mock examples", async () => {
     const html = await renderHome();
 
-    expect(html).toContain("Example forecasts we wrote. They are not live.");
-    expect(html.match(/>Example</g)).toHaveLength(EXAMPLES.length);
-    for (const example of EXAMPLES) {
-      expect(html).toContain(example.question);
-      expect(html).toContain(`Closes ${example.closeLabel}`);
-      expect(html).toContain("We wrote this example. It is not a live forecast.");
-      expect(html).toContain("Market probability");
-      for (const outcome of example.outcomes) {
-        expect(html).toContain(`>${outcome.label}<`);
-        expect(html).toContain(`>${outcome.percent}%<`);
-      }
-      expect(html).toContain(`href="/examples/${example.id}"`);
+    expect(html).toContain("These forecasts resolve from a public source.");
+    expect(html).not.toContain(">Example<");
+    expect(html).not.toContain("Example forecasts we wrote.");
+    for (const example of EXAMPLES) expect(html).not.toContain(example.question);
+    for (const forecast of LIVE_FORECASTS) {
+      expect(html).toContain(forecast.question.replaceAll("'", "&#x27;"));
+      expect(html).toContain(`Closes ${forecast.closeLabel}`);
+      expect(html).toContain(forecast.sourceUrl);
+      expect(html).not.toContain(`${forecast.id}-probability`);
     }
-    for (const label of ["Yes", "No", "Higher", "Lower", "Earlier", "Later"]) {
-      expect(html).toContain(`>${label}<`);
-    }
+    expect(html).toContain(">Confirm<");
+    expect(html).toContain(">Yes<");
+    expect(html).toContain(">No<");
+    expect(html).not.toContain("%");
     expect(html.toLowerCase()).not.toMatch(banned);
   });
 
-  it("filters each category, and an unknown category or a missed search is empty", async () => {
-    for (const category of ["Sports", "Music", "Dining", "Hackathon"] as const) {
-      const html = await renderHome({ category });
-      expect(html.match(/aria-current="true"/g)).toHaveLength(1);
-      expect(html).toContain(`aria-current="true">${category}`);
-      for (const example of EXAMPLES) {
-        if (example.category === category) expect(html).toContain(example.question);
-        else expect(html).not.toContain(example.question);
-      }
-    }
+  it("filters each live category, and an unknown category or a missed search is empty", async () => {
+    const sports = await renderHome({ category: "Sports" });
+    expect(sports.match(/aria-current="true"/g)).toHaveLength(1);
+    expect(sports).toContain('aria-current="true">Sports');
+    expect(sports).toContain("Who will win: Cal Poly or Montana State?");
+    expect(sports).toContain("Who will lead at halftime?");
+    expect(sports).toContain("Who will win: Cal Poly or Sacramento State?");
+    expect(sports).not.toContain("San Luis Obispo Airport");
 
-    const dining = await renderHome({ category: "dining", q: "late dining" });
-    expect(dining).toContain("Will the late dining window stay open past 10:00 p.m.?");
-    expect(dining).not.toContain("Will the campus concert");
-    expect(dining).toContain('value="late dining"');
-    expect(dining).toContain('href="/?category=Music&amp;q=late+dining"');
-    expect(dining).toContain('href="/?q=late+dining"');
-    expect(dining).toContain(
-      'href="/examples/dining-late-window?category=Dining&amp;q=late+dining"',
-    );
-    expect(dining).toContain('type="hidden"');
-    expect(dining).toContain('name="category"');
-    expect(dining).toContain('value="Dining"');
+    const weather = await renderHome({ category: "weather", q: "airport" });
+    expect(weather).toContain('aria-current="true">Weather');
+    expect(weather).toContain("San Luis Obispo Airport");
+    expect(weather).toContain("70°F");
+    expect(weather).not.toContain("Montana State");
+    expect(weather).toContain('value="airport"');
+    expect(weather).toContain('type="hidden"');
+    expect(weather).toContain('name="category"');
+    expect(weather).toContain('value="Weather"');
+    expect(weather).toContain('href="/?category=Sports&amp;q=airport"');
+    expect(weather).toContain('href="/?q=airport"');
 
-    const missed = await renderHome({ category: "Music", q: "workshop" });
+    const hackathon = await renderHome({ category: "Hackathon" });
+    expect(hackathon).toContain('aria-current="true">Hackathon');
+    expect(hackathon).toContain("Hackathon prize forecasts");
+    expect(hackathon).not.toContain("Will the example workshop");
+
+    const missed = await renderHome({ category: "Weather", q: "workshop" });
     expect(missed).toContain("No matching forecasts");
     expect(missed).toContain(
-      "No example forecast matches this search. Clear the search or choose another category.",
+      "No forecast matches this search. Clear the search or choose another category.",
     );
-    expect(missed).not.toContain(">Example<");
-    expect(missed).not.toContain("Will the campus concert");
+    expect(missed).not.toContain("San Luis Obispo Airport");
 
-    const unknown = await renderHome({ category: "Weather" });
+    const unknown = await renderHome({ category: "Music" });
     expect(unknown).toContain(emptyForecastMessage({ category: "unknown", query: "" }));
     expect(unknown).not.toContain('aria-current="true"');
-    expect(unknown).not.toContain(">Example<");
+    expect(unknown).not.toContain(">Confirm<");
     expect(unknown.toLowerCase()).not.toMatch(banned);
   });
 
@@ -144,6 +144,9 @@ describe("example forecasts", () => {
       "page.tsx",
       "shell.tsx",
       "examples/[id]/page.tsx",
+      "volleyball-match.tsx",
+      "live-position.tsx",
+      "live-forecasts.ts",
     ]
       .map((file) => readFileSync(join(here, "../src/app", file), "utf8"))
       .join("\n");

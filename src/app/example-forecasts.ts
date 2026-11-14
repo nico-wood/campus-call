@@ -1,7 +1,7 @@
-export const CATEGORIES = ["All", "Sports", "Music", "Dining", "Hackathon"] as const;
+export const CATEGORIES = ["All", "Sports", "Weather", "Hackathon"] as const;
 
 export type Category = (typeof CATEGORIES)[number];
-export type ForecastCategory = Exclude<Category, "All">;
+export type ForecastCategory = "Sports" | "Music" | "Dining" | "Hackathon" | "Weather";
 export type ForecastShape = "yes-no" | "higher-lower" | "earlier-later";
 
 export type ExampleOutcome = {
@@ -158,10 +158,10 @@ export function exampleEventHref(
 
 export function emptyForecastMessage(state: ListState): string {
   if (state.category === "unknown") {
-    return "That category is not on this board. Choose All, Sports, Music, Dining, or Hackathon.";
+    return "That category is not on this board. Choose All, Sports, Weather, or Hackathon.";
   }
   if (state.query) {
-    return "No example forecast matches this search. Clear the search or choose another category.";
+    return "No forecast matches this search. Clear the search or choose another category.";
   }
-  return "No example forecasts are in this category.";
+  return "No forecasts are in this category.";
 }

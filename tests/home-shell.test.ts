@@ -14,7 +14,7 @@ describe("home shell", () => {
     expect(html).toContain(">Campus Call<");
     expect(html).toContain('placeholder="Search forecasts"');
     expect(html).toContain(">Portfolio<");
-    for (const category of ["All", "Sports", "Music", "Dining", "Hackathon"]) {
+    for (const category of ["All", "Sports", "Weather", "Hackathon"]) {
       expect(html).toContain(`>${category}<`);
     }
     expect(html.match(/aria-current="true"/g)).toHaveLength(1);

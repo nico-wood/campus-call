@@ -858,6 +858,8 @@ a.outcome:hover {
 .forecast-card:hover { border-color: var(--text-soft); }
 .forecast-card .written-note { font-size: 0.75rem; }
 .card-footer { display: flex; align-items: center; gap: var(--space-3); width: 100%; border-top: 1px solid var(--border); padding-top: var(--space-3); }
+.live-forecast-card .card-footer { flex-wrap: wrap; align-items: flex-start; }
+.live-forecast-card .card-footer a { flex-basis: 100%; }
 .card-footer .forecast-close { flex: 1; color: var(--text-soft); font-size: 0.75rem; }
 .card-open { display: inline-flex; align-items: center; justify-content: center; flex: none; width: var(--control-height); min-height: var(--control-height); border-radius: var(--space-2); color: var(--text-muted); text-decoration: none; font-size: var(--text-lg); }
 .card-open:hover { background: var(--surface-raised); color: var(--accent); }
@@ -1067,6 +1069,17 @@ a.outcome:hover {
 }
 .volleyball-match { display: flex; flex-direction: column; gap: var(--space-4); margin-bottom: var(--space-6); padding: var(--space-5); border: 1px solid var(--border); border-radius: var(--radius-lg); background: var(--surface); }
 .volleyball-heading h2 { margin: 0 0 var(--space-3); font-size: var(--text-xl); font-weight: 550; letter-spacing: -0.03em; }
+.volleyball-teams { display: flex; align-items: center; gap: var(--space-3); flex-wrap: wrap; }
+.team-lockup { display: inline-flex; align-items: center; gap: var(--space-2); }
+.team-mark { width: 2rem; height: 2rem; object-fit: contain; flex: none; }
+.team-vs { color: var(--text-soft); font-size: var(--text-sm); font-weight: 500; }
+.live-position { display: flex; flex-direction: column; gap: var(--space-3); margin-top: var(--space-2); padding: var(--space-3); border-radius: var(--radius-md); background: var(--surface); }
+.live-position .position-amount { margin-top: 0; padding-block: var(--space-3); }
+.live-position .position-amount input { font-size: var(--text-xl); width: 40%; }
+.live-position .position-choices button { min-height: 3.25rem; }
+.live-position .position-selection { align-items: center; padding-block: 0; }
+.live-position .confirm { width: 100%; }
+.quick-amounts button[aria-pressed="true"] { color: var(--text); border-color: var(--accent); }
 .volleyball-heading p { margin: 0 0 var(--space-3); color: var(--text-muted); }
 .volleyball-markets { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--space-4); margin: 0; padding: 0; list-style: none; }
 .volleyball-card { display: flex; flex-direction: column; gap: var(--space-3); height: 100%; padding: var(--space-4); border: 1px solid var(--border); border-radius: var(--radius-md); background: var(--bg); }

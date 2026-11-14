@@ -4,6 +4,7 @@ import { fileURLToPath } from "node:url";
 import { renderToStaticMarkup } from "react-dom/server";
 import { describe, expect, it } from "vitest";
 import { EXAMPLES } from "../src/app/example-forecasts";
+import { LIVE_FORECASTS } from "../src/app/live-forecasts";
 import {
   HACKATHON_EVENT,
   HACKATHON_QR_HREF,
@@ -63,6 +64,9 @@ function expectHackathonOnly(html: string, enrollment: "qr" | "closed"): void {
   expect(html).not.toContain("localStorage");
   for (const example of EXAMPLES) {
     expect(html).not.toContain(example.question);
+  }
+  for (const forecast of LIVE_FORECASTS) {
+    expect(html).not.toContain(forecast.question);
   }
   expect(html).not.toMatch(banned);
   if (enrollment === "closed") {
@@ -211,9 +215,9 @@ describe("hackathon QR door", () => {
     expect(ledger.markets).toEqual({});
 
     const home = renderToStaticMarkup(await HomePage());
-    expect(home).toContain(EXAMPLES[0]?.question);
-    expect(home).toContain(">Example<");
+    expect(home).toContain(LIVE_FORECASTS[0]?.question);
     expect(home).toContain("forecast-card");
+    expect(home).not.toContain(EXAMPLES[0]?.question);
   });
 
   it("shows the demo form only for the staged QR pair and does not copy unknown queries", async () => {
@@ -288,7 +292,8 @@ describe("hackathon QR door", () => {
       expect(html).not.toContain("verified ownership");
       expect(html).not.toContain("id=\"qr-demo-name\"");
     }
-    expect(home).toContain(">Example<");
+    expect(home).toContain("Who will win: Cal Poly or Montana State?");
+    expect(home).not.toContain(">Example<");
     expect(example).toContain(">Example<");
     expect(example).toContain(">Confirm<");
 

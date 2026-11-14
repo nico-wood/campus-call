@@ -2,11 +2,13 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { ExampleEventView } from "../../example-event";
 import {
+  CATEGORIES,
   EXAMPLES,
   firstParam,
   getExample,
   readListState,
   resolveSearchParams,
+  type Category,
   type SearchParamsInput,
 } from "../../example-forecasts";
 
@@ -41,7 +43,8 @@ export default async function ExampleEventPage({
   const resolved = await resolveSearchParams(searchParams);
   const state = readListState(resolved);
   const hasCategory = firstParam(resolved.category).trim() !== "";
-  const category = hasCategory && state.category !== "unknown" ? state.category : example.category;
+  const listed = hasCategory && state.category !== "unknown" ? state.category : example.category;
+  const category: Category = (CATEGORIES as readonly string[]).includes(listed) ? (listed as Category) : "All";
 
   return <ExampleEventView example={example} category={category} query={state.query} />;
 }

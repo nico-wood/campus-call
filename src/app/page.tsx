@@ -1,6 +1,5 @@
 import { ForecastList } from "./forecast-list";
 import {
-  filterExamples,
   readListState,
   resolveSearchParams,
   type SearchParamsInput,
@@ -15,7 +14,7 @@ export default async function HomePage({
   const state = readListState(await resolveSearchParams(searchParams));
   return (
     <Shell category={state.category} query={state.query}>
-      <ForecastList state={state} examples={filterExamples(state)} />
+      <ForecastList state={state} />
     </Shell>
   );
 }

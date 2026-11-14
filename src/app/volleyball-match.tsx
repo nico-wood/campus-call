@@ -1,4 +1,11 @@
+import { LivePosition } from "./live-position";
+
 const SOURCE_URL = "https://gopoly.com/sports/womens-volleyball/schedule";
+
+const TEAMS = [
+  { name: "Cal Poly", src: "/teams/cal-poly.svg" },
+  { name: "Sacramento State", src: "/teams/sacramento-state.svg" },
+] as const;
 
 const MARKETS = [
   {
@@ -38,7 +45,17 @@ export function VolleyballMatch() {
     <section className="volleyball-match" aria-labelledby="volleyball-match-title">
       <div className="volleyball-heading">
         <p className="eyebrow">Women's volleyball · Saturday</p>
-        <h2 id="volleyball-match-title">Cal Poly vs Sacramento State</h2>
+        <h2 id="volleyball-match-title" className="volleyball-teams">
+          <span className="team-lockup">
+            <img className="team-mark" src={TEAMS[0].src} alt="" />
+            <span>{TEAMS[0].name}</span>
+          </span>
+          <span className="team-vs">vs</span>
+          <span className="team-lockup">
+            <img className="team-mark" src={TEAMS[1].src} alt="" />
+            <span>{TEAMS[1].name}</span>
+          </span>
+        </h2>
         <p>Cal Poly (18–7, 14–1 Big West) hosts Sacramento State (14–12, 9–6 Big West) at Mott Athletics Center.</p>
         <p>Cal Poly won the first meeting 3–0 at Sacramento State on October 1. The match is Saturday, Nov. 14, 2026, at 4:00 p.m. PT.</p>
         <p className="written-note">Market probability is not published for this match yet.</p>
@@ -48,9 +65,9 @@ export function VolleyballMatch() {
           <li key={market.id}>
             <article className="volleyball-card">
               <h3>{market.question}</h3>
-              <p className="volleyball-outcomes">{market.outcomes.join(" · ")}</p>
               <p>{market.resolution}</p>
               <p className="forecast-close">Closes Saturday, Nov. 14, 2026, 3:55 p.m. PT</p>
+              <LivePosition id={market.id} outcomes={market.outcomes} marks={{ "Cal Poly": TEAMS[0].src, "Sacramento State": TEAMS[1].src }} />
             </article>
           </li>
         ))}
