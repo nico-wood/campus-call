@@ -14,7 +14,7 @@ Build `research/10-build-spec.md`. That file is the demo. Do these in order. Do 
 
 Overnight execution: `docs/overnight/LEAD-PROMPT.md` is the loop. It chains one program Mode A, then each EP as build, Mode B, and Mode C when a screen changes, and it continues after a passing gate without waiting for review. `docs/overnight/GOAL.md` is the shared brief. `docs/overnight/EP-PLAN.md` is the job list. Routine decisions go in `docs/overnight/DECISIONS.md`. Do not use `scripts/loop.ps1` for this queue.
 
-- [ ] Home. Campus example list. Categories All, Sports, Music, Dining, and the hackathon. Each campus card is labeled Example. Confirm does nothing and spends nothing.
+- [x] Home. Campus example list. Categories All, Sports, Music, Dining, and the hackathon. Each campus card is labeled Example. Confirm does nothing and spends nothing.
 - [ ] QR route. Opens the hackathon event only. No home, and no example cards.
 - [ ] One balance. Grant 1,000 virtual credits once, after the QR plus an email and a name. The same email does not get a second grant.
 - [ ] Four hackathon tickets. Main prize is 1st, 2nd, and 3rd. Then OpenAI, Startup Launch, and Best Use of AI. Each ticket confirms on its own. The same team may be named more than once. An overspend is refused and writes nothing. Picks lock Sunday 15 November 2026 at 12:00 p.m. PT. The participant guide is the only schedule source: https://cpvc-ai-hackathon-guide.vercel.app/#fri .
