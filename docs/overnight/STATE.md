@@ -6,7 +6,8 @@ Chat history is not memory. The next agent reads this file, `LEAD-PROMPT.md`, an
 
 - Stage: program Mode A, round 0 FAIL, round 1 not scored yet. Weighted 9.45. Major 5. Blocking 0.
 - Lenses: policy 9.8, cut order 9.0, completeness 9.8, architecture 9.2.
-- Base: the commit that records this file.
+- Base: `13e937e`
+- Round 1 graders are running. Do not start another round 1 panel.
 - Product code: not started
 - Result files: `.agent/research/cc-program-design-autoresearch/round-0-*.md` and `SCORE-HISTORY.md`
 - Patches applied in `research/10-build-spec.md`, `docs/overnight/DECISIONS.md`, and `docs/overnight/EP-PLAN.md` for the Chick-fil-A ledger, pre-noon entrants, Hamilton dollars, and the falsifiable acceptance lines.
