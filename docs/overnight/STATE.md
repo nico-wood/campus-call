@@ -4,7 +4,7 @@ Chat history is not memory. The next agent reads this file, `LEAD-PROMPT.md`, an
 
 ## Now
 
-- Stage: CC-005 open, not implemented. Local Supabase did not boot. `npx supabase start` exited 1 because Docker was not found. `npx supabase test db` exited 1 because 127.0.0.1:54322 refused the connection. The One balance row stays open. CC-005 is not accepted. CC-006 was not started. A second writer must not start.
+- Stage: CC-005 open, not implemented. Attempt 2 confirmed Docker is not installed: no `docker` or `podman` on PATH, no Docker Desktop binary in Program Files or LocalAppData, and no Docker service. `npx supabase test db` already exited 1 with connection refused on 127.0.0.1:54322. Do not start CC-006 or later. Do not apply a hosted migration. The One balance row stays open. CC-005 is not accepted. A second writer must not start.
 - Log: `logs/CC-005.md`. Status: not implemented. Docker did not boot. CC-004 remains accepted in `logs/CC-004.md`.
 - Scored plan commit: `9c83c89`. CC-004 base: `2421902`. Product: `fcbb9ea`. Row: `9016a4f`.
 - Saves: commit every green stage. The local brain handoff for Mode A and for CC-001 through CC-004 is still due. Do not push the repo or the brain. If the brain write stops, continue from this file.
