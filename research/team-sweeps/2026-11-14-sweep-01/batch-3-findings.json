@@ -1,0 +1,2344 @@
+{
+  "batch": 3,
+  "checked_at": "2026-11-14 19:21:17 UTC",
+  "scope": "First public-source sweep of 30 check-in team labels and 91 assigned roster rows. No current winner probabilities assigned.",
+  "teams": [
+    {
+      "team": "AI Warriors!",
+      "roster_status": "Listed team label in supplied check-in sheet; active submission/eligibility unverified",
+      "checked_at": "2026-11-14 19:21:17 UTC",
+      "members": [
+        {
+          "name": "Holly Steen",
+          "source_row": 179,
+          "major": "Bioresource and Agricultural Engineering",
+          "year": "2nd year",
+          "profile_status": "likely_public_match",
+          "profile_urls": [
+            "https://www.linkedin.com/in/holly-steen-4bba86347"
+          ],
+          "findings": "Likely school-matched public profile. Lists Cal Poly education and coding coursework; no current-event project found.",
+          "search_queries": [
+            "\"Holly Steen\" GitHub \"Cal Poly\""
+          ]
+        },
+        {
+          "name": "Mason Di Leo",
+          "source_row": 290,
+          "major": "Business",
+          "year": "2nd year",
+          "profile_status": "not_located_in_first_sweep",
+          "profile_urls": [],
+          "findings": "Targeted public search did not resolve a trustworthy GitHub/profile match. This is not evidence of no account, no skills, or no progress.",
+          "search_queries": [
+            "\"Mason Di Leo\" GitHub \"Cal Poly\""
+          ]
+        },
+        {
+          "name": "Michael Fischbach",
+          "source_row": 308,
+          "major": "Mechanical Engineering",
+          "year": "3rd year",
+          "profile_status": "likely_public_match",
+          "profile_urls": [
+            "https://www.linkedin.com/in/mefisch"
+          ],
+          "findings": "Likely school/discipline-matched profile. Lists mechanical engineering and a prior Python automation project. Profile year differs from roster; confirm identity.",
+          "search_queries": [
+            "\"Michael Fischbach\" GitHub \"Cal Poly\""
+          ]
+        }
+      ],
+      "team_search_queries": [
+        "\"AI Warriors\" \"Holly Steen\""
+      ],
+      "project_status": "not_located_in_first_sweep",
+      "repo_urls": [],
+      "live_urls": [],
+      "product": "Unknown current-event product",
+      "audience": "Unknown current-event audience",
+      "progress": "Unknown current-event progress; no penalty inferred from missing public evidence",
+      "evidence": [
+        {
+          "url": "https://www.linkedin.com/in/holly-steen-4bba86347",
+          "claim": "Likely school-matched public profile. Lists Cal Poly education and coding coursework; no current-event project found.",
+          "observed_at": "2026-11-14 19:21:17 UTC",
+          "source_date": null,
+          "access": "Public search-index excerpt unless noted as directly inspected"
+        },
+        {
+          "url": "https://www.linkedin.com/in/mefisch",
+          "claim": "Likely school/discipline-matched profile. Lists mechanical engineering and a prior Python automation project. Profile year differs from roster; confirm identity.",
+          "observed_at": "2026-11-14 19:21:17 UTC",
+          "source_date": null,
+          "access": "Public search-index excerpt unless noted as directly inspected"
+        }
+      ],
+      "uncertainties": [
+        "Team label comes from a check-in roster, not a verified final submission list.",
+        "Project ownership, current-event association, award entry, functionality, customer validation, and pitch quality remain unverified."
+      ],
+      "next_checks": [
+        "Resolve public GitHub handles from a team/portfolio crosslink.",
+        "Recheck public repo listings for recent changes and explicit event/team attribution.",
+        "Obtain public project description/demo or a team-provided link when available."
+      ]
+    },
+    {
+      "team": "Axiom",
+      "roster_status": "Listed team label in supplied check-in sheet; active submission/eligibility unverified",
+      "checked_at": "2026-11-14 19:21:17 UTC",
+      "members": [
+        {
+          "name": "Carlos Alfaro",
+          "source_row": 89,
+          "major": "Mechanical Engineering",
+          "year": "4th year",
+          "profile_status": "not_located_in_first_sweep",
+          "profile_urls": [],
+          "findings": "Targeted public search did not resolve a trustworthy GitHub/profile match. This is not evidence of no account, no skills, or no progress.",
+          "search_queries": [
+            "\"Carlos Alfaro\" GitHub \"Cal Poly\""
+          ]
+        },
+        {
+          "name": "Hayden Biesiadecki",
+          "source_row": 173,
+          "major": "Mechanical engineering",
+          "year": "2nd year",
+          "profile_status": "not_located_in_first_sweep",
+          "profile_urls": [],
+          "findings": "Targeted public search did not resolve a trustworthy GitHub/profile match. This is not evidence of no account, no skills, or no progress.",
+          "search_queries": [
+            "\"Hayden Biesiadecki\" GitHub \"Cal Poly\""
+          ]
+        },
+        {
+          "name": "Milo Rathbun",
+          "source_row": 318,
+          "major": "Industrial Technology & Packaging",
+          "year": "4th year",
+          "profile_status": "likely_public_match",
+          "profile_urls": [
+            "https://accounts.freestyleacademy.rocks/~MiloR/showcase/"
+          ],
+          "findings": "Likely name-matched portfolio explicitly mentions plans for Cal Poly and filmmaking/pitch presentation work. Historical background only.",
+          "search_queries": [
+            "\"Milo Rathbun\" GitHub \"Cal Poly\""
+          ]
+        },
+        {
+          "name": "Ryan Welke",
+          "source_row": 378,
+          "major": "Business",
+          "year": "4th year",
+          "profile_status": "not_located_in_first_sweep",
+          "profile_urls": [],
+          "findings": "Targeted public search did not resolve a trustworthy GitHub/profile match. This is not evidence of no account, no skills, or no progress.",
+          "search_queries": [
+            "\"Ryan Welke\" GitHub \"Cal Poly\""
+          ]
+        }
+      ],
+      "team_search_queries": [
+        "\"Axiom\" \"Hayden Biesiadecki\""
+      ],
+      "project_status": "not_located_in_first_sweep",
+      "repo_urls": [],
+      "live_urls": [],
+      "product": "Unknown current-event product",
+      "audience": "Unknown current-event audience",
+      "progress": "Unknown current-event progress; no penalty inferred from missing public evidence",
+      "evidence": [
+        {
+          "url": "https://accounts.freestyleacademy.rocks/~MiloR/showcase/",
+          "claim": "Likely name-matched portfolio explicitly mentions plans for Cal Poly and filmmaking/pitch presentation work. Historical background only.",
+          "observed_at": "2026-11-14 19:21:17 UTC",
+          "source_date": null,
+          "access": "Public search-index excerpt unless noted as directly inspected"
+        }
+      ],
+      "uncertainties": [
+        "Team label comes from a check-in roster, not a verified final submission list.",
+        "Project ownership, current-event association, award entry, functionality, customer validation, and pitch quality remain unverified."
+      ],
+      "next_checks": [
+        "Resolve public GitHub handles from a team/portfolio crosslink.",
+        "Recheck public repo listings for recent changes and explicit event/team attribution.",
+        "Obtain public project description/demo or a team-provided link when available."
+      ]
+    },
+    {
+      "team": "Big larp",
+      "roster_status": "Listed team label in supplied check-in sheet; active submission/eligibility unverified",
+      "checked_at": "2026-11-14 19:21:17 UTC",
+      "members": [
+        {
+          "name": "Milo Efstratis",
+          "source_row": 317,
+          "major": "Business admin",
+          "year": "1st year",
+          "profile_status": "likely_public_match",
+          "profile_urls": [
+            "https://www.linkedin.com/in/milo-efstratis-018980366"
+          ],
+          "findings": "Likely school/year-matched profile lists a prior DealLens AI venture-capital review workflow. No evidence this is Big larp's current entry.",
+          "search_queries": [
+            "\"Milo Efstratis\" GitHub \"Cal Poly\""
+          ]
+        },
+        {
+          "name": "Nicholas Vatman",
+          "source_row": 332,
+          "major": "Cs",
+          "year": "1st year",
+          "profile_status": "not_located_in_first_sweep",
+          "profile_urls": [],
+          "findings": "Targeted public search did not resolve a trustworthy GitHub/profile match. This is not evidence of no account, no skills, or no progress.",
+          "search_queries": [
+            "\"Nicholas Vatman\" GitHub \"Cal Poly\""
+          ]
+        }
+      ],
+      "team_search_queries": [
+        "\"Big larp\" \"Milo Efstratis\""
+      ],
+      "project_status": "not_located_in_first_sweep",
+      "repo_urls": [],
+      "live_urls": [],
+      "product": "Unknown current-event product",
+      "audience": "Unknown current-event audience",
+      "progress": "Unknown current-event progress; no penalty inferred from missing public evidence",
+      "evidence": [
+        {
+          "url": "https://www.linkedin.com/in/milo-efstratis-018980366",
+          "claim": "Likely school/year-matched profile lists a prior DealLens AI venture-capital review workflow. No evidence this is Big larp's current entry.",
+          "observed_at": "2026-11-14 19:21:17 UTC",
+          "source_date": null,
+          "access": "Public search-index excerpt unless noted as directly inspected"
+        }
+      ],
+      "uncertainties": [
+        "Team label comes from a check-in roster, not a verified final submission list.",
+        "Project ownership, current-event association, award entry, functionality, customer validation, and pitch quality remain unverified."
+      ],
+      "next_checks": [
+        "Resolve public GitHub handles from a team/portfolio crosslink.",
+        "Recheck public repo listings for recent changes and explicit event/team attribution.",
+        "Obtain public project description/demo or a team-provided link when available."
+      ]
+    },
+    {
+      "team": "Cache us if you can",
+      "roster_status": "Listed team label in supplied check-in sheet; active submission/eligibility unverified",
+      "checked_at": "2026-11-14 19:21:17 UTC",
+      "members": [
+        {
+          "name": "Dhairya Prajapati",
+          "source_row": 113,
+          "major": "Computer Science",
+          "year": "1st year",
+          "profile_status": "likely_public_match",
+          "profile_urls": [
+            "https://www.linkedin.com/in/dhairya-prajapati-082a08357"
+          ],
+          "findings": "School-matched public profile explicitly links github.com/Dhairya19793. Prior StudyBuddy post names a different team/event; separate from current entry.",
+          "search_queries": [
+            "\"Dhairya Prajapati\" GitHub \"Cal Poly\""
+          ]
+        },
+        {
+          "name": "Haarish Yogeswaran",
+          "source_row": 168,
+          "major": "Electrical Engineering",
+          "year": "1st year",
+          "profile_status": "not_located_in_first_sweep",
+          "profile_urls": [],
+          "findings": "Targeted public search did not resolve a trustworthy GitHub/profile match. This is not evidence of no account, no skills, or no progress.",
+          "search_queries": [
+            "\"Haarish Yogeswaran\" GitHub \"Cal Poly\""
+          ]
+        },
+        {
+          "name": "Hiran Vasu",
+          "source_row": 178,
+          "major": "Statistics",
+          "year": "1st year",
+          "profile_status": "not_located_in_first_sweep",
+          "profile_urls": [],
+          "findings": "Targeted public search did not resolve a trustworthy GitHub/profile match. This is not evidence of no account, no skills, or no progress.",
+          "search_queries": [
+            "\"Hiran Vasu\" GitHub \"Cal Poly\""
+          ]
+        },
+        {
+          "name": "Rayan Khan",
+          "source_row": 361,
+          "major": "Computer Engineering",
+          "year": "1st year",
+          "profile_status": "likely_public_match",
+          "profile_urls": [
+            "https://www.linkedin.com/in/rayankhan07"
+          ],
+          "findings": "Likely Cal Poly computing student profile, education 2026–2030. No GitHub link or current project resolved.",
+          "search_queries": [
+            "\"Rayan Khan\" GitHub \"Cal Poly\""
+          ]
+        }
+      ],
+      "team_search_queries": [
+        "\"Cache us if you can\" hackathon github"
+      ],
+      "project_status": "candidate_current_event_project",
+      "repo_urls": [
+        "https://github.com/Dhairya19793/stagesight-web"
+      ],
+      "live_urls": [
+        "https://stagesight-web.onrender.com/"
+      ],
+      "product": "Candidate StageSight: presentation rehearsal recording, transcripts, AI content coaching, and optional on-device visual overlays.",
+      "audience": "Inferred from README: people rehearsing presentations using a laptop or phone. Customer segment/demand unverified.",
+      "progress": "Public repo created 2026-11-14T02:32:11Z and pushed 19:04:10Z. README at a17b206dcf2239fd133c3fe5bb0e911603cbd646 describes a development build and deployed Render URL; direct code/root inspection supports recording/account/AI architecture. Live app could not be retrieved by web tool, so health and end-to-end behavior remain unverified.",
+      "evidence": [
+        {
+          "url": "https://www.linkedin.com/in/dhairya-prajapati-082a08357",
+          "claim": "School-matched public profile explicitly links github.com/Dhairya19793. Prior StudyBuddy post names a different team/event; separate from current entry.",
+          "observed_at": "2026-11-14 19:21:17 UTC",
+          "source_date": null,
+          "access": "Public search-index excerpt unless noted as directly inspected"
+        },
+        {
+          "url": "https://www.linkedin.com/in/rayankhan07",
+          "claim": "Likely Cal Poly computing student profile, education 2026–2030. No GitHub link or current project resolved.",
+          "observed_at": "2026-11-14 19:21:17 UTC",
+          "source_date": null,
+          "access": "Public search-index excerpt unless noted as directly inspected"
+        },
+        {
+          "url": "https://www.linkedin.com/in/dhairya-prajapati-082a08357",
+          "claim": "Public profile explicitly links Dhairya19793 GitHub account.",
+          "observed_at": "2026-11-14 19:21:17 UTC",
+          "source_date": null,
+          "access": "Search-index excerpt"
+        },
+        {
+          "url": "https://github.com/Dhairya19793/stagesight-web",
+          "claim": "GitHub API: public repo created 2026-11-14T02:32:11Z; pushed 2026-11-14T19:04:10Z; publishes Render homepage.",
+          "observed_at": "2026-11-14 19:21:17 UTC",
+          "source_date": "2026-11-14T19:04:10Z",
+          "access": "GitHub connector, public-only repository search"
+        },
+        {
+          "url": "https://github.com/Dhairya19793/stagesight-web/blob/a17b206dcf2239fd133c3fe5bb0e911603cbd646/README.md",
+          "claim": "README describes an OpenAI-sponsored hackathon presentation-practice development build, deployment claim, technology, and explicit end-to-end testing gaps.",
+          "observed_at": "2026-11-14 19:21:17 UTC",
+          "source_date": "2026-11-14T19:04:09Z",
+          "access": "Direct pinned GitHub file read"
+        },
+        {
+          "url": "https://github.com/Dhairya19793/stagesight-web/blob/a17b206dcf2239fd133c3fe5bb0e911603cbd646/ai.cjs",
+          "claim": "Inspected server code includes authenticated recording ownership checks and AI analysis routing. Code was read, not executed or independently validated.",
+          "observed_at": "2026-11-14 19:21:17 UTC",
+          "source_date": "2026-11-14T19:04:09Z",
+          "access": "Direct pinned GitHub file read"
+        }
+      ],
+      "uncertainties": [
+        "Team label comes from a check-in roster, not a verified final submission list.",
+        "Project ownership, current-event association, award entry, functionality, customer validation, and pitch quality remain unverified.",
+        "Account identity has a public crosslink, but repository-to-Cache-us-if-you-can membership and exact current-event submission are not confirmed. README says OpenAI-sponsored hackathon without naming this event.",
+        "README deployment and tests are author claims. Unverified camera-to-upload-to-report flow, mobile support, two-account isolation, demand, challenge entry."
+      ],
+      "next_checks": [
+        "Highest priority: corroborate StageSight ↔ Cache us if you can and inspect any public project/demo shared by the other three listed members.",
+        "Resolve public GitHub handles from a team/portfolio crosslink.",
+        "Recheck public repo listings for recent changes and explicit event/team attribution.",
+        "Obtain public project description/demo or a team-provided link when available."
+      ]
+    },
+    {
+      "team": "Central Coast Computing",
+      "roster_status": "Listed team label in supplied check-in sheet; active submission/eligibility unverified",
+      "checked_at": "2026-11-14 19:21:17 UTC",
+      "members": [
+        {
+          "name": "Eitan Shafran",
+          "source_row": 125,
+          "major": "Electrical Engineering",
+          "year": "4th year",
+          "profile_status": "not_located_in_first_sweep",
+          "profile_urls": [],
+          "findings": "Targeted public search did not resolve a trustworthy GitHub/profile match. This is not evidence of no account, no skills, or no progress.",
+          "search_queries": [
+            "\"Eitan Shafran\" GitHub \"Cal Poly\""
+          ]
+        },
+        {
+          "name": "Jackson Fisher",
+          "source_row": 195,
+          "major": "Mechanical Engineering",
+          "year": "5th year or later",
+          "profile_status": "not_located_in_first_sweep",
+          "profile_urls": [],
+          "findings": "Targeted public search did not resolve a trustworthy GitHub/profile match. This is not evidence of no account, no skills, or no progress.",
+          "search_queries": [
+            "\"Jackson Fisher\" GitHub \"Cal Poly\""
+          ]
+        },
+        {
+          "name": "Luis Garcia",
+          "source_row": 275,
+          "major": "Computer Science",
+          "year": "4th year",
+          "profile_status": "not_located_in_first_sweep",
+          "profile_urls": [],
+          "findings": "Targeted public search did not resolve a trustworthy GitHub/profile match. This is not evidence of no account, no skills, or no progress.",
+          "search_queries": [
+            "\"Luis Garcia\" GitHub \"Cal Poly\""
+          ]
+        },
+        {
+          "name": "Luke Corson",
+          "source_row": 279,
+          "major": "Electrical engineering",
+          "year": "4th year",
+          "profile_status": "not_located_in_first_sweep",
+          "profile_urls": [],
+          "findings": "Targeted public search did not resolve a trustworthy GitHub/profile match. This is not evidence of no account, no skills, or no progress.",
+          "search_queries": [
+            "\"Luke Corson\" GitHub \"Cal Poly\""
+          ]
+        }
+      ],
+      "team_search_queries": [
+        "\"Central Coast Computing\" \"Eitan Shafran\""
+      ],
+      "project_status": "not_located_in_first_sweep",
+      "repo_urls": [],
+      "live_urls": [],
+      "product": "Unknown current-event product",
+      "audience": "Unknown current-event audience",
+      "progress": "Unknown current-event progress; no penalty inferred from missing public evidence",
+      "evidence": [],
+      "uncertainties": [
+        "Team label comes from a check-in roster, not a verified final submission list.",
+        "Project ownership, current-event association, award entry, functionality, customer validation, and pitch quality remain unverified."
+      ],
+      "next_checks": [
+        "Resolve public GitHub handles from a team/portfolio crosslink.",
+        "Recheck public repo listings for recent changes and explicit event/team attribution.",
+        "Obtain public project description/demo or a team-provided link when available."
+      ]
+    },
+    {
+      "team": "Constructers",
+      "roster_status": "Listed team label in supplied check-in sheet; active submission/eligibility unverified",
+      "checked_at": "2026-11-14 19:21:17 UTC",
+      "members": [
+        {
+          "name": "Katja Friess",
+          "source_row": 238,
+          "major": "Food Science",
+          "year": "4th year",
+          "profile_status": "likely_public_match",
+          "profile_urls": [
+            "https://fsn.calpoly.edu/student-leadership-and-advisory-council-2025-26"
+          ],
+          "findings": "University page corroborates exact name, food-science affiliation, and senior status. No current-event product identified.",
+          "search_queries": [
+            "\"Katja Friess\" GitHub \"Cal Poly\""
+          ]
+        },
+        {
+          "name": "ronnie beck",
+          "source_row": 370,
+          "major": "Business Administration",
+          "year": "4th year",
+          "profile_status": "not_located_in_first_sweep",
+          "profile_urls": [],
+          "findings": "Targeted public search did not resolve a trustworthy GitHub/profile match. This is not evidence of no account, no skills, or no progress.",
+          "search_queries": [
+            "\"ronnie beck\" GitHub \"Cal Poly\""
+          ]
+        },
+        {
+          "name": "Ryan Sullivan",
+          "source_row": 376,
+          "major": "Business interested in construction and real estate development",
+          "year": "4th year",
+          "profile_status": "likely_public_match",
+          "profile_urls": [
+            "https://www.linkedin.com/in/ryan-sullivan3"
+          ],
+          "findings": "Likely school/discipline-matched profile describes business and real-estate interest. No current-event product identified.",
+          "search_queries": [
+            "\"Ryan Sullivan\" GitHub \"Cal Poly\""
+          ]
+        }
+      ],
+      "team_search_queries": [
+        "\"Constructers\" \"Katja Friess\""
+      ],
+      "project_status": "not_located_in_first_sweep",
+      "repo_urls": [],
+      "live_urls": [],
+      "product": "Unknown current-event product",
+      "audience": "Unknown current-event audience",
+      "progress": "Unknown current-event progress; no penalty inferred from missing public evidence",
+      "evidence": [
+        {
+          "url": "https://fsn.calpoly.edu/student-leadership-and-advisory-council-2025-26",
+          "claim": "University page corroborates exact name, food-science affiliation, and senior status. No current-event product identified.",
+          "observed_at": "2026-11-14 19:21:17 UTC",
+          "source_date": null,
+          "access": "Public search-index excerpt unless noted as directly inspected"
+        },
+        {
+          "url": "https://www.linkedin.com/in/ryan-sullivan3",
+          "claim": "Likely school/discipline-matched profile describes business and real-estate interest. No current-event product identified.",
+          "observed_at": "2026-11-14 19:21:17 UTC",
+          "source_date": null,
+          "access": "Public search-index excerpt unless noted as directly inspected"
+        }
+      ],
+      "uncertainties": [
+        "Team label comes from a check-in roster, not a verified final submission list.",
+        "Project ownership, current-event association, award entry, functionality, customer validation, and pitch quality remain unverified."
+      ],
+      "next_checks": [
+        "Resolve public GitHub handles from a team/portfolio crosslink.",
+        "Recheck public repo listings for recent changes and explicit event/team attribution.",
+        "Obtain public project description/demo or a team-provided link when available."
+      ]
+    },
+    {
+      "team": "Ctrl + Alt + Us",
+      "roster_status": "Listed team label in supplied check-in sheet; active submission/eligibility unverified",
+      "checked_at": "2026-11-14 19:21:17 UTC",
+      "members": [
+        {
+          "name": "Arsh Gupta",
+          "source_row": 44,
+          "major": "Architecture",
+          "year": "5th year or later",
+          "profile_status": "likely_public_match",
+          "profile_urls": [
+            "https://www.linkedin.com/in/arshg"
+          ],
+          "findings": "Likely Cal Poly architecture profile, 2022–2027. Describes prior Sherlock opportunity-research agent. Reject arshgupta.tech: Penn State CS, inconsistent with roster.",
+          "search_queries": [
+            "\"Arsh Gupta\" GitHub \"Cal Poly\""
+          ]
+        },
+        {
+          "name": "saina kakkar",
+          "source_row": 382,
+          "major": "computer science",
+          "year": "3rd year",
+          "profile_status": "likely_public_match",
+          "profile_urls": [
+            "https://www.linkedin.com/in/saina-kakkar"
+          ],
+          "findings": "Likely school/major-matched profile. University research page names Saina Kakkar in computer science; no current-event repo identified.",
+          "search_queries": [
+            "\"saina kakkar\" GitHub \"Cal Poly\""
+          ]
+        }
+      ],
+      "team_search_queries": [
+        "\"Ctrl + Alt + Us\" \"Cal Poly\""
+      ],
+      "project_status": "not_located_in_first_sweep",
+      "repo_urls": [],
+      "live_urls": [],
+      "product": "Unknown current-event product",
+      "audience": "Unknown current-event audience",
+      "progress": "Unknown current-event progress; no penalty inferred from missing public evidence",
+      "evidence": [
+        {
+          "url": "https://www.linkedin.com/in/arshg",
+          "claim": "Likely Cal Poly architecture profile, 2022–2027. Describes prior Sherlock opportunity-research agent. Reject arshgupta.tech: Penn State CS, inconsistent with roster.",
+          "observed_at": "2026-11-14 19:21:17 UTC",
+          "source_date": null,
+          "access": "Public search-index excerpt unless noted as directly inspected"
+        },
+        {
+          "url": "https://www.linkedin.com/in/saina-kakkar",
+          "claim": "Likely school/major-matched profile. University research page names Saina Kakkar in computer science; no current-event repo identified.",
+          "observed_at": "2026-11-14 19:21:17 UTC",
+          "source_date": null,
+          "access": "Public search-index excerpt unless noted as directly inspected"
+        }
+      ],
+      "uncertainties": [
+        "Team label comes from a check-in roster, not a verified final submission list.",
+        "Project ownership, current-event association, award entry, functionality, customer validation, and pitch quality remain unverified.",
+        "Rejected arshgupta.tech because it identifies Penn State CS rather than Cal Poly architecture. Do not merge same-name profiles."
+      ],
+      "next_checks": [
+        "Resolve public GitHub handles from a team/portfolio crosslink.",
+        "Recheck public repo listings for recent changes and explicit event/team attribution.",
+        "Obtain public project description/demo or a team-provided link when available."
+      ]
+    },
+    {
+      "team": "Eli and Bennett",
+      "roster_status": "Listed team label in supplied check-in sheet; active submission/eligibility unverified",
+      "checked_at": "2026-11-14 19:21:17 UTC",
+      "members": [
+        {
+          "name": "Bennett Stoddard",
+          "source_row": 64,
+          "major": "Kinesiology",
+          "year": "1st year",
+          "profile_status": "not_located_in_first_sweep",
+          "profile_urls": [],
+          "findings": "Targeted public search did not resolve a trustworthy GitHub/profile match. This is not evidence of no account, no skills, or no progress.",
+          "search_queries": [
+            "\"Bennett Stoddard\" GitHub \"Cal Poly\""
+          ]
+        },
+        {
+          "name": "Eli Ewig",
+          "source_row": 126,
+          "major": "Physics",
+          "year": "1st year",
+          "profile_status": "not_located_in_first_sweep",
+          "profile_urls": [],
+          "findings": "Targeted public search did not resolve a trustworthy GitHub/profile match. This is not evidence of no account, no skills, or no progress.",
+          "search_queries": [
+            "\"Eli Ewig\" GitHub \"Cal Poly\""
+          ]
+        }
+      ],
+      "team_search_queries": [
+        "\"Eli and Bennett\" hackathon"
+      ],
+      "project_status": "not_located_in_first_sweep",
+      "repo_urls": [],
+      "live_urls": [],
+      "product": "Unknown current-event product",
+      "audience": "Unknown current-event audience",
+      "progress": "Unknown current-event progress; no penalty inferred from missing public evidence",
+      "evidence": [],
+      "uncertainties": [
+        "Team label comes from a check-in roster, not a verified final submission list.",
+        "Project ownership, current-event association, award entry, functionality, customer validation, and pitch quality remain unverified."
+      ],
+      "next_checks": [
+        "Resolve public GitHub handles from a team/portfolio crosslink.",
+        "Recheck public repo listings for recent changes and explicit event/team attribution.",
+        "Obtain public project description/demo or a team-provided link when available."
+      ]
+    },
+    {
+      "team": "Fire It",
+      "roster_status": "Listed team label in supplied check-in sheet; active submission/eligibility unverified",
+      "checked_at": "2026-11-14 19:21:17 UTC",
+      "members": [
+        {
+          "name": "Lupita  Sanchez",
+          "source_row": 283,
+          "major": "Business Admin",
+          "year": "1st year",
+          "profile_status": "not_located_in_first_sweep",
+          "profile_urls": [],
+          "findings": "Targeted public search did not resolve a trustworthy GitHub/profile match. This is not evidence of no account, no skills, or no progress.",
+          "search_queries": [
+            "\"Lupita Sanchez\" GitHub \"Cal Poly\""
+          ]
+        },
+        {
+          "name": "Shakti Ann Kanyal",
+          "source_row": 398,
+          "major": "Business Administration",
+          "year": "1st year",
+          "profile_status": "likely_public_match",
+          "profile_urls": [
+            "https://freestyleacademy.rocks/~Shakti-AnnK/narrative-2/"
+          ],
+          "findings": "Likely name-matched portfolio links a May 2026 Cal Poly future post and documents design, storytelling, and pitch work. Historical background only.",
+          "search_queries": [
+            "\"Shakti Ann Kanyal\" GitHub \"Cal Poly\""
+          ]
+        }
+      ],
+      "team_search_queries": [
+        "\"Fire It\" \"Cal Poly\" hackathon"
+      ],
+      "project_status": "not_located_in_first_sweep",
+      "repo_urls": [],
+      "live_urls": [],
+      "product": "Unknown current-event product",
+      "audience": "Unknown current-event audience",
+      "progress": "Unknown current-event progress; no penalty inferred from missing public evidence",
+      "evidence": [
+        {
+          "url": "https://freestyleacademy.rocks/~Shakti-AnnK/narrative-2/",
+          "claim": "Likely name-matched portfolio links a May 2026 Cal Poly future post and documents design, storytelling, and pitch work. Historical background only.",
+          "observed_at": "2026-11-14 19:21:17 UTC",
+          "source_date": null,
+          "access": "Public search-index excerpt unless noted as directly inspected"
+        }
+      ],
+      "uncertainties": [
+        "Team label comes from a check-in roster, not a verified final submission list.",
+        "Project ownership, current-event association, award entry, functionality, customer validation, and pitch quality remain unverified."
+      ],
+      "next_checks": [
+        "Resolve public GitHub handles from a team/portfolio crosslink.",
+        "Recheck public repo listings for recent changes and explicit event/team attribution.",
+        "Obtain public project description/demo or a team-provided link when available."
+      ]
+    },
+    {
+      "team": "FJWJ",
+      "roster_status": "Listed team label in supplied check-in sheet; active submission/eligibility unverified",
+      "checked_at": "2026-11-14 19:21:17 UTC",
+      "members": [
+        {
+          "name": "Finn Retsky",
+          "source_row": 148,
+          "major": "Mechanical Engineering",
+          "year": "1st year",
+          "profile_status": "not_located_in_first_sweep",
+          "profile_urls": [],
+          "findings": "Targeted public search did not resolve a trustworthy GitHub/profile match. This is not evidence of no account, no skills, or no progress.",
+          "search_queries": [
+            "\"Finn Retsky\" GitHub \"Cal Poly\""
+          ]
+        },
+        {
+          "name": "Jayvin Lee",
+          "source_row": 212,
+          "major": "Mechanical Engineering",
+          "year": "1st year",
+          "profile_status": "not_located_in_first_sweep",
+          "profile_urls": [],
+          "findings": "Targeted public search did not resolve a trustworthy GitHub/profile match. This is not evidence of no account, no skills, or no progress.",
+          "search_queries": [
+            "\"Jayvin Lee\" GitHub \"Cal Poly\""
+          ]
+        },
+        {
+          "name": "Joshua Miovic",
+          "source_row": 226,
+          "major": "Aerospace Engineering",
+          "year": "1st year",
+          "profile_status": "not_located_in_first_sweep",
+          "profile_urls": [],
+          "findings": "Targeted public search did not resolve a trustworthy GitHub/profile match. This is not evidence of no account, no skills, or no progress.",
+          "search_queries": [
+            "\"Joshua Miovic\" GitHub \"Cal Poly\""
+          ]
+        },
+        {
+          "name": "Ward Morrison",
+          "source_row": 442,
+          "major": "Architectural Engineering",
+          "year": "1st year",
+          "profile_status": "not_located_in_first_sweep",
+          "profile_urls": [],
+          "findings": "Targeted public search did not resolve a trustworthy GitHub/profile match. This is not evidence of no account, no skills, or no progress.",
+          "search_queries": [
+            "\"Ward Morrison\" GitHub \"Cal Poly\""
+          ]
+        }
+      ],
+      "team_search_queries": [
+        "\"FJWJ\" hackathon"
+      ],
+      "project_status": "not_located_in_first_sweep",
+      "repo_urls": [],
+      "live_urls": [],
+      "product": "Unknown current-event product",
+      "audience": "Unknown current-event audience",
+      "progress": "Unknown current-event progress; no penalty inferred from missing public evidence",
+      "evidence": [],
+      "uncertainties": [
+        "Team label comes from a check-in roster, not a verified final submission list.",
+        "Project ownership, current-event association, award entry, functionality, customer validation, and pitch quality remain unverified."
+      ],
+      "next_checks": [
+        "Resolve public GitHub handles from a team/portfolio crosslink.",
+        "Recheck public repo listings for recent changes and explicit event/team attribution.",
+        "Obtain public project description/demo or a team-provided link when available."
+      ]
+    },
+    {
+      "team": "Future Founders",
+      "roster_status": "Listed team label in supplied check-in sheet; active submission/eligibility unverified",
+      "checked_at": "2026-11-14 19:21:17 UTC",
+      "members": [
+        {
+          "name": "Kaela  Fear",
+          "source_row": 233,
+          "major": "Business",
+          "year": "1st year",
+          "profile_status": "not_located_in_first_sweep",
+          "profile_urls": [],
+          "findings": "Targeted public search did not resolve a trustworthy GitHub/profile match. This is not evidence of no account, no skills, or no progress.",
+          "search_queries": [
+            "\"Kaela Fear\" GitHub \"Cal Poly\""
+          ]
+        },
+        {
+          "name": "Lily  Yakubov",
+          "source_row": 263,
+          "major": "ITP",
+          "year": "1st year",
+          "profile_status": "not_located_in_first_sweep",
+          "profile_urls": [],
+          "findings": "Targeted public search did not resolve a trustworthy GitHub/profile match. This is not evidence of no account, no skills, or no progress.",
+          "search_queries": [
+            "\"Lily Yakubov\" GitHub \"Cal Poly\""
+          ]
+        },
+        {
+          "name": "Ruby Anderson",
+          "source_row": 373,
+          "major": "Economics",
+          "year": "1st year",
+          "profile_status": "not_located_in_first_sweep",
+          "profile_urls": [],
+          "findings": "Targeted public search did not resolve a trustworthy GitHub/profile match. This is not evidence of no account, no skills, or no progress.",
+          "search_queries": [
+            "\"Ruby Anderson\" GitHub \"Cal Poly\""
+          ]
+        }
+      ],
+      "team_search_queries": [
+        "\"Future Founders\" \"Cal Poly\" hackathon"
+      ],
+      "project_status": "not_located_in_first_sweep",
+      "repo_urls": [],
+      "live_urls": [],
+      "product": "Unknown current-event product",
+      "audience": "Unknown current-event audience",
+      "progress": "Unknown current-event progress; no penalty inferred from missing public evidence",
+      "evidence": [],
+      "uncertainties": [
+        "Team label comes from a check-in roster, not a verified final submission list.",
+        "Project ownership, current-event association, award entry, functionality, customer validation, and pitch quality remain unverified."
+      ],
+      "next_checks": [
+        "Resolve public GitHub handles from a team/portfolio crosslink.",
+        "Recheck public repo listings for recent changes and explicit event/team attribution.",
+        "Obtain public project description/demo or a team-provided link when available."
+      ]
+    },
+    {
+      "team": "Goblin Gang",
+      "roster_status": "Listed team label in supplied check-in sheet; active submission/eligibility unverified",
+      "checked_at": "2026-11-14 19:21:17 UTC",
+      "members": [
+        {
+          "name": "Adam Houry",
+          "source_row": 7,
+          "major": "Electrical Engineering",
+          "year": "1st year",
+          "profile_status": "likely_public_match",
+          "profile_urls": [
+            "https://www.linkedin.com/in/adam-houry-803574416"
+          ],
+          "findings": "Likely school-matched profile. GitHub Oimeow/mnist appears in another person's liked post; it is NOT attributed to Adam.",
+          "search_queries": [
+            "\"Adam Houry\" GitHub \"Cal Poly\""
+          ]
+        },
+        {
+          "name": "Ellie Scribner",
+          "source_row": 136,
+          "major": "Environmental and soil sciences",
+          "year": "1st year",
+          "profile_status": "not_located_in_first_sweep",
+          "profile_urls": [],
+          "findings": "Targeted public search did not resolve a trustworthy GitHub/profile match. This is not evidence of no account, no skills, or no progress.",
+          "search_queries": [
+            "\"Ellie Scribner\" GitHub \"Cal Poly\""
+          ]
+        },
+        {
+          "name": "Evan Vaden",
+          "source_row": 147,
+          "major": "Industrial technology and packaging",
+          "year": "1st year",
+          "profile_status": "not_located_in_first_sweep",
+          "profile_urls": [],
+          "findings": "Targeted public search did not resolve a trustworthy GitHub/profile match. This is not evidence of no account, no skills, or no progress.",
+          "search_queries": [
+            "\"Evan Vaden\" GitHub \"Cal Poly\""
+          ]
+        },
+        {
+          "name": "Logan Horst",
+          "source_row": 267,
+          "major": "Mathematics and applied sciences",
+          "year": "1st year",
+          "profile_status": "not_located_in_first_sweep",
+          "profile_urls": [],
+          "findings": "Targeted public search did not resolve a trustworthy GitHub/profile match. This is not evidence of no account, no skills, or no progress.",
+          "search_queries": [
+            "\"Logan Horst\" GitHub \"Cal Poly\""
+          ]
+        }
+      ],
+      "team_search_queries": [
+        "\"Goblin Gang\" \"Cal Poly\" hackathon"
+      ],
+      "project_status": "not_located_in_first_sweep",
+      "repo_urls": [],
+      "live_urls": [],
+      "product": "Unknown current-event product",
+      "audience": "Unknown current-event audience",
+      "progress": "Unknown current-event progress; no penalty inferred from missing public evidence",
+      "evidence": [
+        {
+          "url": "https://www.linkedin.com/in/adam-houry-803574416",
+          "claim": "Likely school-matched profile. GitHub Oimeow/mnist appears in another person's liked post; it is NOT attributed to Adam.",
+          "observed_at": "2026-11-14 19:21:17 UTC",
+          "source_date": null,
+          "access": "Public search-index excerpt unless noted as directly inspected"
+        }
+      ],
+      "uncertainties": [
+        "Team label comes from a check-in roster, not a verified final submission list.",
+        "Project ownership, current-event association, award entry, functionality, customer validation, and pitch quality remain unverified."
+      ],
+      "next_checks": [
+        "Resolve public GitHub handles from a team/portfolio crosslink.",
+        "Recheck public repo listings for recent changes and explicit event/team attribution.",
+        "Obtain public project description/demo or a team-provided link when available."
+      ]
+    },
+    {
+      "team": "Hello World!!!",
+      "roster_status": "Listed team label in supplied check-in sheet; active submission/eligibility unverified",
+      "checked_at": "2026-11-14 19:21:17 UTC",
+      "members": [
+        {
+          "name": "Arshia Gandhi",
+          "source_row": 45,
+          "major": "Statistics",
+          "year": "1st year",
+          "profile_status": "not_located_in_first_sweep",
+          "profile_urls": [],
+          "findings": "Targeted public search did not resolve a trustworthy GitHub/profile match. This is not evidence of no account, no skills, or no progress.",
+          "search_queries": [
+            "\"Arshia Gandhi\" GitHub \"Cal Poly\""
+          ]
+        },
+        {
+          "name": "Josanna Bakkenson",
+          "source_row": 224,
+          "major": "Philosophy",
+          "year": "1st year",
+          "profile_status": "not_located_in_first_sweep",
+          "profile_urls": [],
+          "findings": "Targeted public search did not resolve a trustworthy GitHub/profile match. This is not evidence of no account, no skills, or no progress.",
+          "search_queries": [
+            "\"Josanna Bakkenson\" GitHub \"Cal Poly\""
+          ]
+        },
+        {
+          "name": "Shreya Aggarwal",
+          "source_row": 404,
+          "major": "Software Engineering",
+          "year": "1st year",
+          "profile_status": "not_located_in_first_sweep",
+          "profile_urls": [],
+          "findings": "Targeted public search did not resolve a trustworthy GitHub/profile match. This is not evidence of no account, no skills, or no progress.",
+          "search_queries": [
+            "\"Shreya Aggarwal\" GitHub \"Cal Poly\""
+          ]
+        }
+      ],
+      "team_search_queries": [
+        "\"Hello World\" \"Josanna Bakkenson\""
+      ],
+      "project_status": "not_located_in_first_sweep",
+      "repo_urls": [],
+      "live_urls": [],
+      "product": "Unknown current-event product",
+      "audience": "Unknown current-event audience",
+      "progress": "Unknown current-event progress; no penalty inferred from missing public evidence",
+      "evidence": [],
+      "uncertainties": [
+        "Team label comes from a check-in roster, not a verified final submission list.",
+        "Project ownership, current-event association, award entry, functionality, customer validation, and pitch quality remain unverified."
+      ],
+      "next_checks": [
+        "Resolve public GitHub handles from a team/portfolio crosslink.",
+        "Recheck public repo listings for recent changes and explicit event/team attribution.",
+        "Obtain public project description/demo or a team-provided link when available."
+      ]
+    },
+    {
+      "team": "Iryna's Gang",
+      "roster_status": "Listed team label in supplied check-in sheet; active submission/eligibility unverified",
+      "checked_at": "2026-11-14 19:21:17 UTC",
+      "members": [
+        {
+          "name": "Shane Speth",
+          "source_row": 400,
+          "major": "agricultural systems management",
+          "year": "3rd year",
+          "profile_status": "not_located_in_first_sweep",
+          "profile_urls": [],
+          "findings": "Targeted public search did not resolve a trustworthy GitHub/profile match. This is not evidence of no account, no skills, or no progress.",
+          "search_queries": [
+            "\"Shane Speth\" GitHub \"Cal Poly\""
+          ]
+        }
+      ],
+      "team_search_queries": [
+        "\"Iryna's Gang\" hackathon"
+      ],
+      "project_status": "not_located_in_first_sweep",
+      "repo_urls": [],
+      "live_urls": [],
+      "product": "Unknown current-event product",
+      "audience": "Unknown current-event audience",
+      "progress": "Unknown current-event progress; no penalty inferred from missing public evidence",
+      "evidence": [],
+      "uncertainties": [
+        "Team label comes from a check-in roster, not a verified final submission list.",
+        "Project ownership, current-event association, award entry, functionality, customer validation, and pitch quality remain unverified."
+      ],
+      "next_checks": [
+        "Resolve public GitHub handles from a team/portfolio crosslink.",
+        "Recheck public repo listings for recent changes and explicit event/team attribution.",
+        "Obtain public project description/demo or a team-provided link when available."
+      ]
+    },
+    {
+      "team": "JJT",
+      "roster_status": "Listed team label in supplied check-in sheet; active submission/eligibility unverified",
+      "checked_at": "2026-11-14 19:21:17 UTC",
+      "members": [
+        {
+          "name": "Jack Mills",
+          "source_row": 193,
+          "major": "Business Administration",
+          "year": "2nd year",
+          "profile_status": "not_located_in_first_sweep",
+          "profile_urls": [],
+          "findings": "Targeted public search did not resolve a trustworthy GitHub/profile match. This is not evidence of no account, no skills, or no progress.",
+          "search_queries": [
+            "\"Jack Mills\" GitHub \"Cal Poly\""
+          ]
+        },
+        {
+          "name": "Jadon Jones",
+          "source_row": 198,
+          "major": "Business Administration",
+          "year": "2nd year",
+          "profile_status": "likely_public_match",
+          "profile_urls": [
+            "https://www.linkedin.com/in/jadon-jones-024a97362"
+          ],
+          "findings": "Likely Cal Poly business profile. Public first-year wording differs from roster second-year; may be stale. No repo found.",
+          "search_queries": [
+            "\"Jadon Jones\" GitHub \"Cal Poly\""
+          ]
+        },
+        {
+          "name": "Tai Cooke",
+          "source_row": 421,
+          "major": "Business Administration",
+          "year": "2nd year",
+          "profile_status": "not_located_in_first_sweep",
+          "profile_urls": [],
+          "findings": "Targeted public search did not resolve a trustworthy GitHub/profile match. This is not evidence of no account, no skills, or no progress.",
+          "search_queries": [
+            "\"Tai Cooke\" GitHub \"Cal Poly\""
+          ]
+        }
+      ],
+      "team_search_queries": [
+        "\"JJT\" \"Tai Cooke\""
+      ],
+      "project_status": "not_located_in_first_sweep",
+      "repo_urls": [],
+      "live_urls": [],
+      "product": "Unknown current-event product",
+      "audience": "Unknown current-event audience",
+      "progress": "Unknown current-event progress; no penalty inferred from missing public evidence",
+      "evidence": [
+        {
+          "url": "https://www.linkedin.com/in/jadon-jones-024a97362",
+          "claim": "Likely Cal Poly business profile. Public first-year wording differs from roster second-year; may be stale. No repo found.",
+          "observed_at": "2026-11-14 19:21:17 UTC",
+          "source_date": null,
+          "access": "Public search-index excerpt unless noted as directly inspected"
+        }
+      ],
+      "uncertainties": [
+        "Team label comes from a check-in roster, not a verified final submission list.",
+        "Project ownership, current-event association, award entry, functionality, customer validation, and pitch quality remain unverified."
+      ],
+      "next_checks": [
+        "Resolve public GitHub handles from a team/portfolio crosslink.",
+        "Recheck public repo listings for recent changes and explicit event/team attribution.",
+        "Obtain public project description/demo or a team-provided link when available."
+      ]
+    },
+    {
+      "team": "Koa",
+      "roster_status": "Listed team label in supplied check-in sheet; active submission/eligibility unverified",
+      "checked_at": "2026-11-14 19:21:17 UTC",
+      "members": [
+        {
+          "name": "Luke Hoffmann",
+          "source_row": 280,
+          "major": "Industrial Engineering",
+          "year": "",
+          "profile_status": "possible_public_match",
+          "profile_urls": [
+            "https://www.linkedin.com/in/lukeh351"
+          ],
+          "findings": "Plausible Cal Poly portfolio/profile lead mentions code on GitHub through a shortlink. College wording differs from roster industrial engineering; identity remains provisional.",
+          "search_queries": [
+            "\"Luke Hoffmann\" GitHub \"Cal Poly\""
+          ]
+        },
+        {
+          "name": "Nate Distad",
+          "source_row": 324,
+          "major": "Economics",
+          "year": "2nd year",
+          "profile_status": "not_located_in_first_sweep",
+          "profile_urls": [],
+          "findings": "Targeted public search did not resolve a trustworthy GitHub/profile match. This is not evidence of no account, no skills, or no progress.",
+          "search_queries": [
+            "\"Nate Distad\" GitHub \"Cal Poly\""
+          ]
+        },
+        {
+          "name": "Nathan Melnick",
+          "source_row": 325,
+          "major": "Business Administration",
+          "year": "1st year",
+          "profile_status": "likely_public_match",
+          "profile_urls": [
+            "https://www.linkedin.com/in/nathan-melnick"
+          ],
+          "findings": "Likely school/year/major-matched public profile. No current-event repo found.",
+          "search_queries": [
+            "\"Nathan Melnick\" GitHub \"Cal Poly\""
+          ]
+        },
+        {
+          "name": "Quin Cristofano",
+          "source_row": 359,
+          "major": "Business Administration",
+          "year": "2nd year",
+          "profile_status": "likely_public_match",
+          "profile_urls": [
+            "https://www.linkedin.com/in/quin-cristofano"
+          ],
+          "findings": "Likely school/year/business-matched public profile. No current-event repo found.",
+          "search_queries": [
+            "\"Quin Cristofano\" GitHub \"Cal Poly\""
+          ]
+        }
+      ],
+      "team_search_queries": [
+        "\"Koa\" \"Quin Cristofano\""
+      ],
+      "project_status": "not_located_in_first_sweep",
+      "repo_urls": [],
+      "live_urls": [],
+      "product": "Unknown current-event product",
+      "audience": "Unknown current-event audience",
+      "progress": "Unknown current-event progress; no penalty inferred from missing public evidence",
+      "evidence": [
+        {
+          "url": "https://www.linkedin.com/in/lukeh351",
+          "claim": "Plausible Cal Poly portfolio/profile lead mentions code on GitHub through a shortlink. College wording differs from roster industrial engineering; identity remains provisional.",
+          "observed_at": "2026-11-14 19:21:17 UTC",
+          "source_date": null,
+          "access": "Public search-index excerpt unless noted as directly inspected"
+        },
+        {
+          "url": "https://www.linkedin.com/in/nathan-melnick",
+          "claim": "Likely school/year/major-matched public profile. No current-event repo found.",
+          "observed_at": "2026-11-14 19:21:17 UTC",
+          "source_date": null,
+          "access": "Public search-index excerpt unless noted as directly inspected"
+        },
+        {
+          "url": "https://www.linkedin.com/in/quin-cristofano",
+          "claim": "Likely school/year/business-matched public profile. No current-event repo found.",
+          "observed_at": "2026-11-14 19:21:17 UTC",
+          "source_date": null,
+          "access": "Public search-index excerpt unless noted as directly inspected"
+        }
+      ],
+      "uncertainties": [
+        "Team label comes from a check-in roster, not a verified final submission list.",
+        "Project ownership, current-event association, award entry, functionality, customer validation, and pitch quality remain unverified."
+      ],
+      "next_checks": [
+        "Resolve public GitHub handles from a team/portfolio crosslink.",
+        "Recheck public repo listings for recent changes and explicit event/team attribution.",
+        "Obtain public project description/demo or a team-provided link when available."
+      ]
+    },
+    {
+      "team": "LEMMI",
+      "roster_status": "Listed team label in supplied check-in sheet; active submission/eligibility unverified",
+      "checked_at": "2026-11-14 19:21:17 UTC",
+      "members": [
+        {
+          "name": "Anay Nagar",
+          "source_row": 29,
+          "major": "Computer Science",
+          "year": "2nd year",
+          "profile_status": "likely_public_match",
+          "profile_urls": [
+            "https://www.linkedin.com/company/cs-ai-cal-poly"
+          ],
+          "findings": "Club repost credits Anay Nagar alongside Emilia Vu on prior Chansey Care at a Kiro event. Not evidence of this November entry. Same-name IIT Kanpur repo rejected.",
+          "search_queries": [
+            "\"Anay Nagar\" GitHub \"Cal Poly\""
+          ]
+        },
+        {
+          "name": "Emilia Vu",
+          "source_row": 140,
+          "major": "Computer Science",
+          "year": "2nd year",
+          "profile_status": "likely_public_match",
+          "profile_urls": [
+            "https://www.linkedin.com/in/emilia-vu-calpoly"
+          ],
+          "findings": "Likely Cal Poly CS profile. Public club repost credits Emilia Vu and Anay Nagar on prior Chansey Care prototype; current entry unresolved.",
+          "search_queries": [
+            "\"Emilia Vu\" GitHub \"Cal Poly\""
+          ]
+        },
+        {
+          "name": "Kylie Wu",
+          "source_row": 252,
+          "major": "Mechanical Engineer",
+          "year": "3rd year",
+          "profile_status": "not_located_in_first_sweep",
+          "profile_urls": [],
+          "findings": "Targeted public search did not resolve a trustworthy GitHub/profile match. This is not evidence of no account, no skills, or no progress.",
+          "search_queries": [
+            "\"Kylie Wu\" GitHub \"Cal Poly\""
+          ]
+        },
+        {
+          "name": "Lukas Watts",
+          "source_row": 278,
+          "major": "Electrical Engineering",
+          "year": "3rd year",
+          "profile_status": "possible_public_match",
+          "profile_urls": [
+            "https://www.linkedin.com/posts/lukas-watts-dippold-112780331_electricalengineering-electricaldesign-activity-7502864940970500096-K_5-"
+          ],
+          "findings": "Possible extended-name match Lukas Watts-Dippold describes electrical-engineering studies at Cal Poly. Identity not confirmed.",
+          "search_queries": [
+            "\"Lukas Watts\" GitHub \"Cal Poly\""
+          ]
+        }
+      ],
+      "team_search_queries": [
+        "\"LEMMI\" hackathon github \"Cal Poly\""
+      ],
+      "project_status": "not_located_in_first_sweep",
+      "repo_urls": [],
+      "live_urls": [],
+      "product": "Unknown current-event product",
+      "audience": "Unknown current-event audience",
+      "progress": "Unknown current-event progress; no penalty inferred from missing public evidence",
+      "evidence": [
+        {
+          "url": "https://www.linkedin.com/company/cs-ai-cal-poly",
+          "claim": "Club repost credits Anay Nagar alongside Emilia Vu on prior Chansey Care at a Kiro event. Not evidence of this November entry. Same-name IIT Kanpur repo rejected.",
+          "observed_at": "2026-11-14 19:21:17 UTC",
+          "source_date": null,
+          "access": "Public search-index excerpt unless noted as directly inspected"
+        },
+        {
+          "url": "https://www.linkedin.com/in/emilia-vu-calpoly",
+          "claim": "Likely Cal Poly CS profile. Public club repost credits Emilia Vu and Anay Nagar on prior Chansey Care prototype; current entry unresolved.",
+          "observed_at": "2026-11-14 19:21:17 UTC",
+          "source_date": null,
+          "access": "Public search-index excerpt unless noted as directly inspected"
+        },
+        {
+          "url": "https://www.linkedin.com/posts/lukas-watts-dippold-112780331_electricalengineering-electricaldesign-activity-7502864940970500096-K_5-",
+          "claim": "Possible extended-name match Lukas Watts-Dippold describes electrical-engineering studies at Cal Poly. Identity not confirmed.",
+          "observed_at": "2026-11-14 19:21:17 UTC",
+          "source_date": null,
+          "access": "Public search-index excerpt unless noted as directly inspected"
+        },
+        {
+          "url": "https://www.linkedin.com/company/cs-ai-cal-poly",
+          "claim": "Public club repost describes prior Chansey Care and credits Emilia Vu and Anay Nagar together; useful prior collaboration lead, excluded as current submission.",
+          "observed_at": "2026-11-14 19:21:17 UTC",
+          "source_date": null,
+          "access": "Search-index excerpt"
+        }
+      ],
+      "uncertainties": [
+        "Team label comes from a check-in roster, not a verified final submission list.",
+        "Project ownership, current-event association, award entry, functionality, customer validation, and pitch quality remain unverified."
+      ],
+      "next_checks": [
+        "Resolve public GitHub handles from a team/portfolio crosslink.",
+        "Recheck public repo listings for recent changes and explicit event/team attribution.",
+        "Obtain public project description/demo or a team-provided link when available."
+      ]
+    },
+    {
+      "team": "Newsie",
+      "roster_status": "Listed team label in supplied check-in sheet; active submission/eligibility unverified",
+      "checked_at": "2026-11-14 19:21:17 UTC",
+      "members": [
+        {
+          "name": "Claire Brandon",
+          "source_row": 99,
+          "major": "Business Admin",
+          "year": "3rd year",
+          "profile_status": "likely_public_match",
+          "profile_urls": [
+            "https://www.linkedin.com/posts/clairebrandonn_phialphatheta-calpolyslo-historymajor-activity-7451836973603897344-Xo6l"
+          ],
+          "findings": "Likely school-matched post describes history-journal technical editing and a history minor. No current product found.",
+          "search_queries": [
+            "\"Claire Brandon\" GitHub \"Cal Poly\""
+          ]
+        },
+        {
+          "name": "Wyatt Regez",
+          "source_row": 447,
+          "major": "Business administration",
+          "year": "1st year",
+          "profile_status": "not_located_in_first_sweep",
+          "profile_urls": [],
+          "findings": "Targeted public search did not resolve a trustworthy GitHub/profile match. This is not evidence of no account, no skills, or no progress.",
+          "search_queries": [
+            "\"Wyatt Regez\" GitHub \"Cal Poly\""
+          ]
+        }
+      ],
+      "team_search_queries": [
+        "\"Newsie\" \"Wyatt Regez\""
+      ],
+      "project_status": "not_located_in_first_sweep",
+      "repo_urls": [],
+      "live_urls": [],
+      "product": "Unknown current-event product",
+      "audience": "Unknown current-event audience",
+      "progress": "Unknown current-event progress; no penalty inferred from missing public evidence",
+      "evidence": [
+        {
+          "url": "https://www.linkedin.com/posts/clairebrandonn_phialphatheta-calpolyslo-historymajor-activity-7451836973603897344-Xo6l",
+          "claim": "Likely school-matched post describes history-journal technical editing and a history minor. No current product found.",
+          "observed_at": "2026-11-14 19:21:17 UTC",
+          "source_date": null,
+          "access": "Public search-index excerpt unless noted as directly inspected"
+        }
+      ],
+      "uncertainties": [
+        "Team label comes from a check-in roster, not a verified final submission list.",
+        "Project ownership, current-event association, award entry, functionality, customer validation, and pitch quality remain unverified."
+      ],
+      "next_checks": [
+        "Resolve public GitHub handles from a team/portfolio crosslink.",
+        "Recheck public repo listings for recent changes and explicit event/team attribution.",
+        "Obtain public project description/demo or a team-provided link when available."
+      ]
+    },
+    {
+      "team": "Peppr",
+      "roster_status": "Listed team label in supplied check-in sheet; active submission/eligibility unverified",
+      "checked_at": "2026-11-14 19:21:17 UTC",
+      "members": [
+        {
+          "name": "Chiana Kelly",
+          "source_row": 97,
+          "major": "Business Administration,",
+          "year": "4th year",
+          "profile_status": "likely_public_match",
+          "profile_urls": [
+            "https://www.linkedin.com/in/chiana-kelly123"
+          ],
+          "findings": "Likely school/business-marketing profile. Prior entrepreneurship competition experience is historical, not current-event progress.",
+          "search_queries": [
+            "\"Chiana Kelly\" GitHub \"Cal Poly\""
+          ]
+        },
+        {
+          "name": "Kyra Bryant",
+          "source_row": 253,
+          "major": "Business Administration",
+          "year": "4th year",
+          "profile_status": "likely_public_match",
+          "profile_urls": [
+            "https://www.linkedin.com/in/kyrabryant"
+          ],
+          "findings": "Likely school-matched public profile documents marketing coursework/project experience. No current-event product found.",
+          "search_queries": [
+            "\"Kyra Bryant\" GitHub \"Cal Poly\""
+          ]
+        },
+        {
+          "name": "Sophia Tilghman",
+          "source_row": 412,
+          "major": "Journalism",
+          "year": "3rd year",
+          "profile_status": "likely_public_match",
+          "profile_urls": [
+            "https://www.linkedin.com/in/benjamin-klein-097945291"
+          ],
+          "findings": "Indexed CPVC post reproduced among profile reactions names Sophia Tilghman as a journalism student who built ClearCall at an earlier Build Night. Historical, indirect evidence only.",
+          "search_queries": [
+            "\"Sophia Tilghman\" GitHub \"Cal Poly\""
+          ]
+        }
+      ],
+      "team_search_queries": [
+        "\"Peppr\" \"Chiana Kelly\""
+      ],
+      "project_status": "not_located_in_first_sweep",
+      "repo_urls": [],
+      "live_urls": [],
+      "product": "Unknown current-event product",
+      "audience": "Unknown current-event audience",
+      "progress": "Unknown current-event progress; no penalty inferred from missing public evidence",
+      "evidence": [
+        {
+          "url": "https://www.linkedin.com/in/chiana-kelly123",
+          "claim": "Likely school/business-marketing profile. Prior entrepreneurship competition experience is historical, not current-event progress.",
+          "observed_at": "2026-11-14 19:21:17 UTC",
+          "source_date": null,
+          "access": "Public search-index excerpt unless noted as directly inspected"
+        },
+        {
+          "url": "https://www.linkedin.com/in/kyrabryant",
+          "claim": "Likely school-matched public profile documents marketing coursework/project experience. No current-event product found.",
+          "observed_at": "2026-11-14 19:21:17 UTC",
+          "source_date": null,
+          "access": "Public search-index excerpt unless noted as directly inspected"
+        },
+        {
+          "url": "https://www.linkedin.com/in/benjamin-klein-097945291",
+          "claim": "Indexed CPVC post reproduced among profile reactions names Sophia Tilghman as a journalism student who built ClearCall at an earlier Build Night. Historical, indirect evidence only.",
+          "observed_at": "2026-11-14 19:21:17 UTC",
+          "source_date": null,
+          "access": "Public search-index excerpt unless noted as directly inspected"
+        }
+      ],
+      "uncertainties": [
+        "Team label comes from a check-in roster, not a verified final submission list.",
+        "Project ownership, current-event association, award entry, functionality, customer validation, and pitch quality remain unverified."
+      ],
+      "next_checks": [
+        "Resolve public GitHub handles from a team/portfolio crosslink.",
+        "Recheck public repo listings for recent changes and explicit event/team attribution.",
+        "Obtain public project description/demo or a team-provided link when available."
+      ]
+    },
+    {
+      "team": "Relentless",
+      "roster_status": "Listed team label in supplied check-in sheet; active submission/eligibility unverified",
+      "checked_at": "2026-11-14 19:21:17 UTC",
+      "members": [
+        {
+          "name": "Andrew Chapin",
+          "source_row": 33,
+          "major": "Mechanical Engineering",
+          "year": "3rd year",
+          "profile_status": "likely_public_match",
+          "profile_urls": [
+            "https://www.andrewlutherchapin.com/"
+          ],
+          "findings": "Name, Cal Poly, third-year mechanical engineering match portfolio. Engineering project experience; no current-event project found.",
+          "search_queries": [
+            "\"Andrew Chapin\" GitHub \"Cal Poly\""
+          ]
+        },
+        {
+          "name": "Bowman Edebohls",
+          "source_row": 68,
+          "major": "Computer Engineering",
+          "year": "3rd year",
+          "profile_status": "crosslinked_public_identity",
+          "profile_urls": [
+            "https://github.com/bowosc"
+          ],
+          "findings": "Strong crosslinked identity: personal portfolio links bowosc/OTTER-MCU and GitHub links BowmanEdebohls.com. Public projects include SystemVerilog/RISC-V and Flask delivery logistics; no current-event entry confirmed.",
+          "search_queries": [
+            "\"Bowman Edebohls\" GitHub \"Cal Poly\""
+          ]
+        },
+        {
+          "name": "Efe Celik",
+          "source_row": 124,
+          "major": "Software Engineering",
+          "year": "3rd year",
+          "profile_status": "likely_public_match",
+          "profile_urls": [
+            "https://kcpr.org/student-app-brings-in-n-out-to-campus/"
+          ],
+          "findings": "Campus publication identifies Efe Celik as a Cal Poly software-engineering student who launched Bring-N-Out. Historical product experience only.",
+          "search_queries": [
+            "\"Efe Celik\" GitHub \"Cal Poly\""
+          ]
+        }
+      ],
+      "team_search_queries": [
+        "\"Relentless\" \"Efe Celik\""
+      ],
+      "project_status": "not_located_in_first_sweep",
+      "repo_urls": [],
+      "live_urls": [],
+      "product": "Unknown current-event product",
+      "audience": "Unknown current-event audience",
+      "progress": "Unknown current-event progress; no penalty inferred from missing public evidence",
+      "evidence": [
+        {
+          "url": "https://www.andrewlutherchapin.com/",
+          "claim": "Name, Cal Poly, third-year mechanical engineering match portfolio. Engineering project experience; no current-event project found.",
+          "observed_at": "2026-11-14 19:21:17 UTC",
+          "source_date": null,
+          "access": "Public search-index excerpt unless noted as directly inspected"
+        },
+        {
+          "url": "https://github.com/bowosc",
+          "claim": "Strong crosslinked identity: personal portfolio links bowosc/OTTER-MCU and GitHub links BowmanEdebohls.com. Public projects include SystemVerilog/RISC-V and Flask delivery logistics; no current-event entry confirmed.",
+          "observed_at": "2026-11-14 19:21:17 UTC",
+          "source_date": null,
+          "access": "Public search-index excerpt unless noted as directly inspected"
+        },
+        {
+          "url": "https://kcpr.org/student-app-brings-in-n-out-to-campus/",
+          "claim": "Campus publication identifies Efe Celik as a Cal Poly software-engineering student who launched Bring-N-Out. Historical product experience only.",
+          "observed_at": "2026-11-14 19:21:17 UTC",
+          "source_date": null,
+          "access": "Public search-index excerpt unless noted as directly inspected"
+        },
+        {
+          "url": "https://www.bowmanedebohls.com/projects",
+          "claim": "Portfolio links GitHub bowosc/OTTER-MCU and describes prior robotics, RISC-V architecture, and Flask delivery work. No current-event team attribution.",
+          "observed_at": "2026-11-14 19:21:17 UTC",
+          "source_date": null,
+          "access": "Direct public page read"
+        },
+        {
+          "url": "https://github.com/bowosc/OTTER-MCU",
+          "claim": "Public repository corroborates prior SystemVerilog/RISC-V project. Historical background, not current-event entry.",
+          "observed_at": "2026-11-14 19:21:17 UTC",
+          "source_date": "2026-07-15T20:31:05Z",
+          "access": "Direct public page and GitHub API metadata"
+        }
+      ],
+      "uncertainties": [
+        "Team label comes from a check-in roster, not a verified final submission list.",
+        "Project ownership, current-event association, award entry, functionality, customer validation, and pitch quality remain unverified."
+      ],
+      "next_checks": [
+        "Resolve public GitHub handles from a team/portfolio crosslink.",
+        "Recheck public repo listings for recent changes and explicit event/team attribution.",
+        "Obtain public project description/demo or a team-provided link when available."
+      ]
+    },
+    {
+      "team": "Schulist Mitchell",
+      "roster_status": "Listed team label in supplied check-in sheet; active submission/eligibility unverified",
+      "checked_at": "2026-11-14 19:21:17 UTC",
+      "members": [
+        {
+          "name": "Dean Johnson",
+          "source_row": 111,
+          "major": "Economics",
+          "year": "2nd year",
+          "profile_status": "not_located_in_first_sweep",
+          "profile_urls": [],
+          "findings": "Targeted public search did not resolve a trustworthy GitHub/profile match. This is not evidence of no account, no skills, or no progress.",
+          "search_queries": [
+            "\"Dean Johnson\" GitHub \"Cal Poly\""
+          ]
+        },
+        {
+          "name": "Henry Mitchell",
+          "source_row": 177,
+          "major": "Computer science",
+          "year": "1st year",
+          "profile_status": "not_located_in_first_sweep",
+          "profile_urls": [],
+          "findings": "Targeted public search did not resolve a trustworthy GitHub/profile match. This is not evidence of no account, no skills, or no progress.",
+          "search_queries": [
+            "\"Henry Mitchell\" GitHub \"Cal Poly\""
+          ]
+        },
+        {
+          "name": "Miles Schulist",
+          "source_row": 315,
+          "major": "Mathematics",
+          "year": "2nd year",
+          "profile_status": "not_located_in_first_sweep",
+          "profile_urls": [],
+          "findings": "Targeted public search did not resolve a trustworthy GitHub/profile match. This is not evidence of no account, no skills, or no progress.",
+          "search_queries": [
+            "\"Miles Schulist\" GitHub \"Cal Poly\""
+          ]
+        }
+      ],
+      "team_search_queries": [
+        "\"Schulist Mitchell\" github"
+      ],
+      "project_status": "not_located_in_first_sweep",
+      "repo_urls": [],
+      "live_urls": [],
+      "product": "Unknown current-event product",
+      "audience": "Unknown current-event audience",
+      "progress": "Unknown current-event progress; no penalty inferred from missing public evidence",
+      "evidence": [],
+      "uncertainties": [
+        "Team label comes from a check-in roster, not a verified final submission list.",
+        "Project ownership, current-event association, award entry, functionality, customer validation, and pitch quality remain unverified.",
+        "Rejected Dean N. Johnson/AppFolio profile with Cal Poly education 1990–1992; does not match current second-year economics roster."
+      ],
+      "next_checks": [
+        "Resolve public GitHub handles from a team/portfolio crosslink.",
+        "Recheck public repo listings for recent changes and explicit event/team attribution.",
+        "Obtain public project description/demo or a team-provided link when available."
+      ]
+    },
+    {
+      "team": "SiteStack",
+      "roster_status": "Listed team label in supplied check-in sheet; active submission/eligibility unverified",
+      "checked_at": "2026-11-14 19:21:17 UTC",
+      "members": [
+        {
+          "name": "Gavin Guinn",
+          "source_row": 155,
+          "major": "Civil Engineering",
+          "year": "2nd year",
+          "profile_status": "not_located_in_first_sweep",
+          "profile_urls": [],
+          "findings": "Targeted public search did not resolve a trustworthy GitHub/profile match. This is not evidence of no account, no skills, or no progress.",
+          "search_queries": [
+            "\"Gavin Guinn\" GitHub \"Cal Poly\""
+          ]
+        },
+        {
+          "name": "Kaden Thomas",
+          "source_row": 232,
+          "major": "Business",
+          "year": "2nd year",
+          "profile_status": "not_located_in_first_sweep",
+          "profile_urls": [],
+          "findings": "Targeted public search did not resolve a trustworthy GitHub/profile match. This is not evidence of no account, no skills, or no progress.",
+          "search_queries": [
+            "\"Kaden Thomas\" GitHub \"Cal Poly\""
+          ]
+        },
+        {
+          "name": "Spencer Briggs",
+          "source_row": 414,
+          "major": "Industrial Engineering",
+          "year": "2nd year",
+          "profile_status": "likely_public_match",
+          "profile_urls": [
+            "https://www.linkedin.com/company/systemsoptimizationclubcalpoly"
+          ],
+          "findings": "Club post credits Spencer Briggs on a campus patient-transportation process project. Name/school lead only, no hackathon product identified.",
+          "search_queries": [
+            "\"Spencer Briggs\" GitHub \"Cal Poly\""
+          ]
+        }
+      ],
+      "team_search_queries": [
+        "\"SiteStack\" \"Gavin Guinn\""
+      ],
+      "project_status": "not_located_in_first_sweep",
+      "repo_urls": [],
+      "live_urls": [],
+      "product": "Unknown current-event product",
+      "audience": "Unknown current-event audience",
+      "progress": "Unknown current-event progress; no penalty inferred from missing public evidence",
+      "evidence": [
+        {
+          "url": "https://www.linkedin.com/company/systemsoptimizationclubcalpoly",
+          "claim": "Club post credits Spencer Briggs on a campus patient-transportation process project. Name/school lead only, no hackathon product identified.",
+          "observed_at": "2026-11-14 19:21:17 UTC",
+          "source_date": null,
+          "access": "Public search-index excerpt unless noted as directly inspected"
+        }
+      ],
+      "uncertainties": [
+        "Team label comes from a check-in roster, not a verified final submission list.",
+        "Project ownership, current-event association, award entry, functionality, customer validation, and pitch quality remain unverified."
+      ],
+      "next_checks": [
+        "Resolve public GitHub handles from a team/portfolio crosslink.",
+        "Recheck public repo listings for recent changes and explicit event/team attribution.",
+        "Obtain public project description/demo or a team-provided link when available."
+      ]
+    },
+    {
+      "team": "Something Professional",
+      "roster_status": "Listed team label in supplied check-in sheet; active submission/eligibility unverified",
+      "checked_at": "2026-11-14 19:21:17 UTC",
+      "members": [
+        {
+          "name": "Cal Adasiewicz",
+          "source_row": 80,
+          "major": "Business Administration",
+          "year": "3rd year",
+          "profile_status": "likely_public_match",
+          "profile_urls": [
+            "https://www.linkedin.com/in/cal-adasiewicz"
+          ],
+          "findings": "Likely school/business-matched public profile. No current-event product found.",
+          "search_queries": [
+            "\"Cal Adasiewicz\" GitHub \"Cal Poly\""
+          ]
+        },
+        {
+          "name": "Griffin Cadenhead",
+          "source_row": 166,
+          "major": "Busniess administration",
+          "year": "3rd year",
+          "profile_status": "not_located_in_first_sweep",
+          "profile_urls": [],
+          "findings": "Targeted public search did not resolve a trustworthy GitHub/profile match. This is not evidence of no account, no skills, or no progress.",
+          "search_queries": [
+            "\"Griffin Cadenhead\" GitHub \"Cal Poly\""
+          ]
+        },
+        {
+          "name": "Justin To",
+          "source_row": 231,
+          "major": "Buisness",
+          "year": "3rd year",
+          "profile_status": "not_located_in_first_sweep",
+          "profile_urls": [],
+          "findings": "Targeted public search did not resolve a trustworthy GitHub/profile match. This is not evidence of no account, no skills, or no progress.",
+          "search_queries": [
+            "\"Justin To\" GitHub \"Cal Poly\""
+          ]
+        }
+      ],
+      "team_search_queries": [
+        "\"Something Professional\" \"Cal Poly\" hackathon"
+      ],
+      "project_status": "not_located_in_first_sweep",
+      "repo_urls": [],
+      "live_urls": [],
+      "product": "Unknown current-event product",
+      "audience": "Unknown current-event audience",
+      "progress": "Unknown current-event progress; no penalty inferred from missing public evidence",
+      "evidence": [
+        {
+          "url": "https://www.linkedin.com/in/cal-adasiewicz",
+          "claim": "Likely school/business-matched public profile. No current-event product found.",
+          "observed_at": "2026-11-14 19:21:17 UTC",
+          "source_date": null,
+          "access": "Public search-index excerpt unless noted as directly inspected"
+        }
+      ],
+      "uncertainties": [
+        "Team label comes from a check-in roster, not a verified final submission list.",
+        "Project ownership, current-event association, award entry, functionality, customer validation, and pitch quality remain unverified.",
+        "Rejected Justin To / ServiceNow profile: identifies a graduated software-engineering student, conflicting with this roster's current business student."
+      ],
+      "next_checks": [
+        "Resolve public GitHub handles from a team/portfolio crosslink.",
+        "Recheck public repo listings for recent changes and explicit event/team attribution.",
+        "Obtain public project description/demo or a team-provided link when available."
+      ]
+    },
+    {
+      "team": "sudo arise",
+      "roster_status": "Listed team label in supplied check-in sheet; active submission/eligibility unverified",
+      "checked_at": "2026-11-14 19:21:17 UTC",
+      "members": [
+        {
+          "name": "Eli Schiffler",
+          "source_row": 129,
+          "major": "Computer Science",
+          "year": "4th year",
+          "profile_status": "crosslinked_public_identity",
+          "profile_urls": [
+            "https://github.com/elischiffler"
+          ],
+          "findings": "Strong crosslinked identity: GitHub links elischiffler.dev; indexed portfolio identifies Cal Poly CS. AskBetter is explicitly a May 2026 KiroHacks entry, not this November submission.",
+          "search_queries": [
+            "\"Eli Schiffler\" GitHub \"Cal Poly\""
+          ]
+        },
+        {
+          "name": "Jake Maier",
+          "source_row": 202,
+          "major": "Computer Engineering",
+          "year": "4th year",
+          "profile_status": "not_located_in_first_sweep",
+          "profile_urls": [],
+          "findings": "Targeted public search did not resolve a trustworthy GitHub/profile match. This is not evidence of no account, no skills, or no progress.",
+          "search_queries": [
+            "\"Jake Maier\" GitHub \"Cal Poly\""
+          ]
+        }
+      ],
+      "team_search_queries": [
+        "\"sudo arise\" github"
+      ],
+      "project_status": "candidate_placeholder_repository",
+      "repo_urls": [
+        "https://github.com/elischiffler/SAP"
+      ],
+      "live_urls": [],
+      "product": "Unknown current-event product",
+      "audience": "Unknown current-event audience",
+      "progress": "GitHub API shows SAP created 2026-11-14T19:00:52Z and pushed 19:00:54Z. Root inspection found only README.md containing '# SAP', pinned commit e814b67c40e227a7d37ace9cb2906706c25e2ed8. Product/audience cannot be inferred. Other work may exist elsewhere.",
+      "evidence": [
+        {
+          "url": "https://github.com/elischiffler",
+          "claim": "Strong crosslinked identity: GitHub links elischiffler.dev; indexed portfolio identifies Cal Poly CS. AskBetter is explicitly a May 2026 KiroHacks entry, not this November submission.",
+          "observed_at": "2026-11-14 19:21:17 UTC",
+          "source_date": null,
+          "access": "Public search-index excerpt unless noted as directly inspected"
+        },
+        {
+          "url": "https://github.com/elischiffler/SAP/blob/e814b67c40e227a7d37ace9cb2906706c25e2ed8/README.md",
+          "claim": "Direct read found title-only README. Recent timestamp makes a follow-up candidate, not proof of event association or overall team progress.",
+          "observed_at": "2026-11-14 19:21:17 UTC",
+          "source_date": "2026-11-14T19:00:54Z",
+          "access": "GitHub connector root and pinned file read"
+        },
+        {
+          "url": "https://devpost.com/software/askbetter",
+          "claim": "Prior AskBetter project explicitly submitted to KiroHacks Cal Poly, started May 3 and updated May 6, 2026; excluded as November submission evidence.",
+          "observed_at": "2026-11-14 19:21:17 UTC",
+          "source_date": "2026-05-06",
+          "access": "Direct public page read"
+        }
+      ],
+      "uncertainties": [
+        "Team label comes from a check-in roster, not a verified final submission list.",
+        "Project ownership, current-event association, award entry, functionality, customer validation, and pitch quality remain unverified."
+      ],
+      "next_checks": [
+        "Resolve public GitHub handles from a team/portfolio crosslink.",
+        "Recheck public repo listings for recent changes and explicit event/team attribution.",
+        "Obtain public project description/demo or a team-provided link when available."
+      ]
+    },
+    {
+      "team": "Team 8",
+      "roster_status": "Listed team label in supplied check-in sheet; active submission/eligibility unverified",
+      "checked_at": "2026-11-14 19:21:17 UTC",
+      "members": [
+        {
+          "name": "Aaditya  Raja",
+          "source_row": 2,
+          "major": "Statistics BS",
+          "year": "1st year",
+          "profile_status": "not_located_in_first_sweep",
+          "profile_urls": [],
+          "findings": "Targeted public search did not resolve a trustworthy GitHub/profile match. This is not evidence of no account, no skills, or no progress.",
+          "search_queries": [
+            "\"Aaditya Raja\" GitHub \"Cal Poly\""
+          ]
+        },
+        {
+          "name": "Arnav Bansal",
+          "source_row": 42,
+          "major": "Statistics",
+          "year": "1st year",
+          "profile_status": "not_located_in_first_sweep",
+          "profile_urls": [],
+          "findings": "Targeted public search did not resolve a trustworthy GitHub/profile match. This is not evidence of no account, no skills, or no progress.",
+          "search_queries": [
+            "\"Arnav Bansal\" GitHub \"Cal Poly\""
+          ]
+        },
+        {
+          "name": "Tharun Prem Anandh",
+          "source_row": 427,
+          "major": "Statistics",
+          "year": "1st year",
+          "profile_status": "not_located_in_first_sweep",
+          "profile_urls": [],
+          "findings": "Targeted public search did not resolve a trustworthy GitHub/profile match. This is not evidence of no account, no skills, or no progress.",
+          "search_queries": [
+            "\"Tharun Prem Anandh\" GitHub \"Cal Poly\""
+          ]
+        }
+      ],
+      "team_search_queries": [
+        "\"Team 8\" \"Tharun Prem Anandh\""
+      ],
+      "project_status": "not_located_in_first_sweep",
+      "repo_urls": [],
+      "live_urls": [],
+      "product": "Unknown current-event product",
+      "audience": "Unknown current-event audience",
+      "progress": "Unknown current-event progress; no penalty inferred from missing public evidence",
+      "evidence": [],
+      "uncertainties": [
+        "Team label comes from a check-in roster, not a verified final submission list.",
+        "Project ownership, current-event association, award entry, functionality, customer validation, and pitch quality remain unverified."
+      ],
+      "next_checks": [
+        "Resolve public GitHub handles from a team/portfolio crosslink.",
+        "Recheck public repo listings for recent changes and explicit event/team attribution.",
+        "Obtain public project description/demo or a team-provided link when available."
+      ]
+    },
+    {
+      "team": "Tensor Titans",
+      "roster_status": "Listed team label in supplied check-in sheet; active submission/eligibility unverified",
+      "checked_at": "2026-11-14 19:21:17 UTC",
+      "members": [
+        {
+          "name": "Anthony  Ouzounian",
+          "source_row": 38,
+          "major": "Industrial Technology",
+          "year": "2nd year",
+          "profile_status": "likely_public_match",
+          "profile_urls": [
+            "https://www.linkedin.com/in/anthony-ouzounian"
+          ],
+          "findings": "Likely school-matched profile but two same-name Cal Poly profiles surfaced; do not merge identities without confirmation.",
+          "search_queries": [
+            "\"Anthony Ouzounian\" GitHub \"Cal Poly\""
+          ]
+        },
+        {
+          "name": "Jack Jensen",
+          "source_row": 192,
+          "major": "Business",
+          "year": "4th year",
+          "profile_status": "likely_public_match",
+          "profile_urls": [
+            "https://www.linkedin.com/in/jack-jensen"
+          ],
+          "findings": "Likely Cal Poly business/accounting profile, education 2023–2027. Year wording may be stale; no current-event repo found.",
+          "search_queries": [
+            "\"Jack Jensen\" GitHub \"Cal Poly\""
+          ]
+        },
+        {
+          "name": "Luis Scheibe",
+          "source_row": 276,
+          "major": "Mechanical Engineering",
+          "year": "",
+          "profile_status": "likely_public_match",
+          "profile_urls": [
+            "https://github.com/luisscheibe9-git"
+          ],
+          "findings": "Public repo portfolio index explicitly names Luis Scheibe and Cal Poly SLO mechanical engineering. Several prior web apps found, no current hackathon entry identified.",
+          "search_queries": [
+            "\"Luis Scheibe\" GitHub \"Cal Poly\""
+          ]
+        }
+      ],
+      "team_search_queries": [
+        "\"Tensor Titans\" \"Cal Poly\""
+      ],
+      "project_status": "not_located_in_first_sweep",
+      "repo_urls": [],
+      "live_urls": [],
+      "product": "Unknown current-event product",
+      "audience": "Unknown current-event audience",
+      "progress": "Unknown current-event progress; no penalty inferred from missing public evidence",
+      "evidence": [
+        {
+          "url": "https://www.linkedin.com/in/anthony-ouzounian",
+          "claim": "Likely school-matched profile but two same-name Cal Poly profiles surfaced; do not merge identities without confirmation.",
+          "observed_at": "2026-11-14 19:21:17 UTC",
+          "source_date": null,
+          "access": "Public search-index excerpt unless noted as directly inspected"
+        },
+        {
+          "url": "https://www.linkedin.com/in/jack-jensen",
+          "claim": "Likely Cal Poly business/accounting profile, education 2023–2027. Year wording may be stale; no current-event repo found.",
+          "observed_at": "2026-11-14 19:21:17 UTC",
+          "source_date": null,
+          "access": "Public search-index excerpt unless noted as directly inspected"
+        },
+        {
+          "url": "https://github.com/luisscheibe9-git",
+          "claim": "Public repo portfolio index explicitly names Luis Scheibe and Cal Poly SLO mechanical engineering. Several prior web apps found, no current hackathon entry identified.",
+          "observed_at": "2026-11-14 19:21:17 UTC",
+          "source_date": null,
+          "access": "Public search-index excerpt unless noted as directly inspected"
+        },
+        {
+          "url": "https://github.com/luisscheibe9-git/luisscheibe9-git.github.io/blob/ef6257b9659c23c384cedb1ad4510fb99dd2e7b6/index.html",
+          "claim": "Portfolio source explicitly names Luis Scheibe, Cal Poly SLO, mechanical engineering. Corroborates account identity after an untrusted mirror surfaced it.",
+          "observed_at": "2026-11-14 19:21:17 UTC",
+          "source_date": "2026-11-02T17:15:16Z",
+          "access": "Direct pinned GitHub file read"
+        },
+        {
+          "url": "https://github.com/luisscheibe9-git/Agent-Manager",
+          "claim": "Public repo description: Windows tray/local dashboard for Claude and Codex chats; last push November 10. Historical candidate only, not attributed to current event.",
+          "observed_at": "2026-11-14 19:21:17 UTC",
+          "source_date": "2026-11-10T01:38:47Z",
+          "access": "Public-only GitHub API metadata"
+        }
+      ],
+      "uncertainties": [
+        "Team label comes from a check-in roster, not a verified final submission list.",
+        "Project ownership, current-event association, award entry, functionality, customer validation, and pitch quality remain unverified."
+      ],
+      "next_checks": [
+        "Resolve public GitHub handles from a team/portfolio crosslink.",
+        "Recheck public repo listings for recent changes and explicit event/team attribution.",
+        "Obtain public project description/demo or a team-provided link when available."
+      ]
+    },
+    {
+      "team": "Toughest squad",
+      "roster_status": "Listed team label in supplied check-in sheet; active submission/eligibility unverified",
+      "checked_at": "2026-11-14 19:21:17 UTC",
+      "members": [
+        {
+          "name": "Agatha Sterkel",
+          "source_row": 13,
+          "major": "Journalism",
+          "year": "2nd year",
+          "profile_status": "likely_public_match",
+          "profile_urls": [
+            "https://www.linkedin.com/in/agatha-sterkel-30549b35b"
+          ],
+          "findings": "Likely school-matched public profile. First-year wording differs from roster second-year; no current-event product found.",
+          "search_queries": [
+            "\"Agatha Sterkel\" GitHub \"Cal Poly\""
+          ]
+        },
+        {
+          "name": "Will Balcom",
+          "source_row": 444,
+          "major": "Agribusiness",
+          "year": "2nd year",
+          "profile_status": "not_located_in_first_sweep",
+          "profile_urls": [],
+          "findings": "Targeted public search did not resolve a trustworthy GitHub/profile match. This is not evidence of no account, no skills, or no progress.",
+          "search_queries": [
+            "\"Will Balcom\" GitHub \"Cal Poly\""
+          ]
+        }
+      ],
+      "team_search_queries": [
+        "\"Toughest squad\" \"Agatha Sterkel\""
+      ],
+      "project_status": "not_located_in_first_sweep",
+      "repo_urls": [],
+      "live_urls": [],
+      "product": "Unknown current-event product",
+      "audience": "Unknown current-event audience",
+      "progress": "Unknown current-event progress; no penalty inferred from missing public evidence",
+      "evidence": [
+        {
+          "url": "https://www.linkedin.com/in/agatha-sterkel-30549b35b",
+          "claim": "Likely school-matched public profile. First-year wording differs from roster second-year; no current-event product found.",
+          "observed_at": "2026-11-14 19:21:17 UTC",
+          "source_date": null,
+          "access": "Public search-index excerpt unless noted as directly inspected"
+        }
+      ],
+      "uncertainties": [
+        "Team label comes from a check-in roster, not a verified final submission list.",
+        "Project ownership, current-event association, award entry, functionality, customer validation, and pitch quality remain unverified."
+      ],
+      "next_checks": [
+        "Resolve public GitHub handles from a team/portfolio crosslink.",
+        "Recheck public repo listings for recent changes and explicit event/team attribution.",
+        "Obtain public project description/demo or a team-provided link when available."
+      ]
+    },
+    {
+      "team": "VCS",
+      "roster_status": "Listed team label in supplied check-in sheet; active submission/eligibility unverified",
+      "checked_at": "2026-11-14 19:21:17 UTC",
+      "members": [
+        {
+          "name": "Blake Price",
+          "source_row": 66,
+          "major": "Business Administration",
+          "year": "1st year",
+          "profile_status": "not_located_in_first_sweep",
+          "profile_urls": [],
+          "findings": "Targeted public search did not resolve a trustworthy GitHub/profile match. This is not evidence of no account, no skills, or no progress.",
+          "search_queries": [
+            "\"Blake Price\" GitHub \"Cal Poly\""
+          ]
+        },
+        {
+          "name": "Cole Mattingly",
+          "source_row": 100,
+          "major": "Buisness Admistration",
+          "year": "1st year",
+          "profile_status": "not_located_in_first_sweep",
+          "profile_urls": [],
+          "findings": "Targeted public search did not resolve a trustworthy GitHub/profile match. This is not evidence of no account, no skills, or no progress.",
+          "search_queries": [
+            "\"Cole Mattingly\" GitHub \"Cal Poly\""
+          ]
+        },
+        {
+          "name": "Eli Santaella",
+          "source_row": 128,
+          "major": "CS",
+          "year": "1st year",
+          "profile_status": "not_located_in_first_sweep",
+          "profile_urls": [],
+          "findings": "Targeted public search did not resolve a trustworthy GitHub/profile match. This is not evidence of no account, no skills, or no progress.",
+          "search_queries": [
+            "\"Eli Santaella\" GitHub \"Cal Poly\""
+          ]
+        },
+        {
+          "name": "Nyan Kahlon",
+          "source_row": 346,
+          "major": "Communications",
+          "year": "1st year",
+          "profile_status": "not_located_in_first_sweep",
+          "profile_urls": [],
+          "findings": "Targeted public search did not resolve a trustworthy GitHub/profile match. This is not evidence of no account, no skills, or no progress.",
+          "search_queries": [
+            "\"Nyan Kahlon\" GitHub \"Cal Poly\""
+          ]
+        }
+      ],
+      "team_search_queries": [
+        "\"VCS\" \"Eli Santaella\""
+      ],
+      "project_status": "not_located_in_first_sweep",
+      "repo_urls": [],
+      "live_urls": [],
+      "product": "Unknown current-event product",
+      "audience": "Unknown current-event audience",
+      "progress": "Unknown current-event progress; no penalty inferred from missing public evidence",
+      "evidence": [],
+      "uncertainties": [
+        "Team label comes from a check-in roster, not a verified final submission list.",
+        "Project ownership, current-event association, award entry, functionality, customer validation, and pitch quality remain unverified."
+      ],
+      "next_checks": [
+        "Resolve public GitHub handles from a team/portfolio crosslink.",
+        "Recheck public repo listings for recent changes and explicit event/team attribution.",
+        "Obtain public project description/demo or a team-provided link when available."
+      ]
+    },
+    {
+      "team": "Vortical Widgets",
+      "roster_status": "Listed team label in supplied check-in sheet; active submission/eligibility unverified",
+      "checked_at": "2026-11-14 19:21:17 UTC",
+      "members": [
+        {
+          "name": "Aidan Jones",
+          "source_row": 15,
+          "major": "Business Adminstration",
+          "year": "3rd year",
+          "profile_status": "not_located_in_first_sweep",
+          "profile_urls": [],
+          "findings": "Targeted public search did not resolve a trustworthy GitHub/profile match. This is not evidence of no account, no skills, or no progress.",
+          "search_queries": [
+            "\"Aidan Jones\" GitHub \"Cal Poly\""
+          ]
+        },
+        {
+          "name": "Alexander Dominioni",
+          "source_row": 24,
+          "major": "Business Administration",
+          "year": "4th year",
+          "profile_status": "not_located_in_first_sweep",
+          "profile_urls": [],
+          "findings": "Targeted public search did not resolve a trustworthy GitHub/profile match. This is not evidence of no account, no skills, or no progress.",
+          "search_queries": [
+            "\"Alexander Dominioni\" GitHub \"Cal Poly\""
+          ]
+        },
+        {
+          "name": "Ben Klein",
+          "source_row": 61,
+          "major": "Computer Engineering",
+          "year": "4th year",
+          "profile_status": "possible_public_match",
+          "profile_urls": [
+            "https://www.linkedin.com/in/benjamin-klein-097945291"
+          ],
+          "findings": "Plausible Ben/Benjamin identity lead: Vardaan Kumar repost credits Benjamin Klein as a previous hackathon teammate; Cal Poly builder activity. Alias not confirmed against roster.",
+          "search_queries": [
+            "\"Ben Klein\" GitHub \"Cal Poly\""
+          ]
+        },
+        {
+          "name": "Vardaan Kumar",
+          "source_row": 437,
+          "major": "Computer Science",
+          "year": "4th year",
+          "profile_status": "likely_public_match",
+          "profile_urls": [
+            "https://www.linkedin.com/in/vardaankumar"
+          ],
+          "findings": "Likely Cal Poly school-matched profile. Repost credits Vardaan and Benjamin Klein on prior Whistleblower hackathon win. Not current-event progress.",
+          "search_queries": [
+            "\"Vardaan Kumar\" GitHub \"Cal Poly\""
+          ]
+        }
+      ],
+      "team_search_queries": [
+        "\"Vortical Widgets\""
+      ],
+      "project_status": "not_located_in_first_sweep",
+      "repo_urls": [],
+      "live_urls": [],
+      "product": "Unknown current-event product",
+      "audience": "Unknown current-event audience",
+      "progress": "Unknown current-event progress; no penalty inferred from missing public evidence",
+      "evidence": [
+        {
+          "url": "https://www.linkedin.com/in/benjamin-klein-097945291",
+          "claim": "Plausible Ben/Benjamin identity lead: Vardaan Kumar repost credits Benjamin Klein as a previous hackathon teammate; Cal Poly builder activity. Alias not confirmed against roster.",
+          "observed_at": "2026-11-14 19:21:17 UTC",
+          "source_date": null,
+          "access": "Public search-index excerpt unless noted as directly inspected"
+        },
+        {
+          "url": "https://www.linkedin.com/in/vardaankumar",
+          "claim": "Likely Cal Poly school-matched profile. Repost credits Vardaan and Benjamin Klein on prior Whistleblower hackathon win. Not current-event progress.",
+          "observed_at": "2026-11-14 19:21:17 UTC",
+          "source_date": null,
+          "access": "Public search-index excerpt unless noted as directly inspected"
+        }
+      ],
+      "uncertainties": [
+        "Team label comes from a check-in roster, not a verified final submission list.",
+        "Project ownership, current-event association, award entry, functionality, customer validation, and pitch quality remain unverified."
+      ],
+      "next_checks": [
+        "Resolve public GitHub handles from a team/portfolio crosslink.",
+        "Recheck public repo listings for recent changes and explicit event/team attribution.",
+        "Obtain public project description/demo or a team-provided link when available."
+      ]
+    },
+    {
+      "team": "🫩 The Jizzers",
+      "roster_status": "Listed team label in supplied check-in sheet; active submission/eligibility unverified",
+      "checked_at": "2026-11-14 19:21:17 UTC",
+      "members": [
+        {
+          "name": "Cameron Ly",
+          "source_row": 86,
+          "major": "Business Administration",
+          "year": "4th year",
+          "profile_status": "not_located_in_first_sweep",
+          "profile_urls": [],
+          "findings": "Targeted public search did not resolve a trustworthy GitHub/profile match. This is not evidence of no account, no skills, or no progress.",
+          "search_queries": [
+            "\"Cameron Ly\" GitHub \"Cal Poly\""
+          ]
+        },
+        {
+          "name": "Emi Okumoto",
+          "source_row": 139,
+          "major": "Software Engineering",
+          "year": "3rd year",
+          "profile_status": "likely_public_match",
+          "profile_urls": [
+            "https://www.linkedin.com/in/emiokumoto"
+          ],
+          "findings": "Likely school/software-development profile. Devpost lists FoodFriends at KiroHacks and EasyWeb dated July 21, 2026; both earlier events.",
+          "search_queries": [
+            "\"Emi Okumoto\" GitHub \"Cal Poly\""
+          ]
+        },
+        {
+          "name": "Jonathan Zhao",
+          "source_row": 223,
+          "major": "Statistics",
+          "year": "4th year",
+          "profile_status": "likely_public_match",
+          "profile_urls": [
+            "https://www.linkedin.com/in/jonathan-zhao27"
+          ],
+          "findings": "Likely school/statistics-matched public profile. Reports prior DataFest analysis experience; no current-event project found.",
+          "search_queries": [
+            "\"Jonathan Zhao\" GitHub \"Cal Poly\""
+          ]
+        },
+        {
+          "name": "Sid Chandra",
+          "source_row": 405,
+          "major": "Electrical Engineering",
+          "year": "4th year",
+          "profile_status": "not_located_in_first_sweep",
+          "profile_urls": [],
+          "findings": "Targeted public search did not resolve a trustworthy GitHub/profile match. This is not evidence of no account, no skills, or no progress.",
+          "search_queries": [
+            "\"Sid Chandra\" GitHub \"Cal Poly\""
+          ]
+        }
+      ],
+      "team_search_queries": [
+        "\"The Jizzers\" \"Cal Poly\""
+      ],
+      "project_status": "not_located_in_first_sweep",
+      "repo_urls": [],
+      "live_urls": [],
+      "product": "Unknown current-event product",
+      "audience": "Unknown current-event audience",
+      "progress": "Unknown current-event progress; no penalty inferred from missing public evidence",
+      "evidence": [
+        {
+          "url": "https://www.linkedin.com/in/emiokumoto",
+          "claim": "Likely school/software-development profile. Devpost lists FoodFriends at KiroHacks and EasyWeb dated July 21, 2026; both earlier events.",
+          "observed_at": "2026-11-14 19:21:17 UTC",
+          "source_date": null,
+          "access": "Public search-index excerpt unless noted as directly inspected"
+        },
+        {
+          "url": "https://www.linkedin.com/in/jonathan-zhao27",
+          "claim": "Likely school/statistics-matched public profile. Reports prior DataFest analysis experience; no current-event project found.",
+          "observed_at": "2026-11-14 19:21:17 UTC",
+          "source_date": null,
+          "access": "Public search-index excerpt unless noted as directly inspected"
+        },
+        {
+          "url": "https://devpost.com/software/easyweb-nevjt4",
+          "claim": "Devpost index credits Emi Okumoto for EasyWeb submitted to OpenAI Build Week, started July 21, 2026. Earlier event, not November submission.",
+          "observed_at": "2026-11-14 19:21:17 UTC",
+          "source_date": "2026-07-21",
+          "access": "Search-index excerpt; direct fetch cache miss"
+        },
+        {
+          "url": "https://devpost.com/software/foodfriends-6qhnp1",
+          "claim": "Devpost index credits Emi Okumoto for FoodFriends at KiroHacks Cal Poly; historical project only.",
+          "observed_at": "2026-11-14 19:21:17 UTC",
+          "source_date": null,
+          "access": "Search-index excerpt; direct fetch cache miss"
+        }
+      ],
+      "uncertainties": [
+        "Team label comes from a check-in roster, not a verified final submission list.",
+        "Project ownership, current-event association, award entry, functionality, customer validation, and pitch quality remain unverified."
+      ],
+      "next_checks": [
+        "Resolve public GitHub handles from a team/portfolio crosslink.",
+        "Recheck public repo listings for recent changes and explicit event/team attribution.",
+        "Obtain public project description/demo or a team-provided link when available."
+      ]
+    }
+  ],
+  "limitations": [
+    "All 91 members received a targeted name + GitHub + Cal Poly query; every team received a name/project query. Search indexing is incomplete and often returned unrelated datasets.",
+    "GitHub searches hit a shared rate limit. Public repo listings retrieved for elischiffler, bowosc, Dhairya19793 and luisscheibe9-git after retry; additional user lookups rate-limited and were not treated as negative evidence.",
+    "Many LinkedIn/portfolio findings are indexed excerpts rather than directly fetched pages, and year wording can be stale. All such identity matches remain provisional.",
+    "No emails exported or searched, no contact databases used as evidence, no private accounts accessed, no messages sent, no third-party code executed.",
+    "Live links listed are published candidates, not independently functional apps. StageSight live fetch failed in the web tool.",
+    "No award-entry records, customer-validation evidence, judge assessments or final submission verification found. No probabilities/rubric grades justified yet."
+  ]
+}

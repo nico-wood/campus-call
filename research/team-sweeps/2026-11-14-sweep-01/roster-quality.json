@@ -1,0 +1,138 @@
+{
+  "raw_named_rows": 454,
+  "assigned_member_rows": 261,
+  "unassigned_rows": 193,
+  "team_labels": 90,
+  "normalized_name_groups": 446,
+  "duplicate_name_groups": [
+    [
+      {
+        "name": "Arsh  Gupta",
+        "team": "Unassigned",
+        "source_row": 43
+      },
+      {
+        "name": "Arsh Gupta",
+        "team": "Ctrl + Alt + Us",
+        "source_row": 44
+      }
+    ],
+    [
+      {
+        "name": "Arshia Gandhi",
+        "team": "Unassigned",
+        "source_row": 46
+      },
+      {
+        "name": "Arshia Gandhi",
+        "team": "Hello World!!!",
+        "source_row": 45
+      }
+    ],
+    [
+      {
+        "name": "Caleb  Shick",
+        "team": "Unassigned",
+        "source_row": 81
+      },
+      {
+        "name": "Caleb Shick",
+        "team": "Unassigned",
+        "source_row": 82
+      }
+    ],
+    [
+      {
+        "name": "cameryn pina",
+        "team": "Unassigned",
+        "source_row": 87
+      },
+      {
+        "name": "Cameryn Pina",
+        "team": "Unassigned",
+        "source_row": 88
+      }
+    ],
+    [
+      {
+        "name": "Kaela Fear",
+        "team": "Unassigned",
+        "source_row": 234
+      },
+      {
+        "name": "Kaela  Fear",
+        "team": "Future Founders",
+        "source_row": 233
+      }
+    ],
+    [
+      {
+        "name": "Kylie  Wu",
+        "team": "Unassigned",
+        "source_row": 251
+      },
+      {
+        "name": "Kylie Wu",
+        "team": "LEMMI",
+        "source_row": 252
+      }
+    ],
+    [
+      {
+        "name": "Luke Vieira",
+        "team": "Unassigned",
+        "source_row": 281
+      },
+      {
+        "name": "Luke Vieira",
+        "team": "Unassigned",
+        "source_row": 282
+      }
+    ],
+    [
+      {
+        "name": "nicholas muller",
+        "team": "Unassigned",
+        "source_row": 329
+      },
+      {
+        "name": "Nicholas Muller",
+        "team": "Unassigned",
+        "source_row": 330
+      }
+    ]
+  ],
+  "singleton_labels": {
+    "Jamvibe": [
+      "Andrew  Silvas"
+    ],
+    "LAMS": [
+      "Max Paul"
+    ],
+    "Iryna's Gang": [
+      "Shane Speth"
+    ]
+  },
+  "admin_test_rows": [
+    {
+      "source_row": 9,
+      "name": "admin cpvc",
+      "university": "Cal Poly SLO",
+      "college": "Orfalea College of Business",
+      "major": "Business Admin",
+      "year": "Other"
+    },
+    {
+      "source_row": 351,
+      "name": "Organizer review (test account)",
+      "university": "Cal Poly SLO",
+      "college": "Orfalea College of Business",
+      "major": "Synthetic test profile"
+    }
+  ],
+  "guide_named_organizers_present_in_unassigned": [
+    "Luke Vieira",
+    "Cameryn Pina"
+  ],
+  "interpretation": "Check-ins include unresolved membership, duplicate-name rows, organizers and administrative/test labels. No deduplication, team merge, eligibility removal or final competitor count inferred."
+}

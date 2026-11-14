@@ -1,0 +1,4048 @@
+{
+  "checked_at": "2026-11-14",
+  "scope": "First-pass discovery for blank-team rows; no participant email used in search or output",
+  "source_rows": 193,
+  "normalized_name_groups": 189,
+  "personal_name_searches": 187,
+  "members": [
+    {
+      "name": "Aakash Kapadia",
+      "source_rows": [
+        3
+      ],
+      "major": "Statistics",
+      "year": "4th year",
+      "team_status": "Unassigned in source rows; possible duplicate assigned row tracked separately",
+      "search_status": "Initial targeted web search completed",
+      "search_queries": [
+        "\"Aakash Kapadia\" GitHub \"Cal Poly\""
+      ],
+      "profile_status": "Candidate public pages; identity requires corroboration",
+      "candidate_urls": [
+        "https://www.linkedin.com/in/aakash-kapadia25"
+      ],
+      "current_project": "Unknown",
+      "audience": "Unknown",
+      "progress": "Unknown",
+      "next_check": "Resolve team membership, corroborate public account and inspect a current project; search non-discovery is not evidence of inactivity."
+    },
+    {
+      "name": "Aarnav Rai",
+      "source_rows": [
+        4
+      ],
+      "major": "Computer Engineering",
+      "year": "2nd year",
+      "team_status": "Unassigned in source rows; possible duplicate assigned row tracked separately",
+      "search_status": "Initial targeted web search completed",
+      "search_queries": [
+        "\"Aarnav Rai\" GitHub \"Cal Poly\""
+      ],
+      "profile_status": "No reliable profile located in this first search",
+      "candidate_urls": [],
+      "current_project": "Unknown",
+      "audience": "Unknown",
+      "progress": "Unknown",
+      "next_check": "Resolve team membership, corroborate public account and inspect a current project; search non-discovery is not evidence of inactivity."
+    },
+    {
+      "name": "Aarya Siddiqui",
+      "source_rows": [
+        5
+      ],
+      "major": "Sociology",
+      "year": "2nd year",
+      "team_status": "Unassigned in source rows; possible duplicate assigned row tracked separately",
+      "search_status": "Initial targeted web search completed",
+      "search_queries": [
+        "\"Aarya Siddiqui\" GitHub \"Cal Poly\""
+      ],
+      "profile_status": "No reliable profile located in this first search",
+      "candidate_urls": [],
+      "current_project": "Unknown",
+      "audience": "Unknown",
+      "progress": "Unknown",
+      "next_check": "Resolve team membership, corroborate public account and inspect a current project; search non-discovery is not evidence of inactivity."
+    },
+    {
+      "name": "Abdiel Maldonado",
+      "source_rows": [
+        6
+      ],
+      "major": "Business Admin",
+      "year": "2nd year",
+      "team_status": "Unassigned in source rows; possible duplicate assigned row tracked separately",
+      "search_status": "Initial targeted web search completed",
+      "search_queries": [
+        "\"Abdiel Maldonado\" GitHub \"Cal Poly\""
+      ],
+      "profile_status": "Candidate public pages; identity requires corroboration",
+      "candidate_urls": [
+        "https://www.linkedin.com/in/abdielma"
+      ],
+      "current_project": "Unknown",
+      "audience": "Unknown",
+      "progress": "Unknown",
+      "next_check": "Resolve team membership, corroborate public account and inspect a current project; search non-discovery is not evidence of inactivity."
+    },
+    {
+      "name": "Aditya Suresh",
+      "source_rows": [
+        8
+      ],
+      "major": "Physics",
+      "year": "1st year",
+      "team_status": "Unassigned in source rows; possible duplicate assigned row tracked separately",
+      "search_status": "Initial targeted web search completed",
+      "search_queries": [
+        "\"Aditya Suresh\" GitHub \"Cal Poly\""
+      ],
+      "profile_status": "No reliable profile located in this first search",
+      "candidate_urls": [],
+      "current_project": "Unknown",
+      "audience": "Unknown",
+      "progress": "Unknown",
+      "next_check": "Resolve team membership, corroborate public account and inspect a current project; search non-discovery is not evidence of inactivity."
+    },
+    {
+      "name": "admin cpvc",
+      "source_rows": [
+        9
+      ],
+      "major": "Business Admin",
+      "year": "Other",
+      "team_status": "Unassigned in source rows; possible duplicate assigned row tracked separately",
+      "search_status": "Administrative/test label; no personal profile search",
+      "search_queries": [],
+      "profile_status": "No reliable profile located in this first search",
+      "candidate_urls": [],
+      "current_project": "Unknown",
+      "audience": "Unknown",
+      "progress": "Unknown",
+      "next_check": "Resolve team membership, corroborate public account and inspect a current project; search non-discovery is not evidence of inactivity."
+    },
+    {
+      "name": "Adrian Jorge",
+      "source_rows": [
+        10
+      ],
+      "major": "Business Administration",
+      "year": "4th year",
+      "team_status": "Unassigned in source rows; possible duplicate assigned row tracked separately",
+      "search_status": "Initial targeted web search completed",
+      "search_queries": [
+        "\"Adrian Jorge\" GitHub \"Cal Poly\""
+      ],
+      "profile_status": "No reliable profile located in this first search",
+      "candidate_urls": [],
+      "current_project": "Unknown",
+      "audience": "Unknown",
+      "progress": "Unknown",
+      "next_check": "Resolve team membership, corroborate public account and inspect a current project; search non-discovery is not evidence of inactivity."
+    },
+    {
+      "name": "Alan Castillo",
+      "source_rows": [
+        21
+      ],
+      "major": "Computer Science",
+      "year": "5th year or later",
+      "team_status": "Unassigned in source rows; possible duplicate assigned row tracked separately",
+      "search_status": "Initial targeted web search completed",
+      "search_queries": [
+        "\"Alan Castillo\" GitHub \"Cal Poly\""
+      ],
+      "profile_status": "Candidate public pages; identity requires corroboration",
+      "candidate_urls": [
+        "https://humboldtathletics.com/sports/mens-soccer/roster/alan-castillo/4986"
+      ],
+      "current_project": "Unknown",
+      "audience": "Unknown",
+      "progress": "Unknown",
+      "next_check": "Resolve team membership, corroborate public account and inspect a current project; search non-discovery is not evidence of inactivity."
+    },
+    {
+      "name": "Alessandro Johnson",
+      "source_rows": [
+        22
+      ],
+      "major": "Business admin",
+      "year": "1st year",
+      "team_status": "Unassigned in source rows; possible duplicate assigned row tracked separately",
+      "search_status": "Initial targeted web search completed",
+      "search_queries": [
+        "\"Alessandro Johnson\" GitHub \"Cal Poly\""
+      ],
+      "profile_status": "No reliable profile located in this first search",
+      "candidate_urls": [],
+      "current_project": "Unknown",
+      "audience": "Unknown",
+      "progress": "Unknown",
+      "next_check": "Resolve team membership, corroborate public account and inspect a current project; search non-discovery is not evidence of inactivity."
+    },
+    {
+      "name": "Alexander Otis",
+      "source_rows": [
+        25
+      ],
+      "major": "Computer Science",
+      "year": "2nd year",
+      "team_status": "Unassigned in source rows; possible duplicate assigned row tracked separately",
+      "search_status": "Initial targeted web search completed",
+      "search_queries": [
+        "\"Alexander Otis\" GitHub \"Cal Poly\""
+      ],
+      "profile_status": "Candidate public pages; identity requires corroboration",
+      "candidate_urls": [
+        "https://www.linkedin.com/in/alexander-otis"
+      ],
+      "current_project": "Unknown",
+      "audience": "Unknown",
+      "progress": "Unknown",
+      "next_check": "Resolve team membership, corroborate public account and inspect a current project; search non-discovery is not evidence of inactivity."
+    },
+    {
+      "name": "Ally Stauffer",
+      "source_rows": [
+        27
+      ],
+      "major": "Computer Science",
+      "year": "3rd year",
+      "team_status": "Unassigned in source rows; possible duplicate assigned row tracked separately",
+      "search_status": "Initial targeted web search completed",
+      "search_queries": [
+        "\"Ally Stauffer\" GitHub \"Cal Poly\""
+      ],
+      "profile_status": "Candidate public pages; identity requires corroboration",
+      "candidate_urls": [
+        "https://www.linkedin.com/in/allystauffer"
+      ],
+      "current_project": "Unknown",
+      "audience": "Unknown",
+      "progress": "Unknown",
+      "next_check": "Resolve team membership, corroborate public account and inspect a current project; search non-discovery is not evidence of inactivity."
+    },
+    {
+      "name": "Andre LeBaron",
+      "source_rows": [
+        30
+      ],
+      "major": "AGB",
+      "year": "4th year",
+      "team_status": "Unassigned in source rows; possible duplicate assigned row tracked separately",
+      "search_status": "Initial targeted web search completed",
+      "search_queries": [
+        "\"Andre LeBaron\" GitHub \"Cal Poly\""
+      ],
+      "profile_status": "No reliable profile located in this first search",
+      "candidate_urls": [],
+      "current_project": "Unknown",
+      "audience": "Unknown",
+      "progress": "Unknown",
+      "next_check": "Resolve team membership, corroborate public account and inspect a current project; search non-discovery is not evidence of inactivity."
+    },
+    {
+      "name": "Andreas Simonsen",
+      "source_rows": [
+        31
+      ],
+      "major": "Business admin",
+      "year": "1st year",
+      "team_status": "Unassigned in source rows; possible duplicate assigned row tracked separately",
+      "search_status": "Initial targeted web search completed",
+      "search_queries": [
+        "\"Andreas Simonsen\" GitHub \"Cal Poly\""
+      ],
+      "profile_status": "No reliable profile located in this first search",
+      "candidate_urls": [],
+      "current_project": "Unknown",
+      "audience": "Unknown",
+      "progress": "Unknown",
+      "next_check": "Resolve team membership, corroborate public account and inspect a current project; search non-discovery is not evidence of inactivity."
+    },
+    {
+      "name": "Anthony Leung",
+      "source_rows": [
+        40
+      ],
+      "major": "BRAE",
+      "year": "4th year",
+      "team_status": "Unassigned in source rows; possible duplicate assigned row tracked separately",
+      "search_status": "Initial targeted web search completed",
+      "search_queries": [
+        "\"Anthony Leung\" site:github.com"
+      ],
+      "profile_status": "No reliable profile located in this first search",
+      "candidate_urls": [],
+      "current_project": "Unknown",
+      "audience": "Unknown",
+      "progress": "Unknown",
+      "next_check": "Resolve team membership, corroborate public account and inspect a current project; search non-discovery is not evidence of inactivity."
+    },
+    {
+      "name": "Arsh  Gupta",
+      "source_rows": [
+        43
+      ],
+      "major": "Architecture",
+      "year": "5th year or later",
+      "team_status": "Unassigned in source rows; possible duplicate assigned row tracked separately",
+      "search_status": "Initial targeted web search completed",
+      "search_queries": [
+        "\"Arsh Gupta\" site:github.com"
+      ],
+      "profile_status": "No reliable profile located in this first search",
+      "candidate_urls": [],
+      "current_project": "Unknown",
+      "audience": "Unknown",
+      "progress": "Unknown",
+      "next_check": "Resolve team membership, corroborate public account and inspect a current project; search non-discovery is not evidence of inactivity."
+    },
+    {
+      "name": "Arshia Gandhi",
+      "source_rows": [
+        46
+      ],
+      "major": "Statistics and Data Science",
+      "year": "1st year",
+      "team_status": "Unassigned in source rows; possible duplicate assigned row tracked separately",
+      "search_status": "Initial targeted web search completed",
+      "search_queries": [
+        "\"Arshia Gandhi\" site:github.com"
+      ],
+      "profile_status": "No reliable profile located in this first search",
+      "candidate_urls": [],
+      "current_project": "Unknown",
+      "audience": "Unknown",
+      "progress": "Unknown",
+      "next_check": "Resolve team membership, corroborate public account and inspect a current project; search non-discovery is not evidence of inactivity."
+    },
+    {
+      "name": "Ashlyn  Perry",
+      "source_rows": [
+        47
+      ],
+      "major": "Business Admin",
+      "year": "3rd year",
+      "team_status": "Unassigned in source rows; possible duplicate assigned row tracked separately",
+      "search_status": "Initial targeted web search completed",
+      "search_queries": [
+        "\"Ashlyn Perry\" site:github.com"
+      ],
+      "profile_status": "No reliable profile located in this first search",
+      "candidate_urls": [],
+      "current_project": "Unknown",
+      "audience": "Unknown",
+      "progress": "Unknown",
+      "next_check": "Resolve team membership, corroborate public account and inspect a current project; search non-discovery is not evidence of inactivity."
+    },
+    {
+      "name": "Ashton Gage",
+      "source_rows": [
+        48
+      ],
+      "major": "Computer Engineering",
+      "year": "5th year or later",
+      "team_status": "Unassigned in source rows; possible duplicate assigned row tracked separately",
+      "search_status": "Initial targeted web search completed",
+      "search_queries": [
+        "\"Ashton Gage\" site:github.com"
+      ],
+      "profile_status": "No reliable profile located in this first search",
+      "candidate_urls": [],
+      "current_project": "Unknown",
+      "audience": "Unknown",
+      "progress": "Unknown",
+      "next_check": "Resolve team membership, corroborate public account and inspect a current project; search non-discovery is not evidence of inactivity."
+    },
+    {
+      "name": "Ava Douglas",
+      "source_rows": [
+        51
+      ],
+      "major": "Business",
+      "year": null,
+      "team_status": "Unassigned in source rows; possible duplicate assigned row tracked separately",
+      "search_status": "Initial targeted web search completed",
+      "search_queries": [
+        "\"Ava Douglas\" site:github.com"
+      ],
+      "profile_status": "No reliable profile located in this first search",
+      "candidate_urls": [],
+      "current_project": "Unknown",
+      "audience": "Unknown",
+      "progress": "Unknown",
+      "next_check": "Resolve team membership, corroborate public account and inspect a current project; search non-discovery is not evidence of inactivity."
+    },
+    {
+      "name": "Avari Brocker",
+      "source_rows": [
+        52
+      ],
+      "major": "Biomedical Engineering",
+      "year": null,
+      "team_status": "Unassigned in source rows; possible duplicate assigned row tracked separately",
+      "search_status": "Initial targeted web search completed",
+      "search_queries": [
+        "\"Avari Brocker\" site:github.com"
+      ],
+      "profile_status": "No reliable profile located in this first search",
+      "candidate_urls": [],
+      "current_project": "Unknown",
+      "audience": "Unknown",
+      "progress": "Unknown",
+      "next_check": "Resolve team membership, corroborate public account and inspect a current project; search non-discovery is not evidence of inactivity."
+    },
+    {
+      "name": "Ayden Cruz",
+      "source_rows": [
+        54
+      ],
+      "major": "Economics",
+      "year": "2nd year",
+      "team_status": "Unassigned in source rows; possible duplicate assigned row tracked separately",
+      "search_status": "Initial targeted web search completed",
+      "search_queries": [
+        "\"Ayden Cruz\" site:github.com"
+      ],
+      "profile_status": "No reliable profile located in this first search",
+      "candidate_urls": [],
+      "current_project": "Unknown",
+      "audience": "Unknown",
+      "progress": "Unknown",
+      "next_check": "Resolve team membership, corroborate public account and inspect a current project; search non-discovery is not evidence of inactivity."
+    },
+    {
+      "name": "Ayden Gregory",
+      "source_rows": [
+        55
+      ],
+      "major": "Business",
+      "year": "4th year",
+      "team_status": "Unassigned in source rows; possible duplicate assigned row tracked separately",
+      "search_status": "Initial targeted web search completed",
+      "search_queries": [
+        "\"Ayden Gregory\" site:github.com"
+      ],
+      "profile_status": "No reliable profile located in this first search",
+      "candidate_urls": [],
+      "current_project": "Unknown",
+      "audience": "Unknown",
+      "progress": "Unknown",
+      "next_check": "Resolve team membership, corroborate public account and inspect a current project; search non-discovery is not evidence of inactivity.",
+      "discord_project_evidence": {
+        "kind": "unassigned_project_claim",
+        "name": "Ayden Gregory",
+        "url": "https://discord.com/channels/1564416101239103542/1564416148529741964/1570630310117376043",
+        "source_date": "2026-11-12 6:44 PM PT",
+        "product": "Musician practice app with streaks, goals, progress, session listening/AI feedback and organized lesson notes.",
+        "audience": "Musicians, explicitly including classical musicians.",
+        "progress": "Idea/recruiting post; followup on Nov 13 at 9 PM still sought teammates.",
+        "uncertainties": "Blank team in supplied roster; no team or active submission inferred.",
+        "followup_url": "https://discord.com/channels/1564416101239103542/1564416148529741964/1571027054424756329"
+      }
+    },
+    {
+      "name": "ben lusaya",
+      "source_rows": [
+        62
+      ],
+      "major": "statistics",
+      "year": "1st year",
+      "team_status": "Unassigned in source rows; possible duplicate assigned row tracked separately",
+      "search_status": "Initial targeted web search completed",
+      "search_queries": [
+        "\"ben lusaya\" site:github.com"
+      ],
+      "profile_status": "No reliable profile located in this first search",
+      "candidate_urls": [],
+      "current_project": "Unknown",
+      "audience": "Unknown",
+      "progress": "Unknown",
+      "next_check": "Resolve team membership, corroborate public account and inspect a current project; search non-discovery is not evidence of inactivity."
+    },
+    {
+      "name": "Benjamin Gomez",
+      "source_rows": [
+        63
+      ],
+      "major": "Economics",
+      "year": "1st year",
+      "team_status": "Unassigned in source rows; possible duplicate assigned row tracked separately",
+      "search_status": "Initial targeted web search completed",
+      "search_queries": [
+        "\"Benjamin Gomez\" site:github.com"
+      ],
+      "profile_status": "No reliable profile located in this first search",
+      "candidate_urls": [],
+      "current_project": "Unknown",
+      "audience": "Unknown",
+      "progress": "Unknown",
+      "next_check": "Resolve team membership, corroborate public account and inspect a current project; search non-discovery is not evidence of inactivity."
+    },
+    {
+      "name": "Bilal Khan",
+      "source_rows": [
+        65
+      ],
+      "major": "Computer Engineering",
+      "year": "4th year",
+      "team_status": "Unassigned in source rows; possible duplicate assigned row tracked separately",
+      "search_status": "Initial targeted web search completed",
+      "search_queries": [
+        "\"Bilal Khan\" site:github.com"
+      ],
+      "profile_status": "Candidate public pages; identity requires corroboration",
+      "candidate_urls": [
+        "https://github.com/bilalk88"
+      ],
+      "current_project": "Unknown",
+      "audience": "Unknown",
+      "progress": "Unknown",
+      "next_check": "Resolve team membership, corroborate public account and inspect a current project; search non-discovery is not evidence of inactivity."
+    },
+    {
+      "name": "Brandon Herbert",
+      "source_rows": [
+        70
+      ],
+      "major": "Industrial Engineering",
+      "year": "2nd year",
+      "team_status": "Unassigned in source rows; possible duplicate assigned row tracked separately",
+      "search_status": "Initial targeted web search completed",
+      "search_queries": [
+        "\"Brandon Herbert\" site:github.com"
+      ],
+      "profile_status": "No reliable profile located in this first search",
+      "candidate_urls": [],
+      "current_project": "Unknown",
+      "audience": "Unknown",
+      "progress": "Unknown",
+      "next_check": "Resolve team membership, corroborate public account and inspect a current project; search non-discovery is not evidence of inactivity."
+    },
+    {
+      "name": "Brett Baron",
+      "source_rows": [
+        73
+      ],
+      "major": "History",
+      "year": "Other",
+      "team_status": "Unassigned in source rows; possible duplicate assigned row tracked separately",
+      "search_status": "Initial targeted web search completed",
+      "search_queries": [
+        "\"Brett Baron\" site:github.com"
+      ],
+      "profile_status": "No reliable profile located in this first search",
+      "candidate_urls": [],
+      "current_project": "Unknown",
+      "audience": "Unknown",
+      "progress": "Unknown",
+      "next_check": "Resolve team membership, corroborate public account and inspect a current project; search non-discovery is not evidence of inactivity."
+    },
+    {
+      "name": "Brian Kennelly",
+      "source_rows": [
+        74
+      ],
+      "major": "World Languages and Cultures",
+      "year": "Other",
+      "team_status": "Unassigned in source rows; possible duplicate assigned row tracked separately",
+      "search_status": "Initial targeted web search completed",
+      "search_queries": [
+        "\"Brian Kennelly\" site:github.com"
+      ],
+      "profile_status": "No reliable profile located in this first search",
+      "candidate_urls": [],
+      "current_project": "Unknown",
+      "audience": "Unknown",
+      "progress": "Unknown",
+      "next_check": "Resolve team membership, corroborate public account and inspect a current project; search non-discovery is not evidence of inactivity.",
+      "discord_project_evidence": {
+        "kind": "unassigned_project_claim",
+        "name": "Brian Kennelly",
+        "url": "https://discord.com/channels/1564416101239103542/1564416148529741964/1566264553656950906",
+        "source_date": "2026-10-31 6:36 PM PT",
+        "product": "Architecture for an AI Sieve: proposed text-processing and visualization dashboard studying human-author/LLM editing conflicts.",
+        "audience": "Digital humanities researchers and writers; inferred from described workflow.",
+        "progress": "Recruiting post describes a supplied text archive and desired developer roles. No build observed.",
+        "uncertainties": "Blank team in roster; no final team, project implementation or current eligibility inferred.",
+        "public_project_page": "https://sites.google.com/view/boymachineremembers"
+      }
+    },
+    {
+      "name": "Brian Torres",
+      "source_rows": [
+        75
+      ],
+      "major": "Construction Management",
+      "year": "2nd year",
+      "team_status": "Unassigned in source rows; possible duplicate assigned row tracked separately",
+      "search_status": "Initial targeted web search completed",
+      "search_queries": [
+        "\"Brian Torres\" site:github.com"
+      ],
+      "profile_status": "No reliable profile located in this first search",
+      "candidate_urls": [],
+      "current_project": "Unknown",
+      "audience": "Unknown",
+      "progress": "Unknown",
+      "next_check": "Resolve team membership, corroborate public account and inspect a current project; search non-discovery is not evidence of inactivity."
+    },
+    {
+      "name": "Caden McConnell",
+      "source_rows": [
+        78
+      ],
+      "major": "Ag Business",
+      "year": "5th year or later",
+      "team_status": "Unassigned in source rows; possible duplicate assigned row tracked separately",
+      "search_status": "Initial targeted web search completed",
+      "search_queries": [
+        "\"Caden McConnell\" site:github.com"
+      ],
+      "profile_status": "No reliable profile located in this first search",
+      "candidate_urls": [],
+      "current_project": "Unknown",
+      "audience": "Unknown",
+      "progress": "Unknown",
+      "next_check": "Resolve team membership, corroborate public account and inspect a current project; search non-discovery is not evidence of inactivity."
+    },
+    {
+      "name": "Caleb  Shick",
+      "source_rows": [
+        81,
+        82
+      ],
+      "major": "Business administration",
+      "year": "4th year",
+      "team_status": "Unassigned in source rows; possible duplicate assigned row tracked separately",
+      "search_status": "Initial targeted web search completed",
+      "search_queries": [
+        "\"Caleb Shick\" site:github.com"
+      ],
+      "profile_status": "No reliable profile located in this first search",
+      "candidate_urls": [],
+      "current_project": "Unknown",
+      "audience": "Unknown",
+      "progress": "Unknown",
+      "next_check": "Resolve team membership, corroborate public account and inspect a current project; search non-discovery is not evidence of inactivity."
+    },
+    {
+      "name": "Cameron Do-Khanh",
+      "source_rows": [
+        85
+      ],
+      "major": "Business Analytics",
+      "year": "Graduate student",
+      "team_status": "Unassigned in source rows; possible duplicate assigned row tracked separately",
+      "search_status": "Initial targeted web search completed",
+      "search_queries": [
+        "\"Cameron Do-Khanh\" site:github.com"
+      ],
+      "profile_status": "No reliable profile located in this first search",
+      "candidate_urls": [],
+      "current_project": "Unknown",
+      "audience": "Unknown",
+      "progress": "Unknown",
+      "next_check": "Resolve team membership, corroborate public account and inspect a current project; search non-discovery is not evidence of inactivity."
+    },
+    {
+      "name": "cameryn pina",
+      "source_rows": [
+        87,
+        88
+      ],
+      "major": "business",
+      "year": "4th year",
+      "team_status": "Unassigned in source rows; possible duplicate assigned row tracked separately",
+      "search_status": "Initial targeted web search completed",
+      "search_queries": [
+        "\"cameryn pina\" site:github.com"
+      ],
+      "profile_status": "No reliable profile located in this first search",
+      "candidate_urls": [],
+      "current_project": "Unknown",
+      "audience": "Unknown",
+      "progress": "Unknown",
+      "next_check": "Resolve team membership, corroborate public account and inspect a current project; search non-discovery is not evidence of inactivity.",
+      "role_evidence": "Live participant guide names this person as an organizer; do not assume competitor status.",
+      "role_source": "https://cpvc-ai-hackathon-guide.vercel.app/#report"
+    },
+    {
+      "name": "Casey Azus",
+      "source_rows": [
+        92
+      ],
+      "major": "Business Administration",
+      "year": "2nd year",
+      "team_status": "Unassigned in source rows; possible duplicate assigned row tracked separately",
+      "search_status": "Initial targeted web search completed",
+      "search_queries": [
+        "\"Casey Azus\" site:github.com"
+      ],
+      "profile_status": "No reliable profile located in this first search",
+      "candidate_urls": [],
+      "current_project": "Unknown",
+      "audience": "Unknown",
+      "progress": "Unknown",
+      "next_check": "Resolve team membership, corroborate public account and inspect a current project; search non-discovery is not evidence of inactivity."
+    },
+    {
+      "name": "Casey Ovsiowitz",
+      "source_rows": [
+        93
+      ],
+      "major": "Business administration",
+      "year": "2nd year",
+      "team_status": "Unassigned in source rows; possible duplicate assigned row tracked separately",
+      "search_status": "Initial targeted web search completed",
+      "search_queries": [
+        "\"Casey Ovsiowitz\" site:github.com"
+      ],
+      "profile_status": "No reliable profile located in this first search",
+      "candidate_urls": [],
+      "current_project": "Unknown",
+      "audience": "Unknown",
+      "progress": "Unknown",
+      "next_check": "Resolve team membership, corroborate public account and inspect a current project; search non-discovery is not evidence of inactivity."
+    },
+    {
+      "name": "Chandler Lau",
+      "source_rows": [
+        94
+      ],
+      "major": "Business Administration",
+      "year": "4th year",
+      "team_status": "Unassigned in source rows; possible duplicate assigned row tracked separately",
+      "search_status": "Initial targeted web search completed",
+      "search_queries": [
+        "\"Chandler Lau\" site:github.com"
+      ],
+      "profile_status": "No reliable profile located in this first search",
+      "candidate_urls": [],
+      "current_project": "Unknown",
+      "audience": "Unknown",
+      "progress": "Unknown",
+      "next_check": "Resolve team membership, corroborate public account and inspect a current project; search non-discovery is not evidence of inactivity."
+    },
+    {
+      "name": "Charles Morrisey",
+      "source_rows": [
+        95
+      ],
+      "major": "Biomedical Engineering",
+      "year": "2nd year",
+      "team_status": "Unassigned in source rows; possible duplicate assigned row tracked separately",
+      "search_status": "Initial targeted web search completed",
+      "search_queries": [
+        "\"Charles Morrisey\" site:github.com"
+      ],
+      "profile_status": "No reliable profile located in this first search",
+      "candidate_urls": [],
+      "current_project": "Unknown",
+      "audience": "Unknown",
+      "progress": "Unknown",
+      "next_check": "Resolve team membership, corroborate public account and inspect a current project; search non-discovery is not evidence of inactivity."
+    },
+    {
+      "name": "Cole Nieman",
+      "source_rows": [
+        101
+      ],
+      "major": "Mechanical Engineering",
+      "year": "3rd year",
+      "team_status": "Unassigned in source rows; possible duplicate assigned row tracked separately",
+      "search_status": "Initial targeted web search completed",
+      "search_queries": [
+        "\"Cole Nieman\" site:github.com"
+      ],
+      "profile_status": "No reliable profile located in this first search",
+      "candidate_urls": [],
+      "current_project": "Unknown",
+      "audience": "Unknown",
+      "progress": "Unknown",
+      "next_check": "Resolve team membership, corroborate public account and inspect a current project; search non-discovery is not evidence of inactivity."
+    },
+    {
+      "name": "Colin Bender",
+      "source_rows": [
+        102
+      ],
+      "major": "Journalism",
+      "year": "2nd year",
+      "team_status": "Unassigned in source rows; possible duplicate assigned row tracked separately",
+      "search_status": "Initial targeted web search completed",
+      "search_queries": [
+        "\"Colin Bender\" site:github.com"
+      ],
+      "profile_status": "No reliable profile located in this first search",
+      "candidate_urls": [],
+      "current_project": "Unknown",
+      "audience": "Unknown",
+      "progress": "Unknown",
+      "next_check": "Resolve team membership, corroborate public account and inspect a current project; search non-discovery is not evidence of inactivity."
+    },
+    {
+      "name": "Connor Nachand",
+      "source_rows": [
+        103
+      ],
+      "major": "Itp",
+      "year": "2nd year",
+      "team_status": "Unassigned in source rows; possible duplicate assigned row tracked separately",
+      "search_status": "Initial targeted web search completed",
+      "search_queries": [
+        "\"Connor Nachand\" site:github.com"
+      ],
+      "profile_status": "No reliable profile located in this first search",
+      "candidate_urls": [],
+      "current_project": "Unknown",
+      "audience": "Unknown",
+      "progress": "Unknown",
+      "next_check": "Resolve team membership, corroborate public account and inspect a current project; search non-discovery is not evidence of inactivity."
+    },
+    {
+      "name": "Cristian Covarrubias",
+      "source_rows": [
+        104
+      ],
+      "major": "Business Administration",
+      "year": "1st year",
+      "team_status": "Unassigned in source rows; possible duplicate assigned row tracked separately",
+      "search_status": "Initial targeted web search completed",
+      "search_queries": [
+        "\"Cristian Covarrubias\" site:github.com"
+      ],
+      "profile_status": "No reliable profile located in this first search",
+      "candidate_urls": [],
+      "current_project": "Unknown",
+      "audience": "Unknown",
+      "progress": "Unknown",
+      "next_check": "Resolve team membership, corroborate public account and inspect a current project; search non-discovery is not evidence of inactivity."
+    },
+    {
+      "name": "Cyrus Campisi",
+      "source_rows": [
+        105
+      ],
+      "major": "BMED",
+      "year": "2nd year",
+      "team_status": "Unassigned in source rows; possible duplicate assigned row tracked separately",
+      "search_status": "Initial targeted web search completed",
+      "search_queries": [
+        "\"Cyrus Campisi\" site:github.com"
+      ],
+      "profile_status": "No reliable profile located in this first search",
+      "candidate_urls": [],
+      "current_project": "Unknown",
+      "audience": "Unknown",
+      "progress": "Unknown",
+      "next_check": "Resolve team membership, corroborate public account and inspect a current project; search non-discovery is not evidence of inactivity."
+    },
+    {
+      "name": "Daniel Hohnloser",
+      "source_rows": [
+        106
+      ],
+      "major": "Wine and Viticulture",
+      "year": "2nd year",
+      "team_status": "Unassigned in source rows; possible duplicate assigned row tracked separately",
+      "search_status": "Initial targeted web search completed",
+      "search_queries": [
+        "\"Daniel Hohnloser\" site:github.com"
+      ],
+      "profile_status": "No reliable profile located in this first search",
+      "candidate_urls": [],
+      "current_project": "Unknown",
+      "audience": "Unknown",
+      "progress": "Unknown",
+      "next_check": "Resolve team membership, corroborate public account and inspect a current project; search non-discovery is not evidence of inactivity."
+    },
+    {
+      "name": "Dario Rager",
+      "source_rows": [
+        107
+      ],
+      "major": "Mechanical Engineering",
+      "year": "2nd year",
+      "team_status": "Unassigned in source rows; possible duplicate assigned row tracked separately",
+      "search_status": "Initial targeted web search completed",
+      "search_queries": [
+        "\"Dario Rager\" site:github.com"
+      ],
+      "profile_status": "No reliable profile located in this first search",
+      "candidate_urls": [],
+      "current_project": "Unknown",
+      "audience": "Unknown",
+      "progress": "Unknown",
+      "next_check": "Resolve team membership, corroborate public account and inspect a current project; search non-discovery is not evidence of inactivity."
+    },
+    {
+      "name": "David Morfin",
+      "source_rows": [
+        108
+      ],
+      "major": "Computer Science",
+      "year": "4th year",
+      "team_status": "Unassigned in source rows; possible duplicate assigned row tracked separately",
+      "search_status": "Initial targeted web search completed",
+      "search_queries": [
+        "\"David Morfin\" site:github.com"
+      ],
+      "profile_status": "No reliable profile located in this first search",
+      "candidate_urls": [],
+      "current_project": "Unknown",
+      "audience": "Unknown",
+      "progress": "Unknown",
+      "next_check": "Resolve team membership, corroborate public account and inspect a current project; search non-discovery is not evidence of inactivity."
+    },
+    {
+      "name": "Davis Holback",
+      "source_rows": [
+        109
+      ],
+      "major": "ITP",
+      "year": "4th year",
+      "team_status": "Unassigned in source rows; possible duplicate assigned row tracked separately",
+      "search_status": "Initial targeted web search completed",
+      "search_queries": [
+        "\"Davis Holback\" site:github.com"
+      ],
+      "profile_status": "No reliable profile located in this first search",
+      "candidate_urls": [],
+      "current_project": "Unknown",
+      "audience": "Unknown",
+      "progress": "Unknown",
+      "next_check": "Resolve team membership, corroborate public account and inspect a current project; search non-discovery is not evidence of inactivity."
+    },
+    {
+      "name": "Dean De Freitas Meade",
+      "source_rows": [
+        110
+      ],
+      "major": "Aerospace Engineering",
+      "year": "3rd year",
+      "team_status": "Unassigned in source rows; possible duplicate assigned row tracked separately",
+      "search_status": "Initial targeted web search completed",
+      "search_queries": [
+        "\"Dean De Freitas Meade\" site:github.com"
+      ],
+      "profile_status": "No reliable profile located in this first search",
+      "candidate_urls": [],
+      "current_project": "Unknown",
+      "audience": "Unknown",
+      "progress": "Unknown",
+      "next_check": "Resolve team membership, corroborate public account and inspect a current project; search non-discovery is not evidence of inactivity."
+    },
+    {
+      "name": "Dhanvi Ganti",
+      "source_rows": [
+        114
+      ],
+      "major": "Computer Science",
+      "year": "4th year",
+      "team_status": "Unassigned in source rows; possible duplicate assigned row tracked separately",
+      "search_status": "Initial targeted web search completed",
+      "search_queries": [
+        "\"Dhanvi Ganti\" site:github.com"
+      ],
+      "profile_status": "No reliable profile located in this first search",
+      "candidate_urls": [],
+      "current_project": "Unknown",
+      "audience": "Unknown",
+      "progress": "Unknown",
+      "next_check": "Resolve team membership, corroborate public account and inspect a current project; search non-discovery is not evidence of inactivity."
+    },
+    {
+      "name": "Diem Schneider",
+      "source_rows": [
+        116
+      ],
+      "major": "Graphic Communication",
+      "year": "1st year",
+      "team_status": "Unassigned in source rows; possible duplicate assigned row tracked separately",
+      "search_status": "Initial targeted web search completed",
+      "search_queries": [
+        "\"Diem Schneider\" site:github.com"
+      ],
+      "profile_status": "No reliable profile located in this first search",
+      "candidate_urls": [],
+      "current_project": "Unknown",
+      "audience": "Unknown",
+      "progress": "Unknown",
+      "next_check": "Resolve team membership, corroborate public account and inspect a current project; search non-discovery is not evidence of inactivity."
+    },
+    {
+      "name": "Dildeep Singh",
+      "source_rows": [
+        117
+      ],
+      "major": "Business",
+      "year": "3rd year",
+      "team_status": "Unassigned in source rows; possible duplicate assigned row tracked separately",
+      "search_status": "Initial targeted web search completed",
+      "search_queries": [
+        "\"Dildeep Singh\" GitHub \"Cal Poly\""
+      ],
+      "profile_status": "No reliable profile located in this first search",
+      "candidate_urls": [],
+      "current_project": "Unknown",
+      "audience": "Unknown",
+      "progress": "Unknown",
+      "next_check": "Resolve team membership, corroborate public account and inspect a current project; search non-discovery is not evidence of inactivity."
+    },
+    {
+      "name": "Donaldo Barraza",
+      "source_rows": [
+        119
+      ],
+      "major": "Mechanical Engineering",
+      "year": "4th year",
+      "team_status": "Unassigned in source rows; possible duplicate assigned row tracked separately",
+      "search_status": "Initial targeted web search completed",
+      "search_queries": [
+        "\"Donaldo Barraza\" GitHub \"Cal Poly\""
+      ],
+      "profile_status": "No reliable profile located in this first search",
+      "candidate_urls": [],
+      "current_project": "Unknown",
+      "audience": "Unknown",
+      "progress": "Unknown",
+      "next_check": "Resolve team membership, corroborate public account and inspect a current project; search non-discovery is not evidence of inactivity."
+    },
+    {
+      "name": "Drew Arney",
+      "source_rows": [
+        121
+      ],
+      "major": "Mechanical engineering",
+      "year": "3rd year",
+      "team_status": "Unassigned in source rows; possible duplicate assigned row tracked separately",
+      "search_status": "Initial targeted web search completed",
+      "search_queries": [
+        "\"Drew Arney\" GitHub \"Cal Poly\""
+      ],
+      "profile_status": "No reliable profile located in this first search",
+      "candidate_urls": [],
+      "current_project": "Unknown",
+      "audience": "Unknown",
+      "progress": "Unknown",
+      "next_check": "Resolve team membership, corroborate public account and inspect a current project; search non-discovery is not evidence of inactivity."
+    },
+    {
+      "name": "Easton Mcmichael",
+      "source_rows": [
+        123
+      ],
+      "major": "Economics",
+      "year": "3rd year",
+      "team_status": "Unassigned in source rows; possible duplicate assigned row tracked separately",
+      "search_status": "Initial targeted web search completed",
+      "search_queries": [
+        "\"Easton Mcmichael\" GitHub \"UCSB\""
+      ],
+      "profile_status": "No reliable profile located in this first search",
+      "candidate_urls": [],
+      "current_project": "Unknown",
+      "audience": "Unknown",
+      "progress": "Unknown",
+      "next_check": "Resolve team membership, corroborate public account and inspect a current project; search non-discovery is not evidence of inactivity."
+    },
+    {
+      "name": "Eli Pendras-Lichter",
+      "source_rows": [
+        127
+      ],
+      "major": "business",
+      "year": null,
+      "team_status": "Unassigned in source rows; possible duplicate assigned row tracked separately",
+      "search_status": "Initial targeted web search completed",
+      "search_queries": [
+        "\"Eli Pendras-Lichter\" GitHub \"Cal Poly\""
+      ],
+      "profile_status": "No reliable profile located in this first search",
+      "candidate_urls": [],
+      "current_project": "Unknown",
+      "audience": "Unknown",
+      "progress": "Unknown",
+      "next_check": "Resolve team membership, corroborate public account and inspect a current project; search non-discovery is not evidence of inactivity."
+    },
+    {
+      "name": "Eliy Miller",
+      "source_rows": [
+        134
+      ],
+      "major": "Business Admin",
+      "year": "1st year",
+      "team_status": "Unassigned in source rows; possible duplicate assigned row tracked separately",
+      "search_status": "Initial targeted web search completed",
+      "search_queries": [
+        "\"Eliy Miller\" GitHub \"Cal Poly\""
+      ],
+      "profile_status": "Candidate public pages; identity requires corroboration",
+      "candidate_urls": [
+        "https://www.linkedin.com/in/eliymiller"
+      ],
+      "current_project": "Unknown",
+      "audience": "Unknown",
+      "progress": "Unknown",
+      "next_check": "Resolve team membership, corroborate public account and inspect a current project; search non-discovery is not evidence of inactivity."
+    },
+    {
+      "name": "Ella Eovaldi",
+      "source_rows": [
+        135
+      ],
+      "major": "Business Administration",
+      "year": "2nd year",
+      "team_status": "Unassigned in source rows; possible duplicate assigned row tracked separately",
+      "search_status": "Initial targeted web search completed",
+      "search_queries": [
+        "\"Ella Eovaldi\" GitHub \"Cal Poly\""
+      ],
+      "profile_status": "Candidate public pages; identity requires corroboration",
+      "candidate_urls": [
+        "https://www.linkedin.com/in/ella-eovaldi-13a3a0390"
+      ],
+      "current_project": "Unknown",
+      "audience": "Unknown",
+      "progress": "Unknown",
+      "next_check": "Resolve team membership, corroborate public account and inspect a current project; search non-discovery is not evidence of inactivity."
+    },
+    {
+      "name": "Emma Stanciu",
+      "source_rows": [
+        141
+      ],
+      "major": "Biological Sciences",
+      "year": "2nd year",
+      "team_status": "Unassigned in source rows; possible duplicate assigned row tracked separately",
+      "search_status": "Initial targeted web search completed",
+      "search_queries": [
+        "\"Emma Stanciu\" GitHub \"Cal Poly\""
+      ],
+      "profile_status": "No reliable profile located in this first search",
+      "candidate_urls": [],
+      "current_project": "Unknown",
+      "audience": "Unknown",
+      "progress": "Unknown",
+      "next_check": "Resolve team membership, corroborate public account and inspect a current project; search non-discovery is not evidence of inactivity."
+    },
+    {
+      "name": "Emmanuel  Okpan",
+      "source_rows": [
+        142
+      ],
+      "major": "Industrial Technology & Packaging",
+      "year": "2nd year",
+      "team_status": "Unassigned in source rows; possible duplicate assigned row tracked separately",
+      "search_status": "Initial targeted web search completed",
+      "search_queries": [
+        "\"Emmanuel Okpan\" GitHub \"Cal Poly\""
+      ],
+      "profile_status": "No reliable profile located in this first search",
+      "candidate_urls": [],
+      "current_project": "Unknown",
+      "audience": "Unknown",
+      "progress": "Unknown",
+      "next_check": "Resolve team membership, corroborate public account and inspect a current project; search non-discovery is not evidence of inactivity."
+    },
+    {
+      "name": "Ethan Orozco",
+      "source_rows": [
+        145
+      ],
+      "major": "Industrial Technology and Packaging",
+      "year": "2nd year",
+      "team_status": "Unassigned in source rows; possible duplicate assigned row tracked separately",
+      "search_status": "Initial targeted web search completed",
+      "search_queries": [
+        "\"Ethan Orozco\" GitHub \"Cal Poly\""
+      ],
+      "profile_status": "No reliable profile located in this first search",
+      "candidate_urls": [],
+      "current_project": "Unknown",
+      "audience": "Unknown",
+      "progress": "Unknown",
+      "next_check": "Resolve team membership, corroborate public account and inspect a current project; search non-discovery is not evidence of inactivity."
+    },
+    {
+      "name": "Evan Koermer",
+      "source_rows": [
+        146
+      ],
+      "major": "Art and Design",
+      "year": "4th year",
+      "team_status": "Unassigned in source rows; possible duplicate assigned row tracked separately",
+      "search_status": "Initial targeted web search completed",
+      "search_queries": [
+        "\"Evan Koermer\" GitHub \"Cal Poly\""
+      ],
+      "profile_status": "No reliable profile located in this first search",
+      "candidate_urls": [],
+      "current_project": "Unknown",
+      "audience": "Unknown",
+      "progress": "Unknown",
+      "next_check": "Resolve team membership, corroborate public account and inspect a current project; search non-discovery is not evidence of inactivity."
+    },
+    {
+      "name": "Freddy Paniagua",
+      "source_rows": [
+        151
+      ],
+      "major": "Computer Science",
+      "year": "3rd year",
+      "team_status": "Unassigned in source rows; possible duplicate assigned row tracked separately",
+      "search_status": "Initial targeted web search completed",
+      "search_queries": [
+        "\"Freddy Paniagua\" GitHub \"UCLA\""
+      ],
+      "profile_status": "Candidate public pages; identity requires corroboration",
+      "candidate_urls": [
+        "https://www.linkedin.com/in/freddyrp"
+      ],
+      "current_project": "Unknown",
+      "audience": "Unknown",
+      "progress": "Unknown",
+      "next_check": "Resolve team membership, corroborate public account and inspect a current project; search non-discovery is not evidence of inactivity."
+    },
+    {
+      "name": "Garrett Chan",
+      "source_rows": [
+        154
+      ],
+      "major": "Computer Science",
+      "year": "3rd year",
+      "team_status": "Unassigned in source rows; possible duplicate assigned row tracked separately",
+      "search_status": "Initial targeted web search completed",
+      "search_queries": [
+        "\"Garrett Chan\" GitHub \"Cal Poly\""
+      ],
+      "profile_status": "Candidate public pages; identity requires corroboration",
+      "candidate_urls": [
+        "https://www.wayup.com/profile/Garrett-Chan-7d069bd8e7/"
+      ],
+      "current_project": "Unknown",
+      "audience": "Unknown",
+      "progress": "Unknown",
+      "next_check": "Resolve team membership, corroborate public account and inspect a current project; search non-discovery is not evidence of inactivity."
+    },
+    {
+      "name": "Gavin Haymond",
+      "source_rows": [
+        156
+      ],
+      "major": "Statistics",
+      "year": "1st year",
+      "team_status": "Unassigned in source rows; possible duplicate assigned row tracked separately",
+      "search_status": "Initial targeted web search completed",
+      "search_queries": [
+        "\"Gavin Haymond\" GitHub \"Cal Poly\""
+      ],
+      "profile_status": "No reliable profile located in this first search",
+      "candidate_urls": [],
+      "current_project": "Unknown",
+      "audience": "Unknown",
+      "progress": "Unknown",
+      "next_check": "Resolve team membership, corroborate public account and inspect a current project; search non-discovery is not evidence of inactivity."
+    },
+    {
+      "name": "Gianni Espino",
+      "source_rows": [
+        158
+      ],
+      "major": "Business Administration",
+      "year": "3rd year",
+      "team_status": "Unassigned in source rows; possible duplicate assigned row tracked separately",
+      "search_status": "Initial targeted web search completed",
+      "search_queries": [
+        "\"Gianni Espino\" GitHub \"Cal Poly\""
+      ],
+      "profile_status": "No reliable profile located in this first search",
+      "candidate_urls": [],
+      "current_project": "Unknown",
+      "audience": "Unknown",
+      "progress": "Unknown",
+      "next_check": "Resolve team membership, corroborate public account and inspect a current project; search non-discovery is not evidence of inactivity."
+    },
+    {
+      "name": "Grace Cleary",
+      "source_rows": [
+        161
+      ],
+      "major": "Psychology",
+      "year": "2nd year",
+      "team_status": "Unassigned in source rows; possible duplicate assigned row tracked separately",
+      "search_status": "Initial targeted web search completed",
+      "search_queries": [
+        "\"Grace Cleary\" GitHub \"Cal Poly\""
+      ],
+      "profile_status": "No reliable profile located in this first search",
+      "candidate_urls": [],
+      "current_project": "Unknown",
+      "audience": "Unknown",
+      "progress": "Unknown",
+      "next_check": "Resolve team membership, corroborate public account and inspect a current project; search non-discovery is not evidence of inactivity."
+    },
+    {
+      "name": "Grady Bernhard",
+      "source_rows": [
+        163
+      ],
+      "major": "Business",
+      "year": "2nd year",
+      "team_status": "Unassigned in source rows; possible duplicate assigned row tracked separately",
+      "search_status": "Initial targeted web search completed",
+      "search_queries": [
+        "\"Grady Bernhard\" GitHub \"Cal Poly\""
+      ],
+      "profile_status": "No reliable profile located in this first search",
+      "candidate_urls": [],
+      "current_project": "Unknown",
+      "audience": "Unknown",
+      "progress": "Unknown",
+      "next_check": "Resolve team membership, corroborate public account and inspect a current project; search non-discovery is not evidence of inactivity."
+    },
+    {
+      "name": "Gray Fearnow",
+      "source_rows": [
+        165
+      ],
+      "major": "Business Admin",
+      "year": "2nd year",
+      "team_status": "Unassigned in source rows; possible duplicate assigned row tracked separately",
+      "search_status": "Initial targeted web search completed",
+      "search_queries": [
+        "\"Gray Fearnow\" GitHub \"Cal Poly\""
+      ],
+      "profile_status": "No reliable profile located in this first search",
+      "candidate_urls": [],
+      "current_project": "Unknown",
+      "audience": "Unknown",
+      "progress": "Unknown",
+      "next_check": "Resolve team membership, corroborate public account and inspect a current project; search non-discovery is not evidence of inactivity."
+    },
+    {
+      "name": "Griffin Habermehl",
+      "source_rows": [
+        167
+      ],
+      "major": "Ag Business",
+      "year": "2nd year",
+      "team_status": "Unassigned in source rows; possible duplicate assigned row tracked separately",
+      "search_status": "Initial targeted web search completed",
+      "search_queries": [
+        "\"Griffin Habermehl\" GitHub \"Cal Poly\""
+      ],
+      "profile_status": "No reliable profile located in this first search",
+      "candidate_urls": [],
+      "current_project": "Unknown",
+      "audience": "Unknown",
+      "progress": "Unknown",
+      "next_check": "Resolve team membership, corroborate public account and inspect a current project; search non-discovery is not evidence of inactivity."
+    },
+    {
+      "name": "Hailey Kim",
+      "source_rows": [
+        169
+      ],
+      "major": "industrial engr",
+      "year": "3rd year",
+      "team_status": "Unassigned in source rows; possible duplicate assigned row tracked separately",
+      "search_status": "Initial targeted web search completed",
+      "search_queries": [
+        "\"Hailey Kim\" GitHub \"Cal Poly\""
+      ],
+      "profile_status": "No reliable profile located in this first search",
+      "candidate_urls": [],
+      "current_project": "Unknown",
+      "audience": "Unknown",
+      "progress": "Unknown",
+      "next_check": "Resolve team membership, corroborate public account and inspect a current project; search non-discovery is not evidence of inactivity."
+    },
+    {
+      "name": "Hasini Bharathwaj",
+      "source_rows": [
+        172
+      ],
+      "major": "Business Administration",
+      "year": "2nd year",
+      "team_status": "Unassigned in source rows; possible duplicate assigned row tracked separately",
+      "search_status": "Initial targeted web search completed",
+      "search_queries": [
+        "\"Hasini Bharathwaj\" GitHub \"Cal Poly\""
+      ],
+      "profile_status": "Candidate public pages; identity requires corroboration",
+      "candidate_urls": [
+        "https://www.linkedin.com/in/hasini-bharathwaj"
+      ],
+      "current_project": "Unknown",
+      "audience": "Unknown",
+      "progress": "Unknown",
+      "next_check": "Resolve team membership, corroborate public account and inspect a current project; search non-discovery is not evidence of inactivity."
+    },
+    {
+      "name": "Isaac Herman",
+      "source_rows": [
+        186
+      ],
+      "major": "Business Admin",
+      "year": null,
+      "team_status": "Unassigned in source rows; possible duplicate assigned row tracked separately",
+      "search_status": "Initial targeted web search completed",
+      "search_queries": [
+        "\"Isaac Herman\" GitHub \"Cal Poly\""
+      ],
+      "profile_status": "No reliable profile located in this first search",
+      "candidate_urls": [],
+      "current_project": "Unknown",
+      "audience": "Unknown",
+      "progress": "Unknown",
+      "next_check": "Resolve team membership, corroborate public account and inspect a current project; search non-discovery is not evidence of inactivity."
+    },
+    {
+      "name": "isaac Teixeira",
+      "source_rows": [
+        187
+      ],
+      "major": "Graphic Communication",
+      "year": "3rd year",
+      "team_status": "Unassigned in source rows; possible duplicate assigned row tracked separately",
+      "search_status": "Initial targeted web search completed",
+      "search_queries": [
+        "\"isaac Teixeira\" GitHub \"Cal Poly\""
+      ],
+      "profile_status": "No reliable profile located in this first search",
+      "candidate_urls": [],
+      "current_project": "Unknown",
+      "audience": "Unknown",
+      "progress": "Unknown",
+      "next_check": "Resolve team membership, corroborate public account and inspect a current project; search non-discovery is not evidence of inactivity."
+    },
+    {
+      "name": "Jacob  Monroe",
+      "source_rows": [
+        196
+      ],
+      "major": "Business administration",
+      "year": "2nd year",
+      "team_status": "Unassigned in source rows; possible duplicate assigned row tracked separately",
+      "search_status": "Initial targeted web search completed",
+      "search_queries": [
+        "\"Jacob Monroe\" GitHub \"Cal Poly\""
+      ],
+      "profile_status": "Candidate public pages; identity requires corroboration",
+      "candidate_urls": [
+        "https://www.linkedin.com/in/jacob-monroe-3428972b2"
+      ],
+      "current_project": "Unknown",
+      "audience": "Unknown",
+      "progress": "Unknown",
+      "next_check": "Resolve team membership, corroborate public account and inspect a current project; search non-discovery is not evidence of inactivity."
+    },
+    {
+      "name": "Jad Farhat",
+      "source_rows": [
+        197
+      ],
+      "major": "EE",
+      "year": "Graduate student",
+      "team_status": "Unassigned in source rows; possible duplicate assigned row tracked separately",
+      "search_status": "Initial targeted web search completed",
+      "search_queries": [
+        "\"Jad Farhat\" GitHub \"Cal Poly\""
+      ],
+      "profile_status": "No reliable profile located in this first search",
+      "candidate_urls": [],
+      "current_project": "Unknown",
+      "audience": "Unknown",
+      "progress": "Unknown",
+      "next_check": "Resolve team membership, corroborate public account and inspect a current project; search non-discovery is not evidence of inactivity."
+    },
+    {
+      "name": "Jake  Anderson",
+      "source_rows": [
+        200
+      ],
+      "major": "Ag Business",
+      "year": "2nd year",
+      "team_status": "Unassigned in source rows; possible duplicate assigned row tracked separately",
+      "search_status": "Initial targeted web search completed",
+      "search_queries": [
+        "\"Jake Anderson\" GitHub \"Cal Poly\""
+      ],
+      "profile_status": "No reliable profile located in this first search",
+      "candidate_urls": [],
+      "current_project": "Unknown",
+      "audience": "Unknown",
+      "progress": "Unknown",
+      "next_check": "Resolve team membership, corroborate public account and inspect a current project; search non-discovery is not evidence of inactivity."
+    },
+    {
+      "name": "Jake Keller",
+      "source_rows": [
+        201
+      ],
+      "major": "Business administration",
+      "year": "4th year",
+      "team_status": "Unassigned in source rows; possible duplicate assigned row tracked separately",
+      "search_status": "Initial targeted web search completed",
+      "search_queries": [
+        "\"Jake Keller\" GitHub \"Cal Poly\""
+      ],
+      "profile_status": "No reliable profile located in this first search",
+      "candidate_urls": [],
+      "current_project": "Unknown",
+      "audience": "Unknown",
+      "progress": "Unknown",
+      "next_check": "Resolve team membership, corroborate public account and inspect a current project; search non-discovery is not evidence of inactivity."
+    },
+    {
+      "name": "Jamel Cleaves",
+      "source_rows": [
+        204
+      ],
+      "major": "Industrial Technology and Packaging",
+      "year": "4th year",
+      "team_status": "Unassigned in source rows; possible duplicate assigned row tracked separately",
+      "search_status": "Initial targeted web search completed",
+      "search_queries": [
+        "\"Jamel Cleaves\" GitHub \"Cal Poly\""
+      ],
+      "profile_status": "No reliable profile located in this first search",
+      "candidate_urls": [],
+      "current_project": "Unknown",
+      "audience": "Unknown",
+      "progress": "Unknown",
+      "next_check": "Resolve team membership, corroborate public account and inspect a current project; search non-discovery is not evidence of inactivity."
+    },
+    {
+      "name": "Janalee Taguiam",
+      "source_rows": [
+        207
+      ],
+      "major": "Business Administration",
+      "year": "4th year",
+      "team_status": "Unassigned in source rows; possible duplicate assigned row tracked separately",
+      "search_status": "Initial targeted web search completed",
+      "search_queries": [
+        "\"Janalee Taguiam\" GitHub \"Cal Poly\""
+      ],
+      "profile_status": "No reliable profile located in this first search",
+      "candidate_urls": [],
+      "current_project": "Unknown",
+      "audience": "Unknown",
+      "progress": "Unknown",
+      "next_check": "Resolve team membership, corroborate public account and inspect a current project; search non-discovery is not evidence of inactivity."
+    },
+    {
+      "name": "Jay Denery",
+      "source_rows": [
+        210
+      ],
+      "major": "Wine and Viticulture",
+      "year": "2nd year",
+      "team_status": "Unassigned in source rows; possible duplicate assigned row tracked separately",
+      "search_status": "Initial targeted web search completed",
+      "search_queries": [
+        "\"Jay Denery\" GitHub \"Cal Poly\""
+      ],
+      "profile_status": "No reliable profile located in this first search",
+      "candidate_urls": [],
+      "current_project": "Unknown",
+      "audience": "Unknown",
+      "progress": "Unknown",
+      "next_check": "Resolve team membership, corroborate public account and inspect a current project; search non-discovery is not evidence of inactivity."
+    },
+    {
+      "name": "Jayan Anvekar",
+      "source_rows": [
+        211
+      ],
+      "major": "Cm",
+      "year": "3rd year",
+      "team_status": "Unassigned in source rows; possible duplicate assigned row tracked separately",
+      "search_status": "Initial targeted web search completed",
+      "search_queries": [
+        "\"Jayan Anvekar\" GitHub \"Cal Poly\""
+      ],
+      "profile_status": "Candidate public pages; identity requires corroboration",
+      "candidate_urls": [
+        "https://www.linkedin.com/in/jayan-anvekar-26455a395"
+      ],
+      "current_project": "Unknown",
+      "audience": "Unknown",
+      "progress": "Unknown",
+      "next_check": "Resolve team membership, corroborate public account and inspect a current project; search non-discovery is not evidence of inactivity."
+    },
+    {
+      "name": "Jeron Perey",
+      "source_rows": [
+        214
+      ],
+      "major": "Computer Science",
+      "year": "4th year",
+      "team_status": "Unassigned in source rows; possible duplicate assigned row tracked separately",
+      "search_status": "Initial targeted web search completed",
+      "search_queries": [
+        "\"Jeron Perey\" GitHub \"Cal Poly\""
+      ],
+      "profile_status": "Candidate public pages; identity requires corroboration",
+      "candidate_urls": [
+        "https://www.linkedin.com/in/jeronperey"
+      ],
+      "current_project": "Unknown",
+      "audience": "Unknown",
+      "progress": "Unknown",
+      "next_check": "Resolve team membership, corroborate public account and inspect a current project; search non-discovery is not evidence of inactivity."
+    },
+    {
+      "name": "Jesus Rivera",
+      "source_rows": [
+        215
+      ],
+      "major": "Industrial Engineering",
+      "year": "3rd year",
+      "team_status": "Unassigned in source rows; possible duplicate assigned row tracked separately",
+      "search_status": "Initial targeted web search completed",
+      "search_queries": [
+        "\"Jesus Rivera\" GitHub \"Cal Poly\""
+      ],
+      "profile_status": "No reliable profile located in this first search",
+      "candidate_urls": [],
+      "current_project": "Unknown",
+      "audience": "Unknown",
+      "progress": "Unknown",
+      "next_check": "Resolve team membership, corroborate public account and inspect a current project; search non-discovery is not evidence of inactivity."
+    },
+    {
+      "name": "Johan Jijo",
+      "source_rows": [
+        219
+      ],
+      "major": "CS",
+      "year": "1st year",
+      "team_status": "Unassigned in source rows; possible duplicate assigned row tracked separately",
+      "search_status": "Initial targeted web search completed",
+      "search_queries": [
+        "\"Johan Jijo\" GitHub \"Cal Poly\""
+      ],
+      "profile_status": "No reliable profile located in this first search",
+      "candidate_urls": [],
+      "current_project": "Unknown",
+      "audience": "Unknown",
+      "progress": "Unknown",
+      "next_check": "Resolve team membership, corroborate public account and inspect a current project; search non-discovery is not evidence of inactivity."
+    },
+    {
+      "name": "Johann Hoeller",
+      "source_rows": [
+        220
+      ],
+      "major": "Business Administration",
+      "year": "1st year",
+      "team_status": "Unassigned in source rows; possible duplicate assigned row tracked separately",
+      "search_status": "Initial targeted web search completed",
+      "search_queries": [
+        "\"Johann Hoeller\" GitHub \"Cal Poly\""
+      ],
+      "profile_status": "No reliable profile located in this first search",
+      "candidate_urls": [],
+      "current_project": "Unknown",
+      "audience": "Unknown",
+      "progress": "Unknown",
+      "next_check": "Resolve team membership, corroborate public account and inspect a current project; search non-discovery is not evidence of inactivity."
+    },
+    {
+      "name": "Joseph Carl Santos",
+      "source_rows": [
+        225
+      ],
+      "major": "Computer Science",
+      "year": null,
+      "team_status": "Unassigned in source rows; possible duplicate assigned row tracked separately",
+      "search_status": "Initial targeted web search completed",
+      "search_queries": [
+        "\"Joseph Carl Santos\" GitHub \"Cal Poly\""
+      ],
+      "profile_status": "No reliable profile located in this first search",
+      "candidate_urls": [],
+      "current_project": "Unknown",
+      "audience": "Unknown",
+      "progress": "Unknown",
+      "next_check": "Resolve team membership, corroborate public account and inspect a current project; search non-discovery is not evidence of inactivity."
+    },
+    {
+      "name": "Joshua Naim",
+      "source_rows": [
+        227
+      ],
+      "major": "Computer Engineering",
+      "year": "3rd year",
+      "team_status": "Unassigned in source rows; possible duplicate assigned row tracked separately",
+      "search_status": "Initial targeted web search completed",
+      "search_queries": [
+        "\"Joshua Naim\" GitHub \"Cal Poly\""
+      ],
+      "profile_status": "Candidate public pages; identity requires corroboration",
+      "candidate_urls": [
+        "https://www.linkedin.com/in/joshua-naim"
+      ],
+      "current_project": "Unknown",
+      "audience": "Unknown",
+      "progress": "Unknown",
+      "next_check": "Resolve team membership, corroborate public account and inspect a current project; search non-discovery is not evidence of inactivity.",
+      "followup_evidence": {
+        "url": "https://github.com/joshnaim1/rebalance/blob/2ae15a7732b32d8992e8a04f8f7d57a1da69e2d1/README.md",
+        "claim": "Public README names Joshua Naim and Brian Li; describes a balance-board rehabilitation prototype explicitly for a Spring 2026 event. Prior project only; not this November entry.",
+        "observed_at": "2026-11-14 (Pacific)"
+      }
+    },
+    {
+      "name": "Joy Kihen",
+      "source_rows": [
+        229
+      ],
+      "major": "CPE",
+      "year": "2nd year",
+      "team_status": "Unassigned in source rows; possible duplicate assigned row tracked separately",
+      "search_status": "Initial targeted web search completed",
+      "search_queries": [
+        "\"Joy Kihen\" GitHub \"Cal Poly\""
+      ],
+      "profile_status": "No reliable profile located in this first search",
+      "candidate_urls": [],
+      "current_project": "Unknown",
+      "audience": "Unknown",
+      "progress": "Unknown",
+      "next_check": "Resolve team membership, corroborate public account and inspect a current project; search non-discovery is not evidence of inactivity."
+    },
+    {
+      "name": "Juan Esteban Pena",
+      "source_rows": [
+        230
+      ],
+      "major": "Business Administration",
+      "year": "3rd year",
+      "team_status": "Unassigned in source rows; possible duplicate assigned row tracked separately",
+      "search_status": "Initial targeted web search completed",
+      "search_queries": [
+        "\"Juan Esteban Pena\" GitHub \"Cal Poly\""
+      ],
+      "profile_status": "No reliable profile located in this first search",
+      "candidate_urls": [],
+      "current_project": "Unknown",
+      "audience": "Unknown",
+      "progress": "Unknown",
+      "next_check": "Resolve team membership, corroborate public account and inspect a current project; search non-discovery is not evidence of inactivity."
+    },
+    {
+      "name": "Kaela Fear",
+      "source_rows": [
+        234
+      ],
+      "major": "Business Admin",
+      "year": "1st year",
+      "team_status": "Unassigned in source rows; possible duplicate assigned row tracked separately",
+      "search_status": "Initial targeted web search completed",
+      "search_queries": [
+        "\"Kaela Fear\" GitHub \"Cal Poly\""
+      ],
+      "profile_status": "No reliable profile located in this first search",
+      "candidate_urls": [],
+      "current_project": "Unknown",
+      "audience": "Unknown",
+      "progress": "Unknown",
+      "next_check": "Resolve team membership, corroborate public account and inspect a current project; search non-discovery is not evidence of inactivity."
+    },
+    {
+      "name": "Katya Harris",
+      "source_rows": [
+        239
+      ],
+      "major": "Industrial Technology and Packaging",
+      "year": "4th year",
+      "team_status": "Unassigned in source rows; possible duplicate assigned row tracked separately",
+      "search_status": "Initial targeted web search completed",
+      "search_queries": [
+        "\"Katya Harris\" GitHub \"Cal Poly\""
+      ],
+      "profile_status": "No reliable profile located in this first search",
+      "candidate_urls": [],
+      "current_project": "Unknown",
+      "audience": "Unknown",
+      "progress": "Unknown",
+      "next_check": "Resolve team membership, corroborate public account and inspect a current project; search non-discovery is not evidence of inactivity."
+    },
+    {
+      "name": "Kaya Paz",
+      "source_rows": [
+        240
+      ],
+      "major": "Business Administration",
+      "year": "2nd year",
+      "team_status": "Unassigned in source rows; possible duplicate assigned row tracked separately",
+      "search_status": "Initial targeted web search completed",
+      "search_queries": [
+        "\"Kaya Paz\" GitHub \"Cal Poly\""
+      ],
+      "profile_status": "Candidate public pages; identity requires corroboration",
+      "candidate_urls": [
+        "https://www.linkedin.com/in/kaya-paz-573664421"
+      ],
+      "current_project": "Unknown",
+      "audience": "Unknown",
+      "progress": "Unknown",
+      "next_check": "Resolve team membership, corroborate public account and inspect a current project; search non-discovery is not evidence of inactivity."
+    },
+    {
+      "name": "Kent David",
+      "source_rows": [
+        244
+      ],
+      "major": "Construction Management",
+      "year": "2nd year",
+      "team_status": "Unassigned in source rows; possible duplicate assigned row tracked separately",
+      "search_status": "Initial targeted web search completed",
+      "search_queries": [
+        "\"Kent David\" GitHub \"Cal Poly\""
+      ],
+      "profile_status": "Candidate public pages; identity requires corroboration",
+      "candidate_urls": [
+        "https://www.linkedin.com/in/kent-david"
+      ],
+      "current_project": "Unknown",
+      "audience": "Unknown",
+      "progress": "Unknown",
+      "next_check": "Resolve team membership, corroborate public account and inspect a current project; search non-discovery is not evidence of inactivity."
+    },
+    {
+      "name": "Koa Stevens",
+      "source_rows": [
+        249
+      ],
+      "major": "Economics",
+      "year": "1st year",
+      "team_status": "Unassigned in source rows; possible duplicate assigned row tracked separately",
+      "search_status": "Initial targeted web search completed",
+      "search_queries": [
+        "\"Koa Stevens\" GitHub \"Cal Poly\""
+      ],
+      "profile_status": "No reliable profile located in this first search",
+      "candidate_urls": [],
+      "current_project": "Unknown",
+      "audience": "Unknown",
+      "progress": "Unknown",
+      "next_check": "Resolve team membership, corroborate public account and inspect a current project; search non-discovery is not evidence of inactivity."
+    },
+    {
+      "name": "Kylie  Wu",
+      "source_rows": [
+        251
+      ],
+      "major": "Mechanical Engineer",
+      "year": "3rd year",
+      "team_status": "Unassigned in source rows; possible duplicate assigned row tracked separately",
+      "search_status": "Initial targeted web search completed",
+      "search_queries": [
+        "\"Kylie Wu\" GitHub \"Cal Poly\""
+      ],
+      "profile_status": "No reliable profile located in this first search",
+      "candidate_urls": [],
+      "current_project": "Unknown",
+      "audience": "Unknown",
+      "progress": "Unknown",
+      "next_check": "Resolve team membership, corroborate public account and inspect a current project; search non-discovery is not evidence of inactivity."
+    },
+    {
+      "name": "Kyra Ramirez",
+      "source_rows": [
+        254
+      ],
+      "major": "Business analytics",
+      "year": "Graduate student",
+      "team_status": "Unassigned in source rows; possible duplicate assigned row tracked separately",
+      "search_status": "Initial targeted web search completed",
+      "search_queries": [
+        "\"Kyra Ramirez\" GitHub \"Cal Poly\""
+      ],
+      "profile_status": "Candidate public pages; identity requires corroboration",
+      "candidate_urls": [
+        "https://www.linkedin.com/in/kyramirez22"
+      ],
+      "current_project": "Unknown",
+      "audience": "Unknown",
+      "progress": "Unknown",
+      "next_check": "Resolve team membership, corroborate public account and inspect a current project; search non-discovery is not evidence of inactivity."
+    },
+    {
+      "name": "Lachlan Kelly",
+      "source_rows": [
+        255
+      ],
+      "major": "Electrical Engineering",
+      "year": "3rd year",
+      "team_status": "Unassigned in source rows; possible duplicate assigned row tracked separately",
+      "search_status": "Initial targeted web search completed",
+      "search_queries": [
+        "\"Lachlan Kelly\" GitHub \"Cal Poly\""
+      ],
+      "profile_status": "No reliable profile located in this first search",
+      "candidate_urls": [],
+      "current_project": "Unknown",
+      "audience": "Unknown",
+      "progress": "Unknown",
+      "next_check": "Resolve team membership, corroborate public account and inspect a current project; search non-discovery is not evidence of inactivity."
+    },
+    {
+      "name": "Lexi  Banna",
+      "source_rows": [
+        257
+      ],
+      "major": "Business Administration",
+      "year": "1st year",
+      "team_status": "Unassigned in source rows; possible duplicate assigned row tracked separately",
+      "search_status": "Initial targeted web search completed",
+      "search_queries": [
+        "\"Lexi Banna\" GitHub \"Cal Poly\""
+      ],
+      "profile_status": "No reliable profile located in this first search",
+      "candidate_urls": [],
+      "current_project": "Unknown",
+      "audience": "Unknown",
+      "progress": "Unknown",
+      "next_check": "Resolve team membership, corroborate public account and inspect a current project; search non-discovery is not evidence of inactivity."
+    },
+    {
+      "name": "leyla baghirova",
+      "source_rows": [
+        259
+      ],
+      "major": "environmental engineering",
+      "year": "1st year",
+      "team_status": "Unassigned in source rows; possible duplicate assigned row tracked separately",
+      "search_status": "Initial targeted web search completed",
+      "search_queries": [
+        "\"leyla baghirova\" GitHub \"Cal Poly\""
+      ],
+      "profile_status": "No reliable profile located in this first search",
+      "candidate_urls": [],
+      "current_project": "Unknown",
+      "audience": "Unknown",
+      "progress": "Unknown",
+      "next_check": "Resolve team membership, corroborate public account and inspect a current project; search non-discovery is not evidence of inactivity."
+    },
+    {
+      "name": "Liam Moore",
+      "source_rows": [
+        261
+      ],
+      "major": "Business",
+      "year": null,
+      "team_status": "Unassigned in source rows; possible duplicate assigned row tracked separately",
+      "search_status": "Initial targeted web search completed",
+      "search_queries": [
+        "\"Liam Moore\" GitHub \"Cal Poly\""
+      ],
+      "profile_status": "No reliable profile located in this first search",
+      "candidate_urls": [],
+      "current_project": "Unknown",
+      "audience": "Unknown",
+      "progress": "Unknown",
+      "next_check": "Resolve team membership, corroborate public account and inspect a current project; search non-discovery is not evidence of inactivity."
+    },
+    {
+      "name": "Liam Rosenbaum",
+      "source_rows": [
+        262
+      ],
+      "major": "Business",
+      "year": "1st year",
+      "team_status": "Unassigned in source rows; possible duplicate assigned row tracked separately",
+      "search_status": "Initial targeted web search completed",
+      "search_queries": [
+        "\"Liam Rosenbaum\" GitHub \"Cal Poly\""
+      ],
+      "profile_status": "No reliable profile located in this first search",
+      "candidate_urls": [],
+      "current_project": "Unknown",
+      "audience": "Unknown",
+      "progress": "Unknown",
+      "next_check": "Resolve team membership, corroborate public account and inspect a current project; search non-discovery is not evidence of inactivity."
+    },
+    {
+      "name": "Lincoln Klausmann",
+      "source_rows": [
+        264
+      ],
+      "major": "Environmental Science",
+      "year": null,
+      "team_status": "Unassigned in source rows; possible duplicate assigned row tracked separately",
+      "search_status": "Initial targeted web search completed",
+      "search_queries": [
+        "\"Lincoln Klausmann\" GitHub \"Cal Poly\""
+      ],
+      "profile_status": "No reliable profile located in this first search",
+      "candidate_urls": [],
+      "current_project": "Unknown",
+      "audience": "Unknown",
+      "progress": "Unknown",
+      "next_check": "Resolve team membership, corroborate public account and inspect a current project; search non-discovery is not evidence of inactivity."
+    },
+    {
+      "name": "Linda Liu",
+      "source_rows": [
+        265
+      ],
+      "major": "Business Admin",
+      "year": "3rd year",
+      "team_status": "Unassigned in source rows; possible duplicate assigned row tracked separately",
+      "search_status": "Initial targeted web search completed",
+      "search_queries": [
+        "\"Linda Liu\" GitHub \"Cal Poly\""
+      ],
+      "profile_status": "No reliable profile located in this first search",
+      "candidate_urls": [],
+      "current_project": "Unknown",
+      "audience": "Unknown",
+      "progress": "Unknown",
+      "next_check": "Resolve team membership, corroborate public account and inspect a current project; search non-discovery is not evidence of inactivity."
+    },
+    {
+      "name": "Luca  Sirini",
+      "source_rows": [
+        270
+      ],
+      "major": "Industrial Engineering",
+      "year": "3rd year",
+      "team_status": "Unassigned in source rows; possible duplicate assigned row tracked separately",
+      "search_status": "Initial targeted web search completed",
+      "search_queries": [
+        "\"Luca Sirini\" GitHub \"Cal Poly\""
+      ],
+      "profile_status": "No reliable profile located in this first search",
+      "candidate_urls": [],
+      "current_project": "Unknown",
+      "audience": "Unknown",
+      "progress": "Unknown",
+      "next_check": "Resolve team membership, corroborate public account and inspect a current project; search non-discovery is not evidence of inactivity."
+    },
+    {
+      "name": "Luca Scatena",
+      "source_rows": [
+        271
+      ],
+      "major": "Construction Management",
+      "year": "3rd year",
+      "team_status": "Unassigned in source rows; possible duplicate assigned row tracked separately",
+      "search_status": "Initial targeted web search completed",
+      "search_queries": [
+        "\"Luca Scatena\" GitHub \"Cal Poly\""
+      ],
+      "profile_status": "No reliable profile located in this first search",
+      "candidate_urls": [],
+      "current_project": "Unknown",
+      "audience": "Unknown",
+      "progress": "Unknown",
+      "next_check": "Resolve team membership, corroborate public account and inspect a current project; search non-discovery is not evidence of inactivity."
+    },
+    {
+      "name": "Luciano Crews",
+      "source_rows": [
+        273
+      ],
+      "major": "Business",
+      "year": "1st year",
+      "team_status": "Unassigned in source rows; possible duplicate assigned row tracked separately",
+      "search_status": "Initial targeted web search completed",
+      "search_queries": [
+        "\"Luciano Crews\" GitHub \"Cal Poly\""
+      ],
+      "profile_status": "No reliable profile located in this first search",
+      "candidate_urls": [],
+      "current_project": "Unknown",
+      "audience": "Unknown",
+      "progress": "Unknown",
+      "next_check": "Resolve team membership, corroborate public account and inspect a current project; search non-discovery is not evidence of inactivity."
+    },
+    {
+      "name": "Lukas Plascencia",
+      "source_rows": [
+        277
+      ],
+      "major": "Communication Studies",
+      "year": "4th year",
+      "team_status": "Unassigned in source rows; possible duplicate assigned row tracked separately",
+      "search_status": "Initial targeted web search completed",
+      "search_queries": [
+        "\"Lukas Plascencia\" GitHub \"Cal Poly\""
+      ],
+      "profile_status": "No reliable profile located in this first search",
+      "candidate_urls": [],
+      "current_project": "Unknown",
+      "audience": "Unknown",
+      "progress": "Unknown",
+      "next_check": "Resolve team membership, corroborate public account and inspect a current project; search non-discovery is not evidence of inactivity."
+    },
+    {
+      "name": "Luke Vieira",
+      "source_rows": [
+        281,
+        282
+      ],
+      "major": "Industrial Engineering",
+      "year": null,
+      "team_status": "Unassigned in source rows; possible duplicate assigned row tracked separately",
+      "search_status": "Initial targeted web search completed",
+      "search_queries": [
+        "\"Luke Vieira\" GitHub \"Cal Poly\""
+      ],
+      "profile_status": "Candidate public pages; identity requires corroboration",
+      "candidate_urls": [
+        "https://www.linkedin.com/in/vieiraluke"
+      ],
+      "current_project": "Unknown",
+      "audience": "Unknown",
+      "progress": "Unknown",
+      "next_check": "Resolve team membership, corroborate public account and inspect a current project; search non-discovery is not evidence of inactivity.",
+      "role_evidence": "Live participant guide names this person as an organizer; do not assume competitor status.",
+      "role_source": "https://cpvc-ai-hackathon-guide.vercel.app/#report"
+    },
+    {
+      "name": "Madilyn Martin-Kubiak",
+      "source_rows": [
+        285
+      ],
+      "major": "business",
+      "year": "3rd year",
+      "team_status": "Unassigned in source rows; possible duplicate assigned row tracked separately",
+      "search_status": "Initial targeted web search completed",
+      "search_queries": [
+        "\"Madilyn Martin-Kubiak\" GitHub \"Cal Poly\""
+      ],
+      "profile_status": "No reliable profile located in this first search",
+      "candidate_urls": [],
+      "current_project": "Unknown",
+      "audience": "Unknown",
+      "progress": "Unknown",
+      "next_check": "Resolve team membership, corroborate public account and inspect a current project; search non-discovery is not evidence of inactivity."
+    },
+    {
+      "name": "Malia Lu",
+      "source_rows": [
+        286
+      ],
+      "major": "Economics",
+      "year": "1st year",
+      "team_status": "Unassigned in source rows; possible duplicate assigned row tracked separately",
+      "search_status": "Initial targeted web search completed",
+      "search_queries": [
+        "\"Malia Lu\" GitHub \"Cal Poly\""
+      ],
+      "profile_status": "No reliable profile located in this first search",
+      "candidate_urls": [],
+      "current_project": "Unknown",
+      "audience": "Unknown",
+      "progress": "Unknown",
+      "next_check": "Resolve team membership, corroborate public account and inspect a current project; search non-discovery is not evidence of inactivity."
+    },
+    {
+      "name": "Marco Covarrubias",
+      "source_rows": [
+        287
+      ],
+      "major": "Business administration",
+      "year": null,
+      "team_status": "Unassigned in source rows; possible duplicate assigned row tracked separately",
+      "search_status": "Initial targeted web search completed",
+      "search_queries": [
+        "\"Marco Covarrubias\" GitHub \"Cal Poly\""
+      ],
+      "profile_status": "No reliable profile located in this first search",
+      "candidate_urls": [],
+      "current_project": "Unknown",
+      "audience": "Unknown",
+      "progress": "Unknown",
+      "next_check": "Resolve team membership, corroborate public account and inspect a current project; search non-discovery is not evidence of inactivity."
+    },
+    {
+      "name": "Mark Martinez",
+      "source_rows": [
+        289
+      ],
+      "major": "MBA",
+      "year": null,
+      "team_status": "Unassigned in source rows; possible duplicate assigned row tracked separately",
+      "search_status": "Initial targeted web search completed",
+      "search_queries": [
+        "\"Mark Martinez\" GitHub \"Cal Poly\""
+      ],
+      "profile_status": "No reliable profile located in this first search",
+      "candidate_urls": [],
+      "current_project": "Unknown",
+      "audience": "Unknown",
+      "progress": "Unknown",
+      "next_check": "Resolve team membership, corroborate public account and inspect a current project; search non-discovery is not evidence of inactivity."
+    },
+    {
+      "name": "Mason E",
+      "source_rows": [
+        291
+      ],
+      "major": "Computer Engineering",
+      "year": "1st year",
+      "team_status": "Unassigned in source rows; possible duplicate assigned row tracked separately",
+      "search_status": "Initial targeted web search completed",
+      "search_queries": [
+        "\"Mason E\" GitHub \"Cal Poly\""
+      ],
+      "profile_status": "No reliable profile located in this first search",
+      "candidate_urls": [],
+      "current_project": "Unknown",
+      "audience": "Unknown",
+      "progress": "Unknown",
+      "next_check": "Resolve team membership, corroborate public account and inspect a current project; search non-discovery is not evidence of inactivity."
+    },
+    {
+      "name": "Mason Lewis",
+      "source_rows": [
+        292
+      ],
+      "major": "Computer Science",
+      "year": "2nd year",
+      "team_status": "Unassigned in source rows; possible duplicate assigned row tracked separately",
+      "search_status": "Initial targeted web search completed",
+      "search_queries": [
+        "\"Mason Lewis\" GitHub \"Cal Poly\""
+      ],
+      "profile_status": "Candidate public pages; identity requires corroboration",
+      "candidate_urls": [
+        "https://www.linkedin.com/in/masonclewis"
+      ],
+      "current_project": "Unknown",
+      "audience": "Unknown",
+      "progress": "Unknown",
+      "next_check": "Resolve team membership, corroborate public account and inspect a current project; search non-discovery is not evidence of inactivity."
+    },
+    {
+      "name": "mateo burgos",
+      "source_rows": [
+        293
+      ],
+      "major": "business administration",
+      "year": "2nd year",
+      "team_status": "Unassigned in source rows; possible duplicate assigned row tracked separately",
+      "search_status": "Initial targeted web search completed",
+      "search_queries": [
+        "\"mateo burgos\" GitHub \"Cal Poly\""
+      ],
+      "profile_status": "No reliable profile located in this first search",
+      "candidate_urls": [],
+      "current_project": "Unknown",
+      "audience": "Unknown",
+      "progress": "Unknown",
+      "next_check": "Resolve team membership, corroborate public account and inspect a current project; search non-discovery is not evidence of inactivity."
+    },
+    {
+      "name": "matt bennetti",
+      "source_rows": [
+        294
+      ],
+      "major": "Econ",
+      "year": "Other",
+      "team_status": "Unassigned in source rows; possible duplicate assigned row tracked separately",
+      "search_status": "Initial targeted web search completed",
+      "search_queries": [
+        "\"matt bennetti\" GitHub \"Cal Poly\""
+      ],
+      "profile_status": "Candidate public pages; identity requires corroboration",
+      "candidate_urls": [
+        "https://www.linkedin.com/in/mattbennetti"
+      ],
+      "current_project": "Unknown",
+      "audience": "Unknown",
+      "progress": "Unknown",
+      "next_check": "Resolve team membership, corroborate public account and inspect a current project; search non-discovery is not evidence of inactivity."
+    },
+    {
+      "name": "Matt Graebner",
+      "source_rows": [
+        295
+      ],
+      "major": "Bio Resource and Agriculture Engineering",
+      "year": "3rd year",
+      "team_status": "Unassigned in source rows; possible duplicate assigned row tracked separately",
+      "search_status": "Initial targeted web search completed",
+      "search_queries": [
+        "\"Matt Graebner\" GitHub \"Cal Poly\""
+      ],
+      "profile_status": "No reliable profile located in this first search",
+      "candidate_urls": [],
+      "current_project": "Unknown",
+      "audience": "Unknown",
+      "progress": "Unknown",
+      "next_check": "Resolve team membership, corroborate public account and inspect a current project; search non-discovery is not evidence of inactivity."
+    },
+    {
+      "name": "Matthew Estrada",
+      "source_rows": [
+        297
+      ],
+      "major": "Business Information Systems",
+      "year": "4th year",
+      "team_status": "Unassigned in source rows; possible duplicate assigned row tracked separately",
+      "search_status": "Initial targeted web search completed",
+      "search_queries": [
+        "\"Matthew Estrada\" GitHub \"Cal Poly\""
+      ],
+      "profile_status": "Candidate public pages; identity requires corroboration",
+      "candidate_urls": [
+        "https://www.linkedin.com/in/matthew-estrada-7763a8285"
+      ],
+      "current_project": "Unknown",
+      "audience": "Unknown",
+      "progress": "Unknown",
+      "next_check": "Resolve team membership, corroborate public account and inspect a current project; search non-discovery is not evidence of inactivity."
+    },
+    {
+      "name": "Max Beringer",
+      "source_rows": [
+        301
+      ],
+      "major": "Construction Management",
+      "year": "1st year",
+      "team_status": "Unassigned in source rows; possible duplicate assigned row tracked separately",
+      "search_status": "Initial targeted web search completed",
+      "search_queries": [
+        "\"Max Beringer\" GitHub \"Cal Poly\""
+      ],
+      "profile_status": "No reliable profile located in this first search",
+      "candidate_urls": [],
+      "current_project": "Unknown",
+      "audience": "Unknown",
+      "progress": "Unknown",
+      "next_check": "Resolve team membership, corroborate public account and inspect a current project; search non-discovery is not evidence of inactivity."
+    },
+    {
+      "name": "Max Bucher",
+      "source_rows": [
+        302
+      ],
+      "major": "Business Admin",
+      "year": "4th year",
+      "team_status": "Unassigned in source rows; possible duplicate assigned row tracked separately",
+      "search_status": "Initial targeted web search completed",
+      "search_queries": [
+        "\"Max Bucher\" GitHub \"Cal Poly\""
+      ],
+      "profile_status": "No reliable profile located in this first search",
+      "candidate_urls": [],
+      "current_project": "Unknown",
+      "audience": "Unknown",
+      "progress": "Unknown",
+      "next_check": "Resolve team membership, corroborate public account and inspect a current project; search non-discovery is not evidence of inactivity."
+    },
+    {
+      "name": "Max Ranta",
+      "source_rows": [
+        304
+      ],
+      "major": "Environmental Engineering",
+      "year": "3rd year",
+      "team_status": "Unassigned in source rows; possible duplicate assigned row tracked separately",
+      "search_status": "Initial targeted web search completed",
+      "search_queries": [
+        "\"Max Ranta\" GitHub \"Cal Poly\""
+      ],
+      "profile_status": "No reliable profile located in this first search",
+      "candidate_urls": [],
+      "current_project": "Unknown",
+      "audience": "Unknown",
+      "progress": "Unknown",
+      "next_check": "Resolve team membership, corroborate public account and inspect a current project; search non-discovery is not evidence of inactivity."
+    },
+    {
+      "name": "Maya Doitch",
+      "source_rows": [
+        306
+      ],
+      "major": "Business Analytics",
+      "year": "Graduate student",
+      "team_status": "Unassigned in source rows; possible duplicate assigned row tracked separately",
+      "search_status": "Initial targeted web search completed",
+      "search_queries": [
+        "\"Maya Doitch\" GitHub \"Cal Poly\""
+      ],
+      "profile_status": "Candidate public pages; identity requires corroboration",
+      "candidate_urls": [
+        "https://www.linkedin.com/in/maya-doitch"
+      ],
+      "current_project": "Unknown",
+      "audience": "Unknown",
+      "progress": "Unknown",
+      "next_check": "Resolve team membership, corroborate public account and inspect a current project; search non-discovery is not evidence of inactivity."
+    },
+    {
+      "name": "Michael Kowalyshyn",
+      "source_rows": [
+        310
+      ],
+      "major": "History",
+      "year": "1st year",
+      "team_status": "Unassigned in source rows; possible duplicate assigned row tracked separately",
+      "search_status": "Initial targeted web search completed",
+      "search_queries": [
+        "\"Michael Kowalyshyn\" GitHub \"Cal Poly\""
+      ],
+      "profile_status": "No reliable profile located in this first search",
+      "candidate_urls": [],
+      "current_project": "Unknown",
+      "audience": "Unknown",
+      "progress": "Unknown",
+      "next_check": "Resolve team membership, corroborate public account and inspect a current project; search non-discovery is not evidence of inactivity."
+    },
+    {
+      "name": "Michael Man",
+      "source_rows": [
+        311
+      ],
+      "major": "Business Analytics",
+      "year": "Graduate student",
+      "team_status": "Unassigned in source rows; possible duplicate assigned row tracked separately",
+      "search_status": "Initial targeted web search completed",
+      "search_queries": [
+        "\"Michael Man\" GitHub \"Cal Poly\""
+      ],
+      "profile_status": "Candidate public pages; identity requires corroboration",
+      "candidate_urls": [
+        "https://www.linkedin.com/in/michael-man-86798aa5"
+      ],
+      "current_project": "Unknown",
+      "audience": "Unknown",
+      "progress": "Unknown",
+      "next_check": "Resolve team membership, corroborate public account and inspect a current project; search non-discovery is not evidence of inactivity."
+    },
+    {
+      "name": "Michael Richards",
+      "source_rows": [
+        312
+      ],
+      "major": "Business Administration",
+      "year": "3rd year",
+      "team_status": "Unassigned in source rows; possible duplicate assigned row tracked separately",
+      "search_status": "Initial targeted web search completed",
+      "search_queries": [
+        "\"Michael Richards\" GitHub \"Cal Poly\""
+      ],
+      "profile_status": "No reliable profile located in this first search",
+      "candidate_urls": [],
+      "current_project": "Unknown",
+      "audience": "Unknown",
+      "progress": "Unknown",
+      "next_check": "Resolve team membership, corroborate public account and inspect a current project; search non-discovery is not evidence of inactivity."
+    },
+    {
+      "name": "Mike Robbinson",
+      "source_rows": [
+        313
+      ],
+      "major": "Comparative Ethnic Studies",
+      "year": "2nd year",
+      "team_status": "Unassigned in source rows; possible duplicate assigned row tracked separately",
+      "search_status": "Initial targeted web search completed",
+      "search_queries": [
+        "\"Mike Robbinson\" GitHub \"Cal Poly\""
+      ],
+      "profile_status": "No reliable profile located in this first search",
+      "candidate_urls": [],
+      "current_project": "Unknown",
+      "audience": "Unknown",
+      "progress": "Unknown",
+      "next_check": "Resolve team membership, corroborate public account and inspect a current project; search non-discovery is not evidence of inactivity."
+    },
+    {
+      "name": "Miles Dodge",
+      "source_rows": [
+        314
+      ],
+      "major": "Business Administration",
+      "year": "1st year",
+      "team_status": "Unassigned in source rows; possible duplicate assigned row tracked separately",
+      "search_status": "Initial targeted web search completed",
+      "search_queries": [
+        "\"Miles Dodge\" GitHub \"Cal Poly\""
+      ],
+      "profile_status": "No reliable profile located in this first search",
+      "candidate_urls": [],
+      "current_project": "Unknown",
+      "audience": "Unknown",
+      "progress": "Unknown",
+      "next_check": "Resolve team membership, corroborate public account and inspect a current project; search non-discovery is not evidence of inactivity."
+    },
+    {
+      "name": "Monica Klein",
+      "source_rows": [
+        319
+      ],
+      "major": "MSBA",
+      "year": "Graduate student",
+      "team_status": "Unassigned in source rows; possible duplicate assigned row tracked separately",
+      "search_status": "Initial targeted web search completed",
+      "search_queries": [
+        "\"Monica Klein\" GitHub \"Cal Poly\""
+      ],
+      "profile_status": "No reliable profile located in this first search",
+      "candidate_urls": [],
+      "current_project": "Unknown",
+      "audience": "Unknown",
+      "progress": "Unknown",
+      "next_check": "Resolve team membership, corroborate public account and inspect a current project; search non-discovery is not evidence of inactivity."
+    },
+    {
+      "name": "Murtaza Bootwala",
+      "source_rows": [
+        320
+      ],
+      "major": "CPE",
+      "year": "2nd year",
+      "team_status": "Unassigned in source rows; possible duplicate assigned row tracked separately",
+      "search_status": "Initial targeted web search completed",
+      "search_queries": [
+        "\"Murtaza Bootwala\" GitHub \"Cal Poly\""
+      ],
+      "profile_status": "No reliable profile located in this first search",
+      "candidate_urls": [],
+      "current_project": "Unknown",
+      "audience": "Unknown",
+      "progress": "Unknown",
+      "next_check": "Resolve team membership, corroborate public account and inspect a current project; search non-discovery is not evidence of inactivity."
+    },
+    {
+      "name": "Namit Jain",
+      "source_rows": [
+        322
+      ],
+      "major": "Computer Engineering",
+      "year": "1st year",
+      "team_status": "Unassigned in source rows; possible duplicate assigned row tracked separately",
+      "search_status": "Initial targeted web search completed",
+      "search_queries": [
+        "\"Namit Jain\" GitHub \"Cal Poly\""
+      ],
+      "profile_status": "Candidate public pages; identity requires corroboration",
+      "candidate_urls": [
+        "https://www.linkedin.com/in/namitjain22"
+      ],
+      "current_project": "Unknown",
+      "audience": "Unknown",
+      "progress": "Unknown",
+      "next_check": "Resolve team membership, corroborate public account and inspect a current project; search non-discovery is not evidence of inactivity."
+    },
+    {
+      "name": "Naomi Nisenboim",
+      "source_rows": [
+        323
+      ],
+      "major": "Business Administraton",
+      "year": "3rd year",
+      "team_status": "Unassigned in source rows; possible duplicate assigned row tracked separately",
+      "search_status": "Initial targeted web search completed",
+      "search_queries": [
+        "\"Naomi Nisenboim\" GitHub \"Cal Poly\""
+      ],
+      "profile_status": "No reliable profile located in this first search",
+      "candidate_urls": [],
+      "current_project": "Unknown",
+      "audience": "Unknown",
+      "progress": "Unknown",
+      "next_check": "Resolve team membership, corroborate public account and inspect a current project; search non-discovery is not evidence of inactivity."
+    },
+    {
+      "name": "Nathan Munoz",
+      "source_rows": [
+        326
+      ],
+      "major": "Statistics",
+      "year": "3rd year",
+      "team_status": "Unassigned in source rows; possible duplicate assigned row tracked separately",
+      "search_status": "Initial targeted web search completed",
+      "search_queries": [
+        "\"Nathan Munoz\" GitHub \"Cal Poly\""
+      ],
+      "profile_status": "No reliable profile located in this first search",
+      "candidate_urls": [],
+      "current_project": "Unknown",
+      "audience": "Unknown",
+      "progress": "Unknown",
+      "next_check": "Resolve team membership, corroborate public account and inspect a current project; search non-discovery is not evidence of inactivity."
+    },
+    {
+      "name": "nicholas muller",
+      "source_rows": [
+        329,
+        330
+      ],
+      "major": "Economics",
+      "year": "4th year",
+      "team_status": "Unassigned in source rows; possible duplicate assigned row tracked separately",
+      "search_status": "Initial targeted web search completed",
+      "search_queries": [
+        "\"nicholas muller\" GitHub \"Cal Poly\""
+      ],
+      "profile_status": "No reliable profile located in this first search",
+      "candidate_urls": [],
+      "current_project": "Unknown",
+      "audience": "Unknown",
+      "progress": "Unknown",
+      "next_check": "Resolve team membership, corroborate public account and inspect a current project; search non-discovery is not evidence of inactivity."
+    },
+    {
+      "name": "Nicholas Pinto",
+      "source_rows": [
+        331
+      ],
+      "major": "Business Administration",
+      "year": "2nd year",
+      "team_status": "Unassigned in source rows; possible duplicate assigned row tracked separately",
+      "search_status": "Initial targeted web search completed",
+      "search_queries": [
+        "\"Nicholas Pinto\" GitHub \"Cal Poly\""
+      ],
+      "profile_status": "No reliable profile located in this first search",
+      "candidate_urls": [],
+      "current_project": "Unknown",
+      "audience": "Unknown",
+      "progress": "Unknown",
+      "next_check": "Resolve team membership, corroborate public account and inspect a current project; search non-discovery is not evidence of inactivity."
+    },
+    {
+      "name": "Nick Habhab",
+      "source_rows": [
+        334
+      ],
+      "major": "Business",
+      "year": "2nd year",
+      "team_status": "Unassigned in source rows; possible duplicate assigned row tracked separately",
+      "search_status": "Initial targeted web search completed",
+      "search_queries": [
+        "\"Nick Habhab\" GitHub \"Cal Poly\""
+      ],
+      "profile_status": "No reliable profile located in this first search",
+      "candidate_urls": [],
+      "current_project": "Unknown",
+      "audience": "Unknown",
+      "progress": "Unknown",
+      "next_check": "Resolve team membership, corroborate public account and inspect a current project; search non-discovery is not evidence of inactivity."
+    },
+    {
+      "name": "Nico Valledor",
+      "source_rows": [
+        336
+      ],
+      "major": "MSBA",
+      "year": "Graduate student",
+      "team_status": "Unassigned in source rows; possible duplicate assigned row tracked separately",
+      "search_status": "Initial targeted web search completed",
+      "search_queries": [
+        "\"Nico Valledor\" GitHub \"Cal Poly\""
+      ],
+      "profile_status": "No reliable profile located in this first search",
+      "candidate_urls": [],
+      "current_project": "Unknown",
+      "audience": "Unknown",
+      "progress": "Unknown",
+      "next_check": "Resolve team membership, corroborate public account and inspect a current project; search non-discovery is not evidence of inactivity."
+    },
+    {
+      "name": "Nicolas Ramel",
+      "source_rows": [
+        340
+      ],
+      "major": "Business Analytics",
+      "year": "Graduate student",
+      "team_status": "Unassigned in source rows; possible duplicate assigned row tracked separately",
+      "search_status": "Initial targeted web search completed",
+      "search_queries": [
+        "\"Nicolas Ramel\" GitHub \"Cal Poly\""
+      ],
+      "profile_status": "Candidate public pages; identity requires corroboration",
+      "candidate_urls": [
+        "https://www.linkedin.com/in/nicolaswramel"
+      ],
+      "current_project": "Unknown",
+      "audience": "Unknown",
+      "progress": "Unknown",
+      "next_check": "Resolve team membership, corroborate public account and inspect a current project; search non-discovery is not evidence of inactivity."
+    },
+    {
+      "name": "Nicole Wu",
+      "source_rows": [
+        341
+      ],
+      "major": "Business Administration",
+      "year": "Other",
+      "team_status": "Unassigned in source rows; possible duplicate assigned row tracked separately",
+      "search_status": "Initial targeted web search completed",
+      "search_queries": [
+        "\"Nicole Wu\" GitHub \"Cal Poly\""
+      ],
+      "profile_status": "Candidate public pages; identity requires corroboration",
+      "candidate_urls": [
+        "https://www.linkedin.com/in/nicolewu5"
+      ],
+      "current_project": "Unknown",
+      "audience": "Unknown",
+      "progress": "Unknown",
+      "next_check": "Resolve team membership, corroborate public account and inspect a current project; search non-discovery is not evidence of inactivity."
+    },
+    {
+      "name": "Nikola Rosic",
+      "source_rows": [
+        342
+      ],
+      "major": "Mechanical Engineering",
+      "year": "4th year",
+      "team_status": "Unassigned in source rows; possible duplicate assigned row tracked separately",
+      "search_status": "Initial targeted web search completed",
+      "search_queries": [
+        "\"Nikola Rosic\" GitHub \"Cal Poly\""
+      ],
+      "profile_status": "No reliable profile located in this first search",
+      "candidate_urls": [],
+      "current_project": "Unknown",
+      "audience": "Unknown",
+      "progress": "Unknown",
+      "next_check": "Resolve team membership, corroborate public account and inspect a current project; search non-discovery is not evidence of inactivity."
+    },
+    {
+      "name": "Nolan Pogson",
+      "source_rows": [
+        345
+      ],
+      "major": "Business Administration",
+      "year": "3rd year",
+      "team_status": "Unassigned in source rows; possible duplicate assigned row tracked separately",
+      "search_status": "Initial targeted web search completed",
+      "search_queries": [
+        "\"Nolan Pogson\" GitHub \"Cal Poly\""
+      ],
+      "profile_status": "No reliable profile located in this first search",
+      "candidate_urls": [],
+      "current_project": "Unknown",
+      "audience": "Unknown",
+      "progress": "Unknown",
+      "next_check": "Resolve team membership, corroborate public account and inspect a current project; search non-discovery is not evidence of inactivity."
+    },
+    {
+      "name": "Omar Alim Mohamed",
+      "source_rows": [
+        349
+      ],
+      "major": "Computer Science",
+      "year": "3rd year",
+      "team_status": "Unassigned in source rows; possible duplicate assigned row tracked separately",
+      "search_status": "Initial targeted web search completed",
+      "search_queries": [
+        "\"Omar Alim Mohamed\" GitHub \"Cal Poly\""
+      ],
+      "profile_status": "No reliable profile located in this first search",
+      "candidate_urls": [],
+      "current_project": "Unknown",
+      "audience": "Unknown",
+      "progress": "Unknown",
+      "next_check": "Resolve team membership, corroborate public account and inspect a current project; search non-discovery is not evidence of inactivity."
+    },
+    {
+      "name": "omar alzahrawi",
+      "source_rows": [
+        350
+      ],
+      "major": "Architecture",
+      "year": "5th year or later",
+      "team_status": "Unassigned in source rows; possible duplicate assigned row tracked separately",
+      "search_status": "Initial targeted web search completed",
+      "search_queries": [
+        "\"omar alzahrawi\" GitHub \"Cal Poly\""
+      ],
+      "profile_status": "No reliable profile located in this first search",
+      "candidate_urls": [],
+      "current_project": "Unknown",
+      "audience": "Unknown",
+      "progress": "Unknown",
+      "next_check": "Resolve team membership, corroborate public account and inspect a current project; search non-discovery is not evidence of inactivity."
+    },
+    {
+      "name": "Organizer review (test account)",
+      "source_rows": [
+        351
+      ],
+      "major": "Synthetic test profile",
+      "year": null,
+      "team_status": "Unassigned in source rows; possible duplicate assigned row tracked separately",
+      "search_status": "Administrative/test label; no personal profile search",
+      "search_queries": [],
+      "profile_status": "No reliable profile located in this first search",
+      "candidate_urls": [],
+      "current_project": "Unknown",
+      "audience": "Unknown",
+      "progress": "Unknown",
+      "next_check": "Resolve team membership, corroborate public account and inspect a current project; search non-discovery is not evidence of inactivity."
+    },
+    {
+      "name": "Orlando  Desmons",
+      "source_rows": [
+        352
+      ],
+      "major": "Buis",
+      "year": "2nd year",
+      "team_status": "Unassigned in source rows; possible duplicate assigned row tracked separately",
+      "search_status": "Initial targeted web search completed",
+      "search_queries": [
+        "\"Orlando Desmons\" GitHub \"Cal Poly\""
+      ],
+      "profile_status": "No reliable profile located in this first search",
+      "candidate_urls": [],
+      "current_project": "Unknown",
+      "audience": "Unknown",
+      "progress": "Unknown",
+      "next_check": "Resolve team membership, corroborate public account and inspect a current project; search non-discovery is not evidence of inactivity."
+    },
+    {
+      "name": "Oscar Polson",
+      "source_rows": [
+        353
+      ],
+      "major": "Biomedical Engineering",
+      "year": "1st year",
+      "team_status": "Unassigned in source rows; possible duplicate assigned row tracked separately",
+      "search_status": "Initial targeted web search completed",
+      "search_queries": [
+        "\"Oscar Polson\" GitHub \"Cal Poly\""
+      ],
+      "profile_status": "No reliable profile located in this first search",
+      "candidate_urls": [],
+      "current_project": "Unknown",
+      "audience": "Unknown",
+      "progress": "Unknown",
+      "next_check": "Resolve team membership, corroborate public account and inspect a current project; search non-discovery is not evidence of inactivity."
+    },
+    {
+      "name": "Osvaldo Luna",
+      "source_rows": [
+        354
+      ],
+      "major": "Buisness admin",
+      "year": "1st year",
+      "team_status": "Unassigned in source rows; possible duplicate assigned row tracked separately",
+      "search_status": "Initial targeted web search completed",
+      "search_queries": [
+        "\"Osvaldo Luna\" GitHub \"Cal Poly\""
+      ],
+      "profile_status": "No reliable profile located in this first search",
+      "candidate_urls": [],
+      "current_project": "Unknown",
+      "audience": "Unknown",
+      "progress": "Unknown",
+      "next_check": "Resolve team membership, corroborate public account and inspect a current project; search non-discovery is not evidence of inactivity."
+    },
+    {
+      "name": "Parker Cotten",
+      "source_rows": [
+        355
+      ],
+      "major": "Bioresource Engineering",
+      "year": null,
+      "team_status": "Unassigned in source rows; possible duplicate assigned row tracked separately",
+      "search_status": "Initial targeted web search completed",
+      "search_queries": [
+        "\"Parker Cotten\" GitHub \"Cal Poly\""
+      ],
+      "profile_status": "No reliable profile located in this first search",
+      "candidate_urls": [],
+      "current_project": "Unknown",
+      "audience": "Unknown",
+      "progress": "Unknown",
+      "next_check": "Resolve team membership, corroborate public account and inspect a current project; search non-discovery is not evidence of inactivity."
+    },
+    {
+      "name": "rahul palani",
+      "source_rows": [
+        360
+      ],
+      "major": "CS",
+      "year": "2nd year",
+      "team_status": "Unassigned in source rows; possible duplicate assigned row tracked separately",
+      "search_status": "Initial targeted web search completed",
+      "search_queries": [
+        "\"rahul palani\" GitHub \"Cal Poly\""
+      ],
+      "profile_status": "No reliable profile located in this first search",
+      "candidate_urls": [],
+      "current_project": "Unknown",
+      "audience": "Unknown",
+      "progress": "Unknown",
+      "next_check": "Resolve team membership, corroborate public account and inspect a current project; search non-discovery is not evidence of inactivity."
+    },
+    {
+      "name": "Reese Sato",
+      "source_rows": [
+        362
+      ],
+      "major": "Business",
+      "year": "4th year",
+      "team_status": "Unassigned in source rows; possible duplicate assigned row tracked separately",
+      "search_status": "Initial targeted web search completed",
+      "search_queries": [
+        "\"Reese Sato\" GitHub \"Cal Poly\""
+      ],
+      "profile_status": "No reliable profile located in this first search",
+      "candidate_urls": [],
+      "current_project": "Unknown",
+      "audience": "Unknown",
+      "progress": "Unknown",
+      "next_check": "Resolve team membership, corroborate public account and inspect a current project; search non-discovery is not evidence of inactivity."
+    },
+    {
+      "name": "Reese Wahlberg",
+      "source_rows": [
+        363
+      ],
+      "major": "Business Administration",
+      "year": "4th year",
+      "team_status": "Unassigned in source rows; possible duplicate assigned row tracked separately",
+      "search_status": "Initial targeted web search completed",
+      "search_queries": [
+        "\"Reese Wahlberg\" GitHub \"Cal Poly\""
+      ],
+      "profile_status": "No reliable profile located in this first search",
+      "candidate_urls": [],
+      "current_project": "Unknown",
+      "audience": "Unknown",
+      "progress": "Unknown",
+      "next_check": "Resolve team membership, corroborate public account and inspect a current project; search non-discovery is not evidence of inactivity."
+    },
+    {
+      "name": "Rey Dickey",
+      "source_rows": [
+        364
+      ],
+      "major": "Business Admin",
+      "year": "1st year",
+      "team_status": "Unassigned in source rows; possible duplicate assigned row tracked separately",
+      "search_status": "Initial targeted web search completed",
+      "search_queries": [
+        "\"Rey Dickey\" GitHub \"Cal Poly\""
+      ],
+      "profile_status": "No reliable profile located in this first search",
+      "candidate_urls": [],
+      "current_project": "Unknown",
+      "audience": "Unknown",
+      "progress": "Unknown",
+      "next_check": "Resolve team membership, corroborate public account and inspect a current project; search non-discovery is not evidence of inactivity."
+    },
+    {
+      "name": "Ronan Curley",
+      "source_rows": [
+        369
+      ],
+      "major": "Business",
+      "year": null,
+      "team_status": "Unassigned in source rows; possible duplicate assigned row tracked separately",
+      "search_status": "Initial targeted web search completed",
+      "search_queries": [
+        "\"Ronan Curley\" GitHub \"Cal Poly\""
+      ],
+      "profile_status": "Candidate public pages; identity requires corroboration",
+      "candidate_urls": [
+        "https://www.linkedin.com/in/ronan-curley-3b6553290"
+      ],
+      "current_project": "Unknown",
+      "audience": "Unknown",
+      "progress": "Unknown",
+      "next_check": "Resolve team membership, corroborate public account and inspect a current project; search non-discovery is not evidence of inactivity."
+    },
+    {
+      "name": "Rosemary McKay",
+      "source_rows": [
+        371
+      ],
+      "major": "Business",
+      "year": null,
+      "team_status": "Unassigned in source rows; possible duplicate assigned row tracked separately",
+      "search_status": "Initial targeted web search completed",
+      "search_queries": [
+        "\"Rosemary McKay\" GitHub \"Cal Poly\""
+      ],
+      "profile_status": "No reliable profile located in this first search",
+      "candidate_urls": [],
+      "current_project": "Unknown",
+      "audience": "Unknown",
+      "progress": "Unknown",
+      "next_check": "Resolve team membership, corroborate public account and inspect a current project; search non-discovery is not evidence of inactivity."
+    },
+    {
+      "name": "Rotanak Lim",
+      "source_rows": [
+        372
+      ],
+      "major": "Computer Science",
+      "year": "2nd year",
+      "team_status": "Unassigned in source rows; possible duplicate assigned row tracked separately",
+      "search_status": "Initial targeted web search completed",
+      "search_queries": [
+        "\"Rotanak Lim\" GitHub \"Cal Poly\""
+      ],
+      "profile_status": "Candidate public pages; identity requires corroboration",
+      "candidate_urls": [
+        "https://www.linkedin.com/in/rotanak-lim-27869a1bb"
+      ],
+      "current_project": "Unknown",
+      "audience": "Unknown",
+      "progress": "Unknown",
+      "next_check": "Resolve team membership, corroborate public account and inspect a current project; search non-discovery is not evidence of inactivity."
+    },
+    {
+      "name": "Rushil Vaswani",
+      "source_rows": [
+        374
+      ],
+      "major": "Business Administration",
+      "year": "4th year",
+      "team_status": "Unassigned in source rows; possible duplicate assigned row tracked separately",
+      "search_status": "Initial targeted web search completed",
+      "search_queries": [
+        "\"Rushil Vaswani\" GitHub \"Cal Poly\""
+      ],
+      "profile_status": "Candidate public pages; identity requires corroboration",
+      "candidate_urls": [
+        "https://www.linkedin.com/in/rushilvaswani"
+      ],
+      "current_project": "Unknown",
+      "audience": "Unknown",
+      "progress": "Unknown",
+      "next_check": "Resolve team membership, corroborate public account and inspect a current project; search non-discovery is not evidence of inactivity."
+    },
+    {
+      "name": "Ryan Li",
+      "source_rows": [
+        375
+      ],
+      "major": "business",
+      "year": "1st year",
+      "team_status": "Unassigned in source rows; possible duplicate assigned row tracked separately",
+      "search_status": "Initial targeted web search completed",
+      "search_queries": [
+        "\"Ryan Li\" GitHub \"Cal Poly\""
+      ],
+      "profile_status": "Candidate public pages; identity requires corroboration",
+      "candidate_urls": [
+        "https://www.linkedin.com/in/li-ryan-sj"
+      ],
+      "current_project": "Unknown",
+      "audience": "Unknown",
+      "progress": "Unknown",
+      "next_check": "Resolve team membership, corroborate public account and inspect a current project; search non-discovery is not evidence of inactivity."
+    },
+    {
+      "name": "Ryan Theberge",
+      "source_rows": [
+        377
+      ],
+      "major": "Math",
+      "year": "4th year",
+      "team_status": "Unassigned in source rows; possible duplicate assigned row tracked separately",
+      "search_status": "Initial targeted web search completed",
+      "search_queries": [
+        "\"Ryan Theberge\" GitHub \"Cal Poly\""
+      ],
+      "profile_status": "Candidate public pages; identity requires corroboration",
+      "candidate_urls": [
+        "https://www.linkedin.com/in/ryantheberge"
+      ],
+      "current_project": "Unknown",
+      "audience": "Unknown",
+      "progress": "Unknown",
+      "next_check": "Resolve team membership, corroborate public account and inspect a current project; search non-discovery is not evidence of inactivity."
+    },
+    {
+      "name": "Sahib Kullar",
+      "source_rows": [
+        381
+      ],
+      "major": "Computer Science",
+      "year": "4th year",
+      "team_status": "Unassigned in source rows; possible duplicate assigned row tracked separately",
+      "search_status": "Initial targeted web search completed",
+      "search_queries": [
+        "\"Sahib Kullar\" GitHub \"Cal Poly\""
+      ],
+      "profile_status": "Candidate public pages; identity requires corroboration",
+      "candidate_urls": [
+        "https://www.linkedin.com/in/s6hib"
+      ],
+      "current_project": "Unknown",
+      "audience": "Unknown",
+      "progress": "Unknown",
+      "next_check": "Resolve team membership, corroborate public account and inspect a current project; search non-discovery is not evidence of inactivity."
+    },
+    {
+      "name": "Salif  Sanogo",
+      "source_rows": [
+        383
+      ],
+      "major": "Computer Science",
+      "year": "4th year",
+      "team_status": "Unassigned in source rows; possible duplicate assigned row tracked separately",
+      "search_status": "Initial targeted web search completed",
+      "search_queries": [
+        "\"Salif Sanogo\" GitHub \"Cal Poly\""
+      ],
+      "profile_status": "Candidate public pages; identity requires corroboration",
+      "candidate_urls": [
+        "https://www.linkedin.com/in/salif-sanogo-922593253"
+      ],
+      "current_project": "Unknown",
+      "audience": "Unknown",
+      "progress": "Unknown",
+      "next_check": "Resolve team membership, corroborate public account and inspect a current project; search non-discovery is not evidence of inactivity."
+    },
+    {
+      "name": "sam Bessette",
+      "source_rows": [
+        384
+      ],
+      "major": "BRAE",
+      "year": "3rd year",
+      "team_status": "Unassigned in source rows; possible duplicate assigned row tracked separately",
+      "search_status": "Initial targeted web search completed",
+      "search_queries": [
+        "\"sam Bessette\" GitHub \"Cal Poly\""
+      ],
+      "profile_status": "No reliable profile located in this first search",
+      "candidate_urls": [],
+      "current_project": "Unknown",
+      "audience": "Unknown",
+      "progress": "Unknown",
+      "next_check": "Resolve team membership, corroborate public account and inspect a current project; search non-discovery is not evidence of inactivity."
+    },
+    {
+      "name": "Sam Otto",
+      "source_rows": [
+        387
+      ],
+      "major": "Business Administration",
+      "year": "4th year",
+      "team_status": "Unassigned in source rows; possible duplicate assigned row tracked separately",
+      "search_status": "Initial targeted web search completed",
+      "search_queries": [
+        "\"Sam Otto\" GitHub \"Cal Poly\""
+      ],
+      "profile_status": "Candidate public pages; identity requires corroboration",
+      "candidate_urls": [
+        "https://www.samotto.dev/",
+        "https://www.linkedin.com/in/sotto27"
+      ],
+      "current_project": "Unknown",
+      "audience": "Unknown",
+      "progress": "Unknown",
+      "next_check": "Resolve team membership, corroborate public account and inspect a current project; search non-discovery is not evidence of inactivity."
+    },
+    {
+      "name": "Sameer Maheshwari",
+      "source_rows": [
+        389
+      ],
+      "major": "Computer Science",
+      "year": "4th year",
+      "team_status": "Unassigned in source rows; possible duplicate assigned row tracked separately",
+      "search_status": "Initial targeted web search completed",
+      "search_queries": [
+        "\"Sameer Maheshwari\" GitHub \"Cal Poly\""
+      ],
+      "profile_status": "Candidate public pages; identity requires corroboration",
+      "candidate_urls": [
+        "https://sam2545.github.io/index.html"
+      ],
+      "current_project": "Unknown",
+      "audience": "Unknown",
+      "progress": "Unknown",
+      "next_check": "Resolve team membership, corroborate public account and inspect a current project; search non-discovery is not evidence of inactivity.",
+      "followup_evidence": {
+        "url": "https://sam2545.github.io/index.html",
+        "claim": "Directly opened personal site identifies Sameer Maheshwari and Cal Poly SLO; supports a school-matched public portfolio lead. Site copy is old and does not identify a current hackathon entry.",
+        "observed_at": "2026-11-14 (Pacific)"
+      }
+    },
+    {
+      "name": "Samson Chang",
+      "source_rows": [
+        390
+      ],
+      "major": "Computer Science",
+      "year": "3rd year",
+      "team_status": "Unassigned in source rows; possible duplicate assigned row tracked separately",
+      "search_status": "Initial targeted web search completed",
+      "search_queries": [
+        "\"Samson Chang\" GitHub \"Cal Poly\""
+      ],
+      "profile_status": "No reliable profile located in this first search",
+      "candidate_urls": [],
+      "current_project": "Unknown",
+      "audience": "Unknown",
+      "progress": "Unknown",
+      "next_check": "Resolve team membership, corroborate public account and inspect a current project; search non-discovery is not evidence of inactivity."
+    },
+    {
+      "name": "Samuel Farley",
+      "source_rows": [
+        392
+      ],
+      "major": "Business",
+      "year": "3rd year",
+      "team_status": "Unassigned in source rows; possible duplicate assigned row tracked separately",
+      "search_status": "Initial targeted web search completed",
+      "search_queries": [
+        "\"Samuel Farley\" GitHub \"Cal Poly\""
+      ],
+      "profile_status": "No reliable profile located in this first search",
+      "candidate_urls": [],
+      "current_project": "Unknown",
+      "audience": "Unknown",
+      "progress": "Unknown",
+      "next_check": "Resolve team membership, corroborate public account and inspect a current project; search non-discovery is not evidence of inactivity."
+    },
+    {
+      "name": "Samuel Rosen",
+      "source_rows": [
+        393
+      ],
+      "major": "Business and Computer Science",
+      "year": "4th year",
+      "team_status": "Unassigned in source rows; possible duplicate assigned row tracked separately",
+      "search_status": "Initial targeted web search completed",
+      "search_queries": [
+        "\"Samuel Rosen\" GitHub \"Cal Poly\""
+      ],
+      "profile_status": "No reliable profile located in this first search",
+      "candidate_urls": [],
+      "current_project": "Unknown",
+      "audience": "Unknown",
+      "progress": "Unknown",
+      "next_check": "Resolve team membership, corroborate public account and inspect a current project; search non-discovery is not evidence of inactivity."
+    },
+    {
+      "name": "Savannah Elordi",
+      "source_rows": [
+        395
+      ],
+      "major": "Business administration",
+      "year": "2nd year",
+      "team_status": "Unassigned in source rows; possible duplicate assigned row tracked separately",
+      "search_status": "Initial targeted web search completed",
+      "search_queries": [
+        "\"Savannah Elordi\" GitHub \"Cal Poly\""
+      ],
+      "profile_status": "No reliable profile located in this first search",
+      "candidate_urls": [],
+      "current_project": "Unknown",
+      "audience": "Unknown",
+      "progress": "Unknown",
+      "next_check": "Resolve team membership, corroborate public account and inspect a current project; search non-discovery is not evidence of inactivity."
+    },
+    {
+      "name": "Sean McCormick",
+      "source_rows": [
+        396
+      ],
+      "major": "Computer Science",
+      "year": "4th year",
+      "team_status": "Unassigned in source rows; possible duplicate assigned row tracked separately",
+      "search_status": "Initial targeted web search completed",
+      "search_queries": [
+        "\"Sean McCormick\" GitHub \"Cal Poly\""
+      ],
+      "profile_status": "Candidate public pages; identity requires corroboration",
+      "candidate_urls": [
+        "https://www.linkedin.com/in/seanmcc7"
+      ],
+      "current_project": "Unknown",
+      "audience": "Unknown",
+      "progress": "Unknown",
+      "next_check": "Resolve team membership, corroborate public account and inspect a current project; search non-discovery is not evidence of inactivity."
+    },
+    {
+      "name": "Shane Reynolds",
+      "source_rows": [
+        399
+      ],
+      "major": "Economics",
+      "year": "3rd year",
+      "team_status": "Unassigned in source rows; possible duplicate assigned row tracked separately",
+      "search_status": "Initial targeted web search completed",
+      "search_queries": [
+        "\"Shane Reynolds\" GitHub \"Cal Poly\""
+      ],
+      "profile_status": "No reliable profile located in this first search",
+      "candidate_urls": [],
+      "current_project": "Unknown",
+      "audience": "Unknown",
+      "progress": "Unknown",
+      "next_check": "Resolve team membership, corroborate public account and inspect a current project; search non-discovery is not evidence of inactivity."
+    },
+    {
+      "name": "Shishir Bonthala",
+      "source_rows": [
+        402
+      ],
+      "major": "Computer Science",
+      "year": "2nd year",
+      "team_status": "Unassigned in source rows; possible duplicate assigned row tracked separately",
+      "search_status": "Initial targeted web search completed",
+      "search_queries": [
+        "\"Shishir Bonthala\" GitHub \"Cal Poly\""
+      ],
+      "profile_status": "No reliable profile located in this first search",
+      "candidate_urls": [],
+      "current_project": "Unknown",
+      "audience": "Unknown",
+      "progress": "Unknown",
+      "next_check": "Resolve team membership, corroborate public account and inspect a current project; search non-discovery is not evidence of inactivity."
+    },
+    {
+      "name": "Sofia Williams",
+      "source_rows": [
+        407
+      ],
+      "major": "Business Administration",
+      "year": "2nd year",
+      "team_status": "Unassigned in source rows; possible duplicate assigned row tracked separately",
+      "search_status": "Initial targeted web search completed",
+      "search_queries": [
+        "\"Sofia Williams\" GitHub \"Cal Poly\""
+      ],
+      "profile_status": "No reliable profile located in this first search",
+      "candidate_urls": [],
+      "current_project": "Unknown",
+      "audience": "Unknown",
+      "progress": "Unknown",
+      "next_check": "Resolve team membership, corroborate public account and inspect a current project; search non-discovery is not evidence of inactivity."
+    },
+    {
+      "name": "Sophia Matty",
+      "source_rows": [
+        410
+      ],
+      "major": "Business Administration",
+      "year": "2nd year",
+      "team_status": "Unassigned in source rows; possible duplicate assigned row tracked separately",
+      "search_status": "Initial targeted web search completed",
+      "search_queries": [
+        "\"Sophia Matty\" GitHub \"Cal Poly\""
+      ],
+      "profile_status": "Candidate public pages; identity requires corroboration",
+      "candidate_urls": [
+        "https://www.linkedin.com/in/sophiamatty"
+      ],
+      "current_project": "Unknown",
+      "audience": "Unknown",
+      "progress": "Unknown",
+      "next_check": "Resolve team membership, corroborate public account and inspect a current project; search non-discovery is not evidence of inactivity."
+    },
+    {
+      "name": "Sophia Peckner",
+      "source_rows": [
+        411
+      ],
+      "major": "Computer Science",
+      "year": "4th year",
+      "team_status": "Unassigned in source rows; possible duplicate assigned row tracked separately",
+      "search_status": "Initial targeted web search completed",
+      "search_queries": [
+        "\"Sophia Peckner\" GitHub \"Cal Poly\""
+      ],
+      "profile_status": "Candidate public pages; identity requires corroboration",
+      "candidate_urls": [
+        "https://www.linkedin.com/in/sophia-peckner"
+      ],
+      "current_project": "Unknown",
+      "audience": "Unknown",
+      "progress": "Unknown",
+      "next_check": "Resolve team membership, corroborate public account and inspect a current project; search non-discovery is not evidence of inactivity."
+    },
+    {
+      "name": "Steve Greene",
+      "source_rows": [
+        416
+      ],
+      "major": "Business",
+      "year": "1st year",
+      "team_status": "Unassigned in source rows; possible duplicate assigned row tracked separately",
+      "search_status": "Initial targeted web search completed",
+      "search_queries": [
+        "\"Steve Greene\" GitHub \"Cal Poly\""
+      ],
+      "profile_status": "No reliable profile located in this first search",
+      "candidate_urls": [],
+      "current_project": "Unknown",
+      "audience": "Unknown",
+      "progress": "Unknown",
+      "next_check": "Resolve team membership, corroborate public account and inspect a current project; search non-discovery is not evidence of inactivity."
+    },
+    {
+      "name": "Steven Kautz",
+      "source_rows": [
+        417
+      ],
+      "major": "Industrial Technology & Packaging",
+      "year": "4th year",
+      "team_status": "Unassigned in source rows; possible duplicate assigned row tracked separately",
+      "search_status": "Initial targeted web search completed",
+      "search_queries": [
+        "\"Steven Kautz\" GitHub \"Cal Poly\""
+      ],
+      "profile_status": "No reliable profile located in this first search",
+      "candidate_urls": [],
+      "current_project": "Unknown",
+      "audience": "Unknown",
+      "progress": "Unknown",
+      "next_check": "Resolve team membership, corroborate public account and inspect a current project; search non-discovery is not evidence of inactivity."
+    },
+    {
+      "name": "Tan Nguyen",
+      "source_rows": [
+        422
+      ],
+      "major": "Computer Science",
+      "year": "4th year",
+      "team_status": "Unassigned in source rows; possible duplicate assigned row tracked separately",
+      "search_status": "Initial targeted web search completed",
+      "search_queries": [
+        "\"Tan Nguyen\" GitHub \"Cal Poly\""
+      ],
+      "profile_status": "Candidate public pages; identity requires corroboration",
+      "candidate_urls": [
+        "https://www.linkedin.com/in/tan-nguyen-659637183"
+      ],
+      "current_project": "Unknown",
+      "audience": "Unknown",
+      "progress": "Unknown",
+      "next_check": "Resolve team membership, corroborate public account and inspect a current project; search non-discovery is not evidence of inactivity."
+    },
+    {
+      "name": "Tara Stanisavljevic",
+      "source_rows": [
+        423
+      ],
+      "major": "Economics",
+      "year": "2nd year",
+      "team_status": "Unassigned in source rows; possible duplicate assigned row tracked separately",
+      "search_status": "Initial targeted web search completed",
+      "search_queries": [
+        "\"Tara Stanisavljevic\" GitHub \"Cal Poly\""
+      ],
+      "profile_status": "No reliable profile located in this first search",
+      "candidate_urls": [],
+      "current_project": "Unknown",
+      "audience": "Unknown",
+      "progress": "Unknown",
+      "next_check": "Resolve team membership, corroborate public account and inspect a current project; search non-discovery is not evidence of inactivity."
+    },
+    {
+      "name": "Taryn Sears",
+      "source_rows": [
+        424
+      ],
+      "major": "Computer science",
+      "year": "3rd year",
+      "team_status": "Unassigned in source rows; possible duplicate assigned row tracked separately",
+      "search_status": "Initial targeted web search completed",
+      "search_queries": [
+        "\"Taryn Sears\" GitHub \"Cal Poly\""
+      ],
+      "profile_status": "No reliable profile located in this first search",
+      "candidate_urls": [],
+      "current_project": "Unknown",
+      "audience": "Unknown",
+      "progress": "Unknown",
+      "next_check": "Resolve team membership, corroborate public account and inspect a current project; search non-discovery is not evidence of inactivity."
+    },
+    {
+      "name": "Teagan Griffin",
+      "source_rows": [
+        425
+      ],
+      "major": "Business administration",
+      "year": "2nd year",
+      "team_status": "Unassigned in source rows; possible duplicate assigned row tracked separately",
+      "search_status": "Initial targeted web search completed",
+      "search_queries": [
+        "\"Teagan Griffin\" GitHub \"Cal Poly\""
+      ],
+      "profile_status": "No reliable profile located in this first search",
+      "candidate_urls": [],
+      "current_project": "Unknown",
+      "audience": "Unknown",
+      "progress": "Unknown",
+      "next_check": "Resolve team membership, corroborate public account and inspect a current project; search non-discovery is not evidence of inactivity."
+    },
+    {
+      "name": "theodore  perry",
+      "source_rows": [
+        428
+      ],
+      "major": "business",
+      "year": "1st year",
+      "team_status": "Unassigned in source rows; possible duplicate assigned row tracked separately",
+      "search_status": "Initial targeted web search completed",
+      "search_queries": [
+        "\"theodore perry\" GitHub \"Cal Poly\""
+      ],
+      "profile_status": "No reliable profile located in this first search",
+      "candidate_urls": [],
+      "current_project": "Unknown",
+      "audience": "Unknown",
+      "progress": "Unknown",
+      "next_check": "Resolve team membership, corroborate public account and inspect a current project; search non-discovery is not evidence of inactivity."
+    },
+    {
+      "name": "Thomas Benjamin",
+      "source_rows": [
+        429
+      ],
+      "major": "Business Admin",
+      "year": "4th year",
+      "team_status": "Unassigned in source rows; possible duplicate assigned row tracked separately",
+      "search_status": "Initial targeted web search completed",
+      "search_queries": [
+        "\"Thomas Benjamin\" GitHub \"Cal Poly\""
+      ],
+      "profile_status": "No reliable profile located in this first search",
+      "candidate_urls": [],
+      "current_project": "Unknown",
+      "audience": "Unknown",
+      "progress": "Unknown",
+      "next_check": "Resolve team membership, corroborate public account and inspect a current project; search non-discovery is not evidence of inactivity."
+    },
+    {
+      "name": "Tobias Halpern",
+      "source_rows": [
+        431
+      ],
+      "major": "Business",
+      "year": "2nd year",
+      "team_status": "Unassigned in source rows; possible duplicate assigned row tracked separately",
+      "search_status": "Initial targeted web search completed",
+      "search_queries": [
+        "\"Tobias Halpern\" GitHub \"Cal Poly\""
+      ],
+      "profile_status": "No reliable profile located in this first search",
+      "candidate_urls": [],
+      "current_project": "Unknown",
+      "audience": "Unknown",
+      "progress": "Unknown",
+      "next_check": "Resolve team membership, corroborate public account and inspect a current project; search non-discovery is not evidence of inactivity."
+    },
+    {
+      "name": "Trey Bernard",
+      "source_rows": [
+        434
+      ],
+      "major": "Art & Design",
+      "year": "4th year",
+      "team_status": "Unassigned in source rows; possible duplicate assigned row tracked separately",
+      "search_status": "Initial targeted web search completed",
+      "search_queries": [
+        "\"Trey Bernard\" GitHub \"Cal Poly\""
+      ],
+      "profile_status": "Candidate public pages; identity requires corroboration",
+      "candidate_urls": [
+        "https://www.linkedin.com/in/treybernard"
+      ],
+      "current_project": "Unknown",
+      "audience": "Unknown",
+      "progress": "Unknown",
+      "next_check": "Resolve team membership, corroborate public account and inspect a current project; search non-discovery is not evidence of inactivity."
+    },
+    {
+      "name": "Veronika Lebed",
+      "source_rows": [
+        438
+      ],
+      "major": "Computer Science",
+      "year": "3rd year",
+      "team_status": "Unassigned in source rows; possible duplicate assigned row tracked separately",
+      "search_status": "Initial targeted web search completed",
+      "search_queries": [
+        "\"Veronika Lebed\" GitHub \"Cal Poly\""
+      ],
+      "profile_status": "No reliable profile located in this first search",
+      "candidate_urls": [],
+      "current_project": "Unknown",
+      "audience": "Unknown",
+      "progress": "Unknown",
+      "next_check": "Resolve team membership, corroborate public account and inspect a current project; search non-discovery is not evidence of inactivity."
+    },
+    {
+      "name": "Vishal Murali",
+      "source_rows": [
+        440
+      ],
+      "major": "CS",
+      "year": "3rd year",
+      "team_status": "Unassigned in source rows; possible duplicate assigned row tracked separately",
+      "search_status": "Initial targeted web search completed",
+      "search_queries": [
+        "\"Vishal Murali\" GitHub \"Cal Poly\""
+      ],
+      "profile_status": "No reliable profile located in this first search",
+      "candidate_urls": [],
+      "current_project": "Unknown",
+      "audience": "Unknown",
+      "progress": "Unknown",
+      "next_check": "Resolve team membership, corroborate public account and inspect a current project; search non-discovery is not evidence of inactivity."
+    },
+    {
+      "name": "Wyatt Hansen",
+      "source_rows": [
+        445
+      ],
+      "major": "Business Administration",
+      "year": "3rd year",
+      "team_status": "Unassigned in source rows; possible duplicate assigned row tracked separately",
+      "search_status": "Initial targeted web search completed",
+      "search_queries": [
+        "\"Wyatt Hansen\" GitHub \"Cal Poly\""
+      ],
+      "profile_status": "Candidate public pages; identity requires corroboration",
+      "candidate_urls": [
+        "https://www.linkedin.com/in/wyatt-hansen1"
+      ],
+      "current_project": "Unknown",
+      "audience": "Unknown",
+      "progress": "Unknown",
+      "next_check": "Resolve team membership, corroborate public account and inspect a current project; search non-discovery is not evidence of inactivity."
+    },
+    {
+      "name": "Xiaochen Li",
+      "source_rows": [
+        448
+      ],
+      "major": "Music",
+      "year": "3rd year",
+      "team_status": "Unassigned in source rows; possible duplicate assigned row tracked separately",
+      "search_status": "Initial targeted web search completed",
+      "search_queries": [
+        "\"Xiaochen Li\" GitHub \"Cal Poly\""
+      ],
+      "profile_status": "No reliable profile located in this first search",
+      "candidate_urls": [],
+      "current_project": "Unknown",
+      "audience": "Unknown",
+      "progress": "Unknown",
+      "next_check": "Resolve team membership, corroborate public account and inspect a current project; search non-discovery is not evidence of inactivity."
+    },
+    {
+      "name": "Yaseen Hamouda",
+      "source_rows": [
+        449
+      ],
+      "major": "Materials engineering",
+      "year": "1st year",
+      "team_status": "Unassigned in source rows; possible duplicate assigned row tracked separately",
+      "search_status": "Initial targeted web search completed",
+      "search_queries": [
+        "\"Yaseen Hamouda\" GitHub \"Cal Poly\""
+      ],
+      "profile_status": "No reliable profile located in this first search",
+      "candidate_urls": [],
+      "current_project": "Unknown",
+      "audience": "Unknown",
+      "progress": "Unknown",
+      "next_check": "Resolve team membership, corroborate public account and inspect a current project; search non-discovery is not evidence of inactivity."
+    },
+    {
+      "name": "Zach Goldwyn",
+      "source_rows": [
+        451
+      ],
+      "major": "Computer Engineering",
+      "year": "2nd year",
+      "team_status": "Unassigned in source rows; possible duplicate assigned row tracked separately",
+      "search_status": "Initial targeted web search completed",
+      "search_queries": [
+        "\"Zach Goldwyn\" GitHub \"Cal Poly\""
+      ],
+      "profile_status": "Candidate public pages; identity requires corroboration",
+      "candidate_urls": [
+        "https://devpost.com/zachgoldwyn/challenges",
+        "https://www.linkedin.com/in/zgoldwyn"
+      ],
+      "current_project": "Unknown",
+      "audience": "Unknown",
+      "progress": "Unknown",
+      "next_check": "Resolve team membership, corroborate public account and inspect a current project; search non-discovery is not evidence of inactivity."
+    },
+    {
+      "name": "Zemen Bariagabr",
+      "source_rows": [
+        454
+      ],
+      "major": "Computer Engineering",
+      "year": "3rd year",
+      "team_status": "Unassigned in source rows; possible duplicate assigned row tracked separately",
+      "search_status": "Initial targeted web search completed",
+      "search_queries": [
+        "\"Zemen Bariagabr\" GitHub \"Cal Poly\""
+      ],
+      "profile_status": "No reliable profile located in this first search",
+      "candidate_urls": [],
+      "current_project": "Unknown",
+      "audience": "Unknown",
+      "progress": "Unknown",
+      "next_check": "Resolve team membership, corroborate public account and inspect a current project; search non-discovery is not evidence of inactivity."
+    },
+    {
+      "name": "Zitlaly Garcia",
+      "source_rows": [
+        455
+      ],
+      "major": "Computer science",
+      "year": "2nd year",
+      "team_status": "Unassigned in source rows; possible duplicate assigned row tracked separately",
+      "search_status": "Initial targeted web search completed",
+      "search_queries": [
+        "\"Zitlaly Garcia\" GitHub \"Cal Poly\""
+      ],
+      "profile_status": "No reliable profile located in this first search",
+      "candidate_urls": [],
+      "current_project": "Unknown",
+      "audience": "Unknown",
+      "progress": "Unknown",
+      "next_check": "Resolve team membership, corroborate public account and inspect a current project; search non-discovery is not evidence of inactivity."
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://www.linkedin.com/in/aakash-kapadia25",
+      "title": "Aakash Kapadia - Teradyne | LinkedIn",
+      "discovery_excerpt": "Crawled: 4 months ago; Hello, I'm Aakash Kapadia, a third year at Cal Poly SLO.\n\n# Aakash Kapadia\n\n### \n\nSanta Clara, California, United States\n\n807 followers 500+ connections\n\n[Button: See your mutual connections]\n\n## View mutual connections with Aakash\n\nAakash can introduce you to 1 people at Teradyne\n\n\n## About\n\nHello, I'm Aakash Kapadia, a third year at ",
+      "observed_at": "2026-11-14 (Pacific; exact per-source observation time not retained)",
+      "verification": "Search result only; candidate identity, not confirmed attribution."
+    },
+    {
+      "url": "https://www.linkedin.com/in/abdielma",
+      "title": "Abdiel Maldonado - Veterans Coaching Project | LinkedIn",
+      "discovery_excerpt": "Crawled: 6 months ago; # Abdiel Maldonado ... Motivated and hardworking first-year Business Administration student at Cal Poly SLO and…\n\n# Abdiel Maldonado\n\n### \n\nSan Luis Obispo, California, United States\n\n531 followers 500+ connections\n\n\n## View mutual connections with Abdiel\n\nAbdiel can introduce you to 9 people at Compass Group\n\n\n## About\n\nMotivated and ",
+      "observed_at": "2026-11-14 (Pacific; exact per-source observation time not retained)",
+      "verification": "Search result only; candidate identity, not confirmed attribution."
+    },
+    {
+      "url": "https://humboldtathletics.com/sports/mens-soccer/roster/alan-castillo/4986",
+      "title": "Alan Castillo - Men's Soccer - Cal Poly Humboldt Athletics",
+      "discovery_excerpt": "Crawled: 4 days ago; CAL POLY HUMBOLDT ATHLETICS ... 7 Alan Castillo\n\nCAL POLY HUMBOLDT ATHLETICS\n\nVISIT THE UNIVERSITY SITE\n\nMen's Soccer Roster Schedule/Results Statistics Camps Additional Links\n\n## 2015 Men's Soccer Roster\n\n7 Alan Castillo\n\n  * Position Midfielder\n\n  * Height 6-0\n\n  * Weight 163\n\n  * Class Sophomore\n\n  * Hometown San Rafael, Calif.\n\n  * H",
+      "observed_at": "2026-11-14 (Pacific; exact per-source observation time not retained)",
+      "verification": "Search result only; candidate identity, not confirmed attribution."
+    },
+    {
+      "url": "https://www.linkedin.com/in/alexander-otis",
+      "title": "Alexander Otis - Campus Market | LinkedIn",
+      "discovery_excerpt": "Crawled: last month; # Alexander Otis ... Huge thank you to our sponsor Jake Veazey and Project Director Hailey Tamara for the guidance, Systems Optimization Club (Cal Poly) for the opportunity, and, of course, this wonderful team I've had the pleasure of leading for the past few months.\n\n# Alexander Otis\n\n### \n\nKapolei, Hawaii, United States\n\n32 followers 3",
+      "observed_at": "2026-11-14 (Pacific; exact per-source observation time not retained)",
+      "verification": "Search result only; candidate identity, not confirmed attribution."
+    },
+    {
+      "url": "https://www.linkedin.com/in/allystauffer",
+      "title": "Ally Stauffer - Kestrix | LinkedIn",
+      "discovery_excerpt": "Crawled: 4 months ago; #### Cal Poly New Student & Transition Programs\n## Licenses & Certifications\n\n  * ### Introduction to Generative AI\n\n#### Google Cloud Education\n\nIssued Mar 2024\n\nSee credential\n\n  * ### Data Science for Good\n\n#### Girls Who Code\n\nIssued Aug 2023\n\nSee credential\n\n  * ### Introduction to Data Science\n\n#### Girls Who Code\n\nIssued Aug 202",
+      "observed_at": "2026-11-14 (Pacific; exact per-source observation time not retained)",
+      "verification": "Search result only; candidate identity, not confirmed attribution."
+    },
+    {
+      "url": "https://github.com/bilalk88",
+      "title": "bilalk88 (BILAL KHAN) · GitHub",
+      "discovery_excerpt": "Crawled: 2 months ago; # `$ whoami` → Bilal Ahmed Khan ...     location:    Riyadh, Saudi Arabia 🇸🇦\n\nImage: @bilalk88 bilalk88 Follow\n\nOverview Repositories 23 Projects 0 Packages 0 Stars 11\n\nMore\n\n# BILAL KHAN bilalk88\n\nFollow\n\nSenior Application Security Engineer | OWASP | DevSecOps | SCA | SAST | DAST | VAPT | Functional Testing\n\n3 followers · 0 followi",
+      "observed_at": "2026-11-14 (Pacific; exact per-source observation time not retained)",
+      "verification": "Search result only; candidate identity, not confirmed attribution."
+    },
+    {
+      "url": "https://www.linkedin.com/in/eliymiller",
+      "title": "Eliy Miller - Self-Employed | LinkedIn",
+      "discovery_excerpt": "Crawled: last month; # Eliy Miller ... A student club at Cal Poly for building software with AI coding tools.\n\n# Eliy Miller\n\n### \n\nGreater San Luis Obispo Area\n\n179 followers 179 connections\n\nSelf-Employed\n\nCalifornia Polytechnic State University-San Luis Obispo\n\n## About\n\nI build software for real estate agents. Most of what I know about it I picked up by…",
+      "observed_at": "2026-11-14 (Pacific; exact per-source observation time not retained)",
+      "verification": "Search result only; candidate identity, not confirmed attribution."
+    },
+    {
+      "url": "https://www.linkedin.com/in/ella-eovaldi-13a3a0390",
+      "title": "Ella Eovaldi - Harry Caray's Restaurant Group | LinkedIn",
+      "discovery_excerpt": "Crawled: 2 months ago; # Ella Eovaldi ... Gumbs at a Women in Business meeting here at Cal Poly.\n\n# Ella Eovaldi\n\n### \n\nSan Luis Obispo, California, United States\n\n477 followers 477 connections\n\n\n## View mutual connections with Ella\n\nElla can introduce you to 10+ people at City of Evanston\n\n## About\n\nHighly motivated Business Administration student at Califo",
+      "observed_at": "2026-11-14 (Pacific; exact per-source observation time not retained)",
+      "verification": "Search result only; candidate identity, not confirmed attribution."
+    },
+    {
+      "url": "https://www.linkedin.com/in/freddyrp",
+      "title": "Freddy Paniagua - City of Santa Monica | LinkedIn",
+      "discovery_excerpt": "Crawled: 2 months ago; # Freddy Paniagua ... UCLA\n\n# Freddy Paniagua\n\n### \n\nLos Angeles, California, United States\n\n845 followers 500+ connections\n\n\n## View mutual connections with Freddy\n\nFreddy can introduce you to 9 people at City of Santa Monica\n\n\nJoin to view profile\n\nCity of Santa Monica\n\nUCLA\n\n## Activity\n\n### 845 followers\n\n  * [Button: Reactions ]\n\n",
+      "observed_at": "2026-11-14 (Pacific; exact per-source observation time not retained)",
+      "verification": "Search result only; candidate identity, not confirmed attribution."
+    },
+    {
+      "url": "https://www.wayup.com/profile/Garrett-Chan-7d069bd8e7/",
+      "title": "Garrett Chan - California Polytechnic State University-San Luis Obispo | WayUp",
+      "discovery_excerpt": "Crawled: 5 months ago; # Garrett Chan ... Cal Poly Security Education Club\n\n# Garrett Chan\n\n* * *\n\n## Location\n\nSan Luis Obispo, CA\n\nKerman, CA\n\n\nEducation\n\nC\n\nCalifornia Polytechnic State University-San Luis Obispo\n\nSeptember 2024 - June 2028\n\nexpected degree\n\nBachelor's\n\nmajor\n\nComputer Science\n\nWork Experience\n\nC\n\nCal Poly Security Education Club\n\nBoard O",
+      "observed_at": "2026-11-14 (Pacific; exact per-source observation time not retained)",
+      "verification": "Search result only; candidate identity, not confirmed attribution."
+    },
+    {
+      "url": "https://www.linkedin.com/in/hasini-bharathwaj",
+      "title": "Hasini Bharathwaj - Fremont, California, United States | Professional Profile | LinkedIn",
+      "discovery_excerpt": "Crawled: last month; # Hasini Bharathwaj ... Still, we walked away with a hoodie and Best Industrial Project at KiroHacks Cal Poly.\n\n# Hasini Bharathwaj\n\n### \n\nFremont, California, United States\n\n211 followers 212 connections\n\n## Activity\n\n### 211 followers\n\n  * [Button: Reactions ]\n\n  * Hasini Bharathwaj liked this\n\nHasini Bharathwaj liked this\n\nSnehil Kaka",
+      "observed_at": "2026-11-14 (Pacific; exact per-source observation time not retained)",
+      "verification": "Search result only; candidate identity, not confirmed attribution."
+    },
+    {
+      "url": "https://www.linkedin.com/in/jacob-monroe-3428972b2",
+      "title": "Jacob Monroe - Adobe | LinkedIn",
+      "discovery_excerpt": "Crawled: last month; A few of us talking about how Cal Poly didn't have a student investment fund, and how much we wished it did. ... I would also like to thank my teammates, whose collaboration helped make this project possible: Jacob Monroe, Ty Fought, and Dario Rager!\n\n# Jacob Monroe\n\n### \n\nSan Diego, California, United States\n\n1K followers 500+ connectio",
+      "observed_at": "2026-11-14 (Pacific; exact per-source observation time not retained)",
+      "verification": "Search result only; candidate identity, not confirmed attribution."
+    },
+    {
+      "url": "https://www.linkedin.com/in/jayan-anvekar-26455a395",
+      "title": "Jayan Anvekar - Anvekar LLC | LinkedIn",
+      "discovery_excerpt": "Crawled: last month; # Jayan Anvekar ... I am a third-year Construction Management student at Cal Poly San Luis Obispo with a…\n\n# Jayan Anvekar\n\n### \n\nUnited States\n\n861 followers 500+ connections\n\n## View mutual connections with Jayan\n\nJayan can introduce you to 9 people at Aptive Environmental\n\nAnvekar LLC\n\nCalifornia Polytechnic State University-San Luis ",
+      "observed_at": "2026-11-14 (Pacific; exact per-source observation time not retained)",
+      "verification": "Search result only; candidate identity, not confirmed attribution."
+    },
+    {
+      "url": "https://www.linkedin.com/in/jeronperey",
+      "title": "Jeron Perey - CrowdStrike | LinkedIn",
+      "discovery_excerpt": "Crawled: 2 months ago; # Jeron Perey ... Computer Science student at Cal Poly SLO interested in AI systems, cloud engineering, and…\n\n# Jeron Perey\n\n### \n\nSanta Clara, California, United States\n\n665 followers 500+ connections\n\n## View mutual connections with Jeron\n\nJeron can introduce you to 10+ people at CrowdStrike\n\n\n## About\n\nComputer Science student at Ca",
+      "observed_at": "2026-11-14 (Pacific; exact per-source observation time not retained)",
+      "verification": "Search result only; candidate identity, not confirmed attribution."
+    },
+    {
+      "url": "https://www.linkedin.com/in/joshua-naim",
+      "title": "Joshua Naim - San Francisco Bay Area | Professional Profile | LinkedIn",
+      "discovery_excerpt": "Crawled: last month; # Joshua Naim ... Activities and Societies: Cal Poly Swim Club, Pickleball, Tech Sales, CS+AI ... https://github.com/joshnaim1/rebalance\n\n# Joshua Naim\n\n### \n\nSan Francisco Bay Area\n\n487 followers 467 connections\n\nCalifornia Polytechnic State University-San Luis Obispo\n\nPersonal Website\n\n## About\n\nCPE @ Cal Poly. Love tinkering in AI, ro",
+      "observed_at": "2026-11-14 (Pacific; exact per-source observation time not retained)",
+      "verification": "Search result only; candidate identity, not confirmed attribution."
+    },
+    {
+      "url": "https://www.linkedin.com/in/kaya-paz-573664421",
+      "title": "Kaya Paz - California Polytechnic State University-San Luis Obispo - Long Beach, California, United States | LinkedIn",
+      "discovery_excerpt": "Crawled: last month; # Kaya Paz ... That was the real finding from a project I ran this May with four Cal Poly students, and it's the part worth sitting with first.\n\n# Kaya Paz\n\n### \n\nLong Beach, California, United States\n\n63 followers 63 connections\n\n## View mutual connections with Kaya\n\nKaya can introduce you to 1 people at Azuma Co\n\nCalifornia Polytechnic",
+      "observed_at": "2026-11-14 (Pacific; exact per-source observation time not retained)",
+      "verification": "Search result only; candidate identity, not confirmed attribution."
+    },
+    {
+      "url": "https://www.linkedin.com/in/kent-david",
+      "title": "Kent David - Adroit Construction Co., Inc. | LinkedIn",
+      "discovery_excerpt": "Crawled: last month; # Kent David ... Cal Poly College of Architecture & Environmental Design\n\n# Kent David\n\n### \n\nJacksonville, Oregon, United States\n\n715 followers 500+ connections\n\n## View mutual connections with Kent\n\nKent can introduce you to 4 people at Adroit Construction Co., Inc.\n\nAdroit Construction Co., Inc.\n\nCal Poly College of Architecture & Env",
+      "observed_at": "2026-11-14 (Pacific; exact per-source observation time not retained)",
+      "verification": "Search result only; candidate identity, not confirmed attribution."
+    },
+    {
+      "url": "https://www.linkedin.com/in/kyramirez22",
+      "title": "Kyra Ramirez - California Polytechnic State University Environment Health & Safety | LinkedIn",
+      "discovery_excerpt": "Crawled: 2 months ago; # Kyra Ramirez ...   * Kyra Ramirez reposted this ... Co-founded UniHealth, an AI-assisted healthcare platform built in partnership with Cal Poly Health Center to simplify appointment scheduling and pharmacy pickups for students.\n\n# Kyra Ramirez\n\n### \n\nSan Luis Obispo, California, United States\n\n521 followers 500+ connections\n\n\nCalifor",
+      "observed_at": "2026-11-14 (Pacific; exact per-source observation time not retained)",
+      "verification": "Search result only; candidate identity, not confirmed attribution."
+    },
+    {
+      "url": "https://www.linkedin.com/in/vieiraluke",
+      "title": "Luke Vieira - K[ai]ros | LinkedIn",
+      "discovery_excerpt": "Crawled: last month; # Luke Vieira ... Cal Poly Industrial Engineering senior project (ISSP) for Firestone Walker Brewing Co., automating inspection and material handling for their ~190,000-keg reusable fleet.\n\n# Luke Vieira\n\n### \n\nSan Francisco Bay Area\n\n1K followers 500+ connections\n\n## View mutual connections with Luke\n\nLuke can introduce you to 1 people ",
+      "observed_at": "2026-11-14 (Pacific; exact per-source observation time not retained)",
+      "verification": "Search result only; candidate identity, not confirmed attribution."
+    },
+    {
+      "url": "https://www.linkedin.com/in/masonclewis",
+      "title": "Mason Lewis - Transit Technologies | LinkedIn",
+      "discovery_excerpt": "Crawled: 2 months ago; ### Mason Lewis ... In 48 hours our team memed and vibe-coded our way to 1st place at Cal Poly's OpenAI Poly Prompt Hackathon. ... Huge thanks to our awesome organizers Parker Jones + Jason Jelincic, and the sponsors OpenAI, Cal Poly Noyce, CodeBox, CS+AI Cal Poly and Cal Poly Digital Transformation Hub. #hackathon #aws #serverless #ra",
+      "observed_at": "2026-11-14 (Pacific; exact per-source observation time not retained)",
+      "verification": "Search result only; candidate identity, not confirmed attribution."
+    },
+    {
+      "url": "https://www.linkedin.com/in/mattbennetti",
+      "title": "Matt Bennetti - Cal Poly CIE Small Business Development Center | LinkedIn",
+      "discovery_excerpt": "Crawled: 2 months ago; ### Matt Bennetti ... Excited to be part of this summer’s Accelerator program at Cal Poly Center for Innovation & Entrepreneurship We are discussing Product Market Fit versus Go To Market fit and how to find customers in each phase.\n### Matt Bennetti\n\n1mo\n\nMatt Bennetti shared this\n\nExcited to be part of this summer’s Accelerator progr",
+      "observed_at": "2026-11-14 (Pacific; exact per-source observation time not retained)",
+      "verification": "Search result only; candidate identity, not confirmed attribution."
+    },
+    {
+      "url": "https://www.linkedin.com/in/matthew-estrada-7763a8285",
+      "title": "Matthew Estrada - California Baptist University - San Luis Obispo, California, United States | LinkedIn",
+      "discovery_excerpt": "Crawled: 2 months ago; They are off to Cal Poly SLO and Cal Baptist University, Riverside to study Architecture 😎👏🏼👏🏼 19six Architects Brett Matthews Matthew Estrada Joseph Monfreda, LEED AP, BD+C #19six #19sixArchitects\n\n# Matthew Estrada\n\n### \n\nSan Luis Obispo, California, United States\n\n1 follower 1 connection\n\n#### \n\n[Button: See your mutual connect",
+      "observed_at": "2026-11-14 (Pacific; exact per-source observation time not retained)",
+      "verification": "Search result only; candidate identity, not confirmed attribution."
+    },
+    {
+      "url": "https://www.linkedin.com/in/maya-doitch",
+      "title": "Maya Doitch - Hillel International | LinkedIn",
+      "discovery_excerpt": "Crawled: 5 months ago; # Maya Doitch ... Always sad to let them go. #calpoly #stanfordgsb #HBS #professor #leadership #WIN\n\n# Maya Doitch\n\n### \n\nSan Luis Obispo, California, United States\n\n144 followers 138 connections\n\n\n## View mutual connections with Maya\n\nMaya can introduce you to 4 people at Hillel International\n\n`` `` `` `` `` `` `` `` `` `` Sign in wit",
+      "observed_at": "2026-11-14 (Pacific; exact per-source observation time not retained)",
+      "verification": "Search result only; candidate identity, not confirmed attribution."
+    },
+    {
+      "url": "https://www.linkedin.com/in/michael-man-86798aa5",
+      "title": "Michael Man - Radiant | LinkedIn",
+      "discovery_excerpt": "Crawled: 4 months ago; # Michael Man ... Graduated from Cal Poly Pomona with a BS in Electrical Engineering.\n\n# Michael Man\n\n### \n\nAlhambra, California, United States\n\n372 followers 372 connections\n\n\n## View mutual connections with Michael\n\nMichael can introduce you to 10+ people at Radiant\n\n`` `` `` `` `` `` `` `` `` `` Sign in with Email\n\nor\n\nNew to Linked",
+      "observed_at": "2026-11-14 (Pacific; exact per-source observation time not retained)",
+      "verification": "Search result only; candidate identity, not confirmed attribution."
+    },
+    {
+      "url": "https://www.linkedin.com/in/namitjain22",
+      "title": "Namit Jain - MathPath | LinkedIn",
+      "discovery_excerpt": "Crawled: 2 months ago; # Namit Jain ... I'm studying computer engineering at Cal Poly San Luis Obispo.\n\n# Namit Jain\n\n### \n\nSan Luis Obispo, California, United States\n\n317 followers 317 connections\n\n## View mutual connections with Namit\n\nNamit can introduce you to 2 people at MathPath\n\n\n## About\n\nHi, I'm Namit! I'm studying computer engineering at Cal Poly S",
+      "observed_at": "2026-11-14 (Pacific; exact per-source observation time not retained)",
+      "verification": "Search result only; candidate identity, not confirmed attribution."
+    },
+    {
+      "url": "https://www.linkedin.com/in/nicolaswramel",
+      "title": "Nicolas Ramel - Alpha Kappa Psi | LinkedIn",
+      "discovery_excerpt": "Crawled: 4 months ago; # Nicolas Ramel ... [email omitted]\n\n# Nicolas Ramel\n\n### \n\nSan Luis Obispo, California, United States\n\n868 followers 500+ connections\n\n\n## About\n\n[email omitted]\n\n## Activity\n\n  * Last month, I graduated from California Polytechnic State University-San Luis Obispo with a degree in Business Administration and concentration in…\n\n### Las",
+      "observed_at": "2026-11-14 (Pacific; exact per-source observation time not retained)",
+      "verification": "Search result only; candidate identity, not confirmed attribution."
+    },
+    {
+      "url": "https://www.linkedin.com/in/nicolewu5",
+      "title": "Nicole Wu - Boston University Wheelock College of Education & Human Development | LinkedIn",
+      "discovery_excerpt": "Crawled: 4 months ago; # Nicole Wu ... Cal Poly Pomona has provided an incredible foundation for my journey ahead.\n\n# Nicole Wu\n\n### \n\nBoston, Massachusetts, United States\n\n253 followers 253 connections\n\n\n## About\n\nHello! I'm Nicole. I'm currently a Child and Adolescent Mental Health Counseling…\n\n## Activity\n\n### 253 followers\n\n  * [Button: Comments ]\n  * [B",
+      "observed_at": "2026-11-14 (Pacific; exact per-source observation time not retained)",
+      "verification": "Search result only; candidate identity, not confirmed attribution."
+    },
+    {
+      "url": "https://www.linkedin.com/in/ronan-curley-3b6553290",
+      "title": "Ronan Curley - Sports Engineered | LinkedIn",
+      "discovery_excerpt": "Crawled: 3 months ago; # Ronan Curley ... I partnered with a Cal Poly mechanical engineering student to develop a 3D model, refined the design through countless 3D printed prototypes with another mechanical engineer, documented the journey on TikTok, and learned what it really takes to bring an idea to life.\n\n# Ronan Curley\n\n### \n\nPetaluma, California, Unite",
+      "observed_at": "2026-11-14 (Pacific; exact per-source observation time not retained)",
+      "verification": "Search result only; candidate identity, not confirmed attribution."
+    },
+    {
+      "url": "https://www.linkedin.com/in/rotanak-lim-27869a1bb",
+      "title": "Rotanak Lim - Long Beach Unified School District | LinkedIn",
+      "discovery_excerpt": "Crawled: 2 months ago; # Rotanak Lim ... Activities and Societies: | CS+AI | CPSEC | Cal Poly Scholar\n\n# Rotanak Lim\n\n### \n\nLong Beach, California, United States\n\n2K followers 500+ connections\n\n\n## About\n\nLooking for opportunities\nContact Information: [email omitted]\n\n## Activity\n\n  * yc’s startup readiness review gave my resume a 92/100 strong match. most o",
+      "observed_at": "2026-11-14 (Pacific; exact per-source observation time not retained)",
+      "verification": "Search result only; candidate identity, not confirmed attribution."
+    },
+    {
+      "url": "https://www.linkedin.com/in/rushilvaswani",
+      "title": "Rushil Vaswani - ConscioussAI | LinkedIn",
+      "discovery_excerpt": "Crawled: 2 months ago; # Rushil Vaswani ... I'm a Business Administration student at Cal Poly SLO, graduating in June 2027 with a…\n\n# Rushil Vaswani\n\n### \n\nSanta Clara, California, United States\n\n1K followers 500+ connections\n\n\nJoin to view profile\n\nConscioussAI\n\nCalifornia Polytechnic State University-San Luis Obispo\n\n## About\n\nI'm a Business Administration",
+      "observed_at": "2026-11-14 (Pacific; exact per-source observation time not retained)",
+      "verification": "Search result only; candidate identity, not confirmed attribution."
+    },
+    {
+      "url": "https://www.linkedin.com/in/li-ryan-sj",
+      "title": "Ryan Li - Campbell, California, United States | Professional Profile | LinkedIn",
+      "discovery_excerpt": "Crawled: last month; # Ryan Li ... I am a Business Administration student at Cal Poly San Luis Obispo concentrating in…\n\n# Ryan Li\n\n### \n\nCampbell, California, United States\n\n303 followers 303 connections\n\n## About\n\nI am a Business Administration student at Cal Poly San Luis Obispo concentrating in…\n\n## Experience\n\n  * ### \n\n#### Level Construction LLC\n\nSan ",
+      "observed_at": "2026-11-14 (Pacific; exact per-source observation time not retained)",
+      "verification": "Search result only; candidate identity, not confirmed attribution."
+    },
+    {
+      "url": "https://www.linkedin.com/in/ryantheberge",
+      "title": "Ryan Theberge - Granite Investment Partners | LinkedIn",
+      "discovery_excerpt": "Crawled: 2 months ago; As a student studying mathematics and financial management at Cal Poly Slo, the world of… ... Ryan Theberge commented on a post 3w ... My experience in Cal Poly’s Orfalea College of Business provided me with invaluable knowledge and skills that I will carry forward throughout my career.\n\n# Ryan Theberge\n\n### \n\nSan Luis Obispo, Californ",
+      "observed_at": "2026-11-14 (Pacific; exact per-source observation time not retained)",
+      "verification": "Search result only; candidate identity, not confirmed attribution."
+    },
+    {
+      "url": "https://www.linkedin.com/in/s6hib",
+      "title": "Sahib Kullar - Cal Poly College of Engineering | LinkedIn",
+      "discovery_excerpt": "Crawled: 2 months ago; # Sahib Kullar ... Cal Poly College of Engineering\n\n# Sahib Kullar\n\n### \n\nSan Luis Obispo, California, United States\n\n105 followers 91 connections\n\nJoin to view profile\n\nCal Poly College of Engineering\n\nCalifornia Polytechnic State University-San Luis Obispo\n\n## Activity\n\n### 105 followers\n\n  * [Button: Posts ]\n  * [Button: Comments ]\n",
+      "observed_at": "2026-11-14 (Pacific; exact per-source observation time not retained)",
+      "verification": "Search result only; candidate identity, not confirmed attribution."
+    },
+    {
+      "url": "https://www.linkedin.com/in/salif-sanogo-922593253",
+      "title": "Salif Sanogo - Amazon | LinkedIn",
+      "discovery_excerpt": "Crawled: 5 months ago; # Salif Sanogo ... Finishing my Computer Science degree at Cal Poly SLO, graduating June 2026🎓 I’m currently exploring new-grad opportunities in Software Engineering, Machine Learning Infrastructure, and Distributed Systems.\n\n# Salif Sanogo\n\n### \n\nSan Luis Obispo, California, United States\n\n979 followers 500+ connections\n\n\nJoin to vie",
+      "observed_at": "2026-11-14 (Pacific; exact per-source observation time not retained)",
+      "verification": "Search result only; candidate identity, not confirmed attribution."
+    },
+    {
+      "url": "https://www.samotto.dev/",
+      "title": "Sam Otto",
+      "discovery_excerpt": "Crawled: last month; Sam Otto ... I'm Sam — a Cal Poly student studying finance with a genuine obsession for the intersection of technology and people.\n\nSam Otto\n\n# Some people find their path. I built mine.\n\nBootcamp at 5am. A triathlon I almost didn't survive. Finance, AI, and a lot of unfinished trails.\n\nScroll through. You'll see what I mean.\n\n01 — Origi",
+      "observed_at": "2026-11-14 (Pacific; exact per-source observation time not retained)",
+      "verification": "Search result only; candidate identity, not confirmed attribution."
+    },
+    {
+      "url": "https://www.linkedin.com/in/sotto27",
+      "title": "Sam Otto - Cal Poly Vibe Coding | LinkedIn",
+      "discovery_excerpt": "Crawled: 2 months ago; #CPVC #VibeCoding #CalPoly #ServiceNow #AI ... If you’re interested in learning more about my story, feel free to check out my updated website: samotto.dev.\n### Cal Poly Vibe Coding\n\n3mo\n\nSam Otto reposted this\n\n$300 on the line. 6 judges. 3 builds. Scores within 0.1. That's how close Build Night #3 was. Members spent the week building",
+      "observed_at": "2026-11-14 (Pacific; exact per-source observation time not retained)",
+      "verification": "Search result only; candidate identity, not confirmed attribution."
+    },
+    {
+      "url": "https://sam2545.github.io/index.html",
+      "title": "Sameer's Personal Website",
+      "discovery_excerpt": "Crawled: last month; Sameer Maheshwari is a first year attending Cal Poly SLO.\n# Sameer Maheshwari\n\nImage: Photo of Sameer and his family\n\n## About Me\n\nSameer Maheshwari is a first year attending Cal Poly SLO. He attended Monta Vista High School in Cupertino, California but his parents are from India. Some of Sameer's hobbies include: tennis, cooking, coding",
+      "observed_at": "2026-11-14 (Pacific; exact per-source observation time not retained)",
+      "verification": "Search result only; candidate identity, not confirmed attribution."
+    },
+    {
+      "url": "https://www.linkedin.com/in/seanmcc7",
+      "title": "Sean McCormick - Cal Poly CSU AI Educational Innovations Challenge | LinkedIn",
+      "discovery_excerpt": "Crawled: 6 months ago; # Sean McCormick ... I’m a Computer Science student at Cal Poly focused on full-stack software engineering…\n\n# Sean McCormick\n\n### \n\nSanta Clara, California, United States\n\n648 followers 500+ connections\n\nJoin to view profile\n\nCal Poly CSU AI Educational Innovations Challenge\n\nCalifornia Polytechnic State University-San Luis Obispo\n\n##",
+      "observed_at": "2026-11-14 (Pacific; exact per-source observation time not retained)",
+      "verification": "Search result only; candidate identity, not confirmed attribution."
+    },
+    {
+      "url": "https://www.linkedin.com/in/sophiamatty",
+      "title": "Sophia Matty - United States | Professional Profile | LinkedIn",
+      "discovery_excerpt": "Crawled: last month; # Sophia Matty ... Last Friday, I had the amazing opportunity to attend the Defining Her Future Conference, hosted by Cal Poly Women in Business Association.\n\n# Sophia Matty\n\n### \n\nUnited States\n\n331 followers 328 connections\n\n## Activity\n\n### 331 followers\n\n  * [Button: Posts ]\n  * [Button: Reactions ]\n\n  * Sophia Matty\n\n### Sophia Matt",
+      "observed_at": "2026-11-14 (Pacific; exact per-source observation time not retained)",
+      "verification": "Search result only; candidate identity, not confirmed attribution."
+    },
+    {
+      "url": "https://www.linkedin.com/in/sophia-peckner",
+      "title": "Sophia Peckner - Amazon Web Services (AWS) | LinkedIn",
+      "discovery_excerpt": "Crawled: 2 months ago; # Sophia Peckner ... 👀 🔗 GitHub: https://lnkd.in/g9TEr3EH 🔗 Devpost: https://lnkd.in/gt5P9_hx 🔗 Demo: https://lnkd.in/gXDENWh8 (missed the awards ceremony since I was on a flight back to school 😢) #CalHacks #CalHacks12 #HackathonWinner #AI #ComputerUseAgents #UCBerkeley #UCSB #Apple #Innovation #Future #Technology ...   * ### Cal ",
+      "observed_at": "2026-11-14 (Pacific; exact per-source observation time not retained)",
+      "verification": "Search result only; candidate identity, not confirmed attribution."
+    },
+    {
+      "url": "https://www.linkedin.com/in/tan-nguyen-659637183",
+      "title": "Tan Nguyen - ITT Aerospace Controls | LinkedIn",
+      "discovery_excerpt": "Crawled: 3 months ago; # Tan Nguyen ...   * Next Stop: Cal Poly - San Luis Obispo!\nAn SQE stands between…\n\n#### Liked by Tan Nguyen\n\n  * Grateful for the opportunity to participate in ITT’s Executive Leadership Development Program in partnership with Vanderbilt University. The…\n\n### Grateful for the opportunity to participate in ITT’s Executive Leadership De",
+      "observed_at": "2026-11-14 (Pacific; exact per-source observation time not retained)",
+      "verification": "Search result only; candidate identity, not confirmed attribution."
+    },
+    {
+      "url": "https://www.linkedin.com/in/treybernard",
+      "title": "Trey Bernard - Cal Poly Partners | LinkedIn",
+      "discovery_excerpt": "Crawled: 2 months ago;   * Ernesto Perez “I highly recommend Trey Bernard, whom I had the privilege of supervising as a Marketing Intern with Cal Poly Athletics.\n\n# Trey Bernard\n\n### \n\nDana Point, California, United States\n\n1K followers 500+ connections\n\n\n## About\n\nPassionate and motivated fourth-year student at Cal Poly San Luis Obispo, studying Art…\n\n## Ac",
+      "observed_at": "2026-11-14 (Pacific; exact per-source observation time not retained)",
+      "verification": "Search result only; candidate identity, not confirmed attribution."
+    },
+    {
+      "url": "https://www.linkedin.com/in/wyatt-hansen1",
+      "title": "Wyatt Hansen - Guzman Construction Group | LinkedIn",
+      "discovery_excerpt": "Crawled: 6 months ago; # Wyatt Hansen ...   * As my final winter quarter at Cal Poly comes to a close, I want to recognize the incredible efforts of the Project Management team during this past…\n\n# Wyatt Hansen\n\n### \n\nSan Francisco, California, United States\n\n710 followers 500+ connections\n\n\n## About\n\nI’m currently a second-year student at Santa Barbara City",
+      "observed_at": "2026-11-14 (Pacific; exact per-source observation time not retained)",
+      "verification": "Search result only; candidate identity, not confirmed attribution."
+    },
+    {
+      "url": "https://devpost.com/zachgoldwyn/challenges",
+      "title": "Zach Goldwyn's (zachgoldwyn) software portfolio | Devpost",
+      "discovery_excerpt": "Crawled: last month; Image: Zach Goldwyn's avatar ...   * GitHub ... KiroHacks Cal Poly San Luis Obispo, CA, USA Award Ceremony: 5/10/26 @ 1:00 pm in Engineering IV Room 106 $5,250 in prizes May 2 – 3, 2026 228 participants\n\nImage: Zach Goldwyn's avatar\n\n# Zach Goldwyn (zachgoldwyn)\n\n  * San Luis Obispo, California, United States\n  * Website\n  * GitHub\n\nSkil",
+      "observed_at": "2026-11-14 (Pacific; exact per-source observation time not retained)",
+      "verification": "Search result only; candidate identity, not confirmed attribution."
+    },
+    {
+      "url": "https://www.linkedin.com/in/zgoldwyn",
+      "title": "Zach Goldwyn - Providence Park | LinkedIn",
+      "discovery_excerpt": "Crawled: 5 months ago; # Zach Goldwyn ... I am a Computer Science student at Cal Poly with sophomore standing and a graduate of…\n\n# Zach Goldwyn\n\n### \n\nUnited States\n\n464 followers 465 connections\n\n\n## View mutual connections with Zach\n\nZach can introduce you to 1 people at Providence Park\n\n## About\n\nI am a Computer Science student at Cal Poly with sophomore",
+      "observed_at": "2026-11-14 (Pacific; exact per-source observation time not retained)",
+      "verification": "Search result only; candidate identity, not confirmed attribution."
+    }
+  ],
+  "limitations": [
+    "Names normalized only for duplicate detection; same-name rows are not proven same person.",
+    "Search-result leads are unverified identities; no current hackathon project confirmed.",
+    "Four blank-team name groups also have an assigned-team row.",
+    "Two administrative/test labels retained as anomalies, not competing teams.",
+    "No major-based or personal-background-based winning probabilities assigned."
+  ]
+}

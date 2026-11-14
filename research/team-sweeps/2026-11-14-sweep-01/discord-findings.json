@@ -1,0 +1,110 @@
+{
+  "checked_at": "2026-11-14T19:23:28Z",
+  "access": "User signed in personally and identified this hackathon server. Read-only UI review. No messages sent, no mass export, no direct messages opened.",
+  "server": "CPVC x CPE x OCOB AI Hackathon 2026",
+  "channels_reviewed": [
+    "showcase",
+    "announcements",
+    "general (recent visible messages)",
+    "ask-organizers (visible messages)",
+    "resources",
+    "looking-for-team (visible messages)",
+    "help (visible messages)"
+  ],
+  "observations": [
+    {
+      "kind": "submission_collection",
+      "url": "https://discord.com/channels/1564416101239103542/1564416199561978037/1571234197224558702",
+      "source_date": "2026-11-14 10:43 AM PT",
+      "claim": "Organizer posted the project-link form in resources. Form collects team name, project URL, link type and team contact email; it does not expose submitted answers.",
+      "form_url": "https://docs.google.com/forms/d/e/1FAIpQLSfAFMludGfVDa7scBMoDD98c5bQYkT72t971BpEqmyfohkzbA/viewform",
+      "verification": "Form opened read-only. No submission or response access attempted."
+    },
+    {
+      "kind": "project_claim",
+      "team": "Click",
+      "speaker": "Audrey Stephenson",
+      "url": "https://discord.com/channels/1564416101239103542/1564416148529741964/1570216116368711764",
+      "source_date": "2026-11-11 3:18 PM PT",
+      "product": "Connected jewelry paired with an app to help people meet and remain connected.",
+      "audience": "People seeking social connections; exact initial customer segment unstated.",
+      "progress": "Speaker reports an early prototype and customer research, and seeks developer/EE help. Claims not independently tested.",
+      "uncertainties": "Roster maps Audrey to Click, but the post does not name Click. No repo/live app found in this post."
+    },
+    {
+      "kind": "project_claim",
+      "team": "VetPath",
+      "speaker": "Bella Teresi",
+      "url": "https://discord.com/channels/1564416101239103542/1564416148529741964/1570272750642405549",
+      "source_date": "2026-11-11 7:03 PM PT",
+      "product": "Emergency-veterinary discovery website comparing nearby hospitals by distance, activity and cost, with staff updates and owner reports.",
+      "audience": "Pet owners seeking urgent care, with hospital staff contributing availability data.",
+      "progress": "Speaker reports pet-owner interviews, screen designs, launch planning, veterinary advisors and a planned Bay Area pilot. No implementation independently verified.",
+      "uncertainties": "Recruitment post predates build window; does not establish final submitted scope or eligibility."
+    },
+    {
+      "kind": "project_claim",
+      "team": "A2B Labs",
+      "speaker": "nickiee_g (self-identifies as Nick)",
+      "url": "https://discord.com/channels/1564416101239103542/1564416148529741964/1570700873485652091",
+      "source_date": "2026-11-12 11:24 PM PT",
+      "product": "Legacy-code modernization through an interactive plain-language specification, human review of retained/changed rules and side-by-side tests.",
+      "audience": "Organizations modernizing older software and technical/nontechnical reviewers.",
+      "progress": "Proposed product and recruiting statement; working code not observed.",
+      "uncertainties": "Post explicitly names A2B Labs. Handle-to-Nick Gonzalez linkage is plausible, not confirmed."
+    },
+    {
+      "kind": "unassigned_project_claim",
+      "name": "Ayden Gregory",
+      "url": "https://discord.com/channels/1564416101239103542/1564416148529741964/1570630310117376043",
+      "source_date": "2026-11-12 6:44 PM PT",
+      "product": "Musician practice app with streaks, goals, progress, session listening/AI feedback and organized lesson notes.",
+      "audience": "Musicians, explicitly including classical musicians.",
+      "progress": "Idea/recruiting post; followup on Nov 13 at 9 PM still sought teammates.",
+      "uncertainties": "Blank team in supplied roster; no team or active submission inferred.",
+      "followup_url": "https://discord.com/channels/1564416101239103542/1564416148529741964/1571027054424756329"
+    },
+    {
+      "kind": "unassigned_project_claim",
+      "name": "Brian Kennelly",
+      "url": "https://discord.com/channels/1564416101239103542/1564416148529741964/1566264553656950906",
+      "source_date": "2026-10-31 6:36 PM PT",
+      "product": "Architecture for an AI Sieve: proposed text-processing and visualization dashboard studying human-author/LLM editing conflicts.",
+      "audience": "Digital humanities researchers and writers; inferred from described workflow.",
+      "progress": "Recruiting post describes a supplied text archive and desired developer roles. No build observed.",
+      "uncertainties": "Blank team in roster; no final team, project implementation or current eligibility inferred.",
+      "public_project_page": "https://sites.google.com/view/boymachineremembers"
+    },
+    {
+      "kind": "limited_negative_search",
+      "url": "https://discord.com/channels/1564416101239103542/1564416209053810768",
+      "claim": "Showcase displayed its channel-start empty state during this review. A server-wide search for github.com returned No Results. This does not prove no project links exist elsewhere or will be posted later."
+    },
+    {
+      "kind": "submission_alternative",
+      "url": "https://discord.com/channels/1564416101239103542/1564416189545975950/1571232240640204971",
+      "question_url": "https://discord.com/channels/1564416101239103542/1564416189545975950/1571228151298658448",
+      "source_date": "2026-11-14 10:19/10:35 AM PT",
+      "claim": "A participant asked whether a Chrome extension could use a GitHub URL plus README for the project-link checkpoint. Organizer replied yes. No identity-to-team match assumed."
+    }
+  ],
+  "guide": {
+    "url": "https://cpvc-ai-hackathon-guide.vercel.app/",
+    "verification": "Live guide opened and read in browser; prior web-fetch failures resolved.",
+    "findings": [
+      "GitHub is not mandatory. App-builder project links are accepted; the project-link form also accepts shared AI chats and Other. Links must open without sign-in.",
+      "Guide deadlines: project link Sat Nov14 2PM PT; Sunday commitment/live link Sat8PM PT; final submission SunNov15 noon PT. The submission form posted in Discord was observed directly.",
+      "Rubric weights: execution/design25, real problem/user25, path to customers20, pitch/demo15, creative AI15. Code complexity, quantity of AI and majors are explicitly not scored.",
+      "Room winners advance to finals; finals panel then picks main top three. Room assignment can matter to a future forecast.",
+      "Teams2-4, no solo projects; organizers/judges/people with score access cannot compete. Check-in rows are not a final eligibility list.",
+      "Guide identifies Luke Vieira and Cameryn Pina as organizers; both names occur among unassigned sheet rows. Do not count all roster rows as competitors.",
+      "Project-viewing FAQ names judges, mentors and organizers; hosts may show names/descriptions/demo videos. This does not establish public access to form responses."
+    ]
+  },
+  "limitations": [
+    "Summaries preserve source assertions, not independent proof.",
+    "Private login/session information and participant contact details omitted.",
+    "No transcript archive, participant profiling, social graph export or platform scraping performed.",
+    "No eligibility accusation or disqualification decision made."
+  ]
+}

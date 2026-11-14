@@ -1,0 +1,4058 @@
+{
+  "source_file": "ai-hackathon-check-ins-2026-11-14-1103.xlsx",
+  "source_sha256": "9d8c81e452cdd8af5bf1cda6c5141f7a34e59286794ee11990dbca05a13acf33",
+  "sheet": "ai-hackathon-check-ins-2026-11-",
+  "roster_rows": 454,
+  "named_team_labels": 90,
+  "unassigned_rows": 193,
+  "teams": {
+    "Team 8": [
+      {
+        "source_row": 2,
+        "name": "Aaditya  Raja",
+        "university": "Cal Poly SLO",
+        "college": "Bailey College of Science and Mathematics",
+        "major": "Statistics BS",
+        "year": "1st year",
+        "team": "Team 8"
+      },
+      {
+        "source_row": 42,
+        "name": "Arnav Bansal",
+        "university": "Cal Poly SLO",
+        "college": "Bailey College of Science and Mathematics",
+        "major": "Statistics",
+        "year": "1st year",
+        "team": "Team 8"
+      },
+      {
+        "source_row": 427,
+        "name": "Tharun Prem Anandh",
+        "university": "Cal Poly SLO",
+        "college": "Bailey College of Science and Mathematics",
+        "major": "Statistics",
+        "year": "1st year",
+        "team": "Team 8"
+      }
+    ],
+    "Unassigned": [
+      {
+        "source_row": 3,
+        "name": "Aakash Kapadia",
+        "university": "Cal Poly SLO",
+        "college": "Bailey College of Science and Mathematics",
+        "major": "Statistics",
+        "year": "4th year"
+      },
+      {
+        "source_row": 4,
+        "name": "Aarnav Rai",
+        "university": "Cal Poly SLO",
+        "college": "College of Engineering",
+        "major": "Computer Engineering",
+        "year": "2nd year"
+      },
+      {
+        "source_row": 5,
+        "name": "Aarya Siddiqui",
+        "university": "Cal Poly SLO",
+        "college": "College of Liberal Arts",
+        "major": "Sociology",
+        "year": "2nd year"
+      },
+      {
+        "source_row": 6,
+        "name": "Abdiel Maldonado",
+        "university": "Cal Poly SLO",
+        "college": "Orfalea College of Business",
+        "major": "Business Admin",
+        "year": "2nd year"
+      },
+      {
+        "source_row": 8,
+        "name": "Aditya Suresh",
+        "university": "Cal Poly SLO",
+        "college": "Bailey College of Science and Mathematics",
+        "major": "Physics",
+        "year": "1st year"
+      },
+      {
+        "source_row": 9,
+        "name": "admin cpvc",
+        "university": "Cal Poly SLO",
+        "college": "Orfalea College of Business",
+        "major": "Business Admin",
+        "year": "Other"
+      },
+      {
+        "source_row": 10,
+        "name": "Adrian Jorge",
+        "university": "Cal Poly SLO",
+        "college": "Orfalea College of Business",
+        "major": "Business Administration",
+        "year": "4th year"
+      },
+      {
+        "source_row": 21,
+        "name": "Alan Castillo",
+        "university": "Cal Poly SLO",
+        "college": "College of Engineering",
+        "major": "Computer Science",
+        "year": "5th year or later"
+      },
+      {
+        "source_row": 22,
+        "name": "Alessandro Johnson",
+        "university": "Cal Poly SLO",
+        "college": "Orfalea College of Business",
+        "major": "Business admin",
+        "year": "1st year"
+      },
+      {
+        "source_row": 25,
+        "name": "Alexander Otis",
+        "university": "Cal Poly SLO",
+        "college": "College of Engineering",
+        "major": "Computer Science",
+        "year": "2nd year"
+      },
+      {
+        "source_row": 27,
+        "name": "Ally Stauffer",
+        "university": "Cal Poly SLO",
+        "college": "College of Engineering",
+        "major": "Computer Science",
+        "year": "3rd year"
+      },
+      {
+        "source_row": 30,
+        "name": "Andre LeBaron",
+        "university": "Cal Poly SLO",
+        "college": "College of Agriculture, Food and Environmental Sciences",
+        "major": "AGB",
+        "year": "4th year"
+      },
+      {
+        "source_row": 31,
+        "name": "Andreas Simonsen",
+        "university": "Cal Poly SLO",
+        "college": "Orfalea College of Business",
+        "major": "Business admin",
+        "year": "1st year"
+      },
+      {
+        "source_row": 40,
+        "name": "Anthony Leung",
+        "university": "Cal Poly SLO",
+        "college": "College of Agriculture, Food and Environmental Sciences",
+        "major": "BRAE",
+        "year": "4th year"
+      },
+      {
+        "source_row": 43,
+        "name": "Arsh  Gupta",
+        "university": "Cal Poly SLO",
+        "college": "College of Architecture and Environmental Design",
+        "major": "Architecture",
+        "year": "5th year or later"
+      },
+      {
+        "source_row": 46,
+        "name": "Arshia Gandhi",
+        "university": "Cal Poly SLO",
+        "college": "Bailey College of Science and Mathematics",
+        "major": "Statistics and Data Science",
+        "year": "1st year"
+      },
+      {
+        "source_row": 47,
+        "name": "Ashlyn  Perry",
+        "university": "Cal Poly SLO",
+        "college": "Orfalea College of Business",
+        "major": "Business Admin",
+        "year": "3rd year"
+      },
+      {
+        "source_row": 48,
+        "name": "Ashton Gage",
+        "university": "Cal Poly SLO",
+        "college": "College of Engineering",
+        "major": "Computer Engineering",
+        "year": "5th year or later"
+      },
+      {
+        "source_row": 51,
+        "name": "Ava Douglas",
+        "university": "Cal Poly SLO",
+        "college": "Orfalea College of Business",
+        "major": "Business"
+      },
+      {
+        "source_row": 52,
+        "name": "Avari Brocker",
+        "university": "Cal Poly SLO",
+        "college": "College of Engineering",
+        "major": "Biomedical Engineering"
+      },
+      {
+        "source_row": 54,
+        "name": "Ayden Cruz",
+        "university": "Cal Poly SLO",
+        "college": "Orfalea College of Business",
+        "major": "Economics",
+        "year": "2nd year"
+      },
+      {
+        "source_row": 55,
+        "name": "Ayden Gregory",
+        "university": "Cal Poly SLO",
+        "college": "Orfalea College of Business",
+        "major": "Business",
+        "year": "4th year"
+      },
+      {
+        "source_row": 62,
+        "name": "ben lusaya",
+        "university": "Cal Poly SLO",
+        "college": "Bailey College of Science and Mathematics",
+        "major": "statistics",
+        "year": "1st year"
+      },
+      {
+        "source_row": 63,
+        "name": "Benjamin Gomez",
+        "university": "Cal Poly SLO",
+        "college": "Orfalea College of Business",
+        "major": "Economics",
+        "year": "1st year"
+      },
+      {
+        "source_row": 65,
+        "name": "Bilal Khan",
+        "university": "Cal Poly SLO",
+        "college": "College of Engineering",
+        "major": "Computer Engineering",
+        "year": "4th year"
+      },
+      {
+        "source_row": 70,
+        "name": "Brandon Herbert",
+        "university": "Cal Poly SLO",
+        "college": "College of Engineering",
+        "major": "Industrial Engineering",
+        "year": "2nd year"
+      },
+      {
+        "source_row": 73,
+        "name": "Brett Baron",
+        "university": "Cal Poly SLO",
+        "college": "College of Liberal Arts",
+        "major": "History",
+        "year": "Other"
+      },
+      {
+        "source_row": 74,
+        "name": "Brian Kennelly",
+        "university": "Cal Poly SLO",
+        "college": "College of Liberal Arts",
+        "major": "World Languages and Cultures",
+        "year": "Other"
+      },
+      {
+        "source_row": 75,
+        "name": "Brian Torres",
+        "university": "Cal Poly SLO",
+        "college": "College of Architecture and Environmental Design",
+        "major": "Construction Management",
+        "year": "2nd year"
+      },
+      {
+        "source_row": 78,
+        "name": "Caden McConnell",
+        "university": "Cal Poly SLO",
+        "college": "College of Agriculture, Food and Environmental Sciences",
+        "major": "Ag Business",
+        "year": "5th year or later"
+      },
+      {
+        "source_row": 81,
+        "name": "Caleb  Shick",
+        "university": "Cal Poly SLO",
+        "college": "Orfalea College of Business",
+        "major": "Business administration",
+        "year": "4th year"
+      },
+      {
+        "source_row": 82,
+        "name": "Caleb Shick",
+        "university": "Cal Poly SLO",
+        "college": "Orfalea College of Business",
+        "major": "Business"
+      },
+      {
+        "source_row": 85,
+        "name": "Cameron Do-Khanh",
+        "university": "Cal Poly SLO",
+        "college": "Orfalea College of Business",
+        "major": "Business Analytics",
+        "year": "Graduate student"
+      },
+      {
+        "source_row": 87,
+        "name": "cameryn pina",
+        "university": "Cal Poly SLO",
+        "college": "Orfalea College of Business",
+        "major": "business",
+        "year": "4th year"
+      },
+      {
+        "source_row": 88,
+        "name": "Cameryn Pina",
+        "university": "Cal Poly SLO",
+        "college": "Orfalea College of Business",
+        "major": "Business Admin",
+        "year": "4th year"
+      },
+      {
+        "source_row": 92,
+        "name": "Casey Azus",
+        "university": "Cal Poly SLO",
+        "college": "Orfalea College of Business",
+        "major": "Business Administration",
+        "year": "2nd year"
+      },
+      {
+        "source_row": 93,
+        "name": "Casey Ovsiowitz",
+        "university": "Cal Poly SLO",
+        "college": "Orfalea College of Business",
+        "major": "Business administration",
+        "year": "2nd year"
+      },
+      {
+        "source_row": 94,
+        "name": "Chandler Lau",
+        "university": "Cal Poly SLO",
+        "college": "Orfalea College of Business",
+        "major": "Business Administration",
+        "year": "4th year"
+      },
+      {
+        "source_row": 95,
+        "name": "Charles Morrisey",
+        "university": "Cal Poly SLO",
+        "college": "College of Engineering",
+        "major": "Biomedical Engineering",
+        "year": "2nd year"
+      },
+      {
+        "source_row": 101,
+        "name": "Cole Nieman",
+        "university": "Cal Poly SLO",
+        "college": "College of Engineering",
+        "major": "Mechanical Engineering",
+        "year": "3rd year"
+      },
+      {
+        "source_row": 102,
+        "name": "Colin Bender",
+        "university": "Cal Poly SLO",
+        "college": "College of Liberal Arts",
+        "major": "Journalism",
+        "year": "2nd year"
+      },
+      {
+        "source_row": 103,
+        "name": "Connor Nachand",
+        "university": "Cal Poly SLO",
+        "college": "Orfalea College of Business",
+        "major": "Itp",
+        "year": "2nd year"
+      },
+      {
+        "source_row": 104,
+        "name": "Cristian Covarrubias",
+        "university": "Cal Poly SLO",
+        "college": "Orfalea College of Business",
+        "major": "Business Administration",
+        "year": "1st year"
+      },
+      {
+        "source_row": 105,
+        "name": "Cyrus Campisi",
+        "university": "Cal Poly SLO",
+        "college": "College of Engineering",
+        "major": "BMED",
+        "year": "2nd year"
+      },
+      {
+        "source_row": 106,
+        "name": "Daniel Hohnloser",
+        "university": "Cal Poly SLO",
+        "college": "College of Agriculture, Food and Environmental Sciences",
+        "major": "Wine and Viticulture",
+        "year": "2nd year"
+      },
+      {
+        "source_row": 107,
+        "name": "Dario Rager",
+        "university": "Cal Poly SLO",
+        "college": "College of Engineering",
+        "major": "Mechanical Engineering",
+        "year": "2nd year"
+      },
+      {
+        "source_row": 108,
+        "name": "David Morfin",
+        "university": "Cal Poly SLO",
+        "college": "College of Engineering",
+        "major": "Computer Science",
+        "year": "4th year"
+      },
+      {
+        "source_row": 109,
+        "name": "Davis Holback",
+        "university": "Cal Poly SLO",
+        "college": "Orfalea College of Business",
+        "major": "ITP",
+        "year": "4th year"
+      },
+      {
+        "source_row": 110,
+        "name": "Dean De Freitas Meade",
+        "university": "Cal Poly SLO",
+        "college": "College of Engineering",
+        "major": "Aerospace Engineering",
+        "year": "3rd year"
+      },
+      {
+        "source_row": 114,
+        "name": "Dhanvi Ganti",
+        "university": "Cal Poly SLO",
+        "college": "College of Engineering",
+        "major": "Computer Science",
+        "year": "4th year"
+      },
+      {
+        "source_row": 116,
+        "name": "Diem Schneider",
+        "university": "Cal Poly SLO",
+        "college": "College of Liberal Arts",
+        "major": "Graphic Communication",
+        "year": "1st year"
+      },
+      {
+        "source_row": 117,
+        "name": "Dildeep Singh",
+        "university": "Cal Poly SLO",
+        "college": "Orfalea College of Business",
+        "major": "Business",
+        "year": "3rd year"
+      },
+      {
+        "source_row": 119,
+        "name": "Donaldo Barraza",
+        "university": "Cal Poly SLO",
+        "college": "College of Engineering",
+        "major": "Mechanical Engineering",
+        "year": "4th year"
+      },
+      {
+        "source_row": 121,
+        "name": "Drew Arney",
+        "university": "Cal Poly SLO",
+        "college": "College of Engineering",
+        "major": "Mechanical engineering",
+        "year": "3rd year"
+      },
+      {
+        "source_row": 123,
+        "name": "Easton Mcmichael",
+        "university": "UCSB",
+        "major": "Economics",
+        "year": "3rd year"
+      },
+      {
+        "source_row": 127,
+        "name": "Eli Pendras-Lichter",
+        "university": "Cal Poly SLO",
+        "college": "Orfalea College of Business",
+        "major": "business"
+      },
+      {
+        "source_row": 134,
+        "name": "Eliy Miller",
+        "university": "Cal Poly SLO",
+        "college": "Orfalea College of Business",
+        "major": "Business Admin",
+        "year": "1st year"
+      },
+      {
+        "source_row": 135,
+        "name": "Ella Eovaldi",
+        "university": "Cal Poly SLO",
+        "college": "Orfalea College of Business",
+        "major": "Business Administration",
+        "year": "2nd year"
+      },
+      {
+        "source_row": 141,
+        "name": "Emma Stanciu",
+        "university": "Cal Poly SLO",
+        "college": "Bailey College of Science and Mathematics",
+        "major": "Biological Sciences",
+        "year": "2nd year"
+      },
+      {
+        "source_row": 142,
+        "name": "Emmanuel  Okpan",
+        "university": "Cal Poly SLO",
+        "college": "Orfalea College of Business",
+        "major": "Industrial Technology & Packaging",
+        "year": "2nd year"
+      },
+      {
+        "source_row": 145,
+        "name": "Ethan Orozco",
+        "university": "Cal Poly SLO",
+        "college": "Orfalea College of Business",
+        "major": "Industrial Technology and Packaging",
+        "year": "2nd year"
+      },
+      {
+        "source_row": 146,
+        "name": "Evan Koermer",
+        "university": "Cal Poly SLO",
+        "college": "College of Liberal Arts",
+        "major": "Art and Design",
+        "year": "4th year"
+      },
+      {
+        "source_row": 151,
+        "name": "Freddy Paniagua",
+        "university": "University of California, Los Angeles",
+        "major": "Computer Science",
+        "year": "3rd year"
+      },
+      {
+        "source_row": 154,
+        "name": "Garrett Chan",
+        "university": "Cal Poly SLO",
+        "college": "College of Engineering",
+        "major": "Computer Science",
+        "year": "3rd year"
+      },
+      {
+        "source_row": 156,
+        "name": "Gavin Haymond",
+        "university": "Cal Poly SLO",
+        "college": "Bailey College of Science and Mathematics",
+        "major": "Statistics",
+        "year": "1st year"
+      },
+      {
+        "source_row": 158,
+        "name": "Gianni Espino",
+        "university": "Cal Poly SLO",
+        "college": "Orfalea College of Business",
+        "major": "Business Administration",
+        "year": "3rd year"
+      },
+      {
+        "source_row": 161,
+        "name": "Grace Cleary",
+        "university": "Cal Poly SLO",
+        "college": "College of Liberal Arts",
+        "major": "Psychology",
+        "year": "2nd year"
+      },
+      {
+        "source_row": 163,
+        "name": "Grady Bernhard",
+        "university": "Cal Poly SLO",
+        "college": "Orfalea College of Business",
+        "major": "Business",
+        "year": "2nd year"
+      },
+      {
+        "source_row": 165,
+        "name": "Gray Fearnow",
+        "university": "Cal Poly SLO",
+        "college": "Orfalea College of Business",
+        "major": "Business Admin",
+        "year": "2nd year"
+      },
+      {
+        "source_row": 167,
+        "name": "Griffin Habermehl",
+        "university": "Cal Poly SLO",
+        "college": "College of Agriculture, Food and Environmental Sciences",
+        "major": "Ag Business",
+        "year": "2nd year"
+      },
+      {
+        "source_row": 169,
+        "name": "Hailey Kim",
+        "university": "Cal Poly SLO",
+        "college": "College of Engineering",
+        "major": "industrial engr",
+        "year": "3rd year"
+      },
+      {
+        "source_row": 172,
+        "name": "Hasini Bharathwaj",
+        "university": "Cal Poly SLO",
+        "college": "Orfalea College of Business",
+        "major": "Business Administration",
+        "year": "2nd year"
+      },
+      {
+        "source_row": 186,
+        "name": "Isaac Herman",
+        "university": "Cal Poly SLO",
+        "college": "Orfalea College of Business",
+        "major": "Business Admin"
+      },
+      {
+        "source_row": 187,
+        "name": "isaac Teixeira",
+        "university": "Cal Poly SLO",
+        "college": "College of Liberal Arts",
+        "major": "Graphic Communication",
+        "year": "3rd year"
+      },
+      {
+        "source_row": 196,
+        "name": "Jacob  Monroe",
+        "university": "Cal Poly SLO",
+        "college": "Orfalea College of Business",
+        "major": "Business administration",
+        "year": "2nd year"
+      },
+      {
+        "source_row": 197,
+        "name": "Jad Farhat",
+        "university": "Cal Poly SLO",
+        "college": "College of Engineering",
+        "major": "EE",
+        "year": "Graduate student"
+      },
+      {
+        "source_row": 200,
+        "name": "Jake  Anderson",
+        "university": "Cal Poly SLO",
+        "college": "College of Agriculture, Food and Environmental Sciences",
+        "major": "Ag Business",
+        "year": "2nd year"
+      },
+      {
+        "source_row": 201,
+        "name": "Jake Keller",
+        "university": "Cal Poly SLO",
+        "college": "Orfalea College of Business",
+        "major": "Business administration",
+        "year": "4th year"
+      },
+      {
+        "source_row": 204,
+        "name": "Jamel Cleaves",
+        "university": "Cal Poly SLO",
+        "college": "Orfalea College of Business",
+        "major": "Industrial Technology and Packaging",
+        "year": "4th year"
+      },
+      {
+        "source_row": 207,
+        "name": "Janalee Taguiam",
+        "university": "Cal Poly SLO",
+        "college": "Orfalea College of Business",
+        "major": "Business Administration",
+        "year": "4th year"
+      },
+      {
+        "source_row": 210,
+        "name": "Jay Denery",
+        "university": "Cal Poly SLO",
+        "college": "College of Agriculture, Food and Environmental Sciences",
+        "major": "Wine and Viticulture",
+        "year": "2nd year"
+      },
+      {
+        "source_row": 211,
+        "name": "Jayan Anvekar",
+        "university": "Cal Poly SLO",
+        "college": "College of Architecture and Environmental Design",
+        "major": "Cm",
+        "year": "3rd year"
+      },
+      {
+        "source_row": 214,
+        "name": "Jeron Perey",
+        "university": "Cal Poly SLO",
+        "college": "College of Engineering",
+        "major": "Computer Science",
+        "year": "4th year"
+      },
+      {
+        "source_row": 215,
+        "name": "Jesus Rivera",
+        "university": "Cal Poly SLO",
+        "college": "College of Engineering",
+        "major": "Industrial Engineering",
+        "year": "3rd year"
+      },
+      {
+        "source_row": 219,
+        "name": "Johan Jijo",
+        "university": "Cal Poly SLO",
+        "college": "College of Engineering",
+        "major": "CS",
+        "year": "1st year"
+      },
+      {
+        "source_row": 220,
+        "name": "Johann Hoeller",
+        "university": "Cal Poly SLO",
+        "college": "Orfalea College of Business",
+        "major": "Business Administration",
+        "year": "1st year"
+      },
+      {
+        "source_row": 225,
+        "name": "Joseph Carl Santos",
+        "university": "Cal Poly SLO",
+        "college": "College of Engineering",
+        "major": "Computer Science"
+      },
+      {
+        "source_row": 227,
+        "name": "Joshua Naim",
+        "university": "Cal Poly SLO",
+        "college": "College of Engineering",
+        "major": "Computer Engineering",
+        "year": "3rd year"
+      },
+      {
+        "source_row": 229,
+        "name": "Joy Kihen",
+        "university": "Cal Poly SLO",
+        "college": "College of Engineering",
+        "major": "CPE",
+        "year": "2nd year"
+      },
+      {
+        "source_row": 230,
+        "name": "Juan Esteban Pena",
+        "university": "Cal Poly SLO",
+        "college": "Orfalea College of Business",
+        "major": "Business Administration",
+        "year": "3rd year"
+      },
+      {
+        "source_row": 234,
+        "name": "Kaela Fear",
+        "university": "Cal Poly SLO",
+        "college": "Orfalea College of Business",
+        "major": "Business Admin",
+        "year": "1st year"
+      },
+      {
+        "source_row": 239,
+        "name": "Katya Harris",
+        "university": "Cal Poly SLO",
+        "college": "Orfalea College of Business",
+        "major": "Industrial Technology and Packaging",
+        "year": "4th year"
+      },
+      {
+        "source_row": 240,
+        "name": "Kaya Paz",
+        "university": "Cal Poly SLO",
+        "college": "Orfalea College of Business",
+        "major": "Business Administration",
+        "year": "2nd year"
+      },
+      {
+        "source_row": 244,
+        "name": "Kent David",
+        "university": "Cal Poly SLO",
+        "college": "College of Architecture and Environmental Design",
+        "major": "Construction Management",
+        "year": "2nd year"
+      },
+      {
+        "source_row": 249,
+        "name": "Koa Stevens",
+        "university": "Cal Poly SLO",
+        "college": "Orfalea College of Business",
+        "major": "Economics",
+        "year": "1st year"
+      },
+      {
+        "source_row": 251,
+        "name": "Kylie  Wu",
+        "university": "Cal Poly SLO",
+        "college": "College of Engineering",
+        "major": "Mechanical Engineer",
+        "year": "3rd year"
+      },
+      {
+        "source_row": 254,
+        "name": "Kyra Ramirez",
+        "university": "Cal Poly SLO",
+        "college": "Orfalea College of Business",
+        "major": "Business analytics",
+        "year": "Graduate student"
+      },
+      {
+        "source_row": 255,
+        "name": "Lachlan Kelly",
+        "university": "Cal Poly SLO",
+        "college": "College of Engineering",
+        "major": "Electrical Engineering",
+        "year": "3rd year"
+      },
+      {
+        "source_row": 257,
+        "name": "Lexi  Banna",
+        "university": "Cal Poly SLO",
+        "college": "Orfalea College of Business",
+        "major": "Business Administration",
+        "year": "1st year"
+      },
+      {
+        "source_row": 259,
+        "name": "leyla baghirova",
+        "university": "Cal Poly SLO",
+        "college": "College of Engineering",
+        "major": "environmental engineering",
+        "year": "1st year"
+      },
+      {
+        "source_row": 261,
+        "name": "Liam Moore",
+        "university": "Cal Poly SLO",
+        "college": "Orfalea College of Business",
+        "major": "Business"
+      },
+      {
+        "source_row": 262,
+        "name": "Liam Rosenbaum",
+        "university": "Cal Poly SLO",
+        "college": "Orfalea College of Business",
+        "major": "Business",
+        "year": "1st year"
+      },
+      {
+        "source_row": 264,
+        "name": "Lincoln Klausmann",
+        "university": "Cal Poly SLO",
+        "college": "College of Agriculture, Food and Environmental Sciences",
+        "major": "Environmental Science"
+      },
+      {
+        "source_row": 265,
+        "name": "Linda Liu",
+        "university": "Cal Poly SLO",
+        "college": "Orfalea College of Business",
+        "major": "Business Admin",
+        "year": "3rd year"
+      },
+      {
+        "source_row": 270,
+        "name": "Luca  Sirini",
+        "university": "Cal Poly SLO",
+        "college": "College of Engineering",
+        "major": "Industrial Engineering",
+        "year": "3rd year"
+      },
+      {
+        "source_row": 271,
+        "name": "Luca Scatena",
+        "university": "Cal Poly SLO",
+        "college": "College of Architecture and Environmental Design",
+        "major": "Construction Management",
+        "year": "3rd year"
+      },
+      {
+        "source_row": 273,
+        "name": "Luciano Crews",
+        "university": "Cal Poly SLO",
+        "college": "Orfalea College of Business",
+        "major": "Business",
+        "year": "1st year"
+      },
+      {
+        "source_row": 277,
+        "name": "Lukas Plascencia",
+        "university": "Cal Poly SLO",
+        "college": "College of Liberal Arts",
+        "major": "Communication Studies",
+        "year": "4th year"
+      },
+      {
+        "source_row": 281,
+        "name": "Luke Vieira",
+        "university": "Cal Poly SLO",
+        "college": "College of Engineering",
+        "major": "Industrial Engineering"
+      },
+      {
+        "source_row": 282,
+        "name": "Luke Vieira",
+        "university": "Cal Poly SLO",
+        "college": "College of Engineering",
+        "major": "Industrial Engineering",
+        "year": "4th year"
+      },
+      {
+        "source_row": 285,
+        "name": "Madilyn Martin-Kubiak",
+        "university": "Cal Poly SLO",
+        "college": "Orfalea College of Business",
+        "major": "business",
+        "year": "3rd year"
+      },
+      {
+        "source_row": 286,
+        "name": "Malia Lu",
+        "university": "Cal Poly SLO",
+        "college": "Orfalea College of Business",
+        "major": "Economics",
+        "year": "1st year"
+      },
+      {
+        "source_row": 287,
+        "name": "Marco Covarrubias",
+        "university": "Cal Poly SLO",
+        "college": "Orfalea College of Business",
+        "major": "Business administration"
+      },
+      {
+        "source_row": 289,
+        "name": "Mark Martinez",
+        "university": "Cal Poly SLO",
+        "college": "Orfalea College of Business",
+        "major": "MBA"
+      },
+      {
+        "source_row": 291,
+        "name": "Mason E",
+        "university": "Cal Poly SLO",
+        "college": "College of Engineering",
+        "major": "Computer Engineering",
+        "year": "1st year"
+      },
+      {
+        "source_row": 292,
+        "name": "Mason Lewis",
+        "university": "Cal Poly SLO",
+        "college": "College of Engineering",
+        "major": "Computer Science",
+        "year": "2nd year"
+      },
+      {
+        "source_row": 293,
+        "name": "mateo burgos",
+        "university": "Cal Poly SLO",
+        "college": "Orfalea College of Business",
+        "major": "business administration",
+        "year": "2nd year"
+      },
+      {
+        "source_row": 294,
+        "name": "matt bennetti",
+        "university": "Cal Poly SLO",
+        "college": "Orfalea College of Business",
+        "major": "Econ",
+        "year": "Other"
+      },
+      {
+        "source_row": 295,
+        "name": "Matt Graebner",
+        "university": "Cal Poly SLO",
+        "college": "College of Agriculture, Food and Environmental Sciences",
+        "major": "Bio Resource and Agriculture Engineering",
+        "year": "3rd year"
+      },
+      {
+        "source_row": 297,
+        "name": "Matthew Estrada",
+        "university": "Cal Poly SLO",
+        "college": "Orfalea College of Business",
+        "major": "Business Information Systems",
+        "year": "4th year"
+      },
+      {
+        "source_row": 301,
+        "name": "Max Beringer",
+        "university": "Cal Poly SLO",
+        "college": "College of Architecture and Environmental Design",
+        "major": "Construction Management",
+        "year": "1st year"
+      },
+      {
+        "source_row": 302,
+        "name": "Max Bucher",
+        "university": "Cal Poly SLO",
+        "college": "Orfalea College of Business",
+        "major": "Business Admin",
+        "year": "4th year"
+      },
+      {
+        "source_row": 304,
+        "name": "Max Ranta",
+        "university": "Cal Poly SLO",
+        "college": "College of Engineering",
+        "major": "Environmental Engineering",
+        "year": "3rd year"
+      },
+      {
+        "source_row": 306,
+        "name": "Maya Doitch",
+        "university": "Cal Poly SLO",
+        "college": "Orfalea College of Business",
+        "major": "Business Analytics",
+        "year": "Graduate student"
+      },
+      {
+        "source_row": 310,
+        "name": "Michael Kowalyshyn",
+        "university": "Cal Poly SLO",
+        "college": "College of Liberal Arts",
+        "major": "History",
+        "year": "1st year"
+      },
+      {
+        "source_row": 311,
+        "name": "Michael Man",
+        "university": "Cal Poly SLO",
+        "college": "Orfalea College of Business",
+        "major": "Business Analytics",
+        "year": "Graduate student"
+      },
+      {
+        "source_row": 312,
+        "name": "Michael Richards",
+        "university": "Cal Poly SLO",
+        "college": "Orfalea College of Business",
+        "major": "Business Administration",
+        "year": "3rd year"
+      },
+      {
+        "source_row": 313,
+        "name": "Mike Robbinson",
+        "university": "Cal Poly SLO",
+        "college": "College of Liberal Arts",
+        "major": "Comparative Ethnic Studies",
+        "year": "2nd year"
+      },
+      {
+        "source_row": 314,
+        "name": "Miles Dodge",
+        "university": "Cal Poly SLO",
+        "college": "Orfalea College of Business",
+        "major": "Business Administration",
+        "year": "1st year"
+      },
+      {
+        "source_row": 319,
+        "name": "Monica Klein",
+        "university": "Cal Poly SLO",
+        "college": "Orfalea College of Business",
+        "major": "MSBA",
+        "year": "Graduate student"
+      },
+      {
+        "source_row": 320,
+        "name": "Murtaza Bootwala",
+        "university": "Cal Poly SLO",
+        "college": "College of Engineering",
+        "major": "CPE",
+        "year": "2nd year"
+      },
+      {
+        "source_row": 322,
+        "name": "Namit Jain",
+        "university": "Cal Poly SLO",
+        "college": "College of Engineering",
+        "major": "Computer Engineering",
+        "year": "1st year"
+      },
+      {
+        "source_row": 323,
+        "name": "Naomi Nisenboim",
+        "university": "Cal Poly SLO",
+        "college": "Orfalea College of Business",
+        "major": "Business Administraton",
+        "year": "3rd year"
+      },
+      {
+        "source_row": 326,
+        "name": "Nathan Munoz",
+        "university": "Cal Poly SLO",
+        "college": "Bailey College of Science and Mathematics",
+        "major": "Statistics",
+        "year": "3rd year"
+      },
+      {
+        "source_row": 329,
+        "name": "nicholas muller",
+        "university": "Cal Poly SLO",
+        "college": "Orfalea College of Business",
+        "major": "Economics",
+        "year": "4th year"
+      },
+      {
+        "source_row": 330,
+        "name": "Nicholas Muller",
+        "university": "Cal Poly SLO",
+        "college": "Orfalea College of Business",
+        "major": "Economics",
+        "year": "4th year"
+      },
+      {
+        "source_row": 331,
+        "name": "Nicholas Pinto",
+        "university": "Cal Poly SLO",
+        "college": "Orfalea College of Business",
+        "major": "Business Administration",
+        "year": "2nd year"
+      },
+      {
+        "source_row": 334,
+        "name": "Nick Habhab",
+        "university": "Cal Poly SLO",
+        "college": "Orfalea College of Business",
+        "major": "Business",
+        "year": "2nd year"
+      },
+      {
+        "source_row": 336,
+        "name": "Nico Valledor",
+        "university": "Cal Poly SLO",
+        "college": "Orfalea College of Business",
+        "major": "MSBA",
+        "year": "Graduate student"
+      },
+      {
+        "source_row": 340,
+        "name": "Nicolas Ramel",
+        "university": "Cal Poly SLO",
+        "college": "Orfalea College of Business",
+        "major": "Business Analytics",
+        "year": "Graduate student"
+      },
+      {
+        "source_row": 341,
+        "name": "Nicole Wu",
+        "university": "Cal Poly SLO",
+        "college": "Orfalea College of Business",
+        "major": "Business Administration",
+        "year": "Other"
+      },
+      {
+        "source_row": 342,
+        "name": "Nikola Rosic",
+        "university": "Cal Poly SLO",
+        "college": "College of Engineering",
+        "major": "Mechanical Engineering",
+        "year": "4th year"
+      },
+      {
+        "source_row": 345,
+        "name": "Nolan Pogson",
+        "university": "Cal Poly SLO",
+        "college": "Orfalea College of Business",
+        "major": "Business Administration",
+        "year": "3rd year"
+      },
+      {
+        "source_row": 349,
+        "name": "Omar Alim Mohamed",
+        "university": "Cal Poly SLO",
+        "college": "College of Engineering",
+        "major": "Computer Science",
+        "year": "3rd year"
+      },
+      {
+        "source_row": 350,
+        "name": "omar alzahrawi",
+        "university": "Cal Poly SLO",
+        "college": "College of Architecture and Environmental Design",
+        "major": "Architecture",
+        "year": "5th year or later"
+      },
+      {
+        "source_row": 351,
+        "name": "Organizer review (test account)",
+        "university": "Cal Poly SLO",
+        "college": "Orfalea College of Business",
+        "major": "Synthetic test profile"
+      },
+      {
+        "source_row": 352,
+        "name": "Orlando  Desmons",
+        "university": "Cal Poly SLO",
+        "college": "Orfalea College of Business",
+        "major": "Buis",
+        "year": "2nd year"
+      },
+      {
+        "source_row": 353,
+        "name": "Oscar Polson",
+        "university": "Cal Poly SLO",
+        "college": "College of Engineering",
+        "major": "Biomedical Engineering",
+        "year": "1st year"
+      },
+      {
+        "source_row": 354,
+        "name": "Osvaldo Luna",
+        "university": "Cal Poly SLO",
+        "college": "Orfalea College of Business",
+        "major": "Buisness admin",
+        "year": "1st year"
+      },
+      {
+        "source_row": 355,
+        "name": "Parker Cotten",
+        "university": "Cal Poly SLO",
+        "college": "College of Engineering",
+        "major": "Bioresource Engineering"
+      },
+      {
+        "source_row": 360,
+        "name": "rahul palani",
+        "university": "University of California, Riverside",
+        "college": "College of Engineering",
+        "major": "CS",
+        "year": "2nd year"
+      },
+      {
+        "source_row": 362,
+        "name": "Reese Sato",
+        "university": "Cal Poly SLO",
+        "college": "Orfalea College of Business",
+        "major": "Business",
+        "year": "4th year"
+      },
+      {
+        "source_row": 363,
+        "name": "Reese Wahlberg",
+        "university": "Cal Poly SLO",
+        "college": "Orfalea College of Business",
+        "major": "Business Administration",
+        "year": "4th year"
+      },
+      {
+        "source_row": 364,
+        "name": "Rey Dickey",
+        "university": "Cal Poly SLO",
+        "college": "Orfalea College of Business",
+        "major": "Business Admin",
+        "year": "1st year"
+      },
+      {
+        "source_row": 369,
+        "name": "Ronan Curley",
+        "university": "Cal Poly SLO",
+        "college": "Orfalea College of Business",
+        "major": "Business"
+      },
+      {
+        "source_row": 371,
+        "name": "Rosemary McKay",
+        "university": "Cal Poly SLO",
+        "college": "Orfalea College of Business",
+        "major": "Business"
+      },
+      {
+        "source_row": 372,
+        "name": "Rotanak Lim",
+        "university": "Cal Poly SLO",
+        "college": "College of Engineering",
+        "major": "Computer Science",
+        "year": "2nd year"
+      },
+      {
+        "source_row": 374,
+        "name": "Rushil Vaswani",
+        "university": "Cal Poly SLO",
+        "college": "Orfalea College of Business",
+        "major": "Business Administration",
+        "year": "4th year"
+      },
+      {
+        "source_row": 375,
+        "name": "Ryan Li",
+        "university": "Cal Poly SLO",
+        "college": "Orfalea College of Business",
+        "major": "business",
+        "year": "1st year"
+      },
+      {
+        "source_row": 377,
+        "name": "Ryan Theberge",
+        "university": "Cal Poly SLO",
+        "college": "Bailey College of Science and Mathematics",
+        "major": "Math",
+        "year": "4th year"
+      },
+      {
+        "source_row": 381,
+        "name": "Sahib Kullar",
+        "university": "Cal Poly SLO",
+        "college": "College of Engineering",
+        "major": "Computer Science",
+        "year": "4th year"
+      },
+      {
+        "source_row": 383,
+        "name": "Salif  Sanogo",
+        "university": "Cal Poly SLO",
+        "college": "College of Engineering",
+        "major": "Computer Science",
+        "year": "4th year"
+      },
+      {
+        "source_row": 384,
+        "name": "sam Bessette",
+        "university": "Cal Poly SLO",
+        "college": "College of Agriculture, Food and Environmental Sciences",
+        "major": "BRAE",
+        "year": "3rd year"
+      },
+      {
+        "source_row": 387,
+        "name": "Sam Otto",
+        "university": "Cal Poly SLO",
+        "college": "Orfalea College of Business",
+        "major": "Business Administration",
+        "year": "4th year"
+      },
+      {
+        "source_row": 389,
+        "name": "Sameer Maheshwari",
+        "university": "Cal Poly SLO",
+        "college": "College of Engineering",
+        "major": "Computer Science",
+        "year": "4th year"
+      },
+      {
+        "source_row": 390,
+        "name": "Samson Chang",
+        "university": "Cal Poly SLO",
+        "college": "College of Engineering",
+        "major": "Computer Science",
+        "year": "3rd year"
+      },
+      {
+        "source_row": 392,
+        "name": "Samuel Farley",
+        "university": "Cal Poly SLO",
+        "college": "Orfalea College of Business",
+        "major": "Business",
+        "year": "3rd year"
+      },
+      {
+        "source_row": 393,
+        "name": "Samuel Rosen",
+        "university": "University of British Columbia",
+        "major": "Business and Computer Science",
+        "year": "4th year"
+      },
+      {
+        "source_row": 395,
+        "name": "Savannah Elordi",
+        "university": "Cal Poly SLO",
+        "college": "Orfalea College of Business",
+        "major": "Business administration",
+        "year": "2nd year"
+      },
+      {
+        "source_row": 396,
+        "name": "Sean McCormick",
+        "university": "Cal Poly SLO",
+        "college": "College of Engineering",
+        "major": "Computer Science",
+        "year": "4th year"
+      },
+      {
+        "source_row": 399,
+        "name": "Shane Reynolds",
+        "university": "Cal Poly SLO",
+        "college": "Orfalea College of Business",
+        "major": "Economics",
+        "year": "3rd year"
+      },
+      {
+        "source_row": 402,
+        "name": "Shishir Bonthala",
+        "university": "Cal Poly SLO",
+        "college": "College of Engineering",
+        "major": "Computer Science",
+        "year": "2nd year"
+      },
+      {
+        "source_row": 407,
+        "name": "Sofia Williams",
+        "university": "Cal Poly SLO",
+        "college": "Orfalea College of Business",
+        "major": "Business Administration",
+        "year": "2nd year"
+      },
+      {
+        "source_row": 410,
+        "name": "Sophia Matty",
+        "university": "Cal Poly SLO",
+        "college": "Orfalea College of Business",
+        "major": "Business Administration",
+        "year": "2nd year"
+      },
+      {
+        "source_row": 411,
+        "name": "Sophia Peckner",
+        "university": "Cal Poly SLO",
+        "college": "College of Engineering",
+        "major": "Computer Science",
+        "year": "4th year"
+      },
+      {
+        "source_row": 416,
+        "name": "Steve Greene",
+        "university": "Cal Poly SLO",
+        "college": "Orfalea College of Business",
+        "major": "Business",
+        "year": "1st year"
+      },
+      {
+        "source_row": 417,
+        "name": "Steven Kautz",
+        "university": "Cal Poly SLO",
+        "college": "Orfalea College of Business",
+        "major": "Industrial Technology & Packaging",
+        "year": "4th year"
+      },
+      {
+        "source_row": 422,
+        "name": "Tan Nguyen",
+        "university": "Cal Poly SLO",
+        "college": "College of Engineering",
+        "major": "Computer Science",
+        "year": "4th year"
+      },
+      {
+        "source_row": 423,
+        "name": "Tara Stanisavljevic",
+        "university": "Cal Poly SLO",
+        "college": "Orfalea College of Business",
+        "major": "Economics",
+        "year": "2nd year"
+      },
+      {
+        "source_row": 424,
+        "name": "Taryn Sears",
+        "university": "Cal Poly SLO",
+        "college": "College of Engineering",
+        "major": "Computer science",
+        "year": "3rd year"
+      },
+      {
+        "source_row": 425,
+        "name": "Teagan Griffin",
+        "university": "Cal Poly SLO",
+        "college": "Orfalea College of Business",
+        "major": "Business administration",
+        "year": "2nd year"
+      },
+      {
+        "source_row": 428,
+        "name": "theodore  perry",
+        "university": "Cal Poly SLO",
+        "college": "Orfalea College of Business",
+        "major": "business",
+        "year": "1st year"
+      },
+      {
+        "source_row": 429,
+        "name": "Thomas Benjamin",
+        "university": "Cal Poly SLO",
+        "college": "Orfalea College of Business",
+        "major": "Business Admin",
+        "year": "4th year"
+      },
+      {
+        "source_row": 431,
+        "name": "Tobias Halpern",
+        "university": "Cal Poly SLO",
+        "college": "Orfalea College of Business",
+        "major": "Business",
+        "year": "2nd year"
+      },
+      {
+        "source_row": 434,
+        "name": "Trey Bernard",
+        "university": "Cal Poly SLO",
+        "college": "College of Liberal Arts",
+        "major": "Art & Design",
+        "year": "4th year"
+      },
+      {
+        "source_row": 438,
+        "name": "Veronika Lebed",
+        "university": "Cal Poly SLO",
+        "college": "College of Engineering",
+        "major": "Computer Science",
+        "year": "3rd year"
+      },
+      {
+        "source_row": 440,
+        "name": "Vishal Murali",
+        "university": "Cal Poly SLO",
+        "college": "College of Engineering",
+        "major": "CS",
+        "year": "3rd year"
+      },
+      {
+        "source_row": 445,
+        "name": "Wyatt Hansen",
+        "university": "Cal Poly SLO",
+        "college": "Orfalea College of Business",
+        "major": "Business Administration",
+        "year": "3rd year"
+      },
+      {
+        "source_row": 448,
+        "name": "Xiaochen Li",
+        "university": "Cal Poly SLO",
+        "college": "College of Liberal Arts",
+        "major": "Music",
+        "year": "3rd year"
+      },
+      {
+        "source_row": 449,
+        "name": "Yaseen Hamouda",
+        "university": "Cal Poly SLO",
+        "college": "College of Engineering",
+        "major": "Materials engineering",
+        "year": "1st year"
+      },
+      {
+        "source_row": 451,
+        "name": "Zach Goldwyn",
+        "university": "Cal Poly SLO",
+        "college": "College of Engineering",
+        "major": "Computer Engineering",
+        "year": "2nd year"
+      },
+      {
+        "source_row": 454,
+        "name": "Zemen Bariagabr",
+        "university": "UC Santa Cruz",
+        "major": "Computer Engineering",
+        "year": "3rd year"
+      },
+      {
+        "source_row": 455,
+        "name": "Zitlaly Garcia",
+        "university": "Cal Poly SLO",
+        "college": "College of Engineering",
+        "major": "Computer science",
+        "year": "2nd year"
+      }
+    ],
+    "Goblin Gang": [
+      {
+        "source_row": 7,
+        "name": "Adam Houry",
+        "university": "Cal Poly SLO",
+        "college": "College of Engineering",
+        "major": "Electrical Engineering",
+        "year": "1st year",
+        "team": "Goblin Gang"
+      },
+      {
+        "source_row": 136,
+        "name": "Ellie Scribner",
+        "university": "Cal Poly SLO",
+        "college": "College of Agriculture, Food and Environmental Sciences",
+        "major": "Environmental and soil sciences",
+        "year": "1st year",
+        "team": "Goblin Gang"
+      },
+      {
+        "source_row": 147,
+        "name": "Evan Vaden",
+        "university": "Cal Poly SLO",
+        "college": "Orfalea College of Business",
+        "major": "Industrial technology and packaging",
+        "year": "1st year",
+        "team": "Goblin Gang"
+      },
+      {
+        "source_row": 267,
+        "name": "Logan Horst",
+        "university": "Cal Poly SLO",
+        "college": "Bailey College of Science and Mathematics",
+        "major": "Mathematics and applied sciences",
+        "year": "1st year",
+        "team": "Goblin Gang"
+      }
+    ],
+    "Atlas Engine": [
+      {
+        "source_row": 11,
+        "name": "Adrian Montano",
+        "university": "CSUB",
+        "major": "Elctrical Engineering",
+        "year": "2nd year",
+        "team": "Atlas Engine"
+      },
+      {
+        "source_row": 35,
+        "name": "Andrew Montano",
+        "university": "Cal Poly SLO",
+        "college": "College of Engineering",
+        "major": "Electrical Engineering",
+        "year": "3rd year",
+        "team": "Atlas Engine"
+      },
+      {
+        "source_row": 150,
+        "name": "Francisco Vejar Mata",
+        "university": "Cal Poly SLO",
+        "college": "College of Engineering",
+        "major": "Mechanical Engineering",
+        "year": "3rd year",
+        "team": "Atlas Engine"
+      },
+      {
+        "source_row": 452,
+        "name": "Zahid Soto",
+        "university": "CSUB",
+        "college": "College of Engineering",
+        "major": "Electrical Engineering",
+        "year": "2nd year",
+        "team": "Atlas Engine"
+      }
+    ],
+    "Twofold": [
+      {
+        "source_row": 12,
+        "name": "Adrian Valenzuela",
+        "university": "Cal Poly SLO",
+        "college": "College of Engineering",
+        "major": "Software Engineering",
+        "year": "4th year",
+        "team": "Twofold"
+      },
+      {
+        "source_row": 159,
+        "name": "Giovanni Peila",
+        "university": "Cal Poly SLO",
+        "college": "College of Engineering",
+        "major": "Computer Science",
+        "year": "1st year",
+        "team": "Twofold"
+      },
+      {
+        "source_row": 299,
+        "name": "Matthew Phan",
+        "university": "Cal Poly SLO",
+        "college": "College of Engineering",
+        "major": "Computer Science",
+        "year": "4th year",
+        "team": "Twofold"
+      }
+    ],
+    "Toughest squad": [
+      {
+        "source_row": 13,
+        "name": "Agatha Sterkel",
+        "university": "Cal Poly SLO",
+        "college": "College of Liberal Arts",
+        "major": "Journalism",
+        "year": "2nd year",
+        "team": "Toughest squad"
+      },
+      {
+        "source_row": 444,
+        "name": "Will Balcom",
+        "university": "Cal Poly SLO",
+        "college": "College of Agriculture, Food and Environmental Sciences",
+        "major": "Agribusiness",
+        "year": "2nd year",
+        "team": "Toughest squad"
+      }
+    ],
+    "rAI": [
+      {
+        "source_row": 14,
+        "name": "Aidan Berryman",
+        "university": "Cal Poly SLO",
+        "college": "Orfalea College of Business",
+        "major": "Business Administration",
+        "year": "1st year",
+        "team": "rAI"
+      },
+      {
+        "source_row": 19,
+        "name": "Aiden Ransom",
+        "university": "Cal Poly SLO",
+        "college": "College of Engineering",
+        "major": "Engineering",
+        "year": "1st year",
+        "team": "rAI"
+      },
+      {
+        "source_row": 137,
+        "name": "Elliott Haney",
+        "university": "Cal Poly SLO",
+        "college": "Orfalea College of Business",
+        "major": "Business Administration",
+        "year": "1st year",
+        "team": "rAI"
+      },
+      {
+        "source_row": 394,
+        "name": "Saurish Suman",
+        "university": "Cal Poly SLO",
+        "college": "College of Engineering",
+        "major": "Computer Science",
+        "year": "3rd year",
+        "team": "rAI"
+      }
+    ],
+    "Vortical Widgets": [
+      {
+        "source_row": 15,
+        "name": "Aidan Jones",
+        "university": "Cal Poly SLO",
+        "college": "Orfalea College of Business",
+        "major": "Business Adminstration",
+        "year": "3rd year",
+        "team": "Vortical Widgets"
+      },
+      {
+        "source_row": 24,
+        "name": "Alexander Dominioni",
+        "university": "Cal Poly SLO",
+        "college": "Orfalea College of Business",
+        "major": "Business Administration",
+        "year": "4th year",
+        "team": "Vortical Widgets"
+      },
+      {
+        "source_row": 61,
+        "name": "Ben Klein",
+        "university": "Cal Poly SLO",
+        "college": "College of Engineering",
+        "major": "Computer Engineering",
+        "year": "4th year",
+        "team": "Vortical Widgets"
+      },
+      {
+        "source_row": 437,
+        "name": "Vardaan Kumar",
+        "university": "Cal Poly SLO",
+        "college": "Bailey College of Science and Mathematics",
+        "major": "Computer Science",
+        "year": "4th year",
+        "team": "Vortical Widgets"
+      }
+    ],
+    "Bay Innovations": [
+      {
+        "source_row": 16,
+        "name": "Aidan Mawani",
+        "university": "Cal Poly SLO",
+        "college": "Orfalea College of Business",
+        "major": "Business Administration",
+        "year": "3rd year",
+        "team": "Bay Innovations"
+      },
+      {
+        "source_row": 191,
+        "name": "Jack Gross",
+        "university": "Cal Poly SLO",
+        "college": "Orfalea College of Business",
+        "major": "Business Administration",
+        "year": "3rd year",
+        "team": "Bay Innovations"
+      },
+      {
+        "source_row": 205,
+        "name": "James Juha",
+        "university": "Cal Poly SLO",
+        "college": "Orfalea College of Business",
+        "major": "Business Administration (Finance & Accounting)",
+        "year": "3rd year",
+        "team": "Bay Innovations"
+      },
+      {
+        "source_row": 327,
+        "name": "Nathan Yee",
+        "university": "Cal Poly SLO",
+        "college": "College of Engineering",
+        "major": "Computer Science",
+        "year": "1st year",
+        "team": "Bay Innovations"
+      }
+    ],
+    "Winter": [
+      {
+        "source_row": 17,
+        "name": "Aidan Sehgal",
+        "university": "Cal Poly SLO",
+        "college": "College of Engineering",
+        "major": "Computer Engineering",
+        "year": "1st year",
+        "team": "Winter"
+      },
+      {
+        "source_row": 115,
+        "name": "Diego Rosen",
+        "university": "San Francisco State University",
+        "major": "Business",
+        "year": "1st year",
+        "team": "Winter"
+      },
+      {
+        "source_row": 183,
+        "name": "Hunter Baker",
+        "university": "Cal Poly SLO",
+        "college": "College of Engineering",
+        "major": "Computer Science",
+        "year": "1st year",
+        "team": "Winter"
+      },
+      {
+        "source_row": 189,
+        "name": "Jack Albenberg",
+        "university": "Cal Poly SLO",
+        "college": "College of Engineering",
+        "major": "CPE",
+        "year": "1st year",
+        "team": "Winter"
+      }
+    ],
+    "Team BVM": [
+      {
+        "source_row": 18,
+        "name": "Aiden Edwards",
+        "university": "Cal Poly SLO",
+        "college": "College of Engineering",
+        "major": "Biomedical engineering",
+        "year": "4th year",
+        "team": "Team BVM"
+      },
+      {
+        "source_row": 216,
+        "name": "Jett Hayes",
+        "university": "Cal Poly SLO",
+        "college": "College of Engineering",
+        "major": "Biomedical Engineering",
+        "year": "4th year",
+        "team": "Team BVM"
+      }
+    ],
+    "CPMWP": [
+      {
+        "source_row": 20,
+        "name": "AJ Schoenberger",
+        "university": "Cal Poly SLO",
+        "college": "Orfalea College of Business",
+        "major": "Business Administration",
+        "year": "2nd year",
+        "team": "CPMWP"
+      },
+      {
+        "source_row": 143,
+        "name": "Eros Brunel",
+        "university": "Cal Poly SLO",
+        "college": "College of Engineering",
+        "major": "Mechanical Engineering",
+        "year": "4th year",
+        "team": "CPMWP"
+      },
+      {
+        "source_row": 237,
+        "name": "Kaleb  Lum",
+        "university": "Cal Poly SLO",
+        "college": "College of Engineering",
+        "major": "Mechanical Engineering",
+        "year": "3rd year",
+        "team": "CPMWP"
+      },
+      {
+        "source_row": 446,
+        "name": "Wyatt Rantz",
+        "university": "Cal Poly SLO",
+        "college": "Orfalea College of Business",
+        "major": "Business",
+        "year": "4th year",
+        "team": "CPMWP"
+      }
+    ],
+    "BagChasers": [
+      {
+        "source_row": 23,
+        "name": "Alexander Aarsheim",
+        "university": "Cal Poly SLO",
+        "college": "Orfalea College of Business",
+        "major": "Economics",
+        "year": "2nd year",
+        "team": "BagChasers"
+      },
+      {
+        "source_row": 67,
+        "name": "Bodie Wagner",
+        "university": "Cal Poly SLO",
+        "college": "Orfalea College of Business",
+        "major": "Business",
+        "year": "2nd year",
+        "team": "BagChasers"
+      },
+      {
+        "source_row": 175,
+        "name": "Hayden Pappas",
+        "university": "Cal Poly SLO",
+        "college": "College of Engineering",
+        "major": "Mechanical Engineering",
+        "year": "2nd year",
+        "team": "BagChasers"
+      },
+      {
+        "source_row": 356,
+        "name": "Paxton Miller",
+        "university": "Cal Poly SLO",
+        "college": "College of Agriculture, Food and Environmental Sciences",
+        "major": "Experience Industry Management",
+        "year": "2nd year",
+        "team": "BagChasers"
+      }
+    ],
+    "Tarica Bojak": [
+      {
+        "source_row": 26,
+        "name": "Alexander Tarica",
+        "university": "Cal Poly SLO",
+        "college": "Orfalea College of Business",
+        "major": "Business Admin",
+        "year": "4th year",
+        "team": "Tarica Bojak"
+      },
+      {
+        "source_row": 208,
+        "name": "Jasmine  Bojak",
+        "university": "Cal Poly SLO",
+        "college": "Bailey College of Science and Mathematics",
+        "major": "Biological Sciences",
+        "year": "4th year",
+        "team": "Tarica Bojak"
+      }
+    ],
+    "Jacked Vibecoders": [
+      {
+        "source_row": 28,
+        "name": "Amber Bartulis",
+        "university": "Cal Poly SLO",
+        "college": "Orfalea College of Business",
+        "major": "Business Major",
+        "year": "4th year",
+        "team": "Jacked Vibecoders"
+      },
+      {
+        "source_row": 164,
+        "name": "Grant Haefner",
+        "university": "Cal Poly SLO",
+        "college": "Orfalea College of Business",
+        "major": "Econometrics",
+        "year": "2nd year",
+        "team": "Jacked Vibecoders"
+      }
+    ],
+    "LEMMI": [
+      {
+        "source_row": 29,
+        "name": "Anay Nagar",
+        "university": "Cal Poly SLO",
+        "college": "College of Engineering",
+        "major": "Computer Science",
+        "year": "2nd year",
+        "team": "LEMMI"
+      },
+      {
+        "source_row": 140,
+        "name": "Emilia Vu",
+        "university": "Cal Poly SLO",
+        "college": "College of Engineering",
+        "major": "Computer Science",
+        "year": "2nd year",
+        "team": "LEMMI"
+      },
+      {
+        "source_row": 252,
+        "name": "Kylie Wu",
+        "university": "Cal Poly SLO",
+        "college": "College of Engineering",
+        "major": "Mechanical Engineer",
+        "year": "3rd year",
+        "team": "LEMMI"
+      },
+      {
+        "source_row": 278,
+        "name": "Lukas Watts",
+        "university": "Cal Poly SLO",
+        "college": "College of Engineering",
+        "major": "Electrical Engineering",
+        "year": "3rd year",
+        "team": "LEMMI"
+      }
+    ],
+    "Jamvibe": [
+      {
+        "source_row": 32,
+        "name": "Andrew  Silvas",
+        "university": "Cal Poly SLO",
+        "college": "Orfalea College of Business",
+        "major": "Business Administration",
+        "year": "2nd year",
+        "team": "Jamvibe"
+      }
+    ],
+    "Relentless": [
+      {
+        "source_row": 33,
+        "name": "Andrew Chapin",
+        "university": "Cal Poly SLO",
+        "college": "College of Engineering",
+        "major": "Mechanical Engineering",
+        "year": "3rd year",
+        "team": "Relentless"
+      },
+      {
+        "source_row": 68,
+        "name": "Bowman Edebohls",
+        "university": "Cal Poly SLO",
+        "college": "College of Engineering",
+        "major": "Computer Engineering",
+        "year": "3rd year",
+        "team": "Relentless"
+      },
+      {
+        "source_row": 124,
+        "name": "Efe Celik",
+        "university": "Cal Poly SLO",
+        "college": "College of Engineering",
+        "major": "Software Engineering",
+        "year": "3rd year",
+        "team": "Relentless"
+      }
+    ],
+    "Study Abroad Student Companion": [
+      {
+        "source_row": 34,
+        "name": "Andrew Hamers",
+        "university": "Cal Poly SLO",
+        "college": "College of Engineering",
+        "major": "Electrical Engineering",
+        "year": "4th year",
+        "team": "Study Abroad Student Companion"
+      },
+      {
+        "source_row": 274,
+        "name": "Lucky Smart",
+        "university": "Cal Poly SLO",
+        "college": "Orfalea College of Business",
+        "major": "Economics",
+        "year": "2nd year",
+        "team": "Study Abroad Student Companion"
+      },
+      {
+        "source_row": 288,
+        "name": "Margaret Mehl",
+        "university": "Cal Poly SLO",
+        "college": "Orfalea College of Business",
+        "major": "Business Admin",
+        "year": "2nd year",
+        "team": "Study Abroad Student Companion"
+      },
+      {
+        "source_row": 358,
+        "name": "Philippe Bakhirev",
+        "university": "Cal Poly SLO",
+        "college": "College of Engineering",
+        "major": "Electrical Engineerimg",
+        "year": "4th year",
+        "team": "Study Abroad Student Companion"
+      }
+    ],
+    "Investment Suggestions": [
+      {
+        "source_row": 36,
+        "name": "Andrew Villegas",
+        "university": "Cal Poly SLO",
+        "college": "Orfalea College of Business",
+        "major": "Business Administration",
+        "year": "3rd year",
+        "team": "Investment Suggestions"
+      },
+      {
+        "source_row": 348,
+        "name": "Olivia Cook",
+        "university": "Cal Poly SLO",
+        "college": "Orfalea College of Business",
+        "major": "Business Administration",
+        "year": "3rd year",
+        "team": "Investment Suggestions"
+      }
+    ],
+    "ToGo": [
+      {
+        "source_row": 37,
+        "name": "Anna  Mikhay",
+        "university": "Cal Poly SLO",
+        "college": "Orfalea College of Business",
+        "major": "Business Administration",
+        "year": "1st year",
+        "team": "ToGo"
+      },
+      {
+        "source_row": 162,
+        "name": "Grace Mills",
+        "university": "Cal Poly SLO",
+        "college": "College of Engineering",
+        "major": "Computer Engineering",
+        "year": "2nd year",
+        "team": "ToGo"
+      },
+      {
+        "source_row": 307,
+        "name": "Melissa Ho",
+        "university": "Cal Poly SLO",
+        "college": "College of Engineering",
+        "major": "Computer Engineering",
+        "year": "2nd year",
+        "team": "ToGo"
+      }
+    ],
+    "Tensor Titans": [
+      {
+        "source_row": 38,
+        "name": "Anthony  Ouzounian",
+        "university": "Cal Poly SLO",
+        "college": "Orfalea College of Business",
+        "major": "Industrial Technology",
+        "year": "2nd year",
+        "team": "Tensor Titans"
+      },
+      {
+        "source_row": 192,
+        "name": "Jack Jensen",
+        "university": "Cal Poly SLO",
+        "college": "Orfalea College of Business",
+        "major": "Business",
+        "year": "4th year",
+        "team": "Tensor Titans"
+      },
+      {
+        "source_row": 276,
+        "name": "Luis Scheibe",
+        "university": "Cal Poly SLO",
+        "college": "College of Engineering",
+        "major": "Mechanical Engineering",
+        "team": "Tensor Titans"
+      }
+    ],
+    "Team Hobbs": [
+      {
+        "source_row": 39,
+        "name": "Anthony D'Onofrio",
+        "university": "Cal Poly SLO",
+        "college": "College of Architecture and Environmental Design",
+        "major": "construction management",
+        "year": "2nd year",
+        "team": "Team Hobbs"
+      },
+      {
+        "source_row": 71,
+        "name": "Brenen Clay",
+        "university": "Cal Poly SLO",
+        "college": "Orfalea College of Business",
+        "major": "Business",
+        "year": "2nd year",
+        "team": "Team Hobbs"
+      },
+      {
+        "source_row": 174,
+        "name": "Hayden Hobbs",
+        "university": "Cal Poly SLO",
+        "college": "Orfalea College of Business",
+        "major": "Bus admin",
+        "year": "2nd year",
+        "team": "Team Hobbs"
+      },
+      {
+        "source_row": 328,
+        "name": "Nermin Galesic",
+        "university": "Cal Poly SLO",
+        "college": "Orfalea College of Business",
+        "major": "Business Administration",
+        "year": "2nd year",
+        "team": "Team Hobbs"
+      }
+    ],
+    "FitYourBuild": [
+      {
+        "source_row": 41,
+        "name": "Ariel Hoffman",
+        "university": "Cal Poly SLO",
+        "college": "Orfalea College of Business",
+        "major": "Business Administration",
+        "year": "4th year",
+        "team": "FitYourBuild"
+      },
+      {
+        "source_row": 76,
+        "name": "Brody  Luke",
+        "university": "Cal Poly SLO",
+        "college": "College of Engineering",
+        "major": "Mechanical engineering",
+        "year": "3rd year",
+        "team": "FitYourBuild"
+      }
+    ],
+    "Ctrl + Alt + Us": [
+      {
+        "source_row": 44,
+        "name": "Arsh Gupta",
+        "university": "Cal Poly SLO",
+        "college": "College of Architecture and Environmental Design",
+        "major": "Architecture",
+        "year": "5th year or later",
+        "team": "Ctrl + Alt + Us"
+      },
+      {
+        "source_row": 382,
+        "name": "saina kakkar",
+        "university": "Cal Poly SLO",
+        "college": "College of Engineering",
+        "major": "computer science",
+        "year": "3rd year",
+        "team": "Ctrl + Alt + Us"
+      }
+    ],
+    "Hello World!!!": [
+      {
+        "source_row": 45,
+        "name": "Arshia Gandhi",
+        "university": "Cal Poly SLO",
+        "college": "Bailey College of Science and Mathematics",
+        "major": "Statistics",
+        "year": "1st year",
+        "team": "Hello World!!!"
+      },
+      {
+        "source_row": 224,
+        "name": "Josanna Bakkenson",
+        "university": "Cal Poly SLO",
+        "college": "College of Liberal Arts",
+        "major": "Philosophy",
+        "year": "1st year",
+        "team": "Hello World!!!"
+      },
+      {
+        "source_row": 404,
+        "name": "Shreya Aggarwal",
+        "university": "Cal Poly SLO",
+        "college": "College of Engineering",
+        "major": "Software Engineering",
+        "year": "1st year",
+        "team": "Hello World!!!"
+      }
+    ],
+    "Click": [
+      {
+        "source_row": 49,
+        "name": "Audrey Stephenson",
+        "university": "Cal Poly SLO",
+        "college": "Orfalea College of Business",
+        "major": "Business Administration",
+        "year": "1st year",
+        "team": "Click"
+      },
+      {
+        "source_row": 118,
+        "name": "Dona Liang",
+        "university": "Cal Poly SLO",
+        "college": "Orfalea College of Business",
+        "major": "Industrial Technology and Packaging",
+        "year": "2nd year",
+        "team": "Click"
+      },
+      {
+        "source_row": 144,
+        "name": "Ethan Lee",
+        "university": "Cal Poly SLO",
+        "college": "College of Engineering",
+        "major": "Computer Engineering",
+        "year": "1st year",
+        "team": "Click"
+      },
+      {
+        "source_row": 379,
+        "name": "Sabine Chung",
+        "university": "Cal Poly SLO",
+        "college": "Orfalea College of Business",
+        "major": "Business Administration",
+        "year": "1st year",
+        "team": "Click"
+      }
+    ],
+    "Slow Hours": [
+      {
+        "source_row": 50,
+        "name": "Aurey Taylor",
+        "university": "Cal Poly SLO",
+        "college": "Orfalea College of Business",
+        "major": "Business",
+        "year": "2nd year",
+        "team": "Slow Hours"
+      },
+      {
+        "source_row": 256,
+        "name": "Lera Korniichuk",
+        "university": "Cal Poly SLO",
+        "college": "College of Agriculture, Food and Environmental Sciences",
+        "major": "Nutrition",
+        "year": "2nd year",
+        "team": "Slow Hours"
+      },
+      {
+        "source_row": 298,
+        "name": "Matthew Flynn",
+        "university": "Cal Poly SLO",
+        "college": "College of Engineering",
+        "major": "Computer Science",
+        "year": "4th year",
+        "team": "Slow Hours"
+      }
+    ],
+    "Nicolas+Avi": [
+      {
+        "source_row": 53,
+        "name": "Avi Levine",
+        "university": "Cal Poly SLO",
+        "college": "Bailey College of Science and Mathematics",
+        "major": "Math",
+        "year": "1st year",
+        "team": "Nicolas+Avi"
+      },
+      {
+        "source_row": 338,
+        "name": "Nicolas Carriere",
+        "university": "Cal Poly SLO",
+        "college": "Bailey College of Science and Mathematics",
+        "major": "Mathematics",
+        "year": "1st year",
+        "team": "Nicolas+Avi"
+      }
+    ],
+    "1234": [
+      {
+        "source_row": 56,
+        "name": "Bella Chu",
+        "university": "Cal Poly SLO",
+        "college": "Orfalea College of Business",
+        "major": "Business",
+        "year": "4th year",
+        "team": "1234"
+      },
+      {
+        "source_row": 247,
+        "name": "Kimberly Santana",
+        "university": "Cal Poly SLO",
+        "college": "Orfalea College of Business",
+        "major": "Business Administration",
+        "year": "4th year",
+        "team": "1234"
+      }
+    ],
+    "VetPath": [
+      {
+        "source_row": 57,
+        "name": "Bella Teresi",
+        "university": "Cal Poly SLO",
+        "college": "College of Agriculture, Food and Environmental Sciences",
+        "major": "Animal science",
+        "year": "2nd year",
+        "team": "VetPath"
+      },
+      {
+        "source_row": 176,
+        "name": "Heidi Judson",
+        "university": "Cal Poly SLO",
+        "college": "Orfalea College of Business",
+        "major": "Business Administration",
+        "year": "4th year",
+        "team": "VetPath"
+      }
+    ],
+    "Road Runners": [
+      {
+        "source_row": 58,
+        "name": "Ben  Hendricks",
+        "university": "Cal Poly SLO",
+        "college": "College of Engineering",
+        "major": "Aerospace Engineering",
+        "year": "1st year",
+        "team": "Road Runners"
+      },
+      {
+        "source_row": 83,
+        "name": "Callum North",
+        "university": "Cal Poly SLO",
+        "college": "College of Engineering",
+        "major": "Manufacturing Engineering",
+        "year": "1st year",
+        "team": "Road Runners"
+      },
+      {
+        "source_row": 296,
+        "name": "Matthew Bronowski",
+        "university": "Cal Poly SLO",
+        "college": "Orfalea College of Business",
+        "major": "Business Admin",
+        "year": "1st year",
+        "team": "Road Runners"
+      },
+      {
+        "source_row": 430,
+        "name": "Thomas Ducom",
+        "university": "Cal Poly SLO",
+        "college": "College of Engineering",
+        "major": "Material Engineering",
+        "year": "1st year",
+        "team": "Road Runners"
+      }
+    ],
+    "Frederick's": [
+      {
+        "source_row": 59,
+        "name": "Ben Christensen",
+        "university": "Cal Poly SLO",
+        "college": "Orfalea College of Business",
+        "major": "Business administration",
+        "year": "4th year",
+        "team": "Frederick's"
+      },
+      {
+        "source_row": 443,
+        "name": "Warren   Notrica",
+        "university": "Cal Poly SLO",
+        "college": "Orfalea College of Business",
+        "major": "Business Administration",
+        "year": "4th year",
+        "team": "Frederick's"
+      }
+    ],
+    "Projek1": [
+      {
+        "source_row": 60,
+        "name": "Ben DeMayo",
+        "university": "Cal Poly SLO",
+        "college": "College of Engineering",
+        "major": "2026",
+        "year": "1st year",
+        "team": "Projek1"
+      },
+      {
+        "source_row": 339,
+        "name": "Nicolas Lam",
+        "university": "Cal Poly SLO",
+        "college": "College of Engineering",
+        "major": "Software Engineering",
+        "year": "1st year",
+        "team": "Projek1"
+      },
+      {
+        "source_row": 401,
+        "name": "Shaswath Arunshankar",
+        "university": "Cal Poly SLO",
+        "college": "College of Engineering",
+        "major": "CPE",
+        "year": "1st year",
+        "team": "Projek1"
+      },
+      {
+        "source_row": 403,
+        "name": "Shreevatson Babu Sreegeetha",
+        "university": "Cal Poly SLO",
+        "college": "College of Engineering",
+        "major": "Computer Science",
+        "year": "1st year",
+        "team": "Projek1"
+      }
+    ],
+    "Eli and Bennett": [
+      {
+        "source_row": 64,
+        "name": "Bennett Stoddard",
+        "university": "Cal Poly SLO",
+        "college": "Bailey College of Science and Mathematics",
+        "major": "Kinesiology",
+        "year": "1st year",
+        "team": "Eli and Bennett"
+      },
+      {
+        "source_row": 126,
+        "name": "Eli Ewig",
+        "university": "Cal Poly SLO",
+        "college": "Bailey College of Science and Mathematics",
+        "major": "Physics",
+        "year": "1st year",
+        "team": "Eli and Bennett"
+      }
+    ],
+    "VCS": [
+      {
+        "source_row": 66,
+        "name": "Blake Price",
+        "university": "Cal Poly SLO",
+        "college": "Orfalea College of Business",
+        "major": "Business Administration",
+        "year": "1st year",
+        "team": "VCS"
+      },
+      {
+        "source_row": 100,
+        "name": "Cole Mattingly",
+        "university": "Cal Poly SLO",
+        "college": "Orfalea College of Business",
+        "major": "Buisness Admistration",
+        "year": "1st year",
+        "team": "VCS"
+      },
+      {
+        "source_row": 128,
+        "name": "Eli Santaella",
+        "university": "Cal Poly SLO",
+        "college": "College of Engineering",
+        "major": "CS",
+        "year": "1st year",
+        "team": "VCS"
+      },
+      {
+        "source_row": 346,
+        "name": "Nyan Kahlon",
+        "university": "Cal Poly SLO",
+        "college": "College of Liberal Arts",
+        "major": "Communications",
+        "year": "1st year",
+        "team": "VCS"
+      }
+    ],
+    "Holy Cow": [
+      {
+        "source_row": 69,
+        "name": "Bradley Randle",
+        "university": "Cal Poly SLO",
+        "college": "College of Engineering",
+        "major": "BMED",
+        "year": "4th year",
+        "team": "Holy Cow"
+      },
+      {
+        "source_row": 194,
+        "name": "Jack Sevigny",
+        "university": "Cal Poly SLO",
+        "college": "College of Engineering",
+        "major": "Computer engineering",
+        "year": "4th year",
+        "team": "Holy Cow"
+      },
+      {
+        "source_row": 388,
+        "name": "Sam Weston",
+        "university": "Cal Poly SLO",
+        "college": "College of Engineering",
+        "major": "Electrical Engineering",
+        "year": "4th year",
+        "team": "Holy Cow"
+      }
+    ],
+    "Dev dudes": [
+      {
+        "source_row": 72,
+        "name": "brennen johnson",
+        "university": "Cal Poly SLO",
+        "college": "College of Engineering",
+        "major": "Computer Science",
+        "year": "2nd year",
+        "team": "Dev dudes"
+      },
+      {
+        "source_row": 130,
+        "name": "Eli Szuchan",
+        "university": "Cal Poly SLO",
+        "college": "Orfalea College of Business",
+        "major": "Business Admin",
+        "year": "3rd year",
+        "team": "Dev dudes"
+      },
+      {
+        "source_row": 182,
+        "name": "Hudson Muus",
+        "university": "Cal Poly SLO",
+        "college": "College of Engineering",
+        "major": "General Engineering",
+        "year": "3rd year",
+        "team": "Dev dudes"
+      }
+    ],
+    "wowie warriors": [
+      {
+        "source_row": 77,
+        "name": "Brooks Allen",
+        "university": "Cal Poly SLO",
+        "college": "College of Engineering",
+        "major": "General Engineering",
+        "year": "1st year",
+        "team": "wowie warriors"
+      },
+      {
+        "source_row": 79,
+        "name": "Caeden Cooley",
+        "university": "Cal Poly SLO",
+        "college": "College of Engineering",
+        "major": "Manufacturing Engineering",
+        "year": "1st year",
+        "team": "wowie warriors"
+      },
+      {
+        "source_row": 365,
+        "name": "Riley Fong",
+        "university": "Cal Poly SLO",
+        "college": "College of Engineering",
+        "major": "Computer Engineering",
+        "team": "wowie warriors"
+      },
+      {
+        "source_row": 453,
+        "name": "Zeke Smith",
+        "university": "Cal Poly SLO",
+        "college": "College of Engineering",
+        "major": "General Engineering",
+        "year": "1st year",
+        "team": "wowie warriors"
+      }
+    ],
+    "Something Professional": [
+      {
+        "source_row": 80,
+        "name": "Cal Adasiewicz",
+        "university": "Cal Poly SLO",
+        "college": "Orfalea College of Business",
+        "major": "Business Administration",
+        "year": "3rd year",
+        "team": "Something Professional"
+      },
+      {
+        "source_row": 166,
+        "name": "Griffin Cadenhead",
+        "university": "Cal Poly SLO",
+        "college": "Orfalea College of Business",
+        "major": "Busniess administration",
+        "year": "3rd year",
+        "team": "Something Professional"
+      },
+      {
+        "source_row": 231,
+        "name": "Justin To",
+        "university": "Cal Poly SLO",
+        "college": "Orfalea College of Business",
+        "major": "Buisness",
+        "year": "3rd year",
+        "team": "Something Professional"
+      }
+    ],
+    "Equipe": [
+      {
+        "source_row": 84,
+        "name": "Calvin Armstrong",
+        "university": "Cal Poly SLO",
+        "college": "Orfalea College of Business",
+        "major": "Business Admin",
+        "year": "3rd year",
+        "team": "Equipe"
+      },
+      {
+        "source_row": 269,
+        "name": "Louis  Pilod",
+        "university": "Cal Poly SLO",
+        "college": "Orfalea College of Business",
+        "major": "ECONOMICS",
+        "year": "4th year",
+        "team": "Equipe"
+      }
+    ],
+    "🫩 The Jizzers": [
+      {
+        "source_row": 86,
+        "name": "Cameron Ly",
+        "university": "Cal Poly SLO",
+        "college": "Orfalea College of Business",
+        "major": "Business Administration",
+        "year": "4th year",
+        "team": "🫩 The Jizzers"
+      },
+      {
+        "source_row": 139,
+        "name": "Emi Okumoto",
+        "university": "Cal Poly SLO",
+        "college": "College of Engineering",
+        "major": "Software Engineering",
+        "year": "3rd year",
+        "team": "🫩 The Jizzers"
+      },
+      {
+        "source_row": 223,
+        "name": "Jonathan Zhao",
+        "university": "Cal Poly SLO",
+        "college": "Bailey College of Science and Mathematics",
+        "major": "Statistics",
+        "year": "4th year",
+        "team": "🫩 The Jizzers"
+      },
+      {
+        "source_row": 405,
+        "name": "Sid Chandra",
+        "university": "Cal Poly SLO",
+        "college": "College of Engineering",
+        "major": "Electrical Engineering",
+        "year": "4th year",
+        "team": "🫩 The Jizzers"
+      }
+    ],
+    "Axiom": [
+      {
+        "source_row": 89,
+        "name": "Carlos Alfaro",
+        "university": "Cal Poly SLO",
+        "college": "College of Engineering",
+        "major": "Mechanical Engineering",
+        "year": "4th year",
+        "team": "Axiom"
+      },
+      {
+        "source_row": 173,
+        "name": "Hayden Biesiadecki",
+        "university": "Cal Poly SLO",
+        "college": "College of Engineering",
+        "major": "Mechanical engineering",
+        "year": "2nd year",
+        "team": "Axiom"
+      },
+      {
+        "source_row": 318,
+        "name": "Milo Rathbun",
+        "university": "Cal Poly SLO",
+        "college": "Orfalea College of Business",
+        "major": "Industrial Technology & Packaging",
+        "year": "4th year",
+        "team": "Axiom"
+      },
+      {
+        "source_row": 378,
+        "name": "Ryan Welke",
+        "university": "Cal Poly SLO",
+        "college": "Orfalea College of Business",
+        "major": "Business",
+        "year": "4th year",
+        "team": "Axiom"
+      }
+    ],
+    "Kevin": [
+      {
+        "source_row": 90,
+        "name": "Carly Waldeck",
+        "university": "Cal Poly SLO",
+        "college": "Orfalea College of Business",
+        "major": "Business Analytics",
+        "year": "Graduate student",
+        "team": "Kevin"
+      },
+      {
+        "source_row": 258,
+        "name": "Lexi Hegarty",
+        "university": "Cal Poly SLO",
+        "college": "Orfalea College of Business",
+        "major": "Business Analytics",
+        "year": "Graduate student",
+        "team": "Kevin"
+      }
+    ],
+    "Hacktopus": [
+      {
+        "source_row": 91,
+        "name": "Carson Abel",
+        "university": "Cal Poly SLO",
+        "college": "College of Engineering",
+        "major": "Computer Engineering",
+        "year": "1st year",
+        "team": "Hacktopus"
+      },
+      {
+        "source_row": 120,
+        "name": "Dorsey Campbell",
+        "university": "Cal Poly SLO",
+        "college": "College of Engineering",
+        "major": "Computer Science",
+        "year": "1st year",
+        "team": "Hacktopus"
+      },
+      {
+        "source_row": 138,
+        "name": "Emerson Green",
+        "university": "Cal Poly SLO",
+        "college": "College of Engineering",
+        "major": "Computer Science",
+        "year": "1st year",
+        "team": "Hacktopus"
+      },
+      {
+        "source_row": 391,
+        "name": "Samuel  Fakhouri",
+        "university": "Cal Poly SLO",
+        "college": "College of Engineering",
+        "major": "Computer Science",
+        "year": "1st year",
+        "team": "Hacktopus"
+      }
+    ],
+    "Fit Goat": [
+      {
+        "source_row": 96,
+        "name": "Charlie Rogers",
+        "university": "Cal Poly SLO",
+        "college": "College of Engineering",
+        "major": "Industrial Engineering",
+        "year": "2nd year",
+        "team": "Fit Goat"
+      },
+      {
+        "source_row": 426,
+        "name": "Teo Leiserson",
+        "university": "Cal Poly SLO",
+        "college": "College of Engineering",
+        "major": "Industrial Engineering",
+        "year": "2nd year",
+        "team": "Fit Goat"
+      }
+    ],
+    "Peppr": [
+      {
+        "source_row": 97,
+        "name": "Chiana Kelly",
+        "university": "Cal Poly SLO",
+        "college": "Orfalea College of Business",
+        "major": "Business Administration,",
+        "year": "4th year",
+        "team": "Peppr"
+      },
+      {
+        "source_row": 253,
+        "name": "Kyra Bryant",
+        "university": "Cal Poly SLO",
+        "college": "Orfalea College of Business",
+        "major": "Business Administration",
+        "year": "4th year",
+        "team": "Peppr"
+      },
+      {
+        "source_row": 412,
+        "name": "Sophia Tilghman",
+        "university": "Cal Poly SLO",
+        "college": "College of Liberal Arts",
+        "major": "Journalism",
+        "year": "3rd year",
+        "team": "Peppr"
+      }
+    ],
+    "Mission Impromptable": [
+      {
+        "source_row": 98,
+        "name": "Christopher Sepka",
+        "university": "Cal Poly SLO",
+        "college": "College of Engineering",
+        "major": "Electrical Engineering",
+        "team": "Mission Impromptable"
+      },
+      {
+        "source_row": 122,
+        "name": "Drew Nakamura",
+        "university": "Cal Poly SLO",
+        "college": "College of Engineering",
+        "major": "Computer Engineering",
+        "year": "3rd year",
+        "team": "Mission Impromptable"
+      }
+    ],
+    "Newsie": [
+      {
+        "source_row": 99,
+        "name": "Claire Brandon",
+        "university": "Cal Poly SLO",
+        "college": "Orfalea College of Business",
+        "major": "Business Admin",
+        "year": "3rd year",
+        "team": "Newsie"
+      },
+      {
+        "source_row": 447,
+        "name": "Wyatt Regez",
+        "university": "Cal Poly SLO",
+        "college": "Orfalea College of Business",
+        "major": "Business administration",
+        "year": "1st year",
+        "team": "Newsie"
+      }
+    ],
+    "Schulist Mitchell": [
+      {
+        "source_row": 111,
+        "name": "Dean Johnson",
+        "university": "Cal Poly SLO",
+        "college": "Orfalea College of Business",
+        "major": "Economics",
+        "year": "2nd year",
+        "team": "Schulist Mitchell"
+      },
+      {
+        "source_row": 177,
+        "name": "Henry Mitchell",
+        "university": "Cal Poly SLO",
+        "college": "College of Engineering",
+        "major": "Computer science",
+        "year": "1st year",
+        "team": "Schulist Mitchell"
+      },
+      {
+        "source_row": 315,
+        "name": "Miles Schulist",
+        "university": "Cal Poly SLO",
+        "college": "Bailey College of Science and Mathematics",
+        "major": "Mathematics",
+        "year": "2nd year",
+        "team": "Schulist Mitchell"
+      }
+    ],
+    "Optimizers": [
+      {
+        "source_row": 112,
+        "name": "Devon Kirtley",
+        "university": "Cal Poly SLO",
+        "college": "Orfalea College of Business",
+        "major": "Ba",
+        "year": "3rd year",
+        "team": "Optimizers"
+      },
+      {
+        "source_row": 344,
+        "name": "Noah Heryford",
+        "university": "Cal Poly SLO",
+        "college": "Orfalea College of Business",
+        "major": "Business Administration",
+        "year": "3rd year",
+        "team": "Optimizers"
+      }
+    ],
+    "Cache us if you can": [
+      {
+        "source_row": 113,
+        "name": "Dhairya Prajapati",
+        "university": "Cal Poly SLO",
+        "college": "College of Engineering",
+        "major": "Computer Science",
+        "year": "1st year",
+        "team": "Cache us if you can"
+      },
+      {
+        "source_row": 168,
+        "name": "Haarish Yogeswaran",
+        "university": "Cal Poly SLO",
+        "college": "College of Engineering",
+        "major": "Electrical Engineering",
+        "year": "1st year",
+        "team": "Cache us if you can"
+      },
+      {
+        "source_row": 178,
+        "name": "Hiran Vasu",
+        "university": "Cal Poly SLO",
+        "college": "Bailey College of Science and Mathematics",
+        "major": "Statistics",
+        "year": "1st year",
+        "team": "Cache us if you can"
+      },
+      {
+        "source_row": 361,
+        "name": "Rayan Khan",
+        "university": "Cal Poly SLO",
+        "college": "College of Engineering",
+        "major": "Computer Engineering",
+        "year": "1st year",
+        "team": "Cache us if you can"
+      }
+    ],
+    "Central Coast Computing": [
+      {
+        "source_row": 125,
+        "name": "Eitan Shafran",
+        "university": "Cal Poly SLO",
+        "college": "College of Engineering",
+        "major": "Electrical Engineering",
+        "year": "4th year",
+        "team": "Central Coast Computing"
+      },
+      {
+        "source_row": 195,
+        "name": "Jackson Fisher",
+        "university": "Cal Poly SLO",
+        "college": "College of Engineering",
+        "major": "Mechanical Engineering",
+        "year": "5th year or later",
+        "team": "Central Coast Computing"
+      },
+      {
+        "source_row": 275,
+        "name": "Luis Garcia",
+        "university": "Cal Poly SLO",
+        "college": "College of Engineering",
+        "major": "Computer Science",
+        "year": "4th year",
+        "team": "Central Coast Computing"
+      },
+      {
+        "source_row": 279,
+        "name": "Luke Corson",
+        "university": "Cal Poly SLO",
+        "college": "College of Engineering",
+        "major": "Electrical engineering",
+        "year": "4th year",
+        "team": "Central Coast Computing"
+      }
+    ],
+    "sudo arise": [
+      {
+        "source_row": 129,
+        "name": "Eli Schiffler",
+        "university": "Cal Poly SLO",
+        "college": "College of Engineering",
+        "major": "Computer Science",
+        "year": "4th year",
+        "team": "sudo arise"
+      },
+      {
+        "source_row": 202,
+        "name": "Jake Maier",
+        "university": "Cal Poly SLO",
+        "college": "College of Engineering",
+        "major": "Computer Engineering",
+        "year": "4th year",
+        "team": "sudo arise"
+      }
+    ],
+    "Serra": [
+      {
+        "source_row": 131,
+        "name": "Elias Santillan",
+        "university": "Cal Poly SLO",
+        "college": "College of Engineering",
+        "major": "Computer Engineering",
+        "year": "2nd year",
+        "team": "Serra"
+      },
+      {
+        "source_row": 248,
+        "name": "Kiyan Arshadi",
+        "university": "Cal Poly SLO",
+        "college": "College of Engineering",
+        "major": "Computer Science",
+        "year": "1st year",
+        "team": "Serra"
+      },
+      {
+        "source_row": 316,
+        "name": "mili L",
+        "university": "Cal Poly SLO",
+        "college": "College of Engineering",
+        "major": "Computer engineering",
+        "year": "2nd year",
+        "team": "Serra"
+      }
+    ],
+    "Stark industries": [
+      {
+        "source_row": 132,
+        "name": "Elijah Grife",
+        "university": "Cal Poly SLO",
+        "college": "College of Engineering",
+        "major": "Computer Science",
+        "year": "1st year",
+        "team": "Stark industries"
+      },
+      {
+        "source_row": 272,
+        "name": "Lucas Frisella",
+        "university": "Cal Poly SLO",
+        "college": "Orfalea College of Business",
+        "major": "Economics",
+        "year": "1st year",
+        "team": "Stark industries"
+      },
+      {
+        "source_row": 357,
+        "name": "Peter Wang",
+        "university": "Cal Poly SLO",
+        "college": "College of Engineering",
+        "major": "CS",
+        "year": "1st year",
+        "team": "Stark industries"
+      },
+      {
+        "source_row": 433,
+        "name": "Tor Hanson",
+        "university": "Cal Poly SLO",
+        "college": "College of Engineering",
+        "major": "Computer Science",
+        "year": "1st year",
+        "team": "Stark industries"
+      }
+    ],
+    "Ensure": [
+      {
+        "source_row": 133,
+        "name": "Eliran Solomon",
+        "university": "Cal Poly SLO",
+        "college": "Orfalea College of Business",
+        "major": "Business Administration",
+        "year": "4th year",
+        "team": "Ensure"
+      },
+      {
+        "source_row": 250,
+        "name": "Kyler Nord",
+        "university": "Cal Poly SLO",
+        "college": "College of Engineering",
+        "major": "Computer scoence",
+        "year": "4th year",
+        "team": "Ensure"
+      },
+      {
+        "source_row": 347,
+        "name": "Oliver Sanz-Pastor",
+        "university": "Cal Poly SLO",
+        "college": "Orfalea College of Business",
+        "major": "Business Admin",
+        "year": "4th year",
+        "team": "Ensure"
+      }
+    ],
+    "FJWJ": [
+      {
+        "source_row": 148,
+        "name": "Finn Retsky",
+        "university": "Cal Poly SLO",
+        "college": "College of Engineering",
+        "major": "Mechanical Engineering",
+        "year": "1st year",
+        "team": "FJWJ"
+      },
+      {
+        "source_row": 212,
+        "name": "Jayvin Lee",
+        "university": "Cal Poly SLO",
+        "college": "College of Engineering",
+        "major": "Mechanical Engineering",
+        "year": "1st year",
+        "team": "FJWJ"
+      },
+      {
+        "source_row": 226,
+        "name": "Joshua Miovic",
+        "university": "Cal Poly SLO",
+        "college": "College of Engineering",
+        "major": "Aerospace Engineering",
+        "year": "1st year",
+        "team": "FJWJ"
+      },
+      {
+        "source_row": 442,
+        "name": "Ward Morrison",
+        "university": "Cal Poly SLO",
+        "college": "College of Architecture and Environmental Design",
+        "major": "Architectural Engineering",
+        "year": "1st year",
+        "team": "FJWJ"
+      }
+    ],
+    "FSH": [
+      {
+        "source_row": 149,
+        "name": "Francis Phil Corpuz",
+        "university": "Cal Poly SLO",
+        "college": "College of Engineering",
+        "major": "Computer Science",
+        "year": "1st year",
+        "team": "FSH"
+      },
+      {
+        "source_row": 170,
+        "name": "Harold Huynh",
+        "university": "Cal Poly SLO",
+        "college": "College of Engineering",
+        "major": "Computer Science",
+        "year": "1st year",
+        "team": "FSH"
+      },
+      {
+        "source_row": 418,
+        "name": "Steven Mossman",
+        "university": "Cal Poly SLO",
+        "college": "College of Engineering",
+        "major": "Computer Science",
+        "year": "1st year",
+        "team": "FSH"
+      }
+    ],
+    "CONTINUUM": [
+      {
+        "source_row": 152,
+        "name": "Gabe Chapple",
+        "university": "Cal Poly SLO",
+        "college": "Orfalea College of Business",
+        "major": "econ",
+        "year": "2nd year",
+        "team": "CONTINUUM"
+      },
+      {
+        "source_row": 181,
+        "name": "Hudson Hall",
+        "university": "Cal Poly SLO",
+        "college": "College of Engineering",
+        "major": "Aerospace Engineering",
+        "year": "2nd year",
+        "team": "CONTINUUM"
+      },
+      {
+        "source_row": 397,
+        "name": "Sebastian Ingham",
+        "university": "Cal Poly SLO",
+        "college": "Orfalea College of Business",
+        "major": "Economics",
+        "year": "2nd year",
+        "team": "CONTINUUM"
+      }
+    ],
+    "G bros": [
+      {
+        "source_row": 153,
+        "name": "Gaelen Booth",
+        "university": "Cal Poly SLO",
+        "college": "Bailey College of Science and Mathematics",
+        "major": "Physics",
+        "year": "1st year",
+        "team": "G bros"
+      },
+      {
+        "source_row": 190,
+        "name": "Jack Barner",
+        "university": "Cal Poly SLO",
+        "college": "College of Agriculture, Food and Environmental Sciences",
+        "major": "Agriculture business",
+        "year": "1st year",
+        "team": "G bros"
+      },
+      {
+        "source_row": 432,
+        "name": "Tom Joseph",
+        "university": "Cal Poly SLO",
+        "college": "College of Engineering",
+        "major": "Computer engineering",
+        "year": "1st year",
+        "team": "G bros"
+      }
+    ],
+    "SiteStack": [
+      {
+        "source_row": 155,
+        "name": "Gavin Guinn",
+        "university": "Cal Poly SLO",
+        "college": "College of Engineering",
+        "major": "Civil Engineering",
+        "year": "2nd year",
+        "team": "SiteStack"
+      },
+      {
+        "source_row": 232,
+        "name": "Kaden Thomas",
+        "university": "Cal Poly SLO",
+        "college": "Orfalea College of Business",
+        "major": "Business",
+        "year": "2nd year",
+        "team": "SiteStack"
+      },
+      {
+        "source_row": 414,
+        "name": "Spencer Briggs",
+        "university": "Cal Poly SLO",
+        "college": "College of Engineering",
+        "major": "Industrial Engineering",
+        "year": "2nd year",
+        "team": "SiteStack"
+      }
+    ],
+    "Gavin": [
+      {
+        "source_row": 157,
+        "name": "Gavin Luong",
+        "university": "Cal Poly SLO",
+        "college": "College of Engineering",
+        "major": "Computer Science",
+        "year": "2nd year",
+        "team": "Gavin"
+      },
+      {
+        "source_row": 242,
+        "name": "Kaylie Hurst",
+        "university": "Cal Poly SLO",
+        "college": "Orfalea College of Business",
+        "major": "Business Administration",
+        "year": "2nd year",
+        "team": "Gavin"
+      },
+      {
+        "source_row": 266,
+        "name": "Logan Chook",
+        "university": "Cal Poly SLO",
+        "college": "College of Engineering",
+        "major": "Electrical Engineering",
+        "year": "2nd year",
+        "team": "Gavin"
+      },
+      {
+        "source_row": 380,
+        "name": "Sabrina Quan",
+        "university": "Cal Poly SLO",
+        "college": "Orfalea College of Business",
+        "major": "Business Administration",
+        "year": "2nd year",
+        "team": "Gavin"
+      }
+    ],
+    "meloncreamsoda": [
+      {
+        "source_row": 160,
+        "name": "gloria thomas",
+        "university": "Cal Poly SLO",
+        "college": "Orfalea College of Business",
+        "major": "business admin",
+        "year": "2nd year",
+        "team": "meloncreamsoda"
+      },
+      {
+        "source_row": 236,
+        "name": "Kaitlyn Wong",
+        "university": "Cal Poly SLO",
+        "college": "Orfalea College of Business",
+        "major": "Business Administration",
+        "year": "4th year",
+        "team": "meloncreamsoda"
+      },
+      {
+        "source_row": 439,
+        "name": "Veronika Tenenbaum",
+        "university": "Cal Poly SLO",
+        "college": "Orfalea College of Business",
+        "major": "Business Administration",
+        "year": "4th year",
+        "team": "meloncreamsoda"
+      }
+    ],
+    "HaSu Labs": [
+      {
+        "source_row": 171,
+        "name": "Harshita Bharath",
+        "university": "Las Positas",
+        "major": "Mathematics",
+        "year": "2nd year",
+        "team": "HaSu Labs"
+      },
+      {
+        "source_row": 419,
+        "name": "Suer Lan",
+        "university": "Cal Poly SLO",
+        "college": "College of Engineering",
+        "major": "computer science",
+        "year": "1st year",
+        "team": "HaSu Labs"
+      }
+    ],
+    "AI Warriors!": [
+      {
+        "source_row": 179,
+        "name": "Holly Steen",
+        "university": "Cal Poly SLO",
+        "college": "College of Agriculture, Food and Environmental Sciences",
+        "major": "Bioresource and Agricultural Engineering",
+        "year": "2nd year",
+        "team": "AI Warriors!"
+      },
+      {
+        "source_row": 290,
+        "name": "Mason Di Leo",
+        "university": "Cal Poly SLO",
+        "college": "Orfalea College of Business",
+        "major": "Business",
+        "year": "2nd year",
+        "team": "AI Warriors!"
+      },
+      {
+        "source_row": 308,
+        "name": "Michael Fischbach",
+        "university": "Cal Poly SLO",
+        "college": "College of Engineering",
+        "major": "Mechanical Engineering",
+        "year": "3rd year",
+        "team": "AI Warriors!"
+      }
+    ],
+    "Vibe Bugs": [
+      {
+        "source_row": 180,
+        "name": "Hope Foley",
+        "university": "Cal Poly SLO",
+        "college": "College of Engineering",
+        "major": "Software Engineering",
+        "year": "1st year",
+        "team": "Vibe Bugs"
+      },
+      {
+        "source_row": 246,
+        "name": "Kianna Wong",
+        "university": "Cal Poly SLO",
+        "college": "College of Engineering",
+        "major": "Computer Science",
+        "year": "1st year",
+        "team": "Vibe Bugs"
+      },
+      {
+        "source_row": 284,
+        "name": "Lydia Jiang",
+        "university": "Cal Poly SLO",
+        "college": "College of Engineering",
+        "major": "Computer Science",
+        "year": "1st year",
+        "team": "Vibe Bugs"
+      },
+      {
+        "source_row": 450,
+        "name": "Yazabeth Baza",
+        "university": "Cal Poly SLO",
+        "college": "College of Engineering",
+        "major": "Computer Science",
+        "year": "1st year",
+        "team": "Vibe Bugs"
+      }
+    ],
+    "ChillVibes": [
+      {
+        "source_row": 184,
+        "name": "Iryna Shegera",
+        "university": "Cal Poly SLO",
+        "college": "Orfalea College of Business",
+        "major": "Business Administration",
+        "year": "3rd year",
+        "team": "ChillVibes"
+      },
+      {
+        "source_row": 300,
+        "name": "Matthew Schoos",
+        "university": "Cal Poly SLO",
+        "college": "Orfalea College of Business",
+        "major": "Business Admin",
+        "year": "3rd year",
+        "team": "ChillVibes"
+      },
+      {
+        "source_row": 420,
+        "name": "Sutton Jones",
+        "university": "Cal Poly SLO",
+        "college": "Orfalea College of Business",
+        "major": "Business",
+        "year": "3rd year",
+        "team": "ChillVibes"
+      },
+      {
+        "source_row": 435,
+        "name": "Triksi Jean Gabrielson",
+        "university": "Cal Poly SLO",
+        "college": "Orfalea College of Business",
+        "major": "Business",
+        "year": "3rd year",
+        "team": "ChillVibes"
+      }
+    ],
+    "Swapit": [
+      {
+        "source_row": 185,
+        "name": "Isa  Schlarb",
+        "university": "Cal Poly SLO",
+        "college": "Orfalea College of Business",
+        "major": "Business Administration",
+        "year": "1st year",
+        "team": "Swapit"
+      },
+      {
+        "source_row": 209,
+        "name": "Jasper Fredericks",
+        "university": "Cal Poly SLO",
+        "college": "College of Engineering",
+        "major": "Mechanical Engineering",
+        "year": "2nd year",
+        "team": "Swapit"
+      },
+      {
+        "source_row": 218,
+        "name": "Jocelyn Gutierrez",
+        "university": "Cal Poly SLO",
+        "college": "Orfalea College of Business",
+        "major": "Business Administration",
+        "year": "1st year",
+        "team": "Swapit"
+      },
+      {
+        "source_row": 408,
+        "name": "Somanna Houde",
+        "university": "Cal Poly SLO",
+        "college": "Orfalea College of Business",
+        "major": "Business administration",
+        "year": "1st year",
+        "team": "Swapit"
+      }
+    ],
+    "KumRiggs": [
+      {
+        "source_row": 188,
+        "name": "Ivan Torriani",
+        "university": "Cal Poly SLO",
+        "college": "College of Engineering",
+        "major": "Computer Science",
+        "year": "3rd year",
+        "team": "KumRiggs"
+      },
+      {
+        "source_row": 206,
+        "name": "James Riggs",
+        "university": "Cal Poly SLO",
+        "college": "Bailey College of Science and Mathematics",
+        "major": "Stats/cs",
+        "year": "4th year",
+        "team": "KumRiggs"
+      },
+      {
+        "source_row": 409,
+        "name": "Sophia Kumar",
+        "university": "Cal Poly SLO",
+        "college": "College of Engineering",
+        "major": "CS",
+        "year": "3rd year",
+        "team": "KumRiggs"
+      }
+    ],
+    "JJT": [
+      {
+        "source_row": 193,
+        "name": "Jack Mills",
+        "university": "Cal Poly SLO",
+        "college": "Orfalea College of Business",
+        "major": "Business Administration",
+        "year": "2nd year",
+        "team": "JJT"
+      },
+      {
+        "source_row": 198,
+        "name": "Jadon Jones",
+        "university": "Cal Poly SLO",
+        "college": "Orfalea College of Business",
+        "major": "Business Administration",
+        "year": "2nd year",
+        "team": "JJT"
+      },
+      {
+        "source_row": 421,
+        "name": "Tai Cooke",
+        "university": "Cal Poly SLO",
+        "college": "Orfalea College of Business",
+        "major": "Business Administration",
+        "year": "2nd year",
+        "team": "JJT"
+      }
+    ],
+    "Two Sigma": [
+      {
+        "source_row": 199,
+        "name": "Jaideep Nahal",
+        "university": "Cal Poly SLO",
+        "college": "Orfalea College of Business",
+        "major": "Bus Admin",
+        "year": "3rd year",
+        "team": "Two Sigma"
+      },
+      {
+        "source_row": 260,
+        "name": "Liam Cooney",
+        "university": "Cal Poly SLO",
+        "college": "Bailey College of Science and Mathematics",
+        "major": "Mathematics",
+        "year": "3rd year",
+        "team": "Two Sigma"
+      }
+    ],
+    "Campusfuel": [
+      {
+        "source_row": 203,
+        "name": "Jakob Li",
+        "university": "Cal Poly SLO",
+        "college": "College of Engineering",
+        "major": "Computer Science",
+        "year": "1st year",
+        "team": "Campusfuel"
+      },
+      {
+        "source_row": 213,
+        "name": "Jennifer Nakano",
+        "university": "Cal Poly SLO",
+        "college": "Orfalea College of Business",
+        "major": "Business Administration",
+        "year": "1st year",
+        "team": "Campusfuel"
+      },
+      {
+        "source_row": 235,
+        "name": "Kaiden Campbell",
+        "university": "Cal Poly SLO",
+        "college": "Orfalea College of Business",
+        "major": "Business",
+        "year": "4th year",
+        "team": "Campusfuel"
+      },
+      {
+        "source_row": 406,
+        "name": "Sidhant Binani",
+        "university": "Cal Poly SLO",
+        "college": "Orfalea College of Business",
+        "major": "Industrial Technology and Packaging",
+        "year": "1st year",
+        "team": "Campusfuel"
+      }
+    ],
+    "Skyhook": [
+      {
+        "source_row": 217,
+        "name": "Jitari Qalandar",
+        "university": "Cal Poly SLO",
+        "college": "College of Agriculture, Food and Environmental Sciences",
+        "major": "Asm",
+        "year": "3rd year",
+        "team": "Skyhook"
+      },
+      {
+        "source_row": 441,
+        "name": "Wade Stretch",
+        "university": "Cal Poly SLO",
+        "college": "College of Agriculture, Food and Environmental Sciences",
+        "major": "Ag Systems Management",
+        "year": "2nd year",
+        "team": "Skyhook"
+      }
+    ],
+    "KAIA": [
+      {
+        "source_row": 221,
+        "name": "John Puryear",
+        "university": "Cal Poly SLO",
+        "college": "College of Engineering",
+        "major": "BMED",
+        "year": "2nd year",
+        "team": "KAIA"
+      },
+      {
+        "source_row": 305,
+        "name": "Maxim Anitei",
+        "university": "Cal Poly SLO",
+        "college": "College of Engineering",
+        "major": "Computer Engineering",
+        "year": "2nd year",
+        "team": "KAIA"
+      }
+    ],
+    "The Hungriest": [
+      {
+        "source_row": 222,
+        "name": "Jonathan Finemel",
+        "university": "Cal Poly SLO",
+        "college": "Orfalea College of Business",
+        "major": "Business Administration",
+        "year": "2nd year",
+        "team": "The Hungriest"
+      },
+      {
+        "source_row": 268,
+        "name": "Logan Simmons",
+        "university": "Cal Poly SLO",
+        "college": "Orfalea College of Business",
+        "major": "Business",
+        "year": "2nd year",
+        "team": "The Hungriest"
+      }
+    ],
+    "A2B Labs": [
+      {
+        "source_row": 228,
+        "name": "Joshua Torres",
+        "university": "Cal Poly SLO",
+        "college": "College of Agriculture, Food and Environmental Sciences",
+        "major": "EESS",
+        "year": "4th year",
+        "team": "A2B Labs"
+      },
+      {
+        "source_row": 333,
+        "name": "Nick Gonzalez",
+        "university": "Cal Poly SLO",
+        "college": "Orfalea College of Business",
+        "major": "Business Administration",
+        "year": "4th year",
+        "team": "A2B Labs"
+      }
+    ],
+    "Future Founders": [
+      {
+        "source_row": 233,
+        "name": "Kaela  Fear",
+        "university": "Cal Poly SLO",
+        "college": "Orfalea College of Business",
+        "major": "Business",
+        "year": "1st year",
+        "team": "Future Founders"
+      },
+      {
+        "source_row": 263,
+        "name": "Lily  Yakubov",
+        "university": "Cal Poly SLO",
+        "college": "Orfalea College of Business",
+        "major": "ITP",
+        "year": "1st year",
+        "team": "Future Founders"
+      },
+      {
+        "source_row": 373,
+        "name": "Ruby Anderson",
+        "university": "Cal Poly SLO",
+        "college": "Orfalea College of Business",
+        "major": "Economics",
+        "year": "1st year",
+        "team": "Future Founders"
+      }
+    ],
+    "Constructers": [
+      {
+        "source_row": 238,
+        "name": "Katja Friess",
+        "university": "Cal Poly SLO",
+        "college": "College of Agriculture, Food and Environmental Sciences",
+        "major": "Food Science",
+        "year": "4th year",
+        "team": "Constructers"
+      },
+      {
+        "source_row": 370,
+        "name": "ronnie beck",
+        "university": "Cal Poly SLO",
+        "college": "Orfalea College of Business",
+        "major": "Business Administration",
+        "year": "4th year",
+        "team": "Constructers"
+      },
+      {
+        "source_row": 376,
+        "name": "Ryan Sullivan",
+        "university": "Cal Poly SLO",
+        "college": "Orfalea College of Business",
+        "major": "Business interested in construction and real estate development",
+        "year": "4th year",
+        "team": "Constructers"
+      }
+    ],
+    "Ctrl Alt Elite": [
+      {
+        "source_row": 241,
+        "name": "Kayla Yao",
+        "university": "Cal Poly SLO",
+        "college": "Orfalea College of Business",
+        "major": "Business Administration",
+        "year": "2nd year",
+        "team": "Ctrl Alt Elite"
+      },
+      {
+        "source_row": 309,
+        "name": "Michael Hong",
+        "university": "Cal Poly SLO",
+        "college": "Orfalea College of Business",
+        "major": "Business Administration",
+        "year": "4th year",
+        "team": "Ctrl Alt Elite"
+      },
+      {
+        "source_row": 366,
+        "name": "Riya Ohri",
+        "university": "Cal Poly SLO",
+        "college": "Orfalea College of Business",
+        "major": "Business Administration",
+        "year": "2nd year",
+        "team": "Ctrl Alt Elite"
+      }
+    ],
+    "Sea Cucumbers": [
+      {
+        "source_row": 243,
+        "name": "Kaz Rosinski",
+        "university": "Cal Poly SLO",
+        "college": "College of Engineering",
+        "major": "Computer Science",
+        "year": "1st year",
+        "team": "Sea Cucumbers"
+      },
+      {
+        "source_row": 335,
+        "name": "Nico Aebischer",
+        "university": "Cal Poly SLO",
+        "college": "College of Agriculture, Food and Environmental Sciences",
+        "major": "Environmental Management and Protection",
+        "year": "1st year",
+        "team": "Sea Cucumbers"
+      }
+    ],
+    "BioStrike": [
+      {
+        "source_row": 245,
+        "name": "Kevin Grant",
+        "university": "Cal Poly SLO",
+        "college": "College of Engineering",
+        "major": "Computer Engineering",
+        "year": "4th year",
+        "team": "BioStrike"
+      },
+      {
+        "source_row": 415,
+        "name": "Srishti Prabakar",
+        "university": "Cal Poly SLO",
+        "college": "College of Liberal Arts",
+        "major": "Graphic Communication",
+        "team": "BioStrike"
+      }
+    ],
+    "Koa": [
+      {
+        "source_row": 280,
+        "name": "Luke Hoffmann",
+        "university": "Cal Poly SLO",
+        "college": "College of Engineering",
+        "major": "Industrial Engineering",
+        "team": "Koa"
+      },
+      {
+        "source_row": 324,
+        "name": "Nate Distad",
+        "university": "Cal Poly SLO",
+        "college": "Orfalea College of Business",
+        "major": "Economics",
+        "year": "2nd year",
+        "team": "Koa"
+      },
+      {
+        "source_row": 325,
+        "name": "Nathan Melnick",
+        "university": "Cal Poly SLO",
+        "college": "Orfalea College of Business",
+        "major": "Business Administration",
+        "year": "1st year",
+        "team": "Koa"
+      },
+      {
+        "source_row": 359,
+        "name": "Quin Cristofano",
+        "university": "Cal Poly SLO",
+        "college": "Orfalea College of Business",
+        "major": "Business Administration",
+        "year": "2nd year",
+        "team": "Koa"
+      }
+    ],
+    "Fire It": [
+      {
+        "source_row": 283,
+        "name": "Lupita  Sanchez",
+        "university": "Cal Poly SLO",
+        "college": "Orfalea College of Business",
+        "major": "Business Admin",
+        "year": "1st year",
+        "team": "Fire It"
+      },
+      {
+        "source_row": 398,
+        "name": "Shakti Ann Kanyal",
+        "university": "Cal Poly SLO",
+        "college": "Orfalea College of Business",
+        "major": "Business Administration",
+        "year": "1st year",
+        "team": "Fire It"
+      }
+    ],
+    "LAMS": [
+      {
+        "source_row": 303,
+        "name": "Max Paul",
+        "university": "Cal Poly SLO",
+        "college": "Orfalea College of Business",
+        "major": "Business Admin",
+        "year": "3rd year",
+        "team": "LAMS"
+      }
+    ],
+    "Big larp": [
+      {
+        "source_row": 317,
+        "name": "Milo Efstratis",
+        "university": "Cal Poly SLO",
+        "college": "Orfalea College of Business",
+        "major": "Business admin",
+        "year": "1st year",
+        "team": "Big larp"
+      },
+      {
+        "source_row": 332,
+        "name": "Nicholas Vatman",
+        "university": "Cal Poly SLO",
+        "college": "College of Engineering",
+        "major": "Cs",
+        "year": "1st year",
+        "team": "Big larp"
+      }
+    ],
+    "Apex": [
+      {
+        "source_row": 321,
+        "name": "NAMISH MANNEPALLI",
+        "university": "Cal Poly SLO",
+        "college": "College of Engineering",
+        "major": "Computer science",
+        "year": "3rd year",
+        "team": "Apex"
+      },
+      {
+        "source_row": 367,
+        "name": "Robert Huang",
+        "university": "Cal Poly SLO",
+        "college": "Orfalea College of Business",
+        "major": "Industrial Technology & Packaging",
+        "year": "3rd year",
+        "team": "Apex"
+      },
+      {
+        "source_row": 368,
+        "name": "Robert Tigau",
+        "university": "Cal Poly SLO",
+        "college": "College of Engineering",
+        "major": "CPE",
+        "year": "3rd year",
+        "team": "Apex"
+      }
+    ],
+    "Campus Call": [
+      {
+        "source_row": 337,
+        "name": "Nico Wood",
+        "university": "Cal Poly SLO",
+        "college": "College of Engineering",
+        "major": "Aerospace Engineering",
+        "year": "3rd year",
+        "team": "Campus Call"
+      },
+      {
+        "source_row": 413,
+        "name": "Sophie Moran",
+        "university": "Cal Poly SLO",
+        "college": "Orfalea College of Business",
+        "major": "Business Admin",
+        "year": "3rd year",
+        "team": "Campus Call"
+      }
+    ],
+    "BYOP": [
+      {
+        "source_row": 343,
+        "name": "Nina Lopes",
+        "university": "Cal Poly SLO",
+        "college": "College of Liberal Arts",
+        "major": "Journalism",
+        "year": "4th year",
+        "team": "BYOP"
+      },
+      {
+        "source_row": 385,
+        "name": "Sam Cowan",
+        "university": "Cal Poly SLO",
+        "college": "College of Agriculture, Food and Environmental Sciences",
+        "major": "Environmental Management and Protection",
+        "year": "3rd year",
+        "team": "BYOP"
+      }
+    ],
+    "Sam and Tylers Team": [
+      {
+        "source_row": 386,
+        "name": "Sam Kirschner",
+        "university": "Cal Poly SLO",
+        "college": "Orfalea College of Business",
+        "major": "Business Administration",
+        "year": "1st year",
+        "team": "Sam and Tylers Team"
+      },
+      {
+        "source_row": 436,
+        "name": "Tyler Gilbert",
+        "university": "Cal Poly SLO",
+        "college": "Orfalea College of Business",
+        "major": "Business administration",
+        "year": "1st year",
+        "team": "Sam and Tylers Team"
+      }
+    ],
+    "Iryna's Gang": [
+      {
+        "source_row": 400,
+        "name": "Shane Speth",
+        "university": "Cal Poly SLO",
+        "college": "College of Agriculture, Food and Environmental Sciences",
+        "major": "agricultural systems management",
+        "year": "3rd year",
+        "team": "Iryna's Gang"
+      }
+    ]
+  }
+}
