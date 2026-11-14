@@ -4,7 +4,7 @@ Research note for a free, skill-based forecasting contest inside the Cal Poly AI
 
 This note does not post anything, and it does not ask anyone to spam Discord, email, or group chats.
 
-Nico set the prize on 13 November 2026: 50% of what the team actually receives, paid to 10 skill ranks on a geometric list. An earlier decision in this file said 25%. The live rule, the entry path, the tax disclaimer, and the 11:30 a.m. Sunday close are in `research/00-summary.md`. Where this note says 20%, 25%, 50/30/20, a Sunday 3:00 p.m. lock, or three checkpoints, the summary wins. The room tactics below still apply. Do not say the dollars until the summary's gates are met. Do not describe a cash award as tax-free.
+Nico set the prize on 13 November 2026: 50% of what the team actually receives, paid to 10 skill ranks on a geometric list. An earlier decision in this file said 25%. The live rule, the entry path, the tax disclaimer, and the 11:30 a.m. Sunday close are in `research/00-summary.md`. Where this note says 20%, 25%, 50/30/20, a Sunday 3:00 p.m. lock, or three checkpoints, the summary wins. The room tactics below still apply. Nico stated the team has permission to split earnings and that no lawyer is required. The dollars may be said with the tax line in the summary. Do not describe a cash award as tax-free.
 
 ## What was checked, and what was not
 

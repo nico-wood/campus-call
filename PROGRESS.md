@@ -71,3 +71,7 @@ Nico changed the pool from 25% to 50% and kept the top 10. On a $4,000 first pla
 ## 2026-11-13 Sophie agreed to the 50 percent pool
 
 Sophie agreed to give 50% of what the team actually receives to the top 10 forecasters. The organizer has not confirmed that the prize rules allow sharing. Nico has not accepted that a lawyer has not reviewed a cash prize. A tax advisor has not reviewed it. The spoken line stays the question, free, one position. The tax disclaimer stays in the written rules. Nothing was posted or sent.
+
+## 2026-11-13 Permission to split, no lawyer
+
+Nico stated the team has permission to split its hackathon earnings, and that no lawyer is required. The folder does not contain that permission. Sophie had already agreed to 50% for the top 10. The team may say that plan. The default sentence at the table is still the question, free, one position. The team pays tax on the prize it receives, then gives the pool. A person who receives a cash award can still owe tax on it. This is not tax advice. Do not call the award tax-free. The organizer draft's split question is closed and was not sent. Hackathon-market permission and the event-name question are still open. Nothing was posted or sent.

@@ -14,21 +14,21 @@ The card switches to a hackathon question the moment one of those markets can op
 
 ## 2. Spoken line
 
-One sentence. Use the question on the card. Do not say 50%, a dollar amount, or the word tax.
+Default sentence. Use the question on the card. Do not open with 50% or with the word tax.
 
 Will Saturday's high at the San Luis Obispo County Airport reach 70 F, free, one position.
 
 If the card has switched, say that question in the same sentence, then "free, one position."
 
-## 3. Do not say yet
+## 3. If someone asks about cash
 
-Sophie agreed to the 50% pool on 13 November 2026. Do not say the cash plan, 50%, any dollar amount, who would pay, or anything about tax, until both of these are also true: an organizer confirms the prize rules allow sharing, and Nico accepts that a lawyer has not reviewed a cash prize. A tax advisor has not reviewed it either. Do not describe an award as tax-free. Until a written update is posted, a prize mention is a badge and a certificate only.
+Sophie agreed on 13 November 2026. Nico stated the same day that the team has permission to split earnings and that no lawyer is required. You may say: if the team wins, half of what it receives goes to the ten most accurate forecasts, and if the team wins nothing, that pool is zero. In the same breath: the team pays tax on its prize first, and a cash award can still be taxable to the person who receives it. This is not tax advice. Do not say tax-free. The names are the top 10 by score, not a private pick.
 
 ## 4. Written footer (not spoken)
 
 This is not tax advice. A cash award, if one is later posted and paid, can be taxable income to the person who receives it, even when no tax form is sent. Campus Call has not determined who would pay the award. Do not describe the award as tax-free.
 
-Live prize plan, not to be read aloud: 50% of what this team actually receives, paid to 10 skill ranks, and $0 if the team wins nothing. On a $4,000 first place the pool is $2,000 and the builders keep $2,000. Sophie has agreed to that plan.
+Live prize plan: 50% of what this team receives, paid to 10 skill ranks, and $0 if the team wins nothing. On a $4,000 first place the pool is $2,000 and the builders keep $2,000. Sophie has agreed. Nico stated the team may split earnings after tax and that no lawyer is required. The footer is the tax line above. Do not read it as "tax-free."
 
 ## 5. How a person enters
 
