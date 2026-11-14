@@ -6,7 +6,7 @@ These rules apply to every coding agent in this folder (Claude Code, Codex, Curs
 
 The demo is `research/10-build-spec.md`. `TASKS.md` lists the current build. The participant guide is the only schedule source.
 
-`/resume` in this folder resolves the project name `vibe-coding-hackathon`. The team brain is the clone at `C:/lec-brain`. Do not look for these notes in `~/.claude/second-brain.md`. That file is not the team brain.
+`/resume` in this folder resolves the project name `vibe-coding-hackathon`. The Campus Call brain is `docs/brain/` in this repository, https://github.com/nico-wood/campus-call. Do not write Campus Call notes to `C:/lec-brain` or open pull requests on `compuwood/lec-agent-config`. Do not look for these notes in `~/.claude/second-brain.md`.
 
 ## Overnight build
 
