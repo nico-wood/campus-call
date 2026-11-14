@@ -24,5 +24,5 @@ Scored against the patched plan at `13e937e`. Three lenses still running.
 | Policy and non-negotiables | 9.8 | 0 | 0 | 2 | PASS |
 | Cut order and implementability | pending | | | | |
 | Completeness and consistency | pending | | | | |
-| Architecture fidelity | pending | | | | |
+| Architecture fidelity | 9.8 | 0 | 0 | 1 | PASS |
 
