@@ -104,6 +104,10 @@ Nico removed the chat-server tie-break. The participant guide is the schedule so
 
 A later agent looked for the session notes in `~/.claude/second-brain.md` and did not find them. The team brain is `C:/lec-brain`. This folder resumes as `vibe-coding-hackathon`. `AGENTS.md` now says that. The product spec was already on `main`. Docs only. Tests were not re-run. Nothing was posted or sent.
 
+## 2026-11-14 CC-004 Mode B round 0 fail
+
+Cut completeness scored 9.4 with one major finding. The explicit-demo tests call `startDeviceDemo` themselves and do not prove the form starts it only from submit. Correctness 10.0, security 10.0, and UI code 9.7. Weighted 9.775. The EP is not accepted. The cited test assertions are next, then a fresh round.
+
 ## 2026-11-14 CC-004 Mode B, three lenses
 
 Correctness scored 10.0 and security scored 10.0. UI code scored 9.7 with one minor: `--radius-lg` is used and not defined. Cut completeness is still running. The enrollment code was not edited. The EP is not accepted.

@@ -4,7 +4,7 @@ Chat history is not memory. The next agent reads this file, `LEAD-PROMPT.md`, an
 
 ## Now
 
-- Stage: CC-004 Mode B round 0. Correctness 10.0, security 10.0, and UI code 9.7 are saved. Cut completeness is still running. Do not patch until it returns. Do not start CC-005. Do not accept CC-004. A second writer must not start.
+- Stage: CC-004 Mode B round 0 FAIL. Weighted 9.775. Cut completeness 9.4, one major. The other lenses passed. Patch the cited test gap, then run a fresh round 1. Do not start CC-005. Do not accept CC-004. A second writer must not start.
 - Log: `logs/CC-004.md`. Status: implemented, awaiting Mode B. Rubric: `.agent/research/cc-004-build-autoresearch/RUBRIC.md`. Mode C has not started. The QR door screen changed, so Mode C applies only after Mode B passes.
 - Scored plan commit: `9c83c89`. CC-004 base: `2421902`. Product: `fcbb9ea`. CC-003 product: `3c88f89`. Panel: `4fe06d8`.
 - Saves: commit every green stage. The local brain handoff for Mode A and for CC-001, CC-002, and CC-003 is still due. Do not push the repo or the brain. If the brain write stops, continue from this file.
