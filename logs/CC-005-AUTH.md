@@ -26,7 +26,7 @@ The first typecheck after adding tests caught a test-only empty ProcessEnv missi
 
 ## Gates and limitations
 
-Mode B has not run on this implementation. Mode C is not applicable: no screen changed. One balance remains open because there is no visible verified enrollment control yet, and no real email-delivery/database grant integration was executed from this API.
+Mode B passed this backend substage in round 0: correctness 9.8, security 9.8, cut/tests 9.8, UI code 9.9; weighted 9.825, blocking 0/major 0. Gate: `.agent/research/cc-005-auth-build-autoresearch/GATE-RESULT.md`. Two distinct minors remain: grant RPC timeout bounds and direct expiry/provider-invalidated-cookie/limiter-boundary tests. Mode C is not applicable: no screen changed. One balance remains open because there is no visible verified enrollment control yet, and no real email-delivery/database grant integration was executed from this API.
 
 Runtime configuration requires `SUPABASE_URL`, `SUPABASE_ANON_KEY` (or `NEXT_PUBLIC_SUPABASE_ANON_KEY`), and `SUPABASE_SERVICE_ROLE_KEY`. Values are consumed by server code only; no environment file was opened or values printed. The Supabase email template must deliver the OTP token for this code-based flow, and delivery/provider limits require verification. The session expires after at most one hour; refresh and sign-out are future work. Process-local limits need shared provider/edge enforcement for public deployment.
 

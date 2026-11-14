@@ -1,0 +1,3 @@
+# Round 0 security
+
+Fresh read-only grader auth_security_r0: 9.8, blocking 0, major 0, minor 1. OTP verification precedes authenticated identity derivation (participant-auth.ts:126–144). HMAC/timing-safe cookie integrity, expiry and fresh identity checks (151–162); same-origin bounded JSON, generic errors, HttpOnly/SameSite/Secure cookies (handler:19–35,74–79). Credentials do not enter JSON and posted UUIDs cannot select grant ownership. Minor: direct cookie-expiry, provider-invalidated-session and limiter-boundary regression assertions are missing. Deployment-wide limits/provider delivery remain unverified and explicitly unclaimed.

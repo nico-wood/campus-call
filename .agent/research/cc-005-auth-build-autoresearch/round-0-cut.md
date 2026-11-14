@@ -1,0 +1,3 @@
+# Round 0 cut and tests
+
+Fresh read-only grader auth_cut_r0: 9.8, blocking 0, major 0, minor 1. Commit 76eb599 adds adapter, route/handler, tests and reports only. Existing behavior modules/assertions untouched. Tests cover ordering, authenticated account ID binding, repeat zero grant, invalid code/identity/QR refusal, cookie tampering, origin, bounded input and token-free responses (test:27–119). Full suite independently passed 97 tests across 13 files. Minor duplicates the security coverage gap: expiry/provider-invalidated cookie and limiter fifth/sixth attempt boundary. Log accurately leaves visible enrollment, delivery/database integration and full balance acceptance open. Mode C N/A.
