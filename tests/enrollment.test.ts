@@ -37,10 +37,34 @@ function quietStore(): DeviceStore & { writes: number } {
   };
 }
 
-function identifierName(node: ts.Node): string | null {
-  if (ts.isIdentifier(node)) return node.text;
-  if (ts.isPropertyAccessExpression(node)) return identifierName(node.expression);
-  return null;
+function unwrapExpression(expression: ts.Expression): ts.Expression {
+  let current = expression;
+  for (;;) {
+    if (
+      ts.isParenthesizedExpression(current) ||
+      ts.isAsExpression(current) ||
+      ts.isSatisfiesExpression(current) ||
+      ts.isTypeAssertionExpression(current) ||
+      ts.isNonNullExpression(current)
+    ) {
+      current = current.expression;
+      continue;
+    }
+    if (ts.isBinaryExpression(current) && current.operatorToken.kind === ts.SyntaxKind.CommaToken) {
+      current = current.right;
+      continue;
+    }
+    return current;
+  }
+}
+
+function namesDemo(expression: ts.Expression, aliases: ReadonlySet<string>): boolean {
+  const node = unwrapExpression(expression);
+  if (ts.isIdentifier(node)) return node.text === "startDeviceDemo" || aliases.has(node.text);
+  if (ts.isPropertyAccessExpression(node) || ts.isPropertyAccessChain(node)) {
+    return node.name.text === "startDeviceDemo" || aliases.has(node.name.text);
+  }
+  return false;
 }
 
 function containsNode(outer: ts.Node, inner: ts.Node): boolean {
@@ -55,21 +79,14 @@ function demoCallees(source: ts.SourceFile): { calls: ts.CallExpression[]; alias
       ts.isVariableDeclaration(node) &&
       ts.isIdentifier(node.name) &&
       node.initializer &&
-      identifierName(node.initializer) === "startDeviceDemo"
+      namesDemo(node.initializer, aliases)
     ) {
       aliases.add(node.name.text);
     }
+    if (ts.isCallExpression(node) && namesDemo(node.expression, aliases)) calls.push(node);
     ts.forEachChild(node, visit);
   };
   visit(source);
-  const collect = (node: ts.Node): void => {
-    if (ts.isCallExpression(node)) {
-      const name = identifierName(node.expression);
-      if (name === "startDeviceDemo" || (name != null && aliases.has(name))) calls.push(node);
-    }
-    ts.forEachChild(node, collect);
-  };
-  collect(source);
   return { calls, aliases };
 }
 
