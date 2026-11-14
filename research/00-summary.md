@@ -1,6 +1,6 @@
 # Campus Call — lead synthesis
 
-13 November 2026. Research agents 1, 2, 4, 5, 6, and 7 finished, and Agent 3 finished Phase A. Phase B has not started. Nothing in this file was posted or sent.
+13 November 2026. Research agents 1, 2, 4, 5, 6, and 7 finished, and Agent 3 finished Phase A. The demo to build is `research/10-build-spec.md`. That file wins over the binary-market entry path and the 15 launch markets below. Nothing in this file was posted or sent.
 
 This is a product decision, not legal advice. The regulation memo is `research/02-regulation.md`.
 
