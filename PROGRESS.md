@@ -104,6 +104,10 @@ Nico removed the chat-server tie-break. The participant guide is the schedule so
 
 A later agent looked for the session notes in `~/.claude/second-brain.md` and did not find them. The team brain is `C:/lec-brain`. This folder resumes as `vibe-coding-hackathon`. `AGENTS.md` now says that. The product spec was already on `main`. Docs only. Tests were not re-run. Nothing was posted or sent.
 
+## 2026-11-14 CC-001 accepted
+
+Mode C round 2 passed. Weighted 9.74. Every dimension is at least 9.7. No blocking or major findings. Mode B had already passed at 9.9. CC-001 is accepted. The Home parent stays open for CC-002. The local brain handoff is still due. Nothing was pushed.
+
 ## 2026-11-14 CC-001 Mode C round 1 fail
 
 The pixel score was 9.48. The All chip was at x=16 while the wordmark was at x=96, because the list's margin reset cancelled centering. The list now sits inside the frame. Measured x is 96 at 1280px and 16 at 390px and 375px for the wordmark, the chip, and the empty card. Tests passed, 35 of 35. New captures are in `.agent/research/ui-pixel/home/`. Round 2 is next. The EP is not accepted.
