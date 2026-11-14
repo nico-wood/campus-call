@@ -17,7 +17,7 @@ Campus Call notes do not go in `C:/lec-brain` and do not go in `compuwood/lec-ag
 | ID | Task | Status | Notes |
 | --- | --- | --- | --- |
 | CC-001 through CC-004 | Home, examples, QR door, device demo | accepted | Accepted logs stay as written. |
-| CC-005 | One-time 1,000 virtual-credit grant | in progress | SQL Mode B passed at 9.80 (`3476c41`). Server grant is `f5c4a1f`. The door still grants 0. The One balance row stays open. |
+| CC-005 | One-time 1,000 virtual-credit grant | in progress | SQL Mode B 9.80; additive auth API 76eb599 passed backend Mode B 9.825 in 9312b6c. Fresh writer adding browser verification and local OTP/grant proof. Door still grants 0; One balance stays open. |
 | CC-006 | Spend rule and Sunday noon lock | local SQL gate passed | `ef76443`; Mode B 9.8375, blocking 0/major 0. Current local DB tests passed 9 files/197 assertions. Hosted confirmation migration remains unapplied; participant integration is open. |
 | CC-007 | Four hackathon tickets | in progress | Screens are written and unit-tested. Mode B has not scored them. A page submit still writes nothing. |
 | CC-008 and later | Portfolio and the rest of the build | not started | Portfolio is next: four summaries, remaining balance, a missing ticket shown as missing. |

@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { HackathonEventView } from "../hackathon-event";
 import { loadHackathonDoor, type SearchParamsInput } from "../hackathon-entry";
-import { HackathonTicketList } from "../hackathon-ticket-list";
 
 export const metadata: Metadata = {
   title: "Hackathon forecast · Campus Call",
@@ -14,10 +13,5 @@ export default async function HackathonPage({
   searchParams?: Promise<SearchParamsInput> | SearchParamsInput;
 } = {}) {
   const door = await loadHackathonDoor(searchParams);
-  return (
-    <>
-      <HackathonEventView entry={door.entry} section={door.section} />
-      {door.section === "forecast" ? <HackathonTicketList entry={door.entry} /> : null}
-    </>
-  );
+  return <HackathonEventView entry={door.entry} section={door.section} />;
 }

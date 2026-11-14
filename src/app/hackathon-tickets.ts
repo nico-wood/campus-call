@@ -1,10 +1,10 @@
-/** Four hackathon forecast tickets. Challenge labels are the ticket ids. */
+/** Four hackathon forecast tickets. Stable ids with presentation labels. */
 
 export const HACKATHON_TICKETS = [
-  { id: "main", label: "Main", fields: "places" },
-  { id: "openai", label: "openai", fields: "team" },
-  { id: "startup-launch", label: "startup-launch", fields: "team" },
-  { id: "best-use-of-ai", label: "best-use-of-ai", fields: "team" },
+  { id: "main", label: "Main prize", fields: "places" },
+  { id: "openai", label: "Open AI", fields: "team" },
+  { id: "startup-launch", label: "Startup launch", fields: "team" },
+  { id: "best-use-of-ai", label: "Best use of AI", fields: "team" },
 ] as const;
 
 export type HackathonTicket = (typeof HACKATHON_TICKETS)[number];

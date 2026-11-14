@@ -1,4 +1,8 @@
 import type { ReactNode } from "react";
+import { Brand } from "./brand";
+import { GradientBackdrop } from "./gradient-backdrop";
+import { WorkspaceSettings } from "./workspace-settings";
+import { UiIcon } from "./ui-icon";
 import {
   CATEGORIES,
   forecastListHref,
@@ -20,12 +24,14 @@ export function Shell({
 
   return (
     <div className="app">
+      <GradientBackdrop />
       <a className="skip-link" href="#main-content">Skip to content</a>
       <div className="workspace">
         <header className="topbar">
           <div className="topbar-inner frame">
-            <p className="brand"><a href="/">Campus Call</a></p>
+            <p className="brand"><Brand /></p>
             <form className="search" action="/" method="get" role="search">
+              <UiIcon name="search" className="search-icon" width="18" height="18" />
               <label className="visually-hidden" htmlFor="forecast-search">
                 Search forecasts
               </label>
@@ -44,7 +50,7 @@ export function Shell({
             </form>
             <nav className="workspace-nav" aria-label="Workspace">
               <a href="/portfolio" aria-current={place === "portfolio" ? "page" : undefined}>Portfolio</a>
-              <a href="/settings" aria-current={place === "settings" ? "page" : undefined}>Settings</a>
+              <WorkspaceSettings current={place === "settings"} />
             </nav>
           </div>
           <nav className="category-bar frame" aria-label="Forecast categories">

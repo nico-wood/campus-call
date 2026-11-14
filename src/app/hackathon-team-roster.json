@@ -1,0 +1,632 @@
+[
+  {
+    "id": "team-001",
+    "name": "1234",
+    "probability": null,
+    "verified": false,
+    "challenge": null
+  },
+  {
+    "id": "team-002",
+    "name": "A2B Labs",
+    "probability": null,
+    "verified": false,
+    "challenge": null
+  },
+  {
+    "id": "team-003",
+    "name": "AI Warriors!",
+    "probability": null,
+    "verified": false,
+    "challenge": null
+  },
+  {
+    "id": "team-004",
+    "name": "Apex",
+    "probability": null,
+    "verified": false,
+    "challenge": null
+  },
+  {
+    "id": "team-005",
+    "name": "Atlas Engine",
+    "probability": null,
+    "verified": false,
+    "challenge": null
+  },
+  {
+    "id": "team-006",
+    "name": "Axiom",
+    "probability": null,
+    "verified": false,
+    "challenge": null
+  },
+  {
+    "id": "team-007",
+    "name": "BagChasers",
+    "probability": null,
+    "verified": false,
+    "challenge": null
+  },
+  {
+    "id": "team-008",
+    "name": "Bay Innovations",
+    "probability": null,
+    "verified": false,
+    "challenge": null
+  },
+  {
+    "id": "team-009",
+    "name": "Big larp",
+    "probability": null,
+    "verified": false,
+    "challenge": null
+  },
+  {
+    "id": "team-010",
+    "name": "BioStrike",
+    "probability": null,
+    "verified": false,
+    "challenge": null
+  },
+  {
+    "id": "team-011",
+    "name": "BYOP",
+    "probability": null,
+    "verified": false,
+    "challenge": null
+  },
+  {
+    "id": "team-012",
+    "name": "Cache us if you can",
+    "probability": null,
+    "verified": false,
+    "challenge": null
+  },
+  {
+    "id": "team-013",
+    "name": "Campus Call",
+    "probability": null,
+    "verified": false,
+    "challenge": null
+  },
+  {
+    "id": "team-014",
+    "name": "Campusfuel",
+    "probability": null,
+    "verified": false,
+    "challenge": null
+  },
+  {
+    "id": "team-015",
+    "name": "Central Coast Computing",
+    "probability": null,
+    "verified": false,
+    "challenge": null
+  },
+  {
+    "id": "team-016",
+    "name": "ChillVibes",
+    "probability": null,
+    "verified": false,
+    "challenge": null
+  },
+  {
+    "id": "team-017",
+    "name": "Click",
+    "probability": null,
+    "verified": false,
+    "challenge": null
+  },
+  {
+    "id": "team-018",
+    "name": "Constructers",
+    "probability": null,
+    "verified": false,
+    "challenge": null
+  },
+  {
+    "id": "team-019",
+    "name": "CONTINUUM",
+    "probability": null,
+    "verified": false,
+    "challenge": null
+  },
+  {
+    "id": "team-020",
+    "name": "CPMWP",
+    "probability": null,
+    "verified": false,
+    "challenge": null
+  },
+  {
+    "id": "team-021",
+    "name": "Ctrl + Alt + Us",
+    "probability": null,
+    "verified": false,
+    "challenge": null
+  },
+  {
+    "id": "team-022",
+    "name": "Ctrl Alt Elite",
+    "probability": null,
+    "verified": false,
+    "challenge": null
+  },
+  {
+    "id": "team-023",
+    "name": "Dev dudes",
+    "probability": null,
+    "verified": false,
+    "challenge": null
+  },
+  {
+    "id": "team-024",
+    "name": "Eli and Bennett",
+    "probability": null,
+    "verified": false,
+    "challenge": null
+  },
+  {
+    "id": "team-025",
+    "name": "Ensure",
+    "probability": null,
+    "verified": false,
+    "challenge": null
+  },
+  {
+    "id": "team-026",
+    "name": "Equipe",
+    "probability": null,
+    "verified": false,
+    "challenge": null
+  },
+  {
+    "id": "team-027",
+    "name": "Fire It",
+    "probability": null,
+    "verified": false,
+    "challenge": null
+  },
+  {
+    "id": "team-028",
+    "name": "Fit Goat",
+    "probability": null,
+    "verified": false,
+    "challenge": null
+  },
+  {
+    "id": "team-029",
+    "name": "FitYourBuild",
+    "probability": null,
+    "verified": false,
+    "challenge": null
+  },
+  {
+    "id": "team-030",
+    "name": "FJWJ",
+    "probability": null,
+    "verified": false,
+    "challenge": null
+  },
+  {
+    "id": "team-031",
+    "name": "Frederick's",
+    "probability": null,
+    "verified": false,
+    "challenge": null
+  },
+  {
+    "id": "team-032",
+    "name": "FSH",
+    "probability": null,
+    "verified": false,
+    "challenge": null
+  },
+  {
+    "id": "team-033",
+    "name": "Future Founders",
+    "probability": null,
+    "verified": false,
+    "challenge": null
+  },
+  {
+    "id": "team-034",
+    "name": "G bros",
+    "probability": null,
+    "verified": false,
+    "challenge": null
+  },
+  {
+    "id": "team-035",
+    "name": "Gavin",
+    "probability": null,
+    "verified": false,
+    "challenge": null
+  },
+  {
+    "id": "team-036",
+    "name": "Goblin Gang",
+    "probability": null,
+    "verified": false,
+    "challenge": null
+  },
+  {
+    "id": "team-037",
+    "name": "Hacktopus",
+    "probability": null,
+    "verified": false,
+    "challenge": null
+  },
+  {
+    "id": "team-038",
+    "name": "HaSu Labs",
+    "probability": null,
+    "verified": false,
+    "challenge": null
+  },
+  {
+    "id": "team-039",
+    "name": "Hello World!!!",
+    "probability": null,
+    "verified": false,
+    "challenge": null
+  },
+  {
+    "id": "team-040",
+    "name": "Holy Cow",
+    "probability": null,
+    "verified": false,
+    "challenge": null
+  },
+  {
+    "id": "team-041",
+    "name": "Investment Suggestions",
+    "probability": null,
+    "verified": false,
+    "challenge": null
+  },
+  {
+    "id": "team-042",
+    "name": "Iryna's Gang",
+    "probability": null,
+    "verified": false,
+    "challenge": null
+  },
+  {
+    "id": "team-043",
+    "name": "Jacked Vibecoders",
+    "probability": null,
+    "verified": false,
+    "challenge": null
+  },
+  {
+    "id": "team-044",
+    "name": "Jamvibe",
+    "probability": null,
+    "verified": false,
+    "challenge": null
+  },
+  {
+    "id": "team-045",
+    "name": "JJT",
+    "probability": null,
+    "verified": false,
+    "challenge": null
+  },
+  {
+    "id": "team-046",
+    "name": "KAIA",
+    "probability": null,
+    "verified": false,
+    "challenge": null
+  },
+  {
+    "id": "team-047",
+    "name": "Kevin",
+    "probability": null,
+    "verified": false,
+    "challenge": null
+  },
+  {
+    "id": "team-048",
+    "name": "Koa",
+    "probability": null,
+    "verified": false,
+    "challenge": null
+  },
+  {
+    "id": "team-049",
+    "name": "KumRiggs",
+    "probability": null,
+    "verified": false,
+    "challenge": null
+  },
+  {
+    "id": "team-050",
+    "name": "LAMS",
+    "probability": null,
+    "verified": false,
+    "challenge": null
+  },
+  {
+    "id": "team-051",
+    "name": "LEMMI",
+    "probability": null,
+    "verified": false,
+    "challenge": null
+  },
+  {
+    "id": "team-052",
+    "name": "meloncreamsoda",
+    "probability": null,
+    "verified": false,
+    "challenge": null
+  },
+  {
+    "id": "team-053",
+    "name": "Mission Impromptable",
+    "probability": null,
+    "verified": false,
+    "challenge": null
+  },
+  {
+    "id": "team-054",
+    "name": "Newsie",
+    "probability": null,
+    "verified": false,
+    "challenge": null
+  },
+  {
+    "id": "team-055",
+    "name": "Nicolas+Avi",
+    "probability": null,
+    "verified": false,
+    "challenge": null
+  },
+  {
+    "id": "team-056",
+    "name": "Optimizers",
+    "probability": null,
+    "verified": false,
+    "challenge": null
+  },
+  {
+    "id": "team-057",
+    "name": "Peppr",
+    "probability": null,
+    "verified": false,
+    "challenge": null
+  },
+  {
+    "id": "team-058",
+    "name": "Projek1",
+    "probability": null,
+    "verified": false,
+    "challenge": null
+  },
+  {
+    "id": "team-059",
+    "name": "rAI",
+    "probability": null,
+    "verified": false,
+    "challenge": null
+  },
+  {
+    "id": "team-060",
+    "name": "Relentless",
+    "probability": null,
+    "verified": false,
+    "challenge": null
+  },
+  {
+    "id": "team-061",
+    "name": "Road Runners",
+    "probability": null,
+    "verified": false,
+    "challenge": null
+  },
+  {
+    "id": "team-062",
+    "name": "Sam and Tylers Team",
+    "probability": null,
+    "verified": false,
+    "challenge": null
+  },
+  {
+    "id": "team-063",
+    "name": "Schulist Mitchell",
+    "probability": null,
+    "verified": false,
+    "challenge": null
+  },
+  {
+    "id": "team-064",
+    "name": "Sea Cucumbers",
+    "probability": null,
+    "verified": false,
+    "challenge": null
+  },
+  {
+    "id": "team-065",
+    "name": "Serra",
+    "probability": null,
+    "verified": false,
+    "challenge": null
+  },
+  {
+    "id": "team-066",
+    "name": "SiteStack",
+    "probability": null,
+    "verified": false,
+    "challenge": null
+  },
+  {
+    "id": "team-067",
+    "name": "Skyhook",
+    "probability": null,
+    "verified": false,
+    "challenge": null
+  },
+  {
+    "id": "team-068",
+    "name": "Slow Hours",
+    "probability": null,
+    "verified": false,
+    "challenge": null
+  },
+  {
+    "id": "team-069",
+    "name": "Something Professional",
+    "probability": null,
+    "verified": false,
+    "challenge": null
+  },
+  {
+    "id": "team-070",
+    "name": "Stark industries",
+    "probability": null,
+    "verified": false,
+    "challenge": null
+  },
+  {
+    "id": "team-071",
+    "name": "Study Abroad Student Companion",
+    "probability": null,
+    "verified": false,
+    "challenge": null
+  },
+  {
+    "id": "team-072",
+    "name": "sudo arise",
+    "probability": null,
+    "verified": false,
+    "challenge": null
+  },
+  {
+    "id": "team-073",
+    "name": "Swapit",
+    "probability": null,
+    "verified": false,
+    "challenge": null
+  },
+  {
+    "id": "team-074",
+    "name": "Tarica Bojak",
+    "probability": null,
+    "verified": false,
+    "challenge": null
+  },
+  {
+    "id": "team-075",
+    "name": "Team 8",
+    "probability": null,
+    "verified": false,
+    "challenge": null
+  },
+  {
+    "id": "team-076",
+    "name": "Team BVM",
+    "probability": null,
+    "verified": false,
+    "challenge": null
+  },
+  {
+    "id": "team-077",
+    "name": "Team Hobbs",
+    "probability": null,
+    "verified": false,
+    "challenge": null
+  },
+  {
+    "id": "team-078",
+    "name": "Tensor Titans",
+    "probability": null,
+    "verified": false,
+    "challenge": null
+  },
+  {
+    "id": "team-079",
+    "name": "The Hungriest",
+    "probability": null,
+    "verified": false,
+    "challenge": null
+  },
+  {
+    "id": "team-080",
+    "name": "ToGo",
+    "probability": null,
+    "verified": false,
+    "challenge": null
+  },
+  {
+    "id": "team-081",
+    "name": "Toughest squad",
+    "probability": null,
+    "verified": false,
+    "challenge": null
+  },
+  {
+    "id": "team-082",
+    "name": "Two Sigma",
+    "probability": null,
+    "verified": false,
+    "challenge": null
+  },
+  {
+    "id": "team-083",
+    "name": "Twofold",
+    "probability": null,
+    "verified": false,
+    "challenge": null
+  },
+  {
+    "id": "team-084",
+    "name": "VCS",
+    "probability": null,
+    "verified": false,
+    "challenge": null
+  },
+  {
+    "id": "team-085",
+    "name": "VetPath",
+    "probability": null,
+    "verified": false,
+    "challenge": null
+  },
+  {
+    "id": "team-086",
+    "name": "Vibe Bugs",
+    "probability": null,
+    "verified": false,
+    "challenge": null
+  },
+  {
+    "id": "team-087",
+    "name": "Vortical Widgets",
+    "probability": null,
+    "verified": false,
+    "challenge": null
+  },
+  {
+    "id": "team-088",
+    "name": "Winter",
+    "probability": null,
+    "verified": false,
+    "challenge": null
+  },
+  {
+    "id": "team-089",
+    "name": "wowie warriors",
+    "probability": null,
+    "verified": false,
+    "challenge": null
+  },
+  {
+    "id": "team-090",
+    "name": "🫩 The Jizzers",
+    "probability": null,
+    "verified": false,
+    "challenge": null
+  }
+]

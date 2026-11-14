@@ -5,6 +5,9 @@ import {
   type StagedEntry,
 } from "./hackathon-entry";
 import { QrEnrollment } from "./qr-enrollment";
+import { Brand } from "./brand";
+import { GradientBackdrop } from "./gradient-backdrop";
+import { HackathonTicketList } from "./hackathon-ticket-list";
 
 export function HackathonEventView({
   entry,
@@ -20,16 +23,17 @@ export function HackathonEventView({
 
   return (
     <div className="shell">
+      <GradientBackdrop />
       <header className="topbar">
         <div className="topbar-inner frame">
           <h1 className="brand">
-            <a href={eventHref}>Campus Call</a>
+            <Brand href={eventHref} />
           </h1>
           <p className="door-kicker">Hackathon forecast</p>
         </div>
       </header>
       <main className="main frame door-main">
-        <article className="event" aria-labelledby={titleId}>
+        <article className={section === "forecast" ? "event forecast-intro" : "event"} aria-labelledby={titleId}>
           {section === "forecast" ? (
             <p className="event-back">
               <a className="back-link" href={eventHref}>
@@ -45,7 +49,7 @@ export function HackathonEventView({
           <p className="written-note">
             This is the hackathon event. It does not grant virtual credits.
           </p>
-          {entry ? <QrEnrollment /> : null}
+          {entry && section !== "forecast" ? <QrEnrollment /> : null}
           {section === "forecast" ? (
             <section className="probability" aria-labelledby={probabilityId}>
               <h3 id={probabilityId} className="probability-caption">
@@ -66,6 +70,12 @@ export function HackathonEventView({
             </nav>
           )}
         </article>
+        {section === "forecast" ? <HackathonTicketList entry={entry} /> : null}
+        {section === "forecast" && entry ? (
+          <section className="event forecast-access" aria-label="Account access">
+            <QrEnrollment />
+          </section>
+        ) : null}
       </main>
     </div>
   );

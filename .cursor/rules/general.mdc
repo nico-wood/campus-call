@@ -2,7 +2,7 @@
 alwaysApply: true
 ---
 
-Follow `AGENTS.md` in the project root for the full rule set.
+Follow `AGENTS.md` in the project root for the full rule set. UX and UI work uses the "UX and UI work" section there. Presentation may change. The listed behavior, tests, gates, routes, vocabulary, grant SQL, and `scripts/score.ps1` stay untouched.
 
 - Work on one `TASKS.md` item at a time. Prefer small diffs.
 - After a behavior change, run the project test command if one exists (usually `npm test` when `package.json` has a `test` script). Do not start the next task until tests pass. Do not delete or weaken tests to make a task look done.

@@ -21,6 +21,7 @@ try {
     ]) {
       await page.goto(`${base}${route}`);
       await page.locator('main').waitFor();
+      await page.locator('[data-backdrop-ready="true"]').waitFor();
       await page.screenshot({ path: `${root}/${surface}-${name}.png`, fullPage: true });
       const overflow = await page.evaluate(() => document.documentElement.scrollWidth > innerWidth);
       if (overflow) throw new Error(`${surface} overflows at ${width}px`);

@@ -1,0 +1,52 @@
+{
+  "source": "https://21st.dev/community/gradients",
+  "sourceName": "Dither Grid Gardient",
+  "userDirection": "Keep Campus Call green, gold, white/ivory and black; use this gradient style and motion. Overall UI remains unaccepted as too AI-made.",
+  "motion": {
+    "ph": "t * 0.71",
+    "amt": 0.60,
+    "dir": 1,
+    "spin": "ph * dir",
+    "paletteShift": "sin(ph * 0.9 * dir) * 0.5 * amt",
+    "constraints": "RAF elapsed seconds; zero modulation at ph=0; sine sweep, not wrapping scroll; no per-frame rounding of angle, centre, or stop positions."
+  },
+  "originalPreset": {
+    "mode": "pixel",
+    "colors": [
+      { "id": "c37_23157", "hex": "#0E2417", "pos": 0, "name": "Pine" },
+      { "id": "c38_58918", "hex": "#2E6B3E", "pos": 24, "name": "Moss" },
+      { "id": "c39_94679", "hex": "#78B86B", "pos": 67, "name": "Fern" },
+      { "id": "c40_30440", "hex": "#DDF0C8", "pos": 61, "name": "Sprout" }
+    ],
+    "angle": 90,
+    "centerX": 50,
+    "centerY": 50,
+    "scale": 68,
+    "softness": 26,
+    "wave": 12,
+    "distortion": 28,
+    "grain": 100,
+    "vignette": 100,
+    "count": 6,
+    "fade": 40,
+    "envelope": "ramp",
+    "spread": -20,
+    "soften": 0,
+    "pixelCols": 25,
+    "pixelRows": 15,
+    "pixelAngle": 62,
+    "pixelDither": 76,
+    "pixelGap": 7,
+    "archBase": 70,
+    "archHeight": 50,
+    "archWidth": 100,
+    "archGlow": 55,
+    "archEdge": 30,
+    "animated": true,
+    "speed": 71,
+    "motionAmount": 60,
+    "motionReverse": false,
+    "seed": 233428675,
+    "backdrop": "#0E2417"
+  }
+}
