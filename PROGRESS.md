@@ -104,6 +104,10 @@ Nico removed the chat-server tie-break. The participant guide is the schedule so
 
 A later agent looked for the session notes in `~/.claude/second-brain.md` and did not find them. The team brain is `C:/lec-brain`. This folder resumes as `vibe-coding-hackathon`. `AGENTS.md` now says that. The product spec was already on `main`. Docs only. Tests were not re-run. Nothing was posted or sent.
 
+## 2026-11-14 App shell and Cal Poly palette
+
+Home now has a fixed sidebar, an account block, Settings, Portfolio, forecast categories, and a current-predictions section. The palette is a dark forest with a restrained gold accent. The QR door keeps the same colors and does not show the example list. Tests passed, 52 of 52. A preview follows this commit.
+
 ## 2026-11-14 CC-005 database still absent
 
 A second look found no Docker or Podman install. `docker` and `podman` are not on PATH. Docker Desktop is not in Program Files or LocalAppData, and no Docker service is registered. The local database still cannot boot. CC-005 stays open. CC-006 was not started. No hosted migration was applied.

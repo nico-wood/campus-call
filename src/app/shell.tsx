@@ -8,45 +8,45 @@ import {
 export function Shell({
   category,
   query,
+  place = "forecasts",
   children,
 }: {
   category: Category | "unknown";
   query: string;
+  place?: "forecasts" | "portfolio" | "settings";
   children: ReactNode;
 }) {
   const hiddenCategory = category !== "All" && category !== "unknown" ? category : null;
 
   return (
-    <div className="shell">
-      <header className="topbar">
-        <div className="topbar-inner frame">
-          <h1 className="brand">
-            <a href="/">Campus Call</a>
-          </h1>
-          <form className="search" action="/" method="get" role="search">
-            <label className="visually-hidden" htmlFor="forecast-search">
-              Search forecasts
-            </label>
-            <input
-              id="forecast-search"
-              className="search-input"
-              type="search"
-              name="q"
-              placeholder="Search forecasts"
-              autoComplete="off"
-              defaultValue={query}
-            />
-            {hiddenCategory ? (
-              <input type="hidden" name="category" value={hiddenCategory} />
-            ) : null}
-          </form>
-          <button type="button" className="portfolio">
+    <div className="app">
+      <aside className="sidebar">
+        <p className="sidebar-brand">
+          <a href="/">Campus Call</a>
+        </p>
+        <nav className="side-nav" aria-label="Workspace">
+          <a className="side-link" href="/" aria-current={place === "forecasts" ? "page" : undefined}>
+            Forecasts
+          </a>
+          <a
+            className="side-link"
+            href="/portfolio"
+            aria-current={place === "portfolio" ? "page" : undefined}
+          >
             Portfolio
-          </button>
-        </div>
-      </header>
-      <nav className="category-bar" aria-label="Categories">
-        <div className="frame">
+          </a>
+          <a
+            className="side-link"
+            href="/settings"
+            aria-current={place === "settings" ? "page" : undefined}
+          >
+            Settings
+          </a>
+        </nav>
+        <section className="side-section" aria-labelledby="forecast-categories">
+          <h2 id="forecast-categories" className="side-label">
+            Forecast categories
+          </h2>
           <ul className="categories">
             {CATEGORIES.map((item) => (
               <li key={item}>
@@ -60,9 +60,39 @@ export function Shell({
               </li>
             ))}
           </ul>
-        </div>
-      </nav>
-      <main className="main frame">{children}</main>
+        </section>
+        <section className="account" aria-labelledby="account-heading">
+          <h2 id="account-heading" className="side-label">
+            Account
+          </h2>
+          <p>Not signed in</p>
+          <p>A demo stays on this device. It does not grant virtual credits.</p>
+        </section>
+      </aside>
+      <div className="workspace">
+        <header className="topbar">
+          <div className="topbar-inner frame">
+            <form className="search" action="/" method="get" role="search">
+              <label className="visually-hidden" htmlFor="forecast-search">
+                Search forecasts
+              </label>
+              <input
+                id="forecast-search"
+                className="search-input"
+                type="search"
+                name="q"
+                placeholder="Search forecasts"
+                autoComplete="off"
+                defaultValue={query}
+              />
+              {hiddenCategory ? (
+                <input type="hidden" name="category" value={hiddenCategory} />
+              ) : null}
+            </form>
+          </div>
+        </header>
+        <main className="main frame">{children}</main>
+      </div>
     </div>
   );
 }

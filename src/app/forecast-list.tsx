@@ -34,7 +34,7 @@ export function ForecastList({
   return (
     <>
       <h2 id="forecast-list-heading" className="list-heading">
-        Forecasts
+        Current predictions
       </h2>
       {note}
       <ul className="forecast-list" aria-labelledby="forecast-list-heading">
