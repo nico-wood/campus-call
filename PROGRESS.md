@@ -363,3 +363,9 @@ Docker Desktop 4.99 was installed and the engine stayed up. `npx supabase start`
 ## 2026-11-14 CC-005 Mode B passed
 
 Four read-only graders scored commit `3bf3508`. Correctness 9.8, security 9.9, cut completeness 9.8, UI code 9.7. Weighted 9.80. Blocking 0. Major 0. Gate file: `.agent/research/cc-005-build-autoresearch/GATE-RESULT.md`. Mode C is not applicable because no screen changed. Three minors stay: a control character that passes both normalizers can raise on the ledger check, the unique-index assertion checks the index name, and the dispatch assertion checks that `dblink_send_query` returned 1. The app still does not call the grant. The One balance row stays open. CC-006 was not started. No `.env` file was read. Nothing was pushed.
+
+## 2026-11-14 CC-005 server grant call
+
+`src/app/participant-grant.ts` calls the one-time hackathon grant from the server. A live session is only the object from `issueVerifiedServerSession`, and the entry has to be the staged hackathon QR pair. The client then creates the auth user, records the QR context, and calls `grant_hackathon_participant_credits`. A false return is granted 0 and wrote false. A thrown client error stays visible. Missing `SUPABASE_URL` or `SUPABASE_SERVICE_ROLE_KEY` does not call fetch and returns `unavailable`. No `.env` file was read. The door still returns granted 0 and wrote false. Example confirm still writes nothing. Demo start does not call the client. The door does not import this module, so the screen still does not grant. CC-006 is next. The One balance row was not checked. Nothing was pushed.
+
+`npm test` exited 0. 73 tests passed, 11 files. `npx eslint` on the new module and test exited 0. `npx tsc --noEmit` exited 0. No hosted migration was applied.
