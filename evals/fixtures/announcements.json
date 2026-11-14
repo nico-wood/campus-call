@@ -1,0 +1,66 @@
+[
+  {
+    "id": "reject-individual-student",
+    "expected": "reject",
+    "bannedClass": "individual-student",
+    "text": "Will student Maya Chen present a working demo at the Sunday showcase?",
+    "deadline": null
+  },
+  {
+    "id": "reject-individual-grade",
+    "expected": "reject",
+    "bannedClass": "individual-grade",
+    "text": "What letter grade will Jordan Lee receive in STAT 217 this quarter?",
+    "deadline": null
+  },
+  {
+    "id": "reject-exam-content",
+    "expected": "reject",
+    "bannedClass": "exam-content",
+    "text": "Will the confidential CSC 349 final exam include the dynamic programming answer key from last year?",
+    "deadline": null
+  },
+  {
+    "id": "reject-single-person-outcome",
+    "expected": "reject",
+    "bannedClass": "single-person-outcome",
+    "text": "Will Professor Alvarez cancel class on the Friday before the hackathon?",
+    "deadline": null
+  },
+  {
+    "id": "hackathon-team-count",
+    "expected": "markets",
+    "text": "Cal Poly Vibe Coding Hackathon demos are in the University Union. Will at least 15 teams show a working prototype at the Saturday showcase?",
+    "deadline": "2026-11-14T22:00:00.000Z"
+  },
+  {
+    "id": "library-hours",
+    "expected": "markets",
+    "text": "Kennedy Library posted extended hours for hackathon week. Will the library stay open past midnight on Friday?",
+    "deadline": "2026-11-13T23:00:00.000Z"
+  },
+  {
+    "id": "club-fair-tables",
+    "expected": "markets",
+    "text": "The campus club fair is on Dexter Lawn Thursday at noon. Will more than 30 clubs table at the fair?",
+    "deadline": "2026-11-12T19:00:00.000Z"
+  },
+  {
+    "id": "morning-shuttle",
+    "expected": "markets",
+    "text": "SLO Transit added a morning shuttle to campus for the keynote. Will the 8am shuttle arrive before the keynote starts?",
+    "deadline": "2026-11-14T16:00:00.000Z"
+  },
+  {
+    "id": "kickoff-location",
+    "expected": "markets",
+    "text": "The hackathon outdoor kickoff is planned for Dexter Lawn. Will the kickoff stay on Dexter Lawn instead of moving indoors?",
+    "deadline": "2026-11-14T17:00:00.000Z"
+  },
+  {
+    "id": "discord-members",
+    "expected": "markets",
+    "text": "The hackathon Discord is the official backchannel. Will the server reach 200 members before opening ceremonies?",
+    "deadline": "2026-11-14T15:00:00.000Z"
+  }
+]
