@@ -4,6 +4,8 @@ Research note for a free, skill-based forecasting contest inside the Cal Poly AI
 
 This note does not post anything, and it does not ask anyone to spam Discord, email, or group chats.
 
+Nico adopted a different prize on 13 November 2026: 25% of what the team actually receives, paid to 10 skill ranks on a geometric list. The live rule, the entry path, and the 11:30 a.m. Sunday close are in `research/00-summary.md`. Where this note says 20%, 50/30/20, a Sunday 3:00 p.m. lock, or three checkpoints, the summary wins. The room tactics below still apply. Do not say the dollars until the summary's gates are met.
+
 ## What was checked, and what was not
 
 The public post that points at VibeCodingJam.com does not give a crowd size. The [13 November post from @DarrenTravel](https://x.com/DarrenTravel/status/2118919044568891890) says the hackathon runs 13–15 November in San Luis Obispo, all majors, no coding experience needed, teams of 2–4, entry $20, and “find it on https://VibeCodingJam.com.”

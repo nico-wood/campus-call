@@ -39,3 +39,11 @@ The cash does not recruit a typical person in a room of 300. Conditional on winn
 This is not adopted into the rules draft in `research/00-summary.md`, which still says 20% and 50/30/20. It is not announced. Organizer prize-rule approval and a lawyer review are still required before anyone says the dollar offer. The Sunday close for markets still open is already 11:30 a.m. PT in that summary. Friday roster markets still close Friday 8:15 p.m. PT. The two airport markets still close Saturday 11:59 p.m. PT.
 
 No product code changed. Tests were not re-run. Phase B was not started. Nothing was posted or sent.
+
+## 2026-11-13 Nico adopted 25% and the top 10
+
+Nico adopted the economics recommendation. `research/00-summary.md` now sets the pool at 25% of what the team actually receives, paid to 10 geometric ranks. The builders keep 75%. Empty ranks are not rescaled. The dollars stay unannounced until Sophie agrees, an organizer confirms sharing is allowed, and Nico accepts that a lawyer has not reviewed it. The organizer draft asks for 25% and ten ranks. It was not sent.
+
+The same memo sets the room entry path. A QR opens one market. The question and two priced buttons are the first screen. One sheet collects a handle, an 18+ checkbox, and Google or a magic link. The staged position is placed when sign-in returns. Recognition is two beats: a Saturday position, and a position still held at Sunday 11:30 a.m. PT. `research/07-incentives.md` keeps its room tactics. Its 20% split, 3:00 p.m. lock, and three checkpoints are marked superseded.
+
+No product code changed. Tests were not re-run. Phase B was not started. Nothing was posted or sent.

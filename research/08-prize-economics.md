@@ -274,4 +274,4 @@ Be skeptical of the non-cash channel too. Nothing in these dollars shows that 30
 3. Which tie rule is published: this note's equal split of the combined cash, or the incentives note's earlier-timestamp rule? They disagree. Cash should not use a draw either way.
 4. If fewer than 10 people finish with at least 3 resolved markets, does he accept leaving the empty ranks unpaid, posting that fact, and keeping those dollars with the builders, rather than rescaling the pool onto a shorter list?
 5. Is anyone besides Nico and Sophie ineligible for the forecaster prize? Other people on the building team are not named here.
-6. Does he want this 25% and top-10 list to replace the earlier draft of 20% and 50/30/20? That draft was written before these prize figures were stated.
+6. Does he want this 25% and top-10 list to replace the earlier draft of 20% and 50/30/20? Adopted by Nico on 13 November 2026. The live rule is in `research/00-summary.md`. It is not announced until Sophie agrees, an organizer confirms sharing is allowed, and Nico accepts that a lawyer has not reviewed it.
