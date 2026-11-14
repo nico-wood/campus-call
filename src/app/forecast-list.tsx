@@ -4,6 +4,7 @@ import {
   type ExampleForecast,
   type ListState,
 } from "./example-forecasts";
+import { ForecastIcon } from "./forecast-icon";
 
 export function ForecastList({
   state,
@@ -33,10 +34,9 @@ export function ForecastList({
 
   return (
     <>
-      <div className="page-intro">
-        <p className="eyebrow">The campus forecast board</p>
-        <h1 id="forecast-list-heading" className="list-heading">What happens next?</h1>
-        <p className="intro-description">A different way to follow campus.</p>
+      <div className="browse-heading">
+        <h1 id="forecast-list-heading" className="list-heading">Campus forecasts</h1>
+        <span className="browse-count">{examples.length} {examples.length === 1 ? "example" : "examples"}</span>
       </div>
       {note}
       <ul className="forecast-list" aria-labelledby="forecast-list-heading">
@@ -44,12 +44,11 @@ export function ForecastList({
           <li key={example.id}>
             <article className="forecast-card">
               <div className="card-meta">
-                <span className="card-category">{example.category}</span>
+                <span className="card-category"><ForecastIcon category={example.category} />{example.category}</span>
                 <p className="example-label">Example</p>
               </div>
-              <h2>{example.question}</h2>
+              <h2><a href={exampleEventHref(example.id, state.category, state.query)}>{example.question}</a></h2>
               <p className="forecast-close">Closes {example.closeLabel}</p>
-              <p className="written-note">We wrote this example. It is not a live forecast.</p>
               <section className="probability" aria-labelledby={`${example.id}-probability`}>
                 <h3 id={`${example.id}-probability`} className="probability-caption">
                   Market probability
@@ -59,7 +58,7 @@ export function ForecastList({
                     <li key={outcome.id}>
                       <a
                         className="outcome"
-                        href={exampleEventHref(example.id, state.category, state.query)}
+                        href={`${exampleEventHref(example.id, state.category, state.query)}#example-ticket`}
                       >
                         <span className="outcome-label">{outcome.label}</span>
                         <span className="outcome-percent">{outcome.percent}%</span>
@@ -68,6 +67,7 @@ export function ForecastList({
                   ))}
                 </ul>
               </section>
+              <p className="written-note">We wrote this example. It is not a live forecast.</p>
             </article>
           </li>
         ))}

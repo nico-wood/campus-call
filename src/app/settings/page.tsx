@@ -19,6 +19,7 @@ export default function SettingsPage() {
         <span className="example-label">Not signed in</span>
         <p>Not signed in. Entering an email is not verified ownership.</p>
         <p>A demo stays on this device. It does not grant virtual credits.</p>
+        <a className="confirm access-primary" href="/login">View account access <span aria-hidden="true">→</span></a>
       </section>
     </Shell>
   );
