@@ -22,6 +22,8 @@ No extra sub-agents. Lead writes `research/00-summary.md` only after 1, 2, 4, 5,
 
 Nico stated prize amounts and a 300-person room, and set the prediction close at 11:30. One economics sub-agent was spawned to compare giving away 20, 25, 30, 40, and 50 percent, and to test whether 50/30/20 is the right split. No other agents. Phase B still stopped.
 
+The note is `research/08-prize-economics.md`. Recommendation, not yet adopted into `research/00-summary.md`: give away 25% and pay a top-10 geometric list, not 50/30/20. Sunday markets that are still open close at 11:30 a.m. PT. That clock is already in the summary. The prize section of the summary still says 20% and 50/30/20 until Nico adopts the new numbers.
+
 ### 2026-11-13 18:32 PT — second brain
 
 Local brain branch `brain/campus-call-2026-11-14-023227` holds a plan entry: EP-1162 done (Phase A), EP-1163 in progress (prize keep, own-team, attendance), EP-1164 blocked (Phase B), EP-1165 ready (organizer ask), EP-1166 backlog (lawyer before any cash announcement). Push and PR were not done. Waiting on Nico.

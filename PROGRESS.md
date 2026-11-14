@@ -27,3 +27,15 @@ Git remote is https://github.com/nico-wood/campus-call. First commit `d036bc6` i
 Vercel project `campus-call` on the `nico-wood` Hobby team is linked in `.vercel` and was already connected to that GitHub repo. Vercel wrote `.env.local` and it is gitignored. That file was not read and was not committed. No `vercel --prod`. No preview deploy. The app does not exist yet and the score has not moved.
 
 `npm test` was not re-run. Product code did not change. The unit suite is still the known red harness. No `TASKS.md` item was marked done.
+
+## 2026-11-13 Prize-share economics
+
+Nico stated 1st $4,000, 2nd $2,000, 3rd $1,000, and one extra $1,000 if the team wins the challenges. He also stated a planning room of 300 and a prediction close of 11:30. Those prize figures are not on a public page we opened.
+
+`research/08-prize-economics.md` compares pools of 20, 25, 30, 40, and 50 percent. Recommendation: give away 25% and keep 75%. On 1st place the pool is $1,000 and the builders keep $3,000. On 1st plus the challenge the pool is $1,250 and the builders keep $3,750. If the team wins nothing the pool is $0. Do not use 50/30/20. Pay 10 skill ranks on a geometric list (each prize 85% of the one above): $187 down to $43 on the $1,000 pool.
+
+The cash does not recruit a typical person in a room of 300. Conditional on winning 1st, equal-chance expected cash at 25% is $3.33. The breakup does not change that average.
+
+This is not adopted into the rules draft in `research/00-summary.md`, which still says 20% and 50/30/20. It is not announced. Organizer prize-rule approval and a lawyer review are still required before anyone says the dollar offer. The Sunday close for markets still open is already 11:30 a.m. PT in that summary. Friday roster markets still close Friday 8:15 p.m. PT. The two airport markets still close Saturday 11:59 p.m. PT.
+
+No product code changed. Tests were not re-run. Phase B was not started. Nothing was posted or sent.
