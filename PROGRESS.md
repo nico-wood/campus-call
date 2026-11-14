@@ -56,4 +56,6 @@ No product code changed. Tests were not re-run. Phase B was not started. Nothing
 
 ## 2026-11-13 Phase B: offline market drafts
 
-Nico said go on Phase B. `src/lib/ai/generate-markets.ts` drafts one campus market from an allowed announcement, or rejects with the banned class id. It does not call the network and does not insert a row. `npx vitest run evals` passed, 10 / 10. `npm test` is still red until the ledger modules land. No Discord, GitHub, Reddit, professor-rating, or sports crawl was added. The market shape stays LMSR.
+Nico said go on Phase B. `src/lib/ai/generate-markets.ts` drafts one campus market from an allowed announcement, or rejects with the banned class id. It does not call the network and does not insert a row. `npx vitest run evals` passed, 10 / 10. No Discord, GitHub, Reddit, professor-rating, or sports crawl was added. The market shape stays LMSR.
+
+`src/lib/lmsr.ts`, `brier.ts`, `scoring.ts`, and `ledger.ts` now implement the harness. `npm test` passed, 33 / 33. `npm run typecheck` was clean in the worker that wrote them. The SQL migrations were still in progress.

@@ -16,7 +16,7 @@ Product decisions locked in `research/00-summary.md`:
 - Hackathon markets stay drafts until organizers approve them. The two airport markets can open without that approval.
 
 - [x] 3e: Phase A eval harness (score script, failing unit/e2e/AI specs, banned-topic checker)
-- [ ] 3b: Implement src/lib/lmsr.ts, src/lib/brier.ts, src/lib/scoring.ts, and src/lib/ledger.ts so npm test passes. Do not change test assertions. Messages must include "insufficient credits" and "already resolved" where the ledger tests require them.
+- [x] 3b: Implement src/lib/lmsr.ts, src/lib/brier.ts, src/lib/scoring.ts, and src/lib/ledger.ts so npm test passes. Do not change test assertions. Messages must include "insufficient credits" and "already resolved" where the ledger tests require them.
 - [ ] 3a: Add a SQL migration for profiles, markets, and outcomes. Enable RLS and deny writes from anon and authenticated. No real-money columns. Profiles store a display handle, not a legal name.
 - [ ] 3a: Add a SQL migration for trades and credit_ledger. Ledger writes are server-only. A balance is the sum of ledger amounts. The house account id is house. New users receive 1000 virtual credits once.
 - [ ] 3a: Add a SQL migration for scores and resolutions. One resolution per market. Store per-market points, Brier, and the pre-trade YES probability. Virtual-credit profit is redeemed credits minus credits spent.
