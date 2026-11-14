@@ -22,6 +22,8 @@ Copied four skills into `.claude/skills`: `rls-verifier`, `security-audit` (no S
 
 `npx supabase init` wrote `supabase/config.toml` with `project_id = "campus-call"`. No hosted Supabase project was created. `SUPABASE_ACCESS_TOKEN` is unset and the CLI has no saved login. No migration was applied. No `.env` was read.
 
-Git remote is the existing empty repo https://github.com/nico-wood/campus-call. Vercel project `campus-call` already existed on the `nico-wood` Hobby team. No `vercel --prod`. No preview deploy. The app does not exist yet and the score has not moved.
+Git remote is https://github.com/nico-wood/campus-call. First commit `d036bc6` is on `main`. The stored Git credential is the `compuwood` account, so the push used `gh auth git-credential` for `nico-wood` for that one command. Git config was not changed.
+
+Vercel project `campus-call` on the `nico-wood` Hobby team is linked in `.vercel` and was already connected to that GitHub repo. Vercel wrote `.env.local` and it is gitignored. That file was not read and was not committed. No `vercel --prod`. No preview deploy. The app does not exist yet and the score has not moved.
 
 `npm test` was not re-run. Product code did not change. The unit suite is still the known red harness. No `TASKS.md` item was marked done.
