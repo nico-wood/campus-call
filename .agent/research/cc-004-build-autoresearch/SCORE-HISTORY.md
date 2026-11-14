@@ -55,3 +55,18 @@ Top fixes: parse the enrollment component with the TypeScript parser and require
 Blocking: 0
 Major: 1
 Top fixes: unwrap parentheses, non-null assertions, casts, and comma expressions, and count `foo.startDeviceDemo` calls.
+
+## R4 — 2026-11-14 — PASS — mode=build
+
+| Dimension | Weight | Score |
+| --- | ---: | ---: |
+| Correctness | 0.25 | 10.0 |
+| Security | 0.25 | 10.0 |
+| Cut completeness and tests | 0.25 | 9.7 |
+| UI code | 0.25 | 9.7 |
+| **Weighted** | | **9.85** |
+
+Blocking: 0
+Major: 0
+Minor: 2. Undefined `--radius-lg`. `eval` or `new Function` is not asserted.
+Top fixes: none. The minors stay.

@@ -104,6 +104,10 @@ Nico removed the chat-server tie-break. The participant guide is the schedule so
 
 A later agent looked for the session notes in `~/.claude/second-brain.md` and did not find them. The team brain is `C:/lec-brain`. This folder resumes as `vibe-coding-hackathon`. `AGENTS.md` now says that. The product spec was already on `main`. Docs only. Tests were not re-run. Nothing was posted or sent.
 
+## 2026-11-14 CC-004 Mode B pass
+
+Round 4 passed. Correctness 10.0, security 10.0, cut completeness 9.7, and UI code 9.7. Weighted 9.85. No blocking or major findings. Two minors stay. The EP is not accepted until Mode C passes. Product commit remains `fcbb9ea`.
+
 ## 2026-11-14 CC-004 call unwrap
 
 The parser now unwraps parentheses, non-null assertions, casts, and comma expressions, and it counts `foo.startDeviceDemo`. The only resolved call must sit inside `onStartDemo`. `npm test` exit 0, 52 tests. Lint and typecheck exit 0. Round 4 is next. The EP is not accepted.
