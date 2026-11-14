@@ -83,6 +83,26 @@ describe("example forecasts", () => {
     expect(hackathon).toContain("Hackathon prize forecasts");
     expect(hackathon).not.toContain("Will the example workshop");
 
+    const transit = await renderHome({ category: "Transit" });
+    expect(transit).toContain('aria-current="true">Transit');
+    expect(transit).toContain("At 5:00 p.m. Sunday, will SLO Transit still list a Route 4A detour?");
+    expect(transit).toContain("https://slocity.connexionz.net/rtt/public/utility/gtfsrealtime.aspx/alert");
+    expect(transit).not.toContain("Montana State");
+    expect(transit).not.toContain("Las Migas");
+
+    const campus = await renderHome({ category: "Campus" });
+    expect(campus).toContain('aria-current="true">Campus');
+    expect(campus).toContain("Arab Music Ensemble Fall Concert");
+    expect(campus).toContain("Las Migas");
+    expect(campus).toContain("https://events.calpoly.edu/event-listing");
+    expect(campus).toContain("https://www.calpolyarts.org/20262027-season/las-migas");
+    expect(campus).not.toContain("Route 4A detour");
+
+    const clubs = await renderHome({ category: "Club sports" });
+    expect(clubs).toContain('aria-current="true">Club sports');
+    expect(clubs).toContain("No club match is posted yet.");
+    expect(clubs).not.toContain(">Confirm<");
+
     const missed = await renderHome({ category: "Weather", q: "workshop" });
     expect(missed).toContain("No matching forecasts");
     expect(missed).toContain(

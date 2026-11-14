@@ -1,7 +1,7 @@
-export const CATEGORIES = ["All", "Sports", "Weather", "Hackathon"] as const;
+export const CATEGORIES = ["All", "Sports", "Club sports", "Transit", "Campus", "Weather", "Hackathon"] as const;
 
 export type Category = (typeof CATEGORIES)[number];
-export type ForecastCategory = "Sports" | "Music" | "Dining" | "Hackathon" | "Weather";
+export type ForecastCategory = "Sports" | "Music" | "Dining" | "Hackathon" | "Weather" | "Club sports" | "Transit" | "Campus";
 export type ForecastShape = "yes-no" | "higher-lower" | "earlier-later";
 
 export type ExampleOutcome = {
@@ -158,10 +158,13 @@ export function exampleEventHref(
 
 export function emptyForecastMessage(state: ListState): string {
   if (state.category === "unknown") {
-    return "That category is not on this board. Choose All, Sports, Weather, or Hackathon.";
+    return "That category is not on this board. Choose All, Sports, Club sports, Transit, Campus, Weather, or Hackathon.";
   }
   if (state.query) {
     return "No forecast matches this search. Clear the search or choose another category.";
+  }
+  if (state.category === "Club sports") {
+    return "No club match is posted yet. A forecast needs a public schedule that names the opponent, the time, and where the result will be recorded.";
   }
   return "No forecasts are in this category.";
 }

@@ -482,3 +482,11 @@ A catalog agent checked public sources and the board adds three forecasts. Men's
 `npm.cmd test` passed 111 tests across 16 files. `npm.cmd run typecheck` exited 0. Browser checks on http://localhost:3001 confirmed outcome, amount, Confirm, and the sign-in prompt on the basketball and volleyball questions and on the weather question. No POST was sent. Music shows the unknown-category message. Hackathon shows the prize-forecast link and not the basketball or weather cards. Nothing was pushed or deployed. The dev server remains on port 3001. Port 3000 is the older production server.
 
 Commit `3a3908c` records this board. It was not pushed.
+
+## 2026-11-14 14:40 PT Local categories
+
+The first board stopped at Sports and Weather because a forecast was added only when a loaded public page named the event, the close, and the result. Transit was already on the roadmap. It was left off when the city HTML returned Access Denied and no feed named one stop and one future arrival.
+
+The board now has Club sports, Transit, and Campus beside Sports, Weather, and Hackathon. Transit uses the SLO Transit GTFS-realtime alerts feed, which loaded and names a Route 4A, 4B, and Highland Tripper detour from Oct. 12 through Dec. 31, 2026. The question is whether that feed still names a Route 4A detour at 5:00 p.m. Sunday. It closes at 4:55 p.m. PT and stays unresolved if no copy is saved. It does not name a stop or an arrival minute. Campus uses the Cal Poly events listing for the Arab Music Ensemble Fall Concert at 7:30 p.m. tonight, and the Cal Poly Arts page for Las Migas at 7:30 p.m. Sunday at the Alex and Faye Spanos Theatre. Those ask whether the official page still lists that time. They do not use attendance or ticket counts. Club sports is a chip with no card. A weekend rugby note names Cal Poly against Sacramento State and gives no kickoff, venue, or official results page.
+
+`npm.cmd test` passed 111 tests across 16 files. `npm.cmd run typecheck` exited 0. Browser checks on http://localhost:3001 confirmed the Transit confirm path, both Campus forecasts, the empty Club sports message, Sports, Weather, Hackathon, and the unknown Music category. The mobile category row fits. No POST was sent. Nothing was pushed or deployed. The dev server remains on port 3001.

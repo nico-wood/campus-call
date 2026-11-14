@@ -1139,7 +1139,7 @@ a.outcome:hover {
   .topbar-inner { gap: var(--space-3); }
   .workspace-nav { margin-left: auto; gap: 0; }
   .workspace-nav a { padding-inline: var(--space-2); }
-  .categories { display: grid; grid-template-columns: 0.7fr 1fr 1fr 1fr 1.45fr; gap: var(--space-1); }
+  .categories { display: flex; flex-wrap: wrap; gap: var(--space-1); }
   .category { width: 100%; padding-inline: var(--space-1); font-size: var(--text-sm); }
   .example-layout { grid-template-columns: 1fr; }
   .example-market-content { grid-template-columns: 1fr; }
@@ -1153,7 +1153,7 @@ a.outcome:hover {
   .brand-name { font-size: var(--text-card); }
   .brand-mark { width: 28px; height: 28px; }
   .workspace .brand { font-size: var(--text-lg); }
-  .categories { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .categories { display: flex; flex-wrap: wrap; }
 }
 
 /* Closed registration and the private local waitlist. */

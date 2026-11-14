@@ -9,6 +9,9 @@ export function ForecastIcon({ category }: { category: ForecastCategory }) {
         {category === "Dining" ? <><path d="M5 3v6c0 3 6 3 6 0V3M8 3v18M18 3c-3 2-4 5-4 9h5M19 3v18" /></> : null}
         {category === "Hackathon" ? <><path d="m8 6-6 6 6 6m8-12 6 6-6 6M14 3l-4 18" /></> : null}
         {category === "Weather" ? <><circle cx="12" cy="12" r="3.5" /><path d="M12 3v2M12 19v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M3 12h2M19 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4" /></> : null}
+        {category === "Transit" ? <><rect x="4" y="5" width="16" height="11" rx="2" /><path d="M4 10.5h16M8 16v2.5M16 16v2.5" /></> : null}
+        {category === "Campus" ? <><path d="M4 20h16M6 20V10l6-5 6 5v10M10 20v-5h4v5" /></> : null}
+        {category === "Club sports" ? <><path d="M12 3.5 19 6.5v5.5c0 4.2-2.8 7-7 8.5-4.2-1.5-7-4.3-7-8.5V6.5L12 3.5z" /></> : null}
       </svg>
     </span>
   );
