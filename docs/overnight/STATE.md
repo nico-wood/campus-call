@@ -4,11 +4,11 @@ Chat history is not memory. The next agent reads this file, `LEAD-PROMPT.md`, an
 
 ## Now
 
-- Stage: program Mode A, round 0. Policy lens returned PASS 9.8, blocking 0, major 0, minor 2. The other three lenses are still running.
-- Base: `3038b15` for the resume file. Loop contract commit is `58d7c4e`.
+- Stage: program Mode A, round 0, not a pass. Policy 9.8 pass. Completeness 9.8 pass. Cut order 9.0 fail, 3 major. Architecture still running.
+- Base: `e1471a3`
 - Product code: not started
-- Policy result file: `.agent/research/cc-program-design-autoresearch/round-0-policy.md`
-- Next: when the other three graders return, compute the gate. On PASS, commit it, write a local brain handoff, set Stage to `CC-001 build`, and dispatch a fresh writer. On FAIL, patch the plan and start round 1 with four new graders. Do not start CC-001 before `GATE-RESULT.md` says PASS.
+- Result files: `.agent/research/cc-program-design-autoresearch/round-0-policy.md`, `round-0-cut-order.md`, `round-0-completeness.md`
+- Next: save the architecture lens when it returns. Then apply the acceptance edits in `round-0-cut-order.md` and start round 1 with four new graders. Do not start CC-001 on round 0.
 - Saves: commit every green stage. Local brain handoff after Mode A and after each EP. Do not push the repo or the brain during the night.
 
 ## Context

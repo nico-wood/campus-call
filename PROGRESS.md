@@ -104,6 +104,10 @@ Nico removed the chat-server tie-break. The participant guide is the schedule so
 
 A later agent looked for the session notes in `~/.claude/second-brain.md` and did not find them. The team brain is `C:/lec-brain`. This folder resumes as `vibe-coding-hackathon`. `AGENTS.md` now says that. The product spec was already on `main`. Docs only. Tests were not re-run. Nothing was posted or sent.
 
+## 2026-11-13 Mode A round 0, partial
+
+Policy scored 9.8 and completeness scored 9.8. Cut order scored 9.0 with 3 major findings, so this round cannot pass. Architecture was still running. Product code was not started. The three results are committed under `.agent/research/cc-program-design-autoresearch/`.
+
 ## 2026-11-13 Saves during the night
 
 Each green stage gets a Campus Call commit. Mode A and each EP also get a local brain handoff. Neither is pushed during the night. The policy lens of program Mode A returned 9.8 with no blocking or major findings. The other three lenses were still running. Docs only.
