@@ -79,3 +79,7 @@ Nico stated the team has permission to split its hackathon earnings, and that no
 ## 2026-11-13 No permit to ask
 
 Nico asked why a participant needs permission to use the event name or to run forecast questions. The live rule no longer treats either as a permit. A participant may say they are at this hackathon. A question opens when its source is named. It stays off when that source does not exist. The copy still must not say the clubs or the university operate Campus Call. The unsent organizer note's first two asks are withdrawn. Nothing was posted or sent.
+
+## 2026-11-13 Permission tests written, not run
+
+Seven pgTAP files are in `supabase/tests/`. They check that a normal user cannot write trades, credits, scores, resolutions, markets, or outcomes, and cannot read a draft market. Docker is not available, so `supabase test db` was not run. The migrations were not applied to a hosted database. The app build is still in progress and is not merged.
