@@ -47,8 +47,8 @@ Scored against `9c83c89`. Three lenses still running.
 
 | Dimension | Score | Blocking | Major | Minor | Gate |
 | --- | ---: | ---: | ---: | ---: | --- |
-| Policy and non-negotiables | pending | | | | |
+| Policy and non-negotiables | 9.8 | 0 | 0 | 2 | PASS |
 | Cut order and implementability | pending | | | | |
 | Completeness and consistency | 9.9 | 0 | 0 | 0 | PASS |
-| Architecture fidelity | pending | | | | |
+| Architecture fidelity | 9.8 | 0 | 0 | 1 | PASS |
 

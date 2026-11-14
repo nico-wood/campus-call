@@ -104,6 +104,10 @@ Nico removed the chat-server tie-break. The participant guide is the schedule so
 
 A later agent looked for the session notes in `~/.claude/second-brain.md` and did not find them. The team brain is `C:/lec-brain`. This folder resumes as `vibe-coding-hackathon`. `AGENTS.md` now says that. The product spec was already on `main`. Docs only. Tests were not re-run. Nothing was posted or sent.
 
+## 2026-11-14 Mode A round 3, policy and architecture
+
+Policy scored 9.8 and architecture scored 9.8. Neither had a blocking or major finding. Completeness had already passed at 9.9. Cut order was still running. The plan was not edited. Product code was not started.
+
 ## 2026-11-14 Mode A round 3, completeness
 
 Completeness scored 9.9 with no findings. Policy, architecture, and cut order were still running. The plan was not edited. Product code was not started.
