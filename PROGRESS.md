@@ -508,3 +508,5 @@ Graduation statistics, a professor of the month, and scholarship winners were no
 The verified email form now requires a phone number of 10 to 15 digits before it sends a code. The request body is still name, email, and the hackathon QR pair. The phone number is not stored, and no migration was added. A missing or short number does not call the server. The door still says it does not grant virtual credits. The device demo is unchanged.
 
 `npm.cmd test` passed 111 tests across 16 files. `npm.cmd run typecheck` exited 0. Browser checks on http://localhost:3001 covered the grouped basketball card, Sports without the weather question, empty Club sports, Confirm with no POST, the example chart scrub, the phone gate, and the mobile category scroll. Nothing was pushed or deployed. The dev server is on port 3001. Port 3000 is still the older server.
+
+Commit `618569e` records this flow. It was not pushed.
