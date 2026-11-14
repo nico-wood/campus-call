@@ -9,7 +9,10 @@ export const metadata: Metadata = {
 export default function PortfolioPage() {
   return (
     <Shell category="All" query="" place="portfolio">
-      <h2 className="list-heading">Your positions</h2>
+      <div className="page-intro">
+        <p className="eyebrow">Your portfolio</p>
+        <h1 className="list-heading">Your positions</h1>
+      </div>
       <p className="list-note">
         No positions yet. Example forecasts do not open a position or change virtual credits.
       </p>

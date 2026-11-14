@@ -11,7 +11,7 @@ export function ExampleConfirmButton() {
 
   return (
     <div className="confirm-panel">
-      <p id="example-confirm-note" className="confirm-note">
+      <p id="example-confirm-note" className="confirm-note" role="status" aria-live="polite" aria-atomic="true">
         {note}
       </p>
       <button

@@ -25,7 +25,7 @@ export function ExampleEventView({
             Forecasts
           </a>
         </p>
-        <h2 className="event-question">{example.question}</h2>
+        <h1 className="event-question">{example.question}</h1>
         <p className="example-label">Example</p>
         <p className="forecast-close">Closes {example.closeLabel}</p>
         <p className="written-note">We wrote this example. It is not a live forecast.</p>

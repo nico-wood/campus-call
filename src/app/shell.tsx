@@ -20,6 +20,7 @@ export function Shell({
 
   return (
     <div className="app">
+      <a className="skip-link" href="#main-content">Skip to content</a>
       <aside className="sidebar">
         <p className="sidebar-brand">
           <a href="/">Campus Call</a>
@@ -91,7 +92,7 @@ export function Shell({
             </form>
           </div>
         </header>
-        <main className="main frame">{children}</main>
+        <main id="main-content" className="main frame" tabIndex={-1}>{children}</main>
       </div>
     </div>
   );
