@@ -31,15 +31,16 @@ The folder is that repository. Do not run `git init` again. Do not add a second 
 
 ## Supabase
 
-One free project for this app, when Nico is logged in to the CLI. Not the LEC Group org, and not a TierraDex ref.
+Hosted project `campus-call` already exists in the Cal Poly org. Ref `vftrwyuvrewekoofkcpp`. Region `us-west-1`. API host `https://vftrwyuvrewekoofkcpp.supabase.co`. No migrations yet.
+
+The saved CLI login is the other org, "nwood-CalPoly's Org", which can only see the inactive AMS project. Link with a profile for the Cal Poly account:
 
 ```powershell
-npx --yes supabase login
-npx --yes supabase projects create campus-call --org-id <personal org> --region us-west-1
-npx --yes supabase link --project-ref <ref>
+npx --yes supabase login --name campus-call
+npx --yes supabase link --project-ref vftrwyuvrewekoofkcpp --profile campus-call --yes
 ```
 
-Do not pass a database password on the command line. Do not read a `.env` file to find a token. Do not apply migrations until a `TASKS.md` schema item is the active task and Nico has said to apply them in that session.
+Do not pass a database password on the command line. Do not read a `.env` file to find a token. Do not apply migrations until a `TASKS.md` schema item is the active task and Nico has said to apply them in that session. Do not link the AMS project.
 
 Local files live in `supabase/` after `supabase init`. They are not a hosted database.
 
