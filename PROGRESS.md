@@ -104,6 +104,10 @@ Nico removed the chat-server tie-break. The participant guide is the schedule so
 
 A later agent looked for the session notes in `~/.claude/second-brain.md` and did not find them. The team brain is `C:/lec-brain`. This folder resumes as `vibe-coding-hackathon`. `AGENTS.md` now says that. The product spec was already on `main`. Docs only. Tests were not re-run. Nothing was posted or sent.
 
+## 2026-11-14 CC-004 awaiting Mode B
+
+QR enrollment and explicit demo mode are commit `fcbb9ea`. Tests, lint, typecheck, and the Next build passed in that step: 52 tests. Mode B round 0 is the next score. The EP is not accepted. CC-005 has not started.
+
 ## 2026-11-14 CC-003 accepted
 
 Mode C round 0 passed. Weighted 9.70. Every dimension is at least 9.6. No blocking or major findings. One minor stays: on desktop the closed-door stack sits in the left of the filled panel. Mode B had already passed at 9.925. CC-003 is accepted. The QR parent in TASKS.md is checked. CC-004 is next. The local brain handoff is still due. Nothing was pushed.
