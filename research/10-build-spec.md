@@ -29,7 +29,7 @@ Four tickets. Each confirms on its own. Picks lock Sunday 15 November 2026 at 12
 3. **Startup Launch Award.** One team. Its own credit amount. Cal Poly Entrepreneurs. A real customer, a reason current options fail, and proof of demand from this weekend.
 4. **Best Use of AI.** One team. Its own credit amount. Cal Poly Vibe Coding. The product stops working if the AI is removed.
 
-A team may enter at most one challenge. A challenge ticket lists only teams who entered it. Before that fact exists, the ticket says entry is not in yet. Confirming the ranking does not spend credits on a challenge.
+A team may enter at most one challenge. A challenge ticket lists only teams who entered it. Before that fact exists, the ticket says entry is not in yet. An admin may record a sourced entry before Sunday noon, and that record is enough to list the team. The noon form is the last official statement of the pick, not the first moment the ticket can open. Confirms still refuse at 2026-11-15T20:00:00Z. With no sourced entrant, confirm writes nothing. Confirming the ranking does not spend credits on a challenge.
 
 Main-prize chances add up to 100% across every team. Each challenge's chances add up to 100% across the teams who entered it. The percentage is Campus Call's read. It is not the judges' score.
 
@@ -45,7 +45,7 @@ Each card shows the project, whether the live link runs, a feasibility read, a b
 
 ## Admin demo
 
-The Chick-fil-A line is an admin-only ticket for demo day. A participant never spends credits on it. An admin can put credits on it so the room can see a campus question work. Everyone else sees that card as a preview, and the confirm does nothing. The other campus cards stay previews.
+The Chick-fil-A line is an admin-only ticket for demo day. A participant never spends credits on it. An admin can put credits on it so the room can see a campus question work. Those credits are a separate server-side demo balance, not the participant's 1,000, and this confirm is not frozen by the Sunday noon pick lock. Only a verified email on a server-held allowlist may spend them. The test-mode admin header and any client flag are not admin. Everyone else sees that card as a preview, and the confirm writes nothing. The other campus cards stay previews.
 
 ## Prize
 
@@ -53,7 +53,7 @@ If this team wins nothing, the cash pool is $0. If it wins, the pool is 50% of w
 
 The guide's published prizes are 1st $4,000, 2nd $2,000, 3rd $1,000, and $1,000 for each of the three challenges. Cash is split evenly across the winning team. Each winner fills out a W-9. On a $4,000 first place the pool is $2,000 and the builders keep $2,000. On first place plus one challenge the pool is $2,500 and the builders keep $2,500.
 
-Pay 10 skill ranks. Rank k gets weight `0.85^(k-1)` over the sum of the ten weights. Round to the nearest dollar, then largest remainder so the checks sum to the pool. On the $2,000 pool: $374, $317, $270, $229, $195, $166, $141, $120, $102, $86. Ties split the combined cash of the ranks they occupy. No drawing. Empty ranks are not rescaled. Unawarded dollars stay with the builders.
+Pay 10 skill ranks. Rank k gets weight `0.85^(k-1)` over the sum of the ten weights. Allocate whole dollars by Hamilton largest remainder: floor each raw weight share, then give each leftover dollar to the largest fractional part, breaking equal fractions by better rank. Do not stop at round-half-up. The $2,000 list below is the fixture. On the $2,000 pool: $374, $317, $270, $229, $195, $166, $141, $120, $102, $86. Ties split the combined cash of the ranks they occupy. No drawing. Empty ranks are not rescaled. Unawarded dollars stay with the builders.
 
 This is not tax advice. The team pays tax on the prize it receives, then gives the pool. A person who receives a cash award can owe tax on it even when no form is sent. Do not call the award tax-free. Say that line in the same breath as the dollars.
 

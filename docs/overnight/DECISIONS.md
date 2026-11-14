@@ -8,6 +8,8 @@ Build the full local flow first; then connect verified Supabase email sign-in an
 
 Real confirmations use server-validated identity, per-account database serialization, a transaction covering position and debit, and a unique request key. The existing ledger's aggregate balance trigger alone does not serialize concurrent spends. Test two concurrent spends whose combined amount exceeds balance. Real grants require verified identity plus name and QR context, enforced once by database constraint. Server checks lock, challenge eligibility and admin privileges.
 
+Chick-fil-A is not a fifth forecast ticket and does not debit the one persistent participant balance. Seed the allowlisted admin with 1,000 labeled demo credits, ineligible for rank and cash. Device-local demo mode cannot spend that balance. Signing in never copies device-local positions or balances into the persistent ledger or into demo credits. Example confirms write nothing.
+
 ## Confirmation scope
 
 V1 permits one confirmed position per ticket, four in total. Positive whole virtual-credit amounts only. No edits, top-ups, cancellations or refunds in v1. Duplicate submission returns the existing confirmation without another debit. Same team can occupy multiple main placements and other tickets. Communicate finality before confirm. If the lead changes this default, specify revision and scoring semantics before coding.
@@ -16,7 +18,7 @@ V1 permits one confirmed position per ticket, four in total. Positive whole virt
 
 Use integer score units to avoid float ties: one unit per exactly correct main-prize place, three units per correctly chosen challenge winner, maximum twelve units. Display points as `100 * units / 12`. Thus main prize and each challenge carry 25 points. Unconfirmed tickets contribute zero. Credits spent do not affect points. Duplicate team predictions are assessed independently per official place.
 
-Equal units share rank; no timestamp or spending tiebreak. For a tie spanning multiple places, combine the geometric cash bands for the places occupied and split evenly; only bands 1–10 contribute. Empty bands stay unawarded. Use integer money units for allocation and deterministic remainder handling; apply the locked spec's whole-dollar band allocation before tie splitting. Document any sub-dollar tie distribution explicitly in the rules before enabling allocations.
+Equal units share rank; no timestamp or spending tiebreak. For a tie spanning multiple places, combine the geometric cash bands for the places occupied and split evenly; only bands 1–10 contribute. Empty bands stay unawarded. Use integer money units for allocation and deterministic remainder handling; apply the locked spec's whole-dollar band allocation before tie splitting. That allocation is Hamilton largest remainder, checked against the spec's $2,000 list, not round-half-up. Document any sub-dollar tie distribution explicitly in the rules before enabling allocations.
 
 Admin records source-linked official results. Missing or ambiguous results remain unresolved. Partial points are provisional; no final rank or allocation until all four award results are confirmed. This is a demo scoring rule, not a validated assessment of general forecasting ability.
 
@@ -24,7 +26,7 @@ Admin records source-linked official results. Missing or ambiguous results remai
 
 Use a deterministic, explicitly uncalibrated rubric heuristic. For each eligible team, use a complete evidence-backed rubric total `r` in 0–100, otherwise a neutral prior input 50. Weight is `exp((r - 50) / 25)`; divide by total weights for that award. The prior is a calculation input, never a fabricated displayed grade. Incomplete cards show Not assessed and Prior estimate—evidence incomplete. All-unassessed rosters produce equal estimates.
 
-Use only the sourced roster and confirmed challenge entrants. With no entrants show Entry is not in yet. A partial roster means provisional estimates for listed teams, clearly labeled. Allocate displayed rounding by largest remainder so populated distributions total 100%. Store formula version, evidence timestamps and input version; recompute on sourced updates. Label Campus Call estimate and explain that this is not the judges' score. Spending credits does not change these estimates.
+Use only the sourced roster and confirmed challenge entrants. With no entrants show Entry is not in yet. Confirmed entrant means a team an admin has source-recorded for that challenge, including a pre-noon declaration. It does not mean the noon form has already closed. A partial roster means provisional estimates for listed teams, clearly labeled. Allocate displayed rounding by largest remainder so populated distributions total 100%. Store formula version, evidence timestamps and input version; recompute on sourced updates. Label Campus Call estimate and explain that this is not the judges' score. Spending credits does not change these estimates.
 
 ## Evidence and updates
 

@@ -104,6 +104,10 @@ Nico removed the chat-server tie-break. The participant guide is the schedule so
 
 A later agent looked for the session notes in `~/.claude/second-brain.md` and did not find them. The team brain is `C:/lec-brain`. This folder resumes as `vibe-coding-hackathon`. `AGENTS.md` now says that. The product spec was already on `main`. Docs only. Tests were not re-run. Nothing was posted or sent.
 
+## 2026-11-13 Mode A round 0 fail
+
+All four lenses returned. Weighted score 9.45. Five major findings, no blocking findings. The plan now says Chick-fil-A debits a separate allowlisted demo balance, a sourced pre-noon entry can open a challenge ticket, prize dollars use Hamilton largest remainder, and the CC-005 through CC-017 checks can fail. Product code was not started. Round 1 grades the patched plan.
+
 ## 2026-11-13 Mode A round 0, partial
 
 Policy scored 9.8 and completeness scored 9.8. Cut order scored 9.0 with 3 major findings, so this round cannot pass. Architecture was still running. Product code was not started. The three results are committed under `.agent/research/cc-program-design-autoresearch/`.
