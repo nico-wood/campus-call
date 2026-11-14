@@ -104,6 +104,10 @@ Nico removed the chat-server tie-break. The participant guide is the schedule so
 
 A later agent looked for the session notes in `~/.claude/second-brain.md` and did not find them. The team brain is `C:/lec-brain`. This folder resumes as `vibe-coding-hackathon`. `AGENTS.md` now says that. The product spec was already on `main`. Docs only. Tests were not re-run. Nothing was posted or sent.
 
+## 2026-11-14 CC-001 Mode C round 0 fail
+
+The pixel score was 9.43. The category row and the empty card did not share one column, and the lower screen was bare black. The shell now uses one inset, the search fills the header, and the empty region fills the column. Tests passed, 35 of 35. New captures are in `.agent/research/ui-pixel/home/`. Round 1 is next. The EP is not accepted.
+
 ## 2026-11-14 CC-001 Mode B pass
 
 UI code scored 9.8. With correctness 10.0, security 10.0, and cut completeness 9.8, the weighted score is 9.9. No blocking or major findings. Two minors stay. The EP is not accepted until Mode C passes. Product commit remains `41cb9d9`.
