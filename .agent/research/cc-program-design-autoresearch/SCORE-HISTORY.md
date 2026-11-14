@@ -22,7 +22,9 @@ Scored against the patched plan at `13e937e`. Three lenses still running.
 | Dimension | Score | Blocking | Major | Minor | Gate |
 | --- | ---: | ---: | ---: | ---: | --- |
 | Policy and non-negotiables | 9.8 | 0 | 0 | 2 | PASS |
-| Cut order and implementability | pending | | | | |
+| Cut order and implementability | 9.4 | 0 | 1 | 2 | FAIL |
+
+Weighted: 9.725. Blocking: 0. Major: 1. Status: FAIL. Below 9.75, and cut order is under 9.7. No `GATE-RESULT.md`. Round 2 grades the CC-006, CC-016, and CC-017 wording fixes. Do not start CC-001.
 | Completeness and consistency | 9.9 | 0 | 0 | 0 | PASS |
 | Architecture fidelity | 9.8 | 0 | 0 | 1 | PASS |
 

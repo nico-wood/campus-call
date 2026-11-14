@@ -104,6 +104,10 @@ Nico removed the chat-server tie-break. The participant guide is the schedule so
 
 A later agent looked for the session notes in `~/.claude/second-brain.md` and did not find them. The team brain is `C:/lec-brain`. This folder resumes as `vibe-coding-hackathon`. `AGENTS.md` now says that. The product spec was already on `main`. Docs only. Tests were not re-run. Nothing was posted or sent.
 
+## 2026-11-13 Mode A round 1 fail
+
+All four lenses returned. Weighted score 9.725. Cut order scored 9.4 with one major finding: the lock check did not say a confirm at or after Sunday noon writes nothing. CC-006, CC-016, and CC-017 now say what a pass and a fail look like. Product code was not started. Round 2 grades those three cells.
+
 ## 2026-11-13 Mode A round 1, completeness
 
 Completeness scored 9.9 with no findings. Cut order was still running. The plan was not edited. Product code was not started.

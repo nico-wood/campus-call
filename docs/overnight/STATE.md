@@ -4,14 +4,11 @@ Chat history is not memory. The next agent reads this file, `LEAD-PROMPT.md`, an
 
 ## Now
 
-- Stage: program Mode A, round 1 in progress. Policy PASS 9.8. Architecture PASS 9.8. Completeness PASS 9.9. Cut order is still running. Do not start CC-001 before that lens and the weighted gate.
-- Lenses: policy 9.8, cut order 9.0, completeness 9.8, architecture 9.2.
-- Base: `13e937e`
-- Round 1 graders are running. Do not start another round 1 panel.
+- Stage: program Mode A, round 1 FAIL, round 2 not scored yet. Policy 9.8, architecture 9.8, completeness 9.9, cut order 9.4. Weighted 9.725. Major 1. Blocking 0.
 - Product code: not started
-- Result files: `.agent/research/cc-program-design-autoresearch/round-0-*.md` and `SCORE-HISTORY.md`
-- Patches applied in `research/10-build-spec.md`, `docs/overnight/DECISIONS.md`, and `docs/overnight/EP-PLAN.md` for the Chick-fil-A ledger, pre-noon entrants, Hamilton dollars, and the falsifiable acceptance lines.
-- Next: four new round-1 graders on the patched plan. Do not start CC-001 until `GATE-RESULT.md` says PASS.
+- Result files: `.agent/research/cc-program-design-autoresearch/round-1-*.md` and `SCORE-HISTORY.md`
+- CC-006, CC-016, and CC-017 were patched after round 1. Round 2 grades that patch only. Do not start another round 2 panel.
+- Next: four round-2 graders. Do not start CC-001 until `GATE-RESULT.md` says PASS.
 - Saves: commit every green stage. Local brain handoff after Mode A and after each EP. Do not push the repo or the brain during the night.
 
 ## Context
