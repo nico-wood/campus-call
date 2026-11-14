@@ -10,6 +10,16 @@ Real confirmations use server-validated identity, per-account database serializa
 
 Chick-fil-A is not a fifth forecast ticket and does not debit the one persistent participant balance. Seed the allowlisted admin with 1,000 labeled demo credits, ineligible for rank and cash. Device-local demo mode cannot spend that balance. Signing in never copies device-local positions or balances into the persistent ledger or into demo credits. Example confirms write nothing.
 
+## QR enrollment (CC-004)
+
+14 November 2026, recorded before the CC-004 code. The enrollment form renders only when the hackathon door has the staged pair `entry=qr` and `event=hackathon`. A partial or unknown query does not render it and is not copied into links. Home and the example routes never render it.
+
+A name is trimmed, internal whitespace is collapsed, and the result must be 1 to 80 characters with no control characters. An email is trimmed and lowercased. It must be one local part, one `@`, and a dotted domain whose last label is at least two letters. Empty names, blank emails, and malformed emails do not create a session.
+
+Demo mode starts only when the explicit demo action calls the device-demo module after that validation. The module is pure and takes a store argument, so tests call it without a browser. The record stays on this device, is labeled Demo, is not a verified account, and does not grant virtual credits. Entering an email is not verified ownership. The record is not copied into the ledger. The persistent 1,000 grant stays in CC-005. This step adds no database and no migration.
+
+Live mode returns only for a server-issued session object held in server memory. A serialized copy, a test callback, a query flag, a request header, and a client boolean do not qualify. The live resolver never reads device storage. A missing verified session stays absent. It does not become demo. The client enrollment component does not import the live-session module.
+
 ## Confirmation scope
 
 V1 permits one confirmed position per ticket, four in total. Positive whole virtual-credit amounts only. No edits, top-ups, cancellations or refunds in v1. Duplicate submission returns the existing confirmation without another debit. Same team can occupy multiple main placements and other tickets. Communicate finality before confirm. If the lead changes this default, specify revision and scoring semantics before coding.

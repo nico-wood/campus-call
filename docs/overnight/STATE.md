@@ -4,9 +4,9 @@ Chat history is not memory. The next agent reads this file, `LEAD-PROMPT.md`, an
 
 ## Now
 
-- Stage: CC-003 accepted. Mode C PASS weighted 9.70. The QR parent is checked. CC-004 implementation is next. Do not start CC-005. Do not start Mode B until CC-004 tests pass and that implementation is committed. A second writer must not start.
-- Log: `logs/CC-003.md`. Status: accepted. Mode C gate: `.agent/research/ui-pixel/hackathon/GATE-RESULT.md`.
-- Scored plan commit: `9c83c89`. Implementation base: `fa65b7a`. Product: `3c88f89`. Panel: `4fe06d8`.
+- Stage: CC-004 implemented, awaiting Mode B. Do not start CC-005. Do not accept CC-004. A second writer must not start.
+- Log: `logs/CC-004.md`. Status: implemented, awaiting Mode B. Mode B has not started. Mode C has not started. The QR door screen changed, so Mode C applies only after Mode B passes.
+- Scored plan commit: `9c83c89`. CC-004 base: `2421902`. CC-003 product: `3c88f89`. Panel: `4fe06d8`.
 - Saves: commit every green stage. The local brain handoff for Mode A and for CC-001, CC-002, and CC-003 is still due. Do not push the repo or the brain. If the brain write stops, continue from this file.
 
 ## Context

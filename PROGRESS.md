@@ -253,3 +253,9 @@ Home lists example forecasts we wrote. Each card shows a question, a close, an E
 `/hackathon?entry=qr&event=hackathon` opens the hackathon event only. Refresh renders that same event. The page does not render Home and does not show the example cards. Staged entry context stays on the market-probability link and on the return to the event. Entry is not open yet. The page does not grant virtual credits, write a ledger, or show the four tickets. Home still lists the example cards.
 
 `npm test` exited 0 (44 passed, 8 files). `npm run lint` exited 0. `npm run typecheck` exited 0. `npm run build` exited 0. `scripts/score.ps1` was not the pass check. No `.env` file was read. Nothing was pushed. Mode B has not started. A second writer must not start.
+
+## 2026-11-14 CC-004 QR enrollment
+
+The hackathon QR door collects a name and an email only when `entry=qr` and `event=hackathon`. An empty name, a blank email, or a malformed email does not create a session. Demo starts only from Start demo, is labeled Demo, and stays on this device. The copy says it is not a verified account, does not grant virtual credits, and that entering an email is not verified ownership. Home and the example routes do not render the form. Opening the door still returns granted 0 and wrote false. Live mode returns only for a server-issued session. A test callback, a query flag, a request header, a client boolean, or a copied session cannot reach it. A missing verified session does not become demo. No database, migration, or ledger credit was added. The One balance row in TASKS.md is still open. CC-005 was not started.
+
+`npm test` exited 0 (52 passed, 9 files). `npm run lint` exited 0. `npm run typecheck` exited 0. `npm run build` exited 0. `scripts/score.ps1` was not the pass check. No `.env` file was read. Nothing was pushed. Mode B is next. The EP is not accepted. A second writer must not start.

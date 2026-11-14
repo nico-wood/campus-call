@@ -4,6 +4,7 @@ import {
   type DoorSection,
   type StagedEntry,
 } from "./hackathon-entry";
+import { QrEnrollment } from "./qr-enrollment";
 
 export function HackathonEventView({
   entry,
@@ -44,6 +45,7 @@ export function HackathonEventView({
           <p className="written-note">
             This is the hackathon event. It does not grant virtual credits.
           </p>
+          {entry ? <QrEnrollment /> : null}
           {section === "forecast" ? (
             <section className="probability" aria-labelledby={probabilityId}>
               <h3 id={probabilityId} className="probability-caption">
