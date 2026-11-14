@@ -58,4 +58,8 @@ No product code changed. Tests were not re-run. Phase B was not started. Nothing
 
 Nico said go on Phase B. `src/lib/ai/generate-markets.ts` drafts one campus market from an allowed announcement, or rejects with the banned class id. It does not call the network and does not insert a row. `npx vitest run evals` passed, 10 / 10. No Discord, GitHub, Reddit, professor-rating, or sports crawl was added. The market shape stays LMSR.
 
-`src/lib/lmsr.ts`, `brier.ts`, `scoring.ts`, and `ledger.ts` now implement the harness. `npm test` passed, 33 / 33. `npm run typecheck` was clean in the worker that wrote them. The SQL migrations were still in progress.
+`src/lib/lmsr.ts`, `brier.ts`, `scoring.ts`, and `ledger.ts` now implement the harness. `npm test` passed, 33 / 33. `npm run typecheck` passed on that tree.
+
+## 2026-11-13 Phase B: SQL migrations, not applied
+
+Four files are in `supabase/migrations/`. RLS is on for profiles, markets, outcomes, trades, credit_ledger, scores, and resolutions. Anon and authenticated have no write policy on those server tables. Profiles can be selected by the owner, and authenticated can update only display_name. The seed has 15 markets. Markets 1 and 2 are open and each has a house subsidy of 69.31471805599453 virtual credits. Markets 3 through 15 are drafts. The files were read and not applied to a hosted database. No `.env` was read.

@@ -17,10 +17,10 @@ Product decisions locked in `research/00-summary.md`:
 
 - [x] 3e: Phase A eval harness (score script, failing unit/e2e/AI specs, banned-topic checker)
 - [x] 3b: Implement src/lib/lmsr.ts, src/lib/brier.ts, src/lib/scoring.ts, and src/lib/ledger.ts so npm test passes. Do not change test assertions. Messages must include "insufficient credits" and "already resolved" where the ledger tests require them.
-- [ ] 3a: Add a SQL migration for profiles, markets, and outcomes. Enable RLS and deny writes from anon and authenticated. No real-money columns. Profiles store a display handle, not a legal name.
-- [ ] 3a: Add a SQL migration for trades and credit_ledger. Ledger writes are server-only. A balance is the sum of ledger amounts. The house account id is house. New users receive 1000 virtual credits once.
-- [ ] 3a: Add a SQL migration for scores and resolutions. One resolution per market. Store per-market points, Brier, and the pre-trade YES probability. Virtual-credit profit is redeemed credits minus credits spent.
-- [ ] 3a: Seed the 15 launch markets from research/00-summary.md. b = 100. Starting market probability equal across outcomes. Markets 1 and 2 (KSBP) are open. Markets 3–15 are drafts and reject trades until a human publishes them. Close times are the ones in that memo.
+- [x] 3a: Add a SQL migration for profiles, markets, and outcomes. Enable RLS and deny writes from anon and authenticated. No real-money columns. Profiles store a display handle, not a legal name.
+- [x] 3a: Add a SQL migration for trades and credit_ledger. Ledger writes are server-only. A balance is the sum of ledger amounts. The house account id is house. New users receive 1000 virtual credits once.
+- [x] 3a: Add a SQL migration for scores and resolutions. One resolution per market. Store per-market points, Brier, and the pre-trade YES probability. Virtual-credit profit is redeemed credits minus credits spent.
+- [x] 3a: Seed the 15 launch markets from research/00-summary.md. b = 100. Starting market probability equal across outcomes. Markets 1 and 2 (KSBP) are open. Markets 3–15 are drafts and reject trades until a human publishes them. Close times are the ones in that memo.
 - [ ] 3b: Add POST /api/quote. Return the LMSR cost and the post-trade YES probability. Do not write.
 - [ ] 3b: Add POST /api/trade. Debit virtual credits, append a trade at the pre-trade YES probability, and reject an overspend without writing. Reject trades on drafts, after close, and from Nico, Sophie, a flagged organizer or judge, or a user on the team that market is about.
 - [ ] 3b: Add GET /api/portfolio with balance, positions, points, mean Brier, resolved count, and virtual-credit profit.
