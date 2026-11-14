@@ -223,3 +223,9 @@ Added the Next.js App Router foundation and the responsive home shell. The top b
 Home lists example forecasts we wrote. Each card shows a question, a close, an Example label, and the leading outcomes with market probabilities. The shapes are yes/no, higher/lower, and earlier/later. All, Sports, Music, Dining, and Hackathon filter the list, and a search or an unknown category can empty it. The category and the search text are in the URL. Tapping a percentage opens `/examples/[id]`. Confirm is visible and does not write, debit, or send a request. `src/lib` was not moved. TASKS.md was not checked off.
 
 `npm test` exited 0 (40 passed, 7 files). `npm run lint` exited 0. `npm run typecheck` exited 0. `npm run build` exited 0. `scripts/score.ps1` was not the pass check. No `.env` file was read. Nothing was pushed. Mode B has not started. A second writer must not start.
+
+## 2026-11-14 CC-003 hackathon QR door
+
+`/hackathon?entry=qr&event=hackathon` opens the hackathon event only. Refresh renders that same event. The page does not render Home and does not show the example cards. Staged entry context stays on the market-probability link and on the return to the event. Entry is not open yet. The page does not grant virtual credits, write a ledger, or show the four tickets. Home still lists the example cards.
+
+`npm test` exited 0 (44 passed, 8 files). `npm run lint` exited 0. `npm run typecheck` exited 0. `npm run build` exited 0. `scripts/score.ps1` was not the pass check. No `.env` file was read. Nothing was pushed. Mode B has not started. A second writer must not start.
