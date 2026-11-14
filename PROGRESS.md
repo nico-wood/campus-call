@@ -75,3 +75,7 @@ Sophie agreed to give 50% of what the team actually receives to the top 10 forec
 ## 2026-11-13 Permission to split, no lawyer
 
 Nico stated the team has permission to split its hackathon earnings, and that no lawyer is required. The folder does not contain that permission. Sophie had already agreed to 50% for the top 10. The team may say that plan. The default sentence at the table is still the question, free, one position. The team pays tax on the prize it receives, then gives the pool. A person who receives a cash award can still owe tax on it. This is not tax advice. Do not call the award tax-free. The organizer draft's split question is closed and was not sent. Hackathon-market permission and the event-name question are still open. Nothing was posted or sent.
+
+## 2026-11-13 No permit to ask
+
+Nico asked why a participant needs permission to use the event name or to run forecast questions. The live rule no longer treats either as a permit. A participant may say they are at this hackathon. A question opens when its source is named. It stays off when that source does not exist. The copy still must not say the clubs or the university operate Campus Call. The unsent organizer note's first two asks are withdrawn. Nothing was posted or sent.

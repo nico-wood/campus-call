@@ -14,7 +14,7 @@ Words never to say: bet, wager, odds, payout.
 Rubric this document is built to cover:
 
 - Execution & design (25) — deployed board, a QR to one market, the question and two priced buttons first, a human confirm
-- Real problem/real user (25) — this weekend’s forecasters, on screen. The board is the hackathon. Thirteen questions stay drafts until organizers say yes. Two airport questions are only the standby.
+- Real problem/real user (25) — this weekend’s forecasters, on screen. The board is the hackathon. Hackathon questions open when the source is named. They do not need a permit. Two airport questions are only the standby.
 - Path to customers (20) — students do not pay. An org would pay for the board. No price, no logo, no contract. No sports line on stage.
 - Pitch & demo (15) — 4:00 script, 1:55 video. Markets still open close Sunday 15 November 2026 at 11:30 a.m. PT.
 - Creative use of AI (15) — draft from text already in hand, explain a move from the position log, suggest a resolution. A human confirms. The model does not read Discord, GitHub, Reddit, Polyratings, or Rate My Professors.
@@ -45,7 +45,7 @@ Real people used it this weekend. On screen: {{live_forecasters}} forecasters. {
 
 If a number is not on the screen, I will not say it.
 
-The weekend board is the hackathon. Thirteen questions are drafts until organizers say yes. I will not say they said yes.
+The weekend board is the hackathon. A question opens when its source is named. We do not need a permit to ask. We will not say the clubs or the university run the board.
 
 ### 1:02–1:28 — Nico
 
@@ -155,7 +155,7 @@ Six likely questions. Each answer is about 20 seconds. This set hits every rubri
 
 **Judge:** Who used this this weekend?
 
-**Answer:** People here, on this campus, since Friday, if the screen says so. The board shows {{live_forecasters}} forecasters and {{live_positions}} positions. One handle on a live market is {{live_forecaster_handle}}. We do not have a quote, and we will not borrow one. If that count is not on the screen, we do not have the proof yet. The weekend board is the hackathon. Thirteen questions are drafts until organizers say yes. The two airport questions are only the standby so the board is not empty. The room card should switch to a hackathon question when one can open. We will not say organizers agreed. The note was not sent.
+**Answer:** People here, on this campus, since Friday, if the screen says so. The board shows {{live_forecasters}} forecasters and {{live_positions}} positions. One handle on a live market is {{live_forecaster_handle}}. We do not have a quote, and we will not borrow one. If that count is not on the screen, we do not have the proof yet. The weekend board is the hackathon. A question opens when its source is named. It does not need a permit. The two airport questions are only the standby so the board is not empty. The room card should switch to a hackathon question when one can open. We will not say the clubs or the university run the board. The note was not sent.
 
 ### Q3 — Real problem/real user (25), the proof
 
@@ -193,7 +193,7 @@ The public recognition is a badge and a certificate. Virtual credits are not the
 
 A person who opened the board this weekend and took a position on a public question. The proof is the app, not a story: {{live_forecasters}} forecasters, {{live_positions}} positions, including {{live_forecaster_handle}} on {{live_market_title}}. We will not invent users to fill a quiet board. Display handles only. No legal names.
 
-The weekend board is the hackathon. Thirteen questions are drafts until organizers say yes. The two airport questions are only the standby so the board is not empty. The room card should switch to a hackathon question when one can open. Do not say the organizer note was sent. It was not.
+The weekend board is the hackathon. A question opens when its source is named. It does not need a permit. The two airport questions are only the standby so the board is not empty. The room card should switch to a hackathon question when one can open. Do not say the clubs or the university run the board. Do not say the organizer note was sent. It was not.
 
 Under 18 can read the question. The 18 or older checkbox is required before a position is stored. A session that never confirms does not get a prize rank. That is our rule. It is not the event’s age rule.
 
@@ -263,7 +263,7 @@ Record Sunday morning, after the placeholders are filled from the live app. If a
 | --- | --- | --- | --- |
 | 0:00–0:06 | Sophie, then a title card | The tagline in large type | The wisdom of the crowd, quantified. |
 | 0:06–0:16 | Text already in hand. Not a feed. | {{live_source_label}} | The model drafts from text we already have. It does not read a feed. |
-| 0:16–0:28 | Slow pan of the live home board | {{live_forecasters}} forecasters, {{live_positions}} positions, {{live_open_markets}} open, {{live_resolved_markets}} resolved | These forecasts are from this weekend. Count them on the screen. Thirteen hackathon questions stay drafts until organizers say yes. |
+| 0:16–0:28 | Slow pan of the live home board | {{live_forecasters}} forecasters, {{live_positions}} positions, {{live_open_markets}} open, {{live_resolved_markets}} resolved | These forecasts are from this weekend. Count them on the screen. A hackathon question is on the board when its source is named. |
 | 0:28–0:40 | A QR opens one market | The question, then two buttons, {{live_yes_credit_cost}} and {{live_no_credit_cost}} if they are on screen | The question and two priced buttons are first. The price is virtual credits, not cash. |
 | 0:40–0:52 | The sheet, then the return | A handle, an 18 or older checkbox, Google or a magic link, then the new probability | The position is placed when they return. |
 | 0:52–1:04 | One market, then one position | {{live_market_title}}, probability {{live_market_probability}}, handle {{live_forecaster_handle}}, {{live_position_size}} points toward {{live_position_side}} | One public question. Not a person. Not a grade. Not an exam. If this is an airport question, it is only the standby. |
@@ -339,6 +339,6 @@ Do not fill a placeholder with $45, a TAM, a sports line, or a prize amount.
 5. Is there a market we can confirm on stage without forcing a result? If not, we walk {{live_resolved_example}} and we do not pretend to resolve one.
 6. Are any live markets about a person, a grade, an exam, a named student, or a call one person controls? Pull them before the demo.
 7. Is {{preview_url}} a real preview deploy judges can open, and does the UI avoid the forbidden words? Do not run a production deploy to find out.
-8. Have organizers said yes to any of the thirteen hackathon questions? If not, they stay drafts. The note was not sent. Do not say it was. The room card stays on an airport question until a hackathon question can open.
+8. Which hackathon questions have a named source? Those can open. A question with no source stays off. No permit is required. The room card stays on an airport question until a hackathon question can open. Do not say the clubs or the university run the board.
 9. Is Google sign-in working before doors? If not, the sheet is the handle, the 18 or older checkbox, and email.
 10. Closed for the prize split. Sophie agreed. Nico stated the team has permission to split earnings and that no lawyer is required. The folder does not contain that permission. A tax advisor has not reviewed the award. Do not describe it as tax-free.

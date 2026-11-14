@@ -10,7 +10,9 @@ This is a product decision, not legal advice. The regulation memo is `research/0
 
 **What opens tonight without CPVC.** Two airport markets. They resolve from the NWS CF6 for San Luis Obispo County Airport (KSBP), not from the quad. Details and the CF6 URL are in `research/01-use-cases.md`.
 
-**What stays a draft until organizers reply.** The 13 hackathon markets below. Category markets, attendance, and submission brackets stay off the list until organizers freeze categories, a threshold, or bracket edges. Athletics markets stay off until Athletics compliance says yes. Dining open/closed stays off because the operator can set the result. Academic aggregates stay off. Agent 2 treats a class average as a FERPA problem, and no public attendance series was found.
+**No permit to ask.** Nico is right that a participant does not need permission to say they are at this hackathon, and does not need permission to forecast a public result. The conduct line is narrower: do not say Cal Poly, the CSU, CPVC, Orfalea, or the Entrepreneurship Club operates or endorses Campus Call. Saying the event's own name, and saying this team is in it, is not that claim. Quote both club names when describing who runs the event. Those names are on the calendar and the registration page.
+
+A hackathon question opens when its resolving source is named and the result is not already known. It does not open because an organizer granted a license to ask. It stays off when the source does not exist. Market 7 stays off until organizers publish the integer. Markets 3, 4, and 5 stay off if Friday 8:15 p.m. PT has passed. Category markets, attendance, and submission brackets stay off until a category list, a threshold, or bracket edges exist. Athletics markets stay off until Athletics compliance says yes. Dining open/closed stays off because the operator can set the result. Academic aggregates stay off. Agent 2 treats a class average as a FERPA problem, and no public attendance series was found.
 
 **The 15 launch markets.** Starting probability is equal on every market (`1/n`). No base rate. This club's homepage calls it their first hackathon.
 
@@ -91,7 +93,7 @@ The folder is a git repository on `main`, remote https://github.com/nico-wood/ca
 
 ## 4. Organizer message draft
 
-Do not send this. Item 3 is closed. Nico stated on 13 November 2026 that the team has permission to split its earnings and that no lawyer is required. This folder does not contain that permission. Items 1 and 2 are still open if the team wants hackathon questions or the event name. They have not been sent.
+Do not send this. Item 3 is closed by Nico's statement on the split. Items 1 and 2 are withdrawn. A participant may say they are at this hackathon. A forecast does not need a permit. A question still needs a named source, and the copy still must not say the clubs or the university operate Campus Call.
 
 ---
 
