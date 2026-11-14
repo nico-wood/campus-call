@@ -8,8 +8,8 @@ Product commit `41cb9d9`. Three lenses still running.
 
 | Dimension | Score | Blocking | Major | Minor | Gate |
 | --- | ---: | ---: | ---: | ---: | --- |
-| Correctness | pending | | | | |
+| Correctness | 10.0 | 0 | 0 | 0 | PASS |
 | Security | 10.0 | 0 | 0 | 0 | PASS |
-| Cut completeness and tests | pending | | | | |
+| Cut completeness and tests | 9.8 | 0 | 0 | 1 | PASS |
 | UI code | pending | | | | |
 
