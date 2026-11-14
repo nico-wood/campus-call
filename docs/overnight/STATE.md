@@ -4,8 +4,8 @@ Chat history is not memory. The next agent reads this file, `LEAD-PROMPT.md`, an
 
 ## Now
 
-- Stage: CC-004 accepted. Mode B weighted 9.85. Mode C weighted 9.73. The One balance row stays open. CC-005 is next. If local Supabase does not boot, leave CC-005 open and do not start CC-006. A second writer must not start.
-- Log: `logs/CC-004.md`. Status: accepted. Mode B gate: `.agent/research/cc-004-build-autoresearch/GATE-RESULT.md`. Mode C gate: `.agent/research/ui-pixel/enrollment/GATE-RESULT.md`.
+- Stage: CC-005 open, not implemented. Local Supabase did not boot. `npx supabase start` exited 1 because Docker was not found. `npx supabase test db` exited 1 because 127.0.0.1:54322 refused the connection. The One balance row stays open. CC-005 is not accepted. CC-006 was not started. A second writer must not start.
+- Log: `logs/CC-005.md`. Status: not implemented. Docker did not boot. CC-004 remains accepted in `logs/CC-004.md`.
 - Scored plan commit: `9c83c89`. CC-004 base: `2421902`. Product: `fcbb9ea`. Row: `9016a4f`.
 - Saves: commit every green stage. The local brain handoff for Mode A and for CC-001 through CC-004 is still due. Do not push the repo or the brain. If the brain write stops, continue from this file.
 

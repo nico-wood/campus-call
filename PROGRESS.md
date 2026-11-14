@@ -319,3 +319,11 @@ Home lists example forecasts we wrote. Each card shows a question, a close, an E
 The hackathon QR door collects a name and an email only when `entry=qr` and `event=hackathon`. An empty name, a blank email, or a malformed email does not create a session. Demo starts only from Start demo, is labeled Demo, and stays on this device. The copy says it is not a verified account, does not grant virtual credits, and that entering an email is not verified ownership. Home and the example routes do not render the form. Opening the door still returns granted 0 and wrote false. Live mode returns only for a server-issued session. A test callback, a query flag, a request header, a client boolean, or a copied session cannot reach it. A missing verified session does not become demo. No database, migration, or ledger credit was added. The One balance row in TASKS.md is still open. CC-005 was not started.
 
 `npm test` exited 0 (52 passed, 9 files). `npm run lint` exited 0. `npm run typecheck` exited 0. `npm run build` exited 0. `scripts/score.ps1` was not the pass check. No `.env` file was read. Nothing was pushed. Mode B is next. The EP is not accepted. A second writer must not start.
+
+## 2026-11-14 CC-005 local database did not boot
+
+CC-005 was not implemented. No migration was added. The One balance row in TASKS.md was not checked. CC-006 was not started.
+
+`npx supabase start` exited 1. Docker was not on PATH, Podman was not found, and container health could not be inspected. Docker did not boot.
+`npx supabase test db` ran and exited 1. The local database at 127.0.0.1:54322 refused the connection. No pgTAP assertions ran. There is no concurrent-grant evidence.
+`npm test` was not run because no application behavior changed. No `.env` file was read. No hosted migration was applied. Nothing was pushed. CC-005 stays open.
