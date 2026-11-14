@@ -91,3 +91,7 @@ Nico confirmed the product. The spec is `research/10-build-spec.md`. Home shows 
 ## 2026-11-13 Build config pointed at the spec
 
 `TASKS.md` now lists the demo as the current build and parks the old quote, trade, and leaderboard items. `research/09-room-card.md` now sends the QR to the hackathon event. The second-brain plan is committed locally on `brain/campus-call-2026-11-14-064240`. It is not pushed. EP-1163, EP-1165, and EP-1166 are marked done. EP-1164 is ready and points at the spec. EP-1162 is still a duplicate with vitalisx-app and was not edited. Docs only. Tests were not re-run. Nothing was posted or sent.
+
+## 2026-11-13 Schedule source is the participant guide
+
+Nico removed the chat-server tie-break. The participant guide is the schedule source for the demo. Docs only. Tests were not re-run. Nothing was posted or sent.

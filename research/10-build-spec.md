@@ -22,7 +22,7 @@ Those credits are spent only on the hackathon tickets below. The same team may b
 
 ## Hackathon tickets
 
-Four tickets. Each confirms on its own. Picks lock Sunday 15 November 2026 at 12:00 p.m. PT, when the submission that gets judged is frozen. Source: the participant guide at https://cpvc-ai-hackathon-guide.vercel.app/#fri . If Discord disagrees, Discord wins.
+Four tickets. Each confirms on its own. Picks lock Sunday 15 November 2026 at 12:00 p.m. PT, when the submission that gets judged is frozen. Source: the participant guide at https://cpvc-ai-hackathon-guide.vercel.app/#fri .
 
 1. **Main prize.** Name a team for 1st, 2nd, and 3rd, and choose how many credits to put on that ranking. The same team may fill more than one place.
 2. **OpenAI.** One team. Its own credit amount. Daryush Shahid judges the shortlist on Zoom. The product must help a specific person or community and must use Codex.

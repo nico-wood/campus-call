@@ -30,6 +30,6 @@ Scan the QR. It opens the hackathon event, not the campus examples. Enter an ema
 
 ## 6. Do not
 
-Do not mass-email. Do not post the cash line in Discord. Do not ask for a workshop microphone unless that host already said yes.
+Do not mass-email. Do not post the cash line. Do not ask for a workshop microphone unless that host already said yes.
 
 Words to use: forecast, position, market probability, points, virtual credits. Do not say bet, wager, odds, or payout.
