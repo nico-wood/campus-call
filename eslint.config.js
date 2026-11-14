@@ -12,10 +12,13 @@ export default tseslint.config(
       "playwright-report/**",
       "blob-report/**",
       "research/**",
+      ".next/**",
+      "next-env.d.ts",
+      "out/**",
     ],
   },
   {
-    files: ["**/*.{js,cjs,mjs,ts}"],
+    files: ["**/*.{js,cjs,mjs,ts,tsx}"],
     extends: [js.configs.recommended, tseslint.configs.recommended],
     languageOptions: {
       globals: {

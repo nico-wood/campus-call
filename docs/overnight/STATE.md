@@ -4,10 +4,10 @@ Chat history is not memory. The next agent reads this file, `LEAD-PROMPT.md`, an
 
 ## Now
 
-- Stage: program Mode A PASS. Weighted 9.825. Blocking 0. Major 0. Passing round 3. Gate file: `.agent/research/cc-program-design-autoresearch/GATE-RESULT.md`.
-- Product code: CC-001 writer is running. Do not start a second writer. Do not start CC-002. Do not mark a TASKS parent complete until its EPs pass Mode B, and Mode C when a screen exists.
-- Scored plan commit: `9c83c89`
-- Saves: commit every green stage. The local brain handoff for this gate is still due. Do not push the repo or the brain. If the brain write stops, continue from this file.
+- Stage: CC-001 implemented, awaiting Mode B. A second writer must not start. Do not start CC-002. Do not mark a TASKS parent complete until its EPs pass Mode B, and Mode C when a screen exists.
+- Log: `logs/CC-001.md`. Status there is implemented, awaiting Mode B.
+- Scored plan commit: `9c83c89`. Implementation base: `6938f48`.
+- Saves: commit every green stage. The local brain handoff for the Mode A gate is still due. Do not push the repo or the brain. If the brain write stops, continue from this file.
 
 ## Context
 

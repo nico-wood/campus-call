@@ -163,3 +163,9 @@ Each green stage gets a Campus Call commit. Mode A and each EP also get a local 
 ## 2026-11-13 Autonomous TierraDex loop
 
 Nico asked the overnight run to use TierraDex's design, Mode A, build, Mode B, and Mode C sequence, and to keep going after each pass without waiting for his review. `docs/overnight/LEAD-PROMPT.md` is that contract. Mode A is once, on the locked spec and the EP plan, before product code. Each EP then builds, passes Mode B, and passes Mode C when it changes a screen. Thresholds stay strict. The old UI target of weighted 9 and floor 8 is withdrawn. Hosting and migration permissions are unchanged. `scripts/score.ps1` remains the preview check. Docs and the Mode A rubric only. Tests were not re-run. Nothing was posted or sent. The product build starts when Mode A passes.
+
+## 2026-11-14 CC-001 home shell
+
+Added the Next.js App Router foundation and the responsive home shell. The top bar shows Campus Call, a search field, and Portfolio. The category row shows All, Sports, Music, Dining, and Hackathon. Those controls are visible and inert. Example cards, filtering, and event pages are not in this step. `src/lib` was not moved.
+
+`npm test` exited 0 (35 passed, 6 files). `npm run lint` exited 0. `npm run typecheck` exited 0. `npm run build` exited 0. `scripts/score.ps1` was not the pass check. No `.env` file was read. Nothing was pushed. Mode B has not started. A second writer must not start.
