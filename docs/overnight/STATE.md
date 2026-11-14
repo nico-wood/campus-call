@@ -4,12 +4,10 @@ Chat history is not memory. The next agent reads this file, `LEAD-PROMPT.md`, an
 
 ## Now
 
-- Stage: program Mode A, round 3 in progress. Policy PASS 9.8. Architecture PASS 9.8. Completeness PASS 9.9. Cut order is still running. Round 2 remains FAIL at weighted 9.775. Do not start CC-001.
-- Product code: not started
-- Result files: `.agent/research/cc-program-design-autoresearch/round-2-*.md` and `SCORE-HISTORY.md`
-- Base: `9c83c89`. CC-006 now requires a first confirm with no earlier commit to be refused at and after the lock. A replay of the pre-lock commit is a separate check. Round 3 graders are running. Do not start another round 3 panel.
-- Next: four round-3 graders. Do not start CC-001 until `GATE-RESULT.md` says PASS.
-- Saves: commit every green stage. Local brain handoff after Mode A and after each EP. Do not push the repo or the brain during the night.
+- Stage: program Mode A PASS. Weighted 9.825. Blocking 0. Major 0. Passing round 3. Gate file: `.agent/research/cc-program-design-autoresearch/GATE-RESULT.md`.
+- Product code: CC-001 is next. Do not start CC-002. Do not mark a TASKS parent complete until its EPs pass Mode B, and Mode C when a screen exists.
+- Scored plan commit: `9c83c89`
+- Saves: commit every green stage. The local brain handoff for this gate is still due. Do not push the repo or the brain. If the brain write stops, continue from this file.
 
 ## Context
 
