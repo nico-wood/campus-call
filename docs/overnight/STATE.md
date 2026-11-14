@@ -4,7 +4,7 @@ Chat history is not memory. The next agent reads this file, `LEAD-PROMPT.md`, an
 
 ## Now
 
-- Stage: CC-001 implemented, awaiting Mode B. A second writer must not start. Do not start CC-002. Do not mark a TASKS parent complete until its EPs pass Mode B, and Mode C when a screen exists.
+- Stage: CC-001 Mode B, round 0 graders running. A second writer must not start. Do not start another Mode B panel. Do not start CC-002. Do not mark a TASKS parent complete.
 - Log: `logs/CC-001.md`. Status there is implemented, awaiting Mode B.
 - Scored plan commit: `9c83c89`. Implementation base: `6938f48`.
 - Saves: commit every green stage. The local brain handoff for the Mode A gate is still due. Do not push the repo or the brain. If the brain write stops, continue from this file.
