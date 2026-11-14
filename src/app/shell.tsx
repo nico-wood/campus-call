@@ -1,4 +1,6 @@
-import type { ReactNode } from "react";
+"use client";
+
+import { useEffect, useRef, type ReactNode } from "react";
 import { Brand } from "./brand";
 import { GradientBackdrop } from "./gradient-backdrop";
 import { WorkspaceSettings } from "./workspace-settings";
@@ -8,6 +10,16 @@ import {
   forecastListHref,
   type Category,
 } from "./example-forecasts";
+
+function scrollCategories(list: HTMLUListElement | null, direction: -1 | 1) {
+  if (!list) return;
+  const styles = window.getComputedStyle(list);
+  const gap = Number.parseFloat(styles.columnGap || styles.gap) || 0;
+  const item = list.querySelector("li");
+  const step = item ? item.getBoundingClientRect().width + gap : list.clientWidth * 0.6;
+  const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  list.scrollBy({ left: direction * step * 2, behavior: reduce ? "auto" : "smooth" });
+}
 
 export function Shell({
   category,
@@ -20,7 +32,19 @@ export function Shell({
   place?: "forecasts" | "portfolio" | "settings" | "access";
   children: ReactNode;
 }) {
+  const categoriesRef = useRef<HTMLUListElement>(null);
   const hiddenCategory = category !== "All" && category !== "unknown" ? category : null;
+
+  useEffect(() => {
+    const list = categoriesRef.current;
+    const current = list?.querySelector<HTMLElement>('[aria-current="true"]');
+    if (!list || !current) return;
+    const listBox = list.getBoundingClientRect();
+    const itemBox = current.getBoundingClientRect();
+    if (itemBox.left < listBox.left || itemBox.right > listBox.right) {
+      list.scrollLeft += itemBox.left - listBox.left;
+    }
+  }, [category]);
 
   return (
     <div className="app">
@@ -54,13 +78,31 @@ export function Shell({
             </nav>
           </div>
           <nav className="category-bar frame" aria-label="Forecast categories">
-            <ul className="categories">
-              {CATEGORIES.map((item) => (
-                <li key={item}>
-                  <a className="category" href={forecastListHref(item, query)} aria-current={item === category ? "true" : undefined}>{item}</a>
-                </li>
-              ))}
-            </ul>
+            <div className="category-scroller">
+              <button
+                type="button"
+                className="category-scroll"
+                aria-label="Previous categories"
+                onClick={() => scrollCategories(categoriesRef.current, -1)}
+              >
+                <UiIcon name="chevron" className="category-scroll-icon category-scroll-icon-back" width="18" height="18" />
+              </button>
+              <ul className="categories" ref={categoriesRef}>
+                {CATEGORIES.map((item) => (
+                  <li key={item}>
+                    <a className="category" href={forecastListHref(item, query)} aria-current={item === category ? "true" : undefined}>{item}</a>
+                  </li>
+                ))}
+              </ul>
+              <button
+                type="button"
+                className="category-scroll"
+                aria-label="Next categories"
+                onClick={() => scrollCategories(categoriesRef.current, 1)}
+              >
+                <UiIcon name="chevron" className="category-scroll-icon" width="18" height="18" />
+              </button>
+            </div>
           </nav>
         </header>
         <main id="main-content" className="main frame" tabIndex={-1}>{children}</main>

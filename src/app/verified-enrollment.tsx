@@ -5,15 +5,29 @@ import { validateEnrollment } from "./participant-session";
 
 type Account = { name: string; balance: number };
 
+function phoneDigits(value: string): string {
+  const stripped = value.replace(/[\s\-()]/g, "");
+  return stripped.startsWith("+") ? stripped.slice(1) : stripped;
+}
+
+function phoneRefusal(value: string): string | null {
+  const digits = phoneDigits(value);
+  if (digits.length === 0) return "Enter a phone number.";
+  if (/^\d+$/.test(digits) && digits.length < 10) return "Enter a phone number. This one is too short.";
+  if (!/^\d{10,15}$/.test(digits)) return "Enter a phone number with 10 to 15 digits.";
+  return null;
+}
+
 export function VerifiedEnrollment() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
+  const [phone, setPhone] = useState("");
   const [code, setCode] = useState("");
   const [sent, setSent] = useState(false);
   const [pending, setPending] = useState(false);
   const [notice, setNotice] = useState("");
   const [account, setAccount] = useState<Account | null>(null);
-  const [invalid, setInvalid] = useState<"name" | "email" | "code" | null>(null);
+  const [invalid, setInvalid] = useState<"name" | "email" | "phone" | "code" | null>(null);
 
   async function loadAccount(signal?: AbortSignal) {
     const response = await fetch("/api/participant/account", { cache: "no-store", credentials: "same-origin", signal });
@@ -36,6 +50,11 @@ export function VerifiedEnrollment() {
       setInvalid(valid.reason); setNotice(valid.reason === "name" ? "Enter a name." : "Enter a valid email address.");
       document.getElementById(`verified-${valid.reason}`)?.focus(); return;
     }
+    const phoneMessage = phoneRefusal(phone);
+    if (phoneMessage) {
+      setInvalid("phone"); setNotice(phoneMessage);
+      document.getElementById("verified-phone")?.focus(); return;
+    }
     if (sent && !/^\d{6,10}$/.test(code)) {
       setInvalid("code"); setNotice("Enter the verification code from your email.");
       document.getElementById("verified-code")?.focus(); return;
@@ -51,7 +70,7 @@ export function VerifiedEnrollment() {
       if (!response.ok || data.ok !== true) throw new Error(typeof data.error === "string" ? data.error : "Email verification is unavailable. Please try again.");
       if (sent) {
         await loadAccount();
-        setNotice(data.wrote ? "Email verified. Your one-time virtual credits are recorded." : "Email verified. No additional virtual credits were granted.");
+        setNotice(`${data.wrote ? "Email verified. Your one-time virtual credits are recorded." : "Email verified. No additional virtual credits were granted."} The phone number was entered on this form and is not stored on the account.`);
       } else { setSent(true); setNotice("Check your email for the verification code."); }
     } catch (error) { setNotice(error instanceof Error ? error.message : "Email verification is unavailable. Please try again."); }
     finally { setPending(false); }
@@ -80,6 +99,8 @@ export function VerifiedEnrollment() {
           <input id="verified-name" className="enrollment-input" autoComplete="name" value={name} readOnly={sent} aria-invalid={invalid === "name"} aria-describedby={notice ? "verified-enrollment-notice" : undefined} onChange={event => { setName(event.target.value); setInvalid(null); }} /></div>
         <div className="enrollment-field"><label className="enrollment-label" htmlFor="verified-email">Email</label>
           <input id="verified-email" className="enrollment-input" type="email" autoComplete="email" value={email} readOnly={sent} aria-invalid={invalid === "email"} aria-describedby={notice ? "verified-enrollment-notice" : undefined} onChange={event => { setEmail(event.target.value); setInvalid(null); }} /></div>
+        <div className="enrollment-field"><label className="enrollment-label" htmlFor="verified-phone">Phone number</label>
+          <input id="verified-phone" className="enrollment-input" type="tel" autoComplete="tel" inputMode="tel" value={phone} readOnly={sent} required aria-invalid={invalid === "phone"} aria-describedby={notice ? "verified-enrollment-notice" : undefined} onChange={event => { setPhone(event.target.value); setInvalid(null); }} /></div>
         {sent ? <div className="enrollment-field"><label className="enrollment-label" htmlFor="verified-code">Email code</label>
           <input id="verified-code" className="enrollment-input" inputMode="numeric" autoComplete="one-time-code" value={code} aria-invalid={invalid === "code"} aria-describedby={notice ? "verified-enrollment-notice" : undefined} onChange={event => { setCode(event.target.value); setInvalid(null); }} /></div> : null}
         <button className="confirm" type="submit">{pending ? "Please wait…" : sent ? "Verify email code" : "Send email code"}</button>

@@ -27,6 +27,7 @@ export function LivePosition({
   const [amount, setAmount] = useState("25");
   const [signInRequired, setSignInRequired] = useState(false);
   const amountId = `position-amount-${id}`;
+  const selectedIndex = Math.max(0, outcomes.indexOf(selected));
 
   return (
     <div className="live-position">
@@ -35,6 +36,11 @@ export function LivePosition({
           <button key={label} type="button" aria-pressed={selected === label} onClick={() => setSelected(label)}>
             <OutcomeFace label={label} marks={marks} />
           </button>
+        ))}
+      </div>
+      <div className="outcome-select-track" aria-hidden="true">
+        {outcomes.map((label, index) => (
+          <span key={label} className={index === selectedIndex ? "outcome-select-fill" : undefined} />
         ))}
       </div>
       <label className="position-amount" htmlFor={amountId}>

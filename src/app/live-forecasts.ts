@@ -119,4 +119,32 @@ export const LIVE_FORECASTS: readonly LiveForecast[] = [
     resolutionRule:
       "Yes if a saved copy of https://www.calpolyarts.org/20262027-season/las-migas, taken at 7:00 p.m. PT on Sunday, Nov. 15, 2026 or the first saved copy after that time and before 7:30 p.m., still shows Sunday, November 15, 2026, 7:30 PM, at the Alex and Faye Spanos Theatre, and does not say the performance is cancelled or postponed. No if that copy says cancelled or postponed, or shows a different date, clock time, or venue. If no copy is saved, this forecast stays unresolved. Do not use ticket counts or attendance.",
   },
+  {
+    id: "mens-basketball-montana-state-overtime",
+    category: "Sports",
+    label: "Men's basketball",
+    summary: "Yes if the official box score shows a period after the 2nd half. A two-period final is No.",
+    question: "Will the official final score include overtime?",
+    outcomes: ["Yes", "No"],
+    closeLabel: "Sunday, Nov. 15, 2026, 2:55 p.m. PT",
+    closesAt: "2026-11-15T14:55:00-08:00",
+    sourceName: "Cal Poly men's basketball schedule",
+    sourceUrl: "https://gopoly.com/sports/mens-basketball/schedule",
+    resolutionRule:
+      "Yes if the official box score linked from the Cal Poly men's basketball schedule for Cal Poly at Montana State on Sunday, Nov. 15, 2026 has a team line-score column after the second period, or a team-summary period after the 2nd half. No if that box score has only a 1st half and a 2nd half. If no official final score is posted, this forecast stays unresolved. Do not use a recap or a broadcast graphic.",
+  },
+  {
+    id: "mens-basketball-montana-state-points-70",
+    category: "Sports",
+    label: "Men's basketball",
+    summary: "Yes if Cal Poly's official points total is at least 70. Overtime points count.",
+    question: "Will Cal Poly's official points total be at least 70?",
+    outcomes: ["Yes", "No"],
+    closeLabel: "Sunday, Nov. 15, 2026, 2:55 p.m. PT",
+    closesAt: "2026-11-15T14:55:00-08:00",
+    sourceName: "Cal Poly men's basketball schedule",
+    sourceUrl: "https://gopoly.com/sports/mens-basketball/schedule",
+    resolutionRule:
+      "Yes if Cal Poly's points total on the official box score linked from the Cal Poly men's basketball schedule for Cal Poly at Montana State on Sunday, Nov. 15, 2026 is at least 70. Read the Total on Cal Poly's team line score, which matches the pts figure on the Cal Poly totals row. Overtime points count in that total. No if that total is below 70. If that total is not posted, this forecast stays unresolved. Do not use a recap or a broadcast graphic.",
+  },
 ];

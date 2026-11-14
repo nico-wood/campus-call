@@ -3,11 +3,27 @@ import {
   type ListState,
 } from "./example-forecasts";
 import { ForecastIcon } from "./forecast-icon";
-import { filterLiveForecasts } from "./live-forecasts";
+import { filterLiveForecasts, type LiveForecast } from "./live-forecasts";
 import { LivePosition } from "./live-position";
 import { VolleyballMatch, volleyballSearchText } from "./volleyball-match";
 
 const PRIZE_TEXT = "hackathon prize forecasts main ranking challenge teams";
+
+function groupByLabel(forecasts: readonly LiveForecast[]): LiveForecast[][] {
+  const groups: LiveForecast[][] = [];
+  const seen = new Map<string, LiveForecast[]>();
+  for (const forecast of forecasts) {
+    const group = seen.get(forecast.label);
+    if (group) {
+      group.push(forecast);
+      continue;
+    }
+    const next = [forecast];
+    seen.set(forecast.label, next);
+    groups.push(next);
+  }
+  return groups;
+}
 
 export function ForecastList({ state }: { state: ListState }) {
   const query = state.query.trim().toLowerCase();
@@ -49,22 +65,31 @@ export function ForecastList({ state }: { state: ListState }) {
       {prize}
       {forecasts.length > 0 ? (
         <ul className="forecast-list" aria-labelledby="forecast-list-heading">
-          {forecasts.map((forecast) => (
-            <li key={forecast.id}>
-              <article className="forecast-card live-forecast-card">
-                <div className="card-meta">
-                  <span className="card-category"><ForecastIcon category={forecast.category} />{forecast.label}</span>
-                </div>
-                <h2>{forecast.question}</h2>
-                <p>{forecast.summary}</p>
-                <LivePosition id={forecast.id} outcomes={forecast.outcomes} />
-                <div className="card-footer">
-                  <p className="forecast-close">Closes {forecast.closeLabel}</p>
-                  <a href={forecast.sourceUrl}>{forecast.sourceName}</a>
-                </div>
-              </article>
-            </li>
-          ))}
+          {groupByLabel(forecasts).map((group) => {
+            const lead = group[0];
+            return (
+              <li key={lead.label}>
+                <article className="forecast-card live-forecast-card">
+                  <div className="card-meta">
+                    <span className="card-category"><ForecastIcon category={lead.category} />{lead.label}</span>
+                  </div>
+                  <ul className="forecast-group">
+                    {group.map((forecast) => (
+                      <li key={forecast.id}>
+                        <h2>{forecast.question}</h2>
+                        <p>{forecast.summary}</p>
+                        <LivePosition id={forecast.id} outcomes={forecast.outcomes} />
+                        <div className="card-footer">
+                          <p className="forecast-close">Closes {forecast.closeLabel}</p>
+                          <a href={forecast.sourceUrl}>{forecast.sourceName}</a>
+                        </div>
+                      </li>
+                    ))}
+                  </ul>
+                </article>
+              </li>
+            );
+          })}
         </ul>
       ) : null}
     </>

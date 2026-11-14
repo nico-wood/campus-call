@@ -293,16 +293,26 @@ input {
 
 .categories {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   gap: var(--space-2);
   margin: 0;
   padding: var(--space-2) 0;
   list-style: none;
+  min-width: 0;
+  flex: 1 1 auto;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-padding-inline: var(--space-2);
+  scrollbar-width: none;
 }
+
+.categories::-webkit-scrollbar { display: none; }
 
 .categories li {
   margin: 0;
   padding: 0;
+  flex: none;
+  scroll-snap-align: start;
 }
 
 .category {
@@ -321,7 +331,10 @@ input {
 }
 
 .category[aria-current="true"] {
-  background: transparent;
+  position: sticky;
+  inset-inline-start: 0;
+  z-index: 1;
+  background: var(--bg);
   border-color: transparent;
   color: var(--accent);
   box-shadow: inset 0 -2px var(--accent);
@@ -886,6 +899,10 @@ a.outcome:hover {
 .brand-name { font-size: var(--text-xl); }
 .workspace-nav a:first-child { background: var(--surface-raised); color: var(--text); }
 .category-bar { border-top: 0; }
+.category-scroller { display: flex; align-items: center; gap: var(--space-1); min-width: 0; }
+.category-scroll { display: inline-flex; align-items: center; justify-content: center; flex: none; width: var(--control-height); min-height: var(--control-height); padding: 0; border: 1px solid var(--border); border-radius: var(--radius-md); background: var(--surface); color: var(--text-muted); cursor: pointer; }
+.category-scroll:hover { background: var(--surface-raised); color: var(--text); }
+.category-scroll-icon-back { transform: rotate(180deg); }
 .categories { gap: var(--space-4); padding-block: 0; }
 .category { padding-inline: var(--space-2); border-radius: 0; font-size: var(--text-sm); font-weight: 600; }
 .workspace .main { padding-top: var(--space-6); }
@@ -926,7 +943,8 @@ a.outcome:hover {
 .chart-ranges { display: flex; gap: var(--space-1); }
 .chart-ranges button { background: transparent; border: 0; color: var(--text-soft); padding: var(--space-2); font-size: 0.75rem; min-height: var(--control-height); border-radius: var(--space-2); cursor: pointer; }
 .chart-ranges button[aria-pressed="true"] { color: var(--text); background: var(--surface-raised); }
-.history-chart { display: block; width: 100%; height: auto; overflow: visible; margin-top: var(--space-4); touch-action: pan-y; }
+.history-chart { display: block; width: 100%; height: auto; overflow: visible; margin-top: var(--space-4); touch-action: pan-y; cursor: crosshair; }
+.chart-hit { fill: transparent; }
 .chart-axis { fill: var(--text-soft); font-size: 11px; font-family: var(--font-mono); }
 .chart-gridline { stroke: var(--chart-grid); stroke-width: 1; stroke-dasharray: 2 5; }
 .chart-line { fill: none; stroke-width: 2.5; stroke-linecap: round; stroke-linejoin: round; vector-effect: non-scaling-stroke; }
@@ -934,7 +952,8 @@ a.outcome:hover {
 .chart-secondary { stroke: var(--chart-secondary); }
 .chart-point.chart-primary { fill: var(--emerald); }
 .chart-point.chart-secondary { fill: var(--chart-secondary); }
-.chart-crosshair { stroke: var(--text-soft); stroke-width: 1; stroke-dasharray: 3 4; opacity: 0.5; }
+.chart-crosshair { stroke: var(--text-soft); stroke-width: 1; stroke-dasharray: 3 4; opacity: 0.85; pointer-events: none; }
+.chart-crosshair-y { stroke: var(--accent); opacity: 0.7; }
 .chart-scrubber { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); accent-color: var(--accent); margin: 0; }
 .chart-scrubber:focus-visible { position: static; width: 100%; height: var(--control-height); clip-path: none; }
 .forecast-chart figcaption { color: var(--text-soft); font-size: 0.75rem; }
@@ -1073,10 +1092,20 @@ a.outcome:hover {
 .team-lockup { display: inline-flex; align-items: center; gap: var(--space-2); }
 .team-mark { width: 2rem; height: 2rem; object-fit: contain; flex: none; }
 .team-vs { color: var(--text-soft); font-size: var(--text-sm); font-weight: 500; }
-.live-position { display: flex; flex-direction: column; gap: var(--space-3); margin-top: var(--space-2); padding: var(--space-3); border-radius: var(--radius-md); background: var(--surface); }
+.live-position { display: flex; flex-direction: column; gap: var(--space-3); margin-top: var(--space-2); padding: var(--space-4); border: 1px solid var(--border); border-radius: var(--radius-md); background: var(--bg); }
+.live-position .position-choices { grid-template-columns: none; grid-auto-flow: column; grid-auto-columns: minmax(0, 1fr); }
 .live-position .position-amount { margin-top: 0; padding-block: var(--space-3); }
 .live-position .position-amount input { font-size: var(--text-xl); width: 40%; }
-.live-position .position-choices button { min-height: 3.25rem; }
+.live-position .position-choices button { min-height: 3.25rem; height: auto; justify-content: center; text-align: center; overflow-wrap: anywhere; }
+.outcome-select-track { display: grid; grid-auto-flow: column; grid-auto-columns: minmax(0, 1fr); gap: var(--space-2); height: 0.35rem; }
+.outcome-select-track > span { display: block; height: 100%; border-radius: var(--radius-pill); background: var(--border); }
+.outcome-select-track > .outcome-select-fill { background: var(--accent); }
+.forecast-group { display: flex; flex-direction: column; gap: var(--space-5); width: 100%; margin: 0; padding: 0; list-style: none; }
+.forecast-group > li { display: flex; flex-direction: column; align-items: stretch; gap: var(--space-3); min-width: 0; }
+.forecast-group > li + li { padding-top: var(--space-5); border-top: 1px solid var(--border); }
+.forecast-group p { margin: 0; }
+.live-forecast-card h2 { min-height: 0; }
+.forecast-list > li:has(.forecast-group > li + li) { grid-column: 1 / -1; }
 .live-position .position-selection { align-items: center; padding-block: 0; }
 .live-position .confirm { width: 100%; }
 .quick-amounts button[aria-pressed="true"] { color: var(--text); border-color: var(--accent); }
@@ -1139,8 +1168,8 @@ a.outcome:hover {
   .topbar-inner { gap: var(--space-3); }
   .workspace-nav { margin-left: auto; gap: 0; }
   .workspace-nav a { padding-inline: var(--space-2); }
-  .categories { display: flex; flex-wrap: wrap; gap: var(--space-1); }
-  .category { width: 100%; padding-inline: var(--space-1); font-size: var(--text-sm); }
+  .categories { display: flex; flex-wrap: nowrap; gap: var(--space-1); }
+  .category { width: auto; padding-inline: var(--space-1); font-size: var(--text-sm); }
   .example-layout { grid-template-columns: 1fr; }
   .example-market-content { grid-template-columns: 1fr; }
   .example-ticket-column { height: auto; min-height: 0; }
@@ -1153,7 +1182,7 @@ a.outcome:hover {
   .brand-name { font-size: var(--text-card); }
   .brand-mark { width: 28px; height: 28px; }
   .workspace .brand { font-size: var(--text-lg); }
-  .categories { display: flex; flex-wrap: wrap; }
+  .categories { display: flex; flex-wrap: nowrap; }
 }
 
 /* Closed registration and the private local waitlist. */

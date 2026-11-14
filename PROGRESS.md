@@ -492,3 +492,19 @@ The board now has Club sports, Transit, and Campus beside Sports, Weather, and H
 `npm.cmd test` passed 111 tests across 16 files. `npm.cmd run typecheck` exited 0. Browser checks on http://localhost:3001 confirmed the Transit confirm path, both Campus forecasts, the empty Club sports message, Sports, Weather, Hackathon, and the unknown Music category. The mobile category row fits. No POST was sent. Nothing was pushed or deployed. The dev server remains on port 3001.
 
 Commit `5a7e9af` records these categories. It was not pushed.
+
+## 2026-11-14 14:42 PT Wrap-up
+
+Nico said there was nothing else to capture. Handoff: `docs/brain/entries/2026-11-14-1442-handoff.md`. `docs/overnight/STATE.md` points at it. Local `main` is `7ff9cd3`, four commits ahead of `origin/main` at `9851677`. This note is not committed, pushed, or deployed.
+
+## 2026-11-14 15:07 PT Polymarket-style flow
+
+The category row scrolls sideways. Previous and Next move it. On a 390px screen the row is wider than the bar and Next moves it. Categories stay All, Sports, Club sports, Transit, Campus, Weather, and Hackathon.
+
+Forecasts that share a label sit on one card. Men's basketball now has four questions: winner, halftime, overtime, and whether Cal Poly's official total is at least 70. The last two use the same schedule and box score as the first two. Confirm still calls `runExampleConfirm` and writes nothing. The home board still shows no percent sign. The example chart can be dragged, and its caption still says the history is illustrative.
+
+Graduation statistics, a professor of the month, and scholarship winners were not added. The commencement count, the teaching-award names, and the 2026 scholarship recipient are already published, and none of those pages gives a future check with a clock time. Catalog: `docs/brain/entries/2026-11-14-polymarket-catalog.md`.
+
+The verified email form now requires a phone number of 10 to 15 digits before it sends a code. The request body is still name, email, and the hackathon QR pair. The phone number is not stored, and no migration was added. A missing or short number does not call the server. The door still says it does not grant virtual credits. The device demo is unchanged.
+
+`npm.cmd test` passed 111 tests across 16 files. `npm.cmd run typecheck` exited 0. Browser checks on http://localhost:3001 covered the grouped basketball card, Sports without the weather question, empty Club sports, Confirm with no POST, the example chart scrub, the phone gate, and the mobile category scroll. Nothing was pushed or deployed. The dev server is on port 3001. Port 3000 is still the older server.
