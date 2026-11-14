@@ -41,3 +41,17 @@ Top fixes: brace-match the only `startDeviceDemo(` call to `onStartDemo`, scan e
 Blocking: 0
 Major: 1
 Top fixes: parse the enrollment component with the TypeScript parser and require the only `startDeviceDemo` call to sit inside `onStartDemo`.
+
+## R3 — 2026-11-14 — FAIL — mode=build
+
+| Dimension | Weight | Score |
+| --- | ---: | ---: |
+| Correctness | 0.25 | 10.0 |
+| Security | 0.25 | 10.0 |
+| Cut completeness and tests | 0.25 | 9.6 |
+| UI code | 0.25 | 9.7 |
+| **Weighted** | | **9.825** |
+
+Blocking: 0
+Major: 1
+Top fixes: unwrap parentheses, non-null assertions, casts, and comma expressions, and count `foo.startDeviceDemo` calls.
