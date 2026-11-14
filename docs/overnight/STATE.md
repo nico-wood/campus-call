@@ -4,7 +4,7 @@ Chat history is not memory. The next agent reads this file, `LEAD-PROMPT.md`, an
 
 ## Now
 
-- Stage: program Mode A, round 0 FAIL, round 1 not scored yet. Weighted 9.45. Major 5. Blocking 0.
+- Stage: program Mode A, round 1 in progress. Policy returned PASS 9.8, blocking 0, major 0, minor 2. Architecture, cut order, and completeness are still running.
 - Lenses: policy 9.8, cut order 9.0, completeness 9.8, architecture 9.2.
 - Base: `13e937e`
 - Round 1 graders are running. Do not start another round 1 panel.
