@@ -44,8 +44,14 @@ On PASS, continue immediately to CC-001. On FAIL at round 6, log the residuals a
 - Run `npm test` after every behavior change. Add typecheck, lint, build, and focused UI or end-to-end checks when they apply. Do not weaken tests. Do not edit `scripts/score.ps1`.
 - Mode B before the EP is accepted. Root: `.agent/research/cc-NNN-build-autoresearch/`. Lenses, equal weight 0.25: correctness, security, cut completeness plus tests, UI code. The UI lens is code review. It is not Mode C.
 - Mode C when the EP changed a screen. Root: `.agent/research/ui-pixel/<surface-slug>/`. Capture desktop 1280×720, mobile 390×844, and narrow 375. Score spatial rhythm, hierarchy, typography, color, interaction, responsiveness, and consistency from the images. Weights: spatial 1.5, hierarchy 1.5, type 1.0, color 1.0, interactive 1.0, responsive 0.75, consistency 0.75. An EP with no screen records Mode C as not applicable in the Mode B gate and moves on.
-- On the required gates passing: mark a parent row in `TASKS.md` only when that parent is actually complete, append `PROGRESS.md`, review staged paths for secrets, and commit once with a short milestone message. Continue to the next EP without asking.
-- On FAIL at the cap, or after three failed implementation attempts: write `logs/CC-NNN.md` and the FAIL gate, leave the EP unchecked, and stop dependents. Continue only work that does not depend on it. Do not mark a failed task done.
+- On the required gates passing: mark a parent row in `TASKS.md` only when that parent is actually complete, append `PROGRESS.md`, review staged paths for secrets, and commit. Continue to the next EP without asking.
+- On FAIL at the cap, or after three failed implementation attempts: write `logs/CC-NNN.md` and the FAIL gate, commit that record, leave the EP unchecked, and stop dependents. Continue only work that does not depend on it. Do not mark a failed task done.
+
+## Saving work
+
+Commit the Campus Call repo after every green stage. A green stage is a Mode A pass, an implementation whose tests passed, a Mode B pass, or a Mode C pass. The message names the stage. Do not commit a red tree. Do not push this repo.
+
+After Mode A passes, and after each EP is accepted or stopped, write one local brain handoff for `vibe-coding-hackathon` with the brain command blocks. Keep the branch on this machine. Do not push it and do not open a brain PR during the night. The next resume offers those branches. Never put a secret in the entry. If a brain write stops, note that in `PROGRESS.md` and continue. The repo commit is the copy that must not be skipped.
 
 Demo fixtures stay labeled. Real once-per-email grants, transactional credits, and real identity have to be implemented before participant-ready acceptance. A local stand-in does not close those EPs.
 

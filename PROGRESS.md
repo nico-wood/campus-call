@@ -104,6 +104,10 @@ Nico removed the chat-server tie-break. The participant guide is the schedule so
 
 A later agent looked for the session notes in `~/.claude/second-brain.md` and did not find them. The team brain is `C:/lec-brain`. This folder resumes as `vibe-coding-hackathon`. `AGENTS.md` now says that. The product spec was already on `main`. Docs only. Tests were not re-run. Nothing was posted or sent.
 
+## 2026-11-13 Saves during the night
+
+Each green stage gets a Campus Call commit. Mode A and each EP also get a local brain handoff. Neither is pushed during the night. The policy lens of program Mode A returned 9.8 with no blocking or major findings. The other three lenses were still running. Docs only.
+
 ## 2026-11-13 Overnight resume file
 
 `docs/overnight/STATE.md` is the stage pointer. Chat history is not memory. One fresh agent per stage. The Grok session has to stay open and the computer awake. Docs only.
