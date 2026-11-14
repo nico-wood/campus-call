@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState, type FormEvent } from "react";
+import { VerifiedEnrollment } from "./verified-enrollment";
 import {
   browserDeviceStore,
   readDeviceDemo,
@@ -49,6 +50,7 @@ export function QrEnrollment() {
   }
 
   return (
+    <>
     <form id="qr-enrollment" className="enrollment" aria-labelledby="qr-demo-title" noValidate onSubmit={onStartDemo}>
       <h3 id="qr-demo-title" className="enrollment-title">
         Demo
@@ -93,5 +95,7 @@ export function QrEnrollment() {
         Start demo
       </button>
     </form>
+    <VerifiedEnrollment />
+    </>
   );
 }

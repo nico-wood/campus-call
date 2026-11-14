@@ -240,6 +240,14 @@ otp_length = 6
 otp_expiry = 3600
 
 # Use a production-ready SMTP server
+[auth.email.template.magic_link]
+subject = "Your Campus Call verification code"
+content_path = "./supabase/templates/email-code.html"
+
+[auth.email.template.confirmation]
+subject = "Your Campus Call verification code"
+content_path = "./supabase/templates/email-code.html"
+
 # [auth.email.smtp]
 # enabled = true
 # host = "smtp.sendgrid.net"
