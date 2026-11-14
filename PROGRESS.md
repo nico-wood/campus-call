@@ -103,3 +103,7 @@ Nico removed the chat-server tie-break. The participant guide is the schedule so
 ## 2026-11-13 Resume name recorded
 
 A later agent looked for the session notes in `~/.claude/second-brain.md` and did not find them. The team brain is `C:/lec-brain`. This folder resumes as `vibe-coding-hackathon`. `AGENTS.md` now says that. The product spec was already on `main`. Docs only. Tests were not re-run. Nothing was posted or sent.
+
+## 2026-11-13 Autonomous TierraDex loop
+
+Nico asked the overnight run to use TierraDex's design, Mode A, build, Mode B, and Mode C sequence, and to keep going after each pass without waiting for his review. `docs/overnight/LEAD-PROMPT.md` is that contract. Mode A is once, on the locked spec and the EP plan, before product code. Each EP then builds, passes Mode B, and passes Mode C when it changes a screen. Thresholds stay strict. The old UI target of weighted 9 and floor 8 is withdrawn. Hosting and migration permissions are unchanged. `scripts/score.ps1` remains the preview check. Docs and the Mode A rubric only. Tests were not re-run. Nothing was posted or sent. The product build starts when Mode A passes.

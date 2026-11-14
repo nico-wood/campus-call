@@ -12,7 +12,7 @@ What to reuse from TierraDex and lec-agent-config, and how this repo is hosted. 
 | `skills/vitest-patterns` | `.claude/skills/vitest-patterns` | Matches the existing Vitest and Playwright split. |
 | `skills/env-safety`, `milestone-commit`, `test-then-continue`, `deploy-preview-vercel` | already in `.claude/skills` | Written for this harness. |
 
-Global installs of `karpathy-audit` and `graph-engineering` stay on the machine. This repo's judge is `scripts/score.ps1`, not a Karpathy gate.
+Global installs of `karpathy-audit` and `graph-engineering` stay on the machine. The overnight build uses that Karpathy skill in the chained loop in `docs/overnight/LEAD-PROMPT.md`. `scripts/score.ps1` stays the preview-publish check. It is not a substitute for Mode A, Mode B, or Mode C.
 
 ## Leave behind
 
@@ -21,7 +21,11 @@ Global installs of `karpathy-audit` and `graph-engineering` stay on the machine.
 - `supabase-apply-migrations.js` and any TierraDex project ref. Do not copy `.grok/config.toml` from TierraDex. That file points at another company's database.
 - The shared CI workflow. `npm test` is red on purpose until the pure modules exist. A gate that requires it would fail the empty app.
 - Knip, error-logging, notifications, help, and dashboard widgets. Nothing in `TASKS.md` needs them yet.
-- UI scoring rules. Add them when `app/` exists, not before.
+- A copied TierraDex cursor-rule file. Mode C thresholds for this run live in `docs/overnight/LEAD-PROMPT.md`.
+
+## Overnight build preparation
+
+Nico authorized the autonomous TierraDex loop on 13 November 2026. The launch prompt, EP plan, and decisions are in `docs/overnight/`. UI patterns are in `research/11-tierradex-ux-review.md`. The run chains Mode A, build, Mode B, and Mode C without stopping for review. It does not change hosting or migration permissions. Do not use `scripts/loop.ps1`: it can select parked items and mark failed tasks skipped or checked.
 
 ## Git
 

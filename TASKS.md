@@ -6,11 +6,13 @@ Vocabulary is forecast, position, market probability, and points. Never bet, wag
 
 3e owns the harness. Do not weaken, skip, or delete tests. Do not edit `scripts/score.ps1`. Virtual credits only. No real-money columns. Do not read `.env` files. Do not run `vercel --prod`.
 
-Nico locked the current build on 13 November 2026. Start those items when he says to build. `npm test` remains the unit suite. `scripts/score.ps1` still runs the old end-to-end spec, so it is not the judge of the new screens until that spec is replaced.
+Nico locked the current build on 13 November 2026 and authorized the overnight run the same day. Start CC-001 after program Mode A passes. Do not start product code before that gate. `npm test` remains the unit suite. `scripts/score.ps1` still runs the old end-to-end spec, so it is not the judge of the new screens until that spec is replaced.
 
 ## Current build
 
 Build `research/10-build-spec.md`. That file is the demo. Do these in order. Do not start a parked item while one of these is open.
+
+Overnight execution: `docs/overnight/LEAD-PROMPT.md` is the loop. It chains one program Mode A, then each EP as build, Mode B, and Mode C when a screen changes, and it continues after a passing gate without waiting for review. `docs/overnight/GOAL.md` is the shared brief. `docs/overnight/EP-PLAN.md` is the job list. Routine decisions go in `docs/overnight/DECISIONS.md`. Do not use `scripts/loop.ps1` for this queue.
 
 - [ ] Home. Campus example list. Categories All, Sports, Music, Dining, and the hackathon. Each campus card is labeled Example. Confirm does nothing and spends nothing.
 - [ ] QR route. Opens the hackathon event only. No home, and no example cards.
@@ -19,6 +21,7 @@ Build `research/10-build-spec.md`. That file is the demo. Do these in order. Do 
 - [ ] Team cards. Start when a project link exists. Show the project, whether the live link runs, feasibility, a public-profile background, and the guide's rubric with a one-line reason. A challenge ticket lists only teams who entered it.
 - [ ] Admin demo. The Chick-fil-A line accepts credits only from an admin. Everyone else sees a preview, and confirm does nothing.
 - [ ] Prize copy. 50% of what this team receives, top 10 geometric, $0 if the team wins nothing. The tax line is in the same breath as any dollar amount.
+- [ ] Completion. Source-backed official results and demo rank, new-flow desktop/mobile acceptance, rendered UI review, final security/data checks, and an allowed preview only when the existing score-script gate applies. Report local demo and real-participant readiness separately. See CC-015 through CC-018.
 
 Screen words are forecast, position, market probability, points, and virtual credits. The demo rank is how the four tickets did against the official result. Mean Brier stays in the unit tests. It is not this rank.
 

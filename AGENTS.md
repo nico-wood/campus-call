@@ -8,6 +8,10 @@ The demo is `research/10-build-spec.md`. `TASKS.md` lists the current build. The
 
 `/resume` in this folder resolves the project name `vibe-coding-hackathon`. The team brain is the clone at `C:/lec-brain`. Do not look for these notes in `~/.claude/second-brain.md`. That file is not the team brain.
 
+## Overnight build
+
+When the current build in `TASKS.md` is in progress, follow `docs/overnight/LEAD-PROMPT.md`. The loop is one program Mode A, then each EP as build, Mode B, and Mode C when a screen changes. A passing gate continues. Graders do not edit. Do not use `scripts/loop.ps1` for that queue.
+
 ## Working style
 
 - Do one milestone at a time. Finish the current task in `TASKS.md` before starting the next one.

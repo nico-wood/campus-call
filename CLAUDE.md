@@ -13,5 +13,6 @@ Follow [AGENTS.md](./AGENTS.md) for the full rule set. The points below are the 
 - Use the `env-safety` skill whenever you touch environment variables, keys, or `.env` files.
 - Append an update to `PROGRESS.md` after every milestone or failed retry.
 - If a task fails 3 times, log the error and stop retrying it.
+- For the overnight build, follow `docs/overnight/LEAD-PROMPT.md`: one program Mode A, then build, Mode B, and Mode C per EP, continuing after a passing gate. Do not loosen the numeric gates. Do not wait for a review between stages. Graders stay read-only.
 
 Do not delete, skip, or weaken tests to make a task look done.

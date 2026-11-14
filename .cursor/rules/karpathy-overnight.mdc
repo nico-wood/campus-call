@@ -1,0 +1,16 @@
+---
+description: Campus Call overnight loop — TierraDex gates, chained without a human stop
+alwaysApply: true
+---
+
+# Overnight Karpathy loop
+
+Follow `docs/overnight/LEAD-PROMPT.md` for the current build.
+
+Sequence: program design, Mode A once, then each EP is build, Mode B, and Mode C when a screen changes. A PASS starts the next stage. Do not ask for a review between stages.
+
+Gates stay strict. Mode A and Mode B: every dimension ≥ 9.7, weighted ≥ 9.75, blocking 0, major 0. Mode C: weighted ≥ 9.7, every dimension ≥ 9.5, blocking 0, major 0, from real screenshots.
+
+Graders are read-only. The fixer does not score. Do not self-grade. Tests passing are not a gate. `scripts/score.ps1` is the preview check only.
+
+Do not run `vercel --prod`, push, read `.env` files, or apply hosted migrations without a grant already given in the session.
