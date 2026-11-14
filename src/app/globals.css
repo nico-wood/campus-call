@@ -476,3 +476,14 @@ a.outcome:hover {
 .door-main {
   padding-bottom: max(var(--space-6), env(safe-area-inset-bottom));
 }
+
+.door-main .event {
+  flex: 1;
+  width: 100%;
+  min-height: 18rem;
+  justify-content: center;
+  padding: var(--space-6);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  background: var(--surface);
+}
