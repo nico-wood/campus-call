@@ -82,4 +82,4 @@ Nico asked why a participant needs permission to use the event name or to run fo
 
 ## 2026-11-13 Permission tests written, not run
 
-Seven pgTAP files are in `supabase/tests/`. They check that a normal user cannot write trades, credits, scores, resolutions, markets, or outcomes, and cannot read a draft market. Docker is not available, so `supabase test db` was not run. The migrations were not applied to a hosted database. The app build is still in progress and is not merged.
+Seven pgTAP files are in `supabase/tests/`. They check that a normal user cannot write trades, credits, scores, resolutions, markets, or outcomes, and cannot read a draft market. Docker is not available, so `supabase test db` was not run. The migrations were not applied to a hosted database. The app build is still in progress and is not merged. The participant sheet in that build is only a team name, a one-line pitch, and an optional link. The live rule now asks for what they are building and what exists now, updatable until Sunday 11:30 a.m. That change waits until the current app worker finishes, so two edits do not collide.
