@@ -4,7 +4,7 @@ Chat history is not memory. The next agent reads this file, `LEAD-PROMPT.md`, an
 
 ## Now
 
-- Stage: CC-001 accepted. Mode B weighted 9.9. Mode C weighted 9.74. Both gates PASS. CC-002 is next. Do not start CC-003. Do not mark the Home parent in TASKS.md until CC-002 passes Mode B and Mode C. A second writer must not start until the CC-002 writer is the only one.
+- Stage: CC-001 accepted. Mode B weighted 9.9. Mode C weighted 9.74. CC-002 writer is running. Do not start a second writer. Do not start CC-003. Do not mark the Home parent in TASKS.md until CC-002 passes Mode B and Mode C.
 - Log: `logs/CC-001.md`. Mode B passed. Mode C is open.
 - Scored plan commit: `9c83c89`. Implementation base: `6938f48`.
 - Saves: commit every green stage. The local brain handoff for the Mode A gate is still due. Do not push the repo or the brain. If the brain write stops, continue from this file.
