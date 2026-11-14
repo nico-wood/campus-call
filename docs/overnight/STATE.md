@@ -4,7 +4,7 @@ Chat history is not memory. The next agent reads this file, `LEAD-PROMPT.md`, an
 
 ## Now
 
-- Stage: CC-003 Mode B, round 0 graders running. Do not start a second writer. Do not start another Mode B panel. Do not start CC-004. Do not mark the QR parent.
+- Stage: CC-003 Mode B, round 0 in progress. Security PASS 10.0. Correctness, cut completeness, and UI code are still running. Do not edit the door until those lenses return. Do not start a second writer. Do not start CC-004. Do not mark the QR parent.
 - Log: `logs/CC-003.md`. Status: implemented, awaiting Mode B.
 - Scored plan commit: `9c83c89`. Implementation base: `fa65b7a`.
 - Saves: commit every green stage. The local brain handoff for the Mode A gate is still due. Do not push the repo or the brain. If the brain write stops, continue from this file.
