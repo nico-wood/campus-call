@@ -7,7 +7,7 @@ Chat history is not memory. The next agent reads this file, `LEAD-PROMPT.md`, an
 - Stage: program Mode A, round 1 FAIL, round 2 not scored yet. Policy 9.8, architecture 9.8, completeness 9.9, cut order 9.4. Weighted 9.725. Major 1. Blocking 0.
 - Product code: not started
 - Result files: `.agent/research/cc-program-design-autoresearch/round-1-*.md` and `SCORE-HISTORY.md`
-- CC-006, CC-016, and CC-017 were patched after round 1. Round 2 grades that patch only. Do not start another round 2 panel.
+- Base: `90b1e76`. CC-006, CC-016, and CC-017 were patched after round 1. Round 2 graders are running. Do not start another round 2 panel.
 - Next: four round-2 graders. Do not start CC-001 until `GATE-RESULT.md` says PASS.
 - Saves: commit every green stage. Local brain handoff after Mode A and after each EP. Do not push the repo or the brain during the night.
 
