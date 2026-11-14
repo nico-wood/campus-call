@@ -21,7 +21,7 @@ Words on screen: forecast, position, market probability, points, virtual credits
 
 On 13 November 2026 Nico authorized a team lead and specialist agents to choose how best to build toward this goal. Routine technical/product details can be resolved by specialists and recorded in `DECISIONS.md`; do not repeatedly ask Nico to choose implementation details. Changes to this final goal require user direction.
 
-The team brain is the clone at `C:/lec-brain`. Do not read or write `~/.claude/second-brain.md`. The checked-in locked spec and this brief supply context to every agent. Quality for the overnight run is the autonomous TierraDex gate chain in `docs/overnight/LEAD-PROMPT.md`.
+The Campus Call brain is `docs/brain/` in this repository. Do not write Campus Call notes to `C:/lec-brain` or `compuwood/lec-agent-config`. Do not read or write `~/.claude/second-brain.md`. The checked-in locked spec and this brief supply context to every agent. Quality for the overnight run is the autonomous TierraDex gate chain in `docs/overnight/LEAD-PROMPT.md`.
 
 Build the runnable local demonstration first, then complete the real-account implementation and verification. Fixtures and device-local demo identity must be conspicuously labeled and isolated. They do not constitute participant-ready grants, a live leaderboard or cash eligibility. Never silently fall back from live mode to demo mode.
 

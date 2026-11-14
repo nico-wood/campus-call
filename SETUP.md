@@ -2,6 +2,8 @@
 
 What to reuse from TierraDex and lec-agent-config, and how this repo is hosted. Phase B product work stays in `TASKS.md`. This file does not start it.
 
+Campus Call notes live in `docs/brain/` in this repository, https://github.com/nico-wood/campus-call. During the build, read `docs/overnight/STATE.md` first. Do not write Campus Call notes to `C:/lec-brain`. Do not open pull requests on `compuwood/lec-agent-config`. Skills may still be copied from that config repo. The notes do not go back.
+
 ## Use here
 
 | Source | Brought into this repo | Why |
@@ -35,7 +37,7 @@ The folder is that repository. Do not run `git init` again. Do not add a second 
 
 ## Supabase
 
-Hosted project `campus-call` is linked. Cal Poly org. Ref `vftrwyuvrewekoofkcpp`. Region `us-west-1`. API host `https://vftrwyuvrewekoofkcpp.supabase.co`. The link metadata is in `supabase/.temp/`, which is gitignored. No migrations yet.
+Hosted project `campus-call` is linked. Cal Poly org. Ref `vftrwyuvrewekoofkcpp`. Region `us-west-1`. API host `https://vftrwyuvrewekoofkcpp.supabase.co`. The link metadata is in `supabase/.temp/`, which is gitignored.
 
 On a new machine, log in as the account that can open that project, then:
 
@@ -43,9 +45,9 @@ On a new machine, log in as the account that can open that project, then:
 npx --yes supabase link --project-ref vftrwyuvrewekoofkcpp --yes
 ```
 
-Do not pass a database password on the command line. Do not read a `.env` file to find a token. Do not apply migrations until a `TASKS.md` schema item is the active task and Nico has said to apply them in that session. Do not link the AMS project or any other org's project.
+Do not pass a database password on the command line. Do not read a `.env` file to find a token. Do not apply a hosted migration unless Nico has said to apply that migration in the current session. Do not link the AMS project or any other org's project.
 
-Local files live in `supabase/` after `supabase init`. They are not a hosted database.
+Local files live in `supabase/`. They are not the hosted database. The hosted project already has the migrations through `20261114120000_participant_one_time_grant.sql`. The confirm migration `20261114143000_forecast_position_confirm.sql` is local only. Do not edit a migration that has already been applied. Add a new file for new database behavior.
 
 Grok's Supabase MCP is pinned to this ref only in `.grok/config.toml`. There is no second project.
 
@@ -53,6 +55,6 @@ Grok's Supabase MCP is pinned to this ref only in `.grok/config.toml`. There is 
 
 Project: `campus-call` on the `nico-wood` Hobby team. Not `lecgroup`.
 
-Link and connect GitHub. Do not run `vercel --prod`. Do not deploy a preview until the app exists and `scripts/score.ps1` is the check you mean to publish. The lead memo says a preview comes after the score holds.
+Link and connect GitHub. Do not run `vercel --prod`. Do not deploy a preview until `scripts/score.ps1` is the check you mean to publish.
 
-Framework stays unset until Next.js is added in Phase B. The build command is not `npm test`.
+The app is Next.js. The Vercel project uses the Next.js preset. The build command is not `npm test`.

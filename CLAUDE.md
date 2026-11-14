@@ -5,6 +5,8 @@ Follow [AGENTS.md](./AGENTS.md) for the full rule set. The points below are the 
 ## Always
 
 - Read `AGENTS.md` at the start of a session.
+- Campus Call notes go in `docs/brain/entries/`. Read `docs/brain/README.md` and `docs/overnight/STATE.md` before a handoff. Do not write them to `C:/lec-brain` or open a pull request on `compuwood/lec-agent-config`.
+- UX and UI work follows the "UX and UI work" section in `AGENTS.md`. Presentation may change. The files and contracts listed there stay untouched.
 - Work on a single `TASKS.md` item at a time.
 - After a behavior change, use the `test-then-continue` skill: run tests if a test command exists, and do not start the next task until they pass.
 - After a successful milestone, use the `milestone-commit` skill. The remote is already `nico-wood/campus-call`. Do not run `git init`. Never commit `.env` files or secrets.

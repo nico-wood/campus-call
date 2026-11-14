@@ -51,13 +51,13 @@ On PASS, continue immediately to CC-001. On FAIL at round 6, log the residuals a
 
 Commit the Campus Call repo after every green stage. A green stage is a Mode A pass, an implementation whose tests passed, a Mode B pass, or a Mode C pass. The message names the stage. Do not commit a red tree. Do not push this repo.
 
-After Mode A passes, and after each EP is accepted or stopped, write one local brain handoff for `vibe-coding-hackathon` with the brain command blocks. Keep the branch on this machine. Do not push it and do not open a brain PR during the night. The next resume offers those branches. Never put a secret in the entry. If a brain write stops, note that in `PROGRESS.md` and continue. The repo commit is the copy that must not be skipped.
+After Mode A passes, and after each EP is accepted or stopped, add one note under `docs/brain/entries/` and update `docs/brain/README.md`. Do not write that note to `C:/lec-brain`. Do not open a pull request on `compuwood/lec-agent-config`. Never put a secret in the note. If the note cannot be written, record that in `PROGRESS.md` and continue. The repo commit is the copy that must not be skipped. Do not push this repo unless Nico says yes in the session.
 
 Demo fixtures stay labeled. Real once-per-email grants, transactional credits, and real identity have to be implemented before participant-ready acceptance. A local stand-in does not close those EPs.
 
 ## Still forbidden
 
-- `vercel --prod`, any push, force-push, `git init`, a new remote, or a second host project.
+- `vercel --prod`, a push unless Nico has said yes in this session, force-push, `git init`, a new remote, or a second host project. Do not push notes to `compuwood/lec-agent-config`.
 - Reading `.env` files, printing secrets, or staging credentials.
 - Applying hosted migrations unless this session already contains the `SETUP.md` grant. Author and test locally, and record the release block.
 - Using `scripts/loop.ps1`. It selects parked tasks and can check off failed work.

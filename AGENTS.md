@@ -12,6 +12,24 @@ The demo is `research/10-build-spec.md`. `TASKS.md` lists the current build. The
 
 When the current build in `TASKS.md` is in progress, follow `docs/overnight/LEAD-PROMPT.md`. Read `docs/overnight/STATE.md` first. Chat history is not memory. The loop is one program Mode A, then each EP as build, Mode B, and Mode C when a screen changes. A passing gate continues. One fresh agent per stage. Graders do not edit. Do not use `scripts/loop.ps1` for that queue.
 
+## UX and UI work
+
+Nico's other agent is doing presentation. Color, type, spacing, radius, sidebar chrome, scroll, and the layout of controls that already exist are in scope. CSS stays on the variables in `src/app/globals.css`. No Tailwind and no component library.
+
+That work stops at presentation. Leave these alone:
+
+- Behavior modules. `src/app/example-confirm.ts` still returns the same ledger with `wrote: false`, `debited: 0`, and `requested: false`. An example confirm writes nothing and sends no request. `src/app/hackathon-entry.ts` still returns granted 0 and wrote false. `src/app/participant-session.ts` and `src/app/verified-session.ts` keep validation, device demo, and live mode as they are. Invalid input writes nothing. Demo starts only from Start demo. Live mode is only a server-issued session. The client door does not import the live-session module.
+- Routes and queries. `/` keeps category and search in the query string. `/examples/[id]` stays the example event. `/hackathon?entry=qr&event=hackathon` is the only QR door. `section=forecast` may be added. Unknown or partial queries are not copied into the next link and do not open another event. Home keeps the example cards, each labeled Example. The door does not render the home forecast list or those cards. Home and the example routes do not render the enrollment form. The form renders only for that staged pair.
+- Example data. `src/app/example-forecasts.ts` keeps the five examples, their questions, outcomes, and categories.
+- Screen words. Forecast, position, market probability, points, and virtual credits. Never bet, wager, odds, or payout. The door still says entry is not open yet. Demo copy still says the session stays on this device, is not a verified account, and does not grant virtual credits.
+- `src/lib`. The LMSR, Brier, scoring, and ledger modules stay as they are.
+- Tests. Do not delete, skip, weaken, or rewrite assertions in `tests/` so a visual change can pass. A restyle that breaks `npm test` is reverted. The home shell still shows Campus Call, the search field, Portfolio, and All, Sports, Music, Dining, and Hackathon, with one `aria-current`. `src/app/globals.css` still contains `flex-wrap: wrap`, `@media (max-width: 40rem)`, and `--page-max`.
+- Frame inset. The search bar and the main column share `.frame`. A list must not carry both `.frame` and `margin: 0`. That pairing once cancelled `margin-inline: auto` and left the category row out of line with the wordmark.
+- Judges and accepted gates. Do not edit `scripts/score.ps1`. It is not the judge of these screens. Do not edit `logs/CC-001.md` through `logs/CC-004.md`, the gate files under `.agent/research/`, or the scored commits they name. Do not check or uncheck rows in `TASKS.md`.
+- The spec and the overnight plan. `research/10-build-spec.md`, `docs/overnight/EP-PLAN.md`, `docs/overnight/DECISIONS.md`, and the numeric gates in `docs/overnight/LEAD-PROMPT.md` stay as written. Status notes go in `docs/brain/`. Do not send them to `C:/lec-brain` or `compuwood/lec-agent-config`.
+- Database. Do not edit a migration that has already been applied. Do not apply another hosted migration. The confirm migration is local only. A presentation change does not edit `supabase/migrations` or `supabase/tests`. The door still grants 0. The One balance row stays open until a visitor path grants credits.
+- Git, secrets, and production. Do not push, force-push, or change git config. Do not read `.env` files. Do not run `vercel --prod`.
+
 ## Working style
 
 - Do one milestone at a time. Finish the current task in `TASKS.md` before starting the next one.
@@ -61,3 +79,13 @@ Before you say a task is done:
 2. Tests were run if a test command exists, and they passed.
 3. No secrets were added to the repo.
 4. `PROGRESS.md` was updated.
+
+<!-- BEGIN:nextjs-agent-rules -->
+
+## This is NOT the Next.js you know
+
+This version has breaking changes — APIs, conventions, and file structure may all differ from your training data. Read the relevant guide in `node_modules/next/dist/docs/` (resolved from this file's directory; in monorepos the `next` package may not be visible from the repo root) before writing any code. Heed deprecation notices.
+
+This block is written and re-added by `next dev` — verify at `node_modules/next/dist/server/lib/generate-agent-files.js`. Removing it from a diff only re-creates the uncommitted change; committing it with your work keeps the tree clean.
+
+<!-- END:nextjs-agent-rules -->

@@ -12,7 +12,9 @@ Nico locked the current build on 13 November 2026 and authorized the overnight r
 
 Build `research/10-build-spec.md`. That file is the demo. Do these in order. Do not start a parked item while one of these is open.
 
-Overnight execution: `docs/overnight/LEAD-PROMPT.md` is the loop. It chains one program Mode A, then each EP as build, Mode B, and Mode C when a screen changes, and it continues after a passing gate without waiting for review. `docs/overnight/GOAL.md` is the shared brief. `docs/overnight/EP-PLAN.md` is the job list. Routine decisions go in `docs/overnight/DECISIONS.md`. Do not use `scripts/loop.ps1` for this queue.
+Overnight execution: `docs/overnight/LEAD-PROMPT.md` is the loop. It chains one program Mode A, then each EP as build, Mode B, and Mode C when a screen changes, and it continues after a passing gate without waiting for review. `docs/overnight/GOAL.md` is the shared brief. `docs/overnight/EP-PLAN.md` is the job list. Routine decisions go in `docs/overnight/DECISIONS.md`. Status notes go in `docs/brain/` in this repository. Do not write them to `C:/lec-brain` or `compuwood/lec-agent-config`. Do not use `scripts/loop.ps1` for this queue.
+
+Status on 14 November 2026: Home and the QR route are accepted. The one-time grant is in the database and in `src/app/participant-grant.ts`. The door still grants 0, so One balance stays open. The four tickets have a local confirm function and a forecast-section list. A page submit writes nothing, so that row stays open. Portfolio is next. Do not check a row until that path is complete.
 
 - [x] Home. Campus example list. Categories All, Sports, Music, Dining, and the hackathon. Each campus card is labeled Example. Confirm does nothing and spends nothing.
 - [x] QR route. Opens the hackathon event only. No home, and no example cards.

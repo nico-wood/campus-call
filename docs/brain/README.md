@@ -7,6 +7,7 @@ Campus Call notes do not go in `C:/lec-brain` and do not go in `compuwood/lec-ag
 ## How to use it
 
 - Read `docs/overnight/STATE.md` first during the build. It is the stage pointer.
+- `AGENTS.md`, `CLAUDE.md`, `SETUP.md`, and `TASKS.md` point here. Follow them.
 - Write a new status note as `docs/brain/entries/YYYY-MM-DD-HHMM-handoff.md`.
 - Session handoffs for a single pass may also live in `docs/handoffs/`.
 - Do not create a second git repository or a second remote for these notes.
