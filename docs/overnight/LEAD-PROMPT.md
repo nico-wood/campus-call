@@ -2,7 +2,9 @@
 
 Nico authorized this run on 13 November 2026. Start from the current repo state. Do not wait for another review, and do not stop between a passing gate and the next stage. Preparing the earlier lead/reviewer notes was not this authorization. This prompt is.
 
-The computer has to stay powered, connected, and awake. This is not a cloud job. Do not promise that the run survives the app closing. In an open session, finish the stage you are in, then start the next one. Ending a turn is not a pause. A later turn in the same session reads `PROGRESS.md`, the gate files, and `logs/` and continues without asking Nico to restart.
+The computer has to stay powered, connected, and awake, and the Grok session has to stay open. Closing the app stops the run. A new session continues from `docs/overnight/STATE.md`. It does not need the old chat.
+
+Chat history is not memory. `STATE.md` is the stage pointer. One fresh agent per stage. A writer does not carry a grader transcript, and a grader does not edit. Before an agent exits it updates `STATE.md` and its gate or `logs/CC-NNN.md`. If a stage is unfinished and context is high, write the truth and stop so the next fresh agent continues. The parent does not re-implement an EP inside a thread that already holds a full audit.
 
 ---
 

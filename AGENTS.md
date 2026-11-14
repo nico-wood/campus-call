@@ -10,7 +10,7 @@ The demo is `research/10-build-spec.md`. `TASKS.md` lists the current build. The
 
 ## Overnight build
 
-When the current build in `TASKS.md` is in progress, follow `docs/overnight/LEAD-PROMPT.md`. The loop is one program Mode A, then each EP as build, Mode B, and Mode C when a screen changes. A passing gate continues. Graders do not edit. Do not use `scripts/loop.ps1` for that queue.
+When the current build in `TASKS.md` is in progress, follow `docs/overnight/LEAD-PROMPT.md`. Read `docs/overnight/STATE.md` first. Chat history is not memory. The loop is one program Mode A, then each EP as build, Mode B, and Mode C when a screen changes. A passing gate continues. One fresh agent per stage. Graders do not edit. Do not use `scripts/loop.ps1` for that queue.
 
 ## Working style
 
