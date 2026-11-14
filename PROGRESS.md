@@ -359,3 +359,7 @@ Fresh read-only visual review scores: 8.68 -> 9.21 -> 9.46 -> 9.48 -> 9.50/10. F
 ## 2026-11-14 CC-005 local grant test passed
 
 Docker Desktop 4.99 was installed and the engine stayed up. `npx supabase start` exited 0. `npx supabase test db` exited 0 against 127.0.0.1:54322: 8 files, 156 tests. The participant grant file passed, including two concurrent grants of one normalized email inserting one 1000-credit row, and the anon and authenticated denials. `npm test` exited 0 (52 passed, 9 files). The pgTAP race connects over the database server address because loopback trust cannot satisfy dblink for a non-superuser. The app does not call the grant yet. The One balance row stays open. Mode B has not run. CC-006 was not started. No `.env` file was read. No new hosted migration was applied. Nothing was pushed.
+
+## 2026-11-14 CC-005 Mode B passed
+
+Four read-only graders scored commit `3bf3508`. Correctness 9.8, security 9.9, cut completeness 9.8, UI code 9.7. Weighted 9.80. Blocking 0. Major 0. Gate file: `.agent/research/cc-005-build-autoresearch/GATE-RESULT.md`. Mode C is not applicable because no screen changed. Three minors stay: a control character that passes both normalizers can raise on the ledger check, the unique-index assertion checks the index name, and the dispatch assertion checks that `dblink_send_query` returned 1. The app still does not call the grant. The One balance row stays open. CC-006 was not started. No `.env` file was read. Nothing was pushed.
