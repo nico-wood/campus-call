@@ -1,6 +1,7 @@
 import { readFileSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
+import ts from "typescript";
 import { describe, expect, it } from "vitest";
 import { confirmExample } from "../src/app/example-confirm";
 import { openHackathonDoor } from "../src/app/hackathon-entry";
@@ -36,32 +37,40 @@ function quietStore(): DeviceStore & { writes: number } {
   };
 }
 
-function braceBody(source: string, signature: string): string {
-  const start = source.indexOf(signature);
-  const open = start < 0 ? -1 : source.indexOf("{", start);
-  if (open < 0) throw new Error(`missing ${signature}`);
-  let depth = 0;
-  for (let index = open; index < source.length; index += 1) {
-    const char = source[index];
-    if (char === "{") depth += 1;
-    else if (char === "}") {
-      depth -= 1;
-      if (depth === 0) return source.slice(open + 1, index);
-    }
-  }
-  throw new Error(`unclosed ${signature}`);
+function identifierName(node: ts.Node): string | null {
+  if (ts.isIdentifier(node)) return node.text;
+  if (ts.isPropertyAccessExpression(node)) return identifierName(node.expression);
+  return null;
 }
 
-function effectBodies(source: string): string[] {
-  const bodies: string[] = [];
-  let from = 0;
-  while (from < source.length) {
-    const at = source.indexOf("useEffect(", from);
-    if (at < 0) break;
-    bodies.push(braceBody(source.slice(at), "useEffect("));
-    from = at + "useEffect(".length;
-  }
-  return bodies;
+function containsNode(outer: ts.Node, inner: ts.Node): boolean {
+  return inner.getStart() >= outer.getStart() && inner.getEnd() <= outer.getEnd();
+}
+
+function demoCallees(source: ts.SourceFile): { calls: ts.CallExpression[]; aliases: Set<string> } {
+  const aliases = new Set<string>();
+  const calls: ts.CallExpression[] = [];
+  const visit = (node: ts.Node): void => {
+    if (
+      ts.isVariableDeclaration(node) &&
+      ts.isIdentifier(node.name) &&
+      node.initializer &&
+      identifierName(node.initializer) === "startDeviceDemo"
+    ) {
+      aliases.add(node.name.text);
+    }
+    ts.forEachChild(node, visit);
+  };
+  visit(source);
+  const collect = (node: ts.Node): void => {
+    if (ts.isCallExpression(node)) {
+      const name = identifierName(node.expression);
+      if (name === "startDeviceDemo" || (name != null && aliases.has(name))) calls.push(node);
+    }
+    ts.forEachChild(node, collect);
+  };
+  collect(source);
+  return { calls, aliases };
 }
 
 describe("QR enrollment and demo mode", () => {
@@ -232,19 +241,43 @@ describe("QR enrollment and demo mode", () => {
     expect(client).not.toMatch(/onChange=\{[^}]*startDeviceDemo/);
     expect(client).toContain("onSubmit={onStartDemo}");
     expect(client).toContain('type="submit"');
-    const handler = braceBody(client, "function onStartDemo");
-    const demoCalls = client.match(/startDeviceDemo\(/g) ?? [];
-    expect(demoCalls).toHaveLength(1);
-    expect(handler.match(/startDeviceDemo\(/g)).toHaveLength(1);
-    const effects = effectBodies(client);
+    const parsed = ts.createSourceFile("qr-enrollment.tsx", client, ts.ScriptTarget.Latest, true, ts.ScriptKind.TSX);
+    const handlers: ts.FunctionDeclaration[] = [];
+    const onStartNames: ts.Identifier[] = [];
+    const effects: ts.CallExpression[] = [];
+    const visit = (node: ts.Node): void => {
+      if (ts.isFunctionDeclaration(node) && node.name?.text === "onStartDemo") handlers.push(node);
+      if (ts.isIdentifier(node) && node.text === "onStartDemo") onStartNames.push(node);
+      if (
+        ts.isCallExpression(node) &&
+        ts.isIdentifier(node.expression) &&
+        node.expression.text === "useEffect"
+      ) {
+        effects.push(node);
+      }
+      ts.forEachChild(node, visit);
+    };
+    visit(parsed);
+    expect(handlers).toHaveLength(1);
+    const handler = handlers[0];
+    expect(handler).toBeDefined();
+    const { calls, aliases } = demoCallees(parsed);
+    expect(calls).toHaveLength(1);
+    expect(calls[0] && handler && containsNode(handler, calls[0])).toBe(true);
     expect(effects.length).toBeGreaterThan(0);
     for (const effect of effects) {
-      expect(effect).not.toContain("startDeviceDemo");
-      expect(effect).not.toContain("onStartDemo");
+      const names: string[] = [];
+      const readNames = (node: ts.Node): void => {
+        if (ts.isIdentifier(node)) names.push(node.text);
+        ts.forEachChild(node, readNames);
+      };
+      for (const argument of effect.arguments) readNames(argument);
+      expect(names).not.toContain("startDeviceDemo");
+      expect(names).not.toContain("onStartDemo");
+      for (const alias of aliases) expect(names).not.toContain(alias);
     }
-    const handlerNames = client.match(/\bonStartDemo\b/g) ?? [];
-    expect(handlerNames).toHaveLength(2);
-    expect(client).toContain("function onStartDemo");
+    expect(onStartNames).toHaveLength(2);
+    expect(handler?.name?.text).toBe("onStartDemo");
     expect(client).toContain("onSubmit={onStartDemo}");
     expect(session).not.toMatch(/from\s+["']\.\/verified-session["']/);
     expect(session).not.toContain("resolveLiveMode");
