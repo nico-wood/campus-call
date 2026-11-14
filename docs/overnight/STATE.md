@@ -4,11 +4,11 @@ Chat history is not memory. The next agent reads this file, `LEAD-PROMPT.md`, an
 
 ## Now
 
-- Stage: program Mode A, round 2 in progress. Policy PASS 9.8. Completeness PASS 9.9. Architecture PASS 9.8. Cut order is still running. Round 1 remains FAIL at weighted 9.725. Do not start CC-001.
+- Stage: program Mode A, round 2 FAIL, round 3 not scored yet. Policy 9.8, architecture 9.8, completeness 9.9, cut order 9.6. Weighted 9.775. Major 1. Blocking 0.
 - Product code: not started
-- Result files: `.agent/research/cc-program-design-autoresearch/round-1-*.md` and `SCORE-HISTORY.md`
-- Base: `90b1e76`. CC-006, CC-016, and CC-017 were patched after round 1. Round 2 graders are running. Do not start another round 2 panel.
-- Next: four round-2 graders. Do not start CC-001 until `GATE-RESULT.md` says PASS.
+- Result files: `.agent/research/cc-program-design-autoresearch/round-2-*.md` and `SCORE-HISTORY.md`
+- CC-006 now requires a first confirm with no earlier commit to be refused at and after the lock. A replay of the pre-lock commit is a separate check. Round 3 grades that sentence. Do not start another round 3 panel.
+- Next: four round-3 graders. Do not start CC-001 until `GATE-RESULT.md` says PASS.
 - Saves: commit every green stage. Local brain handoff after Mode A and after each EP. Do not push the repo or the brain during the night.
 
 ## Context

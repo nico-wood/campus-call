@@ -35,7 +35,9 @@ Scored against `90b1e76`. Three lenses still running.
 | Dimension | Score | Blocking | Major | Minor | Gate |
 | --- | ---: | ---: | ---: | ---: | --- |
 | Policy and non-negotiables | 9.8 | 0 | 0 | 2 | PASS |
-| Cut order and implementability | pending | | | | |
+| Cut order and implementability | 9.6 | 0 | 1 | 0 | FAIL |
+
+Weighted: 9.775. Blocking: 0. Major: 1. Status: FAIL. Cut order is under 9.7. No `GATE-RESULT.md`. Round 3 grades the CC-006 first-confirm wording. Do not start CC-001.
 | Completeness and consistency | 9.9 | 0 | 0 | 0 | PASS |
 | Architecture fidelity | 9.8 | 0 | 0 | 1 | PASS |
 
