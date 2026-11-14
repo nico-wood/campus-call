@@ -4,7 +4,7 @@ Chat history is not memory. The next agent reads this file, `LEAD-PROMPT.md`, an
 
 ## Now
 
-- Stage: CC-002 Mode B PASS. Weighted 9.9. Blocking 0. Major 0. Mode C is next and has not started. Do not start CC-003. Do not mark the Home parent in TASKS.md. A second writer must not start.
+- Stage: CC-002 Mode B PASS. Weighted 9.9. Mode C captures are in `.agent/research/ui-pixel/examples/`. The pixel grader is next. Do not start CC-003. Do not mark the Home parent in TASKS.md. A second writer must not start.
 - Log: `logs/CC-002.md`. Status: implemented, awaiting Mode B.
 - Scored plan commit: `9c83c89`. Implementation base: `83b0b21`.
 - Saves: commit every green stage. The local brain handoff for the Mode A gate is still due. Do not push the repo or the brain. If the brain write stops, continue from this file.
