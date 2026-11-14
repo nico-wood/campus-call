@@ -4,7 +4,7 @@ Chat history is not memory. The next agent reads this file, `LEAD-PROMPT.md`, an
 
 ## Now
 
-- Stage: CC-002 Mode B, round 0 in progress. Security PASS 10.0. Correctness, cut completeness, and UI code are still running. Do not edit the cards until those lenses return. Do not start a second writer. Do not start CC-003. Do not mark the Home parent in TASKS.md.
+- Stage: CC-002 Mode B, round 0 in progress. Security PASS 10.0. UI code PASS 9.8. Correctness and cut completeness are still running. Do not edit the cards until those lenses return. Do not start a second writer. Do not start CC-003. Do not mark the Home parent in TASKS.md.
 - Log: `logs/CC-002.md`. Status: implemented, awaiting Mode B.
 - Scored plan commit: `9c83c89`. Implementation base: `83b0b21`.
 - Saves: commit every green stage. The local brain handoff for the Mode A gate is still due. Do not push the repo or the brain. If the brain write stops, continue from this file.
