@@ -28,19 +28,21 @@ export default function HomePage() {
         </div>
       </header>
       <nav className="category-bar" aria-label="Categories">
-        <ul className="categories frame">
-          {CATEGORIES.map((category) => (
-            <li key={category}>
-              <button
-                type="button"
-                className="category"
-                aria-current={category === "All" ? "true" : undefined}
-              >
-                {category}
-              </button>
-            </li>
-          ))}
-        </ul>
+        <div className="frame">
+          <ul className="categories">
+            {CATEGORIES.map((category) => (
+              <li key={category}>
+                <button
+                  type="button"
+                  className="category"
+                  aria-current={category === "All" ? "true" : undefined}
+                >
+                  {category}
+                </button>
+              </li>
+            ))}
+          </ul>
+        </div>
       </nav>
       <main className="main frame">
         <section className="empty" aria-labelledby="forecast-list-heading">
