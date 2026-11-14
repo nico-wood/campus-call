@@ -47,3 +47,9 @@ Nico adopted the economics recommendation. `research/00-summary.md` now sets the
 The same memo sets the room entry path. A QR opens one market. The question and two priced buttons are the first screen. One sheet collects a handle, an 18+ checkbox, and Google or a magic link. The staged position is placed when sign-in returns. Recognition is two beats: a Saturday position, and a position still held at Sunday 11:30 a.m. PT. `research/07-incentives.md` keeps its room tactics. Its 20% split, 3:00 p.m. lock, and three checkpoints are marked superseded.
 
 No product code changed. Tests were not re-run. Phase B was not started. Nothing was posted or sent.
+
+## 2026-11-13 Sports as a later business line
+
+Nico wants club sports and NCAA sports tackled eventually. `research/04-business-model.md` now has that as a later line: a public result, a read-only probability, no price, and no buyer yet. It stays closed until Athletics compliance says yes in writing. It is not on the weekend board and not in the weekend pitch. `research/00-summary.md` points at that note.
+
+No product code changed. Tests were not re-run. Phase B was not started. Nothing was posted or sent.

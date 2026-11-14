@@ -21,6 +21,16 @@ The thing being sold, later, is a read-only view of market probabilities that ch
 
 Assumption, stated plainly: in the first term the buyer is "whoever has the decision," and the only dollar number attached to that buyer is the cost to host the campus, not a willingness-to-pay study.
 
+### Later: club sports and NCAA sports
+
+Nico wants this line. It is not this weekend's board, and it is not a price.
+
+The question students would forecast is a public result: a final score on the athletics site, or whether a figure the department already publishes clears a threshold written down before the game. Club sports use the same shape once a club or the campus posts the result on a page named in advance. The thing a buyer might pay for, later, is a read-only probability that moves before gates, concessions, or a club's own prep. That buyer could be athletics, a club, or a sponsor who wants their name next to a game students already follow. No one has agreed to pay. No rate was found. Do not invent one.
+
+This line stays closed until Athletics compliance says yes in writing. The 2021–22 student-athlete handbook still posted by Athletics cites NCAA Bylaw 10.3, tells athletes not to stake anything of tangible value on a college, professional, or amateur event the NCAA sponsors, and tells them not to share team information. A current NCAA manual was not opened. The handbook may be stale. Until compliance says otherwise, treat that as the campus document. The rec-center facility rules also ban gambling in that building, so a sports demo does not run there. Players do not take a position on their own contest. Campus Call does not ask an athlete for information that is not already public. Do not pitch this back to the office that controls the outcome as if they had asked for it.
+
+Sophie does not say club sports or NCAA sports on stage this weekend. The spoken plan stays the hackathon pilot. This section is the note for after compliance, not a slide.
+
 ### Sponsored markets
 
 A brand pays cash so that one market's points are subsidized and the brand's name sits on that market. The subsidy itself is points, not dollars. Under the product assumption in the cost table (liquidity parameter b = 100 credits), a binary market's worst-case subsidy is 100 × ln(2), about 69.3 credits. Those credits are not a cash cost and must not be quoted as $69.
@@ -103,7 +113,7 @@ We do not have a forecast of page views, so this note does not estimate overage.
 
 ## What you can say out loud
 
-Campus Call lets students on one campus forecast together with points, and it shows the crowd's market probability as a plain number. This weekend the only thing that is true is a free pilot at the Cal Poly hackathon, with no paying customer and no cash in the app. Points stay points, and a student does not pay to take a position. The plan, which is not built yet, is that a club, the student government, athletics, or dining might later pay for a simple dashboard, or a local brand might pay to put its name on a market and cover hosting. A referral to a licensed cash event-contract company is a later idea that depends on regulation, and it is not part of this weekend.
+Campus Call lets students on one campus forecast together with points, and it shows the crowd's market probability as a plain number. This weekend the only thing that is true is a free pilot at the Cal Poly hackathon, with no paying customer and no cash in the app. Points stay points, and a student does not pay to take a position. The plan, which is not built yet, is that a club, the student government, athletics, or dining might later pay for a simple dashboard, or a local brand might pay to put its name on a market and cover hosting. Club sports and NCAA sports are part of that later plan only, and only after Athletics compliance says yes in writing. They are not a weekend market and not a weekend slide. A referral to a licensed cash event-contract company is a later idea that depends on regulation, and it is not part of this weekend.
 
 ## If nobody pays
 
@@ -138,3 +148,4 @@ Other risks, stated without a rescue plan we do not have:
 5. Who resolves a market, and what public source do they use? A dashboard is only as good as that rule.
 6. Can a sponsor fund the points and be named, with no say over the question text or the resolution?
 7. Is the licensed-venue referral staying out of the demo and the spoken pitch, except as the one line that it is later and not this weekend?
+8. Who at Athletics compliance is the person to ask, after the hackathon, before any club-sport or NCAA question is drafted for the live board?
