@@ -104,6 +104,10 @@ Nico removed the chat-server tie-break. The participant guide is the schedule so
 
 A later agent looked for the session notes in `~/.claude/second-brain.md` and did not find them. The team brain is `C:/lec-brain`. This folder resumes as `vibe-coding-hackathon`. `AGENTS.md` now says that. The product spec was already on `main`. Docs only. Tests were not re-run. Nothing was posted or sent.
 
+## 2026-11-14 CC-004 accepted
+
+Mode C round 1 passed. Weighted 9.73. Every dimension is at least 9.6. No blocking or major findings. Two minors stay. Mode B had already passed at 9.85. CC-004 is accepted. The One balance row in TASKS.md stays open for the persistent grant. CC-005 is next. The local brain handoff is still due. Nothing was pushed.
+
 ## 2026-11-14 CC-004 full-width market row
 
 The QR door's market-probability row now uses one column, so it matches the demo form's width. Example outcome pairs stay two-up. Tests passed, 52 of 52. The three enrollment captures were replaced. Round 1 is next. The EP is not accepted.
