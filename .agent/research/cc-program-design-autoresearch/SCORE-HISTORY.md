@@ -36,6 +36,6 @@ Scored against `90b1e76`. Three lenses still running.
 | --- | ---: | ---: | ---: | ---: | --- |
 | Policy and non-negotiables | 9.8 | 0 | 0 | 2 | PASS |
 | Cut order and implementability | pending | | | | |
-| Completeness and consistency | pending | | | | |
-| Architecture fidelity | pending | | | | |
+| Completeness and consistency | 9.9 | 0 | 0 | 0 | PASS |
+| Architecture fidelity | 9.8 | 0 | 0 | 1 | PASS |
 
