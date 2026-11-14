@@ -37,7 +37,7 @@ Product decisions locked in `research/00-summary.md`:
 - [ ] 3c: Add /admin with data-testid admin-resolve. It resolves the signed-in user's open test market to YES. Show manipulation flags. Flags do not resolve a market.
 - [ ] 3c: Add /rules with the Official Rules from research/00-summary.md. State that virtual credits have no cash value, how mean Brier and points differ, the banned topics, and that no cash prize exists until that section is updated in writing.
 - [ ] 3c: Add an opt-in form: team name, one-line pitch, optional public link. Category stays off until organizers freeze a list. People who do not submit are not listed.
-- [ ] 3d: Implement generateMarkets so npx vitest run evals passes with no network and no API key. A reject result is { rejected: true, reason } and reason contains the banned class id. Do not insert a market.
+- [x] 3d: Implement generateMarkets so npx vitest run evals passes with no network and no API key. A reject result is { rejected: true, reason } and reason contains the banned class id. Do not insert a market.
 - [ ] 3d: Add a probability-move explainer that uses the position log only and does not create a forecast.
 - [ ] 3d: Add a resolution assistant note that a human must confirm before a resolution is written.
 - [ ] 3e: Make e2e/campus-call.spec.ts pass on desktop 1280x720 and mobile 390x844. Do not weaken or skip it. Record the scripts/score.ps1 number in PROGRESS.md.

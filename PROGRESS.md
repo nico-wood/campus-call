@@ -53,3 +53,7 @@ No product code changed. Tests were not re-run. Phase B was not started. Nothing
 Nico wants club sports and NCAA sports tackled eventually. `research/04-business-model.md` now has that as a later line: a public result, a read-only probability, no price, and no buyer yet. It stays closed until Athletics compliance says yes in writing. It is not on the weekend board and not in the weekend pitch. `research/00-summary.md` points at that note.
 
 No product code changed. Tests were not re-run. Phase B was not started. Nothing was posted or sent.
+
+## 2026-11-13 Phase B: offline market drafts
+
+Nico said go on Phase B. `src/lib/ai/generate-markets.ts` drafts one campus market from an allowed announcement, or rejects with the banned class id. It does not call the network and does not insert a row. `npx vitest run evals` passed, 10 / 10. `npm test` is still red until the ledger modules land. No Discord, GitHub, Reddit, professor-rating, or sports crawl was added. The market shape stays LMSR.
