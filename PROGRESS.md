@@ -63,3 +63,7 @@ Nico said go on Phase B. `src/lib/ai/generate-markets.ts` drafts one campus mark
 ## 2026-11-13 Phase B: SQL migrations, not applied
 
 Four files are in `supabase/migrations/`. RLS is on for profiles, markets, outcomes, trades, credit_ledger, scores, and resolutions. Anon and authenticated have no write policy on those server tables. Profiles can be selected by the owner, and authenticated can update only display_name. The seed has 15 markets. Markets 1 and 2 are open and each has a house subsidy of 69.31471805599453 virtual credits. Markets 3 through 15 are drafts. The files were read and not applied to a hosted database. No `.env` was read.
+
+## 2026-11-13 Prize pool set to 50 percent
+
+Nico changed the pool from 25% to 50% and kept the top 10. On a $4,000 first place the pool is $2,000 and the builders keep $2,000. On first place plus the challenge the pool is $2,500 and the builders keep $2,500. The checks are the geometric list in `research/00-summary.md`, adjusted so they sum to the pool. The economics note still records why it recommended 25%. The live rule is the summary. A cash award can be taxable even if no form is sent. This is not tax advice. The dollars stay unannounced. Nothing was posted or sent.

@@ -1,5 +1,7 @@
 # Prize economics
 
+**Decision after this note.** On 13 November 2026 Nico set the pool at 50% of what the team actually receives, still paid to 10 geometric ranks. The analysis below recommended 25% because 50% leaves the builders exactly half, including on a $1,000 third place. That recommendation is not the live rule. The live rule, the dollar lists, and the tax disclaimer are in `research/00-summary.md`. This is not tax advice. A cash award can be taxable income even when no form is sent. Do not describe it as tax-free.
+
 This note prices a forecaster pool paid only out of money Campus Call's own team wins at the Cal Poly AI Hackathon (Friday 13 November 2026 through Sunday 15 November 2026). It recommends how large that pool should be, and how to divide it, if the aim is accounts in the room and Nico still keeps most of the money.
 
 **Nico stated, not verified on a public page:**
@@ -274,4 +276,4 @@ Be skeptical of the non-cash channel too. Nothing in these dollars shows that 30
 3. Which tie rule is published: this note's equal split of the combined cash, or the incentives note's earlier-timestamp rule? They disagree. Cash should not use a draw either way.
 4. If fewer than 10 people finish with at least 3 resolved markets, does he accept leaving the empty ranks unpaid, posting that fact, and keeping those dollars with the builders, rather than rescaling the pool onto a shorter list?
 5. Is anyone besides Nico and Sophie ineligible for the forecaster prize? Other people on the building team are not named here.
-6. Does he want this 25% and top-10 list to replace the earlier draft of 20% and 50/30/20? Adopted by Nico on 13 November 2026. The live rule is in `research/00-summary.md`. It is not announced until Sophie agrees, an organizer confirms sharing is allowed, and Nico accepts that a lawyer has not reviewed it.
+6. Does he want this 25% and top-10 list to replace the earlier draft of 20% and 50/30/20? He adopted 25% and the top 10, then on 13 November 2026 changed the share to 50% and kept the top 10. The live rule is in `research/00-summary.md`. It is not announced until Sophie agrees, an organizer confirms sharing is allowed, and Nico accepts that a lawyer has not reviewed it. A tax advisor has not reviewed it either.

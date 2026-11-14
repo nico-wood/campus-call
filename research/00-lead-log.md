@@ -22,7 +22,7 @@ No extra sub-agents. Lead writes `research/00-summary.md` only after 1, 2, 4, 5,
 
 Nico stated prize amounts and a 300-person room, and set the prediction close at 11:30. One economics sub-agent was spawned to compare giving away 20, 25, 30, 40, and 50 percent, and to test whether 50/30/20 is the right split. No other agents. Phase B still stopped.
 
-The note is `research/08-prize-economics.md`. Nico adopted 25% and the top-10 geometric list on 13 November 2026. That rule is now in `research/00-summary.md`. It is not announced until Sophie agrees, an organizer confirms sharing is allowed, and Nico accepts that a lawyer has not reviewed it. The same memo sets the room entry path: one open market from a QR, then one sheet for a handle, an 18+ checkbox, and Google or a magic link. Sunday markets that are still open close at 11:30 a.m. PT.
+The note is `research/08-prize-economics.md`. Nico first adopted 25% and the top-10 geometric list, then on 13 November 2026 set the pool at 50% and kept the top 10. That rule, and a tax disclaimer, are in `research/00-summary.md`. It is not announced until Sophie agrees, an organizer confirms sharing is allowed, and Nico accepts that a lawyer has not reviewed it. A tax advisor has not reviewed it either. Do not describe a cash award as tax-free. The same memo sets the room entry path: one open market from a QR, then one sheet for a handle, an 18+ checkbox, and Google or a magic link. Sunday markets that are still open close at 11:30 a.m. PT.
 
 ### 2026-11-13 18:32 PT — second brain
 
