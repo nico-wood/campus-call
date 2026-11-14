@@ -104,6 +104,10 @@ Nico removed the chat-server tie-break. The participant guide is the schedule so
 
 A later agent looked for the session notes in `~/.claude/second-brain.md` and did not find them. The team brain is `C:/lec-brain`. This folder resumes as `vibe-coding-hackathon`. `AGENTS.md` now says that. The product spec was already on `main`. Docs only. Tests were not re-run. Nothing was posted or sent.
 
+## 2026-11-14 CC-004 brace-matched demo assertion
+
+The only `startDeviceDemo(` call must sit in the brace-matched body of `onStartDemo`. Every effect must omit that call and `onStartDemo`. The only other `onStartDemo` reference is the submit binding. The rejection test now covers an 81-character name and `ada@example.c`. `npm test` exit 0, 52 tests. Lint and typecheck exit 0. Round 2 is next. The EP is not accepted.
+
 ## 2026-11-14 CC-004 Mode B round 1 fail
 
 Cut completeness scored 9.6. The new assertion still allows a second effect to be the only `startDeviceDemo(` call. Correctness 10.0, security 10.0, and UI code 9.7. Weighted 9.825. One major remains. The EP is not accepted. The brace-matched assertion is next, then a fresh round.

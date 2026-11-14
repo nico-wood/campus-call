@@ -36,6 +36,34 @@ function quietStore(): DeviceStore & { writes: number } {
   };
 }
 
+function braceBody(source: string, signature: string): string {
+  const start = source.indexOf(signature);
+  const open = start < 0 ? -1 : source.indexOf("{", start);
+  if (open < 0) throw new Error(`missing ${signature}`);
+  let depth = 0;
+  for (let index = open; index < source.length; index += 1) {
+    const char = source[index];
+    if (char === "{") depth += 1;
+    else if (char === "}") {
+      depth -= 1;
+      if (depth === 0) return source.slice(open + 1, index);
+    }
+  }
+  throw new Error(`unclosed ${signature}`);
+}
+
+function effectBodies(source: string): string[] {
+  const bodies: string[] = [];
+  let from = 0;
+  while (from < source.length) {
+    const at = source.indexOf("useEffect(", from);
+    if (at < 0) break;
+    bodies.push(braceBody(source.slice(at), "useEffect("));
+    from = at + "useEffect(".length;
+  }
+  return bodies;
+}
+
 describe("QR enrollment and demo mode", () => {
   it("rejects an empty name, a blank email, and a malformed email without writing", () => {
     const store = quietStore();
@@ -43,7 +71,9 @@ describe("QR enrollment and demo mode", () => {
     expect(validateEnrollment("   ", "ada@example.com")).toEqual({ ok: false, reason: "name" });
     expect(validateEnrollment("\n\t", "ada@example.com")).toEqual({ ok: false, reason: "name" });
     expect(validateEnrollment("Ada\u0000Lovelace", "ada@example.com")).toEqual({ ok: false, reason: "name" });
+    expect(validateEnrollment("a".repeat(81), "ada@example.com")).toEqual({ ok: false, reason: "name" });
     expect(validateEnrollment("Ada", "")).toEqual({ ok: false, reason: "email" });
+    expect(validateEnrollment("Ada", "ada@example.c")).toEqual({ ok: false, reason: "email" });
     expect(validateEnrollment("Ada", "   ")).toEqual({ ok: false, reason: "email" });
     for (const email of ["not-an-email", "a@b", "ada@", "@example.com", "ada@@example.com", "ada example@example.com", "ada@example"]) {
       expect(validateEnrollment("Ada", email)).toEqual({ ok: false, reason: "email" });
@@ -55,6 +85,8 @@ describe("QR enrollment and demo mode", () => {
     });
     expect(startDeviceDemo(store, { name: "", email: "ada@example.com" })).toEqual({ ok: false, reason: "name" });
     expect(startDeviceDemo(store, { name: "Ada", email: "   " })).toEqual({ ok: false, reason: "email" });
+    expect(startDeviceDemo(store, { name: "a".repeat(81), email: "ada@example.com" }).ok).toBe(false);
+    expect(startDeviceDemo(store, { name: "Ada", email: "ada@example.c" }).ok).toBe(false);
     expect(store.writes).toBe(0);
     expect(readDeviceDemo(store)).toBeNull();
     expect(issueVerifiedServerSession({ name: " ", email: "ada@example.com" })).toBeNull();
@@ -200,15 +232,20 @@ describe("QR enrollment and demo mode", () => {
     expect(client).not.toMatch(/onChange=\{[^}]*startDeviceDemo/);
     expect(client).toContain("onSubmit={onStartDemo}");
     expect(client).toContain('type="submit"');
-    const effect = client.match(/useEffect\(\(\) => \{([\s\S]*?)\}, \[\]\)/);
-    expect(effect?.[1]).toBeTruthy();
-    expect(effect?.[1]).not.toContain("startDeviceDemo");
-    const handlerStart = client.indexOf("function onStartDemo");
-    const handlerEnd = client.indexOf("return (", handlerStart);
-    const callSites = [...client.matchAll(/startDeviceDemo\(/g)].map((match) => match.index ?? -1);
-    expect(callSites).toHaveLength(1);
-    expect(callSites[0]).toBeGreaterThan(handlerStart);
-    expect(callSites[0]).toBeLessThan(handlerEnd);
+    const handler = braceBody(client, "function onStartDemo");
+    const demoCalls = client.match(/startDeviceDemo\(/g) ?? [];
+    expect(demoCalls).toHaveLength(1);
+    expect(handler.match(/startDeviceDemo\(/g)).toHaveLength(1);
+    const effects = effectBodies(client);
+    expect(effects.length).toBeGreaterThan(0);
+    for (const effect of effects) {
+      expect(effect).not.toContain("startDeviceDemo");
+      expect(effect).not.toContain("onStartDemo");
+    }
+    const handlerNames = client.match(/\bonStartDemo\b/g) ?? [];
+    expect(handlerNames).toHaveLength(2);
+    expect(client).toContain("function onStartDemo");
+    expect(client).toContain("onSubmit={onStartDemo}");
     expect(session).not.toMatch(/from\s+["']\.\/verified-session["']/);
     expect(session).not.toContain("resolveLiveMode");
     expect(session).not.toMatch(/\bfetch\s*\(/);
