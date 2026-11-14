@@ -104,6 +104,10 @@ Nico removed the chat-server tie-break. The participant guide is the schedule so
 
 A later agent looked for the session notes in `~/.claude/second-brain.md` and did not find them. The team brain is `C:/lec-brain`. This folder resumes as `vibe-coding-hackathon`. `AGENTS.md` now says that. The product spec was already on `main`. Docs only. Tests were not re-run. Nothing was posted or sent.
 
+## 2026-11-14 CC-002 Mode B, security
+
+Security scored 10.0 with no findings on commit `35432c6`. The other three Mode B lenses were still running. The cards were not edited. The EP is not accepted.
+
 ## 2026-11-14 CC-002 awaiting Mode B
 
 The example cards and event view are commit `35432c6`. Tests, lint, typecheck, and the Next build passed in that step. Mode B round 0 is the next score. The EP is not accepted.
