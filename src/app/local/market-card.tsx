@@ -112,6 +112,8 @@ export function MarketCard({ market }: { market: MergedMarket }) {
                   type="button"
                   className="combo-add-button"
                   aria-label={`Add ${market.question}, ${label} to combo slip`}
+                  data-tooltip="Add to combo slip"
+                  data-tooltip-align="end"
                   onClick={() =>
                     addLeg({
                       marketId: market.id,

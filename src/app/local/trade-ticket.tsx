@@ -156,6 +156,8 @@ export function TradeTicket({
               type="button"
               className="combo-add-chip"
               aria-label={`Add ${market.question}, ${label} to combo slip`}
+              data-tooltip="Add to combo slip"
+              data-tooltip-align="end"
               onClick={(event) => {
                 event.stopPropagation();
                 addToCombo(index, label);

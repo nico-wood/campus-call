@@ -57,8 +57,8 @@ function CategoryRow({ category, markets, tab }: {
         <div className="board-row-actions">
           <a href={rowHref(category, tab)}>See all</a>
           {scroll.overflowing ? <>
-            <button type="button" aria-label={`Scroll ${category} left`} disabled={scroll.start} onClick={() => move(-1)}>←</button>
-            <button type="button" aria-label={`Scroll ${category} right`} disabled={scroll.end} onClick={() => move(1)}>→</button>
+            <button type="button" aria-label={`Scroll ${category} left`} data-tooltip="Scroll back" data-tooltip-align="end" disabled={scroll.start} onClick={() => move(-1)}>←</button>
+            <button type="button" aria-label={`Scroll ${category} right`} data-tooltip="Scroll ahead" data-tooltip-align="end" disabled={scroll.end} onClick={() => move(1)}>→</button>
           </> : null}
         </div>
       </div>

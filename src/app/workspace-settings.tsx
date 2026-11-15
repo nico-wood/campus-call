@@ -17,7 +17,7 @@ export function WorkspaceSettings({ current }: { current: boolean }) {
   }, [open]);
   return (
     <div className="settings-widget" ref={widget}>
-      <button ref={trigger} className="icon-button" type="button" aria-label="Settings" aria-expanded={open} aria-controls="workspace-settings-panel" onClick={() => setOpen(!open)}>
+      <button ref={trigger} className="icon-button" type="button" aria-label="Settings" data-tooltip="Settings" data-tooltip-side="bottom" data-tooltip-align="end" aria-expanded={open} aria-controls="workspace-settings-panel" onClick={() => setOpen(!open)}>
         <UiIcon name="settings" />
       </button>
       {open ? <section id="workspace-settings-panel" className="settings-popover" aria-label="Workspace settings">

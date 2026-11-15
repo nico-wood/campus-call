@@ -78,6 +78,8 @@ export function ComboSlip() {
           className="icon-button"
           onClick={() => setOpen(!open)}
           aria-label={open ? "Collapse combo slip" : "Expand combo slip"}
+          data-tooltip={open ? "Collapse combo slip" : "Expand combo slip"}
+          data-tooltip-align="end"
         >
           {open ? "–" : "+"}
         </button>
@@ -99,6 +101,9 @@ export function ComboSlip() {
                   className="combo-leg-remove"
                   onClick={() => removeLeg(leg.marketId)}
                   aria-label={`Remove ${leg.question}`}
+                  data-tooltip="Remove this leg"
+                  data-tooltip-side="bottom"
+                  data-tooltip-align="end"
                 >
                   ×
                 </button>

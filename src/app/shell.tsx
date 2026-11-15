@@ -83,6 +83,9 @@ export function Shell({
                 type="button"
                 className="category-scroll"
                 aria-label="Previous categories"
+                data-tooltip="Previous categories"
+                data-tooltip-side="bottom"
+                data-tooltip-align="start"
                 onClick={() => scrollCategories(categoriesRef.current, -1)}
               >
                 <UiIcon name="chevron" className="category-scroll-icon category-scroll-icon-back" width="18" height="18" />
@@ -98,6 +101,9 @@ export function Shell({
                 type="button"
                 className="category-scroll"
                 aria-label="Next categories"
+                data-tooltip="Next categories"
+                data-tooltip-side="bottom"
+                data-tooltip-align="end"
                 onClick={() => scrollCategories(categoriesRef.current, 1)}
               >
                 <UiIcon name="chevron" className="category-scroll-icon" width="18" height="18" />
