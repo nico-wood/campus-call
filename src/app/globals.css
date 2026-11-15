@@ -178,10 +178,11 @@ button {
 }
 
 .app::after {
-  background: radial-gradient(ellipse 44rem 20rem at 50% -6rem, var(--gold-soft), transparent 70%);
+  background: radial-gradient(ellipse 44rem 20rem at 50% -6rem, var(--gold-soft), transparent 70%), linear-gradient(115deg, transparent 42%, color-mix(in srgb, var(--emerald) 7%, transparent) 50%, transparent 58%);
 }
 
 @media (max-width: 40rem) {
+  .app::after { background: radial-gradient(ellipse 44rem 20rem at 50% -6rem, var(--gold-soft), transparent 70%); }
   .app::before {
     background-image: none;
     background: linear-gradient(180deg, color-mix(in srgb, var(--emerald) 8%, transparent), transparent 60%);

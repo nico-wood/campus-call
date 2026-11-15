@@ -605,3 +605,7 @@ Primary confirm/Join buttons gain token-derived green depth, one hover/focus she
 ## 2026-11-14 EP-1169 T3 quiet shine border
 
 Prize banners and expanded combo trays now use a slow masked gold comet over the existing static border. Registered angle animates independently; root remains non-scrolling, body owns tray overflow. Collapsed tray has no ring. Reduced motion restores static full-gold edges. No new palette literals or markup. npm test181/181, typecheck/lint/build pass; browser verified shine/reduced fallback on home and leaderboard. Next T4 static background depth (optional parallax restraint decision). No push/deploy.
+
+## 2026-11-14 EP-1169 T4 restrained background depth
+
+Added one faint static token-derived diagonal beam layer to the existing desktop gold glow; the existing phone media block keeps radial-only glow and cheap dot-grid fallback. No new JS/listener or mounted layer. T4 sub-layer 2: dropped. Optional parallax omitted under the plan's restraint fallback; quiet static depth fits the earlier aurora rejection. npm test181/181, typecheck/lint/build pass; browser verifies desktop beam gradient and mobile radial-only background. Captures t4-1440.png/t4-390.png under outputs/ep-1169. T10 board-row.tsx: not needed (row component stays inside board-view.tsx; recording the file-scope decision explicitly here). Next T5 sparklines. No push/deploy.
