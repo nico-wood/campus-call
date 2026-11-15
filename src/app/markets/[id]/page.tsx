@@ -36,6 +36,7 @@ export default async function MarketPage({ params }: { params: Promise<{ id: str
             <span className="forecast-close"><Countdown closeAt={market.closeAt} closeLabel={market.closeLabel} /></span>
           </div>
           <h1 className="event-question">{market.question}</h1>
+          <p className="market-summary">{market.summary}</p>
           <section className="market-history" aria-label="Market probability">
             <div className="market-history-heading">
               <h2>Market probability</h2>

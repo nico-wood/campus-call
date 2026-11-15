@@ -48,6 +48,7 @@ export function MarketCard({ market }: { market: MergedMarket }) {
   const lead = leadingOutcomeIndex(prices);
   const closed = market.status !== "open" || Date.parse(market.closeAt) <= Date.now();
   const teamLogos = teamLogosForMarket(market.id);
+  const event = findEventForMarket(market.id);
   const { addLeg } = useCombo();
 
   return (
@@ -72,6 +73,10 @@ export function MarketCard({ market }: { market: MergedMarket }) {
           ) : null}
         </div>
         <h2><a href={`/markets/${market.id}`}>{market.question}</a></h2>
+        <p className="market-summary">{market.summary}</p>
+        {event?.teams.length ? <p className="card-context">
+          {event.teams.map((team) => `${team.short}${team.record ? ` (${team.record})` : ""}`).join(" vs ")}
+        </p> : null}
         <div className="probability-snapshot">
           <div className="probability-lead">
             <span className="probability-value"><NumberTicker value={Math.round(prices[lead] * 100)} /><span>%</span></span>
