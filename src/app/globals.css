@@ -1124,7 +1124,8 @@ a.outcome:hover {
 .position-widget-icon { color: var(--accent); }
 .position-question { margin: var(--space-5) 0; color: var(--text-muted); font-size: var(--text-sm); line-height: var(--leading-body); }
 .position-choices { display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-2); }
-.position-choices button { position: relative; display: flex; flex-direction: column; align-items: center; gap: var(--space-1); min-height: 4rem; max-width: 100%; padding: var(--space-3); color: var(--text-muted); background: var(--surface-raised); border: 1px solid transparent; border-radius: var(--radius-md); cursor: pointer; }
+.position-choice { position: relative; max-width: 100%; }
+.position-choices button { display: flex; flex-direction: column; align-items: center; gap: var(--space-1); min-height: 4rem; width: 100%; max-width: 100%; padding: var(--space-3); color: var(--text-muted); background: var(--surface-raised); border: 1px solid transparent; border-radius: var(--radius-md); cursor: pointer; }
 .combo-add-chip {
   position: absolute;
   top: var(--space-1);

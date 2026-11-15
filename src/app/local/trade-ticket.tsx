@@ -118,29 +118,24 @@ export function TradeTicket({
       ) : null}
       <div className="position-choices" role="group" aria-label="Choose an outcome">
         {market.outcomes.map((label, index) => (
-          <button key={label} type="button" aria-pressed={outcome === index} onClick={() => setOutcome(index)}>
-            {teamLogos?.get(label) ? <img className="outcome-team-logo" src={teamLogos.get(label)} alt="" aria-hidden="true" /> : null}
-            <span>{label}</span>
-            <strong>{Math.round(market.prices[index] * 100)}%</strong>
-            <span
-              role="button"
-              tabIndex={0}
+          <div key={label} className="position-choice">
+            <button type="button" aria-pressed={outcome === index} onClick={() => setOutcome(index)}>
+              {teamLogos?.get(label) ? <img className="outcome-team-logo" src={teamLogos.get(label)} alt="" aria-hidden="true" /> : null}
+              <span>{label}</span>
+              <strong>{Math.round(market.prices[index] * 100)}%</strong>
+            </button>
+            <button
+              type="button"
               className="combo-add-chip"
               aria-label={`Add ${market.question}, ${label} to combo slip`}
               onClick={(event) => {
                 event.stopPropagation();
                 addToCombo(index, label);
               }}
-              onKeyDown={(event) => {
-                if (event.key !== "Enter" && event.key !== " ") return;
-                event.preventDefault();
-                event.stopPropagation();
-                addToCombo(index, label);
-              }}
             >
               +
-            </span>
-          </button>
+            </button>
+          </div>
         ))}
       </div>
       <label className="position-amount" htmlFor={`amount-${market.id}-${compact ? "c" : "f"}`}>
