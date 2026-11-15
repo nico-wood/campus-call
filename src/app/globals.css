@@ -1955,3 +1955,71 @@ h2 .info-tip-trigger {
   text-wrap: pretty;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.35);
 }
+
+/* Market peek sheet: a card's plain left-click opens the detail here so the
+   visitor keeps their place in the list; the same URL stays one click away. */
+.market-sheet-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 14;
+  background: rgba(2, 4, 3, 0.6);
+}
+.market-sheet {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 15;
+  width: min(28rem, 100vw);
+  height: 100dvh;
+  background: var(--surface);
+  border-left: 1px solid var(--border);
+  padding: var(--space-5);
+  overflow-y: auto;
+  overscroll-behavior-y: contain;
+  animation: sheet-slide-in var(--motion-fast) ease-out;
+}
+@keyframes sheet-slide-in {
+  from { transform: translateX(100%); }
+  to { transform: translateX(0); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .market-sheet { animation: none; }
+}
+.market-sheet-header {
+  display: flex;
+  justify-content: flex-end;
+  gap: var(--space-2);
+  margin-bottom: var(--space-2);
+}
+.market-sheet-header a.icon-button {
+  text-decoration: none;
+  font-size: var(--text-lg);
+}
+.market-sheet-header .icon-button { font-size: var(--text-lg); }
+/* The shared detail body stacks to one column inside the narrow panel. */
+.market-sheet .example-market-content { grid-template-columns: 1fr; }
+.market-sheet .example-ticket-column { height: auto; min-height: 0; }
+.market-sheet .example-ticket,
+.market-sheet .example-ticket[data-scroll-mode="sticky"] {
+  position: static;
+  max-height: none;
+  overflow-y: visible;
+}
+.market-sheet-footer {
+  margin: var(--space-5) 0 0;
+  padding-top: var(--space-4);
+  border-top: 1px solid var(--border);
+}
+.market-sheet-footer a {
+  display: inline-flex;
+  align-items: center;
+  min-height: var(--control-height);
+  color: var(--text-muted);
+  font-size: var(--text-sm);
+  text-underline-offset: 0.2em;
+}
+.market-sheet-footer a:hover { color: var(--text); }
+@media (max-width: 40rem) {
+  .market-sheet { width: 100vw; border-left: 0; }
+}

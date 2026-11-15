@@ -5,6 +5,7 @@ import { ForecastIcon } from "../forecast-icon";
 import { findEventForMarket, teamLogosForMarket } from "../live-events";
 import { useCombo } from "./combo-context";
 import { Countdown } from "./countdown";
+import { MarketSheet } from "./market-sheet";
 import { NumberTicker } from "./number-ticker";
 import { Sparkline } from "./sparkline";
 import { TradeTicket } from "./trade-ticket";
@@ -47,6 +48,7 @@ export function MarketCard({ market }: { market: MergedMarket }) {
   const glow = usePointerGlow();
   const [prices, setPrices] = useState<readonly number[]>(market.prices);
   const [open, setOpen] = useState<number | null>(null);
+  const [sheetOpen, setSheetOpen] = useState(false);
   const lead = leadingOutcomeIndex(prices);
   const closed = market.status !== "open" || Date.parse(market.closeAt) <= Date.now();
   const teamLogos = teamLogosForMarket(market.id);
@@ -74,7 +76,20 @@ export function MarketCard({ market }: { market: MergedMarket }) {
             <span className="market-status-tag">Closed</span>
           ) : null}
         </div>
-        <h2><a href={`/markets/${market.id}`}>{market.question}</a></h2>
+        <h2>
+          <a
+            href={`/markets/${market.id}`}
+            onClick={(event) => {
+              /* Peek in a side sheet on a plain left-click only; middle-click,
+                 modified clicks, and copy-link keep the real URL. */
+              if (event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+              event.preventDefault();
+              setSheetOpen(true);
+            }}
+          >
+            {market.question}
+          </a>
+        </h2>
         <p className="market-summary">{market.summary}</p>
         {event?.teams.length ? <p className="card-context">
           {event.teams.map((team) => `${team.short}${team.record ? ` (${team.record})` : ""}`).join(" vs ")}
@@ -147,6 +162,9 @@ export function MarketCard({ market }: { market: MergedMarket }) {
           <p className="forecast-close"><Countdown closeAt={market.closeAt} closeLabel={market.closeLabel} /></p>
           <span className="card-stat">{formatVolume(market.volume)} credits · {market.forecasters} forecasters</span>
         </div>
+        {sheetOpen ? (
+          <MarketSheet market={{ ...market, prices }} onClose={() => setSheetOpen(false)} />
+        ) : null}
       </article>
     </li>
   );
