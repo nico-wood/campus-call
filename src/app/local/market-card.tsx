@@ -2,7 +2,8 @@
 
 import { useState } from "react";
 import { ForecastIcon } from "../forecast-icon";
-import { teamLogosForMarket } from "../live-events";
+import { findEventForMarket, teamLogosForMarket } from "../live-events";
+import { useCombo } from "./combo-context";
 import { Countdown } from "./countdown";
 import { Sparkline } from "./sparkline";
 import { TradeTicket } from "./trade-ticket";
@@ -19,6 +20,7 @@ export function MarketCard({ market }: { market: MergedMarket }) {
   const lead = leadingOutcomeIndex(prices);
   const closed = market.status !== "open" || Date.parse(market.closeAt) <= Date.now();
   const teamLogos = teamLogosForMarket(market.id);
+  const { addLeg } = useCombo();
 
   return (
     <li>
@@ -58,7 +60,7 @@ export function MarketCard({ market }: { market: MergedMarket }) {
         ) : (
           <ul className="outcomes market-outcome-buttons">
             {market.outcomes.map((label, index) => (
-              <li key={label}>
+              <li key={label} className="outcome-row">
                 <button
                   type="button"
                   className="outcome"
@@ -70,6 +72,24 @@ export function MarketCard({ market }: { market: MergedMarket }) {
                   ) : null}
                   <span className="outcome-label">{label}</span>
                   <span className="outcome-percent">{formatPercent(prices[index])}</span>
+                </button>
+                <button
+                  type="button"
+                  className="combo-add-button"
+                  aria-label={`Add ${market.question}, ${label} to combo slip`}
+                  onClick={() =>
+                    addLeg({
+                      marketId: market.id,
+                      eventId: findEventForMarket(market.id)?.id ?? null,
+                      horizon: market.horizon,
+                      question: market.question,
+                      outcomeLabel: label,
+                      outcomeIdx: index,
+                      prob: prices[index]!,
+                    })
+                  }
+                >
+                  +
                 </button>
               </li>
             ))}
