@@ -1,0 +1,3 @@
+# Round 0 UI code
+
+Fresh read-only grader enrollment_ui_r0: 9.75, blocking 0/major 0/minor 1. Verified form renders only in staged QR enrollment path; demo unchanged; forms are siblings with labels/pending/error/success/sign-out states; no live-session or service credential module imported by client. Copy retains closed forecast entry and distinguishes verification from device demo. Minor: role=status announces validation errors, but invalid fields lack aria-invalid, error association and focus targeting (verified-enrollment.tsx:34,71). Focused account/enrollment/door 19/19 passed. Mode C and actual OTP integration pending; no visual score assigned.

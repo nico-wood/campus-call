@@ -1,0 +1,3 @@
+# Round 0 cut and tests — FAIL
+
+Fresh read-only grader enrollment_cut_r0: 8.8, blocking 0/major 1/minor 0. Actual local mail delivers a magic link without the numeric code required by verified-enrollment.tsx:36 and participant-auth.ts:123. A visitor cannot complete this browser path, so first grant, repeat-grant, refresh and sign-out acceptance remain unproved. Full unit suite independently passed 104/104 across 14 files; assertions preserved. The new runner includes the second normalized-email grant request and balance check (script:77), but execution has not passed. Local template/config fix requires actual flow and a fresh full review round. No grader edited implementation.

@@ -1,0 +1,3 @@
+# Round 0 correctness
+
+Fresh read-only grader enrollment_correctness_r0: code score 9.8, blocking 0/major 0/minor 0. Fresh signed identity supplies UUID; every ledger/receipt read is filtered to it (participant-account.ts:47,60). Bounded/paginated/validated no-store reads (65–95); stale/invalid cookies refuse; same-origin logout clears cookie (100–116). Staged UI preserves demo and refreshes verified account (verified-enrollment.tsx:17–46). Independently ran full unit suite: 104 tests/14 files, exit 0. Grader explicitly left actual delivery/grant integration pending. Subsequent cut review found that flow blocked; code score alone is not acceptance.

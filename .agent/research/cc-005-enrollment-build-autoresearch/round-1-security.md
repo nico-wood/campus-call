@@ -1,0 +1,3 @@
+# Round 1 security
+
+Fresh read-only grader enrollment_security_r1: 9.9, blocking 0/major 0/minor 0. Account filters derive only from fresh verified identity (participant-account.ts:47,60); bounds/cache controls and origin/cookie controls remain sound (54,95,103–109). Duplicate-cookie refusal now directly tested (tests/participant-account.test.ts:64). Runner is pinned to local Supabase, holds keys/tokens only in memory, suppresses credential-bearing subprocess output, and writes sanitized summaries only (script:11–25,36,120). Local token-email template fixes actual delivery. Focused auth/account20/20 passed. Hosted template configuration and deployment-wide limits are outside local acceptance.
