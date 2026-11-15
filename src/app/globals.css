@@ -1816,6 +1816,11 @@ a.outcome:hover {
 }
 .sparkline-down { color: var(--negative); }
 
+/* Directional stat values on the existing tiles — KPI delta semantics:
+   gains in emerald, losses in the negative tone, zero stays neutral. */
+.stats-strip .stat-delta-up { color: var(--emerald); }
+.stats-strip .stat-delta-down { color: var(--negative); }
+
 .stats-strip > div { position: relative; overflow: hidden; transition: transform var(--motion-fast), border-color var(--motion-fast); }
 .stats-strip > div::before { content: ""; position: absolute; top: 0; left: var(--space-4); width: var(--space-6); height: 2px; background: var(--gold); opacity: 0.8; }
 .stats-strip > div:hover { border-color: color-mix(in srgb, var(--gold) 35%, var(--border)); transform: translateY(-1px); }

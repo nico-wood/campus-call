@@ -89,7 +89,12 @@ export function PortfolioView() {
         <div><strong><NumberTicker value={Math.round(account.balance)} /></strong><span>Balance</span></div>
         <div><strong><NumberTicker value={Math.round(openValue)} /></strong><span>Open position value</span></div>
         <div><strong><NumberTicker value={Math.round(total)} /></strong><span>Total</span></div>
-        <div><strong>{profit >= 0 ? "+" : ""}<NumberTicker value={Math.round(profit)} /></strong><span>Profit/loss vs 1,000</span></div>
+        <div>
+          <strong className={profit > 0 ? "stat-delta-up" : profit < 0 ? "stat-delta-down" : undefined}>
+            {profit >= 0 ? "+" : ""}<NumberTicker value={Math.round(profit)} />
+          </strong>
+          <span>Profit/loss vs 1,000</span>
+        </div>
       </section>
       {account.positions.length === 0 ? (
         <section className="empty" aria-labelledby="positions-heading">
