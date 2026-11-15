@@ -1676,6 +1676,18 @@ a.outcome:hover {
 
 .table-scroll { width: 100%; overflow-x: auto; }
 .positions-table { width: 100%; border-collapse: collapse; font-size: var(--text-sm); }
+/* Market links inherited the browser's default blue/purple visited colors. */
+.positions-table a {
+  color: var(--text);
+  text-decoration: underline;
+  text-decoration-color: var(--text-soft);
+  text-underline-offset: 0.2em;
+}
+.positions-table a:hover { color: var(--accent); text-decoration-color: var(--accent); }
+/* A section heading inside a page (e.g. portfolio "Combos") steps down from
+   the page title and opens its own block instead of hugging the table above. */
+.section-intro { margin-top: var(--space-7); }
+.section-intro .list-heading { font-size: var(--text-xl); font-weight: 550; letter-spacing: -0.02em; }
 .positions-table th, .positions-table td { padding: var(--space-3); text-align: left; border-bottom: 1px solid var(--border); white-space: nowrap; }
 .positions-table th { color: var(--text-soft); font-weight: 600; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.04em; }
 .positions-table td { font-variant-numeric: tabular-nums; }

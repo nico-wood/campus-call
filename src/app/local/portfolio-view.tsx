@@ -9,6 +9,19 @@ import { NumberTicker } from "./number-ticker";
 
 const BY_ID = new Map(LIVE_FORECASTS.map((forecast) => [forecast.id, forecast]));
 
+/**
+ * Ladder markets carry a lowercase sentence fragment as their label (e.g.
+ * "the combined final score") and keep the line number in a separate field,
+ * so a bare label can't tell the holder which line they're on. Capitalize
+ * and append the line when the market has one.
+ */
+function marketName(forecast: (typeof LIVE_FORECASTS)[number] | undefined, marketId: string): string {
+  if (!forecast) return marketId;
+  const label = forecast.label.charAt(0).toUpperCase() + forecast.label.slice(1);
+  const line = "line" in forecast && typeof forecast.line === "number" ? forecast.line : null;
+  return line === null ? label : `${label} · ${line}`;
+}
+
 type ComboLegRow = { marketId: string; outcomeIdx: number; probAtEntry: number; status: string };
 type ComboRow = {
   id: string;
@@ -121,7 +134,7 @@ export function PortfolioView() {
                 const outcomeLabel = forecast?.outcomes[position.outcome] ?? `Outcome ${position.outcome + 1}`;
                 return (
                   <tr key={position.id}>
-                    <td><a href={`/markets/${position.marketId}`}>{forecast?.label ?? position.marketId}</a></td>
+                    <td><a href={`/markets/${position.marketId}`}>{marketName(forecast, position.marketId)}</a></td>
                     <td>{outcomeLabel}</td>
                     <td>{position.cost.toLocaleString()}</td>
                     <td>{position.shares.toFixed(1)}</td>
@@ -141,7 +154,7 @@ export function PortfolioView() {
           </table>
         </div>
       )}
-      <div className="page-intro">
+      <div className="page-intro section-intro">
         <h2 className="list-heading">Combos</h2>
       </div>
       {combos.length === 0 ? (
@@ -170,7 +183,7 @@ export function PortfolioView() {
                       .map((leg) => {
                         const forecast = BY_ID.get(leg.marketId);
                         const outcomeLabel = forecast?.outcomes[leg.outcomeIdx] ?? `Outcome ${leg.outcomeIdx + 1}`;
-                        return `${forecast?.label ?? leg.marketId}: ${outcomeLabel}`;
+                        return `${marketName(forecast, leg.marketId)}: ${outcomeLabel}`;
                       })
                       .join(" · ")}
                   </td>
