@@ -1771,3 +1771,8 @@ a.outcome:hover {
 .market-summary { margin: 0; color: var(--text-muted); font-size: var(--text-sm); line-height: var(--leading-body); }
 .market-card .market-summary { display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
 .card-context { margin: 0; color: var(--text-soft); font-size: var(--text-sm); line-height: var(--leading-body); }
+
+/* The static top glow remains the touch/reduced-motion fallback. */
+@media (hover: hover) and (pointer: fine) and (prefers-reduced-motion: no-preference) {
+  .market-card::before { background: radial-gradient(18rem 8rem at var(--spot-x, 50%) var(--spot-y, 0%), color-mix(in srgb, var(--gold) 28%, transparent), transparent 70%); }
+}

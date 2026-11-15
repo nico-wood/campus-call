@@ -593,3 +593,7 @@ At <=40rem, all outcome/combo/category/horizon/row/toggle controls have44px targ
 ## 2026-11-14 EP-1169 T13 market context
 
 Each live card now renders its existing catalog summary (two-line card-only clamp), event cards show existing team short names/records, and market detail shows the full summary below the question. No catalog/data, prior, resolution, query, or trading changes. npm test181/181, typecheck/lint/build pass. Browser verified25 summaries, team context, full Weather detail text at1440/390, and the shared event route. Screenshots outputs/ep-1169/t13-cards/detail-{width}.png. Smoke-script assertions were corrected to actual weather copy and the event's real h1 selector; no production assertion changed. Next T1 pointer spotlight. No push/deploy.
+
+## 2026-11-14 EP-1169 T1 pointer spotlight
+
+Added a ref/rAF-only pointer-glow hook to existing market articles. One pending frame reads one card rect and sets local gradient coordinates; leave/unmount/media changes cancel/reset. Fine mouse pointers with no reduced motion only; no render-path browser APIs or move-path React state. Static glow remains other devices' fallback. npm test181/181, typecheck/lint/build pass. Browser confirmed coordinate writes on desktop hover, reset when reduced motion is enabled, and shared event chart rendering (event has no existing h1/.event-question, so smoke uses chart, correcting T13's script-only selector assumption). Screenshot outputs/ep-1169/t1-hover-1440.png inspected. Next T2 CTA sheen. No push/deploy.

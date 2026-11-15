@@ -8,6 +8,7 @@ import { Countdown } from "./countdown";
 import { NumberTicker } from "./number-ticker";
 import { Sparkline } from "./sparkline";
 import { TradeTicket } from "./trade-ticket";
+import { usePointerGlow } from "./use-pointer-glow";
 import { formatPercent, leadingOutcomeIndex, type MergedMarket } from "./markets";
 
 function formatVolume(volume: number): string {
@@ -43,6 +44,7 @@ export function MarketCardSkeleton() {
 }
 
 export function MarketCard({ market }: { market: MergedMarket }) {
+  const glow = usePointerGlow();
   const [prices, setPrices] = useState<readonly number[]>(market.prices);
   const [open, setOpen] = useState<number | null>(null);
   const lead = leadingOutcomeIndex(prices);
@@ -53,7 +55,7 @@ export function MarketCard({ market }: { market: MergedMarket }) {
 
   return (
     <li>
-      <article className="forecast-card market-card">
+      <article className="forecast-card market-card" {...glow}>
         <div className="card-meta">
           <span className="card-category-group">
             <span className="card-category"><ForecastIcon category={market.category} />{market.label}</span>
