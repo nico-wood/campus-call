@@ -12,6 +12,10 @@ The demo is `research/10-build-spec.md`. `TASKS.md` lists the current build. The
 
 When the current build in `TASKS.md` is in progress, follow `docs/overnight/LEAD-PROMPT.md`. Read `docs/overnight/STATE.md` first. Chat history is not memory. The loop is one program Mode A, then each EP as build, Mode B, and Mode C when a screen changes. A passing gate continues. One fresh agent per stage. Graders do not edit. Do not use `scripts/loop.ps1` for that queue.
 
+## Wrap-up
+
+When the user says `/wrap-up`, follow `.claude/skills/wrap-up/SKILL.md`. The handoff is a file under `docs/brain/entries/`.
+
 ## UX and UI work
 
 Nico's other agent is doing presentation. Color, type, spacing, radius, sidebar chrome, scroll, and the layout of controls that already exist are in scope. CSS stays on the variables in `src/app/globals.css`. No Tailwind and no component library.

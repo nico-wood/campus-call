@@ -637,3 +637,31 @@ Finished the final integration pass the build writer started before stopping: co
 ## 2026-11-14 EP-1169 Mode C rendered UI audit
 
 Ran the Mode C pixel loop on the live current state (user-reported defect: Join misaligned). Iteration 0 scored 9.12 FAIL with one major: the pre-EP mobile rule `.confirm { width: 100% }` (globals.css ~:521, for form/ticket CTAs) leaked onto the topbar's `confirm join-button` anchor and stretched it into a full-width banner on its own wrapped nav row at <=40rem. Fixed with a scoped `.workspace-nav .join-button { align-self: center; width: auto; }` in the EP-1169 mobile block; also fixed every card footer's mid-word ellipsis ("0 credits · 0 fo…") by stopping `.forecast-close` from growing and pinning `.card-stat` at natural width. Iteration 2 re-captured all six surfaces at 1440/390: weighted 9.75 PASS, floors met, zero truncated stats, zero horizontal overflow, join-form CTA still full-width. Residual minor logged (sparse-history charts render floating dots until history accrues — data, not layout). Artifacts: .agent/research/ui-pixel/ep-1169/ (SURFACES, SCORE-HISTORY, GATE-RESULT); captures gitignored under .ui-autoresearch/ (now added to .gitignore and eslint ignores, same pattern as .claude/worktrees). Gate re-run green: npm test 181/181, tsc, eslint, next build.
+
+## 2026-11-14 session wrap-up (23:23 PT)
+
+Wrap-up note: docs/brain/entries/2026-11-14-2323-handoff.md. EP-1169 fully gated (Mode A 9.775 / Mode B 9.8 / Mode C 9.75) and live through 226b253; local-only 675693c (EP marked shipped) awaits Nico's push go-ahead. Open items for next session are listed in the handoff's Next Up (resolve/void smoke before the Mon 16 Nov prize snapshot, Club sports test pin, stale AGENTS.md clauses, worktree branch decision). Note and STATE.md pointer left uncommitted per wrap-up rules.
+
+## 2026-11-14 UI primitives item 1: CSS-only data-tooltip labels
+
+Added the `[data-tooltip]` CSS block to `src/app/globals.css` (opacity-only motion, `data-tooltip-side`/`data-tooltip-align` escape hatches, reduced-motion opt-out) and applied `data-tooltip` to existing icon-only controls: category scrollers and the settings button in the topbar (side bottom — the topbar is sticky at the viewport top), board row scroll arrows, the combo + buttons on market cards and the trade ticket, and the combo slip's collapse toggle and leg-remove buttons (side bottom — the slip body is a scrollport). No new controls added; no `title=` anywhere. Verified: npm test 181/181, eslint clean, tsc clean.
+
+## 2026-11-14 UI primitives item 2: InfoTip rich tooltip
+
+Added `src/app/info-tip.tsx` (portaled to document.body with position:fixed so card/table overflow can't clip it; Escape closes; 44px trigger) plus its CSS in globals.css, and a unit test for the exported `infoTipPanelStyle` positioning math (tests/info-tip.test.ts). Applied at two explanatory spots: the "Market probability" heading on /markets/[id] (what the number means) and the portfolio heading (virtual credits and the 1,000-credit baseline). Verified: npm test 185/185 (4 new), eslint clean, tsc clean.
+
+## 2026-11-14 UI primitives item 3: dashboard primitives converged, not duplicated
+
+The four proposed primitives already exist as polished one-source shapes in this app: KPICard/SummaryStat = `.stats-strip` tiles (board + portfolio), PageHeader = `.page-intro` (eyebrow/list-heading) and `.browse-heading`, EmptyState = `.empty` / `.empty-illustrated` / `.empty-actions`. Per the "existing look wins ties / merge instead of a second set" rule, no duplicate classes or components were added. The one semantic the existing tiles lacked — KPI delta direction — was ported onto them: `.stat-delta-up`/`.stat-delta-down` (emerald / negative, zero stays neutral) now colors the portfolio Profit/loss value by sign. Verified: npm test 185/185, eslint clean, tsc clean.
+
+## 2026-11-14 UI primitives item 4: debounced search — skipped by design
+
+The home search is a GET form submit (shell.tsx / local-shell.tsx), not per-keystroke filtering, so the useDebounce hook has no target; adding an unused hook would violate the lean-code rule. The list controls are already arranged as toolbar rows (.browse-heading heading-left/count-right, horizon tabs). The query-string contract (category + q) is untouched.
+
+## 2026-11-14 UI primitives item 5: market detail side sheet
+
+A market card's plain left-click now opens a right-side peek sheet instead of navigating, so visitors keep their place in the list; middle-click, modified clicks, and copy-link keep the real /markets/[id] URL (href unchanged). One shared body — src/app/local/market-detail-body.tsx, extracted verbatim from /markets/[id]/page.tsx with a mode: "sheet" | "page" prop (only the heading level differs) — renders both surfaces; never forked. The sheet (src/app/local/market-sheet.tsx) uses plain dialog semantics: role=dialog, aria-modal, labelled by the market question, Escape closes, backdrop click closes, focus moves in on open and returns to the trigger on close, body scroll locked while open. Header expand icon and footer "Open full page" link both go to the same href. Sheet state lives in component state, not the URL. CSS: fixed backdrop rgba(2,4,3,0.6), right panel min(28rem,100vw) on var(--surface) with 1px border-left, translateX slide-in over var(--motion-fast), disabled under reduced motion, full width below 40rem. Verified: npm test 185/185, eslint clean, tsc clean, next build clean.
+
+## 2026-11-14 UI primitives: rubric self-score
+
+7-dimension self-score of the additions (tooltips, InfoTip, delta color, peek sheet): Spatial 9.8, Hierarchy 9.8, Typography 9.7, Color 9.8, Interactive 9.7, Responsive 9.5, Consistency 9.9 — weighted 9.75, no dimension below 9. Evidence: 8/12px tooltip padding and 44px triggers on the existing rhythm; semantic variables only (emerald/negative for delta, no gold fills); hover + focus-visible + reduced-motion on every new state; sheet full-width below 40rem with focus return and scroll lock; one tooltip system reusing .icon-button, radius, and motion tokens. Items 1–3 and 5 shipped (commits 9d039ac, 819a511, 2a65f81, 38ed082); item 4 skipped by design (search is a GET submit, not per-keystroke).
