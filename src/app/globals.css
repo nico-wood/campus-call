@@ -1660,9 +1660,9 @@ a.outcome:hover {
 .admin-snapshot { display: flex; align-items: center; gap: var(--space-3); margin-bottom: var(--space-4); }
 .leaderboard-row-first { background: var(--gold-soft); }
 .rank-chip { display: inline-flex; align-items: center; justify-content: center; width: 1.75rem; height: 1.75rem; border-radius: 50%; font-weight: 700; font-size: 0.8125rem; color: var(--bg); }
-.rank-chip-1 { background: var(--gold); }
-.rank-chip-2 { background: #C7CDD1; }
-.rank-chip-3 { background: #C98A4B; }
+.rank-chip-1 { background: radial-gradient(circle at 30% 30%, color-mix(in srgb, var(--text) 25%, var(--gold)), var(--gold)); }
+.rank-chip-2 { background: radial-gradient(circle at 30% 30%, color-mix(in srgb, var(--text) 25%, #C7CDD1), #C7CDD1); }
+.rank-chip-3 { background: radial-gradient(circle at 30% 30%, color-mix(in srgb, var(--text) 25%, #C98A4B), #C98A4B); }
 .admin-actions, .admin-confirm { display: flex; flex-wrap: wrap; gap: var(--space-2); align-items: center; }
 .admin-actions button, .admin-confirm button { min-height: 2.25rem; padding-inline: var(--space-3); border: 1px solid var(--border); border-radius: var(--space-2); background: var(--surface); color: var(--text); cursor: pointer; white-space: nowrap; }
 .admin-actions button:hover, .admin-confirm button:hover { background: var(--surface-raised); }
@@ -1815,3 +1815,9 @@ a.outcome:hover {
 .chart-value-pill text { fill: var(--text); font-family: var(--font-mono); font-size: 11px; }
 @keyframes chart-draw-in { from { transform: scaleX(0); } to { transform: scaleX(1); } }
 @media (prefers-reduced-motion: reduce) { .chart-reveal-rect.chart-animate { animation: none; } }
+
+.leaderboard-row-first td { box-shadow: inset 0 2px 0 color-mix(in srgb, var(--gold) 55%, transparent); }
+.leaderboard-row-first td:first-child { box-shadow: inset 2px 0 0 var(--gold), inset 0 2px 0 color-mix(in srgb, var(--gold) 55%, transparent); }
+.positions-table tbody tr:not(.leaderboard-row-mine):not(.leaderboard-row-first) { transition: background var(--motion-fast); }
+.positions-table tbody tr:not(.leaderboard-row-mine):not(.leaderboard-row-first):hover { background: var(--surface-raised); }
+@media (prefers-reduced-motion: reduce) { .positions-table tbody tr:not(.leaderboard-row-mine):not(.leaderboard-row-first) { transition: none; } }
