@@ -3,7 +3,9 @@
 - **EP id:** EP-1169
 - **Title:** Adapt 21st.dev component patterns (mouse tracking, backgrounds, outlines, buttons, stat graphs) to Campus Call's vanilla-CSS premium dark-green + gold theme
 - **Date:** 2026-11-14 (resumed and revised 2026-11-14 PT; survey re-verified against `0cd2174`; historical 2026-11-15 report labels retained)
-- **Status:** draft
+- **Status:** shipped
+- **Shipped:** 2026-11-15 (Mode A R3 PASS 9.775 → build `bee640d`..`3af4917` → Mode B R0 PASS 9.8 → Mode C PASS 9.75 with fixes `226b253`; live on production at `226b253`; no migrations)
+- **design_audit:** "2026-11-14 PT GATE MET weighted 9.775 — .agent/research/ep-1169-design-autoresearch/GATE-RESULT.md"
 - **Owner:** UI implementer agent
 - **Scope type:** presentation only (see Constraints)
 
