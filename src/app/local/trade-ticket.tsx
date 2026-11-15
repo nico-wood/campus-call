@@ -26,8 +26,8 @@ export function TradeTicket({
 
   const numericAmount = Number(amount) || 0;
   const preview = useMemo(
-    () => quoteLocalPosition(market.prices, outcome, numericAmount),
-    [market.prices, outcome, numericAmount],
+    () => quoteLocalPosition(market.prices, outcome, numericAmount, market.b),
+    [market.prices, outcome, numericAmount, market.b],
   );
 
   const closed = market.status !== "open" || Date.parse(market.closeAt) <= Date.now();

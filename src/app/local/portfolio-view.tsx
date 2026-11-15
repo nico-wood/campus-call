@@ -2,8 +2,16 @@
 
 import { LIVE_FORECASTS } from "../live-forecasts";
 import { useLocalMember } from "./member-context";
+import type { AccountPosition } from "./markets";
 
 const BY_ID = new Map(LIVE_FORECASTS.map((forecast) => [forecast.id, forecast]));
+
+/** Falls back to shares x price if the server hasn't deployed valueNow yet. */
+function valueNowOf(position: AccountPosition): number {
+  return typeof position.valueNow === "number" && Number.isFinite(position.valueNow)
+    ? position.valueNow
+    : position.shares * position.priceNow;
+}
 
 export function PortfolioView() {
   const { account, loading, signedIn } = useLocalMember();
@@ -15,14 +23,17 @@ export function PortfolioView() {
       <section className="empty" aria-labelledby="portfolio-heading">
         <h1 id="portfolio-heading">Sign in to see your portfolio</h1>
         <p>Join or sign in to see your balance and positions.</p>
-        <a className="confirm" href="/join?next=%2Fportfolio">Join — get 1,000 credits</a>
+        <div className="empty-actions">
+          <a className="confirm" href="/join?next=%2Fportfolio">Join — get 1,000 credits</a>
+          <a className="signin-link" href="/join?mode=signin&next=%2Fportfolio">Already joined? Sign in</a>
+        </div>
       </section>
     );
   }
 
   const openValue = account.positions
     .filter((position) => position.status === "open")
-    .reduce((sum, position) => sum + position.shares * position.priceNow, 0);
+    .reduce((sum, position) => sum + valueNowOf(position), 0);
   const total = account.balance + openValue;
   const profit = total - 1000;
 
@@ -67,7 +78,7 @@ export function PortfolioView() {
                     <td>{outcomeLabel}</td>
                     <td>{position.cost.toLocaleString()}</td>
                     <td>{position.shares.toFixed(1)}</td>
-                    <td>{Math.round(position.shares * position.priceNow).toLocaleString()}</td>
+                    <td>{Math.round(valueNowOf(position)).toLocaleString()}</td>
                     <td>
                       {position.status === "resolved"
                         ? `Resolved: ${forecast?.outcomes[position.resolvedOutcome ?? -1] ?? "—"}`

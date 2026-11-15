@@ -2,7 +2,8 @@ import type { LiveForecast } from "../live-forecasts";
 
 /** Client-safe types and math for the open local markets. No secrets, no fetch. */
 
-export const LMSR_B = 300;
+/** Default LMSR liquidity for a market with no row yet (matches the DB column default). */
+export const LMSR_B = 1000;
 
 export type MarketStatus = "open" | "resolved" | "void";
 
@@ -13,6 +14,7 @@ export type BoardMarket = {
   status: MarketStatus;
   resolvedOutcome: number | null;
   closeAt: string;
+  b: number;
   prices: readonly number[];
   volume: number;
   forecasters: number;
@@ -29,6 +31,7 @@ export type MergedMarket = LiveForecast & {
   status: MarketStatus;
   resolvedOutcome: number | null;
   closeAt: string;
+  b: number;
   prices: readonly number[];
   volume: number;
   forecasters: number;
@@ -50,6 +53,7 @@ export function mergeBoard(board: LocalBoard, catalog: readonly LiveForecast[]):
         status: "open",
         resolvedOutcome: null,
         closeAt: forecast.closesAt,
+        b: LMSR_B,
         prices: equalPrices(forecast.outcomes.length),
         volume: 0,
         forecasters: 0,
@@ -57,7 +61,7 @@ export function mergeBoard(board: LocalBoard, catalog: readonly LiveForecast[]):
         hasRow: false,
       };
     }
-    return { ...forecast, ...row, hasRow: true };
+    return { ...forecast, ...row, b: row.b || LMSR_B, hasRow: true };
   });
 }
 
@@ -71,6 +75,7 @@ export type AccountPosition = {
   status: MarketStatus;
   resolvedOutcome: number | null;
   priceNow: number;
+  valueNow: number;
   returned: number;
 };
 

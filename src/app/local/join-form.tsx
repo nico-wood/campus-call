@@ -6,9 +6,9 @@ import { useLocalMember } from "./member-context";
 type Mode = "join" | "signin";
 type Errors = { name?: string; email?: string; phone?: string; form?: string };
 
-export function JoinForm({ next }: { next: string }) {
+export function JoinForm({ next, initialMode = "join" }: { next: string; initialMode?: Mode }) {
   const { refresh } = useLocalMember();
-  const [mode, setMode] = useState<Mode>("join");
+  const [mode, setMode] = useState<Mode>(initialMode);
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");

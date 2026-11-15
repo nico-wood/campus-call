@@ -15,6 +15,11 @@ function safeNext(raw: unknown): string {
   return "/";
 }
 
+function initialMode(raw: unknown): "join" | "signin" {
+  const value = Array.isArray(raw) ? raw[0] : raw;
+  return value === "signin" ? "signin" : "join";
+}
+
 export default async function JoinPage({
   searchParams,
 }: {
@@ -22,10 +27,11 @@ export default async function JoinPage({
 } = {}) {
   const resolved = (await searchParams) ?? {};
   const next = safeNext(resolved.next);
+  const mode = initialMode(resolved.mode);
 
   return (
     <LocalShell place="join">
-      <JoinForm next={next} />
+      <JoinForm next={next} initialMode={mode} />
     </LocalShell>
   );
 }

@@ -28,9 +28,13 @@ export function MemberWidget() {
 
   if (!signedIn || !account) {
     return (
-      <a className="confirm join-button" href="/join">
-        Join — get 1,000 credits
-      </a>
+      <div className="signed-out-actions">
+        <a className="signin-link" href="/join?mode=signin">Sign in</a>
+        <a className="confirm join-button" href="/join">
+          <span className="join-button-full">Join — get 1,000 credits</span>
+          <span className="join-button-short">Join</span>
+        </a>
+      </div>
     );
   }
 
@@ -45,6 +49,7 @@ export function MemberWidget() {
         aria-controls="member-popover"
         onClick={() => setOpen((value) => !value)}
       >
+        <span className="balance-chip-name">{account.name || "Forecaster"}</span>
         <span className="balance-chip-amount">{Math.round(account.balance).toLocaleString()}</span>
         <span className="balance-chip-label">credits</span>
       </button>
