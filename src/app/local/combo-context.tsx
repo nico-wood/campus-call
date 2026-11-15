@@ -1,14 +1,11 @@
 "use client";
 
-import { createContext, useCallback, useContext, useMemo, useState, type ReactNode } from "react";
-import { validateComboLegs, type ComboLegRef } from "../../lib/combo-pricing";
+import { createContext, useCallback, useContext, useEffect, useMemo, useState, type ReactNode } from "react";
+import { validateComboLegs } from "../../lib/combo-pricing";
+import { COMBO_DRAFT_KEY, restoreComboDraft, type ComboLeg } from "./combo-draft";
+import { useToast } from "./toast";
 
-export type ComboLeg = ComboLegRef & {
-  question: string;
-  outcomeLabel: string;
-  outcomeIdx: number;
-  prob: number;
-};
+export type { ComboLeg } from "./combo-draft";
 
 type ComboState = {
   legs: readonly ComboLeg[];
@@ -25,14 +22,38 @@ const ComboContext = createContext<ComboState | null>(null);
 export function ComboProvider({ children }: { children: ReactNode }) {
   const [legs, setLegs] = useState<ComboLeg[]>([]);
   const [open, setOpen] = useState(false);
+  const [restored, setRestored] = useState(false);
+  const { showToast } = useToast();
+
+  useEffect(() => {
+    try {
+      setLegs(restoreComboDraft(sessionStorage.getItem(COMBO_DRAFT_KEY)));
+    } catch {
+      // Storage may be unavailable; the current page can still build a combo.
+    }
+    setRestored(true);
+  }, []);
+
+  useEffect(() => {
+    if (!restored) return;
+    try {
+      if (legs.length) sessionStorage.setItem(COMBO_DRAFT_KEY, JSON.stringify(legs));
+      else sessionStorage.removeItem(COMBO_DRAFT_KEY);
+    } catch {
+      // A storage failure must not prevent adding or confirming selections.
+    }
+  }, [legs, restored]);
 
   const addLeg = useCallback((leg: ComboLeg) => {
-    setLegs((current) => {
-      const withoutThisMarket = current.filter((item) => item.marketId !== leg.marketId);
-      if (withoutThisMarket.length >= 5) return withoutThisMarket;
-      return [...withoutThisMarket, leg];
-    });
-  }, []);
+    const candidate = [...legs.filter((item) => item.marketId !== leg.marketId), leg];
+    const error = candidate.length < 2 ? null : validateComboLegs(candidate);
+    if (error) {
+      showToast("error", error);
+      return;
+    }
+    setLegs(candidate);
+    showToast("success", `Added ${leg.outcomeLabel} to combo. ${candidate.length} of 5 selections.`);
+  }, [legs, showToast]);
 
   const removeLeg = useCallback((marketId: string) => {
     setLegs((current) => current.filter((item) => item.marketId !== marketId));

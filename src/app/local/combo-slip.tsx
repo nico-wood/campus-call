@@ -4,10 +4,12 @@ import { useRef, useState } from "react";
 import { comboPrice, potentialReturn } from "../../lib/combo-pricing";
 import { useCombo } from "./combo-context";
 import { useLocalMember } from "./member-context";
+import { useToast } from "./toast";
 
 export function ComboSlip() {
   const { legs, open, setOpen, removeLeg, clear, validationError } = useCombo();
-  const { signedIn, refresh } = useLocalMember();
+  const { signedIn, loading, refresh } = useLocalMember();
+  const { showToast } = useToast();
   const [stake, setStake] = useState("10");
   const [busy, setBusy] = useState(false);
   const [message, setMessage] = useState<{ kind: "error" | "success"; text: string } | null>(null);
@@ -25,7 +27,7 @@ export function ComboSlip() {
   }
 
   async function confirm() {
-    if (busy || validationError) return;
+    if (busy || loading || validationError) return;
     if (!signedIn) {
       window.location.href = "/join?next=%2F";
       return;
@@ -57,6 +59,7 @@ export function ComboSlip() {
         kind: "success",
         text: `Combo placed. If every leg wins, you get ${data.potentialReturn ?? payout} credits back.`,
       });
+      showToast("success", `Combo placed. If every leg wins, you get ${data.potentialReturn ?? payout} credits back.`);
       clear();
       void refresh();
     } catch {
@@ -125,8 +128,8 @@ export function ComboSlip() {
             </>
           )}
           {message ? <p className={`trade-message trade-message-${message.kind}`}>{message.text}</p> : null}
-          <button type="button" className="confirm" disabled={busy || !!validationError} onClick={() => void confirm()}>
-            {busy ? "Placing…" : signedIn ? "Confirm combo" : "Sign in to confirm"}
+          <button type="button" className="confirm" disabled={busy || loading || !!validationError} onClick={() => void confirm()}>
+            {busy ? "Placing…" : loading ? "Checking account…" : signedIn ? "Confirm combo" : "Sign in to confirm"}
           </button>
           <button type="button" className="combo-slip-clear" onClick={clear}>Clear combo</button>
         </>
