@@ -1,0 +1,78 @@
+:root {
+  --ink: #0B1410;
+  --ink-2: #111D17;
+  --ink-3: #16251D;
+  --line: #24392E;
+  --paper: #F3F0E7;
+  --paper-2: #E8E3D5;
+  --text: #ECEFE9;
+  --muted: #A9B8AF;
+  --muted-dark: #4A564F;
+  --green: #2E8F63;
+  --green-deep: #154734;
+  --gold: #C9A75A;
+  --gold-dark: #7A5A14;
+}
+
+body { font-family: 'Inter', Arial, sans-serif; color: var(--text); }
+
+section { counter-increment: page; padding: 128px 128px 160px; display: flex; flex-direction: column; gap: 40px; background: var(--ink); color: var(--text); }
+section.light { background: var(--paper); color: var(--ink); }
+section.statement { background: var(--green-deep); color: var(--text); }
+
+h1, h2, h3 { font-family: 'Space Grotesk', Arial, sans-serif; letter-spacing: -1px; }
+h1 { font-size: 120px; font-weight: 600; line-height: 1.02; }
+h2 { font-size: 72px; font-weight: 600; line-height: 1.08; }
+h3 { font-size: 36px; font-weight: 600; line-height: 1.2; letter-spacing: -0.5px; }
+
+.eyebrow { font-family: 'Space Grotesk', Arial, sans-serif; font-size: 26px; font-weight: 600; letter-spacing: 3px; color: var(--gold); }
+section.light .eyebrow { color: var(--gold-dark); }
+
+.lede { font-size: 36px; line-height: 1.4; color: var(--muted); max-width: 1400px; }
+section.light .lede { color: var(--muted-dark); }
+
+.body { font-size: 28px; line-height: 1.45; color: var(--muted); }
+section.light .body { color: var(--muted-dark); }
+
+.goldline { height: 2px; width: 240px; background: linear-gradient(90deg, #C9A75A, rgba(201,167,90,0)); }
+
+.footer { position: absolute; left: 128px; bottom: 64px; width: 1664px; display: flex; justify-content: space-between; font-size: 24px; color: var(--muted); }
+section.light .footer { color: var(--muted-dark); }
+
+/* cards */
+.row { display: flex; gap: 32px; }
+.card { flex: 1; background: var(--ink-2); border: 1px solid var(--line); border-radius: 24px; padding: 40px; display: flex; flex-direction: column; gap: 16px; }
+section.light .card { background: #FBF9F3; border: 1px solid #D9D2BF; }
+.card .num { font-family: 'Space Grotesk', Arial, sans-serif; font-size: 72px; font-weight: 600; color: var(--gold); line-height: 1; }
+section.light .card .num { color: var(--green-deep); }
+.card .label { font-size: 26px; color: var(--muted); line-height: 1.35; }
+section.light .card .label { color: var(--muted-dark); }
+.card .tag { font-size: 24px; font-weight: 600; color: var(--green); letter-spacing: 1px; }
+
+/* steps */
+.steps { display: flex; gap: 20px; align-items: stretch; }
+.step { flex: 1; background: var(--ink-2); border: 1px solid var(--line); border-radius: 20px; padding: 32px 28px; display: flex; flex-direction: column; gap: 14px; }
+.step .n { font-family: 'Space Grotesk', Arial, sans-serif; font-size: 28px; font-weight: 600; color: var(--gold); }
+.step .t { font-family: 'Space Grotesk', Arial, sans-serif; font-size: 32px; font-weight: 600; color: var(--text); line-height: 1.15; }
+.step .d { font-size: 24px; line-height: 1.4; color: var(--muted); }
+
+/* tables */
+.tbl { font-size: 28px; color: var(--ink); width: 1664px; }
+.tbl-dark { font-size: 28px; color: var(--text); width: 1664px; }
+
+/* quote / statement */
+.big { font-family: 'Space Grotesk', Arial, sans-serif; font-size: 88px; font-weight: 600; line-height: 1.08; letter-spacing: -2px; }
+.gold { color: var(--gold); }
+.green { color: var(--green); }
+
+/* animations */
+@keyframes rise { from { opacity: 0; transform: translateY(24px); } to { opacity: 1; transform: translateY(0); } }
+.in { animation: rise 600ms cubic-bezier(.2,.7,.2,1) both; animation-delay: calc(var(--i, 0) * 120ms); }
+
+/* AI split */
+.split { display: flex; gap: 48px; }
+.col { flex: 1; display: flex; flex-direction: column; gap: 20px; }
+.pill { font-size: 24px; font-weight: 600; padding: 8px 18px; border-radius: 999px; background: rgba(201,167,90,.14); color: var(--gold); align-self: flex-start; }
+.pill-muted { font-size: 24px; font-weight: 600; padding: 8px 18px; border-radius: 999px; background: #1C2A23; color: var(--muted); align-self: flex-start; }
+.list { font-size: 28px; line-height: 1.5; color: var(--muted); }
+section.light .list { color: var(--muted-dark); }

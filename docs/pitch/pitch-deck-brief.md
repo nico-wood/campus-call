@@ -54,6 +54,10 @@ Mechanics that matter for the pitch:
 - **Prizes top it off, they don't carry it.** HQ Trivia and ESPN Streak proved sponsor-funded prizes plus a recurring ritual drive huge free participation.
 - **This audience legally can't play the alternative.** Kalshi's growth is the demand evidence; campus is the segment it can never touch.
 
+### The two-layer board (the data story, stated precisely)
+
+A market that resolves from a public feed (NWS, transit GTFS, a status page) cannot contain information worth buying — the feed is the better, free source. So the board has two layers doing different jobs. **Utility markets** (weather, bus on time, Canvas up) are the daily habit, the trust layer (clean public-source resolution), and the calibration engine: hundreds of cheap forecasts give every player a scored track record. **Demand markets** (event attendance, turnout, sellouts, how full) are the sellable data, because the crowd is the only source — a footfall/demand forecast of the student population made by the student population, at a resolution Placer.ai and Morning Consult can't see. Track records from the utility layer tell you whose demand forecasts to weight (Good Judgment's model). Local businesses are the **sponsor**, not the data customer; data buyers are the institution, venues, and aggregators. Stage line: "The weather markets are the habit. The demand markets are the data. The sponsors pay for the attention in between."
+
 ## 4. Proof points that companies pay for this information
 
 Verified Nov. 15, 2026. Strongest three are bolded — use those on the slide.
@@ -93,6 +97,7 @@ Slide beat for this section: **"Play-money signals have real buyers"** (HSX) →
 - **"Cold start?"** Events solve it; this weekend is exhibit A. Each event seeds the always-on board.
 - **"Retention between events?"** The utility markets (transit, weather, Canvas) are the daily habit between prize windows — the board is useful even if you never place a ticket.
 - **"Why won't Kalshi do this?"** They legally can't serve this audience, and campus-resolution markets are too small for their cost structure. Our cost per market rounds to zero.
+- **"Why would anyone pay for a forecast you resolved from a free public feed?"** They wouldn't, and we don't claim it. Utility markets are the habit and the track-record engine; demand markets (attendance, turnout, sellouts) are the data, because the crowd is the only source. See "The two-layer board" above.
 - **"How do you resolve fairly?"** Every market ships a written resolution rule naming a public source (NWS observations, GTFS-realtime, official box scores) — show one on screen.
 
 ## 7. Do / don't

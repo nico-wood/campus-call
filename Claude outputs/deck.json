@@ -1,0 +1,62 @@
+{
+ "v": 5,
+ "createdOnFiles": {
+  "v": 1,
+  "at": "2026-11-15T00:55:00Z"
+ },
+ "lists": "css",
+ "format": {
+  "v": 1,
+  "shared": [
+   "project/deck.css"
+  ]
+ },
+ "title": "Campus Call — Pitch Deck",
+ "cover": "cover",
+ "order": [
+  "cover",
+  "knowledge",
+  "problem",
+  "solution",
+  "how",
+  "ai",
+  "traction",
+  "customers",
+  "loop",
+  "model",
+  "growth",
+  "landscape",
+  "close",
+  "guardrails",
+  "sizing"
+ ],
+ "sections": {
+  "s1": {
+   "description": "The problem: local attention disappears when the event ends",
+   "start": "cover"
+  },
+  "s2": {
+   "description": "The product: verified local markets, live community confidence, AI that builds the board",
+   "start": "solution"
+  },
+  "s3": {
+   "description": "The business: two customers, a community share, and a growth path from campus to town",
+   "start": "customers"
+  },
+  "s4": {
+   "description": "Close and Q&A appendix",
+   "start": "close"
+  }
+ },
+ "faces": {
+  "space-grotesk": {
+   "family": "Space Grotesk",
+   "href": "https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap"
+  },
+  "inter": {
+   "family": "Inter",
+   "href": "https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap"
+  }
+ },
+ "designSystems": []
+}
