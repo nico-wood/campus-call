@@ -1902,3 +1902,51 @@ a.outcome:hover {
     transition: none;
   }
 }
+
+/* InfoTip rich tooltip: 44px hit target; quiet until hovered or focused. */
+.info-tip-trigger {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.75rem;
+  height: 2.75rem;
+  flex-shrink: 0;
+  border: 0;
+  background: transparent;
+  border-radius: var(--radius-md);
+  color: var(--text-muted);
+  cursor: default;
+  transition: color var(--motion-fast) ease, background-color var(--motion-fast) ease;
+}
+.info-tip-trigger:hover,
+.info-tip-trigger.is-open {
+  background: var(--accent-subtle);
+  color: var(--text);
+}
+.info-tip-trigger:focus-visible {
+  outline: 2px solid var(--focus);
+  outline-offset: 2px;
+}
+
+/* Inside a heading the trigger hangs off the baseline; center it instead so
+   the 44px hit target doesn't visually dislodge the title line. */
+h1 .info-tip-trigger,
+h2 .info-tip-trigger {
+  vertical-align: middle;
+  margin-inline-start: var(--space-1);
+}
+
+.info-tip-panel {
+  background: var(--backdrop-black);
+  color: var(--text);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 8px 12px;
+  font-family: var(--font-sans);
+  font-size: 0.75rem;
+  font-weight: 500;
+  line-height: 1.4;
+  text-align: left;
+  text-wrap: pretty;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.35);
+}

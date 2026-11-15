@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { InfoTip } from "../info-tip";
 import { LIVE_FORECASTS } from "../live-forecasts";
 import { useLocalMember } from "./member-context";
 import type { AccountPosition } from "./markets";
@@ -75,7 +76,14 @@ export function PortfolioView() {
     <>
       <div className="page-intro">
         <p className="eyebrow">Your portfolio</p>
-        <h1 className="list-heading">{account.name || "Your positions"}</h1>
+        <h1 className="list-heading">
+          {account.name || "Your positions"}
+          <InfoTip label="How your portfolio is valued" side="bottom">
+            Everything here is in virtual credits — everyone starts with 1,000.
+            Open position value is what your positions would sell back for right
+            now, and profit/loss compares your total to that 1,000-credit start.
+          </InfoTip>
+        </h1>
       </div>
       <section className="stats-strip" aria-label="Portfolio stats">
         <div><strong><NumberTicker value={Math.round(account.balance)} /></strong><span>Balance</span></div>

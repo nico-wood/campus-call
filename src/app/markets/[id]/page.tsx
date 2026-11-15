@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { ForecastIcon } from "../../forecast-icon";
+import { InfoTip } from "../../info-tip";
 import { LIVE_FORECASTS } from "../../live-forecasts";
 import { loadMergedBoard } from "../../local/board-data";
 import { Countdown } from "../../local/countdown";
@@ -39,7 +40,15 @@ export default async function MarketPage({ params }: { params: Promise<{ id: str
           <p className="market-summary">{market.summary}</p>
           <section className="market-history" aria-label="Market probability">
             <div className="market-history-heading">
-              <h2>Market probability</h2>
+              <h2>
+                Market probability
+                <InfoTip label="What market probability means" side="bottom">
+                  Market probability is the going price of each outcome, set by what
+                  forecasters back with virtual credits. More credits on an outcome push
+                  its probability up. It is the crowd&rsquo;s current view, not an
+                  official prediction.
+                </InfoTip>
+              </h2>
               <span>{market.forecasters} forecasters · {Math.round(market.volume).toLocaleString()} credits</span>
             </div>
             <LocalChart market={market} />
