@@ -617,3 +617,7 @@ Card sparklines now have unique SVG gradient areas, endpoint dots inset2px on bo
 ## 2026-11-14 EP-1169 T6 stat tiles
 
 Board statistics reuse NumberTicker for all four values; shared board/portfolio tiles gain quiet gold top ticks, tabular numerals and a reduced-motion-safe hover state. Portfolio already used NumberTicker and was not edited. npm test181/181, typecheck/lint/build pass. Browser verified four gold-tick tiles on board and fixture-signed-in portfolio at390px reduced motion; fixture account/combos intercepted locally, no hosted writes. Screenshots t6-board-390.png/t6-portfolio-390.png. Next T7 chart reveal/pill. No push/deploy.
+
+## 2026-11-14 EP-1169 T7 chart polish
+
+Detail/event charts fill only the leading series at16% opacity, reveal lines through a market-namespaced clip, and show time/percentage pills during pointer or keyboard exploration. Existing range/series/scrub calculations untouched; reduced motion renders complete immediately. npm test181/181, typecheck/lint/build pass. Because local fallback charts have no real position history, built a temporary browser harness from the actual component using the already-bundled webpack/TypeScript, with explicitly simulated history and no app route/data edits. Harness verified one area, draw-in, pointer/keyboard pill and live reduced-motion reset; screenshot outputs/ep-1169/t7-chart-fixture.png inspected. Shared live routes remain smoke-checked. Next T8 table polish. No push/deploy.

@@ -1808,3 +1808,10 @@ a.outcome:hover {
 .stats-strip > div:hover { border-color: color-mix(in srgb, var(--gold) 35%, var(--border)); transform: translateY(-1px); }
 .stats-strip strong { font-variant-numeric: tabular-nums; }
 @media (prefers-reduced-motion: reduce) { .stats-strip > div { transition: none; } .stats-strip > div:hover { transform: none; } }
+
+.chart-reveal-rect { transform-box: fill-box; transform-origin: 0 50%; }
+.chart-reveal-rect.chart-animate { animation: chart-draw-in 500ms ease-out; }
+.chart-value-pill { pointer-events: none; }
+.chart-value-pill text { fill: var(--text); font-family: var(--font-mono); font-size: 11px; }
+@keyframes chart-draw-in { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+@media (prefers-reduced-motion: reduce) { .chart-reveal-rect.chart-animate { animation: none; } }

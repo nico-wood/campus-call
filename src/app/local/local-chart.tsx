@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useMemo, useRef, useState, type PointerEvent as ReactPointerEvent } from "react";
-import type { MergedMarket } from "./markets";
+import { leadingOutcomeIndex, type MergedMarket } from "./markets";
 
 const PALETTE = ["#2E8F63", "#5B8DEF", "#C97BDE", "#4FC1C9", "#E8896B", "#A3B566"];
 const RANGES = [
@@ -19,6 +19,16 @@ export function LocalChart({ market }: { market: MergedMarket }) {
   const dragging = useRef(false);
   const figure = useRef<HTMLElement>(null);
   const [width, setWidth] = useState(704);
+  const [animate, setAnimate] = useState(false);
+  const lead = leadingOutcomeIndex(market.prices);
+
+  useEffect(() => {
+    const media = window.matchMedia("(prefers-reduced-motion: no-preference)");
+    const update = () => setAnimate(media.matches);
+    update();
+    media.addEventListener("change", update);
+    return () => media.removeEventListener("change", update);
+  }, []);
 
   useEffect(() => {
     const element = figure.current;
@@ -122,9 +132,12 @@ export function LocalChart({ market }: { market: MergedMarket }) {
       >
         <rect className="chart-hit" x="0" y="0" width={width} height={plotHeight} fill="transparent" />
         <defs>
+          <clipPath id={`chart-reveal-${market.id}`} clipPathUnits="userSpaceOnUse">
+            <rect key={range} className={animate ? "chart-reveal-rect chart-animate" : "chart-reveal-rect"} x="0" y="0" width={width} height={plotHeight} />
+          </clipPath>
           {market.outcomes.map((label, i) => (
             <linearGradient key={label} id={`chart-fill-${market.id}-${i}`} x1="0" y1="0" x2="0" y2="1">
-              <stop offset="0%" stopColor={PALETTE[i % PALETTE.length]} stopOpacity="0.22" />
+              <stop offset="0%" stopColor={PALETTE[i % PALETTE.length]} stopOpacity="0.16" />
               <stop offset="100%" stopColor={PALETTE[i % PALETTE.length]} stopOpacity="0" />
             </linearGradient>
           ))}
@@ -142,8 +155,8 @@ export function LocalChart({ market }: { market: MergedMarket }) {
             ? `${linePath} L${x(points.length - 1)},${baseline} L${x(0)},${baseline} Z`
             : "";
           return (
-            <g key={label}>
-              {areaPath ? (
+            <g key={label} clipPath={`url(#chart-reveal-${market.id})`}>
+              {areaPath && i === lead ? (
                 <path className="chart-area" d={areaPath} fill={`url(#chart-fill-${market.id}-${i})`} stroke="none" />
               ) : null}
               <path className="chart-line" style={{ stroke: PALETTE[i % PALETTE.length] }} d={linePath} />
@@ -151,6 +164,12 @@ export function LocalChart({ market }: { market: MergedMarket }) {
           );
         })}
         {cursorX !== null ? <line className="chart-crosshair" x1={cursorX} x2={cursorX} y1="10" y2={plotHeight - 20} /> : null}
+        {active !== null && activePoint ? (
+          <g className="chart-value-pill" transform={`translate(${Math.max(8, Math.min(width - 120, (cursorX ?? x(index)) - 56))}, ${Math.max(4, y(activePoint.p[lead] ?? 0) - 36)})`}>
+            <rect width="112" height="26" rx="6" fill="var(--surface-raised)" stroke="var(--border)" />
+            <text x="56" y="17" textAnchor="middle">{new Date(activePoint.t).toLocaleTimeString([], { hour: "2-digit", minute: "2-digit", hour12: false })} · {Math.round((activePoint.p[lead] ?? 0) * 100)}%</text>
+          </g>
+        ) : null}
         {points.length > 1
           ? market.outcomes.map((label, i) => (
               <circle
