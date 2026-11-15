@@ -31,7 +31,9 @@ export function LocalChart({ market }: { market: MergedMarket }) {
   const points = useMemo(() => {
     const now = Date.now();
     const cutoff = RANGES.find((item) => item.key === range)?.ms ?? null;
-    const base = market.history.length > 0 ? market.history : [];
+    const hasPrior = market.prior.length === market.outcomes.length;
+    const priorPoint = hasPrior ? { t: market.createdAt, p: market.prior } : null;
+    const base = priorPoint ? [priorPoint, ...market.history] : market.history.length > 0 ? market.history : [];
     const filtered = cutoff === null ? base : base.filter((tick) => now - Date.parse(tick.t) <= cutoff);
     const series = (filtered.length > 0 ? filtered : base).map((tick) => ({ t: tick.t, p: tick.p }));
     const last = series[series.length - 1];
@@ -39,7 +41,7 @@ export function LocalChart({ market }: { market: MergedMarket }) {
       series.push({ t: new Date().toISOString(), p: market.prices });
     }
     return series;
-  }, [market.history, market.prices, range]);
+  }, [market.history, market.prices, market.prior, market.outcomes.length, market.createdAt, range]);
 
   const plotWidth = width - 64;
   const plotHeight = 260;

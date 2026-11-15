@@ -36,11 +36,21 @@ export type MergedMarket = LiveForecast & {
   volume: number;
   forecasters: number;
   history: readonly PriceTick[];
+  createdAt: string;
   hasRow: boolean;
 };
 
 function equalPrices(count: number): number[] {
   return Array.from({ length: count }, () => 1 / count);
+}
+
+/** The catalog's researched starting prior, falling back to an equal split if it's missing or malformed. */
+function startingPrices(forecast: LiveForecast): readonly number[] {
+  const prior = forecast.prior;
+  if (prior && prior.length === forecast.outcomes.length && Math.abs(prior.reduce((a, b) => a + b, 0) - 1) < 0.02) {
+    return prior;
+  }
+  return equalPrices(forecast.outcomes.length);
 }
 
 export function mergeBoard(board: LocalBoard, catalog: readonly LiveForecast[]): MergedMarket[] {
@@ -54,10 +64,11 @@ export function mergeBoard(board: LocalBoard, catalog: readonly LiveForecast[]):
         resolvedOutcome: null,
         closeAt: forecast.closesAt,
         b: LMSR_B,
-        prices: equalPrices(forecast.outcomes.length),
+        prices: startingPrices(forecast),
         volume: 0,
         forecasters: 0,
         history: [],
+        createdAt: forecast.priorAt,
         hasRow: false,
       };
     }

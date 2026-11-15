@@ -580,6 +580,23 @@ button {
   width: 100%;
 }
 
+.prior-disclosure {
+  width: 100%;
+  padding: var(--space-3) var(--space-4);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  background: var(--surface-raised);
+  font-size: var(--text-sm);
+  color: var(--text-muted);
+}
+.prior-disclosure summary {
+  cursor: pointer;
+  font-weight: 550;
+  color: var(--text);
+}
+.prior-disclosure p { margin: var(--space-3) 0 0; }
+.prior-sources { margin: var(--space-2) 0 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: var(--space-1); }
+
 .probability-caption {
   margin-bottom: var(--space-2);
   font-weight: 600;

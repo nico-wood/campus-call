@@ -6,6 +6,7 @@ import { loadMergedBoard } from "../../local/board-data";
 import { Countdown } from "../../local/countdown";
 import { LocalChart } from "../../local/local-chart";
 import { LocalShell } from "../../local/local-shell";
+import { leadingOutcomeIndex } from "../../local/markets";
 import { TradeTicket } from "../../local/trade-ticket";
 
 export async function generateMetadata({ params }: { params: Promise<{ id: string }> }): Promise<Metadata> {
@@ -42,6 +43,20 @@ export default async function MarketPage({ params }: { params: Promise<{ id: str
             </div>
             <LocalChart market={market} />
           </section>
+          {market.prior.length === market.outcomes.length ? (
+            <details className="prior-disclosure">
+              <summary>
+                Starting estimate: {Math.round(market.prior[leadingOutcomeIndex(market.prior)] * 100)}%{" "}
+                {market.outcomes[leadingOutcomeIndex(market.prior)]} · how we got this
+              </summary>
+              <p>{market.priorMethod}</p>
+              <ul className="prior-sources">
+                {market.priorSources.map((source) => (
+                  <li key={source.url}><a href={source.url}>{source.name}</a></li>
+                ))}
+              </ul>
+            </details>
+          ) : null}
           <p className="written-note">{market.resolutionRule}</p>
           <p className="volleyball-source"><a href={market.sourceUrl}>{market.sourceName}</a></p>
           {market.history.length > 0 ? (
