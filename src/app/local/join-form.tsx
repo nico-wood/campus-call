@@ -83,10 +83,12 @@ export function JoinForm({ next, initialMode = "join" }: { next: string; initial
       <form onSubmit={(event) => void submit(event)}>
         {mode === "join" ? (
           <div className="enrollment-field">
-            <label className="enrollment-label" htmlFor="join-name">Name</label>
+            <label className="enrollment-label" htmlFor="join-name">Full name</label>
             <input
               id="join-name"
               className="enrollment-input"
+              autoComplete="name"
+              placeholder="First and last name"
               value={name}
               onChange={(event) => setName(event.target.value)}
               aria-invalid={Boolean(errors.name)}
