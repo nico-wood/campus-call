@@ -1,0 +1,159 @@
+"use client";
+
+import { useEffect, useMemo, useRef, useState, type PointerEvent as ReactPointerEvent } from "react";
+import type { MergedMarket } from "./markets";
+
+const PALETTE = ["#154734", "#b4530f", "#2563eb", "#9333ea", "#0891b2", "#be123c"];
+const RANGES = [
+  { key: "1h", label: "1H", ms: 60 * 60 * 1000 },
+  { key: "6h", label: "6H", ms: 6 * 60 * 60 * 1000 },
+  { key: "all", label: "All", ms: null as number | null },
+] as const;
+
+type RangeKey = (typeof RANGES)[number]["key"];
+
+export function LocalChart({ market }: { market: MergedMarket }) {
+  const [range, setRange] = useState<RangeKey>("all");
+  const [active, setActive] = useState<number | null>(null);
+  const [cursorX, setCursorX] = useState<number | null>(null);
+  const dragging = useRef(false);
+  const figure = useRef<HTMLElement>(null);
+  const [width, setWidth] = useState(704);
+
+  useEffect(() => {
+    const element = figure.current;
+    if (!element) return;
+    const observer = new ResizeObserver(([entry]) => setWidth(Math.max(280, entry.contentRect.width)));
+    observer.observe(element);
+    return () => observer.disconnect();
+  }, []);
+
+  const points = useMemo(() => {
+    const now = Date.now();
+    const cutoff = RANGES.find((item) => item.key === range)?.ms ?? null;
+    const base = market.history.length > 0 ? market.history : [];
+    const filtered = cutoff === null ? base : base.filter((tick) => now - Date.parse(tick.t) <= cutoff);
+    const series = (filtered.length > 0 ? filtered : base).map((tick) => ({ t: tick.t, p: tick.p }));
+    const last = series[series.length - 1];
+    if (!last || last.p.join(",") !== market.prices.join(",")) {
+      series.push({ t: new Date().toISOString(), p: market.prices });
+    }
+    return series;
+  }, [market.history, market.prices, range]);
+
+  const plotWidth = width - 64;
+  const plotHeight = 260;
+  const x = (i: number) => 8 + (points.length > 1 ? (i * plotWidth) / (points.length - 1) : plotWidth / 2);
+  const y = (value: number) => 20 + (1 - value) * (plotHeight - 40);
+
+  const index = Math.min(active ?? points.length - 1, points.length - 1);
+  const activePoint = points[index];
+
+  function scrub(event: ReactPointerEvent<SVGSVGElement>) {
+    const bounds = event.currentTarget.getBoundingClientRect();
+    if (bounds.width === 0 || points.length < 2) return;
+    const localX = ((event.clientX - bounds.left) / bounds.width) * width;
+    const next = Math.max(0, Math.min(points.length - 1, Math.round(((localX - 8) / plotWidth) * (points.length - 1))));
+    setActive(next);
+    setCursorX(Math.max(8, Math.min(width - 48, localX)));
+  }
+
+  return (
+    <figure ref={figure} className="forecast-chart local-chart">
+      <div className="chart-toolbar">
+        <div className="chart-legend">
+          {market.outcomes.map((label, i) => (
+            <span key={label}>
+              <i style={{ background: PALETTE[i % PALETTE.length] }} />
+              {label} <strong>{Math.round((activePoint?.p[i] ?? market.prices[i]) * 100)}%</strong>
+            </span>
+          ))}
+        </div>
+        <div className="chart-ranges" aria-label="Chart range">
+          {RANGES.map((item) => (
+            <button
+              key={item.key}
+              type="button"
+              aria-pressed={range === item.key}
+              onClick={() => {
+                setRange(item.key);
+                setActive(null);
+                setCursorX(null);
+              }}
+            >
+              {item.label}
+            </button>
+          ))}
+        </div>
+      </div>
+      <svg
+        className="history-chart"
+        viewBox={`0 0 ${width} ${plotHeight}`}
+        role="img"
+        aria-label={`Market probability history for ${market.question}`}
+        onPointerDown={(event) => {
+          dragging.current = true;
+          event.currentTarget.setPointerCapture(event.pointerId);
+          scrub(event);
+        }}
+        onPointerMove={(event) => {
+          if (event.pointerType !== "mouse" && !dragging.current) return;
+          scrub(event);
+        }}
+        onPointerUp={() => {
+          dragging.current = false;
+        }}
+        onPointerCancel={() => {
+          dragging.current = false;
+        }}
+        onPointerLeave={() => {
+          if (dragging.current) return;
+          setActive(null);
+          setCursorX(null);
+        }}
+      >
+        <rect className="chart-hit" x="0" y="0" width={width} height={plotHeight} fill="transparent" />
+        {[0, 25, 50, 75, 100].map((value) => (
+          <g key={value}>
+            <line className="chart-gridline" x1="8" x2={width - 48} y1={y(value / 100)} y2={y(value / 100)} />
+            <text className="chart-axis" x={width - 38} y={y(value / 100) + 4}>{value}%</text>
+          </g>
+        ))}
+        {market.outcomes.map((label, i) => (
+          <path
+            key={label}
+            className="chart-line"
+            style={{ stroke: PALETTE[i % PALETTE.length] }}
+            d={points.map((point, pi) => `${pi ? "L" : "M"}${x(pi)},${y(point.p[i] ?? 0)}`).join(" ")}
+          />
+        ))}
+        {cursorX !== null ? <line className="chart-crosshair" x1={cursorX} x2={cursorX} y1="10" y2={plotHeight - 20} /> : null}
+        {market.outcomes.map((label, i) => (
+          <circle
+            key={label}
+            className="chart-point"
+            style={{ fill: PALETTE[i % PALETTE.length] }}
+            cx={x(index)}
+            cy={y(activePoint?.p[i] ?? 0)}
+            r="4"
+          />
+        ))}
+      </svg>
+      {points.length > 1 ? (
+        <input
+          className="chart-scrubber"
+          type="range"
+          min="0"
+          max={points.length - 1}
+          value={index}
+          aria-label="Explore market probability history"
+          onChange={(event) => {
+            setActive(Number(event.target.value));
+            setCursorX(null);
+          }}
+        />
+      ) : null}
+      <figcaption>{activePoint ? new Date(activePoint.t).toLocaleString() : "Live"}</figcaption>
+    </figure>
+  );
+}

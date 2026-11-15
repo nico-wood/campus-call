@@ -8,7 +8,6 @@ import { ExampleEventView } from "../src/app/example-event";
 import { confirmExample, runExampleConfirm } from "../src/app/example-confirm";
 import {
   EXAMPLES,
-  emptyForecastMessage,
   getExample,
 } from "../src/app/example-forecasts";
 import { LIVE_FORECASTS } from "../src/app/live-forecasts";
@@ -37,23 +36,20 @@ describe("example forecasts", () => {
     }
   });
 
-  it("lists every live forecast with a close and a source, and hides the mock examples", async () => {
+  it("lists every live forecast as a market card with its outcomes and a market probability", async () => {
     const html = await renderHome();
 
-    expect(html).toContain("These forecasts resolve from a public source.");
     expect(html).not.toContain(">Example<");
     expect(html).not.toContain("Example forecasts we wrote.");
     for (const example of EXAMPLES) expect(html).not.toContain(example.question);
     for (const forecast of LIVE_FORECASTS) {
       expect(html).toContain(forecast.question.replaceAll("'", "&#x27;"));
-      expect(html).toContain(`Closes ${forecast.closeLabel}`);
-      expect(html).toContain(forecast.sourceUrl);
-      expect(html).not.toContain(`${forecast.id}-probability`);
+      for (const outcome of forecast.outcomes) expect(html).toContain(`>${outcome}<`);
     }
-    expect(html).toContain(">Confirm<");
-    expect(html).toContain(">Yes<");
-    expect(html).toContain(">No<");
-    expect(html).not.toContain("%");
+    expect(html).toContain("%");
+    expect(html).toContain("Forecasters");
+    expect(html).toContain("Credits in play");
+    expect(html).toContain("50% of the team");
     expect(html.toLowerCase()).not.toMatch(banned);
   });
 
@@ -63,13 +59,11 @@ describe("example forecasts", () => {
     expect(sports).toContain('aria-current="true">Sports');
     expect(sports).toContain("Who will win: Cal Poly or Montana State?");
     expect(sports).toContain("Who will lead at halftime?");
-    expect(sports).toContain("Who will win: Cal Poly or Sacramento State?");
     expect(sports).not.toContain("San Luis Obispo Airport");
 
     const weather = await renderHome({ category: "weather", q: "airport" });
     expect(weather).toContain('aria-current="true">Weather');
     expect(weather).toContain("San Luis Obispo Airport");
-    expect(weather).toContain("70°F");
     expect(weather).not.toContain("Montana State");
     expect(weather).toContain('value="airport"');
     expect(weather).toContain('type="hidden"');
@@ -78,15 +72,9 @@ describe("example forecasts", () => {
     expect(weather).toContain('href="/?category=Sports&amp;q=airport"');
     expect(weather).toContain('href="/?q=airport"');
 
-    const hackathon = await renderHome({ category: "Hackathon" });
-    expect(hackathon).toContain('aria-current="true">Hackathon');
-    expect(hackathon).toContain("Hackathon prize forecasts");
-    expect(hackathon).not.toContain("Will the example workshop");
-
     const transit = await renderHome({ category: "Transit" });
     expect(transit).toContain('aria-current="true">Transit');
     expect(transit).toContain("At 5:00 p.m. Sunday, will SLO Transit still list a Route 4A detour?");
-    expect(transit).toContain("https://slocity.connexionz.net/rtt/public/utility/gtfsrealtime.aspx/alert");
     expect(transit).not.toContain("Montana State");
     expect(transit).not.toContain("Las Migas");
 
@@ -94,26 +82,19 @@ describe("example forecasts", () => {
     expect(campus).toContain('aria-current="true">Campus');
     expect(campus).toContain("Arab Music Ensemble Fall Concert");
     expect(campus).toContain("Las Migas");
-    expect(campus).toContain("https://events.calpoly.edu/event-listing");
-    expect(campus).toContain("https://www.calpolyarts.org/20262027-season/las-migas");
     expect(campus).not.toContain("Route 4A detour");
 
     const clubs = await renderHome({ category: "Club sports" });
     expect(clubs).toContain('aria-current="true">Club sports');
-    expect(clubs).toContain("No club match is posted yet.");
-    expect(clubs).not.toContain(">Confirm<");
+    expect(clubs).toContain("No matching markets");
 
     const missed = await renderHome({ category: "Weather", q: "workshop" });
-    expect(missed).toContain("No matching forecasts");
-    expect(missed).toContain(
-      "No forecast matches this search. Clear the search or choose another category.",
-    );
+    expect(missed).toContain("No matching markets");
     expect(missed).not.toContain("San Luis Obispo Airport");
 
-    const unknown = await renderHome({ category: "Music" });
-    expect(unknown).toContain(emptyForecastMessage({ category: "unknown", query: "" }));
+    const unknown = await renderHome({ category: "Hackathon" });
     expect(unknown).not.toContain('aria-current="true"');
-    expect(unknown).not.toContain(">Confirm<");
+    expect(unknown).toContain("No matching markets");
     expect(unknown.toLowerCase()).not.toMatch(banned);
   });
 
