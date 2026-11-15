@@ -1801,3 +1801,4 @@ a.outcome:hover {
   .prize-banner { border-color: var(--gold); }
   .prize-banner::before, .combo-slip-open::before { animation: none; }
 }
+.sparkline-down { color: var(--negative); }

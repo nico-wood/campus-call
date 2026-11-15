@@ -609,3 +609,7 @@ Prize banners and expanded combo trays now use a slow masked gold comet over the
 ## 2026-11-14 EP-1169 T4 restrained background depth
 
 Added one faint static token-derived diagonal beam layer to the existing desktop gold glow; the existing phone media block keeps radial-only glow and cheap dot-grid fallback. No new JS/listener or mounted layer. T4 sub-layer 2: dropped. Optional parallax omitted under the plan's restraint fallback; quiet static depth fits the earlier aurora rejection. npm test181/181, typecheck/lint/build pass; browser verifies desktop beam gradient and mobile radial-only background. Captures t4-1440.png/t4-390.png under outputs/ep-1169. T10 board-row.tsx: not needed (row component stays inside board-view.tsx; recording the file-scope decision explicitly here). Next T5 sparklines. No push/deploy.
+
+## 2026-11-14 EP-1169 T5 sparklines
+
+Card sparklines now have unique SVG gradient areas, endpoint dots inset2px on both axes, and negative-trend tint from the existing negative token. Flat histories stay centered, no animation or data changes. npm test181/181, typecheck/lint/build pass. Browser checked25 dot/area sparklines, unique gradient ids and endpoints within bounds; screenshot t5-sparklines-1440.png. Next T6 shared stat tiles. No push/deploy.
