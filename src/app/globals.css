@@ -1582,6 +1582,14 @@ a.outcome:hover {
 .market-outcome-buttons { grid-template-columns: repeat(auto-fit, minmax(min(100%, 10.5rem), 1fr)); }
 .countdown { white-space: nowrap; }
 .card-stat { flex: 0 1 auto; min-width: 0; overflow: hidden; color: var(--text-soft); font-size: 0.75rem; white-space: nowrap; text-overflow: ellipsis; }
+/* The close label must not grow into the stat's space: its inherited
+   flex: 1 1 auto squeezed ".. credits · .. forecasters" into a mid-word
+   ellipsis on every card even when both strings fit comfortably. */
+.market-card .card-footer { justify-content: space-between; }
+.market-card .card-footer .forecast-close { flex: 0 1 auto; }
+/* When a long close date and the stat cannot both fit, the short fixed stat
+   keeps its full text and the date carries the existing ellipsis. */
+.market-card .card-footer .card-stat { flex: 0 0 auto; }
 
 .trade-ticket { width: 100%; }
 .trade-ticket-compact { margin-top: var(--space-4); padding-top: var(--space-4); border-top: 1px solid var(--border); background: transparent; }
@@ -1773,6 +1781,11 @@ a.outcome:hover {
   .combo-slip { padding-bottom: max(var(--space-4), env(safe-area-inset-bottom)); }
   .combo-slip-collapsed { padding-top: 0; }
   .combo-leg-remove { min-width: var(--control-height); min-height: var(--control-height); }
+  /* The topbar Join pill is `class="confirm join-button"`; the generic mobile
+     .confirm { width: 100% } rule (earlier 40rem block) is meant for form and
+     ticket CTAs and must not stretch the nav pill into a full-width banner on
+     its wrapped row. Keep the pill compact and right-aligned with the nav. */
+  .workspace-nav .join-button { align-self: center; width: auto; }
 }
 
 /* Existing source context is compact on cards and complete on detail. */

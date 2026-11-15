@@ -21,3 +21,4 @@ supabase/.branches/
 !.env.example
 .data/
 .claude/worktrees/
+.ui-autoresearch/
