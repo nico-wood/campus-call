@@ -351,7 +351,7 @@ button {
 
 .search-input:hover, .enrollment-input:hover { border-color: var(--text-soft); }
 
-.confirm:active { transform: translateY(1px); }
+.confirm:active:not(:disabled) { transform: translateY(1px) scale(0.99); }
 
 .search-input::placeholder {
   color: var(--text-soft);
@@ -862,6 +862,8 @@ a.outcome:hover {
 }
 
 .confirm {
+  position: relative;
+  overflow: hidden;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -872,7 +874,7 @@ a.outcome:hover {
   padding-inline: var(--space-5);
   border: 1px solid transparent;
   border-radius: var(--radius-md);
-  background: var(--accent);
+  background: linear-gradient(180deg, color-mix(in srgb, var(--emerald) 22%, var(--accent)), var(--accent));
   color: var(--accent-text);
   font-weight: 600;
   text-align: center;
@@ -892,6 +894,11 @@ a.outcome:hover {
 .confirm:disabled:hover {
   filter: none;
 }
+.confirm::after { content: ""; position: absolute; inset: 0 auto 0 0; width: 40%; background: linear-gradient(105deg, transparent, color-mix(in srgb, var(--accent-text) 14%, transparent), transparent); transform: translateX(-150%); pointer-events: none; }
+.confirm:hover::after, .confirm:focus-visible::after { animation: cta-sheen 700ms ease-out; }
+.confirm:disabled::after { content: none; }
+@keyframes cta-sheen { to { transform: translateX(350%); } }
+@media (prefers-reduced-motion: reduce) { .confirm::after, .confirm:hover::after, .confirm:focus-visible::after { animation: none; } .confirm:active:not(:disabled) { transform: none; } }
 
 @media (min-width: 22rem) {
   .outcomes {
@@ -1467,7 +1474,7 @@ a.outcome:hover {
 /* Open local markets: join button, balance chip, prize banner, stats strip,
    market cards, and the trade ticket. */
 .workspace-nav a.join-button,
-.workspace-nav a.join-button:hover { color: var(--accent-text); background: var(--accent); }
+.workspace-nav a.join-button:hover { color: var(--accent-text); background: linear-gradient(180deg, color-mix(in srgb, var(--emerald) 22%, var(--accent)), var(--accent)); }
 .join-button { white-space: nowrap; }
 .join-button-short { display: none; }
 .signed-out-actions { display: inline-flex; align-items: center; gap: var(--space-3); }

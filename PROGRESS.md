@@ -597,3 +597,7 @@ Each live card now renders its existing catalog summary (two-line card-only clam
 ## 2026-11-14 EP-1169 T1 pointer spotlight
 
 Added a ref/rAF-only pointer-glow hook to existing market articles. One pending frame reads one card rect and sets local gradient coordinates; leave/unmount/media changes cancel/reset. Fine mouse pointers with no reduced motion only; no render-path browser APIs or move-path React state. Static glow remains other devices' fallback. npm test181/181, typecheck/lint/build pass. Browser confirmed coordinate writes on desktop hover, reset when reduced motion is enabled, and shared event chart rendering (event has no existing h1/.event-question, so smoke uses chart, correcting T13's script-only selector assumption). Screenshot outputs/ep-1169/t1-hover-1440.png inspected. Next T2 CTA sheen. No push/deploy.
+
+## 2026-11-14 EP-1169 T2 CTA sheen
+
+Primary confirm/Join buttons gain token-derived green depth, one hover/focus sheen, and a subtle press. Disabled buttons suppress sheen; mobile Join display rules untouched. Browser caught hover specificity overriding reduced-motion suppression; matched the hover/focus selectors in the reduced block and rechecked successfully. npm test181/181 after fix; typecheck/lint/build passed; desktop/mobile Join labels and Full name prompt verified. No behavior/copy change. Next T3 quiet border shine. No push/deploy.
