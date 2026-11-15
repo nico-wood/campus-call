@@ -46,7 +46,7 @@ export function BoardView({
         // Keep showing the last good data.
       }
     }
-    const id = setInterval(() => void poll(), 10_000);
+    const id = setInterval(() => void poll(), 5_000);
     return () => {
       cancelled = true;
       clearInterval(id);

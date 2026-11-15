@@ -30,7 +30,7 @@ export function LeaderboardView({ initialRows }: { initialRows: LeaderboardRow[]
         // Keep showing the last good data.
       }
     }
-    const id = setInterval(() => void poll(), 15_000);
+    const id = setInterval(() => void poll(), 8_000);
     return () => {
       cancelled = true;
       clearInterval(id);
