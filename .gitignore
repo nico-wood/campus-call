@@ -20,3 +20,4 @@ supabase/.branches/
 .env.*
 !.env.example
 .data/
+.claude/worktrees/
