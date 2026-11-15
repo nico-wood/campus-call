@@ -1087,7 +1087,7 @@ a.outcome:hover {
 .forecast-card h2 a:hover { color: var(--accent); }
 .forecast-card .outcome { padding: var(--space-2) var(--space-3); border-color: transparent; background: var(--surface-raised); border-radius: var(--space-2); }
 .forecast-card .outcome-percent { font-size: var(--text-xl); }
-.forecast-card .outcomes > li:first-child .outcome { color: var(--accent); background: var(--accent-subtle); border-color: transparent; }
+.forecast-card .outcomes > li:first-child .outcome { color: var(--text); background: var(--accent-subtle); border-color: transparent; }
 .forecast-card .outcomes > li:first-child a.outcome:hover { background: var(--surface-raised); border-color: var(--accent); }
 .forecast-card { transition: border-color var(--motion-fast), background-color var(--motion-fast); }
 .forecast-card:hover { border-color: var(--text-soft); }
@@ -1219,7 +1219,7 @@ a.outcome:hover {
 }
 .combo-add-chip:hover { background: var(--accent-subtle); color: var(--accent); }
 .position-choices button > span { max-width: 100%; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
-.position-choices button[aria-pressed="true"] { background: var(--accent-subtle); color: var(--accent); border-color: var(--accent); }
+.position-choices button[aria-pressed="true"] { background: var(--accent-subtle); color: var(--text); border-color: var(--accent); }
 .position-choices button:hover { border-color: var(--text-soft); }
 .position-choices strong { font-size: var(--text-lg); font-weight: 550; font-variant-numeric: tabular-nums; }
 .position-amount { display: flex; align-items: center; gap: var(--space-3); justify-content: space-between; margin-top: var(--space-5); padding-block: var(--space-4); border-top: 1px solid var(--border); color: var(--text-muted); font-size: var(--text-sm); }

@@ -629,3 +629,7 @@ Leaderboard first-place cells paint inset gold edges under collapsed borders; po
 ## 2026-11-14 EP-1169 T9 magnetic Join
 
 Join-only pointer microinteraction clamps scoped offsets to4px, one rAF at a time, resets on leave/media/unmount, and composes with T2's press state. Fine mouse/no-reduced-motion only; balance chip and form/ticket controls untouched. npm test181/181, typecheck/lint/build pass. Browser verified offset bound, retained press scale, live reduced-motion reset and working Join destination. All13 tasks now implemented; final responsive/reduced-motion/combination-flow captures next. No push/deploy from writer.
+
+## 2026-11-14 EP-1169 final integration contrast fix
+
+Finished the final integration pass the build writer started before stopping: committed its last in-flight change, a two-line contrast fix keeping selected outcome text on var(--text) instead of the accent green (leading card outcome chip and pressed ticket position choice), verified by the contrast script at ~13.8:1 on the captured surfaces (outputs/ep-1169/contrast-results.json). Full gate re-run on the final tree: npm test 181/181, typecheck, lint, production build all green; package.json untouched. All 13 EP-1169 tasks are now committed (bee640d..2a78ea0 plus this fix) with Mode B PASS recorded in .agent/research/ep-1169-build-autoresearch/GATE-RESULT.md. Pushed to origin/main on the user's explicit go-ahead.
