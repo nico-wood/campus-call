@@ -625,3 +625,7 @@ Detail/event charts fill only the leading series at16% opacity, reveal lines thr
 ## 2026-11-14 EP-1169 T8 table polish
 
 Leaderboard first-place cells paint inset gold edges under collapsed borders; podium chips use restrained radial depth from existing gold/silver/bronze values. Ordinary row hover excludes first/mine highlights and reduces instantly with reduced motion. No portfolio/dead/shared category selector or markup edit; shared portfolio tiles remain T6-owned. npm test181/181, typecheck/lint/build pass. Browser with explicitly mocked leaderboard/account verifies painted gold cells and unchanged first/mine backgrounds on hover; screenshot outputs/ep-1169/t8-leaderboard-fixture-1440.png inspected. No hosted writes. Next T9 Join microinteraction, then final integration/captures. No push/deploy.
+
+## 2026-11-14 EP-1169 T9 magnetic Join
+
+Join-only pointer microinteraction clamps scoped offsets to4px, one rAF at a time, resets on leave/media/unmount, and composes with T2's press state. Fine mouse/no-reduced-motion only; balance chip and form/ticket controls untouched. npm test181/181, typecheck/lint/build pass. Browser verified offset bound, retained press scale, live reduced-motion reset and working Join destination. All13 tasks now implemented; final responsive/reduced-motion/combination-flow captures next. No push/deploy from writer.

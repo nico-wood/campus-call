@@ -4,8 +4,10 @@ import { useEffect, useRef, useState } from "react";
 import { UiIcon } from "../ui-icon";
 import { useLocalMember } from "./member-context";
 import { NumberTicker } from "./number-ticker";
+import { useMagnetic } from "./use-magnetic";
 
 export function MemberWidget() {
+  const magnetic = useMagnetic();
   const { account, loading, signedIn, signOut } = useLocalMember();
   const [open, setOpen] = useState(false);
   const widget = useRef<HTMLDivElement>(null);
@@ -32,7 +34,7 @@ export function MemberWidget() {
     return (
       <div className="signed-out-actions">
         <a className="signin-link" href="/join?mode=signin">Sign in</a>
-        <a className="confirm join-button" href="/join">
+        <a className="confirm join-button" href="/join" {...magnetic}>
           <span className="join-button-full">Join — get 1,000 credits</span>
           <span className="join-button-short">Join</span>
         </a>
