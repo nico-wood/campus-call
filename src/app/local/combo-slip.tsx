@@ -82,8 +82,11 @@ export function ComboSlip() {
           {open ? "–" : "+"}
         </button>
       </div>
+      <p className="combo-slip-price">
+        Combined probability {Math.round(combinedProbability * 100)}% · price {Math.round(price * 100)}%
+      </p>
       {open ? (
-        <>
+        <div className="combo-slip-body">
           <ul className="combo-slip-legs">
             {legs.map((leg) => (
               <li key={leg.marketId}>
@@ -106,9 +109,6 @@ export function ComboSlip() {
             <p className="form-error">{validationError}</p>
           ) : (
             <>
-              <p className="combo-slip-price">
-                Combined probability {Math.round(combinedProbability * 100)}% · price {Math.round(price * 100)}%
-              </p>
               <label className="position-amount" htmlFor="combo-stake">
                 <span>Stake</span>
                 <input
@@ -132,7 +132,7 @@ export function ComboSlip() {
             {busy ? "Placing…" : loading ? "Checking account…" : signedIn ? "Confirm combo" : "Sign in to confirm"}
           </button>
           <button type="button" className="combo-slip-clear" onClick={clear}>Clear combo</button>
-        </>
+        </div>
       ) : (
         <p className="combo-slip-summary">{legs.length} {legs.length === 1 ? "leg" : "legs"}</p>
       )}

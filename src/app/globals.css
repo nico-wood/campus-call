@@ -1669,16 +1669,24 @@ a.outcome:hover {
   z-index: 20;
   right: var(--space-4);
   bottom: var(--space-4);
-  width: min(22rem, calc(100vw - var(--space-6)));
-  max-height: calc(100vh - var(--space-8));
-  overflow-y: auto;
+  width: min(20rem, calc(100vw - var(--space-6)));
   padding: var(--space-4);
   border: 1px solid var(--border);
   border-radius: var(--radius-lg);
   background: var(--surface);
   box-shadow: 0 var(--space-3) var(--space-6) var(--backdrop-black, rgba(0, 0, 0, 0.25));
 }
-.combo-slip-collapsed { width: auto; min-width: 11rem; }
+.combo-slip-collapsed { width: min(14rem, calc(100vw - var(--space-6))); min-width: 11rem; display: grid; grid-template-columns: minmax(0, 1fr) auto var(--control-height); column-gap: var(--space-2); padding: var(--space-2) var(--space-3); border-radius: var(--radius-lg); background: var(--surface-raised); }
+.combo-slip-collapsed .combo-slip-header { display: contents; }
+.combo-slip-collapsed .combo-slip-header h2 { grid-column: 1; grid-row: 1; font-size: 0.75rem; align-self: end; white-space: nowrap; }
+.combo-slip-collapsed .combo-slip-header button { grid-column: 3; grid-row: 1 / 3; align-self: center; }
+.combo-slip-collapsed .combo-slip-summary { grid-column: 2; grid-row: 1; align-self: end; margin: 0; font-size: 0.75rem; white-space: nowrap; }
+.combo-slip-collapsed .combo-slip-price { grid-column: 1 / 3; grid-row: 2; margin: var(--space-1) 0 0; font-size: 0.625rem; line-height: 1.2; }
+.combo-slip-body { max-height: calc(100dvh - var(--space-7) - var(--control-height) - var(--space-6)); overflow-y: auto; overscroll-behavior-y: contain; }
+.combo-slip-open { animation: combo-tray-enter 180ms ease-out; }
+.app:has(.combo-slip) .main { padding-bottom: calc(var(--control-height) + var(--space-7)); }
+@keyframes combo-tray-enter { from { transform: translateY(var(--space-3)); opacity: 0; } to { transform: translateY(0); opacity: 1; } }
+@media (prefers-reduced-motion: reduce) { .combo-slip-open { animation: none; } }
 .combo-slip-header { display: flex; align-items: center; justify-content: space-between; gap: var(--space-3); }
 .combo-slip-header h2 { margin: 0; font-size: var(--text-lg); font-weight: 600; }
 .combo-slip-summary { margin: var(--space-2) 0 0; color: var(--text-muted); font-size: var(--text-sm); }
@@ -1693,6 +1701,10 @@ a.outcome:hover {
 
 @media (max-width: 40rem) {
   .combo-slip { left: var(--space-3); right: var(--space-3); bottom: var(--space-3); width: auto; }
+  .combo-slip-collapsed { left: auto; width: min(14rem, calc(100vw - var(--space-6))); }
+  .app:has(.combo-slip-open) .main { padding-bottom: calc(70dvh + var(--space-7)); }
+  .app:has(.trade-ticket.position-widget) .combo-slip-collapsed { bottom: calc(5.5rem + var(--space-3)); }
+  .app:has(.trade-ticket.position-widget.sheet-expanded) .combo-slip-collapsed { bottom: calc(70dvh + var(--space-3)); }
 }
 
 /* Mobile hotfix (2026-11-15): the workspace nav scrolled horizontally under
