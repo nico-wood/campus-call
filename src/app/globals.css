@@ -1783,3 +1783,20 @@ a.outcome:hover {
 @media (hover: hover) and (pointer: fine) and (prefers-reduced-motion: no-preference) {
   .market-card::before { background: radial-gradient(18rem 8rem at var(--spot-x, 50%) var(--spot-y, 0%), color-mix(in srgb, var(--gold) 28%, transparent), transparent 70%); }
 }
+
+@property --shine-angle { syntax: "<angle>"; inherits: false; initial-value: 0deg; }
+.prize-banner { position: relative; isolation: isolate; border-color: color-mix(in srgb, var(--gold) 45%, transparent); }
+.combo-slip { isolation: isolate; }
+.prize-banner::before, .combo-slip-open::before {
+  content: ""; position: absolute; inset: -1px; z-index: -1; border-radius: inherit; padding: 1px; pointer-events: none;
+  background: var(--gold-line), conic-gradient(from var(--shine-angle, 0deg), transparent 0 340deg, color-mix(in srgb, var(--gold) 65%, transparent) 355deg, transparent 360deg);
+  -webkit-mask: linear-gradient(var(--text) 0 0) content-box, linear-gradient(var(--text) 0 0);
+  -webkit-mask-composite: xor; mask-composite: exclude;
+  animation: border-shine 9s linear infinite;
+}
+.combo-slip-open::before { opacity: 0.5; }
+@keyframes border-shine { to { --shine-angle: 360deg; } }
+@media (prefers-reduced-motion: reduce) {
+  .prize-banner { border-color: var(--gold); }
+  .prize-banner::before, .combo-slip-open::before { animation: none; }
+}

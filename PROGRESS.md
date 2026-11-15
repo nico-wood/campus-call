@@ -601,3 +601,7 @@ Added a ref/rAF-only pointer-glow hook to existing market articles. One pending 
 ## 2026-11-14 EP-1169 T2 CTA sheen
 
 Primary confirm/Join buttons gain token-derived green depth, one hover/focus sheen, and a subtle press. Disabled buttons suppress sheen; mobile Join display rules untouched. Browser caught hover specificity overriding reduced-motion suppression; matched the hover/focus selectors in the reduced block and rechecked successfully. npm test181/181 after fix; typecheck/lint/build passed; desktop/mobile Join labels and Full name prompt verified. No behavior/copy change. Next T3 quiet border shine. No push/deploy.
+
+## 2026-11-14 EP-1169 T3 quiet shine border
+
+Prize banners and expanded combo trays now use a slow masked gold comet over the existing static border. Registered angle animates independently; root remains non-scrolling, body owns tray overflow. Collapsed tray has no ring. Reduced motion restores static full-gold edges. No new palette literals or markup. npm test181/181, typecheck/lint/build pass; browser verified shine/reduced fallback on home and leaderboard. Next T4 static background depth (optional parallax restraint decision). No push/deploy.
