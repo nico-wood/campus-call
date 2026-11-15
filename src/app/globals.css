@@ -1802,3 +1802,9 @@ a.outcome:hover {
   .prize-banner::before, .combo-slip-open::before { animation: none; }
 }
 .sparkline-down { color: var(--negative); }
+
+.stats-strip > div { position: relative; overflow: hidden; transition: transform var(--motion-fast), border-color var(--motion-fast); }
+.stats-strip > div::before { content: ""; position: absolute; top: 0; left: var(--space-4); width: var(--space-6); height: 2px; background: var(--gold); opacity: 0.8; }
+.stats-strip > div:hover { border-color: color-mix(in srgb, var(--gold) 35%, var(--border)); transform: translateY(-1px); }
+.stats-strip strong { font-variant-numeric: tabular-nums; }
+@media (prefers-reduced-motion: reduce) { .stats-strip > div { transition: none; } .stats-strip > div:hover { transform: none; } }

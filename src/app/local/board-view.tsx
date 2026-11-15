@@ -3,6 +3,7 @@
 import { useEffect, useRef, useState } from "react";
 import { LOCAL_CATEGORIES } from "./categories";
 import { MarketCard } from "./market-card";
+import { NumberTicker } from "./number-ticker";
 import type { BoardStats, MergedMarket } from "./markets";
 
 function rowHref(category: string, tab: "live" | "futures" | "all"): string {
@@ -134,10 +135,10 @@ export function BoardView({
   return (
     <>
       <section className="stats-strip" aria-label="Board activity">
-        <div><strong>{stats.participants.toLocaleString()}</strong><span>Forecasters</span></div>
-        <div><strong>{stats.positions.toLocaleString()}</strong><span>Positions</span></div>
-        <div><strong>{Math.round(stats.volume).toLocaleString()}</strong><span>Credits in play</span></div>
-        <div><strong>{openCount}</strong><span>Open markets</span></div>
+        <div><strong><NumberTicker value={stats.participants} /></strong><span>Forecasters</span></div>
+        <div><strong><NumberTicker value={stats.positions} /></strong><span>Positions</span></div>
+        <div><strong><NumberTicker value={Math.round(stats.volume)} /></strong><span>Credits in play</span></div>
+        <div><strong><NumberTicker value={openCount} /></strong><span>Open markets</span></div>
       </section>
       <div className="browse-heading">
         <h1 id="forecast-list-heading" className="list-heading">Local forecasts</h1>

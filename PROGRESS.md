@@ -613,3 +613,7 @@ Added one faint static token-derived diagonal beam layer to the existing desktop
 ## 2026-11-14 EP-1169 T5 sparklines
 
 Card sparklines now have unique SVG gradient areas, endpoint dots inset2px on both axes, and negative-trend tint from the existing negative token. Flat histories stay centered, no animation or data changes. npm test181/181, typecheck/lint/build pass. Browser checked25 dot/area sparklines, unique gradient ids and endpoints within bounds; screenshot t5-sparklines-1440.png. Next T6 shared stat tiles. No push/deploy.
+
+## 2026-11-14 EP-1169 T6 stat tiles
+
+Board statistics reuse NumberTicker for all four values; shared board/portfolio tiles gain quiet gold top ticks, tabular numerals and a reduced-motion-safe hover state. Portfolio already used NumberTicker and was not edited. npm test181/181, typecheck/lint/build pass. Browser verified four gold-tick tiles on board and fixture-signed-in portfolio at390px reduced motion; fixture account/combos intercepted locally, no hosted writes. Screenshots t6-board-390.png/t6-portfolio-390.png. Next T7 chart reveal/pill. No push/deploy.
