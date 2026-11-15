@@ -1,7 +1,9 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import { UiIcon } from "../ui-icon";
 import { useLocalMember } from "./member-context";
+import { NumberTicker } from "./number-ticker";
 
 export function MemberWidget() {
   const { account, loading, signedIn, signOut } = useLocalMember();
@@ -50,7 +52,8 @@ export function MemberWidget() {
         onClick={() => setOpen((value) => !value)}
       >
         <span className="balance-chip-name">{account.name || "Forecaster"}</span>
-        <span className="balance-chip-amount">{Math.round(account.balance).toLocaleString()}</span>
+        <UiIcon name="coin" className="balance-chip-icon" width="16" height="16" />
+        <span className="balance-chip-amount"><NumberTicker value={Math.round(account.balance)} /></span>
         <span className="balance-chip-label">credits</span>
       </button>
       {open ? (

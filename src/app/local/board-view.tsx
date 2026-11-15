@@ -70,7 +70,14 @@ export function BoardView({
         <span className="browse-count">{filtered.length} {filtered.length === 1 ? "market" : "markets"}</span>
       </div>
       {filtered.length === 0 ? (
-        <section className="empty" aria-labelledby="forecast-list-heading">
+        <section className="empty empty-illustrated" aria-labelledby="forecast-list-heading">
+          <svg className="empty-illustration" width="96" height="96" viewBox="0 0 96 96" fill="none" aria-hidden="true">
+            <circle cx="48" cy="48" r="44" stroke="var(--border)" strokeWidth="2" />
+            <circle cx="48" cy="48" r="44" stroke="var(--gold)" strokeWidth="2" strokeDasharray="8 10" opacity="0.5" />
+            <path d="M32 54c4-10 10-16 16-16s12 6 16 16" stroke="var(--text-soft)" strokeWidth="2" strokeLinecap="round" />
+            <circle cx="38" cy="42" r="2.5" fill="var(--text-soft)" />
+            <circle cx="58" cy="42" r="2.5" fill="var(--text-soft)" />
+          </svg>
           <h2>No matching markets</h2>
           <p>Try another category or search term.</p>
         </section>

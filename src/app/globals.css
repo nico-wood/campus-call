@@ -2,22 +2,29 @@
 @font-face { font-family: "Campus Mono"; src: url("/fonts/geist-mono-latin.woff2") format("woff2"); font-style: normal; font-weight: 100 900; font-display: swap; }
 
 :root {
-  color-scheme: light;
-  /* Campus Call: a clean light theme. Cal Poly green is the brand color; one
-     warm accent is used sparingly for callouts and secondary chart lines. */
-  --bg: hsl(40 38% 97%);
-  --surface: hsl(0 0% 100%);
-  --surface-raised: hsl(40 28% 94%);
-  --border: hsl(40 14% 86%);
-  --text: hsl(150 12% 9%);
-  --text-muted: hsl(150 6% 34%);
-  --text-soft: hsl(150 5% 48%);
-  --emerald: #154734;
-  --accent: #154734;
-  --accent-text: hsl(40 38% 98%);
-  --warm-accent: #b4530f;
-  --focus: #0d7a4f;
-  --loader-color: #154734;
+  color-scheme: dark;
+  /* Campus Call: premium dark-green + gold. One palette, no separate light
+     theme — gold is a restrained accent only, never a button fill or body
+     text color. See the dark-mode block below, which converges on the same
+     values (kept for the few user-agent / print contexts that still read it). */
+  --bg: #0B1410;
+  --surface: #111D17;
+  --surface-raised: #16251D;
+  --border: #1F3329;
+  --text: #ECEFE9;
+  --text-muted: #93A39A;
+  --text-soft: #6F8077;
+  --emerald: #2E8F63;
+  --accent: #1F6B4A;
+  --accent-text: var(--text);
+  --gold: #C9A75A;
+  --gold-soft: rgba(201, 167, 90, 0.14);
+  --gold-line: linear-gradient(90deg, transparent, rgba(201, 167, 90, 0.55), transparent);
+  --negative: #D0665A;
+  --negative-subtle: color-mix(in srgb, var(--negative) 14%, transparent);
+  --warm-accent: var(--negative);
+  --focus: var(--gold);
+  --loader-color: var(--accent);
   --space-1: 0.25rem;
   --space-2: 0.5rem;
   --space-3: 0.75rem;
@@ -31,7 +38,7 @@
   --text-xl: 1.5rem;
   --font-sans: "Campus Geist", "Segoe UI", ui-sans-serif, system-ui, sans-serif;
   --font-mono: "Campus Mono", ui-monospace, monospace;
-  --chart-secondary: var(--warm-accent);
+  --chart-secondary: #5B8DEF;
   --chart-grid: var(--border);
   --ambient-cycle: 42s;
   --ambient-green-opacity: 0;
@@ -47,7 +54,7 @@
   --text-card: 1.125rem;
   --space-card: 1.25rem;
   --accent-subtle: color-mix(in srgb, var(--accent) 10%, transparent);
-  --warm-subtle: color-mix(in srgb, var(--warm-accent) 12%, transparent);
+  --warm-subtle: var(--negative-subtle);
   --probability-other: var(--border);
   --navigation-offset: 10rem;
   --backdrop-black: #020403;
@@ -57,7 +64,7 @@
   --backdrop-opacity: 0;
   --backdrop-grid-size: 14rem;
   --brand-ground: var(--emerald);
-  --brand-outline: var(--warm-accent);
+  --brand-outline: var(--text-muted);
   --brand-name-size: 1.75rem;
   --leading-body: 1.5;
   --leading-tight: 1.25;
@@ -67,22 +74,26 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
+    /* Converges on the same premium dark-green + gold palette as the default
+       :root block above — this app has one look, not separate light/dark
+       themes, so this block just re-asserts it for user agents that key off
+       prefers-color-scheme. */
     color-scheme: dark;
-    --bg: #0a0a0a;
-    --surface: #141414;
-    --surface-raised: #1f1f1f;
-    --border: hsl(0 0% 24%);
-    --text: hsl(40 20% 96%);
-    --text-muted: hsl(40 8% 72%);
-    --text-soft: hsl(40 6% 56%);
-    --emerald: #2d9166;
-    --accent: #2d9166;
-    --accent-text: #0a0a0a;
-    --warm-accent: #e08a3c;
-    --focus: #3fb37f;
-    --loader-color: #2d9166;
+    --bg: #0B1410;
+    --surface: #111D17;
+    --surface-raised: #16251D;
+    --border: #1F3329;
+    --text: #ECEFE9;
+    --text-muted: #93A39A;
+    --text-soft: #6F8077;
+    --emerald: #2E8F63;
+    --accent: #1F6B4A;
+    --accent-text: var(--text);
+    --warm-accent: var(--negative);
+    --focus: var(--gold);
+    --loader-color: var(--accent);
     --brand-ground: var(--emerald);
-    --brand-outline: var(--warm-accent);
+    --brand-outline: var(--text-muted);
     --backdrop-white: #1f1f1f;
   }
 }
@@ -149,13 +160,41 @@ button {
   pointer-events: none;
 }
 
-.app::before,
+/* Pattern: 21st.dev-style ambient backdrop, hand-built in plain CSS — a
+   faint green dot-grid that fades toward the page edges, plus one soft gold
+   glow positioned behind the header/prize banner only. Fully static (no
+   motion to pause under prefers-reduced-motion) and swapped for a cheaper
+   flat tint under 40rem, where a masked, tiled dot-grid is more expensive to
+   paint. Chosen over a drifting "aurora" candidate (see outputs/round2-ui)
+   specifically for restraint — this UI was rejected once before for looking
+   "AI-made," and a texture this quiet reads as intentional rather than a
+   showpiece. */
+.app::before {
+  background-image: radial-gradient(circle, color-mix(in srgb, var(--emerald) 60%, transparent) 1px, transparent 1px);
+  background-size: 26px 26px;
+  mask-image: radial-gradient(ellipse 75% 60% at 50% 0%, black, transparent 72%);
+  -webkit-mask-image: radial-gradient(ellipse 75% 60% at 50% 0%, black, transparent 72%);
+  opacity: 0.07;
+}
+
+.app::after {
+  background: radial-gradient(ellipse 44rem 20rem at 50% -6rem, var(--gold-soft), transparent 70%);
+}
+
+@media (max-width: 40rem) {
+  .app::before {
+    background-image: none;
+    background: linear-gradient(180deg, color-mix(in srgb, var(--emerald) 8%, transparent), transparent 60%);
+    mask-image: none;
+    -webkit-mask-image: none;
+  }
+}
+
 .shell::before {
   background: radial-gradient(ellipse at 88% 86%, var(--backdrop-white), transparent 58%), radial-gradient(ellipse at 62% 68%, var(--backdrop-gold), transparent 58%), radial-gradient(ellipse at 84% 28%, var(--backdrop-green), transparent 70%);
   opacity: 0.18;
 }
 
-.app::after,
 .shell::after {
   background: linear-gradient(180deg, var(--backdrop-black), transparent 52%), linear-gradient(145deg, var(--backdrop-black) 2%, var(--backdrop-green) 32%, var(--backdrop-gold) 62%, var(--backdrop-white) 92%);
   mask-image: url("/dither-grid.svg");
@@ -227,6 +266,17 @@ button {
   z-index: 3;
   background: var(--bg);
   border-bottom: 1px solid var(--border);
+}
+
+.topbar::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -1px;
+  height: 1px;
+  background: var(--gold-line);
+  pointer-events: none;
 }
 
 .category-bar {
@@ -416,6 +466,8 @@ button {
 }
 
 .empty h1 { font-family: var(--font-display); font-weight: 400; }
+.empty-illustrated { align-items: center; text-align: center; }
+.empty-illustration { margin-bottom: var(--space-4); }
 
 .empty-actions { display: flex; flex-wrap: wrap; align-items: center; gap: var(--space-3); margin-top: var(--space-4); }
 
@@ -1051,7 +1103,9 @@ a.outcome:hover {
 .brand-mark { width: 34px; height: 34px; }
 .brand-name { font-size: var(--text-xl); }
 .workspace-nav a:first-child { background: var(--surface-raised); color: var(--text); }
-.category-bar { border-top: 0; }
+.category-bar { position: relative; border-top: 0; }
+.category-indicator { position: absolute; left: 0; bottom: 0; height: 2px; border-radius: var(--radius-pill); background: var(--accent); transition: transform 240ms cubic-bezier(0.4, 0, 0.2, 1), width 240ms cubic-bezier(0.4, 0, 0.2, 1); pointer-events: none; }
+@media (prefers-reduced-motion: reduce) { .category-indicator { transition: none; } }
 .category-scroller { display: flex; align-items: center; gap: var(--space-1); min-width: 0; }
 .category-scroll { display: inline-flex; align-items: center; justify-content: center; flex: none; width: var(--control-height); min-height: var(--control-height); padding: 0; border: 1px solid var(--border); border-radius: var(--radius-md); background: var(--surface); color: var(--text-muted); cursor: pointer; }
 .category-scroll:hover { background: var(--surface-raised); color: var(--text); }
@@ -1074,7 +1128,8 @@ a.outcome:hover {
   .list-note { font-size: 0.75rem; line-height: var(--leading-body); }
   .brand-name { font-size: var(--text-lg); }
 }
-.workspace-footer { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: var(--space-4); padding-block: var(--space-5); border-top: 1px solid var(--border); background: var(--bg); color: var(--text-soft); font-size: var(--text-sm); }
+.workspace-footer { position: relative; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: var(--space-4); padding-block: var(--space-5); border-top: 1px solid var(--border); background: var(--bg); color: var(--text-soft); font-size: var(--text-sm); }
+.workspace-footer::before { content: ""; position: absolute; left: 0; right: 0; top: -1px; height: 1px; background: var(--gold-line); pointer-events: none; }
 .workspace-footer p { margin: 0; }
 .workspace-footer p > span { color: var(--text-muted); }
 .workspace-footer a { display: inline-flex; align-items: center; min-height: var(--control-height); color: var(--text-muted); text-underline-offset: var(--space-1); }
@@ -1105,6 +1160,9 @@ a.outcome:hover {
 .chart-secondary { stroke: var(--chart-secondary); }
 .chart-point.chart-primary { fill: var(--emerald); }
 .chart-point.chart-secondary { fill: var(--chart-secondary); }
+.chart-area { pointer-events: none; }
+.chart-outcome-label { font-size: 0.625rem; font-family: var(--font-mono); font-weight: 500; dominant-baseline: middle; }
+.chart-start-marker { fill: var(--gold); stroke: var(--surface); stroke-width: 1.5; }
 .chart-crosshair { stroke: var(--text-soft); stroke-width: 1; stroke-dasharray: 3 4; opacity: 0.85; pointer-events: none; }
 .chart-crosshair-y { stroke: var(--accent); opacity: 0.7; }
 .chart-scrubber { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); accent-color: var(--accent); margin: 0; }
@@ -1373,7 +1431,8 @@ a.outcome:hover {
 .access-notice { display: flex; flex-direction: column; gap: var(--space-3); width: 100%; }
 .access-notice h3 { margin: 0; font-size: var(--text-card); font-weight: 600; }
 .access-notice p { margin: 0; color: var(--text-muted); font-size: var(--text-sm); }
-.access-signin { display: inline-flex; align-items: center; justify-content: space-between; gap: var(--space-3); padding-block: var(--space-3); text-decoration: none; font-size: var(--text-sm); }
+.access-signin { display: inline-flex; width: 100%; align-items: center; justify-content: space-between; gap: var(--space-3); padding-block: var(--space-3); background: transparent; border: 0; color: var(--text-muted); text-decoration: none; font-size: var(--text-sm); cursor: pointer; text-align: left; }
+.access-signin:hover { color: var(--text); }
 .access-page { width: min(100%, 36rem); margin: var(--space-6) auto; padding: var(--space-6); border: 1px solid var(--border); border-radius: var(--radius-lg); background: var(--surface); }
 .access-page .list-heading { text-wrap: balance; }
 .access-status { display: inline-flex; align-items: center; margin: 0 0 var(--space-5); padding: var(--space-1) var(--space-3); border-radius: var(--radius-pill); background: var(--accent-subtle); color: var(--accent); font-size: var(--text-sm); }
@@ -1391,6 +1450,7 @@ a.outcome:hover {
 .waitlist-success h2 { margin: 0 0 var(--space-3); font-size: var(--text-lg); }
 .waitlist-success p { margin: 0; color: var(--text-muted); }
 .waitlist-success:focus-visible { outline: 2px solid var(--focus); outline-offset: var(--space-2); border-radius: var(--space-1); }
+.confetti-canvas { position: fixed; inset: 0; z-index: 15; width: 100%; height: 100%; pointer-events: none; }
 @media (max-width: 40rem) {
   .access-page { margin-block: var(--space-4); padding: var(--space-5); }
 }
@@ -1419,13 +1479,12 @@ a.outcome:hover {
 .balance-chip { display: inline-flex; align-items: center; gap: var(--space-2); min-height: var(--control-height); padding-inline: var(--space-4); border: 1px solid var(--border); border-radius: var(--radius-pill); background: var(--surface-raised); color: var(--text); cursor: pointer; }
 .balance-chip:hover { border-color: var(--accent); }
 .balance-chip-name { max-width: 8rem; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; color: var(--text-muted); font-size: var(--text-sm); }
+.balance-chip-icon { color: var(--gold); flex: none; }
 .balance-chip-amount { font-weight: 650; font-variant-numeric: tabular-nums; }
 .balance-chip-label { color: var(--text-soft); font-size: var(--text-sm); }
 .popover-signout { width: 100%; margin-top: var(--space-3); padding-block: var(--space-2); border: 1px solid var(--border); border-radius: var(--space-2); background: transparent; color: var(--text-muted); cursor: pointer; text-align: left; }
 .popover-signout:hover { background: var(--surface-raised); color: var(--text); }
 
-.prize-banner { margin-bottom: var(--space-5); padding: var(--space-4) var(--space-5); border: 1px solid var(--border); border-radius: var(--radius-md); background: var(--accent-subtle); }
-.prize-banner p { margin: 0; color: var(--text); font-size: var(--text-sm); line-height: var(--leading-body); }
 .prize-banner-snapshot { margin-top: var(--space-3) !important; padding-top: var(--space-3); border-top: 1px solid var(--border); color: var(--text-muted) !important; }
 
 .horizon-tabs { display: flex; gap: var(--space-2); padding-top: var(--space-2); }
@@ -1456,12 +1515,51 @@ a.outcome:hover {
   50% { opacity: 0.4; transform: scale(1.3); }
 }
 
+/* Pattern: 21st.dev-style marquee, hand-built in plain CSS. Built only from
+   real per-market price-tick history (see activity-ticker.tsx) — no
+   fabricated names. */
+.activity-ticker { overflow: hidden; margin-bottom: var(--space-4); padding-block: var(--space-2); border-block: 1px solid var(--border); -webkit-mask-image: linear-gradient(90deg, transparent, black 5%, black 95%, transparent); mask-image: linear-gradient(90deg, transparent, black 5%, black 95%, transparent); }
+.activity-ticker-track { display: flex; width: max-content; gap: var(--space-7); animation: ticker-scroll 32s linear infinite; }
+.activity-ticker-item { flex: none; color: var(--text-muted); font-size: var(--text-sm); white-space: nowrap; }
+@keyframes ticker-scroll { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+@media (prefers-reduced-motion: reduce) {
+  .activity-ticker-track { animation: none; }
+  .activity-ticker { overflow-x: auto; }
+}
+
+.prize-banner { margin-bottom: var(--space-5); padding: var(--space-4) var(--space-5); border: 1px solid var(--gold); border-radius: var(--radius-md); background: var(--surface); }
+.prize-banner p { margin: 0; color: var(--text-muted); font-size: var(--text-sm); line-height: var(--leading-body); }
+.prize-pool-stat { color: var(--gold); font-weight: 650; }
+
 .stats-strip { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: var(--space-4); margin-bottom: var(--space-5); }
 .stats-strip > div { display: flex; flex-direction: column; gap: var(--space-1); padding: var(--space-4); border: 1px solid var(--border); border-radius: var(--radius-md); background: var(--surface); }
 .stats-strip strong { font-size: var(--text-xl); font-weight: 650; letter-spacing: -0.02em; }
 .stats-strip span { color: var(--text-soft); font-size: var(--text-sm); }
 
 .market-status-tag { padding: var(--space-1) var(--space-2); border-radius: var(--space-1); background: var(--surface-raised); color: var(--text-soft); font-size: 0.75rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.04em; }
+
+/* Pattern: 21st.dev-style card hover-lift + spotlight border, hand-built in
+   plain CSS (no pointer-tracking JS — a ::before radial-gradient border is
+   enough). */
+.market-card { position: relative; transition: transform var(--motion-fast), box-shadow var(--motion-fast), border-color var(--motion-fast); }
+.market-card::before { content: ""; position: absolute; inset: -1px; z-index: -1; border-radius: inherit; padding: 1px; background: radial-gradient(18rem 8rem at 50% 0%, var(--gold-soft), transparent 70%); opacity: 0; transition: opacity var(--motion-fast); -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0); -webkit-mask-composite: xor; mask-composite: exclude; pointer-events: none; }
+.market-card:hover { transform: translateY(-2px); box-shadow: 0 0.75rem 1.75rem rgba(0, 0, 0, 0.28); }
+.market-card:hover::before { opacity: 1; }
+@media (prefers-reduced-motion: reduce) { .market-card { transition: none; } .market-card:hover { transform: none; } }
+
+/* Loading skeleton, matching MarketCard's layout. */
+.market-card-skeleton { pointer-events: none; }
+.skeleton-chip, .skeleton-line, .skeleton-pill { display: block; border-radius: var(--space-1); background: linear-gradient(90deg, var(--surface-raised) 25%, var(--border) 50%, var(--surface-raised) 75%); background-size: 200% 100%; animation: skeleton-sheen 1.6s ease-in-out infinite; }
+.skeleton-chip { width: 6rem; height: 1.25rem; border-radius: var(--radius-pill); }
+.skeleton-line { height: 1rem; margin-top: var(--space-2); }
+.skeleton-line-title { width: 90%; height: 1.25rem; }
+.skeleton-line-title-short { width: 60%; height: 1.25rem; }
+.skeleton-line-value { width: 4rem; height: 2.5rem; }
+.skeleton-line-label { width: 5rem; margin-top: var(--space-2); }
+.skeleton-outcomes { display: flex; gap: var(--space-2); width: 100%; margin-top: var(--space-2); }
+.skeleton-pill { flex: 1; height: var(--control-height); border-radius: var(--radius-md); }
+@keyframes skeleton-sheen { 0% { background-position: 200% 0; } 100% { background-position: -200% 0; } }
+@media (prefers-reduced-motion: reduce) { .skeleton-chip, .skeleton-line, .skeleton-pill { animation: none; } }
 .market-card .card-meta { justify-content: space-between; }
 .sparkline { color: var(--accent); flex: none; }
 .market-outcome-buttons { grid-template-columns: repeat(auto-fit, minmax(6rem, 1fr)); }
@@ -1476,6 +1574,62 @@ a.outcome:hover {
 .trade-message-error { background: var(--warm-subtle); color: var(--warm-accent); }
 .trade-message-success { background: var(--accent-subtle); color: var(--accent); }
 
+/* Pattern: 21st.dev-style toast stack, hand-built in plain CSS. Mounted once
+   from ToastProvider; sits above everything, including the bottom sheet. */
+.toast-stack { position: fixed; left: 50%; bottom: var(--space-5); z-index: 20; display: flex; flex-direction: column-reverse; align-items: center; gap: var(--space-2); transform: translateX(-50%); width: min(92vw, 24rem); pointer-events: none; }
+.toast { margin: 0; padding: var(--space-3) var(--space-4); border-radius: var(--radius-md); border: 1px solid var(--border); background: var(--surface-raised); color: var(--text); font-size: var(--text-sm); box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.35); animation: toast-in 220ms ease-out; }
+.toast-success { border-color: var(--accent); }
+.toast-error { border-color: var(--negative); color: var(--negative); }
+@keyframes toast-in { from { opacity: 0; transform: translateY(0.5rem); } to { opacity: 1; transform: translateY(0); } }
+@media (prefers-reduced-motion: reduce) { .toast { animation: none; } }
+
+/* Mobile bottom sheet for the full (non-compact) trade ticket. The summary
+   bar is hidden by default and only shown once the sheet layout kicks in. */
+.ticket-sheet-summary { display: none; width: 100%; align-items: center; justify-content: space-between; gap: var(--space-3); margin: 0 0 var(--space-3); padding: 0; background: transparent; border: 0; color: var(--text); cursor: pointer; text-align: left; }
+.ticket-sheet-outcomes { display: flex; gap: var(--space-4); font-size: var(--text-sm); color: var(--text-muted); }
+.ticket-sheet-outcomes strong { color: var(--text); font-variant-numeric: tabular-nums; margin-right: var(--space-1); }
+.ticket-sheet-toggle { flex: none; color: var(--accent); font-size: var(--text-sm); font-weight: 600; }
+@media (max-width: 40rem) {
+  .trade-ticket.position-widget {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 5;
+    margin: 0;
+    padding: var(--space-4) var(--space-5) max(var(--space-4), env(safe-area-inset-bottom));
+    border: 1px solid var(--border);
+    border-bottom: 0;
+    border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+    background: var(--surface);
+    box-shadow: 0 -0.5rem 2rem rgba(0, 0, 0, 0.35);
+    max-height: 70dvh;
+    overflow-y: auto;
+    transition: max-height 220ms ease;
+  }
+  .ticket-sheet-summary { display: flex; }
+  .trade-ticket.position-widget:not(.sheet-expanded) { max-height: 5.5rem; }
+  .trade-ticket.position-widget:not(.sheet-expanded) .position-widget-heading,
+  .trade-ticket.position-widget:not(.sheet-expanded) .position-choices,
+  .trade-ticket.position-widget:not(.sheet-expanded) .position-amount,
+  .trade-ticket.position-widget:not(.sheet-expanded) .quick-amounts,
+  .trade-ticket.position-widget:not(.sheet-expanded) .trade-preview,
+  .trade-ticket.position-widget:not(.sheet-expanded) .trade-message,
+  .trade-ticket.position-widget:not(.sheet-expanded) > .confirm {
+    display: none;
+  }
+  @media (prefers-reduced-motion: reduce) { .trade-ticket.position-widget { transition: none; } }
+  /* The ticket's own wrapper (aside.example-ticket) still renders its
+     padding/border/background even once its child escapes to a fixed
+     bottom sheet — collapse it so it doesn't leave an empty box behind. */
+  .example-ticket:has(> .trade-ticket.position-widget) {
+    padding: 0;
+    border: 0;
+    background: transparent;
+    min-height: 0;
+  }
+}
+
 @media (max-width: 40rem) {
   .stats-strip { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
@@ -1487,6 +1641,11 @@ a.outcome:hover {
 .positions-table td { font-variant-numeric: tabular-nums; }
 .leaderboard-row-mine { background: var(--accent-subtle); }
 .admin-snapshot { display: flex; align-items: center; gap: var(--space-3); margin-bottom: var(--space-4); }
+.leaderboard-row-first { background: var(--gold-soft); }
+.rank-chip { display: inline-flex; align-items: center; justify-content: center; width: 1.75rem; height: 1.75rem; border-radius: 50%; font-weight: 700; font-size: 0.8125rem; color: var(--bg); }
+.rank-chip-1 { background: var(--gold); }
+.rank-chip-2 { background: #C7CDD1; }
+.rank-chip-3 { background: #C98A4B; }
 .admin-actions, .admin-confirm { display: flex; flex-wrap: wrap; gap: var(--space-2); align-items: center; }
 .admin-actions button, .admin-confirm button { min-height: 2.25rem; padding-inline: var(--space-3); border: 1px solid var(--border); border-radius: var(--space-2); background: var(--surface); color: var(--text); cursor: pointer; white-space: nowrap; }
 .admin-actions button:hover, .admin-confirm button:hover { background: var(--surface-raised); }

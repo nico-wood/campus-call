@@ -5,6 +5,7 @@ import { findEventForMarket, teamLogosForMarket } from "../live-events";
 import { useCombo } from "./combo-context";
 import { quoteLocalPosition, type MergedMarket } from "./markets";
 import { useLocalMember } from "./member-context";
+import { useToast } from "./toast";
 
 type TradeResult = { prices: readonly number[]; balance: number; shares: number };
 
@@ -24,9 +25,11 @@ export function TradeTicket({
   const [amount, setAmount] = useState("10");
   const [busy, setBusy] = useState(false);
   const [message, setMessage] = useState<{ kind: "error" | "success"; text: string } | null>(null);
+  const [sheetExpanded, setSheetExpanded] = useState(false);
   const requestKeyRef = useRef<string | null>(null);
   const teamLogos = teamLogosForMarket(market.id);
   const { addLeg } = useCombo();
+  const { showToast } = useToast();
 
   function addToCombo(index: number, label: string) {
     addLeg({
@@ -79,21 +82,23 @@ export function TradeTicket({
         shares?: number;
       };
       if (!response.ok) {
-        setMessage({ kind: "error", text: data.error ?? "That position could not be placed." });
+        const text = data.error ?? "That position could not be placed.";
+        setMessage({ kind: "error", text });
+        showToast("error", text);
         return;
       }
       requestKeyRef.current = null;
       const shares = data.shares ?? 0;
-      setMessage({
-        kind: "success",
-        text: `Position placed. If ${market.outcomes[outcome]} wins, you get ${Math.floor(shares)} credits back.`,
-      });
+      const successText = `Position placed. If ${market.outcomes[outcome]} wins, you get ${Math.floor(shares)} credits back.`;
+      setMessage({ kind: "success", text: successText });
+      showToast("success", "Position confirmed");
       void refresh();
       if (data.prices && typeof data.balance === "number") {
         onTraded?.({ prices: data.prices, balance: data.balance, shares });
       }
     } catch {
       setMessage({ kind: "error", text: "Could not reach the server. Try again." });
+      showToast("error", "Could not reach the server. Try again.");
     } finally {
       setBusy(false);
     }
@@ -109,7 +114,30 @@ export function TradeTicket({
   }
 
   return (
-    <div className={compact ? "trade-ticket trade-ticket-compact" : "trade-ticket position-widget"}>
+    <div
+      className={
+        compact
+          ? "trade-ticket trade-ticket-compact"
+          : `trade-ticket position-widget${sheetExpanded ? " sheet-expanded" : ""}`
+      }
+    >
+      {!compact ? (
+        <button
+          type="button"
+          className="ticket-sheet-summary"
+          aria-expanded={sheetExpanded}
+          onClick={() => setSheetExpanded((value) => !value)}
+        >
+          <span className="ticket-sheet-outcomes">
+            {market.outcomes.slice(0, 2).map((label, index) => (
+              <span key={label}>
+                <strong>{Math.round(market.prices[index] * 100)}%</strong> {label}
+              </span>
+            ))}
+          </span>
+          <span className="ticket-sheet-toggle" aria-hidden="true">{sheetExpanded ? "Close" : "Trade"}</span>
+        </button>
+      ) : null}
       {!compact ? (
         <div className="position-widget-heading">
           <h2>Take a position</h2>

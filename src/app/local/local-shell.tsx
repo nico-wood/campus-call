@@ -5,6 +5,7 @@ import { ComboProvider } from "./combo-context";
 import { ComboSlip } from "./combo-slip";
 import { LocalMemberProvider } from "./member-context";
 import { MemberWidget } from "./member-widget";
+import { ToastProvider } from "./toast";
 
 export function LocalShell({
   query = "",
@@ -22,6 +23,7 @@ export function LocalShell({
   const hiddenCategory = category && category !== "All" && category !== "unknown" ? category : null;
   return (
     <LocalMemberProvider>
+      <ToastProvider>
       <ComboProvider>
         <div className="app">
           <a className="skip-link" href="#main-content">Skip to content</a>
@@ -59,6 +61,7 @@ export function LocalShell({
           <ComboSlip />
         </div>
       </ComboProvider>
+      </ToastProvider>
     </LocalMemberProvider>
   );
 }

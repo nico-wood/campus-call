@@ -41,9 +41,9 @@ export function LeaderboardView({ initialRows }: { initialRows: LeaderboardRow[]
     <>
       <section className="prize-banner" aria-label="Prize pool">
         <p>
-          If Campus Call places at the Cal Poly AI Hackathon, 50% of the team&rsquo;s prize goes to the top 10 on
-          the leaderboard, split geometrically. If the team wins nothing, the pool is $0. Virtual credits have no
-          cash value. Prizes may be taxable.
+          If Campus Call places at the Cal Poly AI Hackathon, <span className="prize-pool-stat">50% of the
+          team&rsquo;s prize</span> goes to the top 10 on the leaderboard, split geometrically. If the team wins
+          nothing, the pool is $0. Virtual credits have no cash value. Prizes may be taxable.
         </p>
         <p className="prize-banner-snapshot">
           The prize leaderboard is a snapshot at Mon 16 Nov 2026, 11:59 p.m. PT. It counts your credit balance
@@ -68,14 +68,26 @@ export function LeaderboardView({ initialRows }: { initialRows: LeaderboardRow[]
               <tr><th>Rank</th><th>Name</th><th>Total</th><th>Positions</th></tr>
             </thead>
             <tbody>
-              {rows.map((row) => (
-                <tr key={row.rank} className={mine && row.displayName === mine ? "leaderboard-row-mine" : undefined}>
-                  <td>{row.rank}</td>
-                  <td>{row.displayName}{mine && row.displayName === mine ? " (you)" : ""}</td>
-                  <td>{Math.round(row.total).toLocaleString()}</td>
-                  <td>{row.positions}</td>
-                </tr>
-              ))}
+              {rows.map((row) => {
+                const classNames = [
+                  mine && row.displayName === mine ? "leaderboard-row-mine" : null,
+                  row.rank === 1 ? "leaderboard-row-first" : null,
+                ].filter(Boolean).join(" ");
+                return (
+                  <tr key={row.rank} className={classNames || undefined}>
+                    <td>
+                      {row.rank <= 3 ? (
+                        <span className={`rank-chip rank-chip-${row.rank}`}>{row.rank}</span>
+                      ) : (
+                        row.rank
+                      )}
+                    </td>
+                    <td>{row.displayName}{mine && row.displayName === mine ? " (you)" : ""}</td>
+                    <td>{Math.round(row.total).toLocaleString()}</td>
+                    <td>{row.positions}</td>
+                  </tr>
+                );
+              })}
             </tbody>
           </table>
         </div>

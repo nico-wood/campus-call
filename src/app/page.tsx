@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
+import { ActivityTicker } from "./local/activity-ticker";
 import { loadMergedBoard } from "./local/board-data";
 import { BoardView } from "./local/board-view";
+import { CategoryIndicator } from "./local/category-indicator";
 import { LOCAL_CATEGORIES } from "./local/categories";
 import { LocalShell } from "./local/local-shell";
 
@@ -89,16 +91,18 @@ export default async function HomePage({
           </li>
         ))}
       </ul>
+      <CategoryIndicator />
     </nav>
   );
 
   return (
     <LocalShell query={query} category={category} place="home" categoryBar={categoryBar}>
+      <ActivityTicker markets={markets} />
       <section className="prize-banner" aria-label="Prize pool">
         <p>
-          If Campus Call places at the Cal Poly AI Hackathon, 50% of the team&rsquo;s prize goes to the top 10 on
-          the leaderboard, split geometrically. If the team wins nothing, the pool is $0. Virtual credits have no
-          cash value. Prizes may be taxable.
+          If Campus Call places at the Cal Poly AI Hackathon, <span className="prize-pool-stat">50% of the
+          team&rsquo;s prize</span> goes to the top 10 on the leaderboard, split geometrically. If the team wins
+          nothing, the pool is $0. Virtual credits have no cash value. Prizes may be taxable.
         </p>
         <p className="prize-banner-snapshot">
           The prize leaderboard is a snapshot at Mon 16 Nov 2026, 11:59 p.m. PT. It counts your credit balance

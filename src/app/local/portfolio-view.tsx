@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import { LIVE_FORECASTS } from "../live-forecasts";
 import { useLocalMember } from "./member-context";
 import type { AccountPosition } from "./markets";
+import { NumberTicker } from "./number-ticker";
 
 const BY_ID = new Map(LIVE_FORECASTS.map((forecast) => [forecast.id, forecast]));
 
@@ -77,10 +78,10 @@ export function PortfolioView() {
         <h1 className="list-heading">{account.name || "Your positions"}</h1>
       </div>
       <section className="stats-strip" aria-label="Portfolio stats">
-        <div><strong>{Math.round(account.balance).toLocaleString()}</strong><span>Balance</span></div>
-        <div><strong>{Math.round(openValue).toLocaleString()}</strong><span>Open position value</span></div>
-        <div><strong>{Math.round(total).toLocaleString()}</strong><span>Total</span></div>
-        <div><strong>{profit >= 0 ? "+" : ""}{Math.round(profit).toLocaleString()}</strong><span>Profit/loss vs 1,000</span></div>
+        <div><strong><NumberTicker value={Math.round(account.balance)} /></strong><span>Balance</span></div>
+        <div><strong><NumberTicker value={Math.round(openValue)} /></strong><span>Open position value</span></div>
+        <div><strong><NumberTicker value={Math.round(total)} /></strong><span>Total</span></div>
+        <div><strong>{profit >= 0 ? "+" : ""}<NumberTicker value={Math.round(profit)} /></strong><span>Profit/loss vs 1,000</span></div>
       </section>
       {account.positions.length === 0 ? (
         <section className="empty" aria-labelledby="positions-heading">

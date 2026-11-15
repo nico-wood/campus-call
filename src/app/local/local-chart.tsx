@@ -3,7 +3,7 @@
 import { useEffect, useMemo, useRef, useState, type PointerEvent as ReactPointerEvent } from "react";
 import type { MergedMarket } from "./markets";
 
-const PALETTE = ["#154734", "#b4530f", "#2563eb", "#9333ea", "#0891b2", "#be123c"];
+const PALETTE = ["#2E8F63", "#5B8DEF", "#C97BDE", "#4FC1C9", "#E8896B", "#A3B566"];
 const RANGES = [
   { key: "1h", label: "1H", ms: 60 * 60 * 1000 },
   { key: "6h", label: "6H", ms: 6 * 60 * 60 * 1000 },
@@ -43,7 +43,13 @@ export function LocalChart({ market }: { market: MergedMarket }) {
     return series;
   }, [market.history, market.prices, market.prior, market.outcomes.length, market.createdAt, range]);
 
-  const plotWidth = width - 64;
+  // Right-side budget is split between the end-of-line outcome labels and
+  // the axis percentage labels so neither overlaps nor pushes content past
+  // the figure's own box (which would show up as page horizontal overflow).
+  const axisPad = 34;
+  const outcomeLabelPad = 64;
+  const rightMargin = axisPad + outcomeLabelPad;
+  const plotWidth = width - 8 - rightMargin;
   const plotHeight = 260;
   const x = (i: number) => 8 + (points.length > 1 ? (i * plotWidth) / (points.length - 1) : plotWidth / 2);
   const y = (value: number) => 20 + (1 - value) * (plotHeight - 40);
@@ -57,7 +63,7 @@ export function LocalChart({ market }: { market: MergedMarket }) {
     const localX = ((event.clientX - bounds.left) / bounds.width) * width;
     const next = Math.max(0, Math.min(points.length - 1, Math.round(((localX - 8) / plotWidth) * (points.length - 1))));
     setActive(next);
-    setCursorX(Math.max(8, Math.min(width - 48, localX)));
+    setCursorX(Math.max(8, Math.min(width - rightMargin, localX)));
   }
 
   return (
@@ -115,21 +121,47 @@ export function LocalChart({ market }: { market: MergedMarket }) {
         }}
       >
         <rect className="chart-hit" x="0" y="0" width={width} height={plotHeight} fill="transparent" />
+        <defs>
+          {market.outcomes.map((label, i) => (
+            <linearGradient key={label} id={`chart-fill-${market.id}-${i}`} x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stopColor={PALETTE[i % PALETTE.length]} stopOpacity="0.22" />
+              <stop offset="100%" stopColor={PALETTE[i % PALETTE.length]} stopOpacity="0" />
+            </linearGradient>
+          ))}
+        </defs>
         {[0, 25, 50, 75, 100].map((value) => (
           <g key={value}>
-            <line className="chart-gridline" x1="8" x2={width - 48} y1={y(value / 100)} y2={y(value / 100)} />
-            <text className="chart-axis" x={width - 38} y={y(value / 100) + 4}>{value}%</text>
+            <line className="chart-gridline" x1="8" x2={width - axisPad - 6} y1={y(value / 100)} y2={y(value / 100)} />
+            <text className="chart-axis" x={width - axisPad + 2} y={y(value / 100) + 4}>{value}%</text>
           </g>
         ))}
-        {market.outcomes.map((label, i) => (
-          <path
-            key={label}
-            className="chart-line"
-            style={{ stroke: PALETTE[i % PALETTE.length] }}
-            d={points.map((point, pi) => `${pi ? "L" : "M"}${x(pi)},${y(point.p[i] ?? 0)}`).join(" ")}
-          />
-        ))}
+        {market.outcomes.map((label, i) => {
+          const baseline = y(0);
+          const linePath = points.map((point, pi) => `${pi ? "L" : "M"}${x(pi)},${y(point.p[i] ?? 0)}`).join(" ");
+          const areaPath = points.length > 1
+            ? `${linePath} L${x(points.length - 1)},${baseline} L${x(0)},${baseline} Z`
+            : "";
+          return (
+            <g key={label}>
+              {areaPath ? (
+                <path className="chart-area" d={areaPath} fill={`url(#chart-fill-${market.id}-${i})`} stroke="none" />
+              ) : null}
+              <path className="chart-line" style={{ stroke: PALETTE[i % PALETTE.length] }} d={linePath} />
+            </g>
+          );
+        })}
         {cursorX !== null ? <line className="chart-crosshair" x1={cursorX} x2={cursorX} y1="10" y2={plotHeight - 20} /> : null}
+        {points.length > 1
+          ? market.outcomes.map((label, i) => (
+              <circle
+                key={`start-${label}`}
+                className="chart-start-marker"
+                cx={x(0)}
+                cy={y(points[0]!.p[i] ?? 0)}
+                r="3.5"
+              />
+            ))
+          : null}
         {market.outcomes.map((label, i) => (
           <circle
             key={label}
@@ -140,6 +172,37 @@ export function LocalChart({ market }: { market: MergedMarket }) {
             r="4"
           />
         ))}
+        {(() => {
+          // Stack end-of-line labels top-to-bottom with a minimum gap so two
+          // outcomes that land at (near) the same probability don't render
+          // their text on top of each other.
+          const lastTick = points[points.length - 1];
+          const minGap = 12;
+          const positions = market.outcomes
+            .map((label, i) => ({
+              i,
+              label,
+              value: lastTick?.p[i] ?? market.prices[i],
+              y: y(lastTick?.p[i] ?? market.prices[i]),
+            }))
+            .sort((a, b) => a.y - b.y);
+          for (let k = 1; k < positions.length; k += 1) {
+            if (positions[k]!.y - positions[k - 1]!.y < minGap) {
+              positions[k]!.y = positions[k - 1]!.y + minGap;
+            }
+          }
+          return positions.map((entry) => (
+            <text
+              key={`label-${entry.label}`}
+              className="chart-outcome-label"
+              style={{ fill: PALETTE[entry.i % PALETTE.length] }}
+              x={x(points.length - 1) + 6}
+              y={entry.y + 4}
+            >
+              {entry.label} {Math.round(entry.value * 100)}%
+            </text>
+          ));
+        })()}
       </svg>
       {points.length > 1 ? (
         <input

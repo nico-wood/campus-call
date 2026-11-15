@@ -5,6 +5,7 @@ import { ForecastIcon } from "../forecast-icon";
 import { findEventForMarket, teamLogosForMarket } from "../live-events";
 import { useCombo } from "./combo-context";
 import { Countdown } from "./countdown";
+import { NumberTicker } from "./number-ticker";
 import { Sparkline } from "./sparkline";
 import { TradeTicket } from "./trade-ticket";
 import { formatPercent, leadingOutcomeIndex, type MergedMarket } from "./markets";
@@ -12,6 +13,33 @@ import { formatPercent, leadingOutcomeIndex, type MergedMarket } from "./markets
 function formatVolume(volume: number): string {
   if (volume >= 1000) return `${(volume / 1000).toFixed(1)}k`;
   return String(Math.round(volume));
+}
+
+/** Loading-state placeholder matching MarketCard's layout. Not wired into a
+ * live loading path today (the board is server-rendered), but available for
+ * any client-side fetch that needs one. */
+export function MarketCardSkeleton() {
+  return (
+    <li aria-hidden="true">
+      <article className="forecast-card market-card market-card-skeleton">
+        <div className="card-meta">
+          <span className="skeleton-chip" />
+        </div>
+        <span className="skeleton-line skeleton-line-title" />
+        <span className="skeleton-line skeleton-line-title-short" />
+        <div className="probability-snapshot">
+          <div className="probability-lead">
+            <span className="skeleton-line skeleton-line-value" />
+            <span className="skeleton-line skeleton-line-label" />
+          </div>
+        </div>
+        <div className="skeleton-outcomes">
+          <span className="skeleton-pill" />
+          <span className="skeleton-pill" />
+        </div>
+      </article>
+    </li>
+  );
 }
 
 export function MarketCard({ market }: { market: MergedMarket }) {
@@ -46,7 +74,7 @@ export function MarketCard({ market }: { market: MergedMarket }) {
         <h2><a href={`/markets/${market.id}`}>{market.question}</a></h2>
         <div className="probability-snapshot">
           <div className="probability-lead">
-            <span className="probability-value">{Math.round(prices[lead] * 100)}<span>%</span></span>
+            <span className="probability-value"><NumberTicker value={Math.round(prices[lead] * 100)} /><span>%</span></span>
             <span className="probability-summary">{market.outcomes[lead]}</span>
           </div>
           <Sparkline history={market.history} outcomeIdx={lead} width={72} height={28} />

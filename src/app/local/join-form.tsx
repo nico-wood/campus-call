@@ -1,13 +1,16 @@
 "use client";
 
 import { useState, type FormEvent } from "react";
+import { Confetti } from "./confetti";
 import { useLocalMember } from "./member-context";
+import { useToast } from "./toast";
 
 type Mode = "join" | "signin";
 type Errors = { name?: string; email?: string; phone?: string; form?: string };
 
 export function JoinForm({ next, initialMode = "join" }: { next: string; initialMode?: Mode }) {
   const { refresh } = useLocalMember();
+  const { showToast } = useToast();
   const [mode, setMode] = useState<Mode>(initialMode);
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -41,10 +44,17 @@ export function JoinForm({ next, initialMode = "join" }: { next: string; initial
         return;
       }
       await refresh();
-      if (mode === "join") setGranted(data.granted ?? 1000);
-      else setSignedIn(true);
+      if (mode === "join") {
+        const grantedAmount = data.granted ?? 1000;
+        setGranted(grantedAmount);
+        showToast("success", `Joined — +${grantedAmount.toLocaleString()} credits`);
+      } else {
+        setSignedIn(true);
+        showToast("success", "Signed in");
+      }
     } catch {
       setErrors({ form: "Could not reach the server. Try again." });
+      showToast("error", "Could not reach the server. Try again.");
     } finally {
       setBusy(false);
     }
@@ -53,6 +63,7 @@ export function JoinForm({ next, initialMode = "join" }: { next: string; initial
   if (granted !== null || signedIn) {
     return (
       <section className="enrollment" aria-live="polite">
+        {granted !== null ? <Confetti /> : null}
         <p className="enrollment-title">{granted !== null ? `+${granted.toLocaleString()} credits` : "Signed in"}</p>
         <h1 className="list-heading">{granted !== null ? "You&rsquo;re in." : "Welcome back."}</h1>
         <p className="list-note">
