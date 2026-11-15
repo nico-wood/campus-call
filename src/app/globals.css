@@ -689,6 +689,25 @@ button {
   text-decoration: none;
 }
 
+.outcome-row { display: flex; align-items: stretch; gap: var(--space-2); }
+.outcome-row .outcome { flex: 1 1 auto; min-width: 0; }
+.combo-add-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: none;
+  width: var(--control-height);
+  min-height: var(--control-height);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  background: var(--surface);
+  color: var(--text-muted);
+  font-size: var(--text-lg);
+  line-height: 1;
+  cursor: pointer;
+}
+.combo-add-button:hover { background: var(--surface-raised); color: var(--accent); border-color: var(--accent); }
+
 a.outcome {
   cursor: pointer;
 }
@@ -1105,7 +1124,24 @@ a.outcome:hover {
 .position-widget-icon { color: var(--accent); }
 .position-question { margin: var(--space-5) 0; color: var(--text-muted); font-size: var(--text-sm); line-height: var(--leading-body); }
 .position-choices { display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-2); }
-.position-choices button { display: flex; flex-direction: column; align-items: center; gap: var(--space-1); min-height: 4rem; max-width: 100%; padding: var(--space-3); color: var(--text-muted); background: var(--surface-raised); border: 1px solid transparent; border-radius: var(--radius-md); cursor: pointer; }
+.position-choices button { position: relative; display: flex; flex-direction: column; align-items: center; gap: var(--space-1); min-height: 4rem; max-width: 100%; padding: var(--space-3); color: var(--text-muted); background: var(--surface-raised); border: 1px solid transparent; border-radius: var(--radius-md); cursor: pointer; }
+.combo-add-chip {
+  position: absolute;
+  top: var(--space-1);
+  right: var(--space-1);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.5rem;
+  height: 1.5rem;
+  max-width: none !important;
+  border-radius: 50%;
+  background: var(--surface);
+  color: var(--text-muted);
+  font-size: var(--text-sm);
+  line-height: 1;
+}
+.combo-add-chip:hover { background: var(--accent-subtle); color: var(--accent); }
 .position-choices button > span { max-width: 100%; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
 .position-choices button[aria-pressed="true"] { background: var(--accent-subtle); color: var(--accent); border-color: var(--accent); }
 .position-choices button:hover { border-color: var(--text-soft); }
@@ -1457,3 +1493,34 @@ a.outcome:hover {
 .activity-list { display: flex; flex-direction: column; gap: var(--space-2); margin: var(--space-4) 0 0; padding: 0; list-style: none; }
 .activity-list li { display: flex; justify-content: space-between; gap: var(--space-3); padding-block: var(--space-2); border-bottom: 1px solid var(--border); color: var(--text-muted); font-size: var(--text-sm); }
 .activity-list li > span:first-child { color: var(--text-soft); flex: none; }
+
+/* Build a Combo: a slip of 2-5 legs with a fixed-margin combined price. */
+.combo-slip {
+  position: fixed;
+  z-index: 20;
+  right: var(--space-4);
+  bottom: var(--space-4);
+  width: min(22rem, calc(100vw - var(--space-6)));
+  max-height: calc(100vh - var(--space-8));
+  overflow-y: auto;
+  padding: var(--space-4);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  background: var(--surface);
+  box-shadow: 0 var(--space-3) var(--space-6) var(--backdrop-black, rgba(0, 0, 0, 0.25));
+}
+.combo-slip-header { display: flex; align-items: center; justify-content: space-between; gap: var(--space-3); }
+.combo-slip-header h2 { margin: 0; font-size: var(--text-lg); font-weight: 600; }
+.combo-slip-summary { margin: var(--space-2) 0 0; color: var(--text-muted); font-size: var(--text-sm); }
+.combo-slip-legs { display: flex; flex-direction: column; gap: var(--space-2); margin: var(--space-3) 0; padding: 0; list-style: none; }
+.combo-slip-legs li { display: flex; align-items: flex-start; justify-content: space-between; gap: var(--space-2); padding: var(--space-2) var(--space-3); border: 1px solid var(--border); border-radius: var(--space-2); background: var(--bg); }
+.combo-leg-question { margin: 0; font-size: var(--text-sm); }
+.combo-leg-outcome { margin: var(--space-1) 0 0; color: var(--text-muted); font-size: 0.75rem; }
+.combo-leg-remove { flex: none; width: 1.5rem; height: 1.5rem; border: 0; border-radius: 50%; background: transparent; color: var(--text-soft); cursor: pointer; font-size: var(--text-md); line-height: 1; }
+.combo-leg-remove:hover { background: var(--surface-raised); color: var(--text); }
+.combo-slip-price { margin: 0 0 var(--space-3); color: var(--text-muted); font-size: var(--text-sm); }
+.combo-slip-clear { width: 100%; margin-top: var(--space-2); padding-block: var(--space-2); border: 0; background: transparent; color: var(--text-soft); cursor: pointer; text-decoration: underline; }
+
+@media (max-width: 40rem) {
+  .combo-slip { left: var(--space-3); right: var(--space-3); bottom: var(--space-3); width: auto; }
+}

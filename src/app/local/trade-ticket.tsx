@@ -1,7 +1,8 @@
 "use client";
 
 import { useMemo, useRef, useState } from "react";
-import { teamLogosForMarket } from "../live-events";
+import { findEventForMarket, teamLogosForMarket } from "../live-events";
+import { useCombo } from "./combo-context";
 import { quoteLocalPosition, type MergedMarket } from "./markets";
 import { useLocalMember } from "./member-context";
 
@@ -25,6 +26,19 @@ export function TradeTicket({
   const [message, setMessage] = useState<{ kind: "error" | "success"; text: string } | null>(null);
   const requestKeyRef = useRef<string | null>(null);
   const teamLogos = teamLogosForMarket(market.id);
+  const { addLeg } = useCombo();
+
+  function addToCombo(index: number, label: string) {
+    addLeg({
+      marketId: market.id,
+      eventId: findEventForMarket(market.id)?.id ?? null,
+      horizon: market.horizon,
+      question: market.question,
+      outcomeLabel: label,
+      outcomeIdx: index,
+      prob: market.prices[index]!,
+    });
+  }
 
   const numericAmount = Number(amount) || 0;
   const preview = useMemo(
@@ -108,6 +122,24 @@ export function TradeTicket({
             {teamLogos?.get(label) ? <img className="outcome-team-logo" src={teamLogos.get(label)} alt="" aria-hidden="true" /> : null}
             <span>{label}</span>
             <strong>{Math.round(market.prices[index] * 100)}%</strong>
+            <span
+              role="button"
+              tabIndex={0}
+              className="combo-add-chip"
+              aria-label={`Add ${market.question}, ${label} to combo slip`}
+              onClick={(event) => {
+                event.stopPropagation();
+                addToCombo(index, label);
+              }}
+              onKeyDown={(event) => {
+                if (event.key !== "Enter" && event.key !== " ") return;
+                event.preventDefault();
+                event.stopPropagation();
+                addToCombo(index, label);
+              }}
+            >
+              +
+            </span>
           </button>
         ))}
       </div>
