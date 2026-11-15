@@ -1749,3 +1749,20 @@ a.outcome:hover {
 .board-row.is-overflowing .board-row-track { mask-image: linear-gradient(to right, var(--text) 97%, transparent); }
 .board-row-track:focus-visible { outline: 2px solid var(--focus); outline-offset: var(--space-1); }
 @media (prefers-reduced-motion: reduce) { .board-row-track { scroll-behavior: auto; } }
+
+/* EP-1169: mobile controls keep real 44px targets without changing behavior. */
+@media (max-width: 40rem) {
+  .topbar-inner { gap: var(--space-2); }
+  .workspace-nav { gap: var(--space-2); row-gap: var(--space-2); }
+  .category, .horizon-tab, .combo-add-button, .combo-slip-header .icon-button,
+  .board-row-actions button { min-width: var(--control-height); min-height: var(--control-height); }
+  .market-outcome-buttons .outcome { min-height: var(--control-height); }
+  .position-choices { grid-template-columns: minmax(0, 1fr); }
+  .position-choice { display: flex; align-items: stretch; gap: var(--space-2); min-width: 0; }
+  .position-choices .position-choice > button:not(.combo-add-chip) { flex: 1 1 auto; min-width: 0; width: auto; flex-direction: row; justify-content: space-between; min-height: var(--control-height); }
+  .position-choice .combo-add-chip { position: static; flex: 0 0 var(--control-height); width: var(--control-height); height: auto; min-height: var(--control-height); border: 1px solid var(--border); border-radius: var(--radius-md); }
+  .ticket-sheet-summary { min-height: var(--control-height); }
+  .combo-slip { padding-bottom: max(var(--space-4), env(safe-area-inset-bottom)); }
+  .combo-slip-collapsed { padding-top: 0; }
+  .combo-leg-remove { min-width: var(--control-height); min-height: var(--control-height); }
+}
