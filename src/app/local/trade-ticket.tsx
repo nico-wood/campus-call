@@ -1,6 +1,7 @@
 "use client";
 
 import { useMemo, useRef, useState } from "react";
+import { teamLogosForMarket } from "../live-events";
 import { quoteLocalPosition, type MergedMarket } from "./markets";
 import { useLocalMember } from "./member-context";
 
@@ -23,6 +24,7 @@ export function TradeTicket({
   const [busy, setBusy] = useState(false);
   const [message, setMessage] = useState<{ kind: "error" | "success"; text: string } | null>(null);
   const requestKeyRef = useRef<string | null>(null);
+  const teamLogos = teamLogosForMarket(market.id);
 
   const numericAmount = Number(amount) || 0;
   const preview = useMemo(
@@ -103,6 +105,7 @@ export function TradeTicket({
       <div className="position-choices" role="group" aria-label="Choose an outcome">
         {market.outcomes.map((label, index) => (
           <button key={label} type="button" aria-pressed={outcome === index} onClick={() => setOutcome(index)}>
+            {teamLogos?.get(label) ? <img className="outcome-team-logo" src={teamLogos.get(label)} alt="" aria-hidden="true" /> : null}
             <span>{label}</span>
             <strong>{Math.round(market.prices[index] * 100)}%</strong>
           </button>

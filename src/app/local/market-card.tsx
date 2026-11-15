@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { ForecastIcon } from "../forecast-icon";
+import { teamLogosForMarket } from "../live-events";
 import { Countdown } from "./countdown";
 import { Sparkline } from "./sparkline";
 import { TradeTicket } from "./trade-ticket";
@@ -17,6 +18,7 @@ export function MarketCard({ market }: { market: MergedMarket }) {
   const [open, setOpen] = useState<number | null>(null);
   const lead = leadingOutcomeIndex(prices);
   const closed = market.status !== "open" || Date.parse(market.closeAt) <= Date.now();
+  const teamLogos = teamLogosForMarket(market.id);
 
   return (
     <li>
@@ -55,6 +57,9 @@ export function MarketCard({ market }: { market: MergedMarket }) {
                   aria-pressed={open === index}
                   onClick={() => setOpen(open === index ? null : index)}
                 >
+                  {teamLogos?.get(label) ? (
+                    <img className="outcome-team-logo" src={teamLogos.get(label)} alt="" aria-hidden="true" />
+                  ) : null}
                   <span className="outcome-label">{label}</span>
                   <span className="outcome-percent">{formatPercent(prices[index])}</span>
                 </button>

@@ -1,3 +1,6 @@
+import { marketsFromEvents } from "./events";
+import { LIVE_EVENTS } from "./live-events";
+
 export const LIVE_CATEGORIES = ["All", "Sports", "Club sports", "Transit", "Campus", "Weather", "Hackathon"] as const;
 
 export type PriorSource = { name: string; url: string };
@@ -43,7 +46,8 @@ export function filterLiveForecasts(category: string, query: string): readonly L
   });
 }
 
-export const LIVE_FORECASTS: readonly LiveForecast[] = [
+/** Standalone markets not tied to a team matchup event. */
+const STANDALONE_FORECASTS: readonly LiveForecast[] = [
   {
     id: "arab-ensemble-fall-concert",
     category: "Campus",
@@ -81,45 +85,6 @@ export const LIVE_FORECASTS: readonly LiveForecast[] = [
     priorAt: "2026-11-14T17:12:00-08:00",
   },
   {
-    id: "mens-basketball-montana-state-winner",
-    category: "Sports",
-    label: "Men's basketball",
-    summary: "Resolves to the winner on the official final score, including overtime.",
-    question: "Who will win: Cal Poly or Montana State?",
-    outcomes: ["Cal Poly", "Montana State"],
-    closeLabel: "Sunday, Nov. 15, 2026, 2:55 p.m. PT",
-    closesAt: "2026-11-15T14:55:00-08:00",
-    sourceName: "Cal Poly men's basketball schedule",
-    sourceUrl: "https://gopoly.com/sports/mens-basketball/schedule",
-    resolutionRule:
-      "Resolves to the winner on the official final score. Tip is Sunday, Nov. 15, 2026, 4:00 p.m. MT (3:00 p.m. PT) at Worthington Arena. Overtime counts. If no official final score is posted, this forecast stays unresolved.",
-    prior: [0.5, 0.5],
-    priorMethod: "No posted point spread or moneyline found for this game as of Nov. 14, 2026; kept at an even prior rather than invent one.",
-    priorSources: [
-      { name: "Cal Poly men's basketball schedule", url: "https://gopoly.com/sports/mens-basketball/schedule" },
-      { name: "ESPN game preview", url: "https://www.espn.com/mens-college-basketball/preview/_/gameId/401920124" },
-    ],
-    priorAt: "2026-11-14T17:20:00-08:00",
-  },
-  {
-    id: "mens-basketball-montana-state-halftime",
-    category: "Sports",
-    label: "Men's basketball",
-    summary: "Resolves from the 1st half totals on the official box score. Tied when those totals are equal.",
-    question: "Who will lead at halftime?",
-    outcomes: ["Cal Poly", "Montana State", "Tied"],
-    closeLabel: "Sunday, Nov. 15, 2026, 2:55 p.m. PT",
-    closesAt: "2026-11-15T14:55:00-08:00",
-    sourceName: "Cal Poly men's basketball schedule",
-    sourceUrl: "https://gopoly.com/sports/mens-basketball/schedule",
-    resolutionRule:
-      "Resolves from the 1st half totals on the official box score linked from the Cal Poly men's basketball schedule. Cal Poly if its 1st half total is higher, Montana State if its 1st half total is higher, and Tied if the totals are equal. If those totals are not posted, this forecast stays unresolved.",
-    prior: [0.46, 0.46, 0.08],
-    priorMethod: "No posted spread found (even win prior), split with a ~8% base rate for a tied scoreboard at halftime in NCAA basketball; remainder split evenly between the two teams.",
-    priorSources: [{ name: "Cal Poly men's basketball schedule", url: "https://gopoly.com/sports/mens-basketball/schedule" }],
-    priorAt: "2026-11-14T17:20:00-08:00",
-  },
-  {
     id: "route-4a-sunday-detour",
     category: "Transit",
     label: "Route 4A",
@@ -155,40 +120,7 @@ export const LIVE_FORECASTS: readonly LiveForecast[] = [
     priorSources: [{ name: "Cal Poly Arts", url: "https://www.calpolyarts.org/20262027-season/las-migas" }],
     priorAt: "2026-11-14T17:23:00-08:00",
   },
-  {
-    id: "mens-basketball-montana-state-overtime",
-    category: "Sports",
-    label: "Men's basketball",
-    summary: "Yes if the official box score shows a period after the 2nd half. A two-period final is No.",
-    question: "Will the official final score include overtime?",
-    outcomes: ["Yes", "No"],
-    closeLabel: "Sunday, Nov. 15, 2026, 2:55 p.m. PT",
-    closesAt: "2026-11-15T14:55:00-08:00",
-    sourceName: "Cal Poly men's basketball schedule",
-    sourceUrl: "https://gopoly.com/sports/mens-basketball/schedule",
-    resolutionRule:
-      "Yes if the official box score linked from the Cal Poly men's basketball schedule for Cal Poly at Montana State on Sunday, Nov. 15, 2026 has a team line-score column after the second period, or a team-summary period after the 2nd half. No if that box score has only a 1st half and a 2nd half. If no official final score is posted, this forecast stays unresolved. Do not use a recap or a broadcast graphic.",
-    prior: [0.06, 0.94],
-    priorMethod: "Base rate: NCAA Division I men's basketball games go to overtime roughly 5-7% of the time; no specific indicator raises or lowers that for this matchup.",
-    priorSources: [{ name: "Cal Poly men's basketball schedule", url: "https://gopoly.com/sports/mens-basketball/schedule" }],
-    priorAt: "2026-11-14T17:24:00-08:00",
-  },
-  {
-    id: "mens-basketball-montana-state-points-70",
-    category: "Sports",
-    label: "Men's basketball",
-    summary: "Yes if Cal Poly's official points total is at least 70. Overtime points count.",
-    question: "Will Cal Poly's official points total be at least 70?",
-    outcomes: ["Yes", "No"],
-    closeLabel: "Sunday, Nov. 15, 2026, 2:55 p.m. PT",
-    closesAt: "2026-11-15T14:55:00-08:00",
-    sourceName: "Cal Poly men's basketball schedule",
-    sourceUrl: "https://gopoly.com/sports/mens-basketball/schedule",
-    resolutionRule:
-      "Yes if Cal Poly's points total on the official box score linked from the Cal Poly men's basketball schedule for Cal Poly at Montana State on Sunday, Nov. 15, 2026 is at least 70. Read the Total on Cal Poly's team line score, which matches the pts figure on the Cal Poly totals row. Overtime points count in that total. No if that total is below 70. If that total is not posted, this forecast stays unresolved. Do not use a recap or a broadcast graphic.",
-    prior: [0.84, 0.16],
-    priorMethod: "Cal Poly is averaging 79.0 points per game this season (4 games); P(points ≥ 70) = 1 − Φ((70 − 79) / 9) using a single-team scoring σ of 9.",
-    priorSources: [{ name: "Fox Sports Cal Poly team stats", url: "https://www.foxsports.com/college-basketball/cal-poly-mustangs-team-stats" }],
-    priorAt: "2026-11-14T17:26:00-08:00",
-  },
 ];
+
+/** The full catalog: standalone markets plus every market generated from an event (see live-events.ts). */
+export const LIVE_FORECASTS: readonly LiveForecast[] = [...STANDALONE_FORECASTS, ...marketsFromEvents(LIVE_EVENTS)];
