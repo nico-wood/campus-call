@@ -1192,7 +1192,7 @@ a.outcome:hover {
 .position-question { margin: var(--space-5) 0; color: var(--text-muted); font-size: var(--text-sm); line-height: var(--leading-body); }
 .position-choices { display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-2); }
 .position-choice { position: relative; max-width: 100%; }
-.position-choices button { display: flex; flex-direction: column; align-items: center; gap: var(--space-1); min-height: 4rem; width: 100%; max-width: 100%; padding: var(--space-3); color: var(--text-muted); background: var(--surface-raised); border: 1px solid transparent; border-radius: var(--radius-md); cursor: pointer; }
+.position-choices button:not(.combo-add-chip) { display: flex; flex-direction: column; align-items: center; gap: var(--space-1); min-height: 4rem; width: 100%; max-width: 100%; padding: var(--space-3); color: var(--text-muted); background: var(--surface-raised); border: 1px solid transparent; border-radius: var(--radius-md); cursor: pointer; }
 .combo-add-chip {
   position: absolute;
   top: var(--space-1);
@@ -1335,7 +1335,7 @@ a.outcome:hover {
 .live-position .position-choices { grid-template-columns: none; grid-auto-flow: column; grid-auto-columns: minmax(0, 1fr); }
 .live-position .position-amount { margin-top: 0; padding-block: var(--space-3); }
 .live-position .position-amount input { font-size: var(--text-xl); width: 40%; }
-.live-position .position-choices button { min-height: 3.25rem; height: auto; justify-content: center; text-align: center; overflow-wrap: anywhere; }
+.live-position .position-choices button:not(.combo-add-chip) { min-height: 3.25rem; height: auto; justify-content: center; text-align: center; overflow-wrap: anywhere; }
 .outcome-select-track { display: grid; grid-auto-flow: column; grid-auto-columns: minmax(0, 1fr); gap: var(--space-2); height: 0.35rem; }
 .outcome-select-track > span { display: block; height: 100%; border-radius: var(--radius-pill); background: var(--border); }
 .outcome-select-track > .outcome-select-fill { background: var(--accent); }
@@ -1693,4 +1693,30 @@ a.outcome:hover {
 
 @media (max-width: 40rem) {
   .combo-slip { left: var(--space-3); right: var(--space-3); bottom: var(--space-3); width: auto; }
+}
+
+/* Mobile hotfix (2026-11-15): the workspace nav scrolled horizontally under
+   40rem with its scrollbar hidden, which pushed the account actions (Join /
+   Sign in / balance chip) off-screen with no affordance. Wrap the nav onto a
+   second line instead so every control stays visible. */
+@media (max-width: 40rem) {
+  .workspace-nav {
+    overflow-x: visible;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    row-gap: var(--space-1);
+    /* A wrapping flex container's intrinsic min-content is computed as if
+       single-line, which inflated the mobile layout viewport to fit the
+       whole nav on one row. Let it shrink so the items actually wrap. */
+    min-width: 0;
+  }
+  /* The signed-out wrapper mis-sizes inside the wrapping nav and lets the
+     join CTA escape its box — dissolve it so the nav lays out the links
+     directly as flex items. */
+  .workspace-nav > .signed-out-actions { display: contents; }
+  /* The base .join-button-short { display: none } sits later in the file
+     than the 40rem rule that meant to reveal it, so both labels ended up
+     hidden and the join pill rendered blank. Re-assert the mobile intent. */
+  .join-button .join-button-full { display: none; }
+  .join-button .join-button-short { display: inline; }
 }
