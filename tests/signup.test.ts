@@ -42,7 +42,9 @@ function fakeBackend() {
       const accountId = String(body?.p_account_id);
       const name = String(body?.p_name);
       const email = String(body?.p_email);
-      const phone = String(body?.p_phone);
+      // Mirrors normalize_participant_phone: 10-digit numbers are stored as 1 + digits.
+      let phone = String(body?.p_phone).replace(/[^0-9]/g, "");
+      if (/^[0-9]{10}$/.test(phone)) phone = `1${phone}`;
       if (participants.has(accountId)) return jsonResponse(200, "existing");
       for (const [id, row] of participants) {
         if (id !== accountId && row.phone === phone) return jsonResponse(200, "phone-taken");

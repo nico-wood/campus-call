@@ -20,8 +20,10 @@ type FieldErrors = { name?: string; email?: string; phone?: string };
 
 function cleanPhone(value: unknown): string | null {
   if (typeof value !== "string") return null;
-  const digits = value.replace(/[^0-9]/g, "");
-  return /^[0-9]{10,15}$/.test(digits) ? digits : null;
+  let digits = value.replace(/[^0-9]/g, "");
+  // Match normalize_participant_phone in the database: a 10-digit US number is stored as 1 + digits.
+  if (/^[0-9]{10}$/.test(digits)) digits = `1${digits}`;
+  return /^[0-9]{11,15}$/.test(digits) ? digits : null;
 }
 
 function requestIp(request: Request): string {

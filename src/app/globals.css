@@ -1030,8 +1030,23 @@ a.outcome:hover {
   color: var(--text);
 }
 
+.main > .enrollment {
+  max-width: 36rem;
+  margin-inline: auto;
+}
+
+.enrollment form {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: var(--space-4);
+  width: 100%;
+  margin: 0;
+}
+
 .enrollment .confirm {
   align-self: stretch;
+  margin-top: var(--space-2);
 }
 
 .door-main .outcomes {
@@ -1786,6 +1801,21 @@ a.outcome:hover {
      ticket CTAs and must not stretch the nav pill into a full-width banner on
      its wrapped row. Keep the pill compact and right-aligned with the nav. */
   .workspace-nav .join-button { align-self: center; width: auto; }
+}
+
+/* 640–896px: one topbar row cannot fit brand + search + nav, so the nav pills
+   painted over the collapsed search box. Wrap the search onto its own row,
+   matching the existing mobile layout. */
+@media (min-width: 40.0625rem) and (max-width: 56rem) {
+  .topbar-inner { flex-wrap: wrap; }
+  .topbar-inner .search { flex: 1 1 100%; order: 3; }
+  .workspace-nav {
+    margin-left: auto;
+    min-width: 0;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    row-gap: var(--space-1);
+  }
 }
 
 /* Existing source context is compact on cards and complete on detail. */
