@@ -1,8 +1,77 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
+import { LOCAL_CATEGORIES } from "./categories";
 import { MarketCard } from "./market-card";
 import type { BoardStats, MergedMarket } from "./markets";
+
+function rowHref(category: string, tab: "live" | "futures" | "all"): string {
+  const params = new URLSearchParams();
+  if (tab !== "live") params.set("tab", tab);
+  if (category !== "All") params.set("category", category);
+  return params.size ? `/?${params.toString()}` : "/";
+}
+
+function CategoryRow({ category, markets, tab }: {
+  category: string;
+  markets: readonly MergedMarket[];
+  tab: "live" | "futures" | "all";
+}) {
+  const track = useRef<HTMLUListElement>(null);
+  const [scroll, setScroll] = useState({ overflowing: false, start: true, end: false });
+  const headingId = `board-row-${category.toLowerCase().replace(/\s+/g, "-")}`;
+
+  useEffect(() => {
+    const element = track.current;
+    if (!element) return;
+    function measure() {
+      if (!element) return;
+      setScroll({
+        overflowing: element.scrollWidth > element.clientWidth + 1,
+        start: element.scrollLeft <= 1,
+        end: element.scrollLeft + element.clientWidth >= element.scrollWidth - 1,
+      });
+    }
+    measure();
+    const observer = new ResizeObserver(measure);
+    observer.observe(element);
+    element.addEventListener("scroll", measure, { passive: true });
+    return () => {
+      observer.disconnect();
+      element.removeEventListener("scroll", measure);
+    };
+  }, [markets.length]);
+
+  function move(direction: number) {
+    const element = track.current;
+    if (!element) return;
+    element.scrollBy({ left: direction * element.clientWidth * 0.85,
+      behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches ? "instant" : "smooth" });
+  }
+
+  return (
+    <section className={`board-row${scroll.overflowing ? " is-overflowing" : ""}`} aria-labelledby={headingId}>
+      <div className="board-row-header">
+        <h2 id={headingId}>{category} <span>{markets.length}</span></h2>
+        <div className="board-row-actions">
+          <a href={rowHref(category, tab)}>See all</a>
+          {scroll.overflowing ? <>
+            <button type="button" aria-label={`Scroll ${category} left`} disabled={scroll.start} onClick={() => move(-1)}>←</button>
+            <button type="button" aria-label={`Scroll ${category} right`} disabled={scroll.end} onClick={() => move(1)}>→</button>
+          </> : null}
+        </div>
+      </div>
+      <ul ref={track} className="board-row-track" aria-labelledby={headingId} tabIndex={0}
+        onKeyDown={(event) => {
+          if (event.target !== event.currentTarget || !["ArrowLeft", "ArrowRight"].includes(event.key)) return;
+          event.preventDefault();
+          move(event.key === "ArrowLeft" ? -1 : 1);
+        }}>
+        {markets.map((market) => <MarketCard key={market.id} market={market} />)}
+      </ul>
+    </section>
+  );
+}
 
 function matches(market: MergedMarket, category: string, query: string, tab: "live" | "futures" | "all"): boolean {
   if (category === "unknown") return false;
@@ -56,6 +125,11 @@ export function BoardView({
   const needle = query.trim().toLowerCase();
   const filtered = markets.filter((market) => matches(market, category, needle, tab));
   const openCount = markets.filter((market) => market.status === "open").length;
+  const browse = category === "All" && !needle;
+  const grouped = LOCAL_CATEGORIES.filter((name) => name !== "All")
+    .map((name) => ({ category: name, markets: filtered.filter((market) => market.category === name) }))
+    .filter((group) => group.markets.length > 0);
+  const other = filtered.filter((market) => !LOCAL_CATEGORIES.some((name) => name !== "All" && name === market.category));
 
   return (
     <>
@@ -81,6 +155,13 @@ export function BoardView({
           <h2>No matching markets</h2>
           <p>Try another category or search term.</p>
         </section>
+      ) : browse ? (
+        <>
+          {grouped.map((group) => <CategoryRow key={group.category} {...group} tab={tab} />)}
+          {other.length ? <ul className="forecast-list" aria-labelledby="forecast-list-heading">
+            {other.map((market) => <MarketCard key={market.id} market={market} />)}
+          </ul> : null}
+        </>
       ) : (
         <ul className="forecast-list" aria-labelledby="forecast-list-heading">
           {filtered.map((market) => (

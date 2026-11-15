@@ -577,3 +577,7 @@ Changed the open join form label to Full name, added First and last name placeho
 ## 2026-11-14 EP-1169 final design gate
 
 Four fresh R3 read-only reviewers passed: architecture 9.8, policy 9.8, cut 9.7, completeness 9.8; weighted 9.775, blocking 0/major 0. Separate fixer applied two minor clarifications. Design gate: .agent/research/ep-1169-design-autoresearch/GATE-RESULT.md. User requested build immediately after this audit and local visual review before pushing. Next: T10 category rows, then EP execution order; no more design rounds. Full-name signup prompt and combo behavior stay intact. No remove/sell feature.
+
+## 2026-11-14 EP-1169 T10 category rows
+
+Unfiltered All browsing now groups the same market cards into native horizontal rows in category order. Added measured overflow arrows, keyboard Left/Right scrolling, focusable tracks, category See all links retaining the horizon tab, and a no-drop fallback grid. Filtered/category/search views keep the existing grid. Token-based CSS only; no data, query parsing, trading or test changes. npm test 181/181; typecheck, lint and production build passed. Playwright checked 25 cards retained at 1440/768/390px, five category rows, working arrows, no body overflow, category/search grid fallback. Screenshots outputs/ep-1169/t10-{1440,768,390}.png inspected. Next T11 combo tray. No push/deploy.
