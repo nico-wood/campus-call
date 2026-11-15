@@ -884,6 +884,15 @@ a.outcome:hover {
   filter: brightness(1.06);
 }
 
+.confirm:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+
+.confirm:disabled:hover {
+  filter: none;
+}
+
 @media (min-width: 22rem) {
   .outcomes {
     grid-template-columns: 1fr 1fr;
@@ -1562,7 +1571,7 @@ a.outcome:hover {
 @media (prefers-reduced-motion: reduce) { .skeleton-chip, .skeleton-line, .skeleton-pill { animation: none; } }
 .market-card .card-meta { justify-content: space-between; }
 .sparkline { color: var(--accent); flex: none; }
-.market-outcome-buttons { grid-template-columns: repeat(auto-fit, minmax(6rem, 1fr)); }
+.market-outcome-buttons { grid-template-columns: repeat(auto-fit, minmax(min(100%, 10.5rem), 1fr)); }
 .countdown { white-space: nowrap; }
 .card-stat { flex: 0 1 auto; min-width: 0; overflow: hidden; color: var(--text-soft); font-size: 0.75rem; white-space: nowrap; text-overflow: ellipsis; }
 
@@ -1669,6 +1678,7 @@ a.outcome:hover {
   background: var(--surface);
   box-shadow: 0 var(--space-3) var(--space-6) var(--backdrop-black, rgba(0, 0, 0, 0.25));
 }
+.combo-slip-collapsed { width: auto; min-width: 11rem; }
 .combo-slip-header { display: flex; align-items: center; justify-content: space-between; gap: var(--space-3); }
 .combo-slip-header h2 { margin: 0; font-size: var(--text-lg); font-weight: 600; }
 .combo-slip-summary { margin: var(--space-2) 0 0; color: var(--text-muted); font-size: var(--text-sm); }

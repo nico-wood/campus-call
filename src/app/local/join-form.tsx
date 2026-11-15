@@ -65,7 +65,7 @@ export function JoinForm({ next, initialMode = "join" }: { next: string; initial
       <section className="enrollment" aria-live="polite">
         {granted !== null ? <Confetti /> : null}
         <p className="enrollment-title">{granted !== null ? `+${granted.toLocaleString()} credits` : "Signed in"}</p>
-        <h1 className="list-heading">{granted !== null ? "You&rsquo;re in." : "Welcome back."}</h1>
+        <h1 className="list-heading">{granted !== null ? "You’re in." : "Welcome back."}</h1>
         <p className="list-note">
           {granted !== null
             ? "1,000 virtual credits were added to your account."

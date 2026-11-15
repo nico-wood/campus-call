@@ -32,7 +32,6 @@ export function ComboProvider({ children }: { children: ReactNode }) {
       if (withoutThisMarket.length >= 5) return withoutThisMarket;
       return [...withoutThisMarket, leg];
     });
-    setOpen(true);
   }, []);
 
   const removeLeg = useCallback((marketId: string) => {
