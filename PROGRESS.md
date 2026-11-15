@@ -573,3 +573,7 @@ Applied the R2 design findings to the UI plan only and refreshed it against comb
 ## 2026-11-14 full-name signup prompt
 
 Changed the open join form label to Full name, added First and last name placeholder and browser name autocomplete, per Nico's request. Kept existing validation and sign-in behavior. Confirmed by code review that successful joins create the Auth user email and pass normalized email/name/phone to grant_open_participant, which stores local_participants.normalized_email; no hosted participant data queried. npm test: 181/181. Playwright at 390px confirmed label, hint, and autocomplete. Next: continue EP-1169 final design review and build. No push/deploy.
+
+## 2026-11-14 EP-1169 final design gate
+
+Four fresh R3 read-only reviewers passed: architecture 9.8, policy 9.8, cut 9.7, completeness 9.8; weighted 9.775, blocking 0/major 0. Separate fixer applied two minor clarifications. Design gate: .agent/research/ep-1169-design-autoresearch/GATE-RESULT.md. User requested build immediately after this audit and local visual review before pushing. Next: T10 category rows, then EP execution order; no more design rounds. Full-name signup prompt and combo behavior stay intact. No remove/sell feature.
