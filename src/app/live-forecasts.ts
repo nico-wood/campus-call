@@ -1,7 +1,7 @@
 import { marketsFromEvents } from "./events";
 import { LIVE_EVENTS } from "./live-events";
 
-export const LIVE_CATEGORIES = ["All", "Sports", "Club sports", "Transit", "Campus", "Weather", "Hackathon"] as const;
+export const LIVE_CATEGORIES = ["All", "Sports", "Club sports", "Transit", "Campus", "Weather", "Academics", "Hackathon"] as const;
 
 export type PriorSource = { name: string; url: string };
 
@@ -24,6 +24,8 @@ export type LiveForecast = {
   priorSources: readonly PriorSource[];
   /** ISO timestamp of when the prior was last computed/checked. */
   priorAt: string;
+  /** Live closes and resolves within the prize window; futures resolve later. */
+  horizon: "live" | "futures";
 };
 
 export function filterLiveForecasts(category: string, query: string): readonly LiveForecast[] {
@@ -65,6 +67,7 @@ const STANDALONE_FORECASTS: readonly LiveForecast[] = [
     priorMethod: "Default prior for a \"still listed\" event question with no indication of cancellation risk.",
     priorSources: [{ name: "Cal Poly events listing", url: "https://events.calpoly.edu/event-listing" }],
     priorAt: "2026-11-14T17:10:00-08:00",
+    horizon: "live",
   },
   {
     id: "sunday-high-ksbp",
@@ -83,6 +86,7 @@ const STANDALONE_FORECASTS: readonly LiveForecast[] = [
     priorMethod: "NWS forecast high 69°F for Sunday, σ 3°F (Φ model): P(high ≥ 70°F) = 1 − Φ((70 − 69) / 3).",
     priorSources: [{ name: "NWS gridpoint forecast (LOX 78,112)", url: "https://api.weather.gov/gridpoints/LOX/78,112/forecast" }],
     priorAt: "2026-11-14T17:12:00-08:00",
+    horizon: "live",
   },
   {
     id: "route-4a-sunday-detour",
@@ -101,6 +105,7 @@ const STANDALONE_FORECASTS: readonly LiveForecast[] = [
     priorMethod: "Default prior for a \"still listed\" question; the active alert's posted window (through Dec. 31, 2026) already covers this moment with no sign of early removal.",
     priorSources: [{ name: "SLO Transit service alerts", url: "https://slocity.connexionz.net/rtt/public/utility/gtfsrealtime.aspx/alert" }],
     priorAt: "2026-11-14T17:22:00-08:00",
+    horizon: "live",
   },
   {
     id: "las-migas-spanos",
@@ -119,6 +124,64 @@ const STANDALONE_FORECASTS: readonly LiveForecast[] = [
     priorMethod: "Default prior for a \"still listed\" event question with no indication of cancellation risk.",
     priorSources: [{ name: "Cal Poly Arts", url: "https://www.calpolyarts.org/20262027-season/las-migas" }],
     priorAt: "2026-11-14T17:23:00-08:00",
+    horizon: "live",
+  },
+  {
+    id: "cal-poly-grad-rate-90",
+    category: "Academics",
+    label: "Academics",
+    summary: "Yes if Cal Poly's next officially published 6-year graduation rate for an entering freshman cohort is at least 90%.",
+    question: "Will Cal Poly's next published 6-year graduation rate be at least 90%?",
+    outcomes: ["Yes", "No"],
+    closeLabel: "Resolves on Cal Poly's next published rate (typically published annually)",
+    closesAt: "2027-12-31T23:59:00-08:00",
+    sourceName: "Cal Poly institutional accreditation: Student Success",
+    sourceUrl: "https://wasc.calpoly.edu/student-achievement-measures/student-success",
+    resolutionRule:
+      "Yes if the next 6-year graduation rate Cal Poly publishes on its institutional accreditation \"Student Success\" page (or successor institutional-research page) for a first-time, full-time freshman cohort is at least 90%. No if it's below 90%. Resolves against the first such rate published after today that is newer than the rate most recently published as of Nov. 14, 2026 (92%, Fall 2017 cohort). If no newer rate is published by the close date, this forecast stays unresolved.",
+    prior: [0.84, 0.16],
+    priorMethod: "Cal Poly's most recently published 6-year graduation rate is 92% (Fall 2017 cohort); these rates move only a few points year to year. Modeled as Normal(92, 2); P(next rate ≥ 90) = 1 − Φ((90 − 92) / 2).",
+    priorSources: [{ name: "Cal Poly institutional accreditation: Student Success", url: "https://wasc.calpoly.edu/student-achievement-measures/student-success" }],
+    priorAt: "2026-11-14T17:40:00-08:00",
+    horizon: "futures",
+  },
+  {
+    id: "cal-poly-fall-2027-enrollment-24000",
+    category: "Academics",
+    label: "Academics",
+    summary: "Yes if Cal Poly's official Fall 2027 total enrollment headcount is at least 24,000.",
+    question: "Will Cal Poly's Fall 2027 total enrollment be at least 24,000?",
+    outcomes: ["Yes", "No"],
+    closeLabel: "Resolves after Fall 2027 census enrollment is published",
+    closesAt: "2027-11-15T23:59:00-08:00",
+    sourceName: "Cal Poly news: enrollment report",
+    sourceUrl: "https://inside.calpoly.edu/cal-poly-sees-highest-enrollment-in-university-history-see-the-data",
+    resolutionRule:
+      "Yes if Cal Poly's official Fall 2027 total enrollment headcount, as published by Cal Poly or the CSU Chancellor's Office, is at least 24,000. No if it's below 24,000. If no Fall 2027 enrollment figure is published by the close date, this forecast stays unresolved.",
+    prior: [0.59, 0.41],
+    priorMethod: "Fall 2025 enrollment was 23,245, up 1.8% from 22,842 in Fall 2024. Projecting that growth rate two more years gives a modeled Fall 2027 figure of about 24,089. P(≥ 24,000) = 1 − Φ((24,000 − 24,089) / 400), sigma chosen as a 2-year-ahead uncertainty band.",
+    priorSources: [{ name: "Cal Poly news: enrollment report", url: "https://inside.calpoly.edu/cal-poly-sees-highest-enrollment-in-university-history-see-the-data" }],
+    priorAt: "2026-11-14T17:42:00-08:00",
+    horizon: "futures",
+  },
+  {
+    id: "cal-poly-us-news-best-in-west-streak",
+    category: "Academics",
+    label: "Academics",
+    summary: "Yes if U.S. News ranks Cal Poly #1 'Best in the West' (Regional Universities West) again in its next Best Colleges rankings.",
+    question: "Will U.S. News rank Cal Poly #1 'Best in the West' again next year?",
+    outcomes: ["Yes", "No"],
+    closeLabel: "Resolves when U.S. News publishes its next Best Colleges rankings",
+    closesAt: "2027-10-31T23:59:00-08:00",
+    sourceName: "Cal Poly news: U.S. News rankings",
+    sourceUrl: "https://ucm.calpoly.edu/news/cal-poly-continues-streak-best-west-2026-us-news-and-world-report-rankings",
+    resolutionRule:
+      "Yes if U.S. News & World Report's next annual Best Colleges rankings (published after today) ranks Cal Poly #1 among public Regional Universities West (or the successor category covering the same peer group). No if Cal Poly is ranked below #1 in that category. If U.S. News does not publish a next edition by the close date, this forecast stays unresolved.",
+    prior: [0.95, 0.05],
+    priorMethod: "Cal Poly has held the #1 'Best in the West' public-university rank for 33 consecutive years as of the 2026 rankings; a base rate derived from that streak's own persistence (roughly 1 miss in ~20 years historically) is used rather than an even prior.",
+    priorSources: [{ name: "Cal Poly news: U.S. News rankings", url: "https://ucm.calpoly.edu/news/cal-poly-continues-streak-best-west-2026-us-news-and-world-report-rankings" }],
+    priorAt: "2026-11-14T17:44:00-08:00",
+    horizon: "futures",
   },
 ];
 

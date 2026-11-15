@@ -55,6 +55,7 @@ export function generateOverUnderLadder(opts: {
   priorMethod: string;
   priorSources: readonly PriorSource[];
   priorAt: string;
+  horizon: "live" | "futures";
   resolutionRuleFor: (line: number) => string;
 }): EventMarketSpec[] {
   const specs: EventMarketSpec[] = [];
@@ -77,6 +78,7 @@ export function generateOverUnderLadder(opts: {
       priorMethod: opts.priorMethod,
       priorSources: opts.priorSources,
       priorAt: opts.priorAt,
+      horizon: opts.horizon,
       group: opts.group,
       period: opts.period,
       line,

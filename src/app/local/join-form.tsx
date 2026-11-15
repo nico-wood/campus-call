@@ -118,6 +118,12 @@ export function JoinForm({ next, initialMode = "join" }: { next: string; initial
       <p className="enrollment-notice">
         One account per person. Duplicate or fake accounts are removed and can&rsquo;t win prizes.
       </p>
+      <p className="enrollment-notice">
+        The prize leaderboard is a snapshot at Mon 16 Nov 2026, 11:59 p.m. PT. It counts your credit balance
+        (including credits returned from resolved Live markets) plus the current sell-back value of any open
+        positions. Futures positions don&rsquo;t return credits until they resolve, but they still count at
+        sell-back value in the snapshot.
+      </p>
       <button
         type="button"
         className="access-signin"

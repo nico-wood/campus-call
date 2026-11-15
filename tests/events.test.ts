@@ -19,6 +19,7 @@ const BASE = {
   priorMethod: "Test method",
   priorSources: [{ name: "Test", url: "https://example.com" }],
   priorAt: "2026-11-14T00:00:00-08:00",
+  horizon: "live" as const,
   resolutionRuleFor: (line: number) => `Yes if the total is over ${line}.`,
 };
 

@@ -3,11 +3,35 @@
 import { useState } from "react";
 import type { MergedMarket } from "./markets";
 
+type Snapshot = { id: string; createdAt: string; rows: unknown[] };
+
 export function AdminBoard({ initialMarkets }: { initialMarkets: MergedMarket[] }) {
   const [markets, setMarkets] = useState(initialMarkets);
   const [confirming, setConfirming] = useState<{ marketId: string; outcome: number } | null>(null);
   const [busy, setBusy] = useState(false);
   const [message, setMessage] = useState<string | null>(null);
+  const [snapshotBusy, setSnapshotBusy] = useState(false);
+  const [snapshotMessage, setSnapshotMessage] = useState<string | null>(null);
+
+  async function freezeSnapshot() {
+    setSnapshotBusy(true);
+    setSnapshotMessage(null);
+    try {
+      const response = await fetch("/api/local/snapshot", { method: "POST" });
+      const data = (await response.json()) as { error?: string; snapshot?: Snapshot };
+      if (!response.ok || !data.snapshot) {
+        setSnapshotMessage(data.error ?? "Could not freeze a snapshot.");
+        return;
+      }
+      setSnapshotMessage(
+        `Froze the top ${data.snapshot.rows.length} at ${new Date(data.snapshot.createdAt).toLocaleString()}.`,
+      );
+    } catch {
+      setSnapshotMessage("Could not reach the server.");
+    } finally {
+      setSnapshotBusy(false);
+    }
+  }
 
   async function resolve(marketId: string, outcome: number) {
     setBusy(true);
@@ -45,6 +69,12 @@ export function AdminBoard({ initialMarkets }: { initialMarkets: MergedMarket[] 
 
   return (
     <div className="table-scroll">
+      <div className="admin-snapshot">
+        <button type="button" className="confirm" disabled={snapshotBusy} onClick={() => void freezeSnapshot()}>
+          {snapshotBusy ? "Freezing…" : "Freeze prize snapshot"}
+        </button>
+        {snapshotMessage ? <p className="trade-message trade-message-success">{snapshotMessage}</p> : null}
+      </div>
       {message ? <p className="trade-message trade-message-success">{message}</p> : null}
       <table className="positions-table admin-table">
         <thead>

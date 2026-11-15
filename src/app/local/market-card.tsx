@@ -24,7 +24,15 @@ export function MarketCard({ market }: { market: MergedMarket }) {
     <li>
       <article className="forecast-card market-card">
         <div className="card-meta">
-          <span className="card-category"><ForecastIcon category={market.category} />{market.label}</span>
+          <span className="card-category-group">
+            <span className="card-category"><ForecastIcon category={market.category} />{market.label}</span>
+            {market.horizon === "live" && market.status === "open" && !closed ? (
+              <span className="live-dot" aria-label="Live">
+                <span className="live-dot-pulse" aria-hidden="true" />
+                Live
+              </span>
+            ) : null}
+          </span>
           {market.status === "resolved" ? (
             <span className="market-status-tag">Resolved</span>
           ) : market.status === "void" ? (

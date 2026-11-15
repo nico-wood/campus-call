@@ -59,6 +59,16 @@ export default async function MarketPage({ params }: { params: Promise<{ id: str
           ) : null}
           <p className="written-note">{market.resolutionRule}</p>
           <p className="volleyball-source"><a href={market.sourceUrl}>{market.sourceName}</a></p>
+          {market.horizon === "futures" ? (
+            <section className="prize-banner" aria-label="Prize snapshot rule">
+              <p className="prize-banner-snapshot">
+                The prize leaderboard is a snapshot at Mon 16 Nov 2026, 11:59 p.m. PT. It counts your credit balance
+                (including credits returned from resolved Live markets) plus the current sell-back value of any open
+                positions. Futures positions don&rsquo;t return credits until they resolve, but they still count at
+                sell-back value in the snapshot.
+              </p>
+            </section>
+          ) : null}
           {market.history.length > 0 ? (
             <section className="market-history" aria-label="Recent activity">
               <div className="market-history-heading"><h2>Recent activity</h2></div>

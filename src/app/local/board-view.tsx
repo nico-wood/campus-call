@@ -4,8 +4,9 @@ import { useEffect, useState } from "react";
 import { MarketCard } from "./market-card";
 import type { BoardStats, MergedMarket } from "./markets";
 
-function matches(market: MergedMarket, category: string, query: string): boolean {
+function matches(market: MergedMarket, category: string, query: string, tab: "live" | "futures" | "all"): boolean {
   if (category === "unknown") return false;
+  if (tab !== "all" && market.horizon !== tab) return false;
   if (category !== "All" && market.category !== category) return false;
   if (!query) return true;
   const haystack = [market.label, market.question, market.summary, market.category, market.sourceName]
@@ -19,11 +20,13 @@ export function BoardView({
   initialStats,
   category,
   query,
+  tab,
 }: {
   initialMarkets: MergedMarket[];
   initialStats: BoardStats;
   category: string;
   query: string;
+  tab: "live" | "futures" | "all";
 }) {
   const [markets, setMarkets] = useState<MergedMarket[]>(initialMarkets);
   const [stats, setStats] = useState<BoardStats>(initialStats);
@@ -51,7 +54,7 @@ export function BoardView({
   }, []);
 
   const needle = query.trim().toLowerCase();
-  const filtered = markets.filter((market) => matches(market, category, needle));
+  const filtered = markets.filter((market) => matches(market, category, needle, tab));
   const openCount = markets.filter((market) => market.status === "open").length;
 
   return (

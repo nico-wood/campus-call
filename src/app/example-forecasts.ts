@@ -1,7 +1,7 @@
 export const CATEGORIES = ["All", "Sports", "Club sports", "Transit", "Campus", "Weather", "Hackathon"] as const;
 
 export type Category = (typeof CATEGORIES)[number];
-export type ForecastCategory = "Sports" | "Music" | "Dining" | "Hackathon" | "Weather" | "Club sports" | "Transit" | "Campus";
+export type ForecastCategory = "Sports" | "Music" | "Dining" | "Hackathon" | "Weather" | "Club sports" | "Transit" | "Campus" | "Academics";
 export type ForecastShape = "yes-no" | "higher-lower" | "earlier-later";
 
 export type ExampleOutcome = {

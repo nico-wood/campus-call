@@ -37,7 +37,7 @@ describe("example forecasts", () => {
   });
 
   it("lists every live forecast as a market card with its outcomes and a market probability", async () => {
-    const html = await renderHome();
+    const html = await renderHome({ tab: "all" });
 
     expect(html).not.toContain(">Example<");
     expect(html).not.toContain("Example forecasts we wrote.");
@@ -51,6 +51,28 @@ describe("example forecasts", () => {
     expect(html).toContain("Credits in play");
     expect(html).toContain("50% of the team");
     expect(html.toLowerCase()).not.toMatch(banned);
+  });
+
+  it("defaults to the Live tab, hiding futures markets until All or Futures is picked", async () => {
+    const futuresMarkets = LIVE_FORECASTS.filter((forecast) => forecast.horizon === "futures");
+    expect(futuresMarkets.length).toBeGreaterThan(0);
+    const liveMarkets = LIVE_FORECASTS.filter((forecast) => forecast.horizon === "live");
+    expect(liveMarkets.length).toBeGreaterThan(0);
+
+    const defaultTab = await renderHome();
+    for (const forecast of futuresMarkets) expect(defaultTab).not.toContain(forecast.question);
+    for (const forecast of liveMarkets) expect(defaultTab).toContain(forecast.question.replaceAll("'", "&#x27;"));
+    expect(defaultTab.match(/aria-selected="true"/g)).toHaveLength(1);
+    expect(defaultTab).toMatch(/aria-selected="true"[^]*?Live<\/a>/);
+
+    const futuresTab = await renderHome({ tab: "futures" });
+    for (const forecast of liveMarkets) expect(futuresTab).not.toContain(forecast.question);
+    for (const forecast of futuresMarkets) expect(futuresTab).toContain(forecast.question.replaceAll("'", "&#x27;"));
+    expect(futuresTab).toMatch(/aria-selected="true"[^]*?Futures<\/a>/);
+
+    const allTab = await renderHome({ tab: "all" });
+    for (const forecast of LIVE_FORECASTS) expect(allTab).toContain(forecast.question.replaceAll("'", "&#x27;"));
+    expect(allTab).toMatch(/aria-selected="true"[^]*?All<\/a>/);
   });
 
   it("filters each live category, and an unknown category or a missed search is empty", async () => {

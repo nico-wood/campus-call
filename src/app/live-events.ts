@@ -21,6 +21,7 @@ const MONEYLINE: EventMarketSpec = {
   priorMethod: "No posted point spread or moneyline found for this game as of Nov. 14, 2026; kept at an even prior rather than invent one.",
   priorSources: [SCHEDULE_SOURCE, { name: "ESPN game preview", url: "https://www.espn.com/mens-college-basketball/preview/_/gameId/401920124" }],
   priorAt: "2026-11-14T17:20:00-08:00",
+  horizon: "live",
   group: "moneyline",
   period: "full",
   eventId: "mens-basketball-montana-state",
@@ -43,6 +44,7 @@ const HALFTIME: EventMarketSpec = {
   priorMethod: "No posted spread found (even win prior), split with a ~8% base rate for a tied scoreboard at halftime in NCAA basketball; remainder split evenly between the two teams.",
   priorSources: [SCHEDULE_SOURCE],
   priorAt: "2026-11-14T17:20:00-08:00",
+  horizon: "live",
   group: "prop",
   period: "1h",
   eventId: "mens-basketball-montana-state",
@@ -65,6 +67,7 @@ const OVERTIME: EventMarketSpec = {
   priorMethod: "Base rate: NCAA Division I men's basketball games go to overtime roughly 5-7% of the time; no specific indicator raises or lowers that for this matchup.",
   priorSources: [SCHEDULE_SOURCE],
   priorAt: "2026-11-14T17:24:00-08:00",
+  horizon: "live",
   group: "prop",
   period: "full",
   eventId: "mens-basketball-montana-state",
@@ -87,6 +90,7 @@ const POINTS_70: EventMarketSpec = {
   priorMethod: "Cal Poly is averaging 79.0 points per game this season (4 games); P(points ≥ 70) = 1 − Φ((70 − 79) / 9) using a single-team scoring σ of 9.",
   priorSources: [{ name: "Fox Sports Cal Poly team stats", url: "https://www.foxsports.com/college-basketball/cal-poly-mustangs-team-stats" }],
   priorAt: "2026-11-14T17:26:00-08:00",
+  horizon: "live",
   group: "team-total",
   period: "full",
   line: 70,
@@ -116,6 +120,7 @@ const CAL_POLY_TOTAL_LADDER = generateOverUnderLadder({
   priorMethod: "Cal Poly is averaging 79.0 points per game this season (4 games); modeled as Normal(79.0, 9). Ladder lines use half points, a half point above that average, so no line can land on an exact tie.",
   priorSources: [CAL_POLY_PPG_SOURCE],
   priorAt: "2026-11-14T17:30:00-08:00",
+  horizon: "live",
   resolutionRuleFor: (line) =>
     `Over if Cal Poly's points total on the official box score linked from the Cal Poly men's basketball schedule for Cal Poly at Montana State on Sunday, Nov. 15, 2026 is over ${line}. Under if it's under. Overtime points count. If that total is not posted, this forecast stays unresolved.`,
 });
@@ -140,6 +145,7 @@ const GAME_TOTAL_LADDER = generateOverUnderLadder({
   priorMethod: "No posted total was found for this game. Modeled as Cal Poly's 79.0 PPG + Montana State's 76.0 PPG = 155.0, Normal(155.0, 11) per the college-basketball total model. Ladder lines use half points, a half point above that model total.",
   priorSources: [CAL_POLY_PPG_SOURCE, MONTANA_STATE_PPG_SOURCE],
   priorAt: "2026-11-14T17:32:00-08:00",
+  horizon: "live",
   resolutionRuleFor: (line) =>
     `Over if the combined final score (Cal Poly's points plus Montana State's points) on the official box score linked from the Cal Poly men's basketball schedule for Cal Poly at Montana State on Sunday, Nov. 15, 2026 is over ${line}. Under if it's under. Overtime points count. If that total is not posted, this forecast stays unresolved.`,
 });

@@ -45,6 +45,12 @@ export function LeaderboardView({ initialRows }: { initialRows: LeaderboardRow[]
           the leaderboard, split geometrically. If the team wins nothing, the pool is $0. Virtual credits have no
           cash value. Prizes may be taxable.
         </p>
+        <p className="prize-banner-snapshot">
+          The prize leaderboard is a snapshot at Mon 16 Nov 2026, 11:59 p.m. PT. It counts your credit balance
+          (including credits returned from resolved Live markets) plus the current sell-back value of any open
+          positions. Futures positions don&rsquo;t return credits until they resolve, but they still count at
+          sell-back value in the snapshot.
+        </p>
       </section>
       <div className="page-intro">
         <p className="eyebrow">Top 50</p>
